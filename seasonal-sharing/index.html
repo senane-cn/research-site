@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>清源视野学术分享与知识探索</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="页面导航">
+    <nav>
+      <a href="#overview">全局纵览</a>
+      <a href="#catalog">原始资料</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero__content reveal">
+        <p class="kicker">2023-2026 学术分享情况概览</p>
+        <h1>清源视野学术分享与知识探索</h1>
+        <p class="hero-copy">过去几年，清源视野将季度分享会作为内部知识生产与方法交流的场域。从工程实践、保护规划、展陈传播、申遗研究，到国际观察、可持续发展与 AI 工具探索，这些分享构成了团队持续积累的学术交流档案。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#overview">查看全局纵览</a>
+          <a class="button button-secondary" href="#catalog">查看原始资料</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview-page reveal" id="overview" aria-labelledby="overview-title">
+      <aside class="overview-rail" aria-label="总览导航">
+        <a class="rail-brand" href="#top">清源视野</a>
+        <nav class="rail-nav">
+          <a href="#overview">全局纵览</a>
+          <a href="#catalog">原始资料</a>
+        </nav>
+        <div class="rail-foot">
+          <span>清源视野</span>
+          <span>学术分享与知识探索</span>
+        </div>
+      </aside>
+      <div class="overview-canvas">
+        <header class="overview-head">
+          <div>
+            <h2 id="overview-title">学术分享会一览</h2>
+            <p>2023-2026</p>
+          </div>
+          <div class="overview-stats" id="overviewStats"></div>
+        </header>
+        <section class="overview-block" aria-labelledby="quarter-title">
+          <div class="overview-block-title overview-block-title-inline">
+            <h3 id="quarter-title">分享会时间轴</h3>
+            <p>点击季度节点查看对应分享题目。</p>
+          </div>
+          <div class="quarter-module">
+            <div class="quarter-timeline" id="quarterTimeline"></div>
+            <div class="quarter-selection" id="quarterSelection"></div>
+          </div>
+        </section>
+        <section class="overview-block" aria-labelledby="directions-title">
+          <div class="overview-block-title">
+            <h3 id="directions-title">学术分享主题方向</h3>
+          </div>
+          <div class="direction-grid" id="directionGrid"></div>
+        </section>
+        <section class="overview-block" aria-labelledby="visual-title">
+          <div class="overview-block-title">
+            <h3 id="visual-title">数据统计</h3>
+          </div>
+          <div class="visual-layout">
+            <div class="visual-panel visual-panel-compact">
+              <h4>方向分布</h4>
+              <div id="directionChart" class="chart"></div>
+            </div>
+            <div class="visual-panel">
+              <h4>年份 → 方向 → 分享主题数量</h4>
+              <div id="sankeyChart" class="chart chart-sankey"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section reveal" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading section-heading-title-only">
+        <h2 id="catalog-title">原始资料及获取（限内部交流）</h2>
+      </div>
+      <div class="filters" aria-label="目录筛选">
+        <label>
+          年份
+          <select id="yearFilter"></select>
+        </label>
+        <label>
+          方向
+          <select id="directionFilter"></select>
+        </label>
+        <label class="search-label">
+          搜索
+          <input id="searchInput" type="search" placeholder="搜索主题、分享人或关键词">
+          <span class="search-hint">可搜索主题、分享人、方向或关键词，例如：世界遗产、研学、AI、可持续、工业遗产。</span>
+        </label>
+      </div>
+      <div class="catalog-summary" id="catalogSummary"></div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>时间</th>
+              <th>分享人</th>
+              <th>主题</th>
+              <th>方向</th>
+              <th>关键词</th>
+              <th>文件链接</th>
+            </tr>
+          </thead>
+          <tbody id="catalogBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="data/share_sessions.js"></script>
+  <script src="data/stats.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
