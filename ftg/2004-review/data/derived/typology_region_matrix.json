@@ -1,0 +1,503 @@
+{
+  "regions": [
+    "Africa",
+    "Arab States",
+    "Asia and the Pacific",
+    "Europe and North America",
+    "Latin America and the Caribbean"
+  ],
+  "typologies": [
+    {
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "typology_label": "Archaeological heritage",
+      "final_count": 166,
+      "table5_count": 171,
+      "difference": -5,
+      "core_count": 40,
+      "probable_count": 126,
+      "candidate_count": 19
+    },
+    {
+      "typology_code": "T02_ROCK_ART",
+      "typology_label": "Rock-art sites",
+      "final_count": 23,
+      "table5_count": 26,
+      "difference": -3,
+      "core_count": 7,
+      "probable_count": 16,
+      "candidate_count": 13
+    },
+    {
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "typology_label": "Fossil hominid sites",
+      "final_count": 7,
+      "table5_count": 14,
+      "difference": -7,
+      "core_count": 1,
+      "probable_count": 6,
+      "candidate_count": 0
+    },
+    {
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "typology_label": "Historic buildings and ensembles",
+      "final_count": 394,
+      "table5_count": 341,
+      "difference": 53,
+      "core_count": 184,
+      "probable_count": 210,
+      "candidate_count": 132
+    },
+    {
+      "typology_code": "T05_SETTLEMENTS",
+      "typology_label": "Urban and rural settlements / historic towns and villages",
+      "final_count": 238,
+      "table5_count": 269,
+      "difference": -31,
+      "core_count": 43,
+      "probable_count": 195,
+      "candidate_count": 113
+    },
+    {
+      "typology_code": "T06_VERNACULAR",
+      "typology_label": "Vernacular architecture",
+      "final_count": 50,
+      "table5_count": 57,
+      "difference": -7,
+      "core_count": 1,
+      "probable_count": 49,
+      "candidate_count": 10
+    },
+    {
+      "typology_code": "T07_RELIGIOUS",
+      "typology_label": "Religious properties",
+      "final_count": 268,
+      "table5_count": 234,
+      "difference": 34,
+      "core_count": 40,
+      "probable_count": 228,
+      "candidate_count": 41
+    },
+    {
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "typology_label": "Agricultural, industrial and technological properties",
+      "final_count": 55,
+      "table5_count": 69,
+      "difference": -14,
+      "core_count": 15,
+      "probable_count": 40,
+      "candidate_count": 14
+    },
+    {
+      "typology_code": "T09_MILITARY",
+      "typology_label": "Military properties",
+      "final_count": 74,
+      "table5_count": 87,
+      "difference": -13,
+      "core_count": 12,
+      "probable_count": 62,
+      "candidate_count": 83
+    },
+    {
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "typology_label": "Cultural landscapes, parks and gardens",
+      "final_count": 109,
+      "table5_count": 100,
+      "difference": 9,
+      "core_count": 50,
+      "probable_count": 59,
+      "candidate_count": 40
+    },
+    {
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "typology_label": "Cultural routes",
+      "final_count": 11,
+      "table5_count": 8,
+      "difference": 3,
+      "core_count": 6,
+      "probable_count": 5,
+      "candidate_count": 17
+    },
+    {
+      "typology_code": "T12_BURIAL",
+      "typology_label": "Burial monuments and sites",
+      "final_count": 48,
+      "table5_count": 40,
+      "difference": 8,
+      "core_count": 3,
+      "probable_count": 45,
+      "candidate_count": 21
+    },
+    {
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "typology_label": "Symbolic properties and memorials",
+      "final_count": 19,
+      "table5_count": 21,
+      "difference": -2,
+      "core_count": 4,
+      "probable_count": 15,
+      "candidate_count": 134
+    },
+    {
+      "typology_code": "T14_MODERN",
+      "typology_label": "Modern heritage",
+      "final_count": 16,
+      "table5_count": 15,
+      "difference": 1,
+      "core_count": 1,
+      "probable_count": 15,
+      "candidate_count": 21
+    }
+  ],
+  "cells": [
+    {
+      "region": "Africa",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 15
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T02_ROCK_ART",
+      "count": 3
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 4
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 11
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 12
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T06_VERNACULAR",
+      "count": 6
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 8
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 2
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T09_MILITARY",
+      "count": 1
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 4
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T12_BURIAL",
+      "count": 2
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "region": "Africa",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 28
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T02_ROCK_ART",
+      "count": 2
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 27
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 36
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T06_VERNACULAR",
+      "count": 5
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 24
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 0
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T09_MILITARY",
+      "count": 12
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 2
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T12_BURIAL",
+      "count": 5
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "region": "Arab States",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 35
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T02_ROCK_ART",
+      "count": 8
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 3
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 72
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 24
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T06_VERNACULAR",
+      "count": 7
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 65
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 5
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T09_MILITARY",
+      "count": 5
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 29
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T12_BURIAL",
+      "count": 15
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 2
+    },
+    {
+      "region": "Asia and the Pacific",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 65
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T02_ROCK_ART",
+      "count": 7
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 249
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 122
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T06_VERNACULAR",
+      "count": 27
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 147
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 42
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T09_MILITARY",
+      "count": 46
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 60
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 6
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T12_BURIAL",
+      "count": 25
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 8
+    },
+    {
+      "region": "Europe and North America",
+      "typology_code": "T14_MODERN",
+      "count": 12
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 23
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T02_ROCK_ART",
+      "count": 3
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 35
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 44
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T06_VERNACULAR",
+      "count": 5
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 24
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 6
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T09_MILITARY",
+      "count": 10
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 14
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "typology_code": "T14_MODERN",
+      "count": 4
+    }
+  ]
+}

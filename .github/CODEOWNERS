@@ -1,0 +1,17 @@
+# 默认由网站负责人审核
+* @ConserVision/research-admins
+
+# ICOMOS evaluation 专题
+/evaluation/ @ConserVision/evaluation-editors
+
+# Filling the Gaps 专题
+/ftg/ @ConserVision/ftg-editors
+
+# Quarterly Sharing / 共用资源
+/shared/ @ConserVision/shared-editors
+
+# 全站入口和发布配置，建议只由网站负责人审核
+/index.html @ConserVision/research-admins
+/netlify.toml @ConserVision/research-admins
+/_redirects @ConserVision/research-admins
+/.github/ @ConserVision/research-admins

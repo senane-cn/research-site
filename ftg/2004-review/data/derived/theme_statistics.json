@@ -1,0 +1,319 @@
+{
+  "level1_distribution": [
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 571
+    },
+    {
+      "theme": "Spiritual Responses (Religions)",
+      "count": 220
+    },
+    {
+      "theme": "Expressions of Society",
+      "count": 117
+    },
+    {
+      "theme": "Movement of Peoples",
+      "count": 103
+    },
+    {
+      "theme": "Utilising Natural Resources",
+      "count": 65
+    },
+    {
+      "theme": "Developing Technologies",
+      "count": 33
+    }
+  ],
+  "top_theme_paths": [
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "label": "Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "count": 276
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "label": "Inhabited Urban Areas",
+      "count": 127
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "label": "Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "count": 94
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "label": "Castles, Palaces, Residences",
+      "count": 71
+    },
+    {
+      "path": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "label": "Significant Personalities",
+      "count": 68
+    },
+    {
+      "path": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "label": "Catholic Church",
+      "count": 65
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "label": "Towns Which Are No Longer Inhabited",
+      "count": 56
+    },
+    {
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "label": "Centres of Trade and Exchange of Goods",
+      "count": 53
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "label": "Fortified Cities",
+      "count": 52
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "label": "Associative Landscapes",
+      "count": 47
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "label": "Domestic Habitat",
+      "count": 44
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "label": "Forts, Castles, Fortified Houses",
+      "count": 43
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "label": "Colonial Towns",
+      "count": 39
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "label": "Monumental Sculpture, Dolmens",
+      "count": 37
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "label": "Rural Settlements",
+      "count": 32
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "label": "Rock Art, Monumental Painting",
+      "count": 31
+    },
+    {
+      "path": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "label": "Buddhism in the West",
+      "count": 30
+    },
+    {
+      "path": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "label": "Crop and Flock Farming",
+      "count": 29
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "label": "Parks and Gardens",
+      "count": 28
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "label": "Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "count": 27
+    }
+  ],
+  "theme_coverage_per_property": [
+    {
+      "theme_path_count": 0,
+      "property_count": 53
+    },
+    {
+      "theme_path_count": 1,
+      "property_count": 71
+    },
+    {
+      "theme_path_count": 2,
+      "property_count": 148
+    },
+    {
+      "theme_path_count": 3,
+      "property_count": 145
+    },
+    {
+      "theme_path_count": 4,
+      "property_count": 106
+    },
+    {
+      "theme_path_count": 5,
+      "property_count": 57
+    },
+    {
+      "theme_path_count": 6,
+      "property_count": 29
+    },
+    {
+      "theme_path_count": 7,
+      "property_count": 15
+    },
+    {
+      "theme_path_count": 8,
+      "property_count": 2
+    },
+    {
+      "theme_path_count": 9,
+      "property_count": 6
+    },
+    {
+      "theme_path_count": 14,
+      "property_count": 1
+    }
+  ],
+  "high_coverage_properties_ge9": [
+    {
+      "property_id": "540",
+      "whc_official_url": "https://whc.unesco.org/en/list/540",
+      "property_name_en": "Historic Centre of Saint Petersburg and Related Groups of Monuments",
+      "property_name_zh": "圣彼得堡历史中心及其相关古迹群",
+      "region_en": "Europe and North America",
+      "states_name_en": "Russian Federation",
+      "unique_theme_path_count_from_assignment_rows": 14,
+      "phase1a_theme_property_summary_count": 14,
+      "summary_count_matches_assignment_rows": "true",
+      "unique_theme_level1_count": 5,
+      "theme_level1_values": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) | Developing Technologies | Expressions of Society | Movement of Peoples | Spiritual Responses (Religions)",
+      "theme_category_paths": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Works of Art and Collections | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Governmental and Public Buildings (Town Halls, Capitols, Courthouses, Post Offices; Main Public Squares) Pales) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Recreational Architecture (Theatres, Auditoriums, Athletic Facilities, Museums, Libraries, Depositories, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Transport Structures (Roads, Ports, Canals, Bridges, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas | Developing Technologies > Technology in Urban Community > Infrastructures (Water-Supply, Sanitation, Electric Power, Etc.) | Expressions of Society > Cultural and Political Associations > Identity | Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals | Spiritual Responses (Religions) > Christianity > Orthodox Church"
+    },
+    {
+      "property_id": "29",
+      "whc_official_url": "https://whc.unesco.org/en/list/29",
+      "property_name_en": "Historic Centre of Kraków",
+      "property_name_zh": "克拉科夫历史中心",
+      "region_en": "Europe and North America",
+      "states_name_en": "Poland",
+      "unique_theme_path_count_from_assignment_rows": 9,
+      "phase1a_theme_property_summary_count": 9,
+      "summary_count_matches_assignment_rows": "true",
+      "unique_theme_level1_count": 2,
+      "theme_level1_values": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) | Spiritual Responses (Religions)",
+      "theme_category_paths": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas | Spiritual Responses (Religions) > Christianity > Catholic Church | Spiritual Responses (Religions) > Judaism"
+    },
+    {
+      "property_id": "121",
+      "whc_official_url": "https://whc.unesco.org/en/list/121",
+      "property_name_en": "Kathmandu Valley",
+      "property_name_zh": "加德满都谷地",
+      "region_en": "Asia and the Pacific",
+      "states_name_en": "Nepal",
+      "unique_theme_path_count_from_assignment_rows": 9,
+      "phase1a_theme_property_summary_count": 9,
+      "summary_count_matches_assignment_rows": "true",
+      "unique_theme_level1_count": 3,
+      "theme_level1_values": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) | Movement of Peoples | Spiritual Responses (Religions)",
+      "theme_category_paths": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas | Movement of Peoples > Cultural Routes > Pilgrimage Places and Places of Origin (E.G. Mythical) | Spiritual Responses (Religions) > Buddhism > Buddhism in the West | Spiritual Responses (Religions) > Hinduism and Related Religions > Sikhism, Parsiism"
+    },
+    {
+      "property_id": "148",
+      "whc_official_url": "https://whc.unesco.org/en/list/148",
+      "property_name_en": "Old City of Jerusalem and its Walls",
+      "property_name_zh": "耶路撒冷古城及其城墙",
+      "region_en": "Arab States",
+      "states_name_en": "Jerusalem (Site proposed by Jordan)",
+      "unique_theme_path_count_from_assignment_rows": 9,
+      "phase1a_theme_property_summary_count": 9,
+      "summary_count_matches_assignment_rows": "true",
+      "unique_theme_level1_count": 4,
+      "theme_level1_values": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) | Expressions of Society | Movement of Peoples | Spiritual Responses (Religions)",
+      "theme_category_paths": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Sacred Sites > Sacred Settlements | Expressions of Society > Cultural and Political Associations > Memorials | Expressions of Society > Cultural and Political Associations > Significant Personalities | Expressions of Society > Interacting and Communicating > Literature, Artistic References, and Theatre | Movement of Peoples > Cultural Routes > Pilgrimage Places and Places of Origin (E.G. Mythical) | Spiritual Responses (Religions) > Christianity > Early Christian Church; Ethiopian Christianity | Spiritual Responses (Religions) > Islam > The Shiah, Ismaili, Sufism | Spiritual Responses (Religions) > Judaism"
+    },
+    {
+      "property_id": "394",
+      "whc_official_url": "https://whc.unesco.org/en/list/394",
+      "property_name_en": "Venice and its Lagoon",
+      "property_name_zh": "威尼斯及泻湖",
+      "region_en": "Europe and North America",
+      "states_name_en": "Italy",
+      "unique_theme_path_count_from_assignment_rows": 9,
+      "phase1a_theme_property_summary_count": 9,
+      "summary_count_matches_assignment_rows": "true",
+      "unique_theme_level1_count": 3,
+      "theme_level1_values": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) | Expressions of Society | Movement of Peoples",
+      "theme_category_paths": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Transport Structures (Roads, Ports, Canals, Bridges, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas | Expressions of Society > Cultural and Political Associations > Significant Personalities | Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods | Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals"
+    },
+    {
+      "property_id": "954",
+      "whc_official_url": "https://whc.unesco.org/en/list/954",
+      "property_name_en": "Saint Catherine Area",
+      "property_name_zh": "圣卡特琳娜地区",
+      "region_en": "Arab States",
+      "states_name_en": "Egypt",
+      "unique_theme_path_count_from_assignment_rows": 9,
+      "phase1a_theme_property_summary_count": 9,
+      "summary_count_matches_assignment_rows": "true",
+      "unique_theme_level1_count": 5,
+      "theme_level1_values": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) | Developing Technologies | Expressions of Society | Movement of Peoples | Spiritual Responses (Religions)",
+      "theme_category_paths": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials) | Developing Technologies > Processing Information and Communicating > Writing, Inscriptions, Manuscripts, Archives | Expressions of Society > Cultural and Political Associations > Significant Personalities | Expressions of Society > Developing Knowledge > Law and Justice | Movement of Peoples > Cultural Routes > Pilgrimage Places and Places of Origin (E.G. Mythical) | Spiritual Responses (Religions) > Christianity > Early Christian Church; Ethiopian Christianity | Spiritual Responses (Religions) > Christianity > Orthodox Church | Spiritual Responses (Religions) > Islam > The Shiah, Ismaili, Sufism | Spiritual Responses (Religions) > Judaism"
+    },
+    {
+      "property_id": "1061",
+      "whc_official_url": "https://whc.unesco.org/en/list/1061",
+      "property_name_en": "Ancient Maya City and Protected Tropical Forests of Calakmul, Campeche",
+      "property_name_zh": "",
+      "region_en": "Latin America and the Caribbean",
+      "states_name_en": "Mexico",
+      "unique_theme_path_count_from_assignment_rows": 9,
+      "phase1a_theme_property_summary_count": 9,
+      "summary_count_matches_assignment_rows": "true",
+      "unique_theme_level1_count": 3,
+      "theme_level1_values": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) | Movement of Peoples | Spiritual Responses (Religions)",
+      "theme_category_paths": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Pyramids, Obelisks, Minarets, Belfries | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Transport Structures (Roads, Ports, Canals, Bridges, Etc.) | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns | Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited | Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods | Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals | Spiritual Responses (Religions) > Ancient and Indigenous Belief Systems > Indigenous Belief Systems in the Americas (Olmec, Inca, Maya, Etc.)"
+    }
+  ],
+  "low_frequency_theme_paths": [
+    {
+      "path": "Developing Technologies > Converting and Utilising Energy > Steam, Coal, Gas, Petroleum, Electric Power, Etc.",
+      "label": "Steam, Coal, Gas, Petroleum, Electric Power, Etc.",
+      "count": 1
+    },
+    {
+      "path": "Developing Technologies > Technology in Urban Community > Urban Transportation Systems",
+      "label": "Urban Transportation Systems",
+      "count": 1
+    },
+    {
+      "path": "Movement of Peoples > Colonisation",
+      "label": "Colonisation",
+      "count": 1
+    },
+    {
+      "path": "Spiritual Responses (Religions) > Zoroastrianism",
+      "label": "Zoroastrianism",
+      "count": 1
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Sacred Sites > Sacred Forests and Sacred Trees",
+      "label": "Sacred Forests and Sacred Trees",
+      "count": 2
+    },
+    {
+      "path": "Developing Technologies > Converting and Utilising Energy > Water Energy, Water as Power Source, Watermills, Dam Construction, Water Management",
+      "label": "Water Energy, Water as Power Source, Watermills, Dam Construction, Water Management",
+      "count": 2
+    },
+    {
+      "path": "Expressions of Society > Developing Knowledge > Law and Justice",
+      "label": "Law and Justice",
+      "count": 2
+    },
+    {
+      "path": "Movement of Peoples > Nomadism and Transhumance",
+      "label": "Nomadism and Transhumance",
+      "count": 2
+    }
+  ],
+  "note": "Theme assignments are extracted original FTG data from Phase 1A."
+}

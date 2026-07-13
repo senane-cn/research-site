@@ -1,0 +1,356 @@
+{
+  "schema_version": "whc48-extraction-v1",
+  "projects": [
+    {
+      "property": {
+        "id": "C0000",
+        "cycle": 2026,
+        "property_name_en": "Property name as in ICOMOS report",
+        "property_name_zh": "",
+        "state_party": "",
+        "region": "Africa | Arab States | Asia and the Pacific | Europe and North America | Latin America and the Caribbean",
+        "nomination_type": "New nomination | Emergency nomination | Re-nomination | Significant boundary modification | Minor boundary modification | Extension | Withdrawal | 待校核",
+        "heritage_type": "Cultural | Mixed | Natural",
+        "property_type": "Cultural property",
+        "category_of_property": "monument | group of buildings | site | cultural landscape | mixed category | 待抽取",
+        "category_of_property_source_note": "",
+        "cultural_subtype": "",
+        "is_serial": false,
+        "component_count": null,
+        "is_transnational": false,
+        "proposed_criteria": [],
+        "icomos_recommended_criteria": [],
+        "committee_confirmed_criteria": [],
+        "icomos_recommendation": "Inscription | Referral | Deferral | Non-inscription | Approval | Withdrawal | ",
+        "icomos_recommendation_note": "",
+        "committee_decision": "",
+        "committee_pm_requirements": "",
+        "report_page_start": null,
+        "report_page_end": null,
+        "brief_synthesis_en": "",
+        "brief_synthesis_zh": "",
+        "review_status": "draft"
+      },
+      "narratives": {
+        "brief": {
+          "brief_en": "",
+          "brief_zh": "",
+          "source_pages": {
+            "brief": null
+          }
+        },
+        "criteria": {
+          "intro": "引用 ICOMOS 结论部分对认可价值标准的判断摘要。",
+          "criteria_en": {
+            "i": ""
+          },
+          "criteria": {
+            "i": ""
+          },
+          "criteria_notes": {
+            "i": ""
+          },
+          "recommendation_criteria_en": {
+            "i": ""
+          },
+          "recommendation_criteria": {
+            "i": ""
+          },
+          "criteria_conclusion_en": "",
+          "criteria_conclusion": "",
+          "criteria_conclusion_note": "",
+          "source_pages": {
+            "criteria": null,
+            "criteria_i": null,
+            "recommendation_criteria": null,
+            "recommendation_criteria_i": null,
+            "criteria_conclusion": null
+          }
+        },
+        "attributes": {
+          "summary_en": "",
+          "summary": "",
+          "note": "",
+          "source_pages": {
+            "attributes": null
+          },
+          "mentions": [
+            {
+              "section": "Integrity | Authenticity | Conservation | Boundaries | other report section",
+              "source_en": "",
+              "summary": "",
+              "note": "",
+              "source_page": null
+            }
+          ]
+        },
+        "serial": {
+          "entries_en": {
+            "serial_selection": ""
+          },
+          "entries": {
+            "serial_selection": ""
+          },
+          "entries_note": {
+            "serial_selection": ""
+          },
+          "assessment_ratings": {
+            "serial_selection": "unknown"
+          },
+          "source_pages": {
+            "serial_selection": null
+          }
+        },
+        "comparative": {
+          "summary_en": "",
+          "summary": "",
+          "note": "",
+          "comparators": {
+            "0": "中文整理"
+          },
+          "assessment_ratings": {
+            "comparative_analysis": "unknown"
+          },
+          "source_pages": {
+            "comparative": null
+          }
+        },
+        "core": {
+          "entries_en": {
+            "integrity": "",
+            "authenticity": "",
+            "integrity_authenticity_conclusion": "",
+            "boundaries": ""
+          },
+          "entries": {
+            "integrity": "",
+            "authenticity": "",
+            "integrity_authenticity_conclusion": "",
+            "boundaries": ""
+          },
+          "entries_note": {
+            "integrity": "",
+            "authenticity": "",
+            "integrity_authenticity_conclusion": "",
+            "boundaries": ""
+          },
+          "assessment_ratings": {
+            "integrity": "unknown",
+            "authenticity": "unknown",
+            "boundaries": "unknown"
+          },
+          "source_pages": {
+            "integrity": null,
+            "authenticity": null,
+            "integrity_authenticity_conclusion": null,
+            "boundaries": null
+          }
+        },
+        "protection": {
+          "entries_en": {
+            "protection_property": "",
+            "protection_buffer_zone": "",
+            "conservation": "",
+            "management": "",
+            "threats_addressed": ""
+          },
+          "entries": {
+            "protection_property": "",
+            "protection_buffer_zone": "",
+            "conservation": "",
+            "management": "",
+            "threats_addressed": ""
+          },
+          "entries_note": {
+            "protection_property": "",
+            "protection_buffer_zone": "",
+            "conservation": "",
+            "management": "",
+            "threats_addressed": ""
+          },
+          "assessment_ratings": {
+            "protection_property": "unknown",
+            "protection_buffer_zone": "unknown",
+            "conservation": "unknown",
+            "management": "unknown",
+            "threats_addressed": "unknown"
+          },
+          "source_pages": {
+            "protection_property": null,
+            "protection_buffer_zone": null,
+            "conservation": null,
+            "management": null,
+            "threats_addressed": null
+          }
+        },
+        "recommendations": {
+          "entries": {
+            "R1": {
+              "source_en": "",
+              "summary": "",
+              "note": ""
+            }
+          },
+          "icomos_items": [
+            {
+              "key": "",
+              "source_en": "",
+              "summary": "",
+              "note": ""
+            }
+          ],
+          "committee_items": []
+        }
+      },
+      "assessments": [
+        {
+          "item_key": "comparative_analysis",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "integrity",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "authenticity",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "boundaries",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "protection_property",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "protection_buffer_zone",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "conservation",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "management",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        },
+        {
+          "item_key": "threats_addressed",
+          "rating": "unknown",
+          "conclusion_en": "",
+          "conclusion_zh": "",
+          "rationale_zh": "",
+          "review_status": "draft"
+        }
+      ],
+      "criteria_assessments": [
+        {
+          "criterion": "i",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "accepted | not accepted | partly accepted | unknown",
+          "summary_en": "",
+          "summary_zh": "",
+          "review_status": "draft"
+        }
+      ],
+      "comparators": [
+        {
+          "comparator_name": "",
+          "country_or_region": "",
+          "heritage_status": "World Heritage | Tentative List | Not listed | Unknown",
+          "typology": "",
+          "comparison_theme": "",
+          "icomos_comment_summary_en": "",
+          "icomos_comment_summary_zh": "",
+          "source_page": null,
+          "source_quote": "",
+          "analyst_note": ""
+        }
+      ],
+      "attributes": [
+        {
+          "source_layer": "central_attributes_statement | integrity | authenticity | conservation | boundaries | other",
+          "attribute_group": "",
+          "attribute_name_en": "",
+          "attribute_name_zh": "",
+          "source_section": "",
+          "source_page": null,
+          "source_quote": "",
+          "summary_zh": "",
+          "linked_criteria": [],
+          "linked_assessment_items": [],
+          "status": "recognised_by_icomos | inferred_from_text | disputed | draft",
+          "analyst_note": "",
+          "review_status": "draft"
+        }
+      ],
+      "recommendations": [
+        {
+          "recommendation_level": "final_recommendation",
+          "recommendation_code": "R1",
+          "recommendation_category": "",
+          "text_en": "",
+          "summary_zh": "",
+          "linked_assessment_items": [],
+          "urgency": "low | medium | high | unknown",
+          "source_page": null,
+          "source_quote": "",
+          "included_in_final_recommendations": true,
+          "committee_heading_zh": "",
+          "committee_summary_zh": "",
+          "committee_text_en": "",
+          "review_status": "draft"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "icomos_final_evaluation",
+          "source_file": "WHC/26/48.COM/INF.8B1",
+          "source_section": "",
+          "page_number": null,
+          "paragraph_index": null,
+          "quote_en": "",
+          "summary_zh": "",
+          "interpretation_note": "",
+          "linked_assessment_item": "",
+          "linked_criterion": "",
+          "reviewer_note": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿typology_code,typology_label,phase2b_7_main_count,phase2b_8b_main_count,table5_target_count,diff_before_8b,diff_after_8b,core_count,probable_count,candidate_count,associative_hint_count,rejected_count,needs_review_count,share_of_eligible_properties,diagnostic_note
+T01_ARCHAEOLOGICAL,Archaeological heritage,166,166,171,-5,-5,40,126,19,0,448,0,0.2622,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T02_ROCK_ART,Rock-art sites,23,23,26,-3,-3,7,16,13,0,597,0,0.0363,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T03_FOSSIL_HOMINID,Fossil hominid sites,7,7,14,-7,-7,1,6,0,0,626,0,0.0111,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T04_HISTORIC_BUILDINGS_ENSEMBLES,Historic buildings and ensembles,399,394,341,58,53,184,210,132,0,107,0,0.6224,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T05_SETTLEMENTS,Urban and rural settlements / historic towns and villages,238,238,269,-31,-31,43,195,113,0,282,0,0.3760,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T06_VERNACULAR,Vernacular architecture,25,50,57,-32,-7,1,49,10,0,573,0,0.0790,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T07_RELIGIOUS,Religious properties,270,268,234,36,34,40,228,41,0,324,0,0.4234,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T08_AGRI_INDUSTRIAL_TECH,"Agricultural, industrial and technological properties",55,55,69,-14,-14,15,40,14,0,564,0,0.0869,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T09_MILITARY,Military properties,74,74,87,-13,-13,12,62,83,0,476,0,0.1169,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T10_CULTURAL_LANDSCAPES_PARKS_GARDENS,"Cultural landscapes, parks and gardens",109,109,100,9,9,50,59,40,0,484,0,0.1722,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T11_CULTURAL_ROUTES,Cultural routes,11,11,8,3,3,6,5,17,0,605,0,0.0174,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T12_BURIAL,Burial monuments and sites,48,48,40,8,8,3,45,21,0,564,0,0.0758,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T13_SYMBOLIC_MEMORIAL,Symbolic properties and memorials,19,19,21,-2,-2,4,15,134,10,470,0,0.0300,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.
+T14_MODERN,Modern heritage,17,16,15,2,1,1,15,21,0,596,0,0.0253,FTG Table 5 used as diagnostic only; Phase 2B.8b does not force counts.; Post-report micro-patch removed property 806 T14_MODERN false positive; no Table 5 count forcing.

@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/evaluation/2026/*"
+  to = "/evaluation/2026/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ftg/2004-review/*"
+  to = "/ftg/2004-review/index.html"
+  status = 200

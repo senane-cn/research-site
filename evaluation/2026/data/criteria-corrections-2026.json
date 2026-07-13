@@ -1,0 +1,1005 @@
+{
+  "schema_version": "criteria-corrections-2026-06-07",
+  "source_document": "WHC/26/48.COM/INF.8B1 (local PDF)",
+  "method": "Extracted Criteria under which inscription is proposed from report page ranges; Operational Guidelines definition sentence removed from each criterion source.",
+  "projects": [
+    {
+      "property_id": "C1768",
+      "property_name_en": "The Medinas of the Historic Sultanates of the Comoros",
+      "report_pages": [
+        15,
+        30
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "icomos_recommended_criteria": [
+        "iii",
+        "iv"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property bears witness to a significant exchange of influences on the development of architecture and city planning in the Comoros, arising from the participation of the cities of the archipelago in the Indian Ocean trade system between the 14 th and the 19th centuries. This led to commercial, religious, and cultural exchanges between the Comoros Islands and the Swahili world, the Islamic civilisation in Arabia and in Persia, as well as African traditions, and European and Austronesian influences. The six nominated medinas, with their urban morphology and fabric resulting from these exchanges, offer an exceptional insight into the evolution of the Comorian cities, showcasing the specificities of the Swahili c ivilisation as it developed in the archipelago, under influence of the local geographical conditions and socio-cultural systems. ICOMOS considers that the nominated serial property demonstrates the existence of cultural exchanges, of which the Indian Ocean has been a dynamic vehicle, connecting disparate societies across vast distances through migration, trade, and exchange. However, existence of an interchange is not sufficient to justify this criterion. It is necessary to show that the interchange has had a significant and identifiable impact on the development of architecture and urban planning, leading to specific transformations, innovations or novel forms. On the basis of available documentation and in light of current state of research, this criterion, while relevant, cannot be justified, at this stage. 21 ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property is an exceptional testimony to a distinctive expression of the Swahili world that developed in the archipelago of Comoros. The nominated medinas reflect in their urban morphology and fabric, as well as the associated intangible heritage, the rich and still living cultural traditions and social practices of the Comoros archipelago, which due to its location and complex history has become a crossroads for peoples of different origins, between Africa, the Arab world, and Europe, connected by the Indian Ocean. The hierarchical social structures of the Comorian society, based on a synthesis of matrilineal and matrilocal customs and patrilineal Islamic traditions, are reflected in the urban organisation of the medinas, which serve as a setting for social life and celebrations that mark the stages of life of men and women, and which in turn give the tangible heritage its meaning. ICOMOS considers that the nominated serial property provides an exceptional testimony to the living Comorian socio-cultural system, preserved over centuries, where social hierarchy, neighbourhood organisation, and public and private space usage are structured around the agegroup system, matrilineal transmission, as well as social status and roles prescribed by Islam. The urban morphology and form of the nominated serial property demonstrate a distinctive spatial and architectural response to the social organisation of the Comorian society and its cultural traditions, providing an exceptional example of how African social systems and Islamic traditions shaped urban development in this part of the Swahili world. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property as an architectural ensemble showcases the ingenuity and technical expertise of the planners and builders of the medinas in the era of the sultanates, between the th and the th century. The different architectural typologies reflect the characteristics of the Swahili cultural orbit and the Islamic traditions introduced by the Arabs and Shirazis. ICOMOS considers that the nominated serial property represents an exceptional architectural ensemble that constitutes a constellation of distinctive responses in architecture and landscape-making that collectively demonstrate the originality of Comorian urban traditions that adapted Arab-Shirazi influences to the local geographic context, and combined them with pre-Islamic African social structures and models of communal living. Comorian historic cities did not undergo transformations during the Omani period and were not remodelled during the colonial era, which distinguishes them from the Swahili coast towns. In the additional information of October 2025, the State Party clarified that the nominated serial property illustrates a historical period that witnessed the development of interaction and exchanges between African cultures, the ArabMuslim world, various European powers, and the progressive integration of the region into the global maritime context. ICOMOS concurs with this suggestion and also considers that the nominated serial property illustrates the origins and evolution of urbanism in the Comoros, linked to t he arrival of Islam, which marked a significant cultural phase in the history of the Indian Ocean region. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iii": "The Medinas of the Historic Sultanates of the Comoros provide an exceptional testimony to the living cultural traditions and social practices of the Comorian archipelago, which, due to its location and complex history, has become a crossroads for peoples of different origins, between Africa, the Arab world, and Europe, connected by the Indian Ocean. The hierarchical social structures of the Comorian society, based on a synthesis of matrilineal and matrilocal customs, age- group system, and patrilineal Islamic traditions, are reflected in the urban organisation of the medinas, which serve as a setting for social life and celebrations that mark the stages of life of men and women, and which in turn give the tangible heritage its meaning.",
+        "iv": "The Medinas of the Historic Sultanates of the Comoros constitute a constellation of distinctive responses in architecture and landscape-making that collectively demonstrate the originality of Comorian urban traditions that adapted Arab-Shirazi influences to the local geographic context and combined them with African social structures and models of communal living. Through complementary responses in architecture, artistry, defensive systems, and landscape-making, created within a shared cultural matrix, the component parts showcase the origins and evolution of urbanism in the Comoros, linked to the arrival of Islam, which marked a significant cultural phase in the history of the Indian Ocean region, and illustrates a historical period that witnessed the development of interaction and exchanges between African cultures, the Arab- Muslim world, and various European powers, and the progressive integration of the region into the global maritime context."
+      },
+      "serial_selection": {
+        "source_en": "The serial approach is justified, and the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1750",
+      "property_name_en": "The Roças of Sao Tome and Principe: Colonial Agricultural System and Forced Migration",
+      "report_pages": [
+        31,
+        43
+      ],
+      "proposed_criteria": [
+        "iv",
+        "v"
+      ],
+      "icomos_recommended_criteria": [
+        "iv"
+      ],
+      "criteria": [
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party because the large-scale agro-industrial estates developed from the mid19th century for coffee and cocoa production, forming the nominated property, illustrate a significant historical phase following the abolition of slavery in 1875. The roças demonstrate how slavery, was replaced after its abolition by systems of forced and contract labour that perpetuated conditions of servitude through the large-scale recruitment and displacement of African workers, mainly from Angola, 35 Mozambique, and Cabo Verde. Through their architecture, spatial organisation, and production infrastructure, the roças materialise the transfer of European technologies and plantation models to Africa and document the transformation of slavery into post-abolition forced labour within global colonial economies. ICOMOS considers that the roças constitute an outstanding example of an industrialised agricultural system that illustrates the historical transition from slavery to forced and contract labour, demonstrating how colonial powers reorganised land, technology, and human exploitation to sustain global commodity production after slavery abolition. ICOMOS considers that this criterion is justified.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        },
+        {
+          "criterion": "v",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "The State Party justifies this criterion on the grounds that the agroforestry practised in the roças, in which cocoa and coffee are cultivated under forest cover, integrates agricultural production with existing ecosystems. This system is known to maintain biodiversity, soil fertility, and ecological balance, in contrast to large-scale monoculture practices developed elsewhere through deforestation and genetic modification. ICOMOS considers that the justification proposed for criterion (v) is not consistent with the rationale of th is criterion. This criterion focuses on traditional land use, and the nominated property includes only the groups of buildings that form ed the residential and operational centres of the roças, not the agricultural landscape that may reflect land use. Furthermore, the land use and agroforestry mentioned in the justification were not practised under colonial oversight, which privileged monoculture to maximise revenue. Therefore, the proposed justification for this criterion does not relate to the core narrative supporting the proposed Outstanding Universal Value. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 v 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {},
+      "serial_selection": {
+        "source_en": "Based on the additional information provided by the State Party, ICOMOS considers the serial approach justified and the selection of component parts appropriate at this stage, given the conservation challenges facing the nominated property.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式基本可成立，但组成部分选择或后续纳入安排仍需调整。",
+        "rating": "tilde"
+      }
+    },
+    {
+      "property_id": "C1769",
+      "property_name_en": "Village of Sidi Bou Saïd: Hub of Cultural and Spiritual Inspiration in the Mediterranean",
+      "report_pages": [
+        44,
+        56
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iv",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [
+        "iii"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property, as a testimony to the cultural exchanges within the Mediterranean, bears witness to the dialogue of local traditions with external influences expressed in architecture and decorative arts by the mix of styles that include Arab, Ottoman, Andalusian, and European inspirations. The strategic geographic position of the place exposed it to different cultural and artistic currents, result ing in an urban landscape with a characteristic aesthetic. Additionally, the nominated property has inspired creativity, as expressed by the School of Tunis which combines Tunisian and European influences. A living example of continuous cultural exchange and fusion of diverse traditions, the nominated property is said to be a symbol of the universality of Mediterranean cultures and a model of mutual influences in arts and knowledge. ICOMOS considers that the mentioned influences – Andalusian, Ottoman, or European – are neither exclusive to Sidi Bou Saïd nor exceptional. The Andalusian and Ottoman influences are typical of towns and villages of the Maghreb, particularly between the 16 th and 19th centuries. The nominated property fits into the general historical context in this regard, without displaying outstanding formal originality or distinctive creative approach. There is no evidence to suggest that the nominated property played a leading role in the dissemination, synthesis, or transformation of these influences. The “Arabising” (or Orientalist) style is a European aesthetic which spread to North African cities; Sidi Bou Saïd does not appear to be its originator or a major centre of influence. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property is an exceptional example of an architectural ensemble developed around a zawiya, which testifies to the spatial organisation based on the principles of the ArabIslamic urbanism but guided organically by the natural relief of the place. An example of Mediterranean architecture perfectly adapted to its natural context, it illustrates the symbiosis between humans and their environment. S trongly influenced by Sufi spirituality, the architecture of the nominated property does not correspond to codified standards but follows functional and contextual logic. The spectacular panoramas on the Mediterranean Sea give the place a timeless dimension. Protected since 1915, the nominated property has preserved its character, while carrying the imprint of different historical eras. In the additional information of October 2025, the State Party clarified that from the 11 th century onwards, Ifriqiya (which corresponds approximately to the present territory of Tunisia, eastern Algeria and western Libya) played a central role in the spread of Sufism from the Mashreq, and its adaptation to the social, cultural, and urban realities of the Maghreb. The village of Sidi Bou Saïd embodies this historical stage, where Sufism became a structuring factor in social, urban, and cultural life. ICOMOS considers that the nominated property is not a singular case of the development of an ArabIslamic village settlement centred around a zawiya but should be seen within a broader tradition of village foundations stemming from the cult of a local saint and the ruling power investment, a phenomenon attested in several regions of the Maghreb. The exceptional character of the nominated property resides not in its architecture erected in harmony with its natural environment but rather in the way it developed as a sanctuary-village through a process of aggregation. As such, ICOMOS considers that criterion (iii) should be considered instead of criterion (iv). Moreover, ICOMOS considers that the explanation 48 regarding the significant stage of history is not fully coherent with the presentation of the nominated property as a development that took several centuries. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 未得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property is associated with spiritual events, legends, ideas and beliefs related to Sufi mysticism, being an active centre of Sufism and a space for the search of the unity with the divine, of peace and internal harmony. The village remains a place of prayer, of Sufi rituals, celebrations and gatherings. Additionally, the nominated property has inspired many renown artists whose creations have had a significant impact on the European art scene and beyond. The village played an important role in the foundation of the School of Tunis, which combined popular local tradition with modern European aesthetics, as well as contributed to the formation of major artistic movements such as Expressionism. ICOMOS considers that while Sufism can be considered of universal significance, this association is not particular to the nominated property, which is not the birthplace or principal place of this spiritual movement. While Sidi Bou Saïd might have been an important Sufi figure in the region, his ideas were not influential enough to be considered of universal significance. The attachment of the village to the venerated figure reflects the roots of the place, which is not in itself exceptional. The Sufi celebrations held in Sidi Bou Saïd are essentially national and regional. ICOMOS further considers that the legends associated with the nominated property are typical of any locality with a long memory. While these legends echo universal themes, their significance and relevance do not extend much beyond the boundaries of the nominated property. The art istic works inspired by the nominated property, while potentially globally recognised, did not produce any significant response in terms of novel ideas, art forms, or movements. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 vi 未得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": false,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "The State Party has not proposed this criterion. ICOMOS considers that the nominated property provides an exceptional testimony to a tradition of village foundations, typical for the Maghreb, stemming from the cult of a saint (walī) and the temporal power of the ruling dynasties. It represents a remarkable example of a phenomenon of sanctuaryvillages that developed through a “symbolic pact” between sanctity and authority, where the blessing of the saint (baraka) served to legitimise the sovereign, and the patronage of the sovereign contributed to perpetuating the prestige of the saint. This dual process (spiritual and pol itical) ensured the continuity of the cult of Sidi Bou Saïd, while anchoring his zawiya in the collective memory. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iii": "The Village of Sidi Bou Saïd represents an exceptional testimony to the tradition of village foundations based on a symbiotic relationship formed between the spiritual authority of a saint and the temporal power of a ruling dynasty. It exemplifies in an exceptional way the phenomenon of sanctuary-villages, fundamental to the social and political history of the Maghreb, that developed as a result of a saint’s prestige which provided religious legitimacy to the sovereign, and the sovereign’s patronage which, in return, ensured the perpetuation and prosperity of the saint's sanctuary and village."
+      },
+      "serial_selection": {
+        "source_en": "The nomination is an extension of an already inscribed serial property and adds one component part, Waldsiedlung Zehlendorf. ICOMOS considers that the nominated extension contributes to and complements the World Heritage series; the integrity assessment reflects whether the added component part contains attributes that support the Outstanding Universal Value.",
+        "summary_zh": "该项目为已列入系列遗产的扩展，仅新增 Waldsiedlung Zehlendorf 一个组成部分。ICOMOS 未单独展开整体系列遗产组成部分筛选论证，相关判断主要体现在该扩展是否补充并强化原系列遗产属性，以及完整性评估对新增组成部分的判断中。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1765",
+      "property_name_en": "Jingdezhen Handicraft Porcelain Industry Sites",
+      "report_pages": [
+        57,
+        67
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii",
+        "iv",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [
+        "ii",
+        "iii",
+        "iv",
+        "vi"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party based on the ability of the nominated property to demonstrate the integration of the handicraft porcelain industry of Jingdezhen with global porcelain production between the 10 th and 19th centuries. The production of the distinctive bluish-white porcelain was based on the development of porcelain-making technologies from north and south China in the 10th-13th centuries. Continuous development in the 13th-19th centuries included the production of blue-and-white, enamel and famille-rose porcelain, combining Chinese porcelainmaking technologies with Middle Eastern and European pigments, and fusion of foreign cultural elements in decorative techniques. The porcelain technologies and artistic style of Jingdezhen attracted global attention. Jingdezhen was a global porcelain production centre from the 16 th to the 18th centuries. ICOMOS considers that the interchange of cultures is demonstrated for the nominated property, although this changed over the span of time represented by the component parts. The earlier periods demonstrate the interchange of knowledge and experimentation with technologies with other regions in China, progressively developing the production methods for which Jingdezhen is distinctive. Later exchanges through global trading networks brought new pigments, forms and techniques, which in turn underpinned the global popularity of Chinese porcelain, particularly the blue-and-white porcelain which was both highly prized and widely imitated. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 已得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party based on the ability of the selected sites to demonstrate in an exceptional way the continuous process of production of porcelain from the 10 th to 19 th centuries, including the associated social organisation. In additional information received in October 2025, the State Party further clarified how the nominated property represents the cultural tradition of Chinese handicraft porcelain production based on the traditions of production techniques, social organisation in the porcelain industry and the evolution of aesthetic and artistic traditions. ICOMOS considers that the nominated property demonstrates the industrial and social organisation of the production of porcelain and the changes between the 10 th and 19 th centuries. In this context, the production of porcelain was more than a technical process. T he nominated property contains evidence of craft traditions and expertise, and the complex social organisation of the production of porcelain that evolved over many centuries. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the selected sites demonstrate a technological ensemble that illustrates the development of the porcelain industry. This includes the art and industrial organisation model from the 13 th to the 19th century. The State Party asserts that Jingdezhen is a unique and outstanding example of innovation in porcelain technology, including the use of raw materials, modelling and glazing techniques and the “ binary formula”. The gourdshape and egg-shape kilns were innovations in firing technology. The State Party also justifies this criterion on the basis of the division and organisation of space and labour. ICOMOS considers that the nominated serial property represents a major stage in the history of porcelain production, showcasing innovations in technology, art and industrial organisation, and that the long history of porcelain production at Jingdezhen spans significant stages in human history, particularly the preindustrial globalisation of the trade in porcelain. The nominated component parts demonstrate raw material extraction, transportation, social organisation of expertise and labour, and trade, allowing the system and its complexities to be appreciated. The “ binary method” of porcelain production was a major innovation, enabling large scale production. Jingdezhen is credited with new 61 kiln designs and decorative techniques such as blue-andwhite and famille-rose porcelain, enriching the forms and styles of porcelain w orldwide. The large-scale layout, specialised division of labour and standardised production created an efficient system, making Jingdezhen a leading example of industrial organisation in the handicraft era. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that traded porcelain from Jingdezhen became a vehicle of Chinese culture and an important symbol of oriental art. The blue-and-white porcelain of Jingdezhen was a key element of the “ chinoiserie” popular in European decorative arts in the 17 th and 18th centuries, including interior design, furniture, porcelain, textiles and gardens. European nobility became collectors of Chinese porcelain, and many famous palaces feature “ Chinese rooms” with various forms of designed objects. The artistic characteristics of Jingdezhen porcelain were widely imitated. ICOMOS considers that the porcelain of Jingdezhen (especially the blue-and-white porcelain) is a recognisable symbol of Chinese culture and Oriental art and was linked to European decorative arts in the 17 th and 18th centuries. As a luxury trade commodity, it became central to the European fashion for “chinoiserie”. Through its designs and motifs, it influenced painting, furniture, architecture and decoration, serving as a medium for the global expression of Chinese civilisation and culture. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 vi 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "ii": "The Jingdezhen Handicraft Porcelain Industry Sites demonstrate global exchanges in porcelain-making technologies and art, and innovations in porcelain production from the th to the th centuries. The Hutian Ancient Kiln Site portrays the integration of porcelain-making technologies for bluish- white porcelain from the north and south of China from the 10th-13th centuries. The development of technologies at Jingdezhen during the th-19th centuries combined traditional Chinese porcelain-making with Middle Eastern, Chinese and European pigments, and a fusion of Chinese and foreign decorative techniques to produce blue- and- white, enamel and famille- rose porcelain. The “binary formula” technology attracted widespread attention and was an important inspiration and influence on the development of high- temperature hard- paste porcelain technology in Europe during the th century. Jingdezhen became a world porcelain production centre from the 16th- 18th centuries, with its artistic styles studied and imitated all over the world.",
+        "iii": "The Jingdezhen Handicraft Porcelain Industry Sites exhibit the continuous production process of the porcelain industry from the th to the 19th centuries and a complete industrial pattern including the social organisation of production. The five component parts provide a testimony to the tradition of Chinese handicraft porcelain industry.",
+        "iv": "The Jingdezhen Handicraft Porcelain Industry Sites are a technological ensemble that illustrates important stages in the development of the handicraft porcelain industry, a n outstanding example of innovation in global porcelain technologies , art and industrial organisation from the th to the 19th centuries. The uses of raw materials at Jingdezhen, the “binary formula” technology, modelling technologies, kiln designs, and innovations in underglaze and overglaze decoration techniques enriched the diversity of porcelain shapes and decorative styles. The large-scale industrial spatial layout, division of labour , and specialised and standardi sed production model enabled the efficient and high- quality porcelain production at Jingdezhen.",
+        "vi": "As an important vehicle of Chinese culture and an important symbol of Oriental art, evidence of blue- and-white porcelain of Jingdezhen establishes a direct association with European decorative art from the th- 18th centuries. As a global high-end trade commodity, the blue-and-white porcelain of Jingdezhen is one of the core elements of “chinoiserie” that was popular in Europe. These artistic elements were widely collected and used in pattern design, painting, furniture, architectural decoration and other fields, with porcelain serving as a medium to promote the global expression of Chinese culture. I ntegrity The five component parts include raw material sources, kilns, workshops , transportation and other production facilities that demonstrate the elements and stages of the development of the handicraft porcelain technology of Jingdezhen from the 10th to the 19th century. They include buildings used for the social organi sation and management, commercial and trade activities, religious and belief practices, and the porcelain production tools and products of Jingdezhen. The Jingdezhen Handicraft Porcelain Industry Sites include a full suite of relevant attributes of the industrial system of porcelain production including the spatial layout s, production facilities and technological processes, and social organisation. The boundaries are appropriately delineated and ensure the protection of the key attributes. The component parts are generally in a good state of conservation, and potential threats are well identified."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the nominated property meets criteria (ii), (iii), (iv) and (vi), that the serial approach is justified and that the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C927",
+      "property_name_en": "Ancient Buddhist Site, Sarnath, Varanasi",
+      "report_pages": [
+        68,
+        80
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii",
+        "iv",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [
+        "iii",
+        "vi"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property, as a sacred landscape, was created by the successive construction of monumental architecture by the pilgrims and travellers from the Mauryan to the Mughal periods, whose contributions to Sarnath bear witness to the interchange of ideas and values across the Buddhist world. The viharas, stupas, and shrines of Sarnath, the first Buddhist sangha, became prototypes of monastic architecture, influencing the development of sangharamas in the region. ICOMOS considers that architectural or stylistic influences between architectural forms are not enough to justify this criterion. As interchange in and between human societies and cultures is commonplace, this criterion requires that the exchange of human ideas or influences prompted a response that could be deemed outstanding at the time and/or subsequently on people or society. ICOMOS notes the Persian and Central Asian motifs used in the architectural structures at Sarnath, as well as other types of influences indicated by the State Party in the additional information of November 2025. However, ICOMOS considers that it has not been demonstrated that they resulted in a transformation and/or new development that could be deemed exceptional. Similarly, the evolution over time of a specific architectural typology in one place cannot be considered an exceptional example of an interchange, given that changes of architectural styles and designs are not inherently exceptional processes. Moreover, Sarnath was not the only place visited by monks and pilgrims, who undertook the prescribed pilgrimage also to other sites. Its development was organic and depended on patronage and political economy of the time rather than direct foreign influence. It would also be challenging to assert the claim of direct influence of Sarnath on other sites in the region, as there is not enough evidence about the connections. Scholars of Buddhism and historians have shown that many of the Buddhist monuments in the Indian subcontinent were built within a similar time-frame, therefore there will be influences of one over the other. While Sarnath undoubtedly contributed to the spread and exchange of Buddhist architectural styles, claims that it served as the template for Buddhist sangharamas, and the direct empirical sources linking Sarnath to other sites, cannot be substantiated at this stage, as evidence remains inconclusive. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property testifies in an exceptional way to the Buddhist tradition of pilgrimage, established by the Buddha himself, which has continued on the site for the past 2,500 years, to the present day. ICOMOS considers that the successive contribution of pilgrims to the site over the millennia demonstrates the importance of Sarnath for Buddhists and testifies to their observance of the call of the Buddha to make Sarnath one of the four principal places of Buddhist pilgrimage. Despite a significant gap in the tradition of pilgrimage between the 12 th century and the modern era, the nominated serial property bears witness to the enduring spiritual significance of Sarnath for Buddhists worldwide to the present day. The modern revival of the place as a Buddhist pilgrimage site testifies to its prominent role in modern Buddhist memory and the spiritual imagination. The ongoing ritual connection that links the past commemorative landscape with current pilgrimage practices is central in this case, as Sarnath materiali ses both transformation and endurance within the same sacred place. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property is an architectural and archaeological ensemble that includes prototypes of Buddhist sacred architectural typologies, such as stupas, shrines and viharas. One of the oldest Buddhist sites in 73 the world and the oldest Buddhist monastic complex (sangharama), it is the physical manifestation of the first sermon of the Buddha and a witness to the defining moments of the Buddhist sangha, from its establishment in the 6th century BCE to its decline and destruction in the 12th century CE. As a commemorative landscape and a living continuum, it further offers a stage for the theatrical retelling of anecdotal events in the life of the Buddha, allowing pilgrims to navigate the sacred geography of Ishipatana/Mrigadava. ICOMOS considers that the nominated serial property is crucial to the origins of Buddhist community life, its development prompted by the Buddha establishing his order and community. ICOMOS notes the explanations provided in the additional information of November 2025, and recognises Sarnath as the birthplace of Buddhist sangha, but considers that while Sarnath undoubtedly contributed to the spread and exchange of Buddhist architectural styles, claims that it served as the template for all Buddhist sangharama overstate the evidence. This is based on the fact that the idea of sangha was formed at Sarnath. However, developing a group of followers or disciples does not immediately lead to the actualisation of monastic rules and tangible expression thereof. The tangible manifestations of structures at Sarnath are multilayered and embody certain principles of Buddhism. However, ICOMOS does not consider that they represent a linear or a “single story”, as this would contradict both the spatial and temporal expansion and extent of Buddhism. These expansions and contractions took place in different time periods and under different contexts. While the site might have provided architectural prototypes for planning a Buddhist commune with specific typologies such as viharas, stupas, and shrines, neither the design and layout of the monastic complex at the moment it was established, nor the original forms of the different architectural typologies that were potentially first established at Sarnath, are legible today in the nominated serial property, which represents an amalgam of later additions and transformations. The archaeological record for the early monastic structures remains limited. The distinction between the doctrinal and material primacy of Sarnath is critical in this regard. Moreover, ICOMOS considers that while Sarnath played an essential role in the genesis of the sangha and the foundational teachings of the Buddhadhamma, its decline is just one example of the broader decline of Buddhist institutions across the subcontinent. Recent scholarship has challenged and re-evaluated the “decline of Buddhism” narrative; instead of a simple story of collapse, it emphasises the various ways Buddhism persisted, transformed, and adapted to regional variations. Given the modern revival of Sarnath as a Buddhist site today, it also raises the question of whether this comprehensive story of birth and decline still holds true. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 未得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property is directly and tangibly associated with the first sermon of the Buddha, which gave birth to the Buddhist doctrine and was chronicled in epic poems, ancient Buddhist texts, and artistic works of outstanding significance. As a physical manifestation of the Buddhist concept of Triratna, i.e., Buddha, Sangha and Dhamma, the nominated serial property epitomises the spread of the Buddha’s message to the world. It is also the place of the development of the Sarnath School of Art which produced the most representative image of the Buddha that informed the art and iconography of the Buddhist world. ICOMOS considers that t he nominated property testifies in a direct and tangible way to the events in the life of the Buddha that are of outstanding significance in the Buddhist world. Even though vestiges of the th century BCE, the time when the Buddha lived and visited Sarnath, where he established his sangha and dhamma, are not today physically preserved, the significance of these events and their meaning are carried by the subsequent constructions which are a direct response to the Buddha’s message. ICOMOS further considers that the structures preserved within the nominated serial property date to different historical periods, starting from the pre-Mauryan period, and often replaced earlier buildings. In this sense, ICOMOS considers that they might be said to be associated with the teachings of the Buddha and the concept of Triratna, but not necessarily be the oldest tangible manifestation thereof. ICOMOS considers that the outstanding significance of the Sarnath School of Art, which produced a distinctive style in sculpture, is debatable. While the influence of the already established Mathura School of Art and the Gandhara School of Art is wellknown, the idea of the presence of an influential Sarnath School of Art needs more credible research and evidence. ICOMOS further considers that the claim that the Sarnath School represents the “zenith” or “Golden Age” of Indian art warrants careful examination. Such language often reflects common historiographic themes, relying heavily on limited sources and perpetuating an uncritical view of the Gupta era as the “ Golden Age”, which may not be accepted by all art historians. A more balanced assessment would place the art present at Sarnath within the wider context of regional and chronological developments in Indian sculpture, highlighting its stylistic contributions such as the refinement of the Buddha’s images and symbolic forms, without overstating its singularity or finality. ICOMOS also notes that most of the sculptures unearthed on the site have been taken away and stored in museums, including in the Archaeological Museum Sarnath (in the buffer zone). 74 ICOMOS also considers that while the Buddhist texts, ancient poems and other related literary works may be of outstanding significance to the Buddhist spiritual tradition, the association between these works and the site is based on the significance of Sarnath as the historical place where the events of the life of the Buddha took place, rather than tangibly expressed through the remains preserved on-site today. The sacred scriptures and other works narrate the events rather than being inspired by the site itself or its architectural elements. Therefore, ICOMOS does not consider that the nominated serial property is an exceptional expression of the outstanding significance of these works. ICOMOS considers that this criterion is demonst rated based on the association with the events in the life of the Buddha only.",
+          "summary_zh": "ICOMOS认为标准 vi 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iii": "Ancient Buddhist Site, Sarnath, Varanasi bears witness to the enduring spiritual significance of Sarnath, one of the four principal destinations of Buddhist pilgrimage, established by the Buddha himself, as demonstrated by the large number of religious buildings and other monuments that were built and rebuilt on- site during the many centuries of its existence. While the tradition of pilgrimage is not attested at Sarnath between the 12th century CE and the modern era, the 20th century revival of the practice testifies to the prominent role of this ancient Buddhist site in Buddhist memory and the spiritual imagination.",
+        "vi": "Ancient Buddhist Site, Sarnath, Varanasi testifies in a direct and tangible way to the events in the life of the Buddha that are of outstanding significance to the Buddhist community – his first sermon and meeting of his first disciples. The importance of these events and their meaning is carried by the numerous constructions erected at Sarnath over the centuries, which are a response to the message of the Buddha, his teachings , and the concept of Triratna."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified, and the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1770",
+      "property_name_en": "Alamūt Castle and Related Fortifications",
+      "report_pages": [
+        81,
+        93
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii",
+        "v",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [
+        "iii"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property, once the political and spiritual centre of the Nezāri Ismaʿilis, played a decisive role in medieval Ismaʻilism and in the evolution of mountain defensive architecture across Iran and Syria, leaving an enduring cultural, religious, and architectural legacy that persisted long after its fall in 1256. The network composed of Alamūt Castle and Related Fortifications functioned as a strategic system that protected the communities living in and around the fortifications for almost two centuries, wi th each fortification playing a specific role within the defensive system. The distinctive defensive strategies and architectural features of Alamūt Castle (component part 1) are reflected in its siting atop a large rock with steep precipices on all sides, allowing controlled access, and in the use of rock-cut construction to create fortified spaces integrated with the natural terrain. The nominated fortifications (component parts 2 to 7) are organi sed into multiple functional zones, forming a coherent defensive system. Their location and surroundings provided sufficient resources, water, and food to sustain prolonged occupation and resistance to siege. Alamūt Castle was part of a wider network of interconnected mountain castles, designed to support one another through communication and territorial coverage. While the nomination dossier asserts a decisive role of the nominated series in the evolution of mountain defensive architecture across Iran and Syria, ICOMOS considers that it does not adequately explain how these architectural and technological principles were transmitted beyond the nominated property, nor does it clearly demonstrate their influence on subsequent or parallel fortification traditions in these regions. The extent to which these strategies were adopted, transformed, or further developed elsewhere, and whether they generated new architectural or technological models of broader significance, is not sufficiently substantiated. As presented, the argument focuses primarily on the internal functioning and effectiveness of the defensive system rather than on demonstrable processes of interchange of architectural or technological values within a wider cultural area. The clear evidence of influence and exchange in developments in architecture, technology, or landscape design, which is required to justify criterion (ii), is not provided. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that Alamūt Castle and Related Fortifications stands as a powerful symbol of the centuries-old cultural and religious heritage of the Nezāri Ismaʿili community, whose intellectual, scientific, and literary legacy, enriched by enduring myths and global influence, continues to inspire and shape their identity today. 85 In the February 2026 additional information, the State Party emphasi sed that beyond defenc e, the Alamut fortifications functioned as administrative, religious, and intellectual cent res that coordinated governance, resource distribution, and community cohesion within the Nezāri Ismaʿili state. Local communities were closely linked to the fortifications due to earlier Ismaʿili missionary activity (daʿwa). By 1090, many inhabitants had already converted, allowing the castles to function as political centres supported by local populations providing food, labour, and manpower. During the Nezāri Ismaʿili period, the surrounding landscape was organi sed for agriculture and pastoralism, with villages and farmlands integrated into a territorial system that sustained the fortified network and connected it to regional trade routes. ICOMOS considers that Alamūt Castle and Related Fortifications provide rare testimony to the Nezāri Ismaʿili cultural tradition, which flourished in the Alborz Mountains from the 11 th to 13 th centuries. The castles and surrounding settlements reflect a cohesive socio-political, religious, and intellectual system, combining fortification, administration, scholarship, and community life. Tangible elements, including the network of fortresses, water management systems, agricultural terraces, and archaeological remains, are evidence of this cultural tradition. Alamūt also represents a historical legacy whose influence continues to shape the identity of the Nezāri Ismaʿili community worldwide. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        },
+        {
+          "criterion": "v",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property showcases the mastery of mountainadapted architecture, resource management, and defensive engineering by the Nezāri Ismaʿilis, reflecting their cultural, political, and socioeconomic resilience during two centuries of regional influence. The location of the Alamūt Castle and Related Fortifications in rugged, mountainous terrain illustrates their complex interaction with the harsh, inaccessible environment of the Alborz Mountains, which contributed to the fusion of the nominated fortifications with the natural landscape. While the location and construction features support the defensive and strategic effectiveness of the nominated property, ICOMOS considers that the nomination dossier does not sufficiently demonstrate that the nominated serial property represents an outstanding example of a traditional human settlement or landuse system. Evidence provided focuses primarily on the military and administrative functions of the fortifications rather than on a clearly-defined pattern of settlement, land use, or long-term human interaction with the environment at a territorial scale. In its interim report, ICOMOS requested the State Party to provide further clarification on the relationship between the fortifications and the surrounding communities. In February 2026, the State Party explained that local communities were closely linked to the fortifications due to earlier Ismaʿili missionary activity (daʿwa) and that they supported the fortifications with food, labour and manpower. While this information clarifies the socio - political relationship between the castles and local communities, it does not sufficiently demonstrate an outstanding or representative system of traditional settlement or land use expressed through the nominated property. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 v 未得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that Alamūt Castle and Related Fortifications served as a major centre of Ismaʿili intellectual, cultural, and scientific life, whose scholarly legacy and global influence have shaped philosophical and historical narratives far beyond its region for over twelve centuries. This was made possible in particular through its renowned library. The library, originally located in the citadel of Alamūt Castle (component part 1), was famous for its extensive collection of books, treatises and scientific instruments, attracting scholars from diverse backgrounds. However, no physical trace remains of this landmark after its complete destruction in the mid13 th century, and its legacy persists mainly through historical references. If the importance of Alamūt Castle as a centre for learning and as an intellectual hub is apparent, ICOMOS considers that, because of the absence of surviving physical traces of its library and the indirect nature of its influence, its association with events, living traditions, ideas, beliefs, artistic or literary works cannot be substantiated as having outstanding universal significance. Instead, ICOMOS considers that some of these values are better reflected as part of a unique or exceptional testimony to the cultural tradition of the Nezāri Ismaʿilis, more relevant under criterion (iii). I COMOS considers that this criterion is not demonstrated. ICOMOS considers that the nominated property meets criterion (iii), but that criteria (ii), (v) and (vi) have not been demonstrated.",
+          "summary_zh": "ICOMOS认为标准 vi 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iii": "Alamūt Castle and Related Fortifications provide a rare testimony to the Nezāri Ismaʿili cultural tradition, which flourished in the Alborz Mountains from the th to the th centuries. The property reflects a cohesive socio-political, religious, and intellectual system that integrated defence, administration, scholarship, and community life. The network of castles, water management systems, agricultural terraces, and archaeological remains demonstrate the organisation and ingenuity of the Nezāri Ismaʿilis. The property also reflects the close relationship between the fortifications and local communities, founded upon earlier Ismaʿili missionary activity (daʿwa), which supported the castles with labour, resources, and food. The property represents a historical legacy whose influence continues to shape the identity of the Nezāri Ismaʿili community worldwide."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified and that the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1757",
+      "property_name_en": "Ancient Capitals of Asuka and Fujiwara",
+      "report_pages": [
+        94,
+        104
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii"
+      ],
+      "icomos_recommended_criteria": [
+        "ii",
+        "iii"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the layout, design, planning and technology of the nominated component parts demonstrate an important interchange of human values with Chinese and Korean powers of this period. The centralised state established at Asuka and Fujiwara was the basis for the evolution of Japanese capitals from the 8 th century onwards. The nominated sites also reflect the introduction of Buddhism to the Japanese archipelago, transforming its religious, cultural and political landscape. The sites and material evidence illustrate a major facet of 6 th and 7 th century East Asian interactions, along with the palace sites and mounded tombs that illustrate changes in social hierarchical structures and burial customs through interactions with Chinese and Korean cultures. ICOMOS considers that nominated property demonstrates the interactions between Chinese, Korean and Japanese models of governance in the 6 th to the 8th centuries. This is demonstrated in an exceptional way through the well-documented archaeological evidence of the two early capitals of the Japanese archipelago. These interchanges are evident in the Koguryo-style tomb layouts at Asuka-dera Temple Site (component part 005), Baekje-style forms at Tachibanadera Temple Site (component part 006) and Yamadadera Temple Site (component part 007), Tang influence at Kawaradera Temple Site (component part 008), the spread of twinpagoda temple layouts and the mechanisms of transmission through mokkan (wooden tablets). The development of these two early capitals clearly shaped the later capitals at Nara and Kyoto. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 已得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated component parts are an unparalleled ensemble that bears a unique testimony to the formative process of centralised ancient capitals, embodying a centralised state system in East Asia. ICOMOS considers that Asuka and Fujiwara provide exceptional evidence of two early capitals that illustrate the adaptation of an ancient centralised capital model based on the Chinese ritsuryo system. The term ritsuryo is a Japanese rendering of a broader East Asian codified law tradition, derived from Chinese legal and administrative codes. The ritsuryo system was a pivotal legal and administrative framework that profoundly shaped statebuilding across East Asia, based on centralised governance and Confucian principles. It provided a blueprint for establishing strong, bureaucratic states, enabling the management of resources and enforcement of laws, and was adapted to local conditions, illustrating a dynamic process of cultural interchange. The shift from dispersed imperial functions in Asuka to the highly planned Fujiwara c apital demonstrates an evolution in layout, composition and style. The thousands of mokkan from the Fujiwara Palace Site (component part 013) reveal administrative details and personal writings that bring the governance of the capital to life. The physical manifestation of this system is reflected in the capital plans, hierarchical layouts and symbolic placements of imperial palaces and administrative centres that are tangible expressions of the ritsuryo authority of the state and its connection to the spiritual realm. The nominated property presents the specific way in which these characteristics were internalised based on models drawn from Tang China and the Korean Peninsula during a critical formative phase in the Japanese archipelago. ICOMOS considers that this criterion is demonstrated. ICOMOS considers that the nominated property meets criteria (ii) and (iii).",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "ii": "The layout, design, technology, and planning of the palace/ government office sites, Buddhist temple sites and mounded tombs of the Ancient Capitals of Asuka and Fujiwara represent an important interchange of human values with contemporary power centres in China and the Korean Peninsula, and the introduction of Buddhism to Japan. These early capitals exerted profound influences on the construction and evolution of capitals on the Japanese a rchipelago from the th century onwards.",
+        "iii": "The sites associated with the Ancient Capitals of Asuka and Fujiwara form an important testimony to the cultural tradition of the formative processes of ancient capitals in East Asia based on centralised state systems through their locations, spatial layout and relationships and composition."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified and that the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1760",
+      "property_name_en": "Rock Mosques and Associated Sacred Sites of Mangystau",
+      "report_pages": [
+        105,
+        119
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [
+        "iii"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property has been instrumental in fostering cultural dialogue across Central Asia. The arrival of Muslim beliefs along with the practice of Sufism and the construction of rock-carved mosques reflected the further development of the material and spiritual culture of the nomadic tribes inhabiting the area. Cultural exchanges also influenced the development of the architecture of religious and funerary structures. Monumental buildings and small architectural forms of burial structures continue the architectural and semantic traditions of the pre-Islamic period. The traditions of early nomads in burial practices did not disappear but were adapted to Islamic rituals and manifested in diverse, visible forms. ICOMOS considers that the nominated property testifies to the development and perpetuation of syncretic practice in nomadic populations beginning in the medieval period. Historical narratives often discuss the spread of the Muslim faith to Central Asia as a linear process, taking hold initially in urban areas and then gradually reaching rural areas, mainly through the preaching of itinerant preachers, often from the Sufi order. Recent archaeological work has begun to show that the process was more of a mosaic, with different communities, particularly those outside of large urban centr es, engaging with Islam in a range of ways. Furthermore, ICOMOS considers that the necropolises are a particularly strong representation of layered identity embodied in the communit ies that created them. Elaborate above-ground constructions were important to pre-Islamic nomadic peoples, and were also incorporated into the Sufi practice of visiting the graves of saints and other important figures. Syncretic practices capture and reflect how a culture mediates its interaction with ideas, people and technology. ICOMOS also notes that, according to some research, certain component parts of the nominated property bear tangible traces of early nomadic cultures. Additionally, the Shakpak-Ata (M-4) and ShopanAta (M-2) component parts strongly resemble in plan the Mele Khairam Fire Temple situated in the Sarakhs Oasis in Ahal Province, southwestern Turkmenistan, as well as some other sites scattered throughout the oasis. The choice of rocks for the construction of a sacred place indicates an association with the cult of the god Mithras. It may be posited, then, that Shakpak-Ata and other underground sacred places could have been first utilised for religious practices in the pre-Islamic period. Therefore, and in light of the fact that rock-carved mosques have rarely been found in Islamic architecture, further research is required on the tangible traces of preIslamic traditions present at the nominated property that use various interpretative frameworks. Given that the exchange between the material and spiritual cultures of the nomadic tribes in the region and Islamic Sufi traditions is central to the proposed Outstanding Universal Value, ICOMOS emphasi ses the need to deepen the understanding of the relati onship between rock-carved spaces, necropolises, and nomadic mobility. This includes examining the layered preIslamic cosmology into which Islamic beliefs were introduced and subsequently evolved. It is crucial to research, interpret, and document how these tangible and intangible aspects manifest within the material culture and living traditions of the nominated property. 110 Nevertheless, ICOMOS considers that the current state of research on the relationships between rock -carved spaces, necropolises, and nomadic mobility as well as on the interchanges between preIslamic and Islamic Sufi traditions is not sufficient to justify criterion (ii) at this stage. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property is an outstanding demonstration of the methods used in the construction of mosques within rock formations. The unique geomorphological and climatic conditions of the region allowed the Sufi hermits to create ritual structures and develop Sufi centr es in isolation on the Mangystau Peninsula for more than 800 years. This unique cultural tradition is also present in the distinctive architecture of funerary and cultic structures of the necropolises, which flourished in the late Middle Ages and then spread throughout the entire aridsteppe zone of the Aral - Caspian region, according to the State Party. ICOMOS considers that while cells excavated into natural landscapes are common in many religious ascetic traditions, and the methods used in their construction are comparable, the nominated property is noteworthy for the complexity of its multi-roomed buildings with spatial and sensory features and accompanied by necropolises. The integration of preIslamic sacred landscapes into Sufi Islam, the association of saints with nomad identity, the use of remote, dramatic terrain to heighten the journey of pilgrims, and the fact that they are active places of worship, make the nominated property exceptional. The mortuary monuments, i n addition to being outstanding in their representation of syncretic interpretation, have exceptional value as representatives of an artistic tradition displaying remarkable artistic techniques, particularly the craftsmanship of the stone carving on the ku ltpytas and koytas. Many of the motifs seen on these monuments can still be found in other nomadic artistic expressions from the region, including textiles and rock art. They are also a primary source of information on local history and traditions. Responding to a request from ICOMOS for additional information, the State Party confirmed in November 2025 and February 2026 that the pilgrimage tradition constitutes one of the key aspects of the nominated property. Pilgrimage to the sacred sites of Mangystau originated in the 14 th-15th centuries and remains vital to the present day. This living cultural tradition upholds the original spiritual function of the sacred rock -carved spaces, ensuring the continuity of practices associated with prayer, bles sing, supplication (dua) and ancestor veneration. Over the centuries the pilgrimage tradition has experienced changes, though its essential meaning and ritual structure have remained stable. ICOMOS notes that recognition of important Sufi teachers as saints and the visitation of shrines to these saints are at the core of nomination dossier and the proposed justification for inscription. T he recognition of important Muslim figures as saints is not res tricted to Sufism, but it is a particularly prominent tradition within the Yasawi Order, recognised by broader Islamic orthodoxy. The continued presence of shirakshi (individuals who guard the graves of saints and serve pilgrims) and the connections to the original Sufi preachers of the nominated component parts, together with continued pilgrimage, are testimony of the continuation of the tradition and its importance. The fact that pilgrims still conduct rites is an outstanding example of the sustained practice of these syncretic living cultural traditions. From this perspective, ICOMOS considers that the inclusion of Beket-Ata (component part M-1), which dates to the 18 th century, in a nomination that is focused on a much earlier period and has different cultural origins does not fit comfortably in the justification for criterion (iii). ICOMOS considers that the nominated property is an exceptional testimony to the cultural tradition of the Central Asian region, and of the Mangystau and Ustyurt plateaus in particular. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property serves as an exceptional testament to the power and influence of the Muslim faith in the Middle Ages among the nomadic and semi-nomadic tribes of the Aral-Caspian region. It is linked to the spread of the Sufi interpretation of Islam and the founder of the Yasawi Sufi Order, Khoja Ahmed Yasawi. Over time, the Sufi preachers gained the status of auliye (saints), and the rock-carved complexes where they were teaching and some are buried became destinations for pilgrims and tourists. ICOMOS observes that the events, living traditions, ideas, beliefs or artistic or literary works that form the basis for this criterion must themselves be of outstanding universal significance, and must be demonstrated directly or tangibly in the nominated property. It is not clear from the description of the nominated p roperty and justification provided what the State Party consider to be of outstanding universal significance and in what tangible way it is specifically associated with the nominated property. In the February 2026 response to the interim report the State Party clearly links the justification of the criterion (vi) to the living pilgrimage tradition to the places associated with Sufi saints and masters at the same time admitting that the contribution of pilgrimage practices to the evolution of sacred practices requires f urther research. The assertion that the nominated property uniquely testifies to the strength of the medieval Muslim faith and the spread of Sufi Islam among the nomadic and semi - nomadic tribes of the Aral-Caspian region does not fit with the definition of this criterion with the selected criterion. Instead, this argument and the tradition of pilgrimage as a vital component of the living cultural tradition of the nominated property are appropriately addressed under the justification for criterion (iii). ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 vi 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iii": "The Rock Mosques and Associated Sacred Sites of Mangystau stand as an exceptional testimony to a cultural tradition born from the integration of pre-Islamic sacred landscapes into the Sufi Islam that spread among medieval nomadic communities. The outstandingness of the property lies in the deep association of saints with the identity of local nomadic communities, the strategic use of remote and dramatic terrain to intensify the pilgrim’s journey, and its enduring status as an active place of worship. Unlike the simple ascetic cells found in many religious traditions, the serial property features multi- roomed structures with distinct spatial and sensory qualities, accompanied by extensive necropolises. The continued presence of the shirakshi, guardians who tend the graves of the saints and serve pilgrims, alongside the unbroken link to the original Sufi preachers, attests to the vitality of this tradition. The fact that pilgrims still actively perform these rituals makes the serial property an outstanding example of a living, syncretic cultural practice that has survived and thrived through the centuries."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified but that the selection of component parts should be reduced to exclude component part M -1 (Beket-Ata) and comprise only component parts M2 (Shopan-Ata), M-3 (Karaman-Ata), M-4 (Shakpak-Ata), and M-5 (Sultan-Epe).",
+        "summary_zh": "ICOMOS认为系列遗产申报方式可讨论，但组成部分选择需要缩减或调整。",
+        "rating": "circle"
+      }
+    },
+    {
+      "property_id": "C1764",
+      "property_name_en": "Silk Roads: Fergana-Syrdarya Corridor",
+      "report_pages": [
+        120,
+        141
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii",
+        "iv",
+        "v",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the States Parties on the grounds that the FerganaSyrdarya Corridor was an extensive transport network that facilitated cultural exchanges across a central area of Eurasia over a very long period. The east-west interactions were initiated in the 2 nd century BCE by the Han general Zhang Qian, but the States Parties also emphasise the interactions between the nomadic steppe region to the north and north-east, and the agricultural-oasis-pastoral region to the south and south-west. Overall, the Silk Roads enabled close diplomatic, economic and cultural ties across Asia and the Mediterranean. According to the States Parties, t he evidence for interchange can be seen in written records and archaeological artefacts with diverse origins, such as coins, gems, silk, mirrors, porcelain and glass. The river section in this Corridor also facilitated certain types of trade, such as livestock, and also slaves. The Corridor also demonstrates the spread of Islam, and various phases of state formation in Central Asia. The diversity of religious sites reflects the introduction of faiths from west and south Asia and their eastward movement along the routes. The inclusion of Zoroastrian, Buddhist, Christian and Islamic sites is distinctive. ICOMOS considers that the Fergana-Syrdarya Corridor was of strategic significance and involved both east-west and north-south interactions. The movements of people, trade, exchanges of goods, crafts and technologies are potentially relevant but specific evidence of interchange has not been provided, and the chronologies in relation to the exchanges are not clearly set out. At this stage, while it is evident that the Fergana-Syrdarya Corridor facilitated interchanges that could meet this criterion, the nominated component parts and evidence presented do not yet present a coherent network. At this stage, evidence for the intensity, specificities and long-term impacts of the cultural exchanges is generalised. The geology of this region gave access to rich resources such as metals and semi-precious minerals. These were important for trade as raw materials and for the production of objects which are found locally and across the Silk 128 Roads. This aspect is not well -addressed by the nomination and should be incorporated into the recommended review of the selection of the component parts. Regarding the empire systems that vied for control of the area in different periods, these could be more fully elaborated. The political and strategic significance of the nominated Corridor should be reflected in component parts that reflect the impact s of these different polities. There are a range of component parts that could achieve this, but they are not clearly described in this way, and there could be additional component parts that should have been selected for these reasons. It would have been useful to discuss specifically how “ close diplomatic, economic, and cultural ties with Eastern Turkestan, China, Western Asia, Rome, and Southern Africa ” are attested by the specific component parts selected. The States Parties advised that a chronological synthesis framework is being developed correlating the principal political phases including Kushan, Turkic Khaganates, Samanid, Karakhanid, Mongol and Timurid periods, although this was not provided to ICOMOS during the evaluation of the nominated propert y. Addressing how these periods and functions interact will be useful in enhancing the justification of this criterion. ICOMOS also notes that the points made about the symbiosis between nomadic and sedentary peoples in the Fergana-Syrdarya Corridor is potentially interesting but not yet well demonstrated by tangible evidence or included in the comparative analysis. A more nuanced or complex portrayal of these relations could be developed. While c ooperative exchange is highlighted, conflict, competition, and shifting power relations were also part of these interactions. It should be demonstrated how nomadic and sedentary societies were mutually transformed. ICOMOS considers that there is a potential for this criterion to be justified for the Fergana-Syrdarya Corridor through improvements to the narrative for the potential Outstanding Universal Value, and the revised selection and justification of component parts. The Corridor is likely to be able to represent histories of cultural interactions and interchanges, demonstrating cultural and religious shifts over a prolonged period, and the forms of cultural production that emerge from the confluence of empires and polities. It should be possible to present additional evidence of multidirectional exchanges (both imports and exports). There is a potential to demonstrate specific cultural interchanges between nomadic and agricultural peoples through the northsouth connections with the steppe route, including historic tensions related to land uses and access to water. To demonstrate this criterion, it will be necessary to directly link site-specific evidence of cultural exchanges such as artefacts, inscriptions, or architectural remains at nominated component parts. In the additional information of February 2026, the States Parties advised that further revisions would strengthen the justification for criterion (ii) through clearer demonstration of technological transfers (hydraulic engineering, glazed ceramics, metallurgy). ICOMOS considers that this criterion is not demonstrated at this stage.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the States Parties on the grounds that the component parts demonstrate cultural traditions associated with water management for agriculture, fortification and the coexistence of different religions within urban settlements. Craft traditions are also represented in many of the nominated component parts, including artisanal production of pottery and glass, and mining. These distinctive cultural traditions of this Corridor are understood as arising from, and sustained by, the exchanges between nomadic pastoralists and sedentary agricultural communities, visible in material culture and settlement patterns. ICOMOS considers that the arguments outlined for this criterion are potentially relevant, but that the presented evidence does not yet demonstrat e with precision which attributes of the selected component parts directly embody the claimed traditions. The specific nomadic and agricultural cultures (and cultural traditions) of these areas need to be more systematically described. Those that are mentioned are presented unevenly across the serial nomination. For example, water management is described for the sites of Sauran (KZ-03), Sardoba (UZ-14) and Zhetyasar (KZ05 a-k), but detail is lacking for the other component parts, suggesting an over-reliance on a few component parts to demonstrate this aspect. Because karez and qanat systems are found in other parts of Central Asia and the Middle East, their importance should be explained in terms of the cultural traditions of the nominated Corridor, and how they enabled key developments throughout the Fergana-Syrdarya Corridor. More consideration could be given to the breeding and trade in horses, which is a potential area of distinctiveness of this C orridor. This was central to cultural and military life in this part of Central Asia. Horses from the Fergana Valley became renowned, especially to the elites ruling the north China plains. The trade in horses also supported the links and interchanges between the settled and steppe communities that are central to this criterion. Regarding the claims about religious diversity and coexistence, ICOMOS notes that few areas within Central Asia have witnessed the successive emergence and evolution of these diverse religious traditions. However, there is little evidence presented to demonstrate this at the nominated component parts. I n general, a range of different traditions are mentioned by the States Parties, but there is little explanation of how 129 they are inter -related or how they demonstrate the specificities and outstanding attributes of these parts of the Silk Roads over time. For this criterion, the cultural traditions need to be elaborated beyond a description of different functions and land uses. In the additional information of February 2026, the States Parties advised that further revisions would strengthen the justification for criterion (iii), in part by linking component parts to historically attested polities such as Kangju and Dayuan whose political power was grounded in control of the nominated Corridor. ICOMOS considers that the interactions between nomadic and settled communities are a potentially important focus for the consideration of criterion (iii). How this is specifically expressed in the nominated component parts should be demonstrated. To strengthen the justification for this criterion, it is necessary to link the cultural traditions and selected sites more explicitly. ICOMOS considers that this criterion is potentially relevant for this nomination, but that there is insufficient detail about the layering of outstanding cultural traditions to demonstrate it at this stage. ICOMOS considers that this criterion is not demonstrated at this stage.",
+          "summary_zh": "ICOMOS认为标准 iii 未得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the States Parties on the grounds that the selected sites demonstrate an architectural typology. Information about building styles and wall paintings has been provided as evidence. In the additional information of October 2025, the States Parties further explained that this criterion is considered to represent a typological sequence, and that taken together, the serial component parts represent an outstanding type of landscape termed a “city-water-agrosystem-defense-pilgrimage” continuum that is characteristic of the Syrdarya River axis. This is distinct from the desert-oasis or purely mountain-passage models found in other corridors of the Silk Roads. The States Parties also consider that the chronological diversity of these elements is evidence of a long developmental process, and adaptations to changing hydrological and political contexts. In the nomination dossier, only six of the fortyeight component parts were indicated as contributing to the proposed justification for criterion (iv): the Historical and Architectural Complex of Uzgen (KG-01), Hazrati Shoh Mausoleum (TJ -01), Bunjikat (Kal a-I Kahkaha I -III settlements TJ -06), Abdullatif Sultan Madrassa (Kok Gumbaz, TJ-07), Otrar Settlement (KZ-01) and Zhankent Settlement (KZ-06). In response to questions about this from ICOMOS, the State s Parties provided additional information in October 2025 that included a table that identifies the intended contribution of each of the fortyeight component parts to the justification of criterion (iv); and in the additional information of February 2026, the States Parties advised that further revisions would clarify the applicability of criterion (iv) through the demonstration of complex irrigationbased urban system in semi -arid riverine landscapes. ICOMOS appreciates these clarifications but considers that th e selection of the component parts does not sufficiently support the argument s put forward for this criterion. While it is possible to include multiple types and/or periods, the diversity of the selected component parts is a poor basis to support this criterion. While every case is individually assessed, it is also noted that neither of the two previously inscribed Silk Roads corridors has been recognised on the basis of criterion (iv). ICOMOS acknowledges that some of the component parts identified for this criterion are individually significant examples of architectural ensemble types and decoration. However, it is not clear how the nominated Corridor as a whole is an outstanding example of a type of building, architectural or technological ensemble or landscape that illustrates a significant stage in the history of the Silk Roads network; and the explanation that it is an outstanding type of landscape that is a “city-water-agrosystem-defense-pilgrimage” continuum is not clear to ICOMOS. ICOMOS considers that the argument supporting this criterion is not robust for these reasons. Although the additional information expanded the justification to include all the component parts, this has been added to the existing selection of the component parts, rather than guiding their selection from the outset. ICOMOS considers that criterion (iv) is not an ideal choice for this serial nomination that aims to demonstrate such a high degree of typological diversity and chronological span, and that the arguments put forward by the States Parties for criterion (iv) are potentially more relevant for the justification of other criteria. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 未得到证明。"
+        },
+        {
+          "criterion": "v",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the States Parties on the grounds that, over centuries, local communities adapted their agriculture and water management to the shifting courses of the rivers in this Corridor. The Syrdarya basin potentially illustrates the utili sation of the river as a waterway for trade along the Silk Roads. Additional information was provided in October 2025, including a table that outlines the specific contribution of each component part to this criterion. The States Parties argue that this criterion is expressed as an extended e vidential continuum where locally diverse types of hydro130 engineering form a single integrated system: the mastery of shifting channels of the Syrdarya, the transformation of natural branches into irrigation arteries, the development and operation of subsurface galleries and karez systems, the construction of sardobas and other storage facilities, the protection of distribution nodes through fortification, and agricultural adaptations to changing hydrodynamics. The course of the Syrdarya River changed significantly across the long timeframe covered by this nomination. In the additional information received in February 2026, the States Parties refer to the archaeological evidence of repeated reorganisation of settlement layouts in response to shifts in the Syrdarya River channels. Irrigation canals, flood-control structures and stratigraphic evidence document long-term hydraulic management as a structuring force. The States Parties consider river-based adaptation to be a defining characteristic of this Corridor, and its riverine character to be central to the application of this criterion. The States Parties also emphasise the importance of the mix of terrestrial caravan routes with a fluvial communication axis. The Syrdarya River functioned as an economic artery linking settlements longitudinally. In the additional information received in February 2026, the States Parties advised that monumental port installations have not survived, but that the distribution patter ns of imported ceramics and metal goods, and settlement positioning relative to navigable sections of the river support the interpretation of functional fluvial trade during specific historical phases. The river-based axis facilitated connectivity between steppe polities to the north and urban centres to the south, reinforcing the Corridor’s role as a longitudinal integrative system rather than merely a transversal route. ICOMOS notes that a focus on water management and irrigation systems is also a strong element of the Chang’an-Tianshan and the ZarafshanKarakum Corridors. The additional information provided by the States Parties is potentially interesting and could be further developed to strengthen the justification for this criterion. What needs to be better articulated in this case is the specificity of these aspects in the Fergana-Syrdarya Corridor, particularly the uses of the rivers, the water management systems, and the adaptations to changing water courses over time. These need to be more visibly described for the nominated property and better linked to the selection of the component parts. ICOMOS notes with concern that the States Parties identified the relevance of criterion (v) in relation to a portion of the overall nominated serial property. Only one component part was initially indicated as demonstrating irrigation (UZ-14 Sardoba (Agachli)). This was addressed in part in the additional information received in February 2026. Other component parts listed as contributing to this criterion include : the karez system of the Sauran Settlement (KZ-03), which represents the northernmost known application of this sophisticated underground irrigation technology; the Syganak Settlement (KZ-04) which demonstrates relocation of the settlement in response to the river’s migration; the Zhankent Settlement (KZ-06) which exemplifies the importance of irrigation networks; and the Zhetyasar Archaeological Landscape (component parts KZ-05 a-k) which illustrates adaptation to the changing hydrology of the delta. A nother six component parts were indicated as relevant to criterion (v) in the additional information provided in October 2025, all located in Kyrgyzstan. In the additional information of February 2026, the States Parties advised that further revisions would clarify the applicability of criterion (v) through the demonstration of complex irrigationbased urban systems in semi-arid riverine landscapes. Despite the presence of individually important sites, at this stage, the nomination presents more as a collection of individual examples than an interconnected series that demonstrate patterns of land use or settlement in an outstanding way. This poses a difficulty for applying this criterion to the nominated serial property as a whole and suggests the need to review and reconsider the selection of component parts and the way they are described. ICOMOS considers that the additional arguments provided for this criterion offer the potential for the revision of this nomination and the review of the selection of component parts. While the nominated Corridor could demonstrate distinctive forms of settlement and land use, at this stage, criterion (v) is too weakly justified on the basis of the selected component parts and evidence provided to be sustained. ICOMOS considers that this criterion is not demonstrated at this stage.",
+          "summary_zh": "ICOMOS认为标准 v 未得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the States Parties on the grounds that the nominated component parts are linked to numerous significant events associated with religion, living traditions and notable people, as well as exchanges in culture, science, technology and the arts. The nomination dossier highlights evidence for the spread of Zoroastrianism and Islam through extant fire temples, shrines, and sacred complexes, as well as the enduring continuity of traditions such as silk weaving which together provide material testimony to the role of the nominated Corridor in shaping spiritual and cultural practices of universal resonance. ICOMOS requested additional information about this justification, which was received in October 2025, including a table of how each component part contributes to this criterion. ICOMOS considers that the justification and evidence presented is fragmented at the level of the nominated series as a whole; and that there is a heavy reliance on the associations with notable people without direct and tangible links with their legacies. The spread of religions and the evidence in monuments, archaeological 131 remains, rituals and traditions are of potential interest but are better demonstrated in relation to criteria (ii) and (iii). ICOMOS considers that this criterion is not demonstrated. ICOMOS does not consider that any of the criteria have been justified at this stage due to issues with the justification for the proposed Outstanding Universal Value and the description and selection of component parts. At this stage, criteria (ii) and (ii i), and possibly also criterion (v), are considered to be the most promising bases for revision and further development of this nomination.",
+          "summary_zh": "ICOMOS认为标准 vi 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {},
+      "serial_selection": {
+        "source_en": "ICOMOS does not consider that any of the criteria have been justified at this stage due to issues with the justification for the proposed Outstanding Universal Value and the description and selection of component parts. ICOMOS considers that the additional arguments provided for criterion (v) offer the potential for the revision of this nomination and the review of the selection of component parts.",
+        "summary_zh": "ICOMOS认为现阶段拟议突出普遍价值论证以及组成部分描述和选择仍存在问题，系列组成部分需进一步修订和重审。",
+        "rating": "circle"
+      }
+    },
+    {
+      "property_id": "C1759",
+      "property_name_en": "The Cemetery Complexes of the Xiongnu Nobility",
+      "report_pages": [
+        142,
+        154
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "icomos_recommended_criteria": [
+        "iii"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property exhibits an important interchange of human values in the creation and construction of Xiongnu noble tombs that reflect influences from the funeral cultures of the Han Dynasty, the Nannang (Nangnang), and the Altai. The archaeological artefacts found in the burials, including lacquered cups and utensils created for the royal court of the Han Dynasty in China, embroidered textiles from Persia, stone and glass beads crafted in Central Asia, Greco-Roman silverware, and Roman glassware, show that the Xiongnu were directly involved in trade and cultural relations between the Eastern and Western worlds from the 3 rd century BCE to the 2nd century CE. ICOMOS considers that the tomb construction as well as the foreign artefacts that accompanied the dead indicate important external contacts of the Xiongnu. However, participation in information and trade networ ks is very common among cultures and cannot be considered an outstanding trait. The role the Xiongnu played in fostering trade along the Steppe Route of the Silk Roads is highlighted, connecting the Eastern and Western worlds, but the artefacts in the tombs only establish the participation of the Xiongnu in this trade; they do not define the role they played and the influence they had on other cultures. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that The Cemetery Complexes of the Xiongnu Nobility testify in an exceptional way to the extinct Xiongnu funerary culture. It provides insights into the burial 147 customs, rituals, established traditions and tomb construction of the nomadic Xiongnu nobles. Even though there exists already more than a century of research on these tombs, much about the Xiongnu funerary culture, with its burial customs and rituals, is still unknown or not well understood. Nevertheless, ICOMOS considers that the tombs with their deep burial chambers, satellite graves and sacrificial structures, as well as with their rich offerings, make the nominated serial property an exceptional testimony to the extinct Xiongnu funerary culture. ICOMOS considers that The Cemetery Complexes of the Xiongnu Nobility are an exceptional expression of, and the richest source of insight into, the functioning of this culture of the Central Asian Steppe. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property is the best extant example of a specific type of Central Asian funerary structure from the rd century BCE to the 2nd century CE. ICOMOS considers that the size and especially the depth (over twenty metres) of some of the tombs are proof of the technical and organisational capabilities of Xiongnu society. The use terraces and the dromoi made construction in sandy soils possible. However, the details and the evolution of the construction process require further study, and ICOMOS considers that the construction process remains not documented enough for the tombs to be considered an outstanding example of a typology of building or technological ensemble. Furthermore, no significant stage in human history that would be illustrated by the nominated property has been clearly defined. Finally, the description of the tomb construction as a cultural tradition justifies better criterion (iii). ICOMOS considers that this criterion is not demonstrated. ICOMOS considers that the Xiongnu nobility burials, which include rich grave offerings as well as satellite graves and sacrificial structures, include attributes that document the Xiongnu burial culture well. Many of the known graves have not yet been excavated and represent a significant opportunity for future investigation. The selection of component parts testifies to the extension of the Xiongnu funerary culture throughout the empire and to the economic power of the nomadic Xiongnu society. ICOMOS con siders that the nominated property meets criterion (iii), but that criterion (ii) and (iv) have not been demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iii": "The Cemetery Complexes of the Xiongnu Nobility testif y in an exceptional way to the extinct Xiongnu funerary culture. They provide insights into the burial customs, rituals, established traditions and tomb construction of the nomadic Xiongnu nobles. Even though there exists already more than a century of research on these tombs, much about the Xiongnu funerary culture, with its burial customs and rituals, is still unknown or not well understood. These tombs with their deep burial chambers, satellite graves and sacrificial structures, as well as with their rich offerings, make the serial property an exceptional testimony to the extinct Xiongnu funerary culture. The serial property is an exceptional expression of, and the richest source of insight into, the functioning of this culture of the Central Asian Steppe."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified and that the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1761",
+      "property_name_en": "Wat Phra Mahathat Woramahawihan, Nakhon Si Thammarat",
+      "report_pages": [
+        155,
+        166
+      ],
+      "proposed_criteria": [
+        "ii",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [
+        "ii",
+        "vi"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that Wat Phra Mahathat remarkably exhibits religious diversity, spiritual continuity and vital elements that capture the waves, art forms and essence of important religions such as Hinduism, Mahayana Buddhism and Theravada Buddhism, which have been transmitted across the south of maritime Asia for about 1,500 years. The architectural forms, Buddhist practices and living traditions of Wat Phra Mahathat also had a significant impact on other places in Thailand, Malaysia and beyond. ICOMOS considers that to justify this criterion, the fusion of the ideas or values should be deemed exceptional and influential over time or within a specific cultural area. While the Great Reliquary has demonstrated the exceptionality of the fusion of ideas, its lasting inf luence has not been adequately established. In the additional information of November 2025, the State Party provided examples of stupas constructed in the subsequent dynasties in other regions of Thailand, Myanmar and Malaysia that were influenced by the Great Reliquary. Based on the evidence provided by the State Party, ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 已得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that Wat Phra Mahathat is the spiritual centre of the region, with the living traditions of diverse belief systems as witnessed in daily practices, merit makings and annual ceremonies, including the annual clothwrapping ceremony for the Great Reliquary, the shamanistic Nora dance, ancestor worship, Brahminic rituals, rare artworks and local chronicles. These traditions vividly represent the 159 relationships between this sacred site and its surrounding communities and inspire other monasteries and communities in Thailand and beyond. ICOMOS considers that to justify this criterion, the associated traditions should be of outstanding universal significance. ICOMOS acknowledges the association of the numerous living traditions, and notes that the Nora dance and the chronicles are of outstanding universal significance. ICOMOS therefore considers that this criterion has been demonstrated. ICOMOS considers that, in addition to the attributes identified by the State Party, the overall layout of the monastery, the spatial arrangement of the religious buildings, and the views to and from the Great Reliquary are also attributes that convey the proposed Outstanding Universal Value. ICOMOS considers that the nominated property meets criteria (ii) and (vi).",
+          "summary_zh": "ICOMOS认为标准 vi 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "ii": "Wat Phra Mahathat is an exceptional testament to the interchange of human values. The Great Reliquary demonstrates the influence of Brahmanism, Hinduism and the Mahayana and Theravada schools of Buddhism, originating from Pala art in Nalanda, Central Javanese art, Sri Lankan art and Mon art from southern Myanmar. In turn, the combined architectural style of the Great Reliquary has exerted a profound influence on subsequent religious buildings in Thailand, Malaysia and beyond.",
+        "vi": "As the testimony to diverse belief systems and the spiritual centre of Nakhon Si Thammarat, Wat Phra Mahathat is the heart of living religious traditions with artistic and literary works of outstanding universal significance, such as the Nora dance drama and the local chronicles. These traditions vividly represent the relationships between this sacred site and its surrounding communities and inspired other monasteries and communities in Thailand and beyond."
+      },
+      "serial_selection": {}
+    },
+    {
+      "property_id": "C1766",
+      "property_name_en": "Tashkent Modernist Architecture. Modernity and Tradition in Central Asia",
+      "report_pages": [
+        167,
+        182
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iv"
+      ],
+      "icomos_recommended_criteria": [
+        "iv"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the Modernist architecture of Tashkent represents a significant interchange of human values in technology, planning, and design. The city acted as a crossroads where global modernist trends, such as prefabrication and curtain walls, were reinterpreted through the lens of local cultural, social, and environmental contexts. This exchange was facilitated by the movement of architects and engineers from across the USSR, particularly during post-earthquake reconstruction. The resulting “Tashkent model” created a regional variant of modernism that was later shared trans -nationally, influencing urban development and socialist international cooperation in other non-Western nations, particularly in Africa and nonaligned countries. ICOMOS considers that, whil st the urban and architectural reconstruction experiment in Tashkent may have influenced other cities and capitals across the Soviet republics, it is much less evident how, and to what extent, Tashkent could be seen as a model that directly influenced urban and architectural developments in nonaligned countries. Substantial further research would be needed to justify this criterion from this perspective. The fusion of modernist architectural language with local traditional motifs and craftsmanship is not specific to Tashkent; it can be found elsewhere in the USSR and in specific manifestations of modernism globally. Therefore, this interchange would not suffice to justify this criterion. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property is an outstanding example of a modernist urban landscape representing a significant stage in history: the era of post -war socialist modernisation. It illustrates a nonWestern model of development designed to demonstrate progress and equality outside of capitalist frameworks. The “ensembles” of the city integrate monumental public buildings, infrastructure, and green networks into a unified system that structured daily life according to socialist values. These structures represent the technological and ideological peak of lateSoviet architecture, particularly through advancements in seismic -resistant design and industrialised prefabrication within a regional context. ICOMOS considers that Tashkent Modernist Architecture outstandingly illustrates developments of architecture and urban planning during the post-Thaw period in a Soviet socialist society. The series of the nominated urban component parts 1, 3, 4, 5, 6, 7, 8, 9, and represents an outstanding ensemble of urban foci that, consciously combining modernist themes and aspirations with reinterpreted local motifs and building patterns, has contributed to shaping the modernist urban form of Tashkent. Tashkent Modernist Architecture is one of the finest examples of architectural and urban design, reflecting, in an exceptional and specific manner, the broader movement of “localised modernism ” spread across the Soviet realm, developed within the cultural and climatic environment of Central Asia. ICOMOS considers that this criterion is demonstrated. ICOMOS considers that, in addition to the attributes identified in the nomination dossier, urban, visual and functional links among the component parts are also essential in conveying the proposed Outstanding Universal Value and criteria. Landscaping and urban vegetation in the broader urban setting also contribute to understanding and appreciation of Central Asian urban and architectural modernism of Tashkent. ICOMOS considers it important to identify specific tangible attributes for each component part to ensure they are taken into account in management and conservation actions. In the October 2025 additional information, the State Party also provided a table that explicitly shows how each component part contributes to illustrating each attribute. ICOMOS considers that the nominated property meets criterion (iv) but that criterion (ii) has not been demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iv": "Tashkent Modernist Architecture. Modernity and Tradition in Central Asia outstandingly illustrates developments in architecture and urban planning during the post-Thaw period in a Soviet socialist society. Designed as prominent nodes within the city, the component parts, consciously combining modernist themes and aspirations with reinterpreted local motifs and building patterns, formed cohesive ensembles that shaped the form and identity of the city, integrated with the urban fabric, served as landmarks, and enhanced urban perspectives. The serial property exemplifies the combination of Soviet standardisation and site- specific designs. Monumental art further enriched its expression, blending abstract aesthetics with ideological themes of progress and cultural identity. The serial property is one of the finest examples of architectural and urban design, reflecting, in an exceptional and specific manner, the broader movement of “localised modernism” that spread across the Soviet realm, developed within the cultural and climatic environment of Central Asia."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified, but that the selection of component parts should be reduced to include only component parts 1, 3, 4, 5, 6, 7, 8, 9, and 10, and should exclude the Big Solar Furnace (component part 2).",
+        "summary_zh": "ICOMOS认为系列遗产申报方式可讨论，但组成部分选择需要缩减或调整。",
+        "rating": "circle"
+      }
+    },
+    {
+      "property_id": "C1752",
+      "property_name_en": "Aalto Works",
+      "report_pages": [
+        183,
+        197
+      ],
+      "proposed_criteria": [
+        "ii"
+      ],
+      "icomos_recommended_criteria": [
+        "ii"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property contributes in an exceptional way to the th-century modernisation of society by integrating a new international language and traditional national ideas in both architecture and design to meet the needs of individuals, families, communities and society, serving as a symbol of Finland’s independence while integrating scientific progress with a distinct human dimension. Aalto’s approach prioriti ses the sensory human experience through tactile materials (wood, brick, copper), unique forms, and thoughtful lighting. The designs deeply integrate locality, climate, and seasonal cycles, often dissolving boundaries between indoor and outdoor spaces to enhance well -being. Rooted in individual experience, this method combines art and technology to create functional, high-quality environments that foster citizenship, community and solidarity. The Aalto Works, as a manifestation of a collective design, stand out as a living legacy where innovative mass production meets traditional craftsmanship, establishing an enduring tradition of empathetic and sustainable architecture. To justify this criterion, the tangible attributes of a nominated property must demonstrate that ideas or values about developments in architecture, technology, monumental ar ts, town -planning or landscape design were exported or imported and transformed exceptionally, or that they reflect a local fusion of ideas/values that could be deemed exceptional and influential over time or within a specific cultural area. ICOMOS considers that the nominated serial property comprises representative modern buildings, ensembles, and sites that significantly influenced the formation and development of modernism, and which continue to impact contemporary architecture worldwide. Through an organic functionalist approach, the Aalto Works adapted global Modern Movement ideas to local contexts, seamlessly integrating exteriors with interiors and harmoni sing with their settings. This architecture offers an outstanding response to universal societal needs, prioriti sing citizen well-being throughout the moderni sation process. Bringing together modern concepts and building traditions, this collective design approach represents outstanding responses to various universal societal needs of individuals and communities, through the introduction of a new language of form, materials, and production methods, executed with exceptional sensitivity, simplicity, and integrity. ICOMOS considers that this criterion is demonstrated. 189 ICOMOS considers that the nominated property meets criterion (ii).",
+          "summary_zh": "ICOMOS认为标准 ii 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "ii": "Through an organic functionalist approach, the Aalto Works adapted global Modern Movement ideas to local contexts, seamlessly integrating exteriors with interiors and harmonising with their settings. This architecture offers an outstanding response to universal societal needs, prioritising citizen well-being throughout the modernisation process. By bridging modern concepts with building traditions, the collective design approach introduced a new language of form, materiality, and production methods , executed with exceptional sensitivity, simplicity, and integrity."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified and that the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1581",
+      "property_name_en": "Beaches of the D-Day Landings, Normandy, 1944",
+      "report_pages": [
+        198,
+        213
+      ],
+      "proposed_criteria": [
+        "iv",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [
+        "iv",
+        "vi"
+      ],
+      "criteria": [
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property offers an outstanding example of the confrontation between two systems, a defensive one represented by the Atlantic Wall, and an offensive one through the maritime assault prepared by the Allies; a confrontation whose scale and intensity are exceptional in history. The landscape of the DDay Landing Beaches also illustrates, through preserved vestiges, military cemeteries, and commemorative monuments, the immediate desire to convey the historical significance of this event. ICOMOS considers that the proposed justification for this criterion raises two fundamental issues. The first concerns the insufficient number of tangible and immovable attributes. The proposed attributes included within the nominated property that reflect the defensive system are very limited in comparison with those that remain along the Normandy coast. Elements reflecting the offensive system are mostly mobile and were not intended to be permanent. Furthermore, they are not subject to conservation measures. Natural elements have also undergone significant changes in certain areas of the nominated property due to ongoing processes, such as erosion and debris accumulation. The exceptional scale and intensity of the confrontation would not necessarily suggest Outstanding Universal Value. The second issue is linked to the fact the proposed justification for this criterion is more associative than typological, which does not align with the definition underpinning the narrative for this criterion. Consequently, the justification put forward by the State Party fails to demonstrate that the nominated property offers “an outstanding example of a type of building, architectural or technological ensemble or landscape”. 203 These concerns were raised in the ICOMOS interim report. In the additional information of February 2026, the State Party decided to withdrew this criterion, to focus only on the associative and memorial dimensions of the nominated property.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property stands as a symbol of immense hope and progress towards freedom. Long awaited by those oppressed under the Nazi yoke across Europe, the D-Day Landings marked a turning point in this struggle; they illustrate how a collective alliance of nations committed to these values established a lasting peace, whose universal significance remains embedded in this landscape. ICOMOS considers that this memorial construct raises significant questions. Firstly, ICOMOS considers that messages of peace cannot constitute the primary argument to justify a potential Outstanding Universal Value, insofar as the aspiration for peace or freedom cannot be measured or compared with that of other sites. While these messages and values are facets of many sites of memory associated with recent conflicts, it is nonetheless impossible to compare them to determine which messages of peace or freedom possess outstanding universal significance and which do not. ICOMOS considers that these messages and values pertain more to the process of reconciliation than to the proposed Outstanding Universal Value. Furthermore, the justification for criterion (vi) must “be directly or tangibly associated with events or living traditions, with ideas, or with beliefs, with artistic and literary works ” expressing outstanding universal significance, which must therefore be established. In this regard, ICOMOS finds it difficult to assess the exceptionality of the D-Day Landings in isolation without situating this event within a broader global context. The Second World War was an event of outstanding universal significance, and Operation Neptune took place within this complex context, as evidenced by the multiplicity of theatres of operation in various countries worldwide, some of which were also decisive for the outcome of this global conflict. However, the nomination dossier appears to establish an implicit equivalence among the liberation of France following the Normandy Landings, that of Europe, and the end of the war itself. This reasoning obscures other operations of crucial importance. For example, the liberation of Berlin by the Red Army occurred almost a year later, in May 1945, as well as the battles on nonEuropean fronts, such as the defeat of Japan in August 1945. While t he Normandy Landings were undoubtedly a decisive turning point in the Second World War, they were nevertheless part of a series of interconnected operations resulting from cooperation between the Allies across several theatres of operation. Recognising this complexity and the plurality of historical experiences within the justification for criterion (vi) appears essential to justify this criterion while valuing the symbolic dimension of the nominated property. Finally, ICOMOS notes that the nomination dossier does not provide an in-depth reflection on the evolution of postwar commemoration and the changes it has undergone over the decades. The challenge also lies in recognising the diversity of memories, thereby avoiding the limits of universalisation, which would in reality amount to applying one reading of the Second World War. On the basis of these complexities ICOMOS requested in its interim report whether a revision to the proposed justification for this criterion could be envisaged. In the additional information of February 2026, the State Party provided further details on the context of the D-Day Landings associated with the nominated property, and complementary reflections on memorialisation, alongside a revised justification focused solely on criterion (vi). ICOMOS considers that this additional information contributes to provide a better contextualised explanation of the memorialisation process, recognising its complexities and multi vocality. However, the proposed revised justification for criterion (vi) shifts away from the association with the historical event itself and its memorialisation, extending well beyond these aspects to assign political meaning and associations to it. The revised justification presents the nominated property as associated not only with the Normandy D -Day Landings but also, by extension, with the foundation of the United Nations. ICOMOS considers that the proposed Outstanding Universal Value of the nominated property cannot be focused only on abstract notions, such as hope, associated with the D -Day Landings. It further considers that the proposed revised justification for criterion (vi) makes an unwarranted leap in attempting to establish a direct and tangible association between the nominated property, the foundation of the United Nations and the resulting post-war international order, as such links are not credibly expressed through its attributes. Conversely, ICOMOS recognises that, having largely retained their appearance from the Second World War, the Normandy Beaches constitute a natural memorial capable of evoking powerful memories of the D -Day Landings. As part of a sequence of pivotal operations across multiple theatres in Eastern and Southern Europe, North Africa, and the AsiaPacific region, reflecting unprecedented multinational cooperation and deployment of resources, the DDay Landings marked the start of a long and costly campaign to liberate northwestern Europe from the yoke of the Third Reich and ultimately contributed to the end of the war in Europe. 204 ICOMOS considers that this criterion is demonstrated based on the abovementioned revised justification. ICOMOS concurs with the attributes identified by the State Party but also considers that some geographical and landscape features, along with surviving defensive and offensive remains across the wider coastal stretch and buffer zone, further reinforce the memorial associations of the nominated property. ICOMOS considers that the nominated property meets criterion (vi) based on the revised justification proposed in this evaluation text. Criterion (iv) was withdrawn by the State Party in February 2026.",
+          "summary_zh": "ICOMOS认为标准 vi 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "vi": "The Beaches of the D -Day Landings , Normandy, 1944 are a site of memory directly and materially associated with the event known as the “Normandy Landings”, which took place in 1944 during the Second World War . Operation Neptune, launched on 6 June 1944 on the Normandy coast, was the first phase of Operation Overlord, designed to open a new front in Western Europe against the troops of the Third Reich, one of the decisive moments in the Second World War, which marked the beginning of the end of the war in Western Europe. The Beaches of the D -Day Landings outstandingly and tangibly embody, symbolically commemorate and evoke memories of the concerted, multinational collaboration and coordination of logistical and military efforts, and the immense human sacrifice required to break an entrenched authoritarian occupation in Europe in the mid- 20 th century and paved the way for reconstruction, reconciliation, and a renewed commitment to collective security. I ntegrity The serial property includes all the component parts necessary to express its Outstanding Universal Value, particularly its associative value. The series incorporates the beaches themselves, as landing and amphibious assault sites on 6 June 1944; remains of the logistical facilities used for the offensive; remains of the defensive system or “Atlantic Wall” that the Allies faced; traces left by the confrontation in the landscape, deliberately preserved; commemorative sites; memorial monuments; and finally, a military cemetery that provides a representation of other military cemeteries. The individual integrity of each component part varies, but all nevertheless present a sufficient set of attributes to fully express the associative value of the serial property. The landscape integrity of the serial property, although vulnerable, can be described as satisfactory as it is adequately preserved despite pressures, including urban and tourism development on some component parts. Threats related to the natural evolution of the coastline and from facilities supporting the transition to renewable energy should also be closely monitored."
+      },
+      "serial_selection": {}
+    },
+    {
+      "property_id": "C1755",
+      "property_name_en": "The System of Fortresses of the Seneschalty of Carcassonne (13th-14th centuries)",
+      "report_pages": [
+        214,
+        227
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iv"
+      ],
+      "icomos_recommended_criteria": [
+        "iv"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property represents an exceptional milestone in the process of diffusion of Capetian military architecture in the 13 th-14th centuries, from Western Europe towards the Baltic and the Danube River regions, as well as the Mediterranean Middle East. The ensemble of fortifications, characterised by architectural cohesion and skilful adaptation of technical solutions to the landscape setting, represents an architectural model, which spread beyond the borders of the seneschalty. Its territorial organisation influenced the geopolitical developments in the wider region. ICOMOS considers that the system of fortifications can be seen as an outcome of the diffusion of the Capetian military architecture model, transplanted from northern France plains and adapted to the mountainous landscape of south-west France. However, this transfer of technical and architectural knowledge (adaptation) cannot be seen as an important interchange of human values, as it did not involve any idea or concept imported from another culture. ICOMOS also considers that the nominated serial property cannot be seen itself as a milestone in terms of wider diffusion of the Capetian military architecture to other areas. The nominated fortifications may have been part of an indirect process of cultural diffusion but there is no evidence of their direct influence elsewhere, as confirmed by the State Party through the additional information of October 2025. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property is an exceptional ly homogenous and well -preserved example of a centrally commanded territorial and border military system, which marked the rapid expansion of the kingdom of France towards the Mediterranean world and the Iberian kingdoms. Illustrative of the strengthening and considerable expansion of Capetian power, it is emblematic of the movement towards assertion of sovereign powers that marked th-century Europe. ICOMOS considers that the nominated serial property forms a defensive ensemble with shared architectural language and military functions. The only coherent fortified syst em built by the Capetian kings, it is an exceptional example of the highly standardised Capetian architecture, which historically was part of the rise of the Capetian Crown and its way to control and secure the territory it dominated. It marked a pivotal historic moment in medieval Europe, namely the political shift from feudal fragmentation to the emergence of strong centralised monarchies. The spatial organisation of the nominated fortresses reveals a unified political purpose and a centrally conceived defensive strategy, while their material fabric and architectural language display the vocabulary of Capetian military design carefully adapted to diverse and often demanding topographies. ICOMOS further considers that while the nominated fortresses were scenes of key historical events related to the conquest of Languedoc, they cannot translate to a full representation of this process. ICOMOS considers that this criterion is demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iv": "A centrally commanded territorial defensive ensemble with shared architectural language and military functions, The System of Fortresses of the Seneschalty of Carcassonne is an exceptional example of the highly standardised Capetian military architecture carefully adapted to the difficult topography of the territory in which it was implanted. As the only coherent fortification system built by the Capetian kings, it testifies to the strengthening and considerable expansion of the Capetian dynasty power in France in the th-14th centuries, marking the political shift from feudal fragmentation to the emergence of a strong centralised monarchy."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the nominated serial property meets criterion (iv), in relation to a narrative focused on the architectural aspects of the nominated property. In this case, ICOMOS considers that the serial approach is justified, and that the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    },
+    {
+      "property_id": "C1762",
+      "property_name_en": "The system of Italian-style condominio theatres of the 18th and 19th centuries in Central Italy",
+      "report_pages": [
+        228,
+        241
+      ],
+      "proposed_criteria": [
+        "iii",
+        "iv"
+      ],
+      "icomos_recommended_criteria": [
+        "iii"
+      ],
+      "criteria": [
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property bears an exceptional testimony to the living cultural tradition of Italian-style condominio theatres. These theatres represent a fundamental transition, moving from the private domain of the aristocracy and religious institutions to civic institutions accessible to a large paying audience. Their unique financing model, the società condominiale or società di palchettisti (box owners’ society), brought together public bodies and private citizens, particularly from the emerging bourgeoisie, in the construction and management of these spaces. The very architecture of these 18 th and 19th century Italian-style theatres, with their private boxes, stalls and galleries, was deliberately designed to reflect and display the social stratification of the time, embodying the principle of “see and be seen”. Besides from being simple performance venues, these theatres operated as multifunctional and autonomous social and cultural centres, veritable indoor public squares with foyers and ridotti. The longevity and continued use of these theatres, which continue to host a wide variety of cultural events today, confirm their status as a living tradition and as pillars of local civic life. ICOMOS considers that the development of condominio Italian-style theatres in the centres of small and mediumsized towns in Italy bears witness to a phenomenon that saw widespread expansion in the 19 th century in Italy and Europe, followed by Latin America. These theatres, which first appeared in Italian provincial cities from the late 18 th century, were one of the few places where groups of representatives of the emerging bourgeoisie could gather, and where public opinion was formed. These theatres, financed via società condominiali involving public bodies and private individuals in the construction and management of these spaces, embody the transition from the private domain of the aristocracy and religious institutions to civic institutions accessible to a wide audience. With a rare density of still-preserved theatres, the regions of Emilia-Romagna, Marche and Umbria, which form part of the former Papal States, have fostered the development of innovative solutions for theatres, particularly for the distribution of tiered boxes around the stalls, reflectin g the participation of different social classes, seated according to their means, and testifying to the new social hierarchy. ICOMOS considers that this criterion is demonstrated on the basis of a reduced nominated series comprising the following component parts: 02, 03, 04, 05, 06, 07, 09, 12, 16, 17.",
+          "summary_zh": "ICOMOS认为标准 iii 已得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the Italian-style theatres, built in the th and th centuries in Central Italy, constitute a representative group of condominio-type theatres. Central Italy made a vital contribution to the development of the auditorium with tiered rows of boxes, an architectural model that enjoyed lasting success in Europe and beyond. The value of the nominated property lies in its ability to illustrate the evolution of the Italian-style theatre through a range of architectural, acoustic and stage design solutions. The main aspects of this evolution are the transformation of the floor plan/shape, the design of ceilings and other acoustic features, the stage machinery and the layout of the forestage. The theatres of the nominated serial property are still operating. Concentrated in the territory of the former Papal Legations, they have managed, despite periods of interruption to their operation, to preserve the features of their construction and their link with the social and urban fabric. In its interim report, ICOMOS sought clarification concerning the shapes and layout of the auditorium in the Italian-style theatres, and how these reflected the specific nature of condominio theatres. The additional information of February 2026 specifies that the condominio system, which is based on collective ownership and shared financing, enabled these structures to become the centre of local public life, and fa cilitated the historical transition from aristocratic patronage to bourgeoisie entrepreneurship, which made it an exportable model across the world. The spatial configuration of the tieredbox auditoriums reflects a desire to balance participatory decision-making and the requirements for visibility and prestige. The architecture of these theatres materialises a system of collective governance that ensured their sustainability and cultural success within their communities. Whilst ICOMOS acknowledges that the condominio Italian-style theatres built in the th and 19th centuries in Central Italy are part of a significant period in Italian history (the emergence of the bourgeoisie and the Unification of Italy), ICOMOS also considers that t heir specific contribution to the dissemination and expansion of what was known as the “ Italian style” throughout Europe and Latin America has not been demonstrated. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iii": "The system of Italian- style condominio theatres of the 18th and 19th centuries in Central Italy bears witness to the rapid development in town centres of a phenomenon that saw widespread expansion in the th century in Italy and Europe, followed by Latin America. These theatres, which first appeared in the provinces of Emilia-Romagna, Marche and Umbria from around the mid-18 th century on, were one of the few places where groups of representatives of the emerging bourgeoisie, patrons of the theatres, could gather, and where public opinion was formed. These theatres, financed via the società condominiali involving public bodies and private citizens in the construction and management of these spaces, embody the transition from an exclusive private domain to civic institutions accessible to a wide audience. The condominio theatres of the regions of Emilia- Romagna, Marche and Umbria, part of the former Papal States, enabled the development of innovative solutions for theatres, reflecting the participation of different social classes and testifying to the new social hierarchy. The longevity of these theatres, which continue to host a wide variety of cultural events today, bears witness to how deeply they are embedded in local community life."
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the nominated serial property meets criterion (iii), on the basis of a reduced series comprising component parts 02, 03, 04, 05, 06, 07, 09, 12, 16, 17.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式可讨论，但组成部分选择需要缩减或调整。",
+        "rating": "circle"
+      }
+    },
+    {
+      "property_id": "C1753",
+      "property_name_en": "Bulwarked Fortresses of the Raia",
+      "report_pages": [
+        242,
+        253
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iv",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property represents a modern defence system centred around innovative military architecture, hybrid urban planning and advanced artillery expertise, creating a model of territorial defence that influenced European military practice. ICOMOS considers that for this criterion to be justified, the nominated series must provide material evidence of military exchanges of knowledge, techniques and models in military architecture, demonstrating the role of the Raia in broader European developments. 247 ICOMOS considers that the fortifications of the Raia could be further considered as part of a wider European exchange of military ideas, linked to the circulation and development of bastioned fortification from the Renaissance through the 16 th and 17 th centuries. This interpretation requires the frontier system to be considered as a whole, including fortifications on both sides of the PortugueseSpanish border, which were developed in a shared strategic context and in direct response to one another. At this stage, t he nomination lacks concrete documentation of transnational exchanges or adoption of Raia solutions elsewhere, and the comparative analysis with other European and global fortifications is insufficient to demonstrate an important interchange. Moreover, the nominated series does not convincingly demonstrate how innovations developed over time within the Raia were disseminated or influenced military practice beyond the Iberian Peninsula. Justification of this criterion will require a more comprehensive approach, including the chronology of construction, understanding of the movement of military engineers, technological transfers and local adaptations, and deepened comparison with European frontier systems, as well as how and to what extent these interchanges are reflected in relevant fortresses and were important for the development of military architecture. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property represents significant examples of 17th and 18th century bulwarked constructions combining advanced design, scientific innovation and coordinated strategy to form an effective defence system, contributing to technical and practical developments of European military architecture and technology. ICOMOS considers that, while the component parts represent notable examples of bulwarked fortifications from this period, their outstanding character cannot be fully demonstrated. The limited selection of only three fortresses from a larger system of 143 fortifications does not adequately reflect the full range of typologies, design innovations, and strategic approaches characteristic of the Raia. Furthermore, the nomination dossier lacks sufficient comparative analysis with other contemporary European or global fortifications to establish the outstanding significance of the nominated property. As a result, there is no clear evidence that the nominated component parts, taken together, illustrate a stage of human history at an outstanding level. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 未得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated property represents a heritage of urban planning integrating military and civilian functions with associated intangible cultural practices, reflecting the role of national identity in shaping the frontier, and forming part of the process that marked the independence of Portugal within the Iberian context. Criterion (vi) requires that a property be directly or tangibly associated with events, living traditions, ideas, beliefs, or artistic and literary works of o utstanding universal significance. In this case, the State Party links the nominated property to the historical process of Portuguese independence and to the development of a frontier system integrating military and civilian functions. While these references relate to historically important developments in the Iberian context, ICOMOS considers that the nomination dossier does not sufficiently demonstrate that the associated events or ideas possess outstanding universal significance. Furthermore, the nature of the association between these processes and the specific component parts included in the nomination remains insufficiently defined, and the attributes expressing this link are not clearly identified. The comparative analysis also does not demonstrate that this association is outstanding in relation to other fortified border systems. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 vi 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {},
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach has not been justified at this stage. ICOMOS considers that, at this stage, none of the criteria have been demonstrated and that the serial approach is not justified.",
+        "summary_zh": "ICOMOS认为当前系列遗产申报方式或组成部分选择尚未得到证明。",
+        "rating": "cross"
+      }
+    },
+    {
+      "property_id": "C1639",
+      "property_name_en": "Ribeira Sacra Waterscape",
+      "report_pages": [
+        254,
+        263
+      ],
+      "proposed_criteria": [
+        "v"
+      ],
+      "icomos_recommended_criteria": [],
+      "criteria": [
+        {
+          "criterion": "v",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that Ribeira Sacra is an exceptional testimony to a living cultural waterscape that evolved over 1,500 years, with a large number of water works and evidence of cultural knowledge about water management. The State Party considers that the complex settlement patterns of the nominated property demonstrate adapt ation to difficult environmental conditions, including agricultural practices on rugged terrain using socalcos (terraces). The State Party also considers that the different hydraulic technologies for generating energy are significant, including traditional water mills and the 19 th and 20 thcentury hydroelectricity dams and power stations found within the nominated property. T he State Party also considers the interdependence between culture and nature to be central to the proposed Outstanding Universal Value and point s to the intangible cultural heritage traditions of the waterscape. ICOMOS notes the long history of interaction between people and nature in this area, its scenic qualities, and the ways in which the remote and steep terrain and watercourses have been adapted to support human settlements and lifeways. A very wide variety of landscape elements representing multiple historical timeframes have been used to argue for the proposed Outstanding Universal Value. However, ICOMOS does not consider that Ribeira Sacra has been established as an “outstanding example” of a traditional settlement and/or land use. While interesting imprints of relict historical periods are readable in the landscape and continue to be used (such as the pattern of microplots and terracing), the integration and inter -relationships of these with the many other proposed attributes have not been demonstrated. Despite the efforts of the State Party to clarify the basis of the proposed Outstanding Universal Value, ICOMOS considers that this has not portrayed a coherent pattern of settlement/land use that could be considered to be outstanding. ICOMOS considers that this criterion is not demonstrated. 258 ICOMOS considers that criterion (v) has not been demonstrated.",
+          "summary_zh": "ICOMOS认为标准 v 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {},
+      "serial_selection": {}
+    },
+    {
+      "property_id": "C1754",
+      "property_name_en": "Zerzevan Castle and Mithraeum",
+      "report_pages": [
+        264,
+        274
+      ],
+      "proposed_criteria": [
+        "iii",
+        "iv",
+        "vi"
+      ],
+      "icomos_recommended_criteria": [],
+      "criteria": [
+        {
+          "criterion": "iii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "267 This criterion is justified by the State Party on the grounds that the nominated property testifies to the cultural traditions of Roman and Eastern Roman military life, including garrison organisation, water management, religious practices associated with Christianity and the Mithraic cult, and the long-term occupation of a strategic ridge in Southeastern Anatolia. The State Party further presents the fortified complex as an exceptional testimony to a cultural tradition that brings together military and religious practices, stressing that the castrum included not only military and residential structures but also religious buildings, and that an underground rock -cut space provides evidence of Mithraic beliefs and rituals within this military setting. The ensemble of fortifications, internal buildings, hydraulic installations, necropolises and underground rock-cut spaces is presented as reflecting these traditions in a tangible form. ICOMOS considers that, on the basis of the information provided, the testimony of the nominated property to these cultural traditions has not been sufficientl y substantiated in terms of its distinctiveness and evidentiary basis when compared with other known sites of similar type. In particular, the nomination dossier does not clearly demonstrate the distinctiveness of this testimony, nor does it adequately establish its evidentiary basis in comparison with other known sites associated with Roman and Eastern Roman military and settlement systems. ICOMOS further notes that the attributes cited in support of this criterion, namely fortifications, internal buildings, hydraulic installations, necropolises and underground rock-cut spaces, are characteristic elements of Roman and Eastern Roman military and settlement sites more broadly. While their presence at the nominated property is acknowledged, the nomination dossier does not provide sufficient evidence to demonstrate that their configuration, state of preservation or documented use conveys a testimony that is unique or exceptional when assessed against other sites of the same cultural and functional categories considered in the comparative analysis. In particular, the evidentiary link between the physical remains and the specific cultural traditions invoked under this criterion is not demonstrated as being a unique or exceptional testimony in a comparative context. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iii 未得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the fortified complex, with its defensive circuit, internal architectural layout, hydraulic system, necropolises and associated landscape features, constitutes an example of a Roman and Eastern Roman military camp, a castrum, and its supporting systems, illustrating a significant stage in the history of frontier defence and settlement in the region. In this regard, the State Party emphasises the ridgetop setting of the settlement, the organic layout shaped by topography, the 1.2-kilometre-long fortification wall with bastions and towers, the arrangement of barracks and circulation routes, the administrative complex near the main gate, the Grand Church and underground church, and the extensive hydraulic system including numerous cisterns and a main water channel, as together demonstrating the architectural planning and support systems of a Roman and Eastern Roman garrison. ICOMOS considers that the justification for this criterion depends on a clear demonstration of how the fortifications, internal structures, hydraulic installations and associated features collectively represent, in an outstanding and coherent manner, a specific architectural or technological type illustrating a significant stage in human history. On the basis of the information provided, including the current state of excavation and documentation, this has not been adequately demonstrated, as the nomination dossier does not sufficiently establish the degree to which the architectural layout, construction techniques and technological systems presented exceed, or are meaningfully distinguished from, the ones characteristic of comparable Roman and Eastern Roman military ensembles. In particular, the functional elements cited are not shown to form an integrated and representative ensemble that can be clearly identified as outstanding within the broader typological and regional context. ICOMOS further notes that a full understanding of the architectural and technological ensemble remains constrained by the partial exposure of the built fabric and the uneven level of documentation across different attributes of the nominated property. As a result, the relationship between the fortifications, internal structures, hydraulic installations and associated features is not sufficiently demonstrated to support their interpretation as a clearly defined and exemplary type of an Eastern Roman garrison. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 iv 未得到证明。"
+        },
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the underground rock -cut space referred to as a Mithraeum is directly associated with the Mithraic cult and, together with other religious structures at the site, reflects beliefs and rituals of particular significance in the context of the Roman eastern frontier. ICOMOS notes that the identification of this underground space as a Mithraeum, and the strength of its association with the Mithraic cult, are central to the proposed justification under this criterion. In November 2025, the State Party provided further explanations of how Mithraism is evidenced and 268 documented at Zerzevan, describing the underground space as having features presented as typical of Mithraea (including a rectangular plan arranged for seating, niches on the eastern wall including a principal niche presented as being associated with the tauroctony scene, a central altar base, and water-related features presented as being linked to purification rites), and situating this interpretation within a regional comparative context along the Roman eastern frontier. ICOMOS notes, however, that the chronological interpretation advanced in relation to the closure and filling-in of this space remains methodologically uncertain, since the reported discovery of a coin within the fill provides, in stratigraphic terms, a terminus post quem for the deposit rather than conclusive evidence for the date of closure of the chamber itself. In its interim report, ICOMOS further noted that the current interpretation of the underground space relies primarily on functional attribution, while the documentation provided does not conclusively establish the presence of diagnostic elements or contextual evidence necessary to support a direct and tangible association with Mithraic beliefs and ritual practices. In the absence of such evidence, the proposed association remains interpretative rather than demonstrative. In this regard, ICOMOS considers that the architectural configuration of the chamber, as currently exposed, does not exhibit the spatial organisation that is characteristically associated with confirmed Mithraic sanctuaries, and that key typological indicators (including flanking benches, axially positioned cult niches, structured entrance sequences, or tauroctony relief panels) are not presently evidenced. ICOMOS also notes that the excavation information cited by the State Party during the nomination evaluation process indicates that the fill of the chamber was described as mixed and without stratified archaeological findings, which further limits the extent to which the sequence of use, closure and later reuse of the space can presently be established with confidence. ICOMOS further observes that certain carved features cited in the nomination dossier require reconsideration, including a “ray crown” motif above the entrance which, through stylistic analysis, could be identified as a Byzantine cross dating to the 6 th to 8th centuries CE, and that inscriptions previously described as “undecipherable” could be recognised as Syriac and Arabic, indicating a possible medieval activity rather than evidence of Late Antique Mithraic practice. ICOMOS further notes that the inscription may be composite and diachronic rather than a homogeneous text of a single period, reinforcing the need for further specialist epigraphic assessment before firm chronological conclusions are drawn from it. ICOMOS also notes that some features interpreted as ritual fixtures could be interpreted differently as constructional or lighting-related, and that the absence of stratified deposits or securely associated artefacts limits the capacity to establish a specific ritual attribution or chronology for primary use. In February 2026, the State Party reiterated the arguments presented in the nomination dossier supporting its interpretation of the underground rock -cut chamber as a Mithraeum, with an additional provisional decipherment of the debated inscriptions at the entrance of the chamber. Nonetheless, ICOMOS considers that the evidentiary basis for this identification as a Mithraeum, as presented in the nomination dossier and the additional information submitted by the State Party in October 2025 and February 2026, is not sufficiently demonstrated, particularly in relation to architectural form, associated features and material culture. ICOMOS considers that this criterion is not demonstrated. ICOMOS considers that since the criteria for justifying the potential Outstanding Universal Value have not been demonstrated, respective supporting attributes cannot be confirmed.",
+          "summary_zh": "ICOMOS认为标准 vi 未得到证明。"
+        }
+      ],
+      "recommendation_criteria": {},
+      "serial_selection": {}
+    },
+    {
+      "property_id": "C1239bis",
+      "property_name_en": "Berlin Modernism Housing Estates [Extension to include Waldsiedlung Zehlendorf]",
+      "report_pages": [
+        275,
+        284
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iv"
+      ],
+      "icomos_recommended_criteria": [
+        "ii",
+        "iv"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the six Berlin housing estates already inscribed on the World Heritage List, together with the nominated extension, testify to a broad housing reform movement that made a decisive contribution to improving housing and living conditions in Berlin. Their quality of urban, architectural and garden design, as well as the housing standards developed during this period, served as guidelines for social housing constructed since then, both in and outside Germany. The nominated extension, being one of the most representative estates of the comprehensive Berlin housing reform, enhances the justification of this criterion through its innovative urban planning solution which integrates the estate into a heavily wooded suburban landscape, and through the combination of architecture, modern design, landscaping and the contemporary transport ation infrastructure. ICOMOS considers that the nominated extension contributes to expanding and amplifying the justification of this criterion.",
+          "summary_zh": "ICOMOS认为标准 ii 已得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the six Berlin housing estates already inscribed on the World Heritage List, together with the nominated extension, exemplify new urban and architectural typologies, designed in the search for improved social living conditions. Fresh design solutions, as well as technical and aesthetic innovations, were incorporated by the leading modernist architects who contributed to their construction. T he nominated extension complements the World Heritage series by providing an outstanding example of a mixed urban typology of garden cities combined with large housing estates through the integration of the surrounding natural environment into the urban plan. The technical innovations such as the prefabricated building elements, standardised house types, aesthetic innovations of modern and extensive colourful design solutions, and the infrastructural concept of the underground station combining the transport infrastructure with a social and cultural centre, contribute to the development of the serial typological urban and architectural ensemble of the Berlin Modernism Housing Estates and its significance in the context of early 20 th-century modernist architecture. ICOMOS considers that the nominated extension contributes to expanding and amplifying the justification of this criterion. ICOMOS concurs with the identified attributes proposed by the State Party for the nominated extension, and considers that they complement those of the World Heritage series. ICOMOS considers that the nominated extension of Waldsiedlung Zehlendorf meets criteria (ii) and (iv), and contributes to expanding and amplifying the alreadyapproved justification of these criteria.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "ii": "The seven Berlin housing estates provide an outstanding expression of a broad housing reform movement that made a decisive contribution to improving housing and living conditions in Berlin. Their quality of urban, architectural and garden design, as well as the housing standards developed during the period, served as guidelines for social housing constructed since then, both in and outside Germany.",
+        "iv": "The seven Berlin housing estates are exceptional examples of new urban and architectural typologies, designed in the search for improved social living conditions. Fresh design solutions and technical and aesthetic innovations were incorporated by the leading modernist architects who participated in their design and construction."
+      },
+      "serial_selection": {}
+    },
+    {
+      "property_id": "C1774",
+      "property_name_en": "Amazonia Theaters",
+      "report_pages": [
+        285,
+        298
+      ],
+      "proposed_criteria": [
+        "ii",
+        "iv"
+      ],
+      "icomos_recommended_criteria": [
+        "iv"
+      ],
+      "criteria": [
+        {
+          "criterion": "ii",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": false,
+          "judgement": "rejected",
+          "source_en": "This criterion is justified by the State Party on the grounds that the nominated serial property bears witness to the fusion between European artistic and technological influences in the late 19 th century and the cultural and territorial characteristics of the Amazonian landscape. This synthesis is embodied in the design, form and materials of the buildings and their adjoining public spaces. The theatres served as catalysts for a dynamic exchange between international performances and regional artistic traditions. ICOMOS considers that both component parts of the nominated serial property, built in the late 19 th century, have a chronological link with the rubber boom in the Amazon (1879-1912). ICOMOS notes that despite the additional information of October 2025, highlighting a similar geographical situation, the use of local materials in their construction and their integration into international musical theatre circuits, the notion of an exchange of influences has not been justified. In effect, the existence of one or more places where ideas, technologies and artistic practices intersected and led to innovative and unprecedented forms is not demonstrated here. Artists were commissioned by the authorities of Belém or Manaus to produce monumental works of art; artworks produced in Europe were commissioned by both cities; urban planning and landscaping projects were undertaken for the creation of the city of Manaus and the expansion of Belém, in the spirit of Haussmann’s Paris; and a European workforce was recruited and worked alongside Brazilian artists and artisans to create painted and sculpted works evocative of the vegetation and landscape of the Amazon. However, ICOMOS considers that these imports of art objects, concepts and know -how demonstrate an essentially one-way adoption and reflect a reference to a European lifestyle and culture, to the \"Belle Époque\", rather than a substantial exchange of influences. ICOMOS considers that this criterion is not demonstrated.",
+          "summary_zh": "ICOMOS认为标准 ii 未得到证明。"
+        },
+        {
+          "criterion": "iv",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on the grounds that the exceptional nature of the nominated theatres, as examples of architecture and urban planning, illustrates the profound social, economic and cultural transformations that followed the Industrial Revolution. This achievement can be seen in their architectural eclecticism, which combines industrial materials, such as iron structures, with local resources, such as stone and Amazonian woods. ICOMOS considers that the construction of a theatre and the development of a public space within a ci ty are common phenomena that are not exceptional in themselves, nor is the creation of cultural and leisure facilities in city centres, associated with their expansion. The construction of Italian-style theatres in the th century was a phenomenon that occurred throughout Europe and the Americas, particularly Latin America. The financing of these cultural facilities was then facilitated by the growing wealth of countries participating in the Industrial Revolution, the resulting national cultural policies and the rise of the bourgeoisie, who sought to display their prosperity through these prestigious projects. The nominated serial property participates in this general trend, without exhibiting any exceptional or prototypical characteristics. However, ICOMOS considers that the Teatro Amazonas (component part 002) and the Largo de São Sebastião represent the culmination of the construction of a modern capital in the heart of the Amazon rainforest. The city was built thanks to the rubber boom, a global phenom enon associated with the Industrial Revolution. The Teatro Amazonas was built by European architects, engineers and artists, with contributions from Brazilian artists, using technologies and materials imported from Europe combined with local resources. A true architectural showcase, it reflects the immense wealth generated by rubber exploitation at the end of the th century, as well as the ideals of progress, civilisation and European cosmopolitanism that the local elite wished to promote in the heart of the Amazon. ICOMOS considers that the situation is different for Belém, whose urban history covers a longer timeframe, from the 17th to the 20th century, and is not solely linked to the rubber boom. ICOMOS considers that this criterion is demonstrated by the Teatro Amazonas (component part 002) and the Largo de São Sebastião in Manaus alone.",
+          "summary_zh": "ICOMOS认为标准 iv 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {
+        "iv": "The Teatro Amazonas and the Largo de São Sebastião symbolise the construction of a modern capital in the heart of the Amazon rainforest, made possible by the exploitation of rubber, a phenomenon associated with the Industrial Revolution. Built by European architects and artists, with contributions from Brazilian artists, and combining technologies and materials imported from Europe with local resources, the Teatro Amazonas is a luxurious Italian- style theatre, an architectural showcase reflecting the wealth generated by rubber production, as well as the ideals of progress, civilisation and European cosmopolitanism that the local elite wished to promote in the Amazon. 297"
+      },
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is not justified and that the selection of component parts should be reduced to include only the Teatro Amazonas (component part 002) and the Largo de São Sebastião in Manaus.",
+        "summary_zh": "ICOMOS认为当前系列遗产申报方式或组成部分选择尚未得到证明。",
+        "rating": "cross"
+      }
+    },
+    {
+      "property_id": "CN1719",
+      "property_name_en": "The wider area of Mount Olympus",
+      "report_pages": [
+        310,
+        324
+      ],
+      "proposed_criteria": [
+        "vi",
+        "viii",
+        "ix",
+        "x"
+      ],
+      "icomos_recommended_criteria": [
+        "vi"
+      ],
+      "criteria": [
+        {
+          "criterion": "vi",
+          "proposed_by_state_party": true,
+          "accepted_by_icomos": true,
+          "judgement": "accepted",
+          "source_en": "This criterion is justified by the State Party on two grounds. First, the nominated property is presented as the birthplace of and a global reference point for the mythological traditions associated with the Twelve Gods of the ancient Greek religion, while the remains of the temples and sanctuaries at Dion on the lower slopes of the mountain are the most remarkable expression of the cult of the Olympian Gods and its longevity over a millennium. 315 Second, the State Party considers that the exceptional geomorphological and climatic elements have been mythologised throughout the ages to the present day, as reflected in modern toponyms such as the “Pantheon” (Mytikas peak), the “Throne of Zeus” (Stefani peak), and the “Plateau of the Muses”. The legacy of the Twel ve Gods and their dwelling on Mount Olympus have inspired literature, art, popular culture, and science throughout the world and across the centuries to the present day. Furthermore, the mountain is still used as a metaphor for divine order and human aspiration. According to the State Party, Mount Olympus stands as a symbolic topos (name and concept) of the myth, grandeur and excellence, with people bestowing its name on many places, massifs, towns and villages around the globe and even beyond to the planet Mars. ICOMOS considers that Mount Olympus is an outstanding example of a mountain landscape with particular geological characteristics that have inspired, and can clearly be linked to, an ancient religious or mythological expression, which in turn has maintained a centuries-long relevance to the present day and has had an impact far beyond its region of origin. The works of Homer (Iliad and Odyssey) and Hesiod (Theogony) in particular captured the idea of Mount Olympus as the abode of the Twelve Greek Gods, and the dissemination of their literature around the world has given Mount Olympus far -reaching relevance. The existence and importance of the link between the myth and the mountain (component part 1) is strengthened by the presence of the archaeological remains of the ancient city of Dion (component part 2). This archaeological site is closely associated with the cult of Zeus, the ruler of the Twelve Gods, and from where the forbidding mountain peaks can clearly be observed. Further traces of the worship of the gods on Mount Olympus can be found, for example, on St. Antonios peak, where evidence of an open-air sanctuary dedicated to the cult of Zeus has been discovered. However, ICOMOS considers that the documentation of the attributes that support the proposed Outstanding Universal Value is not sufficient at the present stage. The physical aspects of the nominated serial property, including the awe-inspiring mountain landscape and the archaeological remains of the service to the Olympian Gods, need more detailed documentation. The relevance and far -reaching impact of the myth also have to be documented in a more detailed and systematic manner, including, for example, more research on the history of the diffusion of the myth and the relevance it has today. ICOMOS considers that this criterion will be fully justified once the attributes of the proposed Outstanding Universal Value are fully documented. ICOMOS considers that criterion (vi) will be fully justified once the attributes of the proposed Outstanding Universal Value are fully documented.",
+          "summary_zh": "ICOMOS认为标准 vi 已得到证明。"
+        }
+      ],
+      "recommendation_criteria": {},
+      "serial_selection": {
+        "source_en": "ICOMOS considers that the serial approach is justified and that the selection of component parts is adequate.",
+        "summary_zh": "ICOMOS认为系列遗产申报方式成立，组成部分选择适当。",
+        "rating": "check"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "region": "Africa",
+      "candidate_count": 26
+    },
+    {
+      "region": "Arab States",
+      "candidate_count": 46
+    },
+    {
+      "region": "Asia and the Pacific",
+      "candidate_count": 98
+    },
+    {
+      "region": "Europe and North America",
+      "candidate_count": 273
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "candidate_count": 56
+    }
+  ],
+  "note": "Candidate count only. Direction, target region, and exchange type require human review."
+}

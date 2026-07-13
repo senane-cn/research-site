@@ -1,0 +1,1949 @@
+{
+  "properties": [
+    {
+      "property_id": "437",
+      "name": "Mount Taishan",
+      "typologies": [
+        "T07_RELIGIOUS",
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS"
+      ]
+    },
+    {
+      "property_id": "438",
+      "name": "The Great Wall",
+      "typologies": [
+        "T09_MILITARY"
+      ]
+    },
+    {
+      "property_id": "439",
+      "name": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS"
+      ]
+    },
+    {
+      "property_id": "440",
+      "name": "Mogao Caves",
+      "typologies": [
+        "T02_ROCK_ART",
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "441",
+      "name": "Mausoleum of the First Qin Emperor",
+      "typologies": [
+        "T01_ARCHAEOLOGICAL",
+        "T12_BURIAL"
+      ]
+    },
+    {
+      "property_id": "449",
+      "name": "Peking Man Site at Zhoukoudian",
+      "typologies": [
+        "T03_FOSSIL_HOMINID",
+        "T01_ARCHAEOLOGICAL"
+      ]
+    },
+    {
+      "property_id": "547",
+      "name": "Mount Huangshan",
+      "typologies": [
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "703",
+      "name": "Mountain Resort and its Outlying Temples, Chengde",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T07_RELIGIOUS",
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS"
+      ]
+    },
+    {
+      "property_id": "704",
+      "name": "Temple and Cemetery of Confucius and the Kong Family Mansion in Qufu",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T07_RELIGIOUS",
+        "T12_BURIAL"
+      ]
+    },
+    {
+      "property_id": "705",
+      "name": "Ancient Building Complex in the Wudang Mountains",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "707",
+      "name": "Historic Ensemble of the Potala Palace, Lhasa",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "778",
+      "name": "Lushan National Park",
+      "typologies": [
+        "T07_RELIGIOUS",
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES"
+      ]
+    },
+    {
+      "property_id": "779",
+      "name": "Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+      "typologies": [
+        "T07_RELIGIOUS",
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES"
+      ]
+    },
+    {
+      "property_id": "811",
+      "name": "Old Town of Lijiang",
+      "typologies": [
+        "T05_SETTLEMENTS",
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T06_VERNACULAR"
+      ]
+    },
+    {
+      "property_id": "812",
+      "name": "Ancient City of Ping Yao",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T05_SETTLEMENTS"
+      ]
+    },
+    {
+      "property_id": "813",
+      "name": "Classical Gardens of Suzhou",
+      "typologies": [
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS"
+      ]
+    },
+    {
+      "property_id": "880",
+      "name": "Summer Palace, an Imperial Garden in Beijing",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS"
+      ]
+    },
+    {
+      "property_id": "881",
+      "name": "Temple of Heaven: an Imperial Sacrificial Altar in Beijing",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T07_RELIGIOUS",
+        "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS"
+      ]
+    },
+    {
+      "property_id": "911",
+      "name": "Mount Wuyi",
+      "typologies": [
+        "T01_ARCHAEOLOGICAL",
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "912",
+      "name": "Dazu Rock Carvings",
+      "typologies": [
+        "T02_ROCK_ART",
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "1001",
+      "name": "Mount Qingcheng and the Dujiangyan Irrigation System",
+      "typologies": [
+        "T07_RELIGIOUS",
+        "T08_AGRI_INDUSTRIAL_TECH",
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES"
+      ]
+    },
+    {
+      "property_id": "1002",
+      "name": "Ancient Villages in Southern Anhui – Xidi and Hongcun",
+      "typologies": [
+        "T05_SETTLEMENTS",
+        "T06_VERNACULAR",
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES"
+      ]
+    },
+    {
+      "property_id": "1003",
+      "name": "Longmen Grottoes",
+      "typologies": [
+        "T02_ROCK_ART",
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "1004",
+      "name": "Imperial Tombs of the Ming and Qing Dynasties",
+      "typologies": [
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+        "T12_BURIAL"
+      ]
+    },
+    {
+      "property_id": "1039",
+      "name": "Yungang Grottoes",
+      "typologies": [
+        "T02_ROCK_ART",
+        "T07_RELIGIOUS"
+      ]
+    },
+    {
+      "property_id": "1135",
+      "name": "Capital Cities and Tombs of the Ancient Koguryo Kingdom",
+      "typologies": [
+        "T01_ARCHAEOLOGICAL",
+        "T04_HISTORIC_BUILDINGS_ENSEMBLES"
+      ]
+    }
+  ],
+  "periods": [
+    "Prehistory",
+    "Antiquity / BC",
+    "Antiquity / early states",
+    "1st-5th c.",
+    "6th-10th c.",
+    "11th-15th c.",
+    "16th-18th c.",
+    "19th century",
+    "20th century",
+    "Macro-period / broad civilisation",
+    "Unparsed"
+  ],
+  "chrono_cells": [
+    {
+      "property_id": "437",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "437",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "437",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "438",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "438",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "439",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "439",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "440",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "440",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "441",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "441",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "Prehistory",
+      "count": 1
+    },
+    {
+      "property_id": "449",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "449",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "547",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "547",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "703",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "703",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "703",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "704",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "704",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "705",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "705",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "707",
+      "period": "Unparsed",
+      "count": 1
+    },
+    {
+      "property_id": "778",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "778",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "778",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "779",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "779",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "811",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "811",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "811",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "812",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "812",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "813",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "813",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "880",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "880",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "881",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "881",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "911",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "911",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "911",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "912",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "912",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "1001",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "1001",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "1002",
+      "period": "Macro-period / broad civilisation",
+      "count": 1
+    },
+    {
+      "property_id": "1002",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "1003",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "1003",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "property_id": "1004",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "1004",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "1039",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "1039",
+      "period": "Unparsed",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "Prehistory",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "1st-5th c.",
+      "count": 1
+    },
+    {
+      "property_id": "1135",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "20th century",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "Macro-period / broad civilisation",
+      "count": 0
+    },
+    {
+      "property_id": "1135",
+      "period": "Unparsed",
+      "count": 0
+    }
+  ],
+  "typology_cells": [
+    {
+      "property_id": "437",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "437",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "438",
+      "typology_code": "T09_MILITARY",
+      "count": 1
+    },
+    {
+      "property_id": "439",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "439",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "440",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "property_id": "440",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "441",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 1
+    },
+    {
+      "property_id": "441",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "property_id": "449",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 1
+    },
+    {
+      "property_id": "449",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 1
+    },
+    {
+      "property_id": "547",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "703",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "703",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "703",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "704",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "704",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "704",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "property_id": "705",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "705",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "705",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "707",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "707",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "778",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "778",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "778",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "779",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "779",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "811",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 1
+    },
+    {
+      "property_id": "811",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "811",
+      "typology_code": "T06_VERNACULAR",
+      "count": 1
+    },
+    {
+      "property_id": "812",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "812",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 1
+    },
+    {
+      "property_id": "813",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "880",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "880",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "881",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "881",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "881",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "property_id": "911",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 1
+    },
+    {
+      "property_id": "911",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "912",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "property_id": "912",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "1001",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "1001",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "property_id": "1001",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "1002",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 1
+    },
+    {
+      "property_id": "1002",
+      "typology_code": "T06_VERNACULAR",
+      "count": 1
+    },
+    {
+      "property_id": "1002",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "1003",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "property_id": "1003",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "1004",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    },
+    {
+      "property_id": "1004",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "property_id": "1039",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "property_id": "1039",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 1
+    },
+    {
+      "property_id": "1135",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 1
+    },
+    {
+      "property_id": "1135",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 1
+    }
+  ]
+}

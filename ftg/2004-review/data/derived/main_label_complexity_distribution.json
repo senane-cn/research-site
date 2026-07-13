@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "main_label_count": 1,
+      "property_count": 106
+    },
+    {
+      "main_label_count": 2,
+      "property_count": 287
+    },
+    {
+      "main_label_count": 3,
+      "property_count": 167
+    },
+    {
+      "main_label_count": 4,
+      "property_count": 69
+    },
+    {
+      "main_label_count": 5,
+      "property_count": 3
+    },
+    {
+      "main_label_count": 6,
+      "property_count": 1
+    }
+  ],
+  "average": 2.335,
+  "multi_label_rate": 0.8325
+}

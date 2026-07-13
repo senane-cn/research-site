@@ -1,0 +1,2023 @@
+{
+  "themes": [
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "label": "Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "count": 276
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "label": "Inhabited Urban Areas",
+      "count": 127
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "label": "Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "count": 94
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "label": "Castles, Palaces, Residences",
+      "count": 71
+    },
+    {
+      "path": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "label": "Significant Personalities",
+      "count": 68
+    },
+    {
+      "path": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "label": "Catholic Church",
+      "count": 65
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "label": "Towns Which Are No Longer Inhabited",
+      "count": 56
+    },
+    {
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "label": "Centres of Trade and Exchange of Goods",
+      "count": 53
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "label": "Fortified Cities",
+      "count": 52
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "label": "Associative Landscapes",
+      "count": 47
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "label": "Domestic Habitat",
+      "count": 44
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "label": "Forts, Castles, Fortified Houses",
+      "count": 43
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "label": "Colonial Towns",
+      "count": 39
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "label": "Monumental Sculpture, Dolmens",
+      "count": 37
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "label": "Rural Settlements",
+      "count": 32
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "label": "Rock Art, Monumental Painting",
+      "count": 31
+    },
+    {
+      "path": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "label": "Buddhism in the West",
+      "count": 30
+    },
+    {
+      "path": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "label": "Crop and Flock Farming",
+      "count": 29
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "label": "Parks and Gardens",
+      "count": 28
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "label": "Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "count": 27
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "label": "Natural Environment, Seascapes",
+      "count": 27
+    },
+    {
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "label": "Water Transport, Navigation, Harbours and Canals",
+      "count": 27
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "label": "Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "count": 26
+    },
+    {
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "label": "Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "count": 25
+    },
+    {
+      "path": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "label": "Memorials",
+      "count": 24
+    }
+  ],
+  "typologies": [
+    {
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "typology_label": "Archaeological heritage",
+      "final_count": 166,
+      "table5_count": 171,
+      "difference": -5,
+      "core_count": 40,
+      "probable_count": 126,
+      "candidate_count": 19
+    },
+    {
+      "typology_code": "T02_ROCK_ART",
+      "typology_label": "Rock-art sites",
+      "final_count": 23,
+      "table5_count": 26,
+      "difference": -3,
+      "core_count": 7,
+      "probable_count": 16,
+      "candidate_count": 13
+    },
+    {
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "typology_label": "Fossil hominid sites",
+      "final_count": 7,
+      "table5_count": 14,
+      "difference": -7,
+      "core_count": 1,
+      "probable_count": 6,
+      "candidate_count": 0
+    },
+    {
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "typology_label": "Historic buildings and ensembles",
+      "final_count": 394,
+      "table5_count": 341,
+      "difference": 53,
+      "core_count": 184,
+      "probable_count": 210,
+      "candidate_count": 132
+    },
+    {
+      "typology_code": "T05_SETTLEMENTS",
+      "typology_label": "Urban and rural settlements / historic towns and villages",
+      "final_count": 238,
+      "table5_count": 269,
+      "difference": -31,
+      "core_count": 43,
+      "probable_count": 195,
+      "candidate_count": 113
+    },
+    {
+      "typology_code": "T06_VERNACULAR",
+      "typology_label": "Vernacular architecture",
+      "final_count": 50,
+      "table5_count": 57,
+      "difference": -7,
+      "core_count": 1,
+      "probable_count": 49,
+      "candidate_count": 10
+    },
+    {
+      "typology_code": "T07_RELIGIOUS",
+      "typology_label": "Religious properties",
+      "final_count": 268,
+      "table5_count": 234,
+      "difference": 34,
+      "core_count": 40,
+      "probable_count": 228,
+      "candidate_count": 41
+    },
+    {
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "typology_label": "Agricultural, industrial and technological properties",
+      "final_count": 55,
+      "table5_count": 69,
+      "difference": -14,
+      "core_count": 15,
+      "probable_count": 40,
+      "candidate_count": 14
+    },
+    {
+      "typology_code": "T09_MILITARY",
+      "typology_label": "Military properties",
+      "final_count": 74,
+      "table5_count": 87,
+      "difference": -13,
+      "core_count": 12,
+      "probable_count": 62,
+      "candidate_count": 83
+    },
+    {
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "typology_label": "Cultural landscapes, parks and gardens",
+      "final_count": 109,
+      "table5_count": 100,
+      "difference": 9,
+      "core_count": 50,
+      "probable_count": 59,
+      "candidate_count": 40
+    },
+    {
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "typology_label": "Cultural routes",
+      "final_count": 11,
+      "table5_count": 8,
+      "difference": 3,
+      "core_count": 6,
+      "probable_count": 5,
+      "candidate_count": 17
+    },
+    {
+      "typology_code": "T12_BURIAL",
+      "typology_label": "Burial monuments and sites",
+      "final_count": 48,
+      "table5_count": 40,
+      "difference": 8,
+      "core_count": 3,
+      "probable_count": 45,
+      "candidate_count": 21
+    },
+    {
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "typology_label": "Symbolic properties and memorials",
+      "final_count": 19,
+      "table5_count": 21,
+      "difference": -2,
+      "core_count": 4,
+      "probable_count": 15,
+      "candidate_count": 134
+    },
+    {
+      "typology_code": "T14_MODERN",
+      "typology_label": "Modern heritage",
+      "final_count": 16,
+      "table5_count": 15,
+      "difference": 1,
+      "core_count": 1,
+      "probable_count": 15,
+      "candidate_count": 21
+    }
+  ],
+  "cells": [
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 64
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T02_ROCK_ART",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 202
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 80
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T06_VERNACULAR",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 211
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 8
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T09_MILITARY",
+      "count": 17
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 25
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T12_BURIAL",
+      "count": 45
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 9
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "typology_code": "T14_MODERN",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 16
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 94
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 96
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T06_VERNACULAR",
+      "count": 11
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 55
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 6
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T09_MILITARY",
+      "count": 26
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 9
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T12_BURIAL",
+      "count": 9
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "typology_code": "T14_MODERN",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 9
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 79
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 27
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T06_VERNACULAR",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 57
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T09_MILITARY",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 14
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T12_BURIAL",
+      "count": 8
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 14
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 54
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 23
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T06_VERNACULAR",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 29
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T09_MILITARY",
+      "count": 13
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 27
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T12_BURIAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 7
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 51
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 19
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T06_VERNACULAR",
+      "count": 1
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 34
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 3
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T09_MILITARY",
+      "count": 5
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 8
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 3
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T12_BURIAL",
+      "count": 7
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 5
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "typology_code": "T14_MODERN",
+      "count": 4
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 7
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 56
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 13
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T06_VERNACULAR",
+      "count": 3
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 51
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T09_MILITARY",
+      "count": 8
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 4
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T12_BURIAL",
+      "count": 5
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 44
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 24
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 29
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T06_VERNACULAR",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 17
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T09_MILITARY",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T12_BURIAL",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 19
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 32
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 37
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T06_VERNACULAR",
+      "count": 7
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 15
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 2
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T09_MILITARY",
+      "count": 8
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 3
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 3
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T12_BURIAL",
+      "count": 3
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 1
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 9
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 32
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 40
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T06_VERNACULAR",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 20
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T09_MILITARY",
+      "count": 31
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T12_BURIAL",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 14
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 21
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T06_VERNACULAR",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 17
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T09_MILITARY",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 34
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T12_BURIAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 30
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 24
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T06_VERNACULAR",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 8
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T09_MILITARY",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 7
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "typology_code": "T14_MODERN",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 9
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 22
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 14
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T06_VERNACULAR",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T09_MILITARY",
+      "count": 25
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 8
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T12_BURIAL",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 6
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 23
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 32
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T06_VERNACULAR",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T09_MILITARY",
+      "count": 7
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "typology_code": "T14_MODERN",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 15
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 18
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 7
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T06_VERNACULAR",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 17
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T09_MILITARY",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 6
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T12_BURIAL",
+      "count": 11
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 6
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T02_ROCK_ART",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 13
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 19
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T06_VERNACULAR",
+      "count": 17
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 6
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T09_MILITARY",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 7
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T12_BURIAL",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 11
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T02_ROCK_ART",
+      "count": 19
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 6
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T06_VERNACULAR",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 10
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T09_MILITARY",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T12_BURIAL",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 11
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T02_ROCK_ART",
+      "count": 4
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 19
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 8
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T06_VERNACULAR",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 26
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T09_MILITARY",
+      "count": 1
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 5
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 1
+    },
+    {
+      "theme": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 8
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 8
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 15
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T06_VERNACULAR",
+      "count": 7
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 5
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 14
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T09_MILITARY",
+      "count": 0
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 17
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T12_BURIAL",
+      "count": 0
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 22
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T06_VERNACULAR",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 6
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T09_MILITARY",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 24
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 22
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T06_VERNACULAR",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 12
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T09_MILITARY",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "typology_code": "T14_MODERN",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T02_ROCK_ART",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 21
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 7
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T06_VERNACULAR",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 18
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T09_MILITARY",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 7
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T12_BURIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 5
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 18
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 15
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T06_VERNACULAR",
+      "count": 2
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 9
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 4
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T09_MILITARY",
+      "count": 6
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 2
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T12_BURIAL",
+      "count": 0
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 1
+    },
+    {
+      "theme": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 15
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 19
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T06_VERNACULAR",
+      "count": 2
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 11
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T09_MILITARY",
+      "count": 5
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T12_BURIAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 4
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 18
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 11
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T06_VERNACULAR",
+      "count": 1
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 7
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 20
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T09_MILITARY",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 3
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T12_BURIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 5
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 13
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 2
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T06_VERNACULAR",
+      "count": 0
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T07_RELIGIOUS",
+      "count": 12
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T09_MILITARY",
+      "count": 3
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 3
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T12_BURIAL",
+      "count": 4
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 11
+    },
+    {
+      "theme": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "typology_code": "T14_MODERN",
+      "count": 0
+    }
+  ]
+}

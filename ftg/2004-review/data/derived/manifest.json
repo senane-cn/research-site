@@ -1,0 +1,36 @@
+{
+  "generated_files": [
+    "china_chrono_typology_matrix.json",
+    "chrono_region_century_matrix.json",
+    "criteria_ii_exchange_candidates.csv",
+    "criteria_ii_region_summary.json",
+    "main_label_complexity_distribution.json",
+    "manifest.json",
+    "modern_world_map_points.json",
+    "region_theme_level1_matrix.json",
+    "theme_high_coverage_properties_ge9.csv",
+    "theme_level1_typology_matrix.json",
+    "theme_path_typology_matrix_top.json",
+    "theme_rule_learning_quality.json",
+    "theme_statistics.json",
+    "theme_theme_cooccurrence_matrix.json",
+    "typology_cooccurrence_matrix.json",
+    "typology_final_vs_table5.json",
+    "typology_five_year_interval.json",
+    "typology_form_function_matrix.json",
+    "typology_form_function_sankey.json",
+    "typology_region_col_pct_matrix.json",
+    "typology_region_location_quotient.json",
+    "typology_region_matrix.json",
+    "typology_region_row_pct_matrix.json",
+    "typology_year_cumulative.json"
+  ],
+  "eligible_properties": 633,
+  "main_label_total": 1478,
+  "notes": [
+    "Phase 2B.8b main labels only are used for main typology statistics.",
+    "Candidate and associative hints are excluded unless explicitly stated.",
+    "Chronological-regional outputs are occurrence-based.",
+    "Criteria ii exchange candidates require human review before network interpretation."
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="180" viewBox="0 0 820 180" role="img" aria-label="NHC THU and CONSERVISION">
+  <rect width="820" height="180" fill="none"/>
+  <g fill="#d7d9d8">
+    <text x="0" y="112" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800" letter-spacing="0">NHC</text>
+    <rect x="178" y="36" width="8" height="98" fill="#ff6b1a"/>
+    <text x="218" y="112" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800" letter-spacing="0">THU</text>
+  </g>
+  <g fill="#f4f5f3">
+    <text x="430" y="84" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif" font-size="48" font-weight="300" letter-spacing="6">CONSERVISION</text>
+    <text x="430" y="128" font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="5">CONSERVE REVIVE INNOVATE</text>
+  </g>
+</svg>

@@ -1,0 +1,283 @@
+{
+  "nodes": [
+    {
+      "region_node": "Northern Europe",
+      "macro_region": "Europe",
+      "display_order": 1,
+      "incoming_edge_count": 1,
+      "outgoing_edge_count": 1,
+      "total_edge_count": 2,
+      "property_count": 2
+    },
+    {
+      "region_node": "Western Europe",
+      "macro_region": "Europe",
+      "display_order": 2,
+      "incoming_edge_count": 6,
+      "outgoing_edge_count": 13,
+      "total_edge_count": 19,
+      "property_count": 18
+    },
+    {
+      "region_node": "Central Europe",
+      "macro_region": "Europe",
+      "display_order": 3,
+      "incoming_edge_count": 8,
+      "outgoing_edge_count": 4,
+      "total_edge_count": 12,
+      "property_count": 11
+    },
+    {
+      "region_node": "Southern Europe",
+      "macro_region": "Europe",
+      "display_order": 4,
+      "incoming_edge_count": 13,
+      "outgoing_edge_count": 32,
+      "total_edge_count": 45,
+      "property_count": 43
+    },
+    {
+      "region_node": "Eastern Europe",
+      "macro_region": "Europe",
+      "display_order": 5,
+      "incoming_edge_count": 2,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 2,
+      "property_count": 2
+    },
+    {
+      "region_node": "Southeast Europe / Balkans",
+      "macro_region": "Europe",
+      "display_order": 6,
+      "incoming_edge_count": 5,
+      "outgoing_edge_count": 5,
+      "total_edge_count": 10,
+      "property_count": 10
+    },
+    {
+      "region_node": "West Asia",
+      "macro_region": "Asia",
+      "display_order": 7,
+      "incoming_edge_count": 5,
+      "outgoing_edge_count": 13,
+      "total_edge_count": 18,
+      "property_count": 18
+    },
+    {
+      "region_node": "Central Asia",
+      "macro_region": "Asia",
+      "display_order": 8,
+      "incoming_edge_count": 1,
+      "outgoing_edge_count": 3,
+      "total_edge_count": 4,
+      "property_count": 4
+    },
+    {
+      "region_node": "South Asia",
+      "macro_region": "Asia",
+      "display_order": 9,
+      "incoming_edge_count": 3,
+      "outgoing_edge_count": 12,
+      "total_edge_count": 15,
+      "property_count": 15
+    },
+    {
+      "region_node": "East Asia",
+      "macro_region": "Asia",
+      "display_order": 10,
+      "incoming_edge_count": 10,
+      "outgoing_edge_count": 2,
+      "total_edge_count": 12,
+      "property_count": 9
+    },
+    {
+      "region_node": "Southeast Asia",
+      "macro_region": "Asia",
+      "display_order": 11,
+      "incoming_edge_count": 8,
+      "outgoing_edge_count": 2,
+      "total_edge_count": 10,
+      "property_count": 9
+    },
+    {
+      "region_node": "North Africa",
+      "macro_region": "Africa",
+      "display_order": 12,
+      "incoming_edge_count": 14,
+      "outgoing_edge_count": 1,
+      "total_edge_count": 15,
+      "property_count": 11
+    },
+    {
+      "region_node": "West Africa",
+      "macro_region": "Africa",
+      "display_order": 13,
+      "incoming_edge_count": 3,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 3,
+      "property_count": 3
+    },
+    {
+      "region_node": "East Africa / Horn of Africa",
+      "macro_region": "Africa",
+      "display_order": 14,
+      "incoming_edge_count": 1,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 1,
+      "property_count": 1
+    },
+    {
+      "region_node": "Central Africa",
+      "macro_region": "Africa",
+      "display_order": 15,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Southern Africa",
+      "macro_region": "Africa",
+      "display_order": 16,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Swahili Coast",
+      "macro_region": "Africa",
+      "display_order": 17,
+      "incoming_edge_count": 1,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 1,
+      "property_count": 1
+    },
+    {
+      "region_node": "North America",
+      "macro_region": "Americas",
+      "display_order": 18,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Mesoamerica",
+      "macro_region": "Americas",
+      "display_order": 19,
+      "incoming_edge_count": 5,
+      "outgoing_edge_count": 1,
+      "total_edge_count": 6,
+      "property_count": 6
+    },
+    {
+      "region_node": "Caribbean",
+      "macro_region": "Americas",
+      "display_order": 20,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 1,
+      "total_edge_count": 1,
+      "property_count": 1
+    },
+    {
+      "region_node": "Andean America",
+      "macro_region": "Americas",
+      "display_order": 21,
+      "incoming_edge_count": 3,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 3,
+      "property_count": 2
+    },
+    {
+      "region_node": "Amazonia",
+      "macro_region": "Americas",
+      "display_order": 22,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Southern Cone",
+      "macro_region": "Americas",
+      "display_order": 23,
+      "incoming_edge_count": 1,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 1,
+      "property_count": 1
+    },
+    {
+      "region_node": "Australia",
+      "macro_region": "Pacific / Oceania",
+      "display_order": 24,
+      "incoming_edge_count": 1,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 1,
+      "property_count": 1
+    },
+    {
+      "region_node": "New Zealand / Aotearoa",
+      "macro_region": "Pacific / Oceania",
+      "display_order": 25,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Melanesia",
+      "macro_region": "Pacific / Oceania",
+      "display_order": 26,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Micronesia",
+      "macro_region": "Pacific / Oceania",
+      "display_order": 27,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Polynesia",
+      "macro_region": "Pacific / Oceania",
+      "display_order": 28,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Transregional / Multiple",
+      "macro_region": "Special",
+      "display_order": 29,
+      "incoming_edge_count": 19,
+      "outgoing_edge_count": 22,
+      "total_edge_count": 41,
+      "property_count": 41
+    },
+    {
+      "region_node": "Unclear",
+      "macro_region": "Special",
+      "display_order": 30,
+      "incoming_edge_count": 0,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 0,
+      "property_count": 0
+    },
+    {
+      "region_node": "Atlantic South America / Brazil",
+      "macro_region": "Americas",
+      "display_order": 31,
+      "incoming_edge_count": 2,
+      "outgoing_edge_count": 0,
+      "total_edge_count": 2,
+      "property_count": 2
+    }
+  ]
+}

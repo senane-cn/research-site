@@ -1,0 +1,28 @@
+{
+  "source": "WHC Criterion ii OUV extraction plus provisional review-derived seed edges",
+  "original_edge_count": 75,
+  "patched_edge_count": 75,
+  "patched_needs_review_count": 4,
+  "provisional_edge_count": 37,
+  "combined_edge_count": 112,
+  "node_count": 31,
+  "remaining_unclear_count": 6,
+  "data_layer_counts": {
+    "coded_conservative": 71,
+    "provisional_from_review_queue": 37,
+    "coded_needs_review": 4
+  },
+  "exchange_type_counts": {
+    "architectural_style": 34,
+    "artistic_influence": 24,
+    "maritime_trade": 12,
+    "cultural_succession": 11,
+    "route_network": 8,
+    "colonial_encounter": 6,
+    "religious_transmission": 6,
+    "technical_transfer": 5,
+    "cultural_fusion": 4,
+    "urbanism": 2
+  },
+  "caption": "本图为基于标准 ii 文本的文化交流网络原型，仅显示可初步识别交流对象和地区关系的边。它不是 UNESCO/ICOMOS 官方网络，provisional 边仍需人工复核。"
+}

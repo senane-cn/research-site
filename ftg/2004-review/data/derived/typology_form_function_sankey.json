@@ -1,0 +1,262 @@
+{
+  "nodes": [
+    {
+      "name": "Form: T01_ARCHAEOLOGICAL",
+      "code": "T01_ARCHAEOLOGICAL",
+      "role": "form"
+    },
+    {
+      "name": "Form: T02_ROCK_ART",
+      "code": "T02_ROCK_ART",
+      "role": "form"
+    },
+    {
+      "name": "Form: T03_FOSSIL_HOMINID",
+      "code": "T03_FOSSIL_HOMINID",
+      "role": "form"
+    },
+    {
+      "name": "Form: T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "role": "form"
+    },
+    {
+      "name": "Form: T05_SETTLEMENTS",
+      "code": "T05_SETTLEMENTS",
+      "role": "form"
+    },
+    {
+      "name": "Form: T06_VERNACULAR",
+      "code": "T06_VERNACULAR",
+      "role": "form"
+    },
+    {
+      "name": "Form: T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "role": "form"
+    },
+    {
+      "name": "Form: T12_BURIAL",
+      "code": "T12_BURIAL",
+      "role": "form"
+    },
+    {
+      "name": "Period/style: T14_MODERN",
+      "code": "T14_MODERN",
+      "role": "bridge"
+    },
+    {
+      "name": "Function: T07_RELIGIOUS",
+      "code": "T07_RELIGIOUS",
+      "role": "function"
+    },
+    {
+      "name": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "code": "T08_AGRI_INDUSTRIAL_TECH",
+      "role": "function"
+    },
+    {
+      "name": "Function: T09_MILITARY",
+      "code": "T09_MILITARY",
+      "role": "function"
+    },
+    {
+      "name": "Function: T11_CULTURAL_ROUTES",
+      "code": "T11_CULTURAL_ROUTES",
+      "role": "function"
+    },
+    {
+      "name": "Function: T13_SYMBOLIC_MEMORIAL",
+      "code": "T13_SYMBOLIC_MEMORIAL",
+      "role": "function"
+    }
+  ],
+  "links": [
+    {
+      "source": "Form: T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 215
+    },
+    {
+      "source": "Form: T01_ARCHAEOLOGICAL",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 49
+    },
+    {
+      "source": "Form: T05_SETTLEMENTS",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 74
+    },
+    {
+      "source": "Form: T05_SETTLEMENTS",
+      "target": "Function: T11_CULTURAL_ROUTES",
+      "value": 2
+    },
+    {
+      "source": "Form: T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "target": "Function: T11_CULTURAL_ROUTES",
+      "value": 6
+    },
+    {
+      "source": "Form: T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "target": "Function: T09_MILITARY",
+      "value": 44
+    },
+    {
+      "source": "Form: T05_SETTLEMENTS",
+      "target": "Function: T09_MILITARY",
+      "value": 42
+    },
+    {
+      "source": "Form: T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "target": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "value": 30
+    },
+    {
+      "source": "Form: T01_ARCHAEOLOGICAL",
+      "target": "Function: T11_CULTURAL_ROUTES",
+      "value": 2
+    },
+    {
+      "source": "Form: T12_BURIAL",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 22
+    },
+    {
+      "source": "Form: T06_VERNACULAR",
+      "target": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "value": 8
+    },
+    {
+      "source": "Form: T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "target": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "value": 18
+    },
+    {
+      "source": "Form: T06_VERNACULAR",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 12
+    },
+    {
+      "source": "Form: T01_ARCHAEOLOGICAL",
+      "target": "Function: T13_SYMBOLIC_MEMORIAL",
+      "value": 5
+    },
+    {
+      "source": "Form: T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "target": "Function: T13_SYMBOLIC_MEMORIAL",
+      "value": 9
+    },
+    {
+      "source": "Form: T05_SETTLEMENTS",
+      "target": "Function: T13_SYMBOLIC_MEMORIAL",
+      "value": 3
+    },
+    {
+      "source": "Form: T01_ARCHAEOLOGICAL",
+      "target": "Function: T09_MILITARY",
+      "value": 16
+    },
+    {
+      "source": "Form: T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "target": "Function: T13_SYMBOLIC_MEMORIAL",
+      "value": 3
+    },
+    {
+      "source": "Form: T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 33
+    },
+    {
+      "source": "Form: T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "target": "Function: T09_MILITARY",
+      "value": 3
+    },
+    {
+      "source": "Form: T06_VERNACULAR",
+      "target": "Function: T09_MILITARY",
+      "value": 6
+    },
+    {
+      "source": "Form: T05_SETTLEMENTS",
+      "target": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "value": 22
+    },
+    {
+      "source": "Form: T02_ROCK_ART",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 6
+    },
+    {
+      "source": "Form: T12_BURIAL",
+      "target": "Function: T09_MILITARY",
+      "value": 2
+    },
+    {
+      "source": "Form: T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "target": "Function: T11_CULTURAL_ROUTES",
+      "value": 3
+    },
+    {
+      "source": "Form: T01_ARCHAEOLOGICAL",
+      "target": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "value": 7
+    },
+    {
+      "source": "Form: T12_BURIAL",
+      "target": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "value": 1
+    },
+    {
+      "source": "Form: T12_BURIAL",
+      "target": "Function: T13_SYMBOLIC_MEMORIAL",
+      "value": 1
+    },
+    {
+      "source": "Form: T06_VERNACULAR",
+      "target": "Function: T11_CULTURAL_ROUTES",
+      "value": 1
+    },
+    {
+      "source": "Form: T05_SETTLEMENTS",
+      "target": "Period/style: T14_MODERN",
+      "value": 6
+    },
+    {
+      "source": "Form: T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "target": "Period/style: T14_MODERN",
+      "value": 14
+    },
+    {
+      "source": "Form: T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "target": "Period/style: T14_MODERN",
+      "value": 2
+    },
+    {
+      "source": "Form: T12_BURIAL",
+      "target": "Period/style: T14_MODERN",
+      "value": 1
+    },
+    {
+      "source": "Period/style: T14_MODERN",
+      "target": "Function: T07_RELIGIOUS",
+      "value": 3
+    },
+    {
+      "source": "Period/style: T14_MODERN",
+      "target": "Function: T11_CULTURAL_ROUTES",
+      "value": 1
+    },
+    {
+      "source": "Period/style: T14_MODERN",
+      "target": "Function: T08_AGRI_INDUSTRIAL_TECH",
+      "value": 1
+    },
+    {
+      "source": "Period/style: T14_MODERN",
+      "target": "Function: T09_MILITARY",
+      "value": 1
+    }
+  ],
+  "note": "T14 Modern is treated as a middle period/style bridge in this Sankey, not as a simple function-side category."
+}

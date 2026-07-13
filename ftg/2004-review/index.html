@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICOMOS Filling the Gaps 2004｜文化遗产主题框架回归分类报告</title>
+    <meta
+      name="description"
+      content="A probable item-level reconstruction of pre-2005 World Heritage typological assignments in the ICOMOS Filling the Gaps framework."
+    />
+    <link rel="stylesheet" href="styles.css?v=20260705-criteria-ii-prototype" />
+    <link rel="stylesheet" href="../../shared/research.css" />
+  </head>
+  <body class="research-project-frame">
+    <div class="research-topbar" aria-label="ConserVision Research navigation">
+      <a class="research-brand" href="../../">ConserVision Research</a>
+      <nav class="research-nav" aria-label="Research platform navigation">
+        <a href="../../">Home</a>
+        <a href="../../evaluation/">Evaluation</a>
+        <a href="../" aria-current="page">Filling the Gaps</a>
+      </nav>
+    </div>
+    <header class="site-header" id="top">
+      <div class="page-shell">
+        <div class="kicker">FTG Phase 2 Typological Reconstruction</div>
+        <h1>
+          <span>ICOMOS Filling the Gaps 2004</span>
+          <span>文化遗产主题框架回归分类报告</span>
+        </h1>
+        <p class="subtitle">
+          A Probable Item-Level Reconstruction of Pre-2005 World Heritage Typological Assignments in the ICOMOS Filling the Gaps Framework
+        </p>
+        <p class="opening">
+          本报告基于 ICOMOS 2004《Filling the Gaps》公开框架、WHC 名录数据与多轮人工校核，重建 2004 年以前世界文化 / 混合遗产在 FTG 类型框架中的逐项可能归属，为后续 2004 年后遗产类型与主题演化研究建立基线。
+        </p>
+        <div class="metric-strip" aria-label="Key metrics">
+          <div class="metric">
+            <span class="metric-value" data-metric="eligibleProperties">633</span>
+            <span class="metric-label">eligible properties</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value" data-metric="typologyCategories">14</span>
+            <span class="metric-label">FTG typology categories</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value" data-metric="labelRows">8862</span>
+            <span class="metric-label">label assignment rows</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">2B.8b</span>
+            <span class="metric-label">final freeze candidate</span>
+          </div>
+        </div>
+        <p class="disclaimer">
+          本数据集为 probable reconstruction，不是 ICOMOS 原始 item-level 工作数据。
+        </p>
+      </div>
+    </header>
+
+    <main class="page-shell report-layout">
+      <nav class="toc" aria-label="Report navigation">
+        <span class="toc-group">专题 A 研究基础</span>
+        <a href="#question">01 研究问题</a>
+        <a href="#scope">02 数据范围</a>
+        <a href="#workflow">03 工作流</a>
+        <a href="#issues">04 异常处理</a>
+        <a href="#og">05 OG 元数据</a>
+        <span class="toc-group">专题 B 类型判断</span>
+        <a href="#distribution">06 类型分布</a>
+        <a href="#calibration">07 校准过程</a>
+        <a href="#lessons">08 误差模式</a>
+        <span class="toc-group">专题 C 主题判断</span>
+        <a href="#themes">09 原始主题</a>
+        <a href="#theme-rules">10 规则推测</a>
+        <a href="#network">11 主题-类型图谱</a>
+        <span class="toc-group">专题 D 结构再分析</span>
+        <a href="#reanalysis-ftg">D1 原版与分布</a>
+        <a href="#reanalysis-multilabel">D2 关系与年代</a>
+        <a href="#reanalysis-china">D3 专题检验</a>
+        <a href="#reanalysis-theme-stats">D4 主题网络</a>
+        <span class="toc-group">专题 E 框架反思</span>
+        <a href="#framework-reflection">12 主题框架反思</a>
+        <span class="toc-group toc-group-closing">收束与计划</span>
+        <a href="#dataset">13 数据集</a>
+        <a href="#future">14 后续研究</a>
+        <div class="toc-brand-mark" aria-label="NHC and ConserVision">
+          <img src="assets/partner-logos.svg" alt="NHC THU and ConserVision" />
+        </div>
+      </nav>
+
+      <article class="report">
+        <div class="part-divider" id="part-foundation">
+          <span>专题 A</span>
+          <strong>研究基础</strong>
+          <p>说明重建问题、数据范围、工作流与元数据处理边界。</p>
+        </div>
+
+        <section class="section" id="question">
+          <div class="section-number">01</div>
+          <h2>研究问题</h2>
+          <p>
+            FTG 2004 公布了类型框架及聚合统计，但没有公开逐项类型归属。本项目将公开框架、WHC 名录、FTG 主题与年代区域信息、多轮人工校核结合，重建一个可复核的 pre-2005 item-level typology matrix。
+          </p>
+          <div class="three-column">
+            <div class="note-block">
+              <h3>重建内容</h3>
+              <p>633 个文化 / 混合遗产项目与 14 个 FTG 类型类别之间的多标签主标签、候选标签和联想线索。</p>
+            </div>
+            <div class="note-block">
+              <h3>研究必要性</h3>
+              <p>公开 FTG 统计无法支持逐项比较、网络分析或 post-2004 类型演化研究。</p>
+            </div>
+            <div class="note-block">
+              <h3>使用方式</h3>
+              <p>主标签用于统计基线；候选与联想线索用于个案复核、桥接遗产和主题扩展研究。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="scope">
+          <div class="section-number">02</div>
+          <h2>数据范围</h2>
+          <div class="split">
+            <div>
+              <p>
+                Eligible universe 为 2005 年以前列入名录的文化与混合遗产项目。自然-only 项目排除，WHC <code>property_id</code> 作为稳定键。delisted / historical status 在历史分析范围内保留其来源标记。
+              </p>
+              <p>
+                Cultural landscapes 与 serial / component 信息作为元数据保存，不被当作 Article 1 类型；其证据仅在 FTG typology 判断中作为辅助线索。
+              </p>
+            </div>
+            <div class="evidence-ladder" aria-label="Evidence hierarchy diagram">
+              <div class="ladder-row">
+                <span>Evidence</span>
+                <strong>WHC 名录元数据</strong>
+                <em>property_id、类别、年代、简述、标准与状态字段</em>
+              </div>
+              <div class="ladder-row">
+                <span>Framework</span>
+                <strong>FTG 公开框架</strong>
+                <em>14 个类型类别、Table 5 统计、主题与年代区域线索</em>
+              </div>
+              <div class="ladder-row">
+                <span>Review</span>
+                <strong>人工校准与边界判断</strong>
+                <em>anchors、counterexamples、candidate / associative hints</em>
+              </div>
+              <div class="ladder-result">
+                <span>Output</span>
+                <strong>逐项 probable typology matrix</strong>
+                <em>main labels 用于统计基线；candidate / hints 用于复核</em>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="workflow">
+          <div class="section-number">03</div>
+          <h2>工作流</h2>
+          <div class="timeline">
+            <div><span>Phase 1A</span><strong>FTG extraction</strong><p>提取 published FTG chronological 与 thematic assignments。</p><em>theme / chrono matrices</em></div>
+            <div><span>Phase 1D</span><strong>Metadata enrichment</strong><p>补充 Article 1、OG special type、serial、cultural landscape 等元数据。</p><em>reviewed property master</em></div>
+            <div><span>Phase 2A</span><strong>Anchor registry</strong><p>建立人审确认的 typology anchors 与 negative / boundary cases。</p><em>human anchor registry</em></div>
+            <div><span>Phase 2B</span><strong>Controlled full run</strong><p>对所有 eligible properties 进行多标签重建。</p><em>full label assignment table</em></div>
+            <div><span>Phase 2B.2</span><strong>Diagnostics</strong><p>用 Table 5 / Table 7 做偏差诊断，不做强制配平。</p><em>convergence diagnostics</em></div>
+            <div><span>Phase 2B.5</span><strong>Freeze candidate</strong><p>进行最终微调，保留 candidate 与 associative hints。</p><em>freeze candidate</em></div>
+            <div><span>Phase 2B.7</span><strong>Obvious-miss audit</strong><p>整合人工 review，识别明显漏标候选。</p><em>human review packet</em></div>
+            <div><span>Phase 2B.8b</span><strong>Final integration</strong><p>整合 T06/T04/T07 人工复核并完成 spot-check。</p><em>final freeze candidate</em></div>
+          </div>
+        </section>
+
+        <section class="section" id="issues">
+          <div class="section-number">04</div>
+          <h2>异常处理</h2>
+          <div class="rule-table">
+            <div><strong>Unmatched / out-of-scope IDs</strong><span>排除 Tentative List 与 natural-only 项目；保留 property_id 稳定性。</span></div>
+            <div><strong>Delisted and historical status</strong><span>若属于历史分析范围，保留状态字段而不改写原始名录事实。</span></div>
+            <div><strong>Serial and transboundary properties</strong><span>依据 WHC 官网每个项目页面中的 Map / component parts、transboundary site 与坐标信息整理；作为元数据与复核线索，不直接推导 typology label。</span></div>
+            <div><strong>Cultural landscape matching</strong><span>依据 WHC 官网 Cultural Landscapes 项目清单核对；作为 OG/WHC 元数据证据，不自动等同 FTG T10。</span></div>
+            <div><strong>OCR and theme-path cleanup</strong><span>疑似 OCR 与路径合并问题通过人审记录和候选队列处理。</span></div>
+          </div>
+        </section>
+
+        <section class="section" id="og">
+          <div class="section-number">05</div>
+          <h2>OG 元数据</h2>
+          <p>
+            本报告只将 Cultural Landscape 与 Serial Property / component count 作为稳定元数据重点呈现。older OG versions 中出现的 cultural routes、heritage canals、historic towns 等讨论，不在此处作为当前 OG 类型处理，而通过 FTG typology / theme categories 表达。
+          </p>
+          <div class="two-column compact">
+            <div class="note-block">
+              <h3>文化景观</h3>
+              <p>来源为 <a href="https://whc.unesco.org/en/culturallandscape/">WHC Cultural Landscapes</a> 项目清单；作为 T10 判断的强证据之一，但不自动等同 T10。</p>
+            </div>
+            <div class="note-block">
+              <h3>序列 / 组成部分</h3>
+              <p>来源为 WHC 官网每个项目页面中的 Map / component 信息，以及项目页显示的 transboundary / map data；用于解释复杂遗产、跨区域项目和多类型重叠。</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="part-divider" id="part-typology">
+          <span>专题 B</span>
+          <strong>类型判断</strong>
+          <p>集中呈现 Phase 2B.8b 类型重建结果、校准过程和误差控制逻辑。</p>
+        </div>
+
+        <section class="section wide" id="distribution">
+          <div class="section-number">06</div>
+          <h2>FTG 类型分布</h2>
+          <p class="section-lead">
+            Table 5 is used as diagnostic reference, not a hard target. 下列图表比较 Phase 2B.8b final count 与 FTG Table 5 aggregate count。
+          </p>
+          <div class="chart-grid">
+            <figure>
+              <figcaption>Final count vs FTG Table 5</figcaption>
+              <div id="bar-chart" class="chart" role="img" aria-label="Grouped horizontal bar chart comparing final and Table 5 counts"></div>
+            </figure>
+            <figure>
+              <figcaption>Difference from Table 5</figcaption>
+              <div id="diff-chart" class="chart" role="img" aria-label="Diverging difference chart"></div>
+            </figure>
+          </div>
+          <div class="table-wrap">
+            <table id="typology-table">
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Label</th>
+                  <th>Final</th>
+                  <th>Table 5</th>
+                  <th>Diff</th>
+                  <th>Interpretation</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="calibration">
+          <div class="section-number">07</div>
+          <h2>校准过程</h2>
+          <div id="calibration-chart" class="calibration-grid"></div>
+          <div class="story-grid">
+            <div>
+              <h3>T04 / T05 建筑与聚落</h3>
+              <p>早期问题是 T04 吸收过多 historic cities。最终逻辑区分 settlement morphology 与 independent architectural ensemble value。</p>
+            </div>
+            <div>
+              <h3>T06 乡土建筑</h3>
+              <p>从过窄的 rural/village gate 扩展到传统建筑类型、建造系统、工艺、材料与 vernacular townscape。</p>
+            </div>
+            <div>
+              <h3>T13 象征 / 纪念</h3>
+              <p>criterion vi 与 symbolic wording 不再自动触发主标签，而采用 stable main 与 associative hint 二层逻辑。</p>
+            </div>
+            <div>
+              <h3>T08 农业 / 工业 / 技术</h3>
+              <p>mining、agricultural、engineering 等关键词只有在 production / technology system 为 OUV 核心时才支持主标签。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section wide" id="lessons">
+          <div class="section-number">08</div>
+          <h2>误差模式</h2>
+          <p class="section-lead">
+            最终数据表没有把所有判断压成单一结论，而是同时保留每个项目在各类型上的主标签、备选标签和联想线索。主标签进入统计诊断；candidate 与 associative hints 保留判断过程中的不确定性，为个案复核、主题关系和后续研究提供更多线索。
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Pattern</th><th>Example risk</th><th>Final response</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Wall paintings misread as T02</td><td>church / tomb / monastery murals treated as rock art</td><td>Require rock, cave, cliff, petroglyph, grotto or carved-surface evidence.</td></tr>
+                <tr><td>Prehistoric archaeology misread as T03</td><td>rock art or general archaeology mistaken for fossil hominid evidence</td><td>Require hominid fossil, fossil footprint, or human evolution evidence.</td></tr>
+                <tr><td>Historic buildings misread as T04</td><td>generic buildings inside a settlement become independent T04</td><td>Keep T04 only when architectural or ensemble value is central.</td></tr>
+                <tr><td>Town / city missed under T05</td><td>archaeological or historic urban morphology under-counted</td><td>Promote where settlement scale, urban layout, or abandoned city form is central.</td></tr>
+                <tr><td>Rural-only view of T06</td><td>urban vernacular or monumental craft traditions missed</td><td>Use building type, construction system, materials, and craft knowledge as gate.</td></tr>
+                <tr><td>Temple or church inside archaeology misread as T07</td><td>component religious evidence becomes religious-property main</td><td>Retain T07 only where religious identity or institution is central.</td></tr>
+                <tr><td>Keyword triggers for T08</td><td>mine, agricultural, engineering, water appear incidentally</td><td>Require central production, resource-use, industrial or water-management system.</td></tr>
+                <tr><td>Strategic wording misread as T09</td><td>strategic location without defensive system</td><td>Require military architecture, fortification, or defensive system evidence.</td></tr>
+                <tr><td>Criterion vi / symbol misread as T13</td><td>broad cultural symbolism becomes memorial label</td><td>Use strict stable symbolic / memorial / event / political idea gate.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="part-divider" id="part-theme">
+          <span>专题 C</span>
+          <strong>主题判断</strong>
+          <p>区分“原始主题数据整理”与“基于既有案例反推主题判断规则”两件事，再观察主题与类型之间的关系。</p>
+        </div>
+
+        <section class="section" id="themes">
+          <div class="section-number">09</div>
+          <h2>原始主题数据</h2>
+          <p>
+            文化主题框架部分首先是对 ICOMOS 2004《Filling the Gaps》已公开 thematic assignments 的整理。与类型框架不同，这部分已有逐项主题归属可抽取，因此 Phase 1A 的主题结果主要是原始数据清理、路径规范化和项目匹配，不是新的主题标签重建。
+          </p>
+          <div class="three-column">
+            <div class="note-block">
+              <h3>原版一致性</h3>
+              <p>主题归属来自 FTG 原公开表格；本报告不重新发明主题分类，只保留清理、匹配和审校后的结构化版本。</p>
+            </div>
+            <div class="note-block">
+              <h3>整理结果</h3>
+              <p>Phase 1A 整理出 1,897 条主题分配与 81 条唯一主题路径，用于后续网络分析和规则学习。</p>
+            </div>
+            <div class="note-block">
+              <h3>用途边界</h3>
+              <p>主题 assignment 可作为类型判断的证据线索，但不机械等同于 typology label。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="theme-rules">
+          <div class="section-number">10</div>
+          <h2>主题规则推测</h2>
+          <p>
+            在 2004 年以前案例集合中，可以尝试从“主题路径 + 已知项目案例”反推当年主题分类的经验规则。这个推测只用于后续 post-2004 项目的辅助判断，不声称恢复 ICOMOS 内部规则。
+          </p>
+          <div id="theme-rule-tier-legend" class="tier-legend" aria-label="Theme rule usability tier logic"></div>
+          <div class="table-wrap theme-rule-table-wrap">
+            <table id="theme-rule-table" class="theme-rule-table">
+              <thead>
+                <tr>
+                  <th>主题</th>
+                  <th>案例数</th>
+                  <th>可用度</th>
+                  <th>用途</th>
+                  <th>自测契合</th>
+                  <th>备注</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="fine-note">
+            “自测契合”是规则学习阶段的诊断指标：exact 为精确命中原主题路径；broad 为精确命中加同父级近邻命中。它不是最终分类准确率。
+          </p>
+          <div class="rule-table">
+            <div><strong>较可复用</strong><span>如 religious and commemorative architecture、mining / irrigation、fortified cities、inhabited urban areas 等，案例数量较多，关键词、形态和 OUV 叙述之间相对稳定。</span></div>
+            <div><strong>需谨慎迁移</strong><span>如 vernacular、symbolic / memorial、significant personalities、rock art / monumental painting 等，容易受文化语境、材料媒介或纪念观念影响，需要人工复核。</span></div>
+            <div><strong>暂难形成强规则</strong><span>样本过少、案例分散、历史语义较宽或路径命名含混的主题，只能保留为候选线索，不能直接形成后续新项目的自动判断规则。</span></div>
+            <div><strong>判断原则</strong><span>规则应优先学习“中心价值如何被描述”，而不是只学习词频。主题词出现不等于主题成立，主题成立也不等于对应类型主标签成立。</span></div>
+          </div>
+        </section>
+
+        <section class="section wide" id="network">
+          <div class="section-number">11</div>
+          <h2>主题-类型图谱</h2>
+          <p class="section-lead">
+            当前先保留 theme–typology co-occurrence matrix。矩阵连接 Phase 1A 原始主题整理结果与 Phase 2B.8b 类型重建主标签，用于观察哪些主题常与哪些类型共同出现。
+          </p>
+          <div class="network-grid">
+            <figure>
+              <figcaption>Theme-typology co-occurrence matrix</figcaption>
+              <div id="theme-typology-matrix" class="matrix-chart" role="img" aria-label="Matrix showing co-occurrence between FTG themes and reconstructed typology labels"></div>
+            </figure>
+          </div>
+          <p class="fine-note">
+            矩阵是关系观察工具，不是自动分类器；主题与类型之间可能有强关联、弱关联或历史语义偏差。
+          </p>
+        </section>
+
+        <div class="part-divider" id="part-reanalysis">
+          <span>专题 D</span>
+          <strong>2004 年前名录结构的再分析</strong>
+          <p>将 FTG 原版三套框架与 Phase 1–2 逐项数据重新连接，生成可复核的统计图谱。候选与联想线索不进入主统计，除非图注明确说明。</p>
+        </div>
+
+        <section class="section wide viz-section" id="reanalysis-ftg">
+          <div class="section-number">D1</div>
+          <h2>原版 FTG 统计的复现与增强</h2>
+          <p class="section-lead">Table 5 只作为诊断参照，不作为配平目标。下列 ECharts 图表复现 Phase 2B.8b 主标签 count 与 FTG Table 5 的差异。</p>
+          <div class="analysis-chart-grid two-up">
+            <figure><figcaption>Final count vs Table 5</figcaption><div id="viz-table5-grouped" class="echart chart-md chart-table5"></div></figure>
+            <figure><figcaption>Final minus Table 5</figcaption><div id="viz-table5-diff" class="echart chart-md chart-table5"></div></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-region">
+          <div class="section-number">D2</div>
+          <h2>地区—类型结构</h2>
+          <p class="section-lead">地区差异应同时读作数量差异和结构差异。原 FTG 已指出若干地区在部分预期类别中偏低；这里用逐项重建数据观察其结构位置。</p>
+          <div class="analysis-chart-grid one-up matrix-wide-grid">
+            <figure><figcaption>Region × typology count</figcaption><div id="viz-region-typology-heatmap" class="echart chart-wide-matrix"></div></figure>
+            <figure><figcaption>Typology regional composition</figcaption><div id="viz-typology-region-stacked" class="echart chart-wide"></div></figure>
+            <figure><figcaption>Relative concentration around global average (LQ = 1)</figcaption><div id="viz-region-lq" class="echart chart-wide-matrix"></div><p class="chart-note">蓝色表示低于全球平均，红色表示高于全球平均；1 为基准值，不代表项目数量。</p></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-time">
+          <div class="section-number">D3</div>
+          <h2>类型随时间的累积</h2>
+          <p class="section-lead">以列入年份观察各类型在 2004 年以前如何进入名录。上图统计每年新增主标签数量；下图以堆叠面积呈现各类型累计值与总体累计标签量之间的关系。</p>
+          <div class="analysis-chart-grid one-up">
+            <figure><figcaption>Annual new main labels by inscription year</figcaption><div id="viz-cumulative-line" class="echart chart-xl"></div></figure>
+            <figure><figcaption>Cumulative stacked area by typology</figcaption><div id="viz-fiveyear-stacked" class="echart chart-xl"></div></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-multilabel">
+          <div class="section-number">D4</div>
+          <h2>多标签与类型共现关系</h2>
+          <p class="section-lead">多标签分析延续 FTG 多类别逻辑，用于观察 T04/T05/T06/T07 与 T08/T10 等类型之间的重叠。</p>
+          <div class="analysis-chart-grid one-up matrix-wide-grid">
+            <figure>
+              <figcaption>Typology co-occurrence matrix</figcaption>
+              <div id="viz-cooccurrence-matrix" class="echart chart-wide-matrix"></div>
+              <p class="chart-note">颜色表示两个类型同时作为主标签出现在同一遗产项目中的次数；对角线为该类型自身的主标签总量。</p>
+            </figure>
+            <figure>
+              <figcaption>Main-label complexity distribution</figcaption>
+              <div id="viz-label-complexity" class="echart chart-md"></div>
+              <p class="chart-note">这张图统计每个遗产项目拥有几个主类型标签：横轴为主标签数量，纵轴为对应项目数，用于观察多标签复杂度是否集中在 1–3 个标签。</p>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-form-function">
+          <div class="section-number">D5</div>
+          <h2>形态类型与功能类型的交叉</h2>
+          <p class="section-lead">依据原 FTG Table 7 中形态与功能类别的区分，观察同一遗产项目如何同时落在形态侧与功能侧。Sankey 中 T14 Modern 作为中间的 period/style 桥接层处理，而不是简单放在功能侧。</p>
+          <div class="analysis-chart-grid two-up">
+            <figure><figcaption>Form-function Sankey</figcaption><div id="viz-form-function-sankey" class="echart chart-lg"></div><p class="chart-note">T14 Modern 位于中间，显示与左侧形态类型及右侧功能类型的共同出现关系。</p></figure>
+            <figure><figcaption>Form-function matrix</figcaption><div id="viz-form-function-matrix" class="echart chart-lg"></div></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-chrono">
+          <div class="section-number">D6</div>
+          <h2>Chronological–Regional 框架再可视化</h2>
+          <p class="section-lead">年代—地域框架是 occurrence-based，不是唯一项目数。世纪转换采用近似分箱；无法细分到世纪但具有明确文明/王朝/宏观阶段含义的条目，与真正未解析条目分开显示。</p>
+          <div class="analysis-chart-grid one-up">
+            <figure><figcaption>Chrono-region × macro-period matrix</figcaption><div id="viz-chrono-region-matrix" class="echart chart-xl"></div></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-china">
+          <div class="section-number">D7</div>
+          <h2>中国案例专题</h2>
+          <p class="section-lead">中国 pre-2005 案例作为熟悉样本，用于检查时代跨度、类型复杂度和人工理解差异。</p>
+          <div class="analysis-chart-grid one-up matrix-wide-grid">
+            <figure><figcaption>China property × period</figcaption><div id="viz-china-chrono" class="echart chart-china-matrix chart-china-chrono"></div></figure>
+            <figure><figcaption>China property × typology</figcaption><div id="viz-china-typology" class="echart chart-china-matrix chart-china-typology"></div></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-modern">
+          <div class="section-number">D8</div>
+          <h2>Modern World / 近现代专题</h2>
+          <p class="section-lead">原 FTG 近现代划分相对宽泛。这里先以 Modern-related 年代区域 assignment 和坐标点作基线，供 post-2004 近现代遗产比较。</p>
+          <div class="analysis-chart-grid one-up">
+            <figure>
+              <figcaption>Modern-related world map points</figcaption>
+              <div id="viz-modern-map" class="echart chart-world-map"></div>
+              <p class="chart-note">使用本地 world countries GeoJSON 作为静态底图，叠加 WHC 坐标点；底图仅用于空间参照，不参与统计计算。</p>
+            </figure>
+            <figure><figcaption>Modern-related typology distribution</figcaption><div id="viz-modern-typology" class="echart chart-md"></div></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-criteria-ii">
+          <div class="section-number">D9</div>
+          <h2>标准 ii 与文明交流网络</h2>
+          <p class="section-lead">这里展示基于 WHC 官网 Criterion (ii) 价值综述的文化交流网络原型。它只用于检查 circular-network 方法是否可读，不代表最终人工复核后的网络。</p>
+          <div class="criteria-network-panel">
+            <div class="network-controls" aria-label="Criterion ii network controls">
+              <label>
+                数据层
+                <select id="criteria-network-layer">
+                  <option value="conservative">Conservative coded edges only</option>
+                  <option value="all">Include provisional review-derived edges</option>
+                </select>
+              </label>
+              <label>
+                交流类型
+                <select id="criteria-network-type"></select>
+              </label>
+              <label>
+                Confidence
+                <select id="criteria-network-confidence"></select>
+              </label>
+              <label class="check-control"><input type="checkbox" id="criteria-network-transregional" checked /> 显示 Transregional / Multiple</label>
+              <label class="check-control"><input type="checkbox" id="criteria-network-intra" checked /> 显示 intra-regional</label>
+            </div>
+            <figure>
+              <figcaption>Criterion ii cultural exchange circular network prototype</figcaption>
+              <div id="viz-criteria-ii-circular-network" class="echart chart-network-large"></div>
+              <p class="chart-note">本图为基于标准 ii 文本的文化交流网络原型，仅显示可初步识别交流对象和地区关系的边。它不是 UNESCO/ICOMOS 官方网络，provisional 边仍需人工复核。</p>
+            </figure>
+          </div>
+          <div class="analysis-chart-grid two-up">
+            <figure><figcaption>Criterion ii candidate count by source region</figcaption><div id="viz-criteria-ii-region-bar" class="echart chart-md"></div></figure>
+            <div class="note-block analysis-note">
+              <h3>原型数据</h3>
+              <p>
+                <a href="data/derived/criteria_ii_exchange_edges_prototype_v0.json" download>edge JSON</a> ·
+                <a href="data/criteria_ii_exchange/criteria_ii_exchange_edges_prototype_combined_v0.csv" download>combined CSV</a> ·
+                <a href="data/criteria_ii_exchange/criteria_ii_review_edges_seed_v0.csv" download>review seed CSV</a> ·
+                <a href="data/criteria_ii_exchange/criteria_ii_review_edges_still_unclear.csv" download>still unclear CSV</a> ·
+                <a href="data/criteria_ii_exchange/criteria_ii_exchange_prototype_QA.md" download>QA note</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-theme-stats">
+          <div class="section-number">D10</div>
+          <h2>文化主题框架统计</h2>
+          <p class="section-lead">FTG thematic assignments 是 Phase 1A 抽取的原版公开逐项数据，不同于类型框架的重建。它们是类型判断的重要交叉检验线索。</p>
+          <div class="analysis-chart-grid one-up">
+            <figure><figcaption>Theme level 1 distribution</figcaption><div id="viz-theme-level1-bar" class="echart chart-wide"></div></figure>
+            <figure><figcaption>Theme coverage per property</figcaption><div id="viz-theme-coverage" class="echart chart-wide"></div><p class="chart-note">横轴为每个项目关联的唯一 FTG 主题路径数量；9 个及以上的项目已输出为备查清单。</p></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-theme-matrix">
+          <div class="section-number">D11</div>
+          <h2>类型—主题与地域—主题矩阵</h2>
+          <div class="analysis-chart-grid one-up matrix-wide-grid">
+            <figure><figcaption>Theme level 1 × typology</figcaption><div id="viz-theme-typology-matrix" class="echart chart-wide-matrix"></div></figure>
+            <figure><figcaption>Geographic subregion × theme level 1</figcaption><div id="viz-region-theme-matrix" class="echart chart-subregion-matrix"></div></figure>
+          </div>
+        </section>
+
+        <section class="section wide viz-section" id="reanalysis-theme-network">
+          <div class="section-number">D12</div>
+          <h2>主题网络与主题关系节点</h2>
+          <p class="section-lead">主题—主题共现用于识别关系节点型遗产。网络按共现权重大于等于 5 过滤，节点大小表示加权连接强度；悬停可查看主题路径、连接关系和共现案例线索。</p>
+          <div class="analysis-chart-grid one-up">
+            <figure><figcaption>Interactive theme-theme co-occurrence network</figcaption><div id="viz-theme-theme-matrix" class="echart chart-network"></div></figure>
+          </div>
+        </section>
+
+        <div class="part-divider" id="part-reflection">
+          <span>专题 E</span>
+          <strong>框架反思与输出</strong>
+          <p>记录本轮 AI 与人工复核过程中暴露出的分类视角问题，以及最终数据集的使用边界。</p>
+        </div>
+
+        <section class="section" id="framework-reflection">
+          <div class="section-number">12</div>
+          <h2>主题框架反思</h2>
+          <p>
+            这一部分不是给出新的确定性判断，而是记录重建过程中暴露出的解释风险。由于缺少 ICOMOS 原始 item-level 工作数据，我们无法判断这些差异来自 FTG 原分类视角、公开表格粒度、还是本轮重建规则本身。
+          </p>
+          <div class="reflection-stack">
+            <article class="reflection-topic">
+              <h3>乡土建筑</h3>
+              <p>AI 与人工复核都容易把地方材料、地方技术或传统建造直接理解为 vernacular。但某些案例在本土历史语境中可能是城镇水平、纪念性建筑或高规格工艺体系；若简单归入“乡土”，会有文化沙文主义风险。与此同时，若完全排除这类案例，与 FTG Table 5 的差距会明显扩大。当前只能把它作为批判性问题保留，而不能断言当年的分类是否存在这种视角倾向。</p>
+              <div class="case-feature-board" aria-label="Vernacular architecture boundary cases">
+                <div>
+                  <strong><a href="https://whc.unesco.org/en/list/192/" target="_blank" rel="noopener">Old Walled City of Shibam</a></strong>
+                  <span>泥砖高层城市传统</span>
+                  <em>地方材料 + 城市尺度</em>
+                </div>
+                <div>
+                  <strong><a href="https://whc.unesco.org/en/list/544/" target="_blank" rel="noopener">Kizhi Pogost</a></strong>
+                  <span>木构工艺与纪念性宗教建筑</span>
+                  <em>传统技艺 + 高规格建筑</em>
+                </div>
+                <div>
+                  <strong><a href="https://whc.unesco.org/en/list/535/" target="_blank" rel="noopener">Old Town of Quedlinburg</a></strong>
+                  <span>木构城镇肌理</span>
+                  <em>乡土建造 + 历史城镇</em>
+                </div>
+                <div>
+                  <strong><a href="https://whc.unesco.org/en/list/1140/" target="_blank" rel="noopener">Koutammakou</a></strong>
+                  <span>住居、聚落与景观实践</span>
+                  <em>T06 与文化景观交叠</em>
+                </div>
+                <div>
+                  <strong><a href="https://whc.unesco.org/en/list/353/" target="_blank" rel="noopener">Chaco Culture</a></strong>
+                  <span>材料与建造知识不足以自动判定</span>
+                  <em>保留边界审查</em>
+                </div>
+              </div>
+            </article>
+            <article class="reflection-topic">
+              <h3>宗教类型</h3>
+              <p>本轮重建中 T07 religious properties 与原始聚合统计差异较大。一个未解问题是：当年是否将一部分“纯遗址类型”中的宗教建筑或宗教遗址排除在宗教类型之外，还是公开统计采用了不同的归并口径。</p>
+              <table class="case-table">
+                <thead>
+                  <tr><th>典型案例</th><th>边界问题</th><th>当前处理</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><a href="https://whc.unesco.org/en/list/64/" target="_blank" rel="noopener">Tikal National Park</a></td><td>考古遗址中包含显著仪式、神庙与宗教空间。</td><td>宗教价值可支持主标签，但仍与 T01 考古遗产交叠。</td></tr>
+                  <tr><td><a href="https://whc.unesco.org/en/list/201/" target="_blank" rel="noopener">Ancient City of Polonnaruwa</a></td><td>废弃城市、佛教遗迹与历史聚落形态同时存在。</td><td>保留多标签逻辑，不把宗教建筑组件自动等同为单一宗教类型。</td></tr>
+                  <tr><td><a href="https://whc.unesco.org/en/list/357/" target="_blank" rel="noopener">Göreme</a> / <a href="https://whc.unesco.org/en/list/440/" target="_blank" rel="noopener">Mogao</a>-type cave sites</td><td>洞窟、壁画、宗教实践与岩石环境互相交织。</td><td>要求宗教身份或机构价值为核心，避免仅由图像或洞窟触发 T07。</td></tr>
+                </tbody>
+              </table>
+            </article>
+            <article class="reflection-topic">
+              <h3>象征 / 纪念</h3>
+              <p>从当前理解，特别是从中国案例和后续遗产话语来看，许多项目都可被读作具有强象征或纪念意义。但 FTG T13 的原统计明显更窄，提示这一类型背后可能存在文化差异、时代发展和纪念观念变化带来的认知偏差。</p>
+              <table class="case-table">
+                <thead>
+                  <tr><th>典型案例</th><th>为什么重要</th><th>当前处理</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><a href="https://whc.unesco.org/en/list/438/" target="_blank" rel="noopener">Great Wall</a></td><td>具有极强国家、边疆与文明象征意义。</td><td>保留为强关联线索，除非有稳定纪念 / 象征类型证据，不自动作为 T13 主标签。</td></tr>
+                  <tr><td><a href="https://whc.unesco.org/en/list/704/" target="_blank" rel="noopener">Qufu</a></td><td>儒家传统、家族记忆与制度文化象征高度集中。</td><td>作为 T13 边界或联想线索处理，提示文化语境差异。</td></tr>
+                  <tr><td><a href="https://whc.unesco.org/en/list/31/" target="_blank" rel="noopener">Auschwitz</a> / <a href="https://whc.unesco.org/en/list/775/" target="_blank" rel="noopener">Hiroshima</a> / <a href="https://whc.unesco.org/en/list/307/" target="_blank" rel="noopener">Statue of Liberty</a></td><td>事件记忆、政治理念或纪念功能在 OUV 中直接居中。</td><td>作为稳定 T13 主标签的对照组。</td></tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+        </section>
+
+        <div class="part-divider part-divider-closing" id="part-closing">
+          <span>收束与计划</span>
+          <strong>数据集与后续研究</strong>
+          <p>汇总可下载数据、使用边界和下一阶段分析方向。</p>
+        </div>
+
+        <section class="section" id="dataset">
+          <div class="section-number">13</div>
+          <h2>最终数据集</h2>
+          <div class="three-column">
+            <div class="note-block"><h3>主标签</h3><p>用于统计基线、时间比较和 pre/post-2004 对照。</p></div>
+            <div class="note-block"><h3>候选标签</h3><p>用于个案复核、边界案例整理和后续人工确认。</p></div>
+            <div class="note-block"><h3>联想线索</h3><p>用于 bridge-heritage、主题关系和扩展研究。</p></div>
+          </div>
+          <div class="vault-summary">
+            <h3>Obsidian 资料库</h3>
+            <p>
+              Phase 2B.8b 结果已增量更新到 Obsidian preview vault。资料库保留每个遗产项目的独立 Markdown 页，并新增 FTG 类型框架页面，使 WHC 项目、年代区域框架、主题框架与类型框架可以在本地关系图谱中共同浏览。
+            </p>
+            <div class="vault-stat-grid" aria-label="Obsidian vault update status">
+              <div><strong>1,250</strong><span>standard property pages</span></div>
+              <div><strong>633</strong><span>eligible Phase 2 pages matched</span></div>
+              <div><strong>14</strong><span>FTG typology pages</span></div>
+              <div><strong>0</strong><span>broken wikilinks / missing WHC URLs</span></div>
+            </div>
+            <div class="vault-architecture">
+              <div><strong>01_Properties</strong><span>每个遗产项目页保留 WHC URL、Article 1 / OG 元数据、主标签、候选标签和联想线索。</span></div>
+              <div><strong>02 / 03 Framework Pages</strong><span>沿用 Phase 1 年代区域与主题框架页面，保持与 FTG 原公开主题数据的连接。</span></div>
+              <div><strong>05_FTG_Typological</strong><span>新增 14 个类型类别页，汇总主标签项目、候选项目和 Phase 2B.8b 诊断数。</span></div>
+              <div><strong>Managed Blocks</strong><span>类型重建内容写入 <code>BEGIN_FTG_TYPOLOGY</code> 托管区块，避免覆盖人工笔记。</span></div>
+            </div>
+          </div>
+          <div id="download-links" class="download-grid" aria-label="Download final Phase 2B.8b files"></div>
+        </section>
+
+        <section class="section" id="future">
+          <div class="section-number">14</div>
+          <h2>后续研究</h2>
+          <ul class="future-list">
+            <li>将 pre-2005 reconstructed baseline 应用于 2004 年后项目。</li>
+            <li>追踪类型与主题案例随时间的增长和转移。</li>
+            <li>使用 Property-Theme 与 Theme-Theme networks 识别强桥接遗产。</li>
+            <li>检查 FTG 原主题是否需要拆分、补充或重新命名。</li>
+            <li>区分 theme-type representative properties 与 theme-relationship node representative properties。</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell">
+        <p>Source of truth: Phase 2B.8b final freeze candidate. Probable reconstruction, not original ICOMOS item-level working data.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="vendor/echarts.min.js?v=5.5.1"></script>
+    <script src="data/report-data.js?v=20260705-stat-viz-module-28"></script>
+    <script src="app.js?v=20260705-criteria-ii-prototype"></script>
+  </body>
+</html>

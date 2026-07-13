@@ -1,0 +1,692 @@
+{
+  "rows": [
+    {
+      "theme": "Agricultural Architecture (Farms, Barns, Stables, Silos, Etc.)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Agricultural Architecture (Farms, Barns, Stables, Silos, Etc.)",
+      "property_count": 6,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "possible",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Castles, Palaces, Residences",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Castles, Palaces, Residences",
+      "property_count": 72,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Cave Dwellings",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cave Dwellings",
+      "property_count": 23,
+      "quality": "learned_well",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "safe_for_small_pilot"
+    },
+    {
+      "theme": "Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Commercial Architecture (Office Buildings, Banks, Warehouses, Etc.)",
+      "property_count": 26,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Associative Landscapes",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Associative Landscapes",
+      "property_count": 47,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Botanical and Zoological Gardens",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Botanical and Zoological Gardens",
+      "property_count": 4,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Industrial Landscapes",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Industrial Landscapes",
+      "property_count": 6,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "watchlist_only"
+    },
+    {
+      "theme": "Natural Environment, Seascapes",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Natural Environment, Seascapes",
+      "property_count": 27,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "watchlist_only"
+    },
+    {
+      "theme": "Parks and Gardens",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Cultural Landscapes > Parks and Gardens",
+      "property_count": 28,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "watchlist_only"
+    },
+    {
+      "theme": "Domestic Habitat",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Domestic Habitat",
+      "property_count": 44,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Educational and Public Buildings Aqueducts; Baths, Etc.) Aqueducs, Bains, Etc.)",
+      "property_count": 27,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Decoration, Wall Paintings, Sculpture, Stucco, Mosaics, and Furnishings",
+      "property_count": 94,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Fittings (Windows, Doors, Etc.), Special Functional Features or Facilities Installations",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Fittings (Windows, Doors, Etc.), Special Functional Features or Facilities Installations",
+      "property_count": 5,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Works of Art and Collections",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Equipping Historic Buildings > Works of Art and Collections",
+      "property_count": 16,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Governmental and Public Buildings (Town Halls, Capitols, Courthouses, Post Offices; Main Public Squares) Pales)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Governmental and Public Buildings (Town Halls, Capitols, Courthouses, Post Offices; Main Public Squares) Pales)",
+      "property_count": 9,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Industrial Architecture (Factories, Mines, Stores, Refineries; Power Plants; Water Management, Etc.) Etc.)",
+      "property_count": 25,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Fortified Boundaries",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Boundaries",
+      "property_count": 4,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Fortified Cities",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Fortified Cities",
+      "property_count": 52,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Forts, Castles, Fortified Houses",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Military Architecture > Forts, Castles, Fortified Houses",
+      "property_count": 44,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Monumental Sculpture, Dolmens",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Monumental Sculpture, Dolmens",
+      "property_count": 37,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Pyramids, Obelisks, Minarets, Belfries",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Pyramids, Obelisks, Minarets, Belfries",
+      "property_count": 19,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Recreational Architecture (Theatres, Auditoriums, Athletic Facilities, Museums, Libraries, Depositories, Etc.)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Recreational Architecture (Theatres, Auditoriums, Athletic Facilities, Museums, Libraries, Depositories, Etc.)",
+      "property_count": 14,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Religious and Commemorative Architecture (Temples, Synagogues, Churches, Mosques, Tombs, Cemeteries, Shrines, Memorials)",
+      "property_count": 276,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Rock Art, Monumental Painting",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rock Art, Monumental Painting",
+      "property_count": 31,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Rural Settlements",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Rural Settlements",
+      "property_count": 32,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Cemeteries, Necropolises",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Sacred Sites > Cemeteries, Necropolises",
+      "property_count": 4,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Sacred Forests and Sacred Trees",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Sacred Sites > Sacred Forests and Sacred Trees",
+      "property_count": 2,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Sacred Mountains",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Sacred Sites > Sacred Mountains",
+      "property_count": 3,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Sacred Settlements",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Sacred Sites > Sacred Settlements",
+      "property_count": 20,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Transport Structures (Roads, Ports, Canals, Bridges, Etc.)",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Transport Structures (Roads, Ports, Canals, Bridges, Etc.)",
+      "property_count": 24,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Colonial Towns",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Colonial Towns",
+      "property_count": 39,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "watchlist_only"
+    },
+    {
+      "theme": "Inhabited Urban Areas",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Inhabited Urban Areas",
+      "property_count": 127,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Towns Established in the 19th and 20th Centuries",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Established in the 19th and 20th Centuries",
+      "property_count": 5,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Towns Which Are No Longer Inhabited",
+      "path": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites) > Urban Settlements > Towns Which Are No Longer Inhabited",
+      "property_count": 56,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "watchlist_only"
+    },
+    {
+      "theme": "Steam, Coal, Gas, Petroleum, Electric Power, Etc.",
+      "path": "Developing Technologies > Converting and Utilising Energy > Steam, Coal, Gas, Petroleum, Electric Power, Etc.",
+      "property_count": 1,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Water Energy, Water as Power Source, Watermills, Dam Construction, Water Management",
+      "path": "Developing Technologies > Converting and Utilising Energy > Water Energy, Water as Power Source, Watermills, Dam Construction, Water Management",
+      "property_count": 2,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Wind Power, Windmills",
+      "path": "Developing Technologies > Converting and Utilising Energy > Wind Power, Windmills",
+      "property_count": 3,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Astrology and Astronomy",
+      "path": "Developing Technologies > Processing Information and Communicating > Astrology and Astronomy",
+      "property_count": 7,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Writing, Inscriptions, Manuscripts, Archives",
+      "path": "Developing Technologies > Processing Information and Communicating > Writing, Inscriptions, Manuscripts, Archives",
+      "property_count": 9,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Infrastructures (Water-Supply, Sanitation, Electric Power, Etc.)",
+      "path": "Developing Technologies > Technology in Urban Community > Infrastructures (Water-Supply, Sanitation, Electric Power, Etc.)",
+      "property_count": 12,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Urban Transportation Systems",
+      "path": "Developing Technologies > Technology in Urban Community > Urban Transportation Systems",
+      "property_count": 1,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Identity",
+      "path": "Expressions of Society > Cultural and Political Associations > Identity",
+      "property_count": 13,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Memorials",
+      "path": "Expressions of Society > Cultural and Political Associations > Memorials",
+      "property_count": 24,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Significant Personalities",
+      "path": "Expressions of Society > Cultural and Political Associations > Significant Personalities",
+      "property_count": 68,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Human Health",
+      "path": "Expressions of Society > Developing Knowledge > Human Health",
+      "property_count": 6,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Law and Justice",
+      "path": "Expressions of Society > Developing Knowledge > Law and Justice",
+      "property_count": 2,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Philosophy and Science",
+      "path": "Expressions of Society > Developing Knowledge > Philosophy and Science",
+      "property_count": 12,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Language, Oral Traditions, Myths, Song-Lines",
+      "path": "Expressions of Society > Interacting and Communicating > Language, Oral Traditions, Myths, Song-Lines",
+      "property_count": 11,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Literature, Artistic References, and Theatre",
+      "path": "Expressions of Society > Interacting and Communicating > Literature, Artistic References, and Theatre",
+      "property_count": 7,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Music, Dance, Sports",
+      "path": "Expressions of Society > Interacting and Communicating > Music, Dance, Sports",
+      "property_count": 4,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Colonisation",
+      "path": "Movement of Peoples > Colonisation",
+      "property_count": 1,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Pilgrimage Places and Places of Origin (E.G. Mythical)",
+      "path": "Movement of Peoples > Cultural Routes > Pilgrimage Places and Places of Origin (E.G. Mythical)",
+      "property_count": 21,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Pilgrimage Routes, Commercial and Trade Routes; Heritage Routes",
+      "path": "Movement of Peoples > Cultural Routes > Pilgrimage Routes, Commercial and Trade Routes; Heritage Routes",
+      "property_count": 6,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "watchlist_only"
+    },
+    {
+      "theme": "Slavery",
+      "path": "Movement of Peoples > Migration > Slavery",
+      "property_count": 7,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Nomadism and Transhumance",
+      "path": "Movement of Peoples > Nomadism and Transhumance",
+      "property_count": 2,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Caravan Routes and Oases",
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Caravan Routes and Oases",
+      "property_count": 10,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "watchlist_only"
+    },
+    {
+      "theme": "Centres of Trade and Exchange of Goods",
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Centres of Trade and Exchange of Goods",
+      "property_count": 53,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Land Road Transport, Bridges",
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Land Road Transport, Bridges",
+      "property_count": 4,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Railroads and Railroad Stations, Tunnels, Viaducts",
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Railroads and Railroad Stations, Tunnels, Viaducts",
+      "property_count": 4,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Water Transport, Navigation, Harbours and Canals",
+      "path": "Movement of Peoples > Systems of Transportation and Trade > Water Transport, Navigation, Harbours and Canals",
+      "property_count": 27,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "yes",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Ancient Mediterranean (Greek, Hellenistic, Roman)",
+      "path": "Spiritual Responses (Religions) > Ancient and Indigenous Belief Systems > Ancient Mediterranean (Greek, Hellenistic, Roman)",
+      "property_count": 13,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Ancient Middle East and Egypt (Mesopotamia, Iran)",
+      "path": "Spiritual Responses (Religions) > Ancient and Indigenous Belief Systems > Ancient Middle East and Egypt (Mesopotamia, Iran)",
+      "property_count": 6,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Indigenous Belief Systems in Africa",
+      "path": "Spiritual Responses (Religions) > Ancient and Indigenous Belief Systems > Indigenous Belief Systems in Africa",
+      "property_count": 8,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Indigenous Belief Systems in Asia and the Pacific",
+      "path": "Spiritual Responses (Religions) > Ancient and Indigenous Belief Systems > Indigenous Belief Systems in Asia and the Pacific",
+      "property_count": 3,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Indigenous Belief Systems in Europe",
+      "path": "Spiritual Responses (Religions) > Ancient and Indigenous Belief Systems > Indigenous Belief Systems in Europe",
+      "property_count": 7,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Indigenous Belief Systems in the Americas (Olmec, Inca, Maya, Etc.)",
+      "path": "Spiritual Responses (Religions) > Ancient and Indigenous Belief Systems > Indigenous Belief Systems in the Americas (Olmec, Inca, Maya, Etc.)",
+      "property_count": 17,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Buddhism in the West",
+      "path": "Spiritual Responses (Religions) > Buddhism > Buddhism in the West",
+      "property_count": 30,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "possible",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Catholic Church",
+      "path": "Spiritual Responses (Religions) > Christianity > Catholic Church",
+      "property_count": 65,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Early Christian Church; Ethiopian Christianity",
+      "path": "Spiritual Responses (Religions) > Christianity > Early Christian Church; Ethiopian Christianity",
+      "property_count": 13,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Orthodox Church",
+      "path": "Spiritual Responses (Religions) > Christianity > Orthodox Church",
+      "property_count": 21,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Protestantism",
+      "path": "Spiritual Responses (Religions) > Christianity > Protestantism",
+      "property_count": 5,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Confucianism, Taoism, Shintoism",
+      "path": "Spiritual Responses (Religions) > Confucianism, Taoism, Shintoism",
+      "property_count": 15,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Sikhism, Parsiism",
+      "path": "Spiritual Responses (Religions) > Hinduism and Related Religions > Sikhism, Parsiism",
+      "property_count": 12,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "The Shiah, Ismaili, Sufism",
+      "path": "Spiritual Responses (Religions) > Islam > The Shiah, Ismaili, Sufism",
+      "property_count": 18,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Judaism",
+      "path": "Spiritual Responses (Religions) > Judaism",
+      "property_count": 7,
+      "quality": "usable_but_needs_thresholds",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Zoroastrianism",
+      "path": "Spiritual Responses (Religions) > Zoroastrianism",
+      "property_count": 1,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Crop and Flock Farming",
+      "path": "Utilising Natural Resources > Agriculture and Food Production > Crop and Flock Farming",
+      "property_count": 29,
+      "quality": "noisy_indicators",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "candidate_generation_only"
+    },
+    {
+      "theme": "Hunting, Gathering, and Fishing",
+      "path": "Utilising Natural Resources > Agriculture and Food Production > Hunting, Gathering, and Fishing",
+      "property_count": 5,
+      "quality": "too_sparse",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Irrigation Systems",
+      "path": "Utilising Natural Resources > Agriculture and Food Production > Irrigation Systems",
+      "property_count": 7,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Manufacturing",
+      "path": "Utilising Natural Resources > Manufacturing",
+      "property_count": 14,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    },
+    {
+      "theme": "Mining and Quarrying",
+      "path": "Utilising Natural Resources > Mining and Quarrying",
+      "property_count": 16,
+      "quality": "weak_rule",
+      "semantic_extension_risk": "no",
+      "auto_assignment_safety": "human_only"
+    }
+  ],
+  "quality_counts": [
+    {
+      "quality": "usable_but_needs_thresholds",
+      "count": 24
+    },
+    {
+      "quality": "weak_rule",
+      "count": 22
+    },
+    {
+      "quality": "too_sparse",
+      "count": 21
+    },
+    {
+      "quality": "noisy_indicators",
+      "count": 13
+    },
+    {
+      "quality": "learned_well",
+      "count": 1
+    }
+  ],
+  "safety_counts": [
+    {
+      "safety": "human_only",
+      "count": 48
+    },
+    {
+      "safety": "candidate_generation_only",
+      "count": 25
+    },
+    {
+      "safety": "watchlist_only",
+      "count": 7
+    },
+    {
+      "safety": "safe_for_small_pilot",
+      "count": 1
+    }
+  ]
+}

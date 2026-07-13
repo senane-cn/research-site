@@ -1,0 +1,701 @@
+{
+  "regions": [
+    "Southern Europe",
+    "Western Europe",
+    "Eastern Europe",
+    "Northern Europe",
+    "Eastern Asia",
+    "Southern Asia",
+    "Western Asia",
+    "South America",
+    "Central America",
+    "Northern Africa",
+    "Eastern Africa",
+    "Western Africa",
+    "Northern America",
+    "South-Eastern Asia",
+    "Caribbean",
+    "Central Asia",
+    "Southern Africa",
+    "Oceania"
+  ],
+  "subregions": [
+    "Southern Europe",
+    "Western Europe",
+    "Eastern Europe",
+    "Northern Europe",
+    "Eastern Asia",
+    "Southern Asia",
+    "Western Asia",
+    "South America",
+    "Central America",
+    "Northern Africa",
+    "Eastern Africa",
+    "Western Africa",
+    "Northern America",
+    "South-Eastern Asia",
+    "Caribbean",
+    "Central Asia",
+    "Southern Africa",
+    "Oceania"
+  ],
+  "themes": [
+    "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+    "Spiritual Responses (Religions)",
+    "Expressions of Society",
+    "Movement of Peoples",
+    "Utilising Natural Resources",
+    "Developing Technologies"
+  ],
+  "cells": [
+    {
+      "region": "Southern Europe",
+      "subregion": "Southern Europe",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 108
+    },
+    {
+      "region": "Southern Europe",
+      "subregion": "Southern Europe",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 43
+    },
+    {
+      "region": "Southern Europe",
+      "subregion": "Southern Europe",
+      "theme": "Expressions of Society",
+      "count": 29
+    },
+    {
+      "region": "Southern Europe",
+      "subregion": "Southern Europe",
+      "theme": "Movement of Peoples",
+      "count": 14
+    },
+    {
+      "region": "Southern Europe",
+      "subregion": "Southern Europe",
+      "theme": "Utilising Natural Resources",
+      "count": 8
+    },
+    {
+      "region": "Southern Europe",
+      "subregion": "Southern Europe",
+      "theme": "Developing Technologies",
+      "count": 7
+    },
+    {
+      "region": "Western Europe",
+      "subregion": "Western Europe",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 76
+    },
+    {
+      "region": "Western Europe",
+      "subregion": "Western Europe",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 19
+    },
+    {
+      "region": "Western Europe",
+      "subregion": "Western Europe",
+      "theme": "Expressions of Society",
+      "count": 16
+    },
+    {
+      "region": "Western Europe",
+      "subregion": "Western Europe",
+      "theme": "Movement of Peoples",
+      "count": 14
+    },
+    {
+      "region": "Western Europe",
+      "subregion": "Western Europe",
+      "theme": "Utilising Natural Resources",
+      "count": 14
+    },
+    {
+      "region": "Western Europe",
+      "subregion": "Western Europe",
+      "theme": "Developing Technologies",
+      "count": 8
+    },
+    {
+      "region": "Eastern Europe",
+      "subregion": "Eastern Europe",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 59
+    },
+    {
+      "region": "Eastern Europe",
+      "subregion": "Eastern Europe",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 25
+    },
+    {
+      "region": "Eastern Europe",
+      "subregion": "Eastern Europe",
+      "theme": "Expressions of Society",
+      "count": 16
+    },
+    {
+      "region": "Eastern Europe",
+      "subregion": "Eastern Europe",
+      "theme": "Movement of Peoples",
+      "count": 9
+    },
+    {
+      "region": "Eastern Europe",
+      "subregion": "Eastern Europe",
+      "theme": "Utilising Natural Resources",
+      "count": 7
+    },
+    {
+      "region": "Eastern Europe",
+      "subregion": "Eastern Europe",
+      "theme": "Developing Technologies",
+      "count": 2
+    },
+    {
+      "region": "Northern Europe",
+      "subregion": "Northern Europe",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 48
+    },
+    {
+      "region": "Northern Europe",
+      "subregion": "Northern Europe",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 15
+    },
+    {
+      "region": "Northern Europe",
+      "subregion": "Northern Europe",
+      "theme": "Expressions of Society",
+      "count": 9
+    },
+    {
+      "region": "Northern Europe",
+      "subregion": "Northern Europe",
+      "theme": "Movement of Peoples",
+      "count": 11
+    },
+    {
+      "region": "Northern Europe",
+      "subregion": "Northern Europe",
+      "theme": "Utilising Natural Resources",
+      "count": 12
+    },
+    {
+      "region": "Northern Europe",
+      "subregion": "Northern Europe",
+      "theme": "Developing Technologies",
+      "count": 2
+    },
+    {
+      "region": "Eastern Asia",
+      "subregion": "Eastern Asia",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 40
+    },
+    {
+      "region": "Eastern Asia",
+      "subregion": "Eastern Asia",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 23
+    },
+    {
+      "region": "Eastern Asia",
+      "subregion": "Eastern Asia",
+      "theme": "Expressions of Society",
+      "count": 10
+    },
+    {
+      "region": "Eastern Asia",
+      "subregion": "Eastern Asia",
+      "theme": "Movement of Peoples",
+      "count": 3
+    },
+    {
+      "region": "Eastern Asia",
+      "subregion": "Eastern Asia",
+      "theme": "Utilising Natural Resources",
+      "count": 2
+    },
+    {
+      "region": "Eastern Asia",
+      "subregion": "Eastern Asia",
+      "theme": "Developing Technologies",
+      "count": 4
+    },
+    {
+      "region": "Southern Asia",
+      "subregion": "Southern Asia",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 39
+    },
+    {
+      "region": "Southern Asia",
+      "subregion": "Southern Asia",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 28
+    },
+    {
+      "region": "Southern Asia",
+      "subregion": "Southern Asia",
+      "theme": "Expressions of Society",
+      "count": 4
+    },
+    {
+      "region": "Southern Asia",
+      "subregion": "Southern Asia",
+      "theme": "Movement of Peoples",
+      "count": 4
+    },
+    {
+      "region": "Southern Asia",
+      "subregion": "Southern Asia",
+      "theme": "Utilising Natural Resources",
+      "count": 4
+    },
+    {
+      "region": "Southern Asia",
+      "subregion": "Southern Asia",
+      "theme": "Developing Technologies",
+      "count": 0
+    },
+    {
+      "region": "Western Asia",
+      "subregion": "Western Asia",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 41
+    },
+    {
+      "region": "Western Asia",
+      "subregion": "Western Asia",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 13
+    },
+    {
+      "region": "Western Asia",
+      "subregion": "Western Asia",
+      "theme": "Expressions of Society",
+      "count": 7
+    },
+    {
+      "region": "Western Asia",
+      "subregion": "Western Asia",
+      "theme": "Movement of Peoples",
+      "count": 10
+    },
+    {
+      "region": "Western Asia",
+      "subregion": "Western Asia",
+      "theme": "Utilising Natural Resources",
+      "count": 2
+    },
+    {
+      "region": "Western Asia",
+      "subregion": "Western Asia",
+      "theme": "Developing Technologies",
+      "count": 2
+    },
+    {
+      "region": "South America",
+      "subregion": "South America",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 38
+    },
+    {
+      "region": "South America",
+      "subregion": "South America",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 11
+    },
+    {
+      "region": "South America",
+      "subregion": "South America",
+      "theme": "Expressions of Society",
+      "count": 5
+    },
+    {
+      "region": "South America",
+      "subregion": "South America",
+      "theme": "Movement of Peoples",
+      "count": 4
+    },
+    {
+      "region": "South America",
+      "subregion": "South America",
+      "theme": "Utilising Natural Resources",
+      "count": 5
+    },
+    {
+      "region": "South America",
+      "subregion": "South America",
+      "theme": "Developing Technologies",
+      "count": 3
+    },
+    {
+      "region": "Central America",
+      "subregion": "Central America",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 27
+    },
+    {
+      "region": "Central America",
+      "subregion": "Central America",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 10
+    },
+    {
+      "region": "Central America",
+      "subregion": "Central America",
+      "theme": "Expressions of Society",
+      "count": 4
+    },
+    {
+      "region": "Central America",
+      "subregion": "Central America",
+      "theme": "Movement of Peoples",
+      "count": 5
+    },
+    {
+      "region": "Central America",
+      "subregion": "Central America",
+      "theme": "Utilising Natural Resources",
+      "count": 3
+    },
+    {
+      "region": "Central America",
+      "subregion": "Central America",
+      "theme": "Developing Technologies",
+      "count": 3
+    },
+    {
+      "region": "Northern Africa",
+      "subregion": "Northern Africa",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 32
+    },
+    {
+      "region": "Northern Africa",
+      "subregion": "Northern Africa",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 6
+    },
+    {
+      "region": "Northern Africa",
+      "subregion": "Northern Africa",
+      "theme": "Expressions of Society",
+      "count": 4
+    },
+    {
+      "region": "Northern Africa",
+      "subregion": "Northern Africa",
+      "theme": "Movement of Peoples",
+      "count": 5
+    },
+    {
+      "region": "Northern Africa",
+      "subregion": "Northern Africa",
+      "theme": "Utilising Natural Resources",
+      "count": 0
+    },
+    {
+      "region": "Northern Africa",
+      "subregion": "Northern Africa",
+      "theme": "Developing Technologies",
+      "count": 1
+    },
+    {
+      "region": "Eastern Africa",
+      "subregion": "Eastern Africa",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 12
+    },
+    {
+      "region": "Eastern Africa",
+      "subregion": "Eastern Africa",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 7
+    },
+    {
+      "region": "Eastern Africa",
+      "subregion": "Eastern Africa",
+      "theme": "Expressions of Society",
+      "count": 2
+    },
+    {
+      "region": "Eastern Africa",
+      "subregion": "Eastern Africa",
+      "theme": "Movement of Peoples",
+      "count": 7
+    },
+    {
+      "region": "Eastern Africa",
+      "subregion": "Eastern Africa",
+      "theme": "Utilising Natural Resources",
+      "count": 0
+    },
+    {
+      "region": "Eastern Africa",
+      "subregion": "Eastern Africa",
+      "theme": "Developing Technologies",
+      "count": 0
+    },
+    {
+      "region": "Western Africa",
+      "subregion": "Western Africa",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 11
+    },
+    {
+      "region": "Western Africa",
+      "subregion": "Western Africa",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 5
+    },
+    {
+      "region": "Western Africa",
+      "subregion": "Western Africa",
+      "theme": "Expressions of Society",
+      "count": 1
+    },
+    {
+      "region": "Western Africa",
+      "subregion": "Western Africa",
+      "theme": "Movement of Peoples",
+      "count": 6
+    },
+    {
+      "region": "Western Africa",
+      "subregion": "Western Africa",
+      "theme": "Utilising Natural Resources",
+      "count": 1
+    },
+    {
+      "region": "Western Africa",
+      "subregion": "Western Africa",
+      "theme": "Developing Technologies",
+      "count": 0
+    },
+    {
+      "region": "Northern America",
+      "subregion": "Northern America",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 11
+    },
+    {
+      "region": "Northern America",
+      "subregion": "Northern America",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 3
+    },
+    {
+      "region": "Northern America",
+      "subregion": "Northern America",
+      "theme": "Expressions of Society",
+      "count": 4
+    },
+    {
+      "region": "Northern America",
+      "subregion": "Northern America",
+      "theme": "Movement of Peoples",
+      "count": 2
+    },
+    {
+      "region": "Northern America",
+      "subregion": "Northern America",
+      "theme": "Utilising Natural Resources",
+      "count": 3
+    },
+    {
+      "region": "Northern America",
+      "subregion": "Northern America",
+      "theme": "Developing Technologies",
+      "count": 0
+    },
+    {
+      "region": "South-Eastern Asia",
+      "subregion": "South-Eastern Asia",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 12
+    },
+    {
+      "region": "South-Eastern Asia",
+      "subregion": "South-Eastern Asia",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 6
+    },
+    {
+      "region": "South-Eastern Asia",
+      "subregion": "South-Eastern Asia",
+      "theme": "Expressions of Society",
+      "count": 1
+    },
+    {
+      "region": "South-Eastern Asia",
+      "subregion": "South-Eastern Asia",
+      "theme": "Movement of Peoples",
+      "count": 0
+    },
+    {
+      "region": "South-Eastern Asia",
+      "subregion": "South-Eastern Asia",
+      "theme": "Utilising Natural Resources",
+      "count": 1
+    },
+    {
+      "region": "South-Eastern Asia",
+      "subregion": "South-Eastern Asia",
+      "theme": "Developing Technologies",
+      "count": 0
+    },
+    {
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 8
+    },
+    {
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 0
+    },
+    {
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "theme": "Expressions of Society",
+      "count": 1
+    },
+    {
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "theme": "Movement of Peoples",
+      "count": 4
+    },
+    {
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "theme": "Utilising Natural Resources",
+      "count": 3
+    },
+    {
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "theme": "Developing Technologies",
+      "count": 0
+    },
+    {
+      "region": "Central Asia",
+      "subregion": "Central Asia",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 6
+    },
+    {
+      "region": "Central Asia",
+      "subregion": "Central Asia",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 2
+    },
+    {
+      "region": "Central Asia",
+      "subregion": "Central Asia",
+      "theme": "Expressions of Society",
+      "count": 2
+    },
+    {
+      "region": "Central Asia",
+      "subregion": "Central Asia",
+      "theme": "Movement of Peoples",
+      "count": 5
+    },
+    {
+      "region": "Central Asia",
+      "subregion": "Central Asia",
+      "theme": "Utilising Natural Resources",
+      "count": 0
+    },
+    {
+      "region": "Central Asia",
+      "subregion": "Central Asia",
+      "theme": "Developing Technologies",
+      "count": 1
+    },
+    {
+      "region": "Southern Africa",
+      "subregion": "Southern Africa",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 4
+    },
+    {
+      "region": "Southern Africa",
+      "subregion": "Southern Africa",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 2
+    },
+    {
+      "region": "Southern Africa",
+      "subregion": "Southern Africa",
+      "theme": "Expressions of Society",
+      "count": 1
+    },
+    {
+      "region": "Southern Africa",
+      "subregion": "Southern Africa",
+      "theme": "Movement of Peoples",
+      "count": 0
+    },
+    {
+      "region": "Southern Africa",
+      "subregion": "Southern Africa",
+      "theme": "Utilising Natural Resources",
+      "count": 0
+    },
+    {
+      "region": "Southern Africa",
+      "subregion": "Southern Africa",
+      "theme": "Developing Technologies",
+      "count": 0
+    },
+    {
+      "region": "Oceania",
+      "subregion": "Oceania",
+      "theme": "Creative Responses and Continuity (Monuments, Groups of Buildings and Sites)",
+      "count": 3
+    },
+    {
+      "region": "Oceania",
+      "subregion": "Oceania",
+      "theme": "Spiritual Responses (Religions)",
+      "count": 2
+    },
+    {
+      "region": "Oceania",
+      "subregion": "Oceania",
+      "theme": "Expressions of Society",
+      "count": 1
+    },
+    {
+      "region": "Oceania",
+      "subregion": "Oceania",
+      "theme": "Movement of Peoples",
+      "count": 0
+    },
+    {
+      "region": "Oceania",
+      "subregion": "Oceania",
+      "theme": "Utilising Natural Resources",
+      "count": 1
+    },
+    {
+      "region": "Oceania",
+      "subregion": "Oceania",
+      "theme": "Developing Technologies",
+      "count": 0
+    }
+  ],
+  "note": "Rows use visualization subregions inferred from WHC state names. Multi-country properties are counted in each represented subregion."
+}

@@ -1,0 +1,300 @@
+{
+  "regions": [
+    "Africa",
+    "Arab States",
+    "Asia and the Pacific",
+    "Europe and North America",
+    "Latin America and the Caribbean"
+  ],
+  "periods": [
+    "Prehistory",
+    "Antiquity / BC",
+    "Antiquity / early states",
+    "1st-5th c.",
+    "6th-10th c.",
+    "11th-15th c.",
+    "16th-18th c.",
+    "19th century",
+    "20th century",
+    "Macro-period / broad civilisation",
+    "Unparsed"
+  ],
+  "cells": [
+    {
+      "region": "Africa",
+      "period": "Prehistory",
+      "count": 10
+    },
+    {
+      "region": "Africa",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "region": "Africa",
+      "period": "Antiquity / early states",
+      "count": 0
+    },
+    {
+      "region": "Africa",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "region": "Africa",
+      "period": "6th-10th c.",
+      "count": 0
+    },
+    {
+      "region": "Africa",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "region": "Africa",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "region": "Africa",
+      "period": "19th century",
+      "count": 13
+    },
+    {
+      "region": "Africa",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "region": "Africa",
+      "period": "Macro-period / broad civilisation",
+      "count": 8
+    },
+    {
+      "region": "Africa",
+      "period": "Unparsed",
+      "count": 2
+    },
+    {
+      "region": "Arab States",
+      "period": "Prehistory",
+      "count": 4
+    },
+    {
+      "region": "Arab States",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "region": "Arab States",
+      "period": "Antiquity / early states",
+      "count": 21
+    },
+    {
+      "region": "Arab States",
+      "period": "1st-5th c.",
+      "count": 2
+    },
+    {
+      "region": "Arab States",
+      "period": "6th-10th c.",
+      "count": 5
+    },
+    {
+      "region": "Arab States",
+      "period": "11th-15th c.",
+      "count": 8
+    },
+    {
+      "region": "Arab States",
+      "period": "16th-18th c.",
+      "count": 1
+    },
+    {
+      "region": "Arab States",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "region": "Arab States",
+      "period": "20th century",
+      "count": 1
+    },
+    {
+      "region": "Arab States",
+      "period": "Macro-period / broad civilisation",
+      "count": 22
+    },
+    {
+      "region": "Arab States",
+      "period": "Unparsed",
+      "count": 5
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "Prehistory",
+      "count": 11
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "Antiquity / early states",
+      "count": 3
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "1st-5th c.",
+      "count": 9
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "6th-10th c.",
+      "count": 10
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "11th-15th c.",
+      "count": 28
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "16th-18th c.",
+      "count": 3
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "19th century",
+      "count": 2
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "20th century",
+      "count": 17
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "Macro-period / broad civilisation",
+      "count": 28
+    },
+    {
+      "region": "Asia and the Pacific",
+      "period": "Unparsed",
+      "count": 9
+    },
+    {
+      "region": "Europe and North America",
+      "period": "Prehistory",
+      "count": 23
+    },
+    {
+      "region": "Europe and North America",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "region": "Europe and North America",
+      "period": "Antiquity / early states",
+      "count": 199
+    },
+    {
+      "region": "Europe and North America",
+      "period": "1st-5th c.",
+      "count": 17
+    },
+    {
+      "region": "Europe and North America",
+      "period": "6th-10th c.",
+      "count": 3
+    },
+    {
+      "region": "Europe and North America",
+      "period": "11th-15th c.",
+      "count": 11
+    },
+    {
+      "region": "Europe and North America",
+      "period": "16th-18th c.",
+      "count": 0
+    },
+    {
+      "region": "Europe and North America",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "region": "Europe and North America",
+      "period": "20th century",
+      "count": 39
+    },
+    {
+      "region": "Europe and North America",
+      "period": "Macro-period / broad civilisation",
+      "count": 118
+    },
+    {
+      "region": "Europe and North America",
+      "period": "Unparsed",
+      "count": 1
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "Prehistory",
+      "count": 2
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "Antiquity / BC",
+      "count": 0
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "Antiquity / early states",
+      "count": 2
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "1st-5th c.",
+      "count": 0
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "6th-10th c.",
+      "count": 13
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "11th-15th c.",
+      "count": 0
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "16th-18th c.",
+      "count": 1
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "19th century",
+      "count": 0
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "20th century",
+      "count": 3
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "Macro-period / broad civilisation",
+      "count": 60
+    },
+    {
+      "region": "Latin America and the Caribbean",
+      "period": "Unparsed",
+      "count": 0
+    }
+  ],
+  "note": "Chronological-regional assignments are occurrence counts. Period parsing is approximate and uses broad bins where exact century mapping is not possible."
+}

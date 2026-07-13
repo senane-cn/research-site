@@ -1,0 +1,2173 @@
+{
+  "typologies": [
+    {
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "typology_label": "Archaeological heritage",
+      "final_count": 166,
+      "table5_count": 171,
+      "difference": -5,
+      "core_count": 40,
+      "probable_count": 126,
+      "candidate_count": 19
+    },
+    {
+      "typology_code": "T02_ROCK_ART",
+      "typology_label": "Rock-art sites",
+      "final_count": 23,
+      "table5_count": 26,
+      "difference": -3,
+      "core_count": 7,
+      "probable_count": 16,
+      "candidate_count": 13
+    },
+    {
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "typology_label": "Fossil hominid sites",
+      "final_count": 7,
+      "table5_count": 14,
+      "difference": -7,
+      "core_count": 1,
+      "probable_count": 6,
+      "candidate_count": 0
+    },
+    {
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "typology_label": "Historic buildings and ensembles",
+      "final_count": 394,
+      "table5_count": 341,
+      "difference": 53,
+      "core_count": 184,
+      "probable_count": 210,
+      "candidate_count": 132
+    },
+    {
+      "typology_code": "T05_SETTLEMENTS",
+      "typology_label": "Urban and rural settlements / historic towns and villages",
+      "final_count": 238,
+      "table5_count": 269,
+      "difference": -31,
+      "core_count": 43,
+      "probable_count": 195,
+      "candidate_count": 113
+    },
+    {
+      "typology_code": "T06_VERNACULAR",
+      "typology_label": "Vernacular architecture",
+      "final_count": 50,
+      "table5_count": 57,
+      "difference": -7,
+      "core_count": 1,
+      "probable_count": 49,
+      "candidate_count": 10
+    },
+    {
+      "typology_code": "T07_RELIGIOUS",
+      "typology_label": "Religious properties",
+      "final_count": 268,
+      "table5_count": 234,
+      "difference": 34,
+      "core_count": 40,
+      "probable_count": 228,
+      "candidate_count": 41
+    },
+    {
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "typology_label": "Agricultural, industrial and technological properties",
+      "final_count": 55,
+      "table5_count": 69,
+      "difference": -14,
+      "core_count": 15,
+      "probable_count": 40,
+      "candidate_count": 14
+    },
+    {
+      "typology_code": "T09_MILITARY",
+      "typology_label": "Military properties",
+      "final_count": 74,
+      "table5_count": 87,
+      "difference": -13,
+      "core_count": 12,
+      "probable_count": 62,
+      "candidate_count": 83
+    },
+    {
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "typology_label": "Cultural landscapes, parks and gardens",
+      "final_count": 109,
+      "table5_count": 100,
+      "difference": 9,
+      "core_count": 50,
+      "probable_count": 59,
+      "candidate_count": 40
+    },
+    {
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "typology_label": "Cultural routes",
+      "final_count": 11,
+      "table5_count": 8,
+      "difference": 3,
+      "core_count": 6,
+      "probable_count": 5,
+      "candidate_count": 17
+    },
+    {
+      "typology_code": "T12_BURIAL",
+      "typology_label": "Burial monuments and sites",
+      "final_count": 48,
+      "table5_count": 40,
+      "difference": 8,
+      "core_count": 3,
+      "probable_count": 45,
+      "candidate_count": 21
+    },
+    {
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "typology_label": "Symbolic properties and memorials",
+      "final_count": 19,
+      "table5_count": 21,
+      "difference": -2,
+      "core_count": 4,
+      "probable_count": 15,
+      "candidate_count": 134
+    },
+    {
+      "typology_code": "T14_MODERN",
+      "typology_label": "Modern heritage",
+      "final_count": 16,
+      "table5_count": 15,
+      "difference": 1,
+      "core_count": 1,
+      "probable_count": 15,
+      "candidate_count": 21
+    }
+  ],
+  "rows": [
+    {
+      "year": 1978,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 2
+    },
+    {
+      "year": 1978,
+      "typology_code": "T02_ROCK_ART",
+      "count": 0
+    },
+    {
+      "year": 1978,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 0
+    },
+    {
+      "year": 1978,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 4
+    },
+    {
+      "year": 1978,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 4
+    },
+    {
+      "year": 1978,
+      "typology_code": "T06_VERNACULAR",
+      "count": 2
+    },
+    {
+      "year": 1978,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 5
+    },
+    {
+      "year": 1978,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "year": 1978,
+      "typology_code": "T09_MILITARY",
+      "count": 1
+    },
+    {
+      "year": 1978,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 1
+    },
+    {
+      "year": 1978,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 0
+    },
+    {
+      "year": 1978,
+      "typology_code": "T12_BURIAL",
+      "count": 0
+    },
+    {
+      "year": 1978,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 0
+    },
+    {
+      "year": 1978,
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "year": 1979,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 16
+    },
+    {
+      "year": 1979,
+      "typology_code": "T02_ROCK_ART",
+      "count": 2
+    },
+    {
+      "year": 1979,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 1
+    },
+    {
+      "year": 1979,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 29
+    },
+    {
+      "year": 1979,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 15
+    },
+    {
+      "year": 1979,
+      "typology_code": "T06_VERNACULAR",
+      "count": 5
+    },
+    {
+      "year": 1979,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 26
+    },
+    {
+      "year": 1979,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 1
+    },
+    {
+      "year": 1979,
+      "typology_code": "T09_MILITARY",
+      "count": 2
+    },
+    {
+      "year": 1979,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 2
+    },
+    {
+      "year": 1979,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "year": 1979,
+      "typology_code": "T12_BURIAL",
+      "count": 3
+    },
+    {
+      "year": 1979,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 6
+    },
+    {
+      "year": 1979,
+      "typology_code": "T14_MODERN",
+      "count": 0
+    },
+    {
+      "year": 1980,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 29
+    },
+    {
+      "year": 1980,
+      "typology_code": "T02_ROCK_ART",
+      "count": 2
+    },
+    {
+      "year": 1980,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 3
+    },
+    {
+      "year": 1980,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 37
+    },
+    {
+      "year": 1980,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 24
+    },
+    {
+      "year": 1980,
+      "typology_code": "T06_VERNACULAR",
+      "count": 7
+    },
+    {
+      "year": 1980,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 36
+    },
+    {
+      "year": 1980,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 2
+    },
+    {
+      "year": 1980,
+      "typology_code": "T09_MILITARY",
+      "count": 5
+    },
+    {
+      "year": 1980,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 3
+    },
+    {
+      "year": 1980,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "year": 1980,
+      "typology_code": "T12_BURIAL",
+      "count": 7
+    },
+    {
+      "year": 1980,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 6
+    },
+    {
+      "year": 1980,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1981,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 37
+    },
+    {
+      "year": 1981,
+      "typology_code": "T02_ROCK_ART",
+      "count": 3
+    },
+    {
+      "year": 1981,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 4
+    },
+    {
+      "year": 1981,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 44
+    },
+    {
+      "year": 1981,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 27
+    },
+    {
+      "year": 1981,
+      "typology_code": "T06_VERNACULAR",
+      "count": 8
+    },
+    {
+      "year": 1981,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 42
+    },
+    {
+      "year": 1981,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 2
+    },
+    {
+      "year": 1981,
+      "typology_code": "T09_MILITARY",
+      "count": 5
+    },
+    {
+      "year": 1981,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 8
+    },
+    {
+      "year": 1981,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "year": 1981,
+      "typology_code": "T12_BURIAL",
+      "count": 9
+    },
+    {
+      "year": 1981,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 9
+    },
+    {
+      "year": 1981,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1982,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 46
+    },
+    {
+      "year": 1982,
+      "typology_code": "T02_ROCK_ART",
+      "count": 4
+    },
+    {
+      "year": 1982,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 4
+    },
+    {
+      "year": 1982,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 49
+    },
+    {
+      "year": 1982,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 40
+    },
+    {
+      "year": 1982,
+      "typology_code": "T06_VERNACULAR",
+      "count": 10
+    },
+    {
+      "year": 1982,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 45
+    },
+    {
+      "year": 1982,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 3
+    },
+    {
+      "year": 1982,
+      "typology_code": "T09_MILITARY",
+      "count": 9
+    },
+    {
+      "year": 1982,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 12
+    },
+    {
+      "year": 1982,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "year": 1982,
+      "typology_code": "T12_BURIAL",
+      "count": 10
+    },
+    {
+      "year": 1982,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 11
+    },
+    {
+      "year": 1982,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1983,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 48
+    },
+    {
+      "year": 1983,
+      "typology_code": "T02_ROCK_ART",
+      "count": 4
+    },
+    {
+      "year": 1983,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 4
+    },
+    {
+      "year": 1983,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 61
+    },
+    {
+      "year": 1983,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 45
+    },
+    {
+      "year": 1983,
+      "typology_code": "T06_VERNACULAR",
+      "count": 10
+    },
+    {
+      "year": 1983,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 56
+    },
+    {
+      "year": 1983,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 4
+    },
+    {
+      "year": 1983,
+      "typology_code": "T09_MILITARY",
+      "count": 11
+    },
+    {
+      "year": 1983,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 13
+    },
+    {
+      "year": 1983,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "year": 1983,
+      "typology_code": "T12_BURIAL",
+      "count": 12
+    },
+    {
+      "year": 1983,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 11
+    },
+    {
+      "year": 1983,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1984,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 51
+    },
+    {
+      "year": 1984,
+      "typology_code": "T02_ROCK_ART",
+      "count": 4
+    },
+    {
+      "year": 1984,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 4
+    },
+    {
+      "year": 1984,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 69
+    },
+    {
+      "year": 1984,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 52
+    },
+    {
+      "year": 1984,
+      "typology_code": "T06_VERNACULAR",
+      "count": 11
+    },
+    {
+      "year": 1984,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 63
+    },
+    {
+      "year": 1984,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 4
+    },
+    {
+      "year": 1984,
+      "typology_code": "T09_MILITARY",
+      "count": 14
+    },
+    {
+      "year": 1984,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 17
+    },
+    {
+      "year": 1984,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "year": 1984,
+      "typology_code": "T12_BURIAL",
+      "count": 13
+    },
+    {
+      "year": 1984,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 12
+    },
+    {
+      "year": 1984,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1985,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 58
+    },
+    {
+      "year": 1985,
+      "typology_code": "T02_ROCK_ART",
+      "count": 7
+    },
+    {
+      "year": 1985,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 4
+    },
+    {
+      "year": 1985,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 84
+    },
+    {
+      "year": 1985,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 66
+    },
+    {
+      "year": 1985,
+      "typology_code": "T06_VERNACULAR",
+      "count": 12
+    },
+    {
+      "year": 1985,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 77
+    },
+    {
+      "year": 1985,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 5
+    },
+    {
+      "year": 1985,
+      "typology_code": "T09_MILITARY",
+      "count": 18
+    },
+    {
+      "year": 1985,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 19
+    },
+    {
+      "year": 1985,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 1
+    },
+    {
+      "year": 1985,
+      "typology_code": "T12_BURIAL",
+      "count": 15
+    },
+    {
+      "year": 1985,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 12
+    },
+    {
+      "year": 1985,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1986,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 65
+    },
+    {
+      "year": 1986,
+      "typology_code": "T02_ROCK_ART",
+      "count": 7
+    },
+    {
+      "year": 1986,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 4
+    },
+    {
+      "year": 1986,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 96
+    },
+    {
+      "year": 1986,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 77
+    },
+    {
+      "year": 1986,
+      "typology_code": "T06_VERNACULAR",
+      "count": 13
+    },
+    {
+      "year": 1986,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 87
+    },
+    {
+      "year": 1986,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 6
+    },
+    {
+      "year": 1986,
+      "typology_code": "T09_MILITARY",
+      "count": 22
+    },
+    {
+      "year": 1986,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 21
+    },
+    {
+      "year": 1986,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "year": 1986,
+      "typology_code": "T12_BURIAL",
+      "count": 16
+    },
+    {
+      "year": 1986,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 12
+    },
+    {
+      "year": 1986,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1987,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 75
+    },
+    {
+      "year": 1987,
+      "typology_code": "T02_ROCK_ART",
+      "count": 9
+    },
+    {
+      "year": 1987,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1987,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 111
+    },
+    {
+      "year": 1987,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 94
+    },
+    {
+      "year": 1987,
+      "typology_code": "T06_VERNACULAR",
+      "count": 16
+    },
+    {
+      "year": 1987,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 103
+    },
+    {
+      "year": 1987,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 8
+    },
+    {
+      "year": 1987,
+      "typology_code": "T09_MILITARY",
+      "count": 26
+    },
+    {
+      "year": 1987,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "year": 1987,
+      "typology_code": "T12_BURIAL",
+      "count": 20
+    },
+    {
+      "year": 1987,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1987,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1988,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 78
+    },
+    {
+      "year": 1988,
+      "typology_code": "T02_ROCK_ART",
+      "count": 9
+    },
+    {
+      "year": 1988,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1988,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 126
+    },
+    {
+      "year": 1988,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 106
+    },
+    {
+      "year": 1988,
+      "typology_code": "T06_VERNACULAR",
+      "count": 17
+    },
+    {
+      "year": 1988,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 117
+    },
+    {
+      "year": 1988,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 9
+    },
+    {
+      "year": 1988,
+      "typology_code": "T09_MILITARY",
+      "count": 29
+    },
+    {
+      "year": 1988,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 27
+    },
+    {
+      "year": 1988,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "year": 1988,
+      "typology_code": "T12_BURIAL",
+      "count": 22
+    },
+    {
+      "year": 1988,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1988,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1989,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 81
+    },
+    {
+      "year": 1989,
+      "typology_code": "T02_ROCK_ART",
+      "count": 9
+    },
+    {
+      "year": 1989,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1989,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 130
+    },
+    {
+      "year": 1989,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 109
+    },
+    {
+      "year": 1989,
+      "typology_code": "T06_VERNACULAR",
+      "count": 18
+    },
+    {
+      "year": 1989,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 120
+    },
+    {
+      "year": 1989,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 9
+    },
+    {
+      "year": 1989,
+      "typology_code": "T09_MILITARY",
+      "count": 30
+    },
+    {
+      "year": 1989,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 27
+    },
+    {
+      "year": 1989,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "year": 1989,
+      "typology_code": "T12_BURIAL",
+      "count": 22
+    },
+    {
+      "year": 1989,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1989,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1990,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 83
+    },
+    {
+      "year": 1990,
+      "typology_code": "T02_ROCK_ART",
+      "count": 9
+    },
+    {
+      "year": 1990,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1990,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 138
+    },
+    {
+      "year": 1990,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 116
+    },
+    {
+      "year": 1990,
+      "typology_code": "T06_VERNACULAR",
+      "count": 18
+    },
+    {
+      "year": 1990,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 128
+    },
+    {
+      "year": 1990,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 9
+    },
+    {
+      "year": 1990,
+      "typology_code": "T09_MILITARY",
+      "count": 30
+    },
+    {
+      "year": 1990,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 30
+    },
+    {
+      "year": 1990,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "year": 1990,
+      "typology_code": "T12_BURIAL",
+      "count": 23
+    },
+    {
+      "year": 1990,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1990,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1991,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 85
+    },
+    {
+      "year": 1991,
+      "typology_code": "T02_ROCK_ART",
+      "count": 10
+    },
+    {
+      "year": 1991,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1991,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 148
+    },
+    {
+      "year": 1991,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 120
+    },
+    {
+      "year": 1991,
+      "typology_code": "T06_VERNACULAR",
+      "count": 20
+    },
+    {
+      "year": 1991,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 136
+    },
+    {
+      "year": 1991,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 9
+    },
+    {
+      "year": 1991,
+      "typology_code": "T09_MILITARY",
+      "count": 33
+    },
+    {
+      "year": 1991,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 32
+    },
+    {
+      "year": 1991,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 2
+    },
+    {
+      "year": 1991,
+      "typology_code": "T12_BURIAL",
+      "count": 23
+    },
+    {
+      "year": 1991,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1991,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1992,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 89
+    },
+    {
+      "year": 1992,
+      "typology_code": "T02_ROCK_ART",
+      "count": 10
+    },
+    {
+      "year": 1992,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1992,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 159
+    },
+    {
+      "year": 1992,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 130
+    },
+    {
+      "year": 1992,
+      "typology_code": "T06_VERNACULAR",
+      "count": 21
+    },
+    {
+      "year": 1992,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 143
+    },
+    {
+      "year": 1992,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 10
+    },
+    {
+      "year": 1992,
+      "typology_code": "T09_MILITARY",
+      "count": 34
+    },
+    {
+      "year": 1992,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 33
+    },
+    {
+      "year": 1992,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 4
+    },
+    {
+      "year": 1992,
+      "typology_code": "T12_BURIAL",
+      "count": 23
+    },
+    {
+      "year": 1992,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1992,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1993,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 96
+    },
+    {
+      "year": 1993,
+      "typology_code": "T02_ROCK_ART",
+      "count": 11
+    },
+    {
+      "year": 1993,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1993,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 183
+    },
+    {
+      "year": 1993,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 137
+    },
+    {
+      "year": 1993,
+      "typology_code": "T06_VERNACULAR",
+      "count": 26
+    },
+    {
+      "year": 1993,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 157
+    },
+    {
+      "year": 1993,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 13
+    },
+    {
+      "year": 1993,
+      "typology_code": "T09_MILITARY",
+      "count": 39
+    },
+    {
+      "year": 1993,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 36
+    },
+    {
+      "year": 1993,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 5
+    },
+    {
+      "year": 1993,
+      "typology_code": "T12_BURIAL",
+      "count": 27
+    },
+    {
+      "year": 1993,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1993,
+      "typology_code": "T14_MODERN",
+      "count": 1
+    },
+    {
+      "year": 1994,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 97
+    },
+    {
+      "year": 1994,
+      "typology_code": "T02_ROCK_ART",
+      "count": 12
+    },
+    {
+      "year": 1994,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1994,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 199
+    },
+    {
+      "year": 1994,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 142
+    },
+    {
+      "year": 1994,
+      "typology_code": "T06_VERNACULAR",
+      "count": 26
+    },
+    {
+      "year": 1994,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 170
+    },
+    {
+      "year": 1994,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 14
+    },
+    {
+      "year": 1994,
+      "typology_code": "T09_MILITARY",
+      "count": 40
+    },
+    {
+      "year": 1994,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 38
+    },
+    {
+      "year": 1994,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 6
+    },
+    {
+      "year": 1994,
+      "typology_code": "T12_BURIAL",
+      "count": 30
+    },
+    {
+      "year": 1994,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1994,
+      "typology_code": "T14_MODERN",
+      "count": 2
+    },
+    {
+      "year": 1995,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 99
+    },
+    {
+      "year": 1995,
+      "typology_code": "T02_ROCK_ART",
+      "count": 12
+    },
+    {
+      "year": 1995,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 5
+    },
+    {
+      "year": 1995,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 214
+    },
+    {
+      "year": 1995,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 154
+    },
+    {
+      "year": 1995,
+      "typology_code": "T06_VERNACULAR",
+      "count": 29
+    },
+    {
+      "year": 1995,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 181
+    },
+    {
+      "year": 1995,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 17
+    },
+    {
+      "year": 1995,
+      "typology_code": "T09_MILITARY",
+      "count": 44
+    },
+    {
+      "year": 1995,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 43
+    },
+    {
+      "year": 1995,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 6
+    },
+    {
+      "year": 1995,
+      "typology_code": "T12_BURIAL",
+      "count": 33
+    },
+    {
+      "year": 1995,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 13
+    },
+    {
+      "year": 1995,
+      "typology_code": "T14_MODERN",
+      "count": 2
+    },
+    {
+      "year": 1996,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 101
+    },
+    {
+      "year": 1996,
+      "typology_code": "T02_ROCK_ART",
+      "count": 12
+    },
+    {
+      "year": 1996,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 6
+    },
+    {
+      "year": 1996,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 239
+    },
+    {
+      "year": 1996,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 162
+    },
+    {
+      "year": 1996,
+      "typology_code": "T06_VERNACULAR",
+      "count": 34
+    },
+    {
+      "year": 1996,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 195
+    },
+    {
+      "year": 1996,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 20
+    },
+    {
+      "year": 1996,
+      "typology_code": "T09_MILITARY",
+      "count": 48
+    },
+    {
+      "year": 1996,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 48
+    },
+    {
+      "year": 1996,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 7
+    },
+    {
+      "year": 1996,
+      "typology_code": "T12_BURIAL",
+      "count": 35
+    },
+    {
+      "year": 1996,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 15
+    },
+    {
+      "year": 1996,
+      "typology_code": "T14_MODERN",
+      "count": 3
+    },
+    {
+      "year": 1997,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 108
+    },
+    {
+      "year": 1997,
+      "typology_code": "T02_ROCK_ART",
+      "count": 12
+    },
+    {
+      "year": 1997,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 6
+    },
+    {
+      "year": 1997,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 271
+    },
+    {
+      "year": 1997,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 174
+    },
+    {
+      "year": 1997,
+      "typology_code": "T06_VERNACULAR",
+      "count": 35
+    },
+    {
+      "year": 1997,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 202
+    },
+    {
+      "year": 1997,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 24
+    },
+    {
+      "year": 1997,
+      "typology_code": "T09_MILITARY",
+      "count": 53
+    },
+    {
+      "year": 1997,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 58
+    },
+    {
+      "year": 1997,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 7
+    },
+    {
+      "year": 1997,
+      "typology_code": "T12_BURIAL",
+      "count": 37
+    },
+    {
+      "year": 1997,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 15
+    },
+    {
+      "year": 1997,
+      "typology_code": "T14_MODERN",
+      "count": 5
+    },
+    {
+      "year": 1998,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 118
+    },
+    {
+      "year": 1998,
+      "typology_code": "T02_ROCK_ART",
+      "count": 14
+    },
+    {
+      "year": 1998,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 6
+    },
+    {
+      "year": 1998,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 289
+    },
+    {
+      "year": 1998,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 183
+    },
+    {
+      "year": 1998,
+      "typology_code": "T06_VERNACULAR",
+      "count": 36
+    },
+    {
+      "year": 1998,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 207
+    },
+    {
+      "year": 1998,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 27
+    },
+    {
+      "year": 1998,
+      "typology_code": "T09_MILITARY",
+      "count": 53
+    },
+    {
+      "year": 1998,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 65
+    },
+    {
+      "year": 1998,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 7
+    },
+    {
+      "year": 1998,
+      "typology_code": "T12_BURIAL",
+      "count": 37
+    },
+    {
+      "year": 1998,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 15
+    },
+    {
+      "year": 1998,
+      "typology_code": "T14_MODERN",
+      "count": 6
+    },
+    {
+      "year": 1999,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 129
+    },
+    {
+      "year": 1999,
+      "typology_code": "T02_ROCK_ART",
+      "count": 16
+    },
+    {
+      "year": 1999,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 7
+    },
+    {
+      "year": 1999,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 311
+    },
+    {
+      "year": 1999,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 195
+    },
+    {
+      "year": 1999,
+      "typology_code": "T06_VERNACULAR",
+      "count": 38
+    },
+    {
+      "year": 1999,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 220
+    },
+    {
+      "year": 1999,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 32
+    },
+    {
+      "year": 1999,
+      "typology_code": "T09_MILITARY",
+      "count": 58
+    },
+    {
+      "year": 1999,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 74
+    },
+    {
+      "year": 1999,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 8
+    },
+    {
+      "year": 1999,
+      "typology_code": "T12_BURIAL",
+      "count": 40
+    },
+    {
+      "year": 1999,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 16
+    },
+    {
+      "year": 1999,
+      "typology_code": "T14_MODERN",
+      "count": 7
+    },
+    {
+      "year": 2000,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 143
+    },
+    {
+      "year": 2000,
+      "typology_code": "T02_ROCK_ART",
+      "count": 18
+    },
+    {
+      "year": 2000,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 7
+    },
+    {
+      "year": 2000,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 346
+    },
+    {
+      "year": 2000,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 212
+    },
+    {
+      "year": 2000,
+      "typology_code": "T06_VERNACULAR",
+      "count": 41
+    },
+    {
+      "year": 2000,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 236
+    },
+    {
+      "year": 2000,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 39
+    },
+    {
+      "year": 2000,
+      "typology_code": "T09_MILITARY",
+      "count": 66
+    },
+    {
+      "year": 2000,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 82
+    },
+    {
+      "year": 2000,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 8
+    },
+    {
+      "year": 2000,
+      "typology_code": "T12_BURIAL",
+      "count": 43
+    },
+    {
+      "year": 2000,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 16
+    },
+    {
+      "year": 2000,
+      "typology_code": "T14_MODERN",
+      "count": 10
+    },
+    {
+      "year": 2001,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 147
+    },
+    {
+      "year": 2001,
+      "typology_code": "T02_ROCK_ART",
+      "count": 20
+    },
+    {
+      "year": 2001,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 7
+    },
+    {
+      "year": 2001,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 365
+    },
+    {
+      "year": 2001,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 222
+    },
+    {
+      "year": 2001,
+      "typology_code": "T06_VERNACULAR",
+      "count": 43
+    },
+    {
+      "year": 2001,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 243
+    },
+    {
+      "year": 2001,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 47
+    },
+    {
+      "year": 2001,
+      "typology_code": "T09_MILITARY",
+      "count": 69
+    },
+    {
+      "year": 2001,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 89
+    },
+    {
+      "year": 2001,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 8
+    },
+    {
+      "year": 2001,
+      "typology_code": "T12_BURIAL",
+      "count": 44
+    },
+    {
+      "year": 2001,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 17
+    },
+    {
+      "year": 2001,
+      "typology_code": "T14_MODERN",
+      "count": 12
+    },
+    {
+      "year": 2002,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 151
+    },
+    {
+      "year": 2002,
+      "typology_code": "T02_ROCK_ART",
+      "count": 20
+    },
+    {
+      "year": 2002,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 7
+    },
+    {
+      "year": 2002,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 370
+    },
+    {
+      "year": 2002,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 228
+    },
+    {
+      "year": 2002,
+      "typology_code": "T06_VERNACULAR",
+      "count": 44
+    },
+    {
+      "year": 2002,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 246
+    },
+    {
+      "year": 2002,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 49
+    },
+    {
+      "year": 2002,
+      "typology_code": "T09_MILITARY",
+      "count": 69
+    },
+    {
+      "year": 2002,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 91
+    },
+    {
+      "year": 2002,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 8
+    },
+    {
+      "year": 2002,
+      "typology_code": "T12_BURIAL",
+      "count": 44
+    },
+    {
+      "year": 2002,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 17
+    },
+    {
+      "year": 2002,
+      "typology_code": "T14_MODERN",
+      "count": 12
+    },
+    {
+      "year": 2003,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 158
+    },
+    {
+      "year": 2003,
+      "typology_code": "T02_ROCK_ART",
+      "count": 22
+    },
+    {
+      "year": 2003,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 7
+    },
+    {
+      "year": 2003,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 380
+    },
+    {
+      "year": 2003,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 232
+    },
+    {
+      "year": 2003,
+      "typology_code": "T06_VERNACULAR",
+      "count": 45
+    },
+    {
+      "year": 2003,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 256
+    },
+    {
+      "year": 2003,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 50
+    },
+    {
+      "year": 2003,
+      "typology_code": "T09_MILITARY",
+      "count": 70
+    },
+    {
+      "year": 2003,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 95
+    },
+    {
+      "year": 2003,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 9
+    },
+    {
+      "year": 2003,
+      "typology_code": "T12_BURIAL",
+      "count": 46
+    },
+    {
+      "year": 2003,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 18
+    },
+    {
+      "year": 2003,
+      "typology_code": "T14_MODERN",
+      "count": 14
+    },
+    {
+      "year": 2004,
+      "typology_code": "T01_ARCHAEOLOGICAL",
+      "count": 166
+    },
+    {
+      "year": 2004,
+      "typology_code": "T02_ROCK_ART",
+      "count": 23
+    },
+    {
+      "year": 2004,
+      "typology_code": "T03_FOSSIL_HOMINID",
+      "count": 7
+    },
+    {
+      "year": 2004,
+      "typology_code": "T04_HISTORIC_BUILDINGS_ENSEMBLES",
+      "count": 394
+    },
+    {
+      "year": 2004,
+      "typology_code": "T05_SETTLEMENTS",
+      "count": 238
+    },
+    {
+      "year": 2004,
+      "typology_code": "T06_VERNACULAR",
+      "count": 50
+    },
+    {
+      "year": 2004,
+      "typology_code": "T07_RELIGIOUS",
+      "count": 268
+    },
+    {
+      "year": 2004,
+      "typology_code": "T08_AGRI_INDUSTRIAL_TECH",
+      "count": 55
+    },
+    {
+      "year": 2004,
+      "typology_code": "T09_MILITARY",
+      "count": 74
+    },
+    {
+      "year": 2004,
+      "typology_code": "T10_CULTURAL_LANDSCAPES_PARKS_GARDENS",
+      "count": 109
+    },
+    {
+      "year": 2004,
+      "typology_code": "T11_CULTURAL_ROUTES",
+      "count": 11
+    },
+    {
+      "year": 2004,
+      "typology_code": "T12_BURIAL",
+      "count": 48
+    },
+    {
+      "year": 2004,
+      "typology_code": "T13_SYMBOLIC_MEMORIAL",
+      "count": 19
+    },
+    {
+      "year": 2004,
+      "typology_code": "T14_MODERN",
+      "count": 16
+    }
+  ],
+  "year_summary": [
+    {
+      "year": 1978,
+      "new_property_count": 8,
+      "new_main_label_count": 20
+    },
+    {
+      "year": 1979,
+      "new_property_count": 37,
+      "new_main_label_count": 89
+    },
+    {
+      "year": 1980,
+      "new_property_count": 22,
+      "new_main_label_count": 54
+    },
+    {
+      "year": 1981,
+      "new_property_count": 17,
+      "new_main_label_count": 37
+    },
+    {
+      "year": 1982,
+      "new_property_count": 19,
+      "new_main_label_count": 45
+    },
+    {
+      "year": 1983,
+      "new_property_count": 20,
+      "new_main_label_count": 36
+    },
+    {
+      "year": 1984,
+      "new_property_count": 15,
+      "new_main_label_count": 35
+    },
+    {
+      "year": 1985,
+      "new_property_count": 26,
+      "new_main_label_count": 63
+    },
+    {
+      "year": 1986,
+      "new_property_count": 24,
+      "new_main_label_count": 50
+    },
+    {
+      "year": 1987,
+      "new_property_count": 34,
+      "new_main_label_count": 81
+    },
+    {
+      "year": 1988,
+      "new_property_count": 22,
+      "new_main_label_count": 51
+    },
+    {
+      "year": 1989,
+      "new_property_count": 5,
+      "new_main_label_count": 15
+    },
+    {
+      "year": 1990,
+      "new_property_count": 14,
+      "new_main_label_count": 29
+    },
+    {
+      "year": 1991,
+      "new_property_count": 16,
+      "new_main_label_count": 32
+    },
+    {
+      "year": 1992,
+      "new_property_count": 16,
+      "new_main_label_count": 38
+    },
+    {
+      "year": 1993,
+      "new_property_count": 29,
+      "new_main_label_count": 74
+    },
+    {
+      "year": 1994,
+      "new_property_count": 21,
+      "new_main_label_count": 45
+    },
+    {
+      "year": 1995,
+      "new_property_count": 23,
+      "new_main_label_count": 58
+    },
+    {
+      "year": 1996,
+      "new_property_count": 32,
+      "new_main_label_count": 73
+    },
+    {
+      "year": 1997,
+      "new_property_count": 38,
+      "new_main_label_count": 82
+    },
+    {
+      "year": 1998,
+      "new_property_count": 27,
+      "new_main_label_count": 56
+    },
+    {
+      "year": 1999,
+      "new_property_count": 37,
+      "new_main_label_count": 88
+    },
+    {
+      "year": 2000,
+      "new_property_count": 51,
+      "new_main_label_count": 116
+    },
+    {
+      "year": 2001,
+      "new_property_count": 25,
+      "new_main_label_count": 66
+    },
+    {
+      "year": 2002,
+      "new_property_count": 9,
+      "new_main_label_count": 23
+    },
+    {
+      "year": 2003,
+      "new_property_count": 19,
+      "new_main_label_count": 46
+    },
+    {
+      "year": 2004,
+      "new_property_count": 27,
+      "new_main_label_count": 76
+    }
+  ]
+}
