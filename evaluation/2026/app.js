@@ -839,6 +839,50 @@ let selectedPptPropertyId = "C1765";
 let editingNarrativeKey = "";
 let activePdfSource = null;
 const mainReportPdfPath = "ICOMOS评估意见whc26-48com-inf8B1-en.pdf";
+const supplementalSectionSources = {
+  C1715rev: {
+    file: "whc26-48com-inf8B1-Add-en(1715rev).pdf",
+    pages: {
+      brief: 9,
+      attributes: 13,
+      comparative: 13,
+      criteria: 14,
+      criteria_conclusion: 14,
+      integrity: 15,
+      authenticity: 15,
+      integrity_authenticity_conclusion: 16,
+      boundaries: 16,
+      conservation: 17,
+      management: 18,
+      protection_property: 18,
+      protection_buffer_zone: 18,
+      threats_addressed: 12,
+      recommendations: 20,
+      recommendation_criteria: 20,
+    },
+  },
+  C1809: {
+    file: "whc26-48com-inf8B1-Add2-en(1809).pdf",
+    pages: {
+      brief: 9,
+      attributes: 12,
+      comparative: 12,
+      criteria: 13,
+      criteria_conclusion: 13,
+      integrity: 14,
+      authenticity: 14,
+      integrity_authenticity_conclusion: 15,
+      boundaries: 15,
+      conservation: 16,
+      management: 16,
+      protection_property: 16,
+      protection_buffer_zone: 16,
+      threats_addressed: 11,
+      recommendations: 19,
+      recommendation_criteria: 19,
+    },
+  },
+};
 const projectStartPdfPages = {
   C1768: 31,
   C1750: 49,
@@ -6245,6 +6289,16 @@ function sourceMetaFor(property, sectionKey) {
   const importedPage = normalizeSourcePageSpec(pageSpec);
   if (importedPage) return { propertyId: property.id, ...importedPage };
 
+  const supplementalSource = supplementalSectionSources[property?.id];
+  const supplementalPage = supplementalSource?.pages?.[sectionKey] || supplementalSource?.pages?.[baseKey];
+  if (supplementalPage) {
+    return {
+      propertyId: property.id,
+      page: supplementalPage,
+      file: supplementalSource.file,
+    };
+  }
+
   const evidenceMeta = sourceEvidenceMeta(property, baseKey);
   if (evidenceMeta) return evidenceMeta;
 
@@ -6420,7 +6474,7 @@ function recommendationsSectionSourceMeta(property) {
   }
   return {
     ...sourceMetaFor(property, "recommendations"),
-    section: "7 Recommendations",
+    section: property?.id === "C1809" ? "8 Recommendations" : "7 Recommendations",
   };
 }
 
