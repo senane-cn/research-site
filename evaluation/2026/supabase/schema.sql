@@ -49,6 +49,23 @@ alter table properties add column if not exists committee_confirmed_criteria tex
 alter table properties add column if not exists icomos_recommendation_note text;
 alter table properties add column if not exists committee_decision text;
 alter table properties add column if not exists committee_pm_requirements text;
+alter table properties add column if not exists state_party_proposed_name text;
+alter table properties add column if not exists tentative_list_entry_year int;
+alter table properties add column if not exists previous_nomination_sessions text[];
+alter table properties add column if not exists meeting_session text;
+alter table properties add column if not exists heritage_convention_category text;
+alter table properties add column if not exists cultural_property_types text[];
+alter table properties add column if not exists is_cultural_landscape_nomination boolean default false;
+alter table properties add column if not exists icomos_accepts_cultural_landscape boolean;
+alter table properties add column if not exists cultural_landscape_note text;
+alter table properties add column if not exists is_significant_boundary_modification boolean default false;
+alter table properties add column if not exists boundary_modification_sessions text[];
+alter table properties add column if not exists related_decisions text[];
+alter table properties add column if not exists official_whc_criteria text[];
+alter table properties add column if not exists nomination_cycle int;
+alter table properties add column if not exists evaluation_source_document text;
+alter table properties add column if not exists evaluation_source_pdf_pages text;
+alter table properties add column if not exists evaluation_source_report_pages text;
 
 create table if not exists assessment_items (
   item_key text primary key,
@@ -104,6 +121,8 @@ create table if not exists criteria_assessments (
   review_status text default 'draft',
   unique(property_id, criterion)
 );
+
+alter table criteria_assessments add column if not exists four_level_rating text;
 
 create table if not exists comparators (
   id uuid primary key default gen_random_uuid(),
@@ -165,6 +184,12 @@ create table if not exists recommendations (
 alter table recommendations add column if not exists committee_heading_zh text;
 alter table recommendations add column if not exists committee_summary_zh text;
 alter table recommendations add column if not exists committee_text_en text;
+alter table recommendations add column if not exists topic_category text;
+alter table recommendations add column if not exists topic_categories text[];
+alter table recommendations add column if not exists topic_confidence text;
+alter table recommendations add column if not exists topic_category_source text;
+alter table recommendations add column if not exists source_document text;
+alter table recommendations add column if not exists source_report_page int;
 
 create table if not exists narrative_edits (
   id uuid primary key default gen_random_uuid(),
@@ -210,6 +235,9 @@ create table if not exists evidence (
   reviewer_note text,
   created_at timestamptz default now()
 );
+
+alter table evidence add column if not exists source_document text;
+alter table evidence add column if not exists source_pdf_page int;
 
 create table if not exists official_ppt_ratings (
   id uuid primary key default gen_random_uuid(),
