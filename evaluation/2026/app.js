@@ -1,6 +1,7 @@
 const STORAGE_KEY = "whc48_icomos_research_workspace_v1";
 const STORAGE_BACKUP_KEY = `${STORAGE_KEY}_backups`;
 const APP_VERSION_LABEL = "1.2";
+const AUTH_REDIRECT_URL = "https://research.conservision.com/evaluation/2026/";
 const RESEARCH_APP_BASE_PATH = (window.__RESEARCH_APP_BASE__ || "").replace(/\/+$/, "");
 const LEGACY_STORAGE_ORIGINS = [
   "http://127.0.0.1:4173",
@@ -7251,7 +7252,10 @@ function attachPageListeners(route) {
     magicLinkBtn.addEventListener("click", async () => {
       const email = document.querySelector("#loginEmail").value.trim();
       if (!email) return;
-      const { error } = await supabaseClient.auth.signInWithOtp({ email });
+      const { error } = await supabaseClient.auth.signInWithOtp({
+        email,
+        options: { emailRedirectTo: AUTH_REDIRECT_URL },
+      });
       saveStatus = error ? `登录链接发送失败：${error.message}` : "登录链接已发送，请检查邮箱。";
       render();
     });
