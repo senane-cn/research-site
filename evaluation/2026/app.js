@@ -31,7 +31,11 @@ function routePath(pathname = window.location.pathname) {
 
 function assetPath(path = "") {
   if (!path || /^(https?:|mailto:|blob:|data:|#)/.test(path)) return path;
-  return path.startsWith("/") ? path.slice(1) : path;
+  if (window.location.protocol === "file:") {
+    return path.startsWith("/") ? path.slice(1) : path;
+  }
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return appPath(normalized);
 }
 
 const assessmentItems = [
