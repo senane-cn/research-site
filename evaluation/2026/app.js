@@ -1,6 +1,7 @@
 const STORAGE_KEY = "whc48_icomos_research_workspace_v1";
 const STORAGE_BACKUP_KEY = `${STORAGE_KEY}_backups`;
-const APP_VERSION_LABEL = "1.0";
+const APP_VERSION_LABEL = "1.2";
+const AUTH_REDIRECT_URL = "https://research.conservision.com/evaluation/2026/";
 const RESEARCH_APP_BASE_PATH = (window.__RESEARCH_APP_BASE__ || "").replace(/\/+$/, "");
 const LEGACY_STORAGE_ORIGINS = [
   "http://127.0.0.1:4173",
@@ -31,7 +32,11 @@ function routePath(pathname = window.location.pathname) {
 
 function assetPath(path = "") {
   if (!path || /^(https?:|mailto:|blob:|data:|#)/.test(path)) return path;
-  return path.startsWith("/") ? path.slice(1) : path;
+  if (window.location.protocol === "file:") {
+    return path.startsWith("/") ? path.slice(1) : path;
+  }
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return appPath(normalized);
 }
 
 const assessmentItems = [
@@ -839,6 +844,50 @@ let selectedPptPropertyId = "C1765";
 let editingNarrativeKey = "";
 let activePdfSource = null;
 const mainReportPdfPath = "ICOMOS评估意见whc26-48com-inf8B1-en.pdf";
+const supplementalSectionSources = {
+  C1715rev: {
+    file: "whc26-48com-inf8B1-Add-en(1715rev).pdf",
+    pages: {
+      brief: 9,
+      attributes: 13,
+      comparative: 13,
+      criteria: 14,
+      criteria_conclusion: 14,
+      integrity: 15,
+      authenticity: 15,
+      integrity_authenticity_conclusion: 16,
+      boundaries: 16,
+      conservation: 17,
+      management: 18,
+      protection_property: 18,
+      protection_buffer_zone: 18,
+      threats_addressed: 12,
+      recommendations: 20,
+      recommendation_criteria: 20,
+    },
+  },
+  C1809: {
+    file: "whc26-48com-inf8B1-Add2-en(1809).pdf",
+    pages: {
+      brief: 9,
+      attributes: 12,
+      comparative: 12,
+      criteria: 13,
+      criteria_conclusion: 13,
+      integrity: 14,
+      authenticity: 14,
+      integrity_authenticity_conclusion: 15,
+      boundaries: 15,
+      conservation: 16,
+      management: 16,
+      protection_property: 16,
+      protection_buffer_zone: 16,
+      threats_addressed: 11,
+      recommendations: 19,
+      recommendation_criteria: 19,
+    },
+  },
+};
 const projectStartPdfPages = {
   C1768: 31,
   C1750: 49,
@@ -1099,6 +1148,7 @@ let filters = { ...defaultFilters };
 
 let supabaseClient = null;
 let currentUser = null;
+let currentUserCanEdit = false;
 let saveStatus = "";
 let exportPreviewText = "";
 let dashboardExportPreviewText = "";
@@ -1435,14 +1485,38 @@ function initializeSupabase() {
   if (window.supabase && config.SUPABASE_URL && config.SUPABASE_ANON_KEY) {
     supabaseClient = window.supabase.createClient(config.SUPABASE_URL, config.SUPABASE_ANON_KEY);
     supabaseClient.auth.getUser().then(({ data }) => {
-      currentUser = data?.user || null;
-      render();
+      refreshEditorAccess(data?.user || null);
     });
     supabaseClient.auth.onAuthStateChange((_event, session) => {
-      currentUser = session?.user || null;
-      render();
+      refreshEditorAccess(session?.user || null);
     });
   }
+}
+
+async function refreshEditorAccess(user) {
+  currentUser = user || null;
+  currentUserCanEdit = false;
+  if (currentUser && supabaseClient) {
+    try {
+      const { data, error } = await supabaseClient.rpc("is_allowed_editor");
+      currentUserCanEdit = !error && data === true;
+    } catch {
+      currentUserCanEdit = false;
+    }
+  }
+  if (!currentUserCanEdit) editingNarrativeKey = "";
+  render();
+}
+
+function canEditSharedDatabase() {
+  return Boolean(currentUser && currentUserCanEdit);
+}
+
+function editorAccessLabel() {
+  if (!supabaseClient) return "未连接共享数据库，当前为只读模式。";
+  if (!currentUser) return "公开浏览；只有白名单邮箱登录后可修订。";
+  if (canEditSharedDatabase()) return `${currentUser.email} · 白名单编辑权限`;
+  return `${currentUser.email} · 只读（未加入编辑白名单）`;
 }
 
 async function buildSeedState() {
@@ -1675,6 +1749,19 @@ function normalizeWorkspaceState(nextState) {
       heritage_type: heritageType,
       is_transnational: Boolean(property.is_transnational || String(property.state_party || "").includes("/")),
       cultural_subtype: property.cultural_subtype || "",
+      cultural_property_types: normalizeTextList(property.cultural_property_types),
+      is_cultural_landscape_nomination: Boolean(property.is_cultural_landscape_nomination),
+      icomos_accepts_cultural_landscape:
+        property.icomos_accepts_cultural_landscape === true
+          ? true
+          : property.icomos_accepts_cultural_landscape === false
+            ? false
+            : null,
+      cultural_landscape_note: property.cultural_landscape_note || "",
+      previous_nomination_sessions: normalizeTextList(property.previous_nomination_sessions),
+      boundary_modification_sessions: normalizeTextList(property.boundary_modification_sessions),
+      related_decisions: normalizeTextList(property.related_decisions),
+      official_whc_criteria: normalizeCriteriaList(property.official_whc_criteria),
       category_of_property: normalizeCategoryOfProperty(isJingdezhen && !property.category_of_property ? "site" : property.category_of_property),
       category_of_property_source_note:
         simplifyCategorySourceNote(property) ||
@@ -2882,6 +2969,11 @@ async function publishCurrentWorkspaceToSharedDatabase() {
     render();
     return;
   }
+  if (!canEditSharedDatabase()) {
+    saveStatus = "当前账号只有浏览权限，不能发布到共享数据库。";
+    render();
+    return;
+  }
   const { data } = await supabaseClient.auth.getUser();
   currentUser = data?.user || null;
   saveLocalState();
@@ -2924,6 +3016,11 @@ async function publishCurrentWorkspaceToSharedDatabase() {
 }
 
 async function importStructuredExtraction() {
+  if (!canEditSharedDatabase()) {
+    saveStatus = "当前账号只有浏览权限，不能导入或同步结构化数据。";
+    render();
+    return;
+  }
   const input = document.querySelector("#structuredImportInput");
   const raw = input?.value.trim();
   if (!raw) {
@@ -3388,9 +3485,26 @@ function normalizeImportedProperty(property) {
     category_of_property: "",
     category_of_property_source_note: "",
     cultural_subtype: "",
+    cultural_property_types: [],
+    is_cultural_landscape_nomination: false,
+    icomos_accepts_cultural_landscape: null,
+    cultural_landscape_note: "",
+    state_party_proposed_name: "",
+    tentative_list_entry_year: null,
+    previous_nomination_sessions: [],
+    meeting_session: "",
+    heritage_convention_category: "",
     is_serial: false,
     component_count: null,
     is_transnational: false,
+    is_significant_boundary_modification: false,
+    boundary_modification_sessions: [],
+    related_decisions: [],
+    official_whc_criteria: [],
+    nomination_cycle: 2026,
+    evaluation_source_document: "",
+    evaluation_source_pdf_pages: "",
+    evaluation_source_report_pages: "",
     proposed_criteria: [],
     icomos_recommended_criteria: [],
     committee_confirmed_criteria: [],
@@ -3409,6 +3523,11 @@ function normalizeImportedProperty(property) {
     proposed_criteria: normalizeCriteriaList(property.proposed_criteria),
     icomos_recommended_criteria: normalizeCriteriaList(property.icomos_recommended_criteria),
     committee_confirmed_criteria: normalizeCriteriaList(property.committee_confirmed_criteria),
+    cultural_property_types: normalizeTextList(property.cultural_property_types),
+    previous_nomination_sessions: normalizeTextList(property.previous_nomination_sessions),
+    boundary_modification_sessions: normalizeTextList(property.boundary_modification_sessions),
+    related_decisions: normalizeTextList(property.related_decisions),
+    official_whc_criteria: normalizeCriteriaList(property.official_whc_criteria),
     category_of_property: normalizeCategoryOfProperty(property.category_of_property),
     category_of_property_source_note: categorySourceNote,
   };
@@ -3425,9 +3544,26 @@ function normalizeImportedProperty(property) {
     "category_of_property",
     "category_of_property_source_note",
     "cultural_subtype",
+    "cultural_property_types",
+    "is_cultural_landscape_nomination",
+    "icomos_accepts_cultural_landscape",
+    "cultural_landscape_note",
+    "state_party_proposed_name",
+    "tentative_list_entry_year",
+    "previous_nomination_sessions",
+    "meeting_session",
+    "heritage_convention_category",
     "is_serial",
     "component_count",
     "is_transnational",
+    "is_significant_boundary_modification",
+    "boundary_modification_sessions",
+    "related_decisions",
+    "official_whc_criteria",
+    "nomination_cycle",
+    "evaluation_source_document",
+    "evaluation_source_pdf_pages",
+    "evaluation_source_report_pages",
     "proposed_criteria",
     "icomos_recommended_criteria",
     "committee_confirmed_criteria",
@@ -3473,6 +3609,7 @@ function normalizeImportedCriterion(row) {
     criterion: row.criterion,
     proposed_by_state_party: Boolean(row.proposed_by_state_party ?? true),
     accepted_by_icomos: Boolean(row.accepted_by_icomos ?? false),
+    four_level_rating: normalizeRatingValue(row.four_level_rating || "unknown"),
     judgement: row.judgement || (row.accepted_by_icomos ? "accepted" : "not accepted"),
     summary_zh: row.summary_zh || "",
     summary_en: row.summary_en || "",
@@ -3912,22 +4049,26 @@ function renderSidebar(route) {
     ["/", "总览"],
     ["/properties", "项目列表"],
     ["/properties/C1765", "景德镇样例"],
-    ["/official-ratings-entry", "录入 Check Tool 截图"],
-    ["/database", "数据库管理"],
+    ...(canEditSharedDatabase()
+      ? [
+          ["/official-ratings-entry", "录入 Check Tool 截图"],
+          ["/database", "数据库管理"],
+        ]
+      : []),
   ];
   return `
     <aside class="sidebar">
       <div class="brand">
         <strong>ICOMOS 评估梳理分析工具</strong>
-        <span>1.0 · 结构化证据、校准评分、协作编辑</span>
+        <span>1.2 · 结构化证据、白名单协作修订</span>
       </div>
       <nav class="nav">
         ${links.map(([href, label]) => `<a data-route data-route-path="${href}" href="${appPath(href)}" class="${isActiveRoute(route, href) ? "active" : ""}">${label}</a>`).join("")}
       </nav>
-      <div class="nav-note">1.0 已按交接规则保护人工修订；结构化导入只替换占位或旧模板文本。</div>
+      <div class="nav-note">用于 ICOMOS 新列入项目的评估分析与复核。大会实时观察、投屏文件与语音转写在大会观察站点记录。</div>
       <div class="sync-panel">
-        <strong>${supabaseClient ? "共享协作模式" : "本地试用模式"}</strong>
-        <span>${supabaseClient ? (currentUser ? currentUser.email : "可浏览；登录后按 RLS 策略编辑。") : "配置 app-config.js 后连接 Supabase。"}</span>
+        <strong>${canEditSharedDatabase() ? "白名单协作模式" : "只读浏览模式"}</strong>
+        <span>${escapeHtml(editorAccessLabel())}</span>
         ${renderLegacyStorageNotice()}
         ${renderAuthControls()}
         ${saveStatus ? `<span>${escapeHtml(saveStatus)}</span>` : ""}
@@ -4449,7 +4590,8 @@ function renderDatabasePage() {
         <h2>协作编辑规则</h2>
         <ul class="item-list">
           <li>匿名用户可浏览公开数据。</li>
-          <li>建议先用邮箱白名单限制写入权限；登录用户的正文修订、大会决议和备注会记录最近修改人与修订日志。</li>
+          <li>只有邮箱白名单成员可看到修订入口并写入共享数据库；其他登录用户仍为只读。</li>
+          <li>白名单成员的正文修订与大会决议会记录最近修改人、时间及修改前后内容。</li>
           <li>Reviewer 可通过 review_status 标记 draft、reviewed、disputed、confirmed。</li>
         </ul>
       </div>
@@ -4468,7 +4610,11 @@ function renderDatabasePage() {
             <p class="muted">把 ICOMOS 报告梳理、评分校准、大会决议等公共字段写入 Supabase。适合少数维护者确认本地数据无误后同步给团队；个人“要点备注”不会上传。</p>
           </div>
           <div class="button-row">
-            <button class="button primary" id="publishWorkspaceBackupBtn" type="button" ${supabaseClient ? "" : "disabled"}>写入当前工作区到共享数据库</button>
+            ${
+              canEditSharedDatabase()
+                ? `<button class="button primary" id="publishWorkspaceBackupBtn" type="button" ${supabaseClient ? "" : "disabled"}>写入当前工作区到共享数据库</button>`
+                : `<span class="muted">共享写入仅对白名单编辑者开放。</span>`
+            }
           </div>
         </div>
         <div class="action-group">
@@ -4515,18 +4661,23 @@ function renderDatabasePage() {
         ${["properties", "assessment_items", "property_assessments", "assessment_subitems", "criteria_assessments", "comparators", "attributes", "recommendations", "narrative_edits", "edit_history", "evidence", "sources", "official_ppt_ratings", "property_type_tags"].map((name) => `<span class="chip">${name}</span>`).join("")}
       </div>
     </section>
-    <section class="panel import-panel" style="margin-top: 12px;">
-      <h2>结构化抽取结果导入</h2>
-      <p class="muted">把 ChatGPT 项目按工作模板输出的 JSON 粘贴到这里。导入后，详情页、项目列表和总览会使用同一套结构化数据。</p>
-      <div class="button-row" style="justify-content: flex-start;">
-        <a class="button secondary" href="${assetPath("/analysis/icomos-report-extraction-work-template.md")}" target="_blank" rel="noreferrer">查看抽取提示词</a>
-        <a class="button secondary" href="${assetPath("/data/icomos-extraction-template.json")}" target="_blank" rel="noreferrer">查看 JSON 模板</a>
-      </div>
-      <textarea id="structuredImportInput" rows="12" placeholder="粘贴 whc48-extraction-v1 JSON。支持按项目嵌套格式，也支持 properties、property_assessments 等表数组格式。"></textarea>
-      <div class="button-row" style="justify-content: flex-end;">
-        <button class="button primary" id="importStructuredBtn" type="button">导入结构化结果</button>
-      </div>
-    </section>
+    ${
+      canEditSharedDatabase()
+        ? `<section class="panel import-panel" style="margin-top: 12px;">
+            <h2>结构化抽取结果导入</h2>
+            <p class="muted">把 ChatGPT 项目按工作模板输出的 JSON 粘贴到这里。导入后，详情页、项目列表和总览会使用同一套结构化数据。</p>
+            <div class="button-row" style="justify-content: flex-start;">
+              <a class="button secondary" href="${assetPath("/analysis/icomos-report-extraction-work-template.md")}" target="_blank" rel="noreferrer">查看抽取提示词</a>
+              <a class="button secondary" href="${assetPath("/data/icomos-extraction-template.json")}" target="_blank" rel="noreferrer">查看 JSON 模板</a>
+              <a class="button secondary" href="${appPath("/data/whc48-icomos-workspace-2026-07-18-reviewed-merged.json")}" target="_blank" rel="noreferrer">下载 7 月 18 日合并数据</a>
+            </div>
+            <textarea id="structuredImportInput" rows="12" placeholder="粘贴 whc48-extraction-v1 JSON。支持按项目嵌套格式，也支持 properties、property_assessments 等表数组格式。"></textarea>
+            <div class="button-row" style="justify-content: flex-end;">
+              <button class="button primary" id="importStructuredBtn" type="button">导入结构化结果</button>
+            </div>
+          </section>`
+        : ""
+    }
   `;
 }
 
@@ -4593,6 +4744,8 @@ function propertyListColumns() {
     { key: "nomination_type", label: "申报类型", group: "basic", render: (property) => escapeHtml(property.nomination_type || "") },
     { key: "heritage_type", label: "遗产大类", group: "basic", render: (property) => escapeHtml(heritageTypeFor(property) || "待补") },
     { key: "category_of_property", label: "Category of property", group: "basic", render: renderCategoryOfPropertyCell },
+    { key: "cultural_property_types", label: "文化遗产类型", group: "basic", render: renderCulturalPropertyTypesCell },
+    { key: "cultural_landscape", label: "文化景观", group: "basic", render: renderCulturalLandscapeCell },
     { key: "cultural_subtype", label: "研究子类型", group: "basic", render: (property) => escapeHtml(property.cultural_subtype || "待补") },
     { key: "serial", label: "系列/组成部分", group: "basic", render: renderSerialCell },
     { key: "transnational", label: "跨国/国家", group: "basic", render: (property) => (property.is_transnational ? "transnational" : "national") },
@@ -4634,7 +4787,13 @@ function renderPropertyDetail(propertyId) {
   const recommendations = state.recommendations.filter((entry) => entry.property_id === property.id);
 
   return `
-    ${renderTopbar(property.property_name_zh || property.property_name_en, property.property_name_en, `<a class="button secondary" data-route data-route-path="/official-ratings-entry" href="${appPath("/official-ratings-entry")}">录入 Check Tool 截图</a>`)}
+    ${renderTopbar(
+      property.property_name_zh || property.property_name_en,
+      property.property_name_en,
+      canEditSharedDatabase()
+        ? `<a class="button secondary" data-route data-route-path="/official-ratings-entry" href="${appPath("/official-ratings-entry")}">录入 Check Tool 截图</a>`
+        : "",
+    )}
     <section class="property-detail-layout">
       <div class="property-main-column">
         <section class="property-summary">
@@ -4647,7 +4806,12 @@ function renderPropertyDetail(propertyId) {
               <div><dt>申报类型</dt><dd>${escapeHtml(property.nomination_type || "")}</dd></div>
               <div><dt>遗产大类</dt><dd>${escapeHtml(heritageTypeFor(property) || "待补")}</dd></div>
               <div><dt>Category of property</dt><dd>${renderCategoryOfPropertyDetail(property)}</dd></div>
+              <div><dt>文化遗产类型</dt><dd>${renderCulturalPropertyTypesCell(property)}</dd></div>
+              <div><dt>文化景观</dt><dd>${renderCulturalLandscapeDetail(property)}</dd></div>
               <div><dt>系列/跨境</dt><dd>${property.is_serial ? "serial" : "non-serial"} · ${property.is_transnational ? "transnational" : "national"}</dd></div>
+              <div><dt>预备名单</dt><dd>${escapeHtml(property.tentative_list_entry_year || "待补")}</dd></div>
+              <div><dt>历次审议</dt><dd>${escapeHtml(normalizeTextList(property.previous_nomination_sessions).join("、") || "无")}</dd></div>
+              <div><dt>相关决议</dt><dd>${escapeHtml(normalizeTextList(property.related_decisions).join("；") || "待补")}</dd></div>
               <div><dt>ICOMOS 认可标准</dt><dd>${escapeHtml((property.icomos_recommended_criteria || []).join(", ") || "待补")}</dd></div>
               <div><dt>ICOMOS 推荐意见</dt><dd>${escapeHtml(property.icomos_recommendation || "待补")}</dd></div>
             </dl>
@@ -4686,6 +4850,15 @@ function renderCommitteeDecisionForm(property) {
   const selectedCriteria = new Set(normalizeCriteriaList(property.committee_confirmed_criteria || []));
   const selectedDecision = committeeDecisionSelectValue(property);
   const edit = narrativePayload(property.id, "committee_decision");
+  if (!canEditSharedDatabase()) {
+    return `
+      <dl class="readonly-decision-summary">
+        <div><dt>大会确认价值标准</dt><dd>${escapeHtml([...selectedCriteria].join(", ") || "待录入")}</dd></div>
+        <div><dt>列入与否的决议</dt><dd>${escapeHtml(selectedDecision || "待录入")}</dd></div>
+      </dl>
+      ${renderLastEditedMeta(edit)}
+    `;
+  }
   return `
     <form class="committee-decision-form" data-committee-decision-form data-property-id="${escapeAttr(property.id)}">
       <fieldset>
@@ -4713,6 +4886,11 @@ function renderCommitteeDecisionForm(property) {
 }
 
 async function persistCommitteeDecision(form) {
+  if (!canEditSharedDatabase()) {
+    saveStatus = "当前账号只有浏览权限，不能修改共享数据库。";
+    render();
+    return;
+  }
   const property = propertyById(form.dataset.propertyId);
   if (!property) return;
   const data = new FormData(form);
@@ -4811,10 +4989,10 @@ function renderResearchNotesPanel(property) {
   return `
     <div class="panel research-note-card" data-research-note-card data-property-id="${escapeAttr(property.id)}" data-section-key="research_notes">
       <div class="panel-title-row">
-        <h2>要点备注</h2>
+        <h2>个人分析备注</h2>
         <span class="muted" data-research-note-status>本机私有</span>
       </div>
-      <p class="muted private-note-hint">用于个人工作记录；保存后只留在本机，可在数据库页单独导出 Markdown 或 Word 文档。</p>
+      <p class="muted private-note-hint">用于会后分析，仅保存在本机；大会进行中的语音转写与进程要点请使用大会观察站点。</p>
       <div class="note-toolbar" aria-label="备注格式工具">
         <button type="button" data-note-command="formatBlock" data-note-value="h3">小标题</button>
         <button type="button" data-note-command="bold"><strong>B</strong></button>
@@ -5028,6 +5206,7 @@ function renderCriterionAnalysisItem(property, entry, edit) {
     <li class="criterion-analysis-item">
       <strong>Criterion ${escapeHtml(entry.criterion)}</strong>
       ${entry.proposed_by_state_party === false ? `<span class="chip warning-chip">ICOMOS 补充</span>` : ""}
+      ${entry.four_level_rating && entry.four_level_rating !== "unknown" ? `<span class="criterion-rating">四级分档 ${ratingPill(entry.four_level_rating)}</span>` : ""}
       ${criterionPartBlock("缔约国论述", parts.stateParty)}
       ${criterionPartBlock("ICOMOS 评述", icomosReview)}
       ${criterionPartBlock("ICOMOS 结论", conclusionSource, conclusionTranslation)}
@@ -5765,11 +5944,22 @@ function renderRecommendationDisplayItem(entry, index, edit) {
     <li class="recommendation-display-item">
       <strong>${escapeHtml(label)}</strong>
       <div>
+        ${renderRecommendationTopicChips(entry)}
         ${source ? displayParagraphs(stripRecommendationPrefix(source)).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("") : ""}
         ${summary ? displayParagraphs(stripRecommendationPrefix(summary)).map((paragraph) => `<p class="muted">${escapeHtml(paragraph)}</p>`).join("") : ""}
       </div>
     </li>
   `;
+}
+
+function renderRecommendationTopicChips(entry) {
+  const topics = normalizeTextList(entry?.topic_categories).length
+    ? normalizeTextList(entry.topic_categories)
+    : normalizeTextList(entry?.topic_category);
+  if (!topics.length) return "";
+  return `<div class="recommendation-topic-list" aria-label="建议主题">${topics
+    .map((topic, index) => `<span class="recommendation-topic-chip ${index === 0 ? "primary" : ""}">${escapeHtml(topic)}</span>`)
+    .join("")}</div>`;
 }
 
 function renderIcomosRecommendationEditorItem(entry, index, edit) {
@@ -6038,9 +6228,11 @@ function renderNarrativeHeader(title, propertyId, sectionKey, editing = false) {
         ${renderLastEditedMeta(edit)}
       </div>
       ${
-        editing
-          ? `<button class="button secondary" type="button" data-cancel-narrative="${escapeAttr(`${propertyId}:${sectionKey}`)}">取消</button>`
-          : `<button class="button secondary" type="button" data-edit-narrative="${escapeAttr(`${propertyId}:${sectionKey}`)}">修订</button>`
+        !canEditSharedDatabase()
+          ? ""
+          : editing
+            ? `<button class="button secondary" type="button" data-cancel-narrative="${escapeAttr(`${propertyId}:${sectionKey}`)}">取消</button>`
+            : `<button class="button secondary" type="button" data-edit-narrative="${escapeAttr(`${propertyId}:${sectionKey}`)}">修订</button>`
       }
     </div>
   `;
@@ -6172,6 +6364,19 @@ function sourceMetaFor(property, sectionKey) {
   const importedPage = normalizeSourcePageSpec(pageSpec);
   if (importedPage) return { propertyId: property.id, ...importedPage };
 
+  const supplementalSource = supplementalSectionSources[property?.id];
+  const supplementalPage = supplementalSource?.pages?.[sectionKey] || supplementalSource?.pages?.[baseKey];
+  if (supplementalPage) {
+    return {
+      propertyId: property.id,
+      page: supplementalPage,
+      file: supplementalSource.file,
+    };
+  }
+
+  const evidenceMeta = sourceEvidenceMeta(property, baseKey);
+  if (evidenceMeta) return evidenceMeta;
+
   const exactPages = {
     C1765: {
       brief: 93,
@@ -6196,6 +6401,36 @@ function sourceMetaFor(property, sectionKey) {
   const page = exactPages[property?.id]?.[sectionKey];
   const basePage = exactPages[property?.id]?.[baseKey];
   return page || basePage ? { propertyId: property.id, page: page || basePage } : { propertyId: property?.id || selectedPropertyId };
+}
+
+function sourceEvidenceMeta(property, sectionKey) {
+  if (!property?.id) return null;
+  const patterns = {
+    criteria: /criteria/i,
+    comparative: /comparative/i,
+    integrity: /integrity/i,
+    authenticity: /authenticity/i,
+    boundaries: /boundar/i,
+    conservation: /conservation|monitoring/i,
+    protection_property: /protection and management|legal protection/i,
+    protection_buffer_zone: /protection and management|buffer/i,
+    management: /protection and management|management/i,
+    threats_addressed: /threat|emergency/i,
+    recommendations: /recommendation/i,
+  };
+  const pattern = patterns[sectionKey];
+  if (!pattern) return null;
+  const evidence = (state.evidence || []).find(
+    (entry) => entry.property_id === property.id && pattern.test(String(entry.source_section || "")),
+  );
+  if (!evidence) return null;
+  const page = Number(evidence.source_pdf_page) || (property.evaluation_source_document ? Number(evidence.page_number) : null);
+  if (!page) return null;
+  return {
+    propertyId: property.id,
+    page,
+    file: evidence.source_document || property.evaluation_source_document || "",
+  };
 }
 
 function briefSectionSourceMeta(property) {
@@ -6314,7 +6549,7 @@ function recommendationsSectionSourceMeta(property) {
   }
   return {
     ...sourceMetaFor(property, "recommendations"),
-    section: "7 Recommendations",
+    section: property?.id === "C1809" ? "8 Recommendations" : "7 Recommendations",
   };
 }
 
@@ -6380,6 +6615,7 @@ function renderSourceLocator(meta = {}) {
         data-pdf-label="${escapeAttr(label)}"
         data-pdf-title="${escapeAttr(title)}"
         data-pdf-section="${escapeAttr(section)}"
+        data-pdf-file="${escapeAttr(meta.file || property?.evaluation_source_document || mainReportPdfPath)}"
         title="${escapeAttr(label)}"
       >查阅原文</button>
     </div>
@@ -6395,8 +6631,13 @@ function sourcePagesForProperty(property, meta = {}) {
   }
   const correction = criteriaCorrectionProjects.find((entry) => entry.property_id === property?.id);
   const correctionPages = Array.isArray(correction?.report_pages) ? correction.report_pages : [];
-  const start = Number(projectStartPdfPages[property?.id] || property?.report_page_start || correctionPages[0]) || null;
-  const end = projectStartPdfPages[property?.id] ? start : Number(property?.report_page_end || correctionPages[1] || correctionPages[0]) || start;
+  const supplementaryRange = String(property?.evaluation_source_pdf_pages || "").match(/(\d+)\s*(?:-|–|—)\s*(\d+)/);
+  const supplementaryStart = Number(supplementaryRange?.[1]) || null;
+  const supplementaryEnd = Number(supplementaryRange?.[2]) || supplementaryStart;
+  const start = Number(projectStartPdfPages[property?.id] || supplementaryStart || property?.report_page_start || correctionPages[0]) || null;
+  const end = projectStartPdfPages[property?.id]
+    ? start
+    : Number(supplementaryEnd || property?.report_page_end || correctionPages[1] || correctionPages[0]) || start;
   return { start, end };
 }
 
@@ -6406,7 +6647,7 @@ function renderPdfSourcePanel() {
   const title = activePdfSource.title || "ICOMOS report";
   const label = activePdfSource.label || `原文 p.${page}`;
   const section = activePdfSource.section || "";
-  const pdfUrl = pdfUrlForPage(page);
+  const pdfUrl = pdfUrlForPage(page, activePdfSource.file);
   const expanded = Boolean(activePdfSource.expanded);
   return `
     <aside class="pdf-source-panel ${expanded ? "expanded" : ""}" aria-label="报告原文阅览窗口">
@@ -6426,9 +6667,10 @@ function renderPdfSourcePanel() {
   `;
 }
 
-function pdfUrlForPage(page) {
-  const file = `/${encodeURI(mainReportPdfPath)}`;
-  return `${assetPath("/pdf-viewer.html")}?file=${encodeURIComponent(file)}&page=${Number(page) || 1}`;
+function pdfUrlForPage(page, sourceFile = "") {
+  const fileName = String(sourceFile || mainReportPdfPath).replace(/^\/+/, "");
+  const file = appPath(`/${encodeURI(fileName)}`);
+  return `${appPath("/pdf-viewer.html")}?file=${encodeURIComponent(file)}&page=${Number(page) || 1}`;
 }
 
 function openPdfSourceFromButton(button) {
@@ -6438,6 +6680,7 @@ function openPdfSourceFromButton(button) {
     label: button.dataset.pdfLabel || "",
     title: button.dataset.pdfTitle || "",
     section: button.dataset.pdfSection || "",
+    file: button.dataset.pdfFile || mainReportPdfPath,
   };
   render();
 }
@@ -6593,6 +6836,12 @@ function persistPrivateNarrativeEdit(propertyId, sectionKey, payload) {
 async function persistNarrativeEdit(propertyId, sectionKey, payload) {
   if (PRIVATE_NARRATIVE_SECTIONS.has(sectionKey)) {
     persistPrivateNarrativeEdit(propertyId, sectionKey, payload);
+    return;
+  }
+  if (!canEditSharedDatabase()) {
+    editingNarrativeKey = "";
+    saveStatus = "当前账号只有浏览权限，不能修改共享数据库。";
+    render();
     return;
   }
   const stamp = editStamp();
@@ -6867,6 +7116,12 @@ function collectPrefixedPayload(data, prefix, base, targetKey) {
 }
 
 function renderOfficialRatingsPage() {
+  if (!canEditSharedDatabase()) {
+    return `
+      ${renderTopbar("ICOMOS 评分表", "共享数据库只允许白名单成员录入", "")}
+      <div class="notice">当前账号为只读。评分录入入口仅对白名单编辑者开放。</div>
+    `;
+  }
   const property = propertyById(selectedPptPropertyId) || state.properties[0];
   if (!property) return `<div class="empty">暂无项目数据。</div>`;
   selectedPptPropertyId = property.id;
@@ -6978,6 +7233,7 @@ function attachPageListeners(route) {
         label: button.dataset.pdfLabel || "",
         title: button.dataset.pdfTitle || "",
         section: button.dataset.pdfSection || "",
+        file: button.dataset.pdfFile || mainReportPdfPath,
       };
       render();
     });
@@ -6996,7 +7252,10 @@ function attachPageListeners(route) {
     magicLinkBtn.addEventListener("click", async () => {
       const email = document.querySelector("#loginEmail").value.trim();
       if (!email) return;
-      const { error } = await supabaseClient.auth.signInWithOtp({ email });
+      const { error } = await supabaseClient.auth.signInWithOtp({
+        email,
+        options: { emailRedirectTo: AUTH_REDIRECT_URL },
+      });
       saveStatus = error ? `登录链接发送失败：${error.message}` : "登录链接已发送，请检查邮箱。";
       render();
     });
@@ -7262,7 +7521,7 @@ function matchesPropertyQuery(property) {
     .map((entry) => [entry.attribute_group, entry.attribute_name_zh, entry.attribute_name_en, entry.summary_zh, entry.summary_en, entry.analyst_note].filter(Boolean).join(" "))
     .join(" ");
   const recommendationText = recommendationsForProperty(property.id)
-    .map((entry) => [entry.recommendation_category, entry.summary_zh, entry.text_en].filter(Boolean).join(" "))
+    .map((entry) => [entry.recommendation_category, entry.topic_category, ...normalizeTextList(entry.topic_categories), entry.summary_zh, entry.text_en].filter(Boolean).join(" "))
     .join(" ");
   const haystack = [
     property.id,
@@ -7390,6 +7649,11 @@ function recognizeRatingSequence(text) {
 }
 
 async function saveRatingBatch() {
+  if (!canEditSharedDatabase()) {
+    saveStatus = "当前账号只有浏览权限，不能保存评分。";
+    render();
+    return;
+  }
   const form = document.querySelector("#ratingBatchForm");
   if (!form) return;
   const data = new FormData(form);
@@ -7539,6 +7803,36 @@ function categoryOfPropertyFor(property) {
   return normalizeCategoryOfProperty(property.category_of_property) || "待抽取";
 }
 
+function culturalPropertyTypesFor(property) {
+  const explicit = normalizeTextList(property?.cultural_property_types);
+  if (explicit.length) return explicit;
+  const fallback = categoryOfPropertyFor(property);
+  return ["monument", "group of buildings", "site"].includes(fallback) ? [fallback] : [];
+}
+
+function renderCulturalPropertyTypesCell(property) {
+  const values = culturalPropertyTypesFor(property);
+  return escapeHtml(values.join("；") || "待补");
+}
+
+function culturalLandscapeStatus(property) {
+  if (!property?.is_cultural_landscape_nomination) return "否";
+  if (property.icomos_accepts_cultural_landscape === true) return "申报为文化景观；ICOMOS 认可";
+  if (property.icomos_accepts_cultural_landscape === false) return "申报为文化景观；ICOMOS 不认可";
+  return "申报为文化景观；ICOMOS 结论待确认";
+}
+
+function renderCulturalLandscapeCell(property) {
+  const status = culturalLandscapeStatus(property);
+  const className = property?.is_cultural_landscape_nomination && property.icomos_accepts_cultural_landscape === false ? "warning-chip" : "";
+  return `<span class="chip ${className}">${escapeHtml(status)}</span>`;
+}
+
+function renderCulturalLandscapeDetail(property) {
+  const note = String(property?.cultural_landscape_note || "").trim();
+  return `${renderCulturalLandscapeCell(property)}${note ? `<br><span class="muted">${escapeHtml(note)}</span>` : ""}`;
+}
+
 function categoryOfPropertyValuesFor(property) {
   const values = new Set();
   const primary = categoryOfPropertyFor(property);
@@ -7678,6 +7972,12 @@ function numberFromCategoryText(text) {
   };
   const match = String(text || "").match(/\b(one|two|three|four|five|six|seven|eight|nine|ten|thirteen|eighteen|nineteen|forty-eight)\b/);
   return match ? words[match[1]] : null;
+}
+
+function normalizeTextList(value) {
+  if (value === null || value === undefined || value === "") return [];
+  const list = Array.isArray(value) ? value : String(value).split(/[;；、\n]+/);
+  return uniqueValues(list.map((item) => String(item || "").trim()).filter(Boolean));
 }
 
 function normalizeCriteriaList(value) {

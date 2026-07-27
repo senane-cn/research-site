@@ -1,0 +1,607 @@
+{
+  "metadata": {
+    "title": "第48届世界遗产委员会｜第一阶段委员国参与与互动统计",
+    "stage": "stage-1",
+    "stage_label": "战略与制度议程",
+    "scope": "议程1—6C；统计窗口为2026年7月20日至22日、议程7开始前",
+    "version": "0.2.0",
+    "status": "初步核定",
+    "updated_at": "2026-07-24T01:00:00+09:00",
+    "committee_members": 21,
+    "coded_segments": 9,
+    "segments_with_member_action": 8,
+    "country_agenda_actions": 96,
+    "verified_speech_turns": 171,
+    "speech_turn_method": "conservative_floor_takings",
+    "official_amendment_packages": 9,
+    "decisions_amended": 7,
+    "notes": [
+      "本数据以国家—议程为合并观察单位，不等同于逐字记录中的发言轮次数。",
+      "数值2表示正式文本或程序行动，数值3表示同一议程中同时有立场发言与文本／程序行动。",
+      "主席、报告员、秘书处和咨询机构以制度身份作出的发言不计入所属国国家表现。",
+      "公开修正案登记在英法页面的更新存在短暂不同步；本版以较新的法文登记及现场记录交叉核对。",
+      "发言回合按代表团连续占用发言席计数；纪要合并多次短发言时采用保守计数，因此171是可核对下限。"
+    ]
+  },
+  "action_legend": [
+    { "value": 0, "label": "无记录", "short": "—" },
+    { "value": 1, "label": "立场／实质发言", "short": "发言" },
+    { "value": 2, "label": "文本／程序行动", "short": "行动" },
+    { "value": 3, "label": "发言＋文本／程序行动", "short": "双重" }
+  ],
+  "agendas": [
+    {
+      "id": "2",
+      "date": "2026-07-20",
+      "title": "接纳观察员",
+      "category": "程序",
+      "source_url": "https://whc.unesco.org/document/226678",
+      "finding": "乌克兰修正案改变观察员名单；捷克要求秘书处说明审查程序，土耳其强调重大修正应提前分发。"
+    },
+    {
+      "id": "12",
+      "date": "2026-07-20",
+      "title": "预算协商机构",
+      "category": "程序",
+      "source_url": "https://whc.unesco.org/document/226648",
+      "finding": "捷克提名阿塞拜疆代表主持预算工作组，土耳其、乌克兰、哈萨克斯坦支持，无反对通过。"
+    },
+    {
+      "id": "5A",
+      "date": "2026-07-20—21",
+      "title": "世界遗产中心活动及改革",
+      "category": "治理",
+      "source_url": "https://whc.unesco.org/document/226646",
+      "finding": "21国全部发言；非洲四国提出系统评估修正，争论跨日后由塞内加尔折衷并入UNESCO80报告框架。"
+    },
+    {
+      "id": "5B",
+      "date": "2026-07-21",
+      "title": "咨询机构报告",
+      "category": "专业机制",
+      "source_url": "https://whc.unesco.org/document/226078",
+      "finding": "由非洲代表性问题推动，最终形成覆盖评估、监测、咨询和能力建设的全体系区域专家参与要求。"
+    },
+    {
+      "id": "5D",
+      "date": "2026-07-21",
+      "title": "SIDS世界遗产战略",
+      "category": "区域战略",
+      "source_url": "https://whc.unesco.org/document/226296",
+      "finding": "格林纳达牵头的跨区域修正建立SIDS专门子账户，并把财务信息纳入第50届进展报告。"
+    },
+    {
+      "id": "5C",
+      "date": "2026-07-21",
+      "title": "非洲世界遗产战略",
+      "category": "区域战略",
+      "source_url": "https://whc.unesco.org/document/226080",
+      "finding": "统计重点由培训人数转向专家实际使用；AWHF的区域实施地位及Africa 2035平台得到强化。"
+    },
+    {
+      "id": "6B",
+      "date": "2026-07-21",
+      "title": "世界遗产相关二类中心",
+      "category": "实施网络",
+      "source_url": "https://whc.unesco.org/document/226063",
+      "finding": "委员国发言不多，但非洲四国修正将世界遗产中心—AWHF伙伴关系写入决定。"
+    },
+    {
+      "id": "6C",
+      "date": "2026-07-22",
+      "title": "内罗毕成果文件后续",
+      "category": "规范发展",
+      "source_url": "https://whc.unesco.org/document/226481",
+      "finding": "四类立场进入起草组折衷：继续实践与区域对话，但不立即启动正式指标或《操作指南》修订文本。"
+    },
+    {
+      "id": "6A",
+      "date": "2026-07-21",
+      "title": "能力建设战略",
+      "category": "实施机制",
+      "source_url": "https://whc.unesco.org/document/226300",
+      "finding": "无人要求发言、无修正，决定原文通过；作为零委员国介入的对照样本保留。"
+    }
+  ],
+  "topics": [
+    { "id": "governance", "label": "治理与程序" },
+    { "id": "resources", "label": "资金与资源" },
+    { "id": "regional_expertise", "label": "区域专家与平衡" },
+    { "id": "africa", "label": "非洲优先" },
+    { "id": "sids", "label": "SIDS" },
+    { "id": "community", "label": "社区与权利主体" },
+    { "id": "climate_conflict", "label": "气候、灾害与冲突" },
+    { "id": "authenticity", "label": "真实性与方法" },
+    { "id": "digital", "label": "数字与创新" },
+    { "id": "cooperation", "label": "合作与实施网络" }
+  ],
+  "regions": [
+    { "id": "africa", "label": "非洲", "short": "AFR" },
+    { "id": "arab", "label": "阿拉伯国家", "short": "ARB" },
+    { "id": "asia_pacific", "label": "亚洲和太平洋", "short": "ASP" },
+    { "id": "europe_north_america", "label": "欧洲和北美", "short": "ENA" },
+    { "id": "latin_caribbean", "label": "拉丁美洲和加勒比", "short": "LAC" }
+  ],
+  "countries": [
+    {
+      "id": "armenia",
+      "name_zh": "亚美尼亚",
+      "name_en": "Armenia",
+      "code": "ARM",
+      "region": "europe_north_america",
+      "profile": "跨区域制度协作者",
+      "summary": "在区域专家参与措辞和SIDS子账户两处形成可观察文本贡献，并在非洲战略与真实性讨论中强调长期能力和既有程序。",
+      "agendas": { "2": 0, "12": 0, "5A": 1, "5B": 3, "5D": 3, "5C": 1, "6B": 0, "6C": 1 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 2, "5D": 1, "5C": 1, "6B": 0, "6C": 2 },
+      "topics": { "governance": 1, "resources": 0, "regional_expertise": 3, "africa": 2, "sids": 2, "community": 2, "climate_conflict": 1, "authenticity": 2, "digital": 1, "cooperation": 2 }
+    },
+    {
+      "id": "azerbaijan",
+      "name_zh": "阿塞拜疆",
+      "name_en": "Azerbaijan",
+      "code": "AZE",
+      "region": "europe_north_america",
+      "profile": "能力成效与指标追踪",
+      "summary": "反复要求把活动量转化为持久能力和可衡量结果；加入5C修正并在6C支持指标化，但后者未进入最终文本。",
+      "agendas": { "2": 0, "12": 0, "5A": 1, "5B": 3, "5D": 1, "5C": 3, "6B": 0, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 2, "5D": 1, "5C": 1, "6B": 0, "6C": 2 },
+      "topics": { "governance": 2, "resources": 2, "regional_expertise": 3, "africa": 2, "sids": 3, "community": 1, "climate_conflict": 1, "authenticity": 1, "digital": 2, "cooperation": 2 }
+    },
+    {
+      "id": "bangladesh",
+      "name_zh": "孟加拉国",
+      "name_en": "Bangladesh",
+      "code": "BGD",
+      "region": "asia_pacific",
+      "profile": "改革与监测专业化",
+      "summary": "第一阶段样本主要来自5A，聚焦中心改革、申报对话、SOC报告精简及冲突遗产；现阶段不作总体能力判断。",
+      "agendas": { "2": 0, "12": 0, "5A": 1, "5B": 0, "5D": 0, "5C": 0, "6B": 0, "6C": 0 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 0, "5D": 0, "5C": 0, "6B": 0, "6C": 0 },
+      "topics": { "governance": 3, "resources": 2, "regional_expertise": 1, "africa": 0, "sids": 0, "community": 0, "climate_conflict": 3, "authenticity": 0, "digital": 0, "cooperation": 1 }
+    },
+    {
+      "id": "czechia",
+      "name_zh": "捷克",
+      "name_en": "Czechia",
+      "code": "CZE",
+      "region": "europe_north_america",
+      "profile": "程序与文本校准者",
+      "summary": "唯一覆盖全部8个有委员国介入议程的国家；多次通过定义追问、措辞修改和程序护栏影响最终处理。",
+      "agendas": { "2": 1, "12": 2, "5A": 3, "5B": 3, "5D": 3, "5C": 1, "6B": 1, "6C": 3 },
+      "speech_turns": { "2": 1, "12": 1, "5A": 3, "5B": 3, "5D": 1, "5C": 2, "6B": 1, "6C": 6 },
+      "topics": { "governance": 3, "resources": 3, "regional_expertise": 3, "africa": 2, "sids": 2, "community": 1, "climate_conflict": 2, "authenticity": 3, "digital": 1, "cooperation": 3 }
+    },
+    {
+      "id": "grenada",
+      "name_zh": "格林纳达",
+      "name_en": "Grenada",
+      "code": "GRD",
+      "region": "latin_caribbean",
+      "profile": "SIDS融资机制推动者",
+      "summary": "以低于平均的议程覆盖取得高辨识度成果：牵头建立SIDS子账户，并在5A、6C持续追问程序和文本边界。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 0, "5D": 3, "5C": 0, "6B": 0, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 3, "5B": 0, "5D": 2, "5C": 0, "6B": 0, "6C": 2 },
+      "topics": { "governance": 2, "resources": 3, "regional_expertise": 1, "africa": 0, "sids": 3, "community": 2, "climate_conflict": 3, "authenticity": 2, "digital": 0, "cooperation": 2 }
+    },
+    {
+      "id": "jamaica",
+      "name_zh": "牙买加",
+      "name_en": "Jamaica",
+      "code": "JAM",
+      "region": "latin_caribbean",
+      "profile": "SIDS与社区韧性",
+      "summary": "将加勒比灾害经验、SIDS融资和真实性包容性连接起来；共同提交SIDS子账户修正并持续关注稳定能力支持。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 1, "5D": 3, "5C": 0, "6B": 0, "6C": 1 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 2, "5B": 1, "5D": 1, "5C": 0, "6B": 0, "6C": 2 },
+      "topics": { "governance": 1, "resources": 3, "regional_expertise": 2, "africa": 1, "sids": 3, "community": 3, "climate_conflict": 3, "authenticity": 3, "digital": 1, "cooperation": 2 }
+    },
+    {
+      "id": "kazakhstan",
+      "name_zh": "哈萨克斯坦",
+      "name_en": "Kazakhstan",
+      "code": "KAZ",
+      "region": "asia_pacific",
+      "profile": "共识与渐进整合",
+      "summary": "第一阶段主要支持程序性共识，并在6C主张通过能力建设和区域对话渐进整合真实性方法。",
+      "agendas": { "2": 0, "12": 2, "5A": 3, "5B": 0, "5D": 0, "5C": 0, "6B": 0, "6C": 1 },
+      "speech_turns": { "2": 0, "12": 1, "5A": 2, "5B": 0, "5D": 0, "5C": 0, "6B": 0, "6C": 1 },
+      "topics": { "governance": 3, "resources": 0, "regional_expertise": 1, "africa": 0, "sids": 0, "community": 1, "climate_conflict": 0, "authenticity": 2, "digital": 0, "cooperation": 2 }
+    },
+    {
+      "id": "kenya",
+      "name_zh": "肯尼亚",
+      "name_en": "Kenya",
+      "code": "KEN",
+      "region": "africa",
+      "profile": "议程设置与文本推动",
+      "summary": "在5A、5B、5C、6B、6C五个议程共同提出修正，并在6C把非洲经验的适用范围推向全球性表述。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 2, "5D": 2, "5C": 3, "6B": 2, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 4, "5B": 0, "5D": 1, "5C": 4, "6B": 0, "6C": 7 },
+      "topics": { "governance": 3, "resources": 2, "regional_expertise": 3, "africa": 3, "sids": 2, "community": 2, "climate_conflict": 1, "authenticity": 3, "digital": 1, "cooperation": 3 }
+    },
+    {
+      "id": "kuwait",
+      "name_zh": "科威特",
+      "name_en": "Kuwait",
+      "code": "KWT",
+      "region": "arab",
+      "profile": "低频、聚焦代表性",
+      "summary": "第一阶段仅在5A补充发言，支持无遗产国家能力建设与委员国合作；样本不足，不作横向质量判断。",
+      "agendas": { "2": 0, "12": 0, "5A": 1, "5B": 0, "5D": 0, "5C": 0, "6B": 0, "6C": 1 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 0, "5D": 0, "5C": 0, "6B": 0, "6C": 1 },
+      "topics": { "governance": 1, "resources": 1, "regional_expertise": 1, "africa": 0, "sids": 0, "community": 0, "climate_conflict": 0, "authenticity": 0, "digital": 0, "cooperation": 1 }
+    },
+    {
+      "id": "lebanon",
+      "name_zh": "黎巴嫩",
+      "name_en": "Lebanon",
+      "code": "LBN",
+      "region": "arab",
+      "profile": "制度信誉与程序边界",
+      "summary": "把5B资源讨论提升为技术独立性和委员会公信力问题；在6C推动删除重复文字并校正贡献方记录。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 1, "5D": 0, "5C": 3, "6B": 0, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 3, "5B": 2, "5D": 0, "5C": 2, "6B": 0, "6C": 8 },
+      "topics": { "governance": 3, "resources": 1, "regional_expertise": 2, "africa": 1, "sids": 0, "community": 1, "climate_conflict": 3, "authenticity": 3, "digital": 0, "cooperation": 3 }
+    },
+    {
+      "id": "mongolia",
+      "name_zh": "蒙古",
+      "name_en": "Mongolia",
+      "code": "MNG",
+      "region": "asia_pacific",
+      "profile": "环境公约连接者",
+      "summary": "把咨询机构资源和世界遗产工作连接到土地、生物多样性和气候三项环境公约，并支持较强的区域专家参与措辞。",
+      "agendas": { "2": 0, "12": 0, "5A": 1, "5B": 3, "5D": 0, "5C": 0, "6B": 0, "6C": 0 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 2, "5D": 0, "5C": 0, "6B": 0, "6C": 0 },
+      "topics": { "governance": 1, "resources": 2, "regional_expertise": 2, "africa": 0, "sids": 0, "community": 1, "climate_conflict": 3, "authenticity": 0, "digital": 1, "cooperation": 3 }
+    },
+    {
+      "id": "peru",
+      "name_zh": "秘鲁",
+      "name_en": "Peru",
+      "code": "PER",
+      "region": "latin_caribbean",
+      "profile": "社区与区域经验桥梁",
+      "summary": "从原住民、文化景观与历史城市经验支持真实性操作化，并以南南和三方合作回应SIDS能力与旅游议题。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 0, "5D": 1, "5C": 0, "6B": 0, "6C": 1 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 2, "5B": 0, "5D": 1, "5C": 0, "6B": 0, "6C": 1 },
+      "topics": { "governance": 1, "resources": 1, "regional_expertise": 1, "africa": 0, "sids": 2, "community": 3, "climate_conflict": 2, "authenticity": 3, "digital": 0, "cooperation": 3 }
+    },
+    {
+      "id": "poland",
+      "name_zh": "波兰",
+      "name_en": "Poland",
+      "code": "POL",
+      "region": "europe_north_america",
+      "profile": "技术审慎型持续参与",
+      "summary": "覆盖五个战略议程，持续支持能力、非洲与SIDS工作；在6C强调共同标准和起草组妥协，反对过早指标化。",
+      "agendas": { "2": 0, "12": 0, "5A": 1, "5B": 1, "5D": 1, "5C": 1, "6B": 0, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 1, "5D": 2, "5C": 1, "6B": 0, "6C": 5 },
+      "topics": { "governance": 2, "resources": 2, "regional_expertise": 2, "africa": 2, "sids": 2, "community": 1, "climate_conflict": 3, "authenticity": 3, "digital": 1, "cooperation": 2 }
+    },
+    {
+      "id": "republic-of-korea",
+      "name_zh": "韩国",
+      "name_en": "Republic of Korea",
+      "code": "KOR",
+      "region": "asia_pacific",
+      "profile": "实施系统与能力投入",
+      "summary": "关注列名后管理、DSOCR、数据积累、二类中心和数字工具；主席制度身份发言已从国家统计中剔除。",
+      "agendas": { "2": 0, "12": 0, "5A": 1, "5B": 2, "5D": 3, "5C": 1, "6B": 0, "6C": 1 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 1, "5D": 2, "5C": 1, "6B": 0, "6C": 1 },
+      "topics": { "governance": 2, "resources": 2, "regional_expertise": 3, "africa": 3, "sids": 3, "community": 1, "climate_conflict": 2, "authenticity": 1, "digital": 3, "cooperation": 3 }
+    },
+    {
+      "id": "senegal",
+      "name_zh": "塞内加尔",
+      "name_en": "Senegal",
+      "code": "SEN",
+      "region": "africa",
+      "profile": "联盟协调与折衷形成",
+      "summary": "六个战略议程全部介入并参与文本；除共同修正外，还在5A提出折衷、6C补入AWHF贡献，是联盟对外协调的关键节点。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 3, "5D": 3, "5C": 3, "6B": 3, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 2, "5B": 1, "5D": 2, "5C": 1, "6B": 2, "6C": 2 },
+      "topics": { "governance": 3, "resources": 3, "regional_expertise": 3, "africa": 3, "sids": 3, "community": 3, "climate_conflict": 1, "authenticity": 3, "digital": 1, "cooperation": 3 }
+    },
+    {
+      "id": "switzerland",
+      "name_zh": "瑞士",
+      "name_en": "Switzerland",
+      "code": "CHE",
+      "region": "europe_north_america",
+      "profile": "资源与规则审慎",
+      "summary": "持续指出资源约束、技术独立性和既有决定履行；在6C支持循序渐进并反对尚未成熟的正式指标。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 1, "5D": 1, "5C": 1, "6B": 0, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 2, "5B": 1, "5D": 1, "5C": 2, "6B": 0, "6C": 4 },
+      "topics": { "governance": 3, "resources": 3, "regional_expertise": 2, "africa": 2, "sids": 2, "community": 2, "climate_conflict": 2, "authenticity": 3, "digital": 1, "cooperation": 2 }
+    },
+    {
+      "id": "togo",
+      "name_zh": "多哥",
+      "name_en": "Togo",
+      "code": "TGO",
+      "region": "africa",
+      "profile": "非洲议程的文本推进者",
+      "summary": "五次参与非洲四国共同修正，在5B牵头区域专家条款，并持续要求把能力、数字工具和社区参与转化为资源与机制。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 3, "5D": 2, "5C": 3, "6B": 2, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 1, "5B": 2, "5D": 1, "5C": 1, "6B": 0, "6C": 1 },
+      "topics": { "governance": 2, "resources": 3, "regional_expertise": 3, "africa": 3, "sids": 2, "community": 3, "climate_conflict": 1, "authenticity": 3, "digital": 2, "cooperation": 3 }
+    },
+    {
+      "id": "turkiye",
+      "name_zh": "土耳其",
+      "name_en": "Türkiye",
+      "code": "TUR",
+      "region": "europe_north_america",
+      "profile": "工具化与文本试探",
+      "summary": "覆盖程序、资源、非洲和真实性议题；6C提出更明确实施工具和指标，部分文字撤回，但推动会场正面处理方法成熟度。",
+      "agendas": { "2": 1, "12": 2, "5A": 1, "5B": 3, "5D": 0, "5C": 1, "6B": 0, "6C": 3 },
+      "speech_turns": { "2": 1, "12": 1, "5A": 1, "5B": 2, "5D": 0, "5C": 1, "6B": 0, "6C": 4 },
+      "topics": { "governance": 3, "resources": 3, "regional_expertise": 3, "africa": 2, "sids": 0, "community": 1, "climate_conflict": 2, "authenticity": 3, "digital": 1, "cooperation": 2 }
+    },
+    {
+      "id": "ukraine",
+      "name_zh": "乌克兰",
+      "name_en": "Ukraine",
+      "code": "UKR",
+      "region": "europe_north_america",
+      "profile": "高覆盖与制度问责",
+      "summary": "覆盖7个有委员国介入议程，议程2修正直接改变观察员名单，并把冲突、社区、气候韧性和区域专家议题持续带入讨论。",
+      "agendas": { "2": 3, "12": 2, "5A": 1, "5B": 3, "5D": 3, "5C": 3, "6B": 0, "6C": 3 },
+      "speech_turns": { "2": 3, "12": 1, "5A": 1, "5B": 2, "5D": 2, "5C": 2, "6B": 0, "6C": 3 },
+      "topics": { "governance": 3, "resources": 2, "regional_expertise": 3, "africa": 2, "sids": 3, "community": 3, "climate_conflict": 3, "authenticity": 2, "digital": 2, "cooperation": 3 }
+    },
+    {
+      "id": "tanzania",
+      "name_zh": "坦桑尼亚",
+      "name_en": "United Republic of Tanzania",
+      "code": "TZA",
+      "region": "africa",
+      "profile": "绩效与资源问责",
+      "summary": "六个战略议程全部介入，五次参与共同修正；反复要求从活动清单转向结果绩效，并质疑临时、零散资金的可持续性。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 3, "5D": 3, "5C": 3, "6B": 3, "6C": 3 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 2, "5B": 1, "5D": 2, "5C": 1, "6B": 1, "6C": 1 },
+      "topics": { "governance": 3, "resources": 3, "regional_expertise": 3, "africa": 3, "sids": 3, "community": 2, "climate_conflict": 1, "authenticity": 3, "digital": 1, "cooperation": 3 }
+    },
+    {
+      "id": "viet-nam",
+      "name_zh": "越南",
+      "name_en": "Viet Nam",
+      "code": "VNM",
+      "region": "asia_pacific",
+      "profile": "区域对话与数字工具",
+      "summary": "在中心改革、咨询机构、SIDS和真实性议题间持续强调前期对话、灾害工具、数字能力和亚太区域经验输入。",
+      "agendas": { "2": 0, "12": 0, "5A": 3, "5B": 3, "5D": 2, "5C": 0, "6B": 0, "6C": 1 },
+      "speech_turns": { "2": 0, "12": 0, "5A": 2, "5B": 2, "5D": 1, "5C": 0, "6B": 0, "6C": 2 },
+      "topics": { "governance": 2, "resources": 2, "regional_expertise": 3, "africa": 1, "sids": 2, "community": 2, "climate_conflict": 3, "authenticity": 3, "digital": 3, "cooperation": 3 }
+    }
+  ],
+  "amendment_packages": [
+    {
+      "id": "amend-2",
+      "agenda": "2",
+      "title": "排除两家观察组织",
+      "short_label": "观察员名单调整",
+      "outcome": "adopted",
+      "outcome_label": "采纳",
+      "actors": [
+        { "country": "ukraine", "role": "lead", "role_label": "提出" }
+      ],
+      "result": "委员会修正观察员名单并通过决定。"
+    },
+    {
+      "id": "amend-5a",
+      "agenda": "5A",
+      "title": "中心改革的政府间评估与报告",
+      "short_label": "改革评估 · 成果报告",
+      "outcome": "merged",
+      "outcome_label": "折衷并入",
+      "actors": [
+        { "country": "kenya", "role": "lead", "role_label": "主提" },
+        { "country": "senegal", "role": "co_sponsor", "role_label": "共同提出／折衷" },
+        { "country": "togo", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "co_sponsor", "role_label": "共同提出" }
+      ],
+      "result": "未另设全面评估，但以UNESCO80框架下的中性报告要求形成共识，并保留成果导向报告。"
+    },
+    {
+      "id": "amend-5b",
+      "agenda": "5B",
+      "title": "区域专家系统参与专业工作链",
+      "short_label": "区域专家 · 专业工作链",
+      "outcome": "adopted",
+      "outcome_label": "采纳",
+      "actors": [
+        { "country": "togo", "role": "lead", "role_label": "主提" },
+        { "country": "kenya", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "senegal", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "czechia", "role": "edit", "role_label": "措辞校准" },
+        { "country": "armenia", "role": "edit", "role_label": "保留协商措辞" },
+        { "country": "turkiye", "role": "support", "role_label": "支持较强措辞" },
+        { "country": "mongolia", "role": "support", "role_label": "支持较强措辞" },
+        { "country": "azerbaijan", "role": "support", "role_label": "支持较强措辞" },
+        { "country": "republic-of-korea", "role": "support", "role_label": "支持较强措辞" }
+      ],
+      "result": "保留ensure强度，同时明确世界遗产中心提供支持、与伙伴协商。"
+    },
+    {
+      "id": "amend-5d",
+      "agenda": "5D",
+      "title": "设立SIDS专门子账户",
+      "short_label": "SIDS子账户 · 财务报告",
+      "outcome": "adopted",
+      "outcome_label": "采纳",
+      "actors": [
+        { "country": "grenada", "role": "lead", "role_label": "主提" },
+        { "country": "armenia", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "jamaica", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "czechia", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "support", "role_label": "加入支持" },
+        { "country": "ukraine", "role": "support", "role_label": "加入支持" },
+        { "country": "senegal", "role": "support", "role_label": "加入支持" },
+        { "country": "poland", "role": "support", "role_label": "加入支持" },
+        { "country": "kenya", "role": "support", "role_label": "加入支持" },
+        { "country": "viet-nam", "role": "support", "role_label": "加入支持" },
+        { "country": "togo", "role": "support", "role_label": "加入支持" },
+        { "country": "republic-of-korea", "role": "support", "role_label": "加入支持" }
+      ],
+      "result": "世界遗产基金内建立专门筹资载体，并要求第50届报告财务信息。"
+    },
+    {
+      "id": "amend-5c",
+      "agenda": "5C",
+      "title": "专家实际使用、AWHF与Africa 2035",
+      "short_label": "专家使用 · AWHF · Africa 2035",
+      "outcome": "adopted",
+      "outcome_label": "采纳",
+      "actors": [
+        { "country": "kenya", "role": "lead", "role_label": "主提" },
+        { "country": "senegal", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "togo", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "azerbaijan", "role": "co_sponsor", "role_label": "登记共同提出" },
+        { "country": "ukraine", "role": "support", "role_label": "现场加入支持" }
+      ],
+      "result": "未来报告须量化受训专家实际参与，AWHF区域实施地位与Africa 2035平台得到强化。"
+    },
+    {
+      "id": "amend-6b",
+      "agenda": "6B",
+      "title": "AWHF实施伙伴关系与20周年",
+      "short_label": "AWHF伙伴关系 · 20周年",
+      "outcome": "adopted",
+      "outcome_label": "采纳",
+      "actors": [
+        { "country": "senegal", "role": "lead", "role_label": "主提" },
+        { "country": "kenya", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "togo", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "co_sponsor", "role_label": "共同提出" }
+      ],
+      "result": "世界遗产中心—AWHF伙伴关系被写入决定，并号召增加技术、机构和财政支持。"
+    },
+    {
+      "id": "amend-6c-africa",
+      "agenda": "6C",
+      "title": "内罗毕成果的实施与规范衔接",
+      "short_label": "内罗毕成果 · 全球适用 · 规范衔接",
+      "outcome": "merged",
+      "outcome_label": "起草组折衷",
+      "actors": [
+        { "country": "kenya", "role": "lead", "role_label": "主提" },
+        { "country": "senegal", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "togo", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "ukraine", "role": "support", "role_label": "正式记录支持" }
+      ],
+      "result": "保留实践应用和后续报告，但把立即拟订修改方案调整为形成综合性建议。"
+    },
+    {
+      "id": "amend-6c-czech",
+      "agenda": "6C",
+      "title": "区域专家对话与方法成熟度",
+      "short_label": "区域对话 · 方法成熟度",
+      "outcome": "merged",
+      "outcome_label": "部分保留",
+      "actors": [
+        { "country": "czechia", "role": "lead", "role_label": "提出" },
+        { "country": "poland", "role": "guardrail", "role_label": "支持审慎处理" },
+        { "country": "switzerland", "role": "guardrail", "role_label": "支持审慎处理" }
+      ],
+      "result": "删除‘尤其在非洲’限定，但保留鼓励各区域专家对话的独立段落；未启动正式指标。"
+    },
+    {
+      "id": "amend-6c-turkiye",
+      "agenda": "6C",
+      "title": "实施领域、指标和方法",
+      "short_label": "实施领域 · 指标 · 方法",
+      "outcome": "partial_withdrawn",
+      "outcome_label": "部分并入／部分撤回",
+      "actors": [
+        { "country": "turkiye", "role": "lead", "role_label": "提出并撤回部分文字" },
+        { "country": "azerbaijan", "role": "support", "role_label": "支持指标化" },
+        { "country": "kenya", "role": "support", "role_label": "支持指标化" },
+        { "country": "poland", "role": "guardrail", "role_label": "要求遵守折衷" },
+        { "country": "czechia", "role": "guardrail", "role_label": "认为时机尚早" },
+        { "country": "switzerland", "role": "guardrail", "role_label": "主张循序渐进" }
+      ],
+      "result": "部分实施领域文字进入协商，正式指标和方法要求最终撤回。"
+    }
+  ],
+  "accepted_oral_actions": [
+    {
+      "agenda": "12",
+      "country": "czechia",
+      "type": "procedural",
+      "result": "提名阿塞拜疆代表主持预算工作组，无反对通过。"
+    },
+    {
+      "agenda": "5A",
+      "country": "senegal",
+      "type": "compromise",
+      "result": "提出以UNESCO80为框架的中性折衷，帮助跨日争论形成共识。"
+    },
+    {
+      "agenda": "6C",
+      "country": "kenya",
+      "type": "edit",
+      "result": "反对将实践适用限定为非洲，最终保留面向各缔约国的全球表述。"
+    },
+    {
+      "agenda": "6C",
+      "country": "lebanon",
+      "type": "edit",
+      "result": "提出删除重复段落并校正出版物贡献方，均进入最终处理。"
+    },
+    {
+      "agenda": "6C",
+      "country": "senegal",
+      "type": "edit",
+      "result": "要求补入AWHF的实际贡献，获接受。"
+    }
+  ],
+  "stage_findings": [
+    {
+      "id": "volume-impact",
+      "title": "覆盖面与发言量共同构成参与度，但仍不能替代影响力",
+      "text": "捷克覆盖全部8个有效议程，并有18个可核对发言回合；肯尼亚16回合、黎巴嫩15回合、乌克兰14回合。非洲四国还把大量行动集中到五组联合修正。覆盖、发言量和文本生产需要分开阅读。"
+    },
+    {
+      "id": "africa-production",
+      "title": "非洲协作首先表现为持续的共同文本生产",
+      "text": "肯尼亚、塞内加尔、多哥和坦桑尼亚共同参与5A、5B、5C、6B、6C五组修正，且跨越治理、专家参与、区域战略、实施机构和真实性方法，不是单一议题上的偶合。"
+    },
+    {
+      "id": "europe-guardrail",
+      "title": "欧洲和北美组更常通过措辞与程序护栏形成影响",
+      "text": "本阶段没有出现可与非洲四国相比的持续联合修正。捷克、瑞士、波兰等更多在定义、强度、重复、指标成熟度和既有妥协方面介入，呈现话语趋同而非稳定共同提案。"
+    },
+    {
+      "id": "asia-diversity",
+      "title": "亚太委员国呈现议题分工，而非统一行动阵列",
+      "text": "韩国偏实施系统与数字能力，越南偏区域对话和工具，蒙古连接环境公约，哈萨克斯坦强调渐进整合，孟加拉国聚焦改革和监测。本阶段未形成区域内部共同修正包。"
+    },
+    {
+      "id": "sids-crossregion",
+      "title": "SIDS子账户是阶段内最清晰的跨区域文本联盟",
+      "text": "格林纳达牵头，牙买加、亚美尼亚和捷克共同提出，并获得非洲、欧洲和亚太多国现场加入支持；其结果是建立了新的专门筹资载体。"
+    }
+  ],
+  "sources": [
+    {
+      "label": "第48届委员会会议页面",
+      "url": "https://whc.unesco.org/en/sessions/48COM/",
+      "use": "委员国、主席团、议程与直播入口"
+    },
+    {
+      "label": "官方文件与修正案登记",
+      "url": "https://whc.unesco.org/en/sessions/48COM/documents/",
+      "use": "工作文件、修正案、提交方与更新时间"
+    },
+    {
+      "label": "ConserVision会议纪要工作集",
+      "url": "#methodology",
+      "use": "发言顺序、主旨、现场协商和文本结果的交叉核对"
+    }
+  ]
+}
