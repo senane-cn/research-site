@@ -5,8 +5,8 @@ window.SHARE_STATS = {
     "2025",
     "2026"
   ],
-  "totalTopics": 50,
-  "speakerCount": 22,
+  "totalTopics": 55,
+  "speakerCount": 24,
   "directionCount": 6,
   "directionOrder": [
     "方向一：遗产价值研究",
@@ -20,15 +20,15 @@ window.SHARE_STATS = {
     "2023": 19,
     "2024": 15,
     "2025": 14,
-    "2026": 2
+    "2026": 7
   },
   "byDirection": {
-    "方向一：遗产价值研究": 4,
+    "方向一：遗产价值研究": 5,
     "方向二：保护工程技术实践": 3,
-    "方向三：遗产管理可持续发展": 5,
-    "方向四：展示阐释公众传播": 9,
-    "方向五：开拓视野": 23,
-    "方向六：新技术应用/知识管理": 6
+    "方向三：遗产管理可持续发展": 6,
+    "方向四：展示阐释公众传播": 10,
+    "方向五：开拓视野": 24,
+    "方向六：新技术应用/知识管理": 7
   },
   "yearDirectionMatrix": {
     "2023": {
@@ -56,12 +56,12 @@ window.SHARE_STATS = {
       "方向六：新技术应用/知识管理": 1
     },
     "2026": {
-      "方向一：遗产价值研究": 0,
+      "方向一：遗产价值研究": 1,
       "方向二：保护工程技术实践": 0,
-      "方向三：遗产管理可持续发展": 0,
-      "方向四：展示阐释公众传播": 0,
-      "方向五：开拓视野": 1,
-      "方向六：新技术应用/知识管理": 1
+      "方向三：遗产管理可持续发展": 1,
+      "方向四：展示阐释公众传播": 1,
+      "方向五：开拓视野": 2,
+      "方向六：新技术应用/知识管理": 2
     }
   },
   "directionDescriptions": {
@@ -175,7 +175,7 @@ window.SHARE_STATS = {
     },
     {
       "name": "江西",
-      "count": 3,
+      "count": 4,
       "directionCount": 2,
       "directions": [
         "方向一：遗产价值研究",
@@ -199,6 +199,12 @@ window.SHARE_STATS = {
           "speaker": "乔钰",
           "topic": "景德镇申遗工作经历分享与困惑",
           "direction": "方向一：遗产价值研究"
+        },
+        {
+          "time": "2026Q2",
+          "speaker": "厉之昀、辛欣",
+          "topic": "景德镇陶瓷工业遗产博物馆展陈更新的方法与故事",
+          "direction": "方向四：展示阐释公众传播"
         }
       ]
     },
@@ -368,6 +374,22 @@ window.SHARE_STATS = {
       ]
     },
     {
+      "name": "北京、甘肃",
+      "count": 1,
+      "directionCount": 1,
+      "directions": [
+        "方向三：遗产管理可持续发展"
+      ],
+      "sessions": [
+        {
+          "time": "2026Q2",
+          "speaker": "李建芸、魏青",
+          "topic": "文化遗产与可持续发展",
+          "direction": "方向三：遗产管理可持续发展"
+        }
+      ]
+    },
+    {
       "name": "北极",
       "count": 1,
       "directionCount": 1,
@@ -448,6 +470,22 @@ window.SHARE_STATS = {
       ]
     },
     {
+      "name": "澳门",
+      "count": 1,
+      "directionCount": 1,
+      "directions": [
+        "方向一：遗产价值研究"
+      ],
+      "sessions": [
+        {
+          "time": "2026Q2",
+          "speaker": "贾滨",
+          "topic": "围绕东望洋灯塔的工作总结",
+          "direction": "方向一：遗产价值研究"
+        }
+      ]
+    },
+    {
       "name": "贵州",
       "count": 1,
       "directionCount": 1,
@@ -517,7 +555,9 @@ window.SHARE_STATS = {
     ],
     "2026": [
       "国际遗产观察",
-      "近期 AI 使用心得——在传统行业中的快速转向"
+      "近期 AI 使用心得——在传统行业中的快速转向",
+      "景德镇陶瓷工业遗产博物馆展陈更新的方法与故事",
+      "围绕东望洋灯塔的工作总结"
     ]
   },
   "representativeByDirection": {
@@ -559,15 +599,15 @@ window.SHARE_STATS = {
   },
   "keywordByDirection": {
     "方向一：遗产价值研究": [
-      "OUV",
-      "申遗",
       "HIA",
+      "OUV",
       "世界遗产",
+      "澳门",
+      "申遗",
       "价值研究",
       "保护规划",
-      "工业遗产",
-      "澳门",
       "城市设计",
+      "工业遗产",
       "遗产价值"
     ],
     "方向二：保护工程技术实践": [
@@ -578,12 +618,14 @@ window.SHARE_STATS = {
     "方向三：遗产管理可持续发展": [
       "遗产管理",
       "保护规划",
+      "培训",
       "世界遗产",
       "传统村落",
       "古建筑",
+      "可持续",
       "商业规划",
-      "培训",
-      "工业遗产"
+      "工业遗产",
+      "绿色故宫"
     ],
     "方向四：展示阐释公众传播": [
       "公众传播",
@@ -618,18 +660,18 @@ window.SHARE_STATS = {
       "非遗"
     ],
     "方向六：新技术应用/知识管理": [
-      "企业管理",
-      "知识管理",
       "AI",
+      "企业管理",
       "工作流",
+      "知识管理",
       "讲座"
     ]
   },
   "generation": {
-    "createdAt": "2026-07-13 10:39:10",
-    "sourceRows": 50,
-    "matchedFiles": 41,
-    "previewFiles": 41,
+    "createdAt": "2026-07-27 18:31:58",
+    "sourceRows": 55,
+    "matchedFiles": 46,
+    "previewFiles": 46,
     "conversionTool": "/Users/pauline/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
     "keynoteAttemptDisabledAfterFailure": false,
     "conversionFailures": []
