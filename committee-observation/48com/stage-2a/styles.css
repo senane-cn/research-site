@@ -77,12 +77,29 @@
 }
 
 .unit-matrix {
-  width: max(100%, 1770px);
+  width: max(100%, 2240px);
 }
 
 .unit-matrix th:not(:first-child),
 .unit-matrix td:not(:first-child) {
-  width: 86px;
+  width: 112px;
+}
+
+.unit-matrix .agenda-head {
+  display: grid;
+  min-height: 58px;
+  align-content: center;
+}
+
+.unit-matrix .agenda-head strong {
+  line-height: 1.28;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.unit-matrix .agenda-head span {
+  margin-top: 6px;
+  line-height: 1.35;
 }
 
 .matrix-cell button {

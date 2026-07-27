@@ -1,6 +1,6 @@
 import { whc48LogoBase64 } from "../stage-1/assets/whc48-logo.generated.js";
 
-const DATA_URL = "data/phase-2a.json?v=1.0.1";
+const DATA_URL = "data/phase-2a.json?v=1.0.2";
 const regionColors = {
   africa: "#b84854",
   arab: "#6652a4",
@@ -725,7 +725,9 @@ function renderUnitMatrix() {
   const head = `<thead><tr><th scope="col">委员国</th>${data.units
     .map(
       (unit) =>
-        `<th scope="col"><span class="agenda-head"><strong>${unit.short_label}</strong><span>${escapeHTML(
+        `<th scope="col"><span class="agenda-head"><strong>${escapeHTML(
+          unit.matrix_label ?? unit.label
+        )}</strong><span>${escapeHTML(unit.short_label)} · ${escapeHTML(
           unit.category
         )}</span></span></th>`
     )
