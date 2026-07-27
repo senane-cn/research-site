@@ -1,6 +1,6 @@
 import { whc48LogoBase64 } from "../stage-1/assets/whc48-logo.generated.js";
 
-const DATA_URL = "data/phase-2a.json?v=1.0.2";
+const DATA_URL = "data/phase-2a.json?v=1.0.3";
 const regionColors = {
   africa: "#b84854",
   arab: "#6652a4",
@@ -749,7 +749,9 @@ function topicClass(count) {
   if (count === 0) return "topic-v0";
   if (count === 1) return "topic-v1";
   if (count === 2) return "topic-v2";
-  return "topic-v3";
+  if (count <= 4) return "topic-v3";
+  if (count <= 6) return "topic-v4";
+  return "topic-v5";
 }
 
 function renderTopicMatrix() {

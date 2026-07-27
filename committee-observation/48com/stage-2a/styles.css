@@ -157,6 +157,31 @@
   min-height: 56px;
 }
 
+.topic-v1 {
+  background: #e8f0ea;
+  color: #3f5546;
+}
+
+.topic-v2 {
+  background: #d2e1d6;
+  color: #294735;
+}
+
+.topic-v3 {
+  background: #aec8b5;
+  color: #173b29;
+}
+
+.topic-v4 {
+  background: #759b82;
+  color: #102e20;
+}
+
+.topic-v5 {
+  background: #315d4b;
+  color: white;
+}
+
 .coaction-table button {
   width: 100%;
   min-height: 52px;
