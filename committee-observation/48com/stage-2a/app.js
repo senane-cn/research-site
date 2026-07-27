@@ -1,6 +1,6 @@
 import { whc48LogoBase64 } from "../stage-1/assets/whc48-logo.generated.js";
 
-const DATA_URL = "data/phase-2a.json?v=1.0.0";
+const DATA_URL = "data/phase-2a.json?v=1.0.1";
 const regionColors = {
   africa: "#b84854",
   arab: "#6652a4",
@@ -497,6 +497,50 @@ function renderScatter() {
   }));
   const maxX = Math.max(...metrics.map((item) => item.coverage), 1);
   const maxY = Math.max(...metrics.map((item) => item.totalTurns), 1);
+  const xGroups = new Map();
+  for (const item of metrics) {
+    if (!xGroups.has(item.coverage)) xGroups.set(item.coverage, []);
+    xGroups.get(item.coverage).push(item);
+  }
+  const pointHeight = 18;
+  const pointGap = 6;
+  const chartHeight = container.clientHeight || 460;
+  const verticalOffsets = new Map();
+  for (const group of xGroups.values()) {
+    const placements = [...group]
+      .sort(
+        (a, b) =>
+          b.totalTurns - a.totalTurns ||
+          collator.compare(a.country.code, b.country.code)
+      )
+      .map((item) => {
+        const yPercent = Math.min((item.totalTurns / maxY) * 100, 97);
+        return {
+          item,
+          desiredTop:
+            chartHeight -
+            (yPercent / 100) * chartHeight -
+            pointHeight +
+            7
+        };
+      });
+    let previousBottom = -Infinity;
+    for (const placement of placements) {
+      placement.adjustedTop = Math.max(
+        placement.desiredTop,
+        previousBottom + pointGap
+      );
+      previousBottom = placement.adjustedTop + pointHeight;
+    }
+    const overflow = Math.max(0, previousBottom - chartHeight);
+    for (const placement of placements) {
+      placement.adjustedTop -= overflow;
+      verticalOffsets.set(
+        placement.item.country.id,
+        placement.desiredTop - placement.adjustedTop
+      );
+    }
+  }
   container.style.setProperty("--x-grid-step", `${100 / maxX}%`);
   container.style.setProperty("--y-grid-step", `${100 / Math.ceil(maxY / 5)}%`);
   const xTicks = Array.from({ length: maxX + 1 }, (_, value) => value)
@@ -516,19 +560,19 @@ function renderScatter() {
     )
     .join("");
   const points = metrics
-    .map((item, index) => {
-      const x = (item.coverage / maxX) * 100;
-      const y = (item.totalTurns / maxY) * 100;
-      const offsetX = ((index % 3) - 1) * 6;
-      const offsetY = ((index % 4) - 1.5) * 4;
+    .map((item) => {
+      const x = Math.min((item.coverage / maxX) * 100, 97);
+      const y = Math.min((item.totalTurns / maxY) * 100, 97);
+      const offsetY = verticalOffsets.get(item.country.id) ?? 0;
       const classes = [
         "scatter-point",
+        item.coverage / maxX >= 0.86 ? "label-left" : "",
         !isMatch(item.country) ? "is-muted" : "",
         state.country === item.country.id ? "is-selected" : ""
       ]
         .filter(Boolean)
         .join(" ");
-      return `<button type="button" class="${classes}" style="left:calc(${x}% + ${offsetX}px);bottom:calc(${y}% + ${offsetY}px)" data-region="${item.country.region}" data-country="${item.country.id}" data-detail-kind="scatter" aria-label="${escapeHTML(item.country.name_zh)}，覆盖${item.coverage}个单元，共${item.totalTurns}回合"><span>${item.country.code}</span></button>`;
+      return `<button type="button" class="${classes}" style="left:${x}%;bottom:calc(${y}% + ${offsetY}px)" data-region="${item.country.region}" data-country="${item.country.id}" data-detail-kind="scatter" aria-label="${escapeHTML(item.country.name_zh)}，覆盖${item.coverage}个单元，共${item.totalTurns}回合"><span>${item.country.code}</span></button>`;
     })
     .join("");
   container.innerHTML = `${xTicks}${yTicks}${points}`;

@@ -33,6 +33,15 @@
   color: var(--ink);
 }
 
+.scatter-point.label-left {
+  flex-direction: row-reverse;
+  transform: translate(calc(-100% + 7px), 7px);
+}
+
+.scatter-point.label-left.is-selected {
+  transform: translate(calc(-100% + 7px), 7px) scale(1.22);
+}
+
 .boxscore-table {
   width: max(100%, 1260px);
 }
