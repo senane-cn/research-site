@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="第48届世界遗产委员会议程7委员国发言量、覆盖面、文本行动、议题关注与可观察协作统计。" />
+    <meta name="theme-color" content="#f4f6f8" />
+    <title>48COM 议程7委员国技术统计 · ConserVision Research</title>
+    <link rel="stylesheet" href="../stage-1/styles.css" />
+    <link rel="stylesheet" href="styles.css?v=1.0.0" />
+    <script src="app.js?v=1.0.0" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="topbar">
+      <a class="brand brand-lockup" href="../../../" aria-label="第48届世界遗产大会 · 委员国技术统计分析">
+        <img class="conference-logo" id="conference-logo" width="209" height="94" alt="第48届世界遗产大会官方徽标" />
+        <span class="brand-title">
+          <strong>委员国技术统计分析</strong>
+          <small>48COM Committee Observatory</small>
+        </span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="../../">Committee Observation</a>
+        <a href="../">48COM</a>
+        <a href="#methodology">方法</a>
+        <a href="data/phase-2a.json" download>数据</a>
+      </nav>
+      <span class="partner-logo-field" aria-label="合作机构">
+        <img class="partner-logo" src="../../../evaluation/2026/assets/partner-logos.png" width="518" height="80" alt="NHC THU与ConserVision联名标识" />
+      </span>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" aria-labelledby="page-title">
+        <div class="hero-meta">
+          <p class="eyebrow">48COM Committee Observatory · Phase 02A</p>
+          <p class="release-status"><span aria-hidden="true"></span>阶段核定 · 2026.07.27</p>
+        </div>
+        <h1 id="page-title">第二阶段A：保护状况（议程7）</h1>
+        <div class="hero-deck">
+          <p class="hero-lead">把讨论发言、缔约国答辩、文本行动与表决分开，才能看清参与方式。</p>
+          <p>统计窗口覆盖7月22日至27日的7A、7B审议。页面记录委员国参与覆盖、205个可核对发言回合、正式共同文本与现场编辑，并将Baikal表决作为独立立场样本。</p>
+        </div>
+      </section>
+
+      <section class="stage-band" aria-label="全会分析阶段">
+        <div class="section-shell stage-track">
+          <a class="stage" href="../stage-1/"><strong>01</strong><span>战略与制度</span><small>已核定</small></a>
+          <a class="stage active" href="./" aria-current="step"><strong>02A</strong><span>保护状况</span><small>阶段核定</small></a>
+          <span class="stage"><strong>02B</strong><span>列入议程</span><small>进行中</small></span>
+          <span class="stage"><strong>03</strong><span>执行机制</span><small>待更新</small></span>
+          <span class="stage"><strong>ALL</strong><span>全程总览</span><small>会议后</small></span>
+        </div>
+      </section>
+
+      <section class="section-shell metrics" aria-label="阶段统计摘要">
+        <article><strong id="metric-members">21</strong><span>委员国</span></article>
+        <article><strong id="metric-actions">136</strong><span>国家—审议单元行动</span></article>
+        <article><strong id="metric-speeches">205</strong><span>全部可核对发言回合</span></article>
+        <article><strong id="metric-responses">12</strong><span>答辩／通过后回应</span></article>
+        <article><strong id="metric-packages">9</strong><span>正式／现场确认文本包</span></article>
+        <article><strong id="metric-votes">1</strong><span>完整委员国表决</span></article>
+      </section>
+
+      <section class="section-shell editorial-intro" aria-labelledby="reading-title">
+        <div>
+          <p class="section-no">00 / READ FIRST</p>
+          <h2 id="reading-title">四个维度分别读</h2>
+        </div>
+        <div class="reading-grid">
+          <article><span>01</span><h3>覆盖面</h3><p>在哪些有效审议单元留下讨论、文本或程序行动。</p></article>
+          <article><span>02</span><h3>发言量</h3><p>讨论回合与缔约国答辩分别计数，避免角色混同。</p></article>
+          <article><span>03</span><h3>提出议题</h3><p>主提、联合提交，以及得到处理的程序动议。</p></article>
+          <article><span>04</span><h3>介入讨论</h3><p>可追溯到决定文字或处理结果的编辑、护栏和折衷。</p></article>
+        </div>
+      </section>
+
+      <div class="filter-wrap" id="explore">
+        <form class="filters section-shell" id="filters" aria-label="筛选统计">
+          <div class="filter-title"><span>EXPLORE</span><strong id="filter-summary" aria-live="polite">显示全部21国</strong></div>
+          <label>区域组
+            <select id="region-filter" name="region"><option value="all">全部区域组</option></select>
+          </label>
+          <label>委员国
+            <select id="country-filter" name="country"><option value="all">全部委员国</option></select>
+          </label>
+          <button type="button" id="reset-filters">重置</button>
+          <button type="button" id="print-page">打印／存为PDF</button>
+        </form>
+      </div>
+
+      <section class="section-shell analysis-section" aria-labelledby="scatter-title">
+        <header class="section-heading">
+          <p class="section-no">01 / COVERAGE × VOLUME</p>
+          <div>
+            <h2 id="scatter-title">覆盖面与发言量共同描述参与度</h2>
+            <p>横轴为16个有效审议单元中的行动覆盖；纵轴为全部可核对发言回合，包含讨论发言及另列的答辩／通过后回应。</p>
+          </div>
+        </header>
+        <div class="chart-panel">
+          <div class="scatter-scroll" tabindex="0" aria-label="委员国覆盖面与发言量散点图，可横向滚动">
+            <div class="scatter" id="scatter" role="group" aria-label="21个委员国的审议覆盖与发言回合散点图"></div>
+          </div>
+          <div class="chart-axis-note"><span>← 较集中</span><strong>参与审议单元数</strong><span>较广泛 →</span></div>
+        </div>
+        <div class="region-legend" id="scatter-region-legend" aria-label="区域组颜色"></div>
+        <p class="chart-footnote">一个连续发言席计一个回合；纪要合并短发言时采用可确认下限。主席、报告员、秘书处及咨询机构制度身份已剔除。悬停、聚焦或轻触国家代码可查看角色拆分。</p>
+      </section>
+
+      <section class="section-shell analysis-section" aria-labelledby="boxscore-title">
+        <header class="section-heading">
+          <p class="section-no">02 / MEMBER BOXSCORE</p>
+          <div>
+            <h2 id="boxscore-title">21国议程7技术统计</h2>
+            <p>覆盖、讨论回合、答辩／回应、文本与两类影响同时显示，不生成黑箱综合排名。</p>
+          </div>
+        </header>
+        <div class="table-controls">
+          <label>排序
+            <select id="sort-table">
+              <option value="turns-desc">全部发言回合</option>
+              <option value="coverage-desc">覆盖审议单元</option>
+              <option value="initiative-desc">提出议题</option>
+              <option value="deliberative-desc">介入讨论</option>
+              <option value="name-asc">国家名称</option>
+            </select>
+          </label>
+        </div>
+        <div class="table-scroll boxscore-desktop" tabindex="0" aria-label="委员国技术统计表，可横向滚动">
+          <table class="data-table boxscore-table">
+            <thead>
+              <tr>
+                <th scope="col">委员国</th>
+                <th scope="col">区域</th>
+                <th scope="col">覆盖单元</th>
+                <th scope="col">讨论发言</th>
+                <th scope="col">答辩／回应</th>
+                <th scope="col">最高集中单元</th>
+                <th scope="col">文本包</th>
+                <th scope="col">提出议题</th>
+                <th scope="col">共同提出</th>
+                <th scope="col">介入讨论</th>
+                <th scope="col">高关注度议题</th>
+              </tr>
+            </thead>
+            <tbody id="boxscore-body"></tbody>
+          </table>
+        </div>
+        <div class="member-cards" id="member-cards" aria-label="移动端委员国技术统计"></div>
+      </section>
+
+      <section class="section-shell analysis-section" aria-labelledby="influence-title">
+        <header class="section-heading">
+          <p class="section-no">03 / TWO-SIDED INFLUENCE</p>
+          <div>
+            <h2 id="influence-title">影响力分为提出议题与介入讨论</h2>
+            <p>提出议题统计正式主提／联合提交和得到处理的程序动议；介入讨论只保留可连接到决定文字或结果的编辑、护栏与折衷。共同提出另列。</p>
+          </div>
+        </header>
+        <div class="influence-legend" aria-label="影响力图例">
+          <span><i class="initiative-key"></i>提出议题</span>
+          <span><i class="cosponsor-key"></i>共同提出</span>
+          <span><i class="deliberative-key"></i>介入讨论</span>
+        </div>
+        <div class="influence-bars" id="influence-bars"></div>
+        <p class="chart-footnote">数字是可追溯记录数，不是质量分或政治影响评分。悬停、聚焦或轻触条形可查看具体文本和程序结果。</p>
+      </section>
+
+      <section class="section-shell analysis-section" aria-labelledby="unit-title">
+        <header class="section-heading">
+          <p class="section-no">04 / AGENDA 7 FOOTPRINT</p>
+          <div>
+            <h2 id="unit-title">发言集中在哪些保护状况项目</h2>
+            <p>格内大数字是全部发言回合；“回应”表示委员国以遗产所在缔约国或决定通过后身份发言；0回合但有“发＋文”表示存在文本／程序行动。</p>
+          </div>
+        </header>
+        <div class="legend" aria-label="行动类型图例">
+          <span><i class="unit-v0">—</i>无记录</span>
+          <span><i class="unit-v1">发</i>讨论发言</span>
+          <span><i class="unit-v2">文</i>文本／程序</span>
+          <span><i class="unit-v3">双</i>发言＋文本</span>
+          <span><i class="unit-vr">回</i>答辩／回应</span>
+        </div>
+        <div class="table-scroll" tabindex="0" aria-label="委员国与议程7审议单元矩阵，可横向滚动">
+          <table class="data-table matrix-table unit-matrix" id="unit-matrix"></table>
+        </div>
+        <p class="chart-footnote">悬停、聚焦或轻触色块可查看项目结果、角色与对应文本行动。7A.30—32和7B.54为仅出现通过后回应的单元，不进入覆盖面分母。</p>
+      </section>
+
+      <section class="section-shell analysis-section" aria-labelledby="topic-title">
+        <header class="section-heading">
+          <p class="section-no">05 / ISSUE ATTENTION</p>
+          <div>
+            <h2 id="topic-title">对哪类问题更敏感</h2>
+            <p>大数字是该国介入且涉及该主题的审议单元数，小字是这些单元中的发言回合。它是“议题关联度”，不把每句话强行归入单一主题。</p>
+          </div>
+        </header>
+        <div class="legend topic-legend" aria-label="议题关联度图例">
+          <span><i class="topic-v0">0</i>未观察</span>
+          <span><i class="topic-v1">1</i>1个单元</span>
+          <span><i class="topic-v2">2</i>2个单元</span>
+          <span><i class="topic-v3">3+</i>3个以上</span>
+        </div>
+        <div class="table-scroll" tabindex="0" aria-label="委员国议题关联度矩阵，可横向滚动">
+          <table class="data-table matrix-table topic-table" id="topic-matrix"></table>
+        </div>
+        <p class="chart-footnote">悬停、聚焦或轻触色块可查看具体项目清单。主题编码用于本阶段内部比较，不直接跨届归一化。</p>
+      </section>
+
+      <section class="section-shell analysis-section" aria-labelledby="coalition-title">
+        <header class="section-heading">
+          <p class="section-no">06 / CO-TEXT NETWORK</p>
+          <div>
+            <h2 id="coalition-title">共同文本，而非“关系评分”</h2>
+            <p>只计算同一文本包中的正式主提、共同提出或现场确认联合提交。一般支持、相似发言和单纯现场加入不进入关系矩阵。</p>
+          </div>
+        </header>
+        <div class="coalition-layout">
+          <div>
+            <div class="table-scroll" tabindex="0" aria-label="共同文本次数矩阵，可横向滚动">
+              <table class="data-table coaction-table" id="coaction-matrix"></table>
+            </div>
+            <p class="chart-footnote">格内数值为共同进入文本包的次数；空白不表示没有合作。悬停、聚焦或轻触数字可查看项目关键词。</p>
+          </div>
+          <aside class="coalition-note">
+            <span class="eyebrow">Strongest observable text package</span>
+            <strong>8</strong>
+            <h3>Hampi八国共同文本</h3>
+            <p>越南主提，亚美尼亚、牙买加、哈萨克斯坦、科威特、塞内加尔、多哥、坦桑尼亚共同提出；议题集中于措辞强度、事前HIA和报告周期。</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-shell analysis-section" aria-labelledby="vote-title">
+        <header class="section-heading">
+          <p class="section-no">07 / EXPLICIT ALIGNMENT</p>
+          <div>
+            <h2 id="vote-title">Baikal延期表决：唯一完整立场分布</h2>
+            <p>表决对象是“是否把实质辩论延至第49届”，不是对列危本身的最终表决。投票与口头发言分开统计。</p>
+          </div>
+        </header>
+        <div class="vote-grid" id="vote-grid" aria-label="Baikal延期表决分组"></div>
+        <div class="pattern-grid">
+          <article><span>Text network</span><h3>非洲共同文本稳定出现</h3><p>Hampi与Victoria Falls形成四国以上正式共同文本，坦桑尼亚还连接Chiloé与Sundarbans。</p></article>
+          <article><span>Floor editing</span><h3>欧洲组更多通过现场校准协作</h3><p>瑞士、捷克、波兰、黎巴嫩在伦敦两案和HIA议题上多次互相支持，但共同署名密度较低。</p></article>
+          <article><span>Procedure</span><h3>亚太与拉美多次推动“先任务、后决定”</h3><p>Baikal、Península Valdés及多个报告周期争论中，任务与新增材料被视为决定强度的重要前置条件。</p></article>
+        </div>
+      </section>
+
+      <section class="findings-wrap">
+        <div class="section-shell analysis-section" aria-labelledby="findings-title">
+          <header class="section-heading inverse">
+            <p class="section-no">08 / STAGE FINDINGS</p>
+            <div><h2 id="findings-title">议程7阶段读数</h2><p>以下结论只描述本阶段可观察制度行为，不推断幕后协调或长期政治联盟。</p></div>
+          </header>
+          <div class="findings-list" id="findings-list"></div>
+        </div>
+      </section>
+
+      <section class="section-shell methodology analysis-section" id="methodology" aria-labelledby="method-title">
+        <header class="section-heading">
+          <p class="section-no">METHOD & SOURCES</p>
+          <div><h2 id="method-title">如何编码，证据到哪里为止</h2><p>完整编码手册与机器可读数据均可下载复核。</p></div>
+        </header>
+        <div class="method-grid">
+          <div>
+            <h3>发言回合</h3>
+            <p>代表团连续占用发言席计一个回合；再次取得发言席重新计数。纪要合并多个短发言时采用可确认下限，因此205不是官方逐字记录的最终轮次。</p>
+            <h3>讨论与答辩</h3>
+            <p>委员国作为遗产所在缔约国的国家答辩，以及决定通过后的回应，另列12回合，不自动增加讨论端影响。</p>
+          </div>
+          <div>
+            <h3>提出端与讨论端</h3>
+            <p>提出端只记录主提／联合提交及获得处理的程序动议；讨论端只记录能够连接到具体文字或程序结果的编辑、护栏与折衷。</p>
+            <h3>版本限制</h3>
+            <p>本版依据官方直播、修正案登记与逐项纪要交叉核对。7B.93已完成发言与现场结果编码；7A.27、7B.70和7B.93个别最终措辞仍待UNESCO清洁版决定发布后复核。</p>
+          </div>
+        </div>
+        <div class="download-row">
+          <a href="data/phase-2a.json" download>下载阶段数据 · JSON</a>
+          <a href="METHOD.md">查看完整编码手册 · MD</a>
+        </div>
+        <div class="source-list" id="source-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>ConserVision Research · World Heritage Committee Observatory</p>
+      <p>48COM / Phase 02A / v1.0.0</p>
+    </footer>
+
+    <aside class="viz-tooltip" id="viz-tooltip" role="tooltip" aria-hidden="true" hidden>
+      <strong id="viz-tooltip-title"></strong>
+      <p id="viz-tooltip-body"></p>
+      <ul id="viz-tooltip-list"></ul>
+    </aside>
+
+    <noscript>
+      <div class="noscript">交互统计需要JavaScript。你仍可直接下载<a href="data/phase-2a.json">JSON数据</a>和查看<a href="METHOD.md">编码手册</a>。</div>
+    </noscript>
+  </body>
+</html>

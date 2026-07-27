@@ -1,0 +1,587 @@
+{
+  "metadata": {
+    "title": "第48届世界遗产委员会｜第二阶段A委员国发言与文本行动统计",
+    "stage": "stage-2a",
+    "stage_label": "保护状况（议程7）",
+    "scope": "议程7A、7B的保护状况审议；统计窗口为2026年7月22日至27日",
+    "version": "1.0.0",
+    "status": "阶段核定",
+    "updated_at": "2026-07-27T15:10:00+09:00",
+    "committee_members": 21,
+    "state_of_conservation_reports": 147,
+    "coded_units": 18,
+    "effective_units": 16,
+    "country_unit_actions": 136,
+    "verified_discussion_turns": 193,
+    "member_response_turns": 12,
+    "verified_floor_turns": 205,
+    "official_amendment_packages": 8,
+    "recorded_floor_amendment_packages": 1,
+    "decisions_amended_or_reframed": 8,
+    "speech_turn_method": "conservative_floor_takings",
+    "notes": [
+      "一次连续占用发言席计一个发言回合；同一代表团在一般性辩论、逐段审议、程序说明或答辩中再次取得发言席，分别计数。",
+      "发言回合按现有逐项纪要和直播时间线能够确认的下限编码，不等同于UNESCO官方逐字记录。",
+      "委员国同时是遗产所在缔约国时，其国家答辩和决定通过后回应单列，不计入讨论端影响。",
+      "表决立场单列，不把一次投票自动换算为一次发言。",
+      "共同文本关系只使用正式登记的主提、共同提出或现场确认的联合提交；一般支持和相似立场不进入关系矩阵。",
+      "7B.93于7月27日完成现场审议；赞比亚以遗产所在缔约国身份作1次连续答辩，不进入21个委员国发言总量。7A.27、7B.70与7B.93的个别最终措辞仍待UNESCO清洁版决定发布后复核。"
+    ]
+  },
+  "regions": [
+    { "id": "africa", "label": "非洲", "short": "AFR" },
+    { "id": "arab", "label": "阿拉伯国家", "short": "ARB" },
+    { "id": "asia_pacific", "label": "亚洲和太平洋", "short": "ASP" },
+    { "id": "europe_north_america", "label": "欧洲和北美", "short": "ENA" },
+    { "id": "latin_caribbean", "label": "拉丁美洲和加勒比", "short": "LAC" }
+  ],
+  "countries": [
+    { "id": "armenia", "code": "ARM", "name_zh": "亚美尼亚", "name_en": "Armenia", "region": "europe_north_america", "profile": "跨区域文本支持与实施期判断", "summary": "在Hampi正式共同文本和Ohrid现场支持中参与明显，同时在程序延会、冲突遗产与实施时限之间保持较宽覆盖。" },
+    { "id": "azerbaijan", "code": "AZE", "name_zh": "阿塞拜疆", "name_en": "Azerbaijan", "region": "europe_north_america", "profile": "程序启动与自然遗产共同文本", "summary": "主导Kosovo延会动议，并与坦桑尼亚联合提交Sundarbans修正；参与集中在程序、公平审议和自然遗产累积影响。" },
+    { "id": "bangladesh", "code": "BGD", "name_zh": "孟加拉国", "name_en": "Bangladesh", "region": "asia_pacific", "profile": "程序坚持与伦敦文本主提", "summary": "在Vienna程序争论中要求严格执行议事规则；主提Westminster修正并多次协调任务、HIA和报告期限；Sundarbans发言按缔约国角色另列。" },
+    { "id": "czechia", "code": "CZE", "name_zh": "捷克", "name_en": "Czechia", "region": "europe_north_america", "profile": "证据、程序与文本校准者", "summary": "从报告可比性、遥感证据到伦敦规划工具和复审周期持续介入；在Victoria Falls讨论中请IUCN澄清生态连通性与突出普遍价值陈述的依据。" },
+    { "id": "grenada", "code": "GRD", "name_zh": "格林纳达", "name_en": "Grenada", "region": "latin_caribbean", "profile": "时限折衷与现场共同支持", "summary": "在Westminster形成两阶段报告折衷，并在Hampi、Chiloé、Ohrid及Pinacate中支持更可实施的文本与任务安排。" },
+    { "id": "jamaica", "code": "JAM", "name_zh": "牙买加", "name_en": "Jamaica", "region": "latin_caribbean", "profile": "高频文本协调与加勒比保护视角", "summary": "主提Tower修正、参与Westminster和Chiloé协商，并在Paramaribo列危后补充加勒比支持，是本阶段提出端与讨论端同时活跃的成员。" },
+    { "id": "kazakhstan", "code": "KAZ", "name_zh": "哈萨克斯坦", "name_en": "Kazakhstan", "region": "asia_pacific", "profile": "任务优先与延期程序推动", "summary": "以Baikal延期动议形成最清晰程序结果；在Hampi与Ohrid强调先取得任务或实施证据，再作更强保护决定。" },
+    { "id": "kenya", "code": "KEN", "name_zh": "肯尼亚", "name_en": "Kenya", "region": "africa", "profile": "共同文本主导与列入标准边界", "summary": "与塞内加尔、多哥、坦桑尼亚共同提交Victoria Falls文本，并以4次发言推动按列入标准限定管理要求，最终保留地貌属性、删除生态连通性措辞。" },
+    { "id": "kuwait", "code": "KWT", "name_zh": "科威特", "name_en": "Kuwait", "region": "arab", "profile": "低频但具正式共同文本", "summary": "口头发言集中在Vienna程序、Hampi与Tyre；通过Hampi正式共同提出形成清晰文本参与，Baikal表决选择弃权。" },
+    { "id": "lebanon", "code": "LBN", "name_zh": "黎巴嫩", "name_en": "Lebanon", "region": "arab", "profile": "HIA与程序护栏", "summary": "反复追问事前HIA、任务性质和修正案时限；Tyre的两次发言作为遗产所在缔约国答辩单列，不与讨论影响混算。" },
+    { "id": "mongolia", "code": "MNG", "name_zh": "蒙古", "name_en": "Mongolia", "region": "asia_pacific", "profile": "生态系统与跨境水文回应", "summary": "在Ohrid和Chiloé支持实施型文本；Baikal后续回应聚焦额金河项目评估及俄蒙跨境合作，反映自然系统连通性关注。" },
+    { "id": "peru", "code": "PER", "name_zh": "秘鲁", "name_en": "Peru", "region": "latin_caribbean", "profile": "文本主提与程序性延期", "summary": "主提Chiloé修正并解释影响评估范围；在Península Valdés提出休止辩论，形成等待新技术材料的程序结果。" },
+    { "id": "poland", "code": "POL", "name_zh": "波兰", "name_en": "Poland", "region": "europe_north_america", "profile": "高保护门槛与生态属性倡议", "summary": "在冲突遗产、Baikal和伦敦两案支持较强监督；在Victoria Falls以5次发言主张保留生态连通性，随后为形成共识接受不含该词的折衷文本。" },
+    { "id": "republic_of_korea", "code": "KOR", "name_zh": "大韩民国", "name_en": "Republic of Korea", "region": "asia_pacific", "profile": "报告周期与任务衔接审查", "summary": "国家代表团发言主要核对Hampi、Ohrid和Sundarbans的报告时点、任务逻辑与社区效益；主席制度身份行动全部剔除。" },
+    { "id": "senegal", "code": "SEN", "name_zh": "塞内加尔", "name_en": "Senegal", "region": "africa", "profile": "非洲共同文本与合作性列危工具", "summary": "共同提出Hampi与Victoria Falls文本，支持Tyre列危作为援助工具，并在Victoria Falls逐段审议中以口头发言支持列入标准导向的共同文本。" },
+    { "id": "switzerland", "code": "CHE", "name_zh": "瑞士", "name_en": "Switzerland", "region": "europe_north_america", "profile": "科学严谨与高密度讨论介入", "summary": "在报告科学质量、HIA、任务类型和复审时限上持续发言；在Victoria Falls引用鸟类与森林属性支持生态连通性，同时接受最终共识文本。" },
+    { "id": "togo", "code": "TGO", "name_zh": "多哥", "name_en": "Togo", "region": "africa", "profile": "非洲共同文本与程序共识", "summary": "共同提出Hampi与Victoria Falls文本，在Ohrid、Kosovo和Vienna程序中支持协作性处理，Baikal后提出程序说明。" },
+    { "id": "turkiye", "code": "TUR", "name_zh": "土耳其", "name_en": "Türkiye", "region": "europe_north_america", "profile": "Ohrid议程设置与跨个案高覆盖", "summary": "主提Ohrid修正并推动以承诺、任务和延后复审替代本届列危；同时广泛参与冲突遗产、伦敦规划与程序议题。" },
+    { "id": "ukraine", "code": "UKR", "name_zh": "乌克兰", "name_en": "Ukraine", "region": "europe_north_america", "profile": "冲突遗产与列危立场", "summary": "主提Vienna修正并推动延会；在Tauric Chersonese以缔约国身份答辩，在Baikal反复支持立即列危，形成鲜明证据与保护门槛立场。" },
+    { "id": "tanzania", "code": "TZA", "name_zh": "坦桑尼亚联合共和国", "name_en": "United Republic of Tanzania", "region": "africa", "profile": "高覆盖共同文本与标准边界", "summary": "共同提出Hampi、Chiloé、Sundarbans和Victoria Falls文本；在Victoria Falls强调列入标准与执行责任边界，反对以生态术语扩大正式义务。" },
+    { "id": "viet_nam", "code": "VNM", "name_zh": "越南", "name_en": "Viet Nam", "region": "asia_pacific", "profile": "Hampi文本主提与合作性措辞", "summary": "主提Hampi修正，围绕措辞强度、HIA义务和两层报告安排多次回应；也参与Kosovo、Vienna及Tyre等项目。" }
+  ],
+  "topics": [
+    { "id": "danger_list", "label": "列危与退出路径" },
+    { "id": "impact_assessment", "label": "HIA／SEA" },
+    { "id": "development_planning", "label": "开发与规划" },
+    { "id": "mission_monitoring", "label": "任务与监测" },
+    { "id": "reporting_timing", "label": "报告与复审周期" },
+    { "id": "conflict_damage", "label": "冲突与遗产损害" },
+    { "id": "community_rights", "label": "社区与权利" },
+    { "id": "procedure_voting", "label": "程序与表决" },
+    { "id": "climate_ecosystem", "label": "气候与生态系统" },
+    { "id": "evidence_credibility", "label": "证据与制度可信度" }
+  ],
+  "units": [
+    {
+      "id": "7-overview",
+      "label": "议程7综合讨论",
+      "short_label": "7总论",
+      "date": "2026-07-22",
+      "category": "综合讨论",
+      "outcome": "3名委员作综合发言；另有1名委员在7A程序开场发言",
+      "topics": ["development_planning", "conflict_damage", "community_rights", "climate_ecosystem", "evidence_credibility"],
+      "members": {
+        "czechia": { "discussion": 1 },
+        "switzerland": { "discussion": 1 },
+        "jamaica": { "discussion": 1 },
+        "turkiye": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7A29",
+      "label": "Medieval Monuments in Kosovo",
+      "short_label": "7A.29",
+      "date": "2026-07-22",
+      "category": "程序延期",
+      "outcome": "辩论延至下一届常会",
+      "topics": ["procedure_voting", "conflict_damage", "mission_monitoring"],
+      "members": {
+        "azerbaijan": { "discussion": 1 },
+        "poland": { "discussion": 1 },
+        "turkiye": { "discussion": 1 },
+        "viet_nam": { "discussion": 1 },
+        "kazakhstan": { "discussion": 1 },
+        "tanzania": { "discussion": 1 },
+        "lebanon": { "discussion": 1 },
+        "armenia": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7A27",
+      "label": "Historic Centre of Vienna",
+      "short_label": "7A.27",
+      "date": "2026-07-22—27",
+      "category": "程序与文本",
+      "outcome": "先延至7月27日；清洁版决定待发布复核",
+      "topics": ["procedure_voting", "reporting_timing", "evidence_credibility", "development_planning"],
+      "members": {
+        "ukraine": { "discussion": 3 },
+        "tanzania": { "discussion": 1 },
+        "peru": { "discussion": 1 },
+        "bangladesh": { "discussion": 2 },
+        "czechia": { "discussion": 2 },
+        "viet_nam": { "discussion": 1 },
+        "kuwait": { "discussion": 1 },
+        "kenya": { "discussion": 1 },
+        "poland": { "discussion": 1 },
+        "switzerland": { "discussion": 1 },
+        "armenia": { "discussion": 1 },
+        "azerbaijan": { "discussion": 1 },
+        "togo": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7A52",
+      "label": "Lake Turkana National Parks",
+      "short_label": "7A.52",
+      "date": "2026-07-22—23",
+      "category": "程序调整",
+      "outcome": "开启请求撤回，回到不经讨论批次通过",
+      "topics": ["procedure_voting", "mission_monitoring", "climate_ecosystem"],
+      "members": {
+        "senegal": { "discussion": 2 },
+        "tanzania": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7A30-32",
+      "label": "Kyiv、L’viv与Odesa批次",
+      "short_label": "7A.30–32",
+      "date": "2026-07-22",
+      "category": "通过后答辩",
+      "outcome": "三项决定通过后出现国家答辩",
+      "topics": ["conflict_damage", "evidence_credibility"],
+      "members": {
+        "ukraine": { "response": 1 }
+      }
+    },
+    {
+      "id": "7B94",
+      "label": "Tyre",
+      "short_label": "7B.94",
+      "date": "2026-07-22—23",
+      "category": "列危",
+      "outcome": "原文通过并列入濒危名录",
+      "topics": ["danger_list", "conflict_damage", "mission_monitoring", "evidence_credibility"],
+      "members": {
+        "poland": { "discussion": 1 },
+        "armenia": { "discussion": 1 },
+        "turkiye": { "discussion": 1 },
+        "czechia": { "discussion": 1 },
+        "switzerland": { "discussion": 1 },
+        "grenada": { "discussion": 1 },
+        "tanzania": { "discussion": 1 },
+        "viet_nam": { "discussion": 1 },
+        "senegal": { "discussion": 1 },
+        "kuwait": { "discussion": 1 },
+        "lebanon": { "response": 2 }
+      }
+    },
+    {
+      "id": "7B9",
+      "label": "Group of Monuments at Hampi",
+      "short_label": "7B.9",
+      "date": "2026-07-22—23",
+      "category": "HIA与报告周期",
+      "outcome": "经修正通过；任务结果与完整报告拆成两层",
+      "topics": ["impact_assessment", "development_planning", "mission_monitoring", "reporting_timing", "evidence_credibility"],
+      "members": {
+        "tanzania": { "discussion": 1 },
+        "togo": { "discussion": 1 },
+        "armenia": { "discussion": 1 },
+        "kenya": { "discussion": 1 },
+        "jamaica": { "discussion": 1 },
+        "kazakhstan": { "discussion": 1 },
+        "poland": { "discussion": 1 },
+        "kuwait": { "discussion": 1 },
+        "republic_of_korea": { "discussion": 1 },
+        "grenada": { "discussion": 1 },
+        "senegal": { "discussion": 1 },
+        "peru": { "discussion": 1 },
+        "lebanon": { "discussion": 2 },
+        "czechia": { "discussion": 1 },
+        "switzerland": { "discussion": 3 },
+        "bangladesh": { "discussion": 1 },
+        "viet_nam": { "discussion": 4 }
+      }
+    },
+    {
+      "id": "7B46",
+      "label": "Ancient City of Tauric Chersonese and its Chora",
+      "short_label": "7B.46",
+      "date": "2026-07-23",
+      "category": "列危与冲突",
+      "outcome": "原文通过并列入濒危名录",
+      "topics": ["danger_list", "conflict_damage", "mission_monitoring", "evidence_credibility"],
+      "members": {
+        "poland": { "discussion": 1 },
+        "czechia": { "discussion": 1 },
+        "switzerland": { "discussion": 1 },
+        "ukraine": { "response": 2 }
+      }
+    },
+    {
+      "id": "7B47",
+      "label": "Palace of Westminster",
+      "short_label": "7B.47",
+      "date": "2026-07-23",
+      "category": "规划、HIA与任务",
+      "outcome": "经修正通过；形成咨询任务和两阶段报告",
+      "topics": ["impact_assessment", "development_planning", "mission_monitoring", "reporting_timing", "community_rights", "procedure_voting"],
+      "members": {
+        "lebanon": { "discussion": 3 },
+        "jamaica": { "discussion": 4 },
+        "ukraine": { "discussion": 2 },
+        "bangladesh": { "discussion": 6 },
+        "grenada": { "discussion": 4 },
+        "turkiye": { "discussion": 2 },
+        "switzerland": { "discussion": 5 },
+        "czechia": { "discussion": 4 },
+        "poland": { "discussion": 4 }
+      }
+    },
+    {
+      "id": "7B49",
+      "label": "Tower of London",
+      "short_label": "7B.49",
+      "date": "2026-07-23",
+      "category": "规划、环境与任务",
+      "outcome": "经修正通过；保留反应性监测任务",
+      "topics": ["impact_assessment", "development_planning", "mission_monitoring", "reporting_timing"],
+      "members": {
+        "jamaica": { "discussion": 7 },
+        "switzerland": { "discussion": 4 },
+        "poland": { "discussion": 1 },
+        "lebanon": { "discussion": 1 },
+        "czechia": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7B51",
+      "label": "Churches of Chiloé",
+      "short_label": "7B.51",
+      "date": "2026-07-23",
+      "category": "影响评估与社区",
+      "outcome": "经修正通过",
+      "topics": ["impact_assessment", "development_planning", "community_rights", "reporting_timing"],
+      "members": {
+        "peru": { "discussion": 2 },
+        "tanzania": { "discussion": 1 },
+        "republic_of_korea": { "discussion": 1 },
+        "jamaica": { "discussion": 1 },
+        "kenya": { "discussion": 1 },
+        "ukraine": { "discussion": 1 },
+        "mongolia": { "discussion": 1 },
+        "grenada": { "discussion": 1 },
+        "senegal": { "discussion": 1 },
+        "kazakhstan": { "discussion": 1 },
+        "armenia": { "discussion": 1 },
+        "turkiye": { "discussion": 2 },
+        "lebanon": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7B54",
+      "label": "Historic Inner City of Paramaribo",
+      "short_label": "7B.54",
+      "date": "2026-07-23",
+      "category": "列危后回应",
+      "outcome": "原文通过并列入濒危名录；委员国作通过后支持发言",
+      "topics": ["danger_list", "impact_assessment", "development_planning", "evidence_credibility"],
+      "members": {
+        "jamaica": { "response": 1 }
+      }
+    },
+    {
+      "id": "7B62",
+      "label": "Natural and Cultural Heritage of the Ohrid region",
+      "short_label": "7B.62",
+      "date": "2026-07-24",
+      "category": "列危与实施期",
+      "outcome": "经修正通过；本届不列危，复审窗口后移",
+      "topics": ["danger_list", "development_planning", "mission_monitoring", "reporting_timing", "evidence_credibility"],
+      "members": {
+        "turkiye": { "discussion": 4, "response": 1 },
+        "kenya": { "discussion": 1 },
+        "tanzania": { "discussion": 1 },
+        "senegal": { "discussion": 1 },
+        "poland": { "discussion": 1 },
+        "mongolia": { "discussion": 1 },
+        "togo": { "discussion": 1 },
+        "bangladesh": { "discussion": 1 },
+        "azerbaijan": { "discussion": 1 },
+        "jamaica": { "discussion": 2 },
+        "kazakhstan": { "discussion": 1 },
+        "peru": { "discussion": 1 },
+        "ukraine": { "discussion": 1 },
+        "switzerland": { "discussion": 3 },
+        "grenada": { "discussion": 2 },
+        "czechia": { "discussion": 3 },
+        "republic_of_korea": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7B70",
+      "label": "The Sundarbans",
+      "short_label": "7B.70",
+      "date": "2026-07-26",
+      "category": "SEA、能源与报告",
+      "outcome": "经修正通过；最终期限待清洁版复核",
+      "topics": ["impact_assessment", "development_planning", "mission_monitoring", "reporting_timing", "climate_ecosystem", "evidence_credibility"],
+      "members": {
+        "bangladesh": { "response": 3 },
+        "republic_of_korea": { "discussion": 1 },
+        "czechia": { "discussion": 1 },
+        "switzerland": { "discussion": 1 },
+        "turkiye": { "discussion": 1 },
+        "kazakhstan": { "discussion": 1 },
+        "armenia": { "discussion": 1 },
+        "lebanon": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7B80",
+      "label": "Lake Baikal",
+      "short_label": "7B.80",
+      "date": "2026-07-24—25",
+      "category": "列危、延期与表决",
+      "outcome": "14—5—1通过延期动议，实质辩论延至第49届",
+      "topics": ["danger_list", "mission_monitoring", "climate_ecosystem", "procedure_voting", "evidence_credibility"],
+      "members": {
+        "ukraine": { "discussion": 3, "response": 1 },
+        "kazakhstan": { "discussion": 1 },
+        "poland": { "discussion": 1 },
+        "tanzania": { "discussion": 1 },
+        "bangladesh": { "discussion": 1 },
+        "lebanon": { "discussion": 2 },
+        "turkiye": { "discussion": 1 },
+        "togo": { "discussion": 1 },
+        "mongolia": { "response": 1 }
+      }
+    },
+    {
+      "id": "7B85",
+      "label": "Península Valdés",
+      "short_label": "7B.85",
+      "date": "2026-07-26—27",
+      "category": "程序延期",
+      "outcome": "休止辩论并延至第49届",
+      "topics": ["procedure_voting", "mission_monitoring", "evidence_credibility", "climate_ecosystem"],
+      "members": {
+        "peru": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7B86",
+      "label": "El Pinacate and Gran Desierto de Altar",
+      "short_label": "7B.86",
+      "date": "2026-07-26",
+      "category": "跨境任务",
+      "outcome": "第12段经修正，决定整体通过",
+      "topics": ["development_planning", "mission_monitoring", "climate_ecosystem", "evidence_credibility"],
+      "members": {
+        "jamaica": { "discussion": 1 },
+        "grenada": { "discussion": 1 }
+      }
+    },
+    {
+      "id": "7B93",
+      "label": "Mosi-oa-Tunya / Victoria Falls",
+      "short_label": "7B.93",
+      "date": "2026-07-27",
+      "category": "生态属性与列入标准",
+      "outcome": "经修正通过；第10(e)删除“生态连通性”，保留地貌属性与视觉完整性",
+      "topics": ["impact_assessment", "development_planning", "mission_monitoring", "climate_ecosystem", "evidence_credibility"],
+      "members": {
+        "poland": { "discussion": 5 },
+        "kenya": { "discussion": 4 },
+        "switzerland": { "discussion": 2 },
+        "tanzania": { "discussion": 2 },
+        "senegal": { "discussion": 1 },
+        "czechia": { "discussion": 1 }
+      }
+    }
+  ],
+  "amendment_packages": [
+    {
+      "id": "7A27-ukraine",
+      "unit": "7A27",
+      "label": "Vienna修正案",
+      "source_type": "official_registry",
+      "outcome": "已提交；最终清洁版决定待复核",
+      "actors": [
+        { "country": "ukraine", "role": "lead", "role_label": "主提" }
+      ]
+    },
+    {
+      "id": "7B9-hampi",
+      "unit": "7B9",
+      "label": "Hampi措辞与报告周期",
+      "source_type": "official_registry",
+      "outcome": "经折衷后采纳",
+      "actors": [
+        { "country": "viet_nam", "role": "lead", "role_label": "主提" },
+        { "country": "armenia", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "jamaica", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "kazakhstan", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "kuwait", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "senegal", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "togo", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "co_sponsor", "role_label": "共同提出" }
+      ]
+    },
+    {
+      "id": "7B47-westminster",
+      "unit": "7B47",
+      "label": "Westminster规划、任务与报告",
+      "source_type": "official_registry",
+      "outcome": "经多轮现场修改后采纳",
+      "actors": [
+        { "country": "bangladesh", "role": "lead", "role_label": "主提" }
+      ]
+    },
+    {
+      "id": "7B49-tower",
+      "unit": "7B49",
+      "label": "Tower规划与任务",
+      "source_type": "official_registry",
+      "outcome": "经现场校准后采纳",
+      "actors": [
+        { "country": "jamaica", "role": "lead", "role_label": "主提" }
+      ]
+    },
+    {
+      "id": "7B51-chiloe",
+      "unit": "7B51",
+      "label": "Chiloé影响评估与保护范围",
+      "source_type": "official_registry",
+      "outcome": "采纳",
+      "actors": [
+        { "country": "peru", "role": "lead", "role_label": "主提" },
+        { "country": "poland", "role": "co_sponsor", "role_label": "共同提出" },
+        { "country": "tanzania", "role": "co_sponsor", "role_label": "共同提出" }
+      ]
+    },
+    {
+      "id": "7B62-ohrid",
+      "unit": "7B62",
+      "label": "Ohrid列危与复审周期",
+      "source_type": "official_registry",
+      "outcome": "采纳；删除本届列危并后移复审",
+      "actors": [
+        { "country": "turkiye", "role": "lead", "role_label": "主提" }
+      ]
+    },
+    {
+      "id": "7B70-sundarbans",
+      "unit": "7B70",
+      "label": "Sundarbans SEA、能源与报告",
+      "source_type": "official_registry",
+      "outcome": "经逐词协调后采纳",
+      "actors": [
+        { "country": "azerbaijan", "role": "joint_submitter", "role_label": "联合提交" },
+        { "country": "tanzania", "role": "joint_submitter", "role_label": "联合提交" }
+      ]
+    },
+    {
+      "id": "7B86-pinacate",
+      "unit": "7B86",
+      "label": "Pinacate跨境任务路径",
+      "source_type": "floor_record",
+      "outcome": "第12段采纳",
+      "actors": [
+        { "country": "jamaica", "role": "joint_submitter", "role_label": "联合提交" },
+        { "country": "czechia", "role": "joint_submitter", "role_label": "联合提交" },
+        { "country": "grenada", "role": "floor_join", "role_label": "现场加入" }
+      ]
+    },
+    {
+      "id": "7B93-victoria",
+      "unit": "7B93",
+      "label": "Victoria Falls生态属性与跨境管理",
+      "source_type": "official_registry",
+      "outcome": "REV.2进入逐段审议并纳入决定；第10(e)以不含“生态连通性”的折衷文本通过",
+      "actors": [
+        { "country": "kenya", "role": "joint_submitter", "role_label": "联合提交" },
+        { "country": "senegal", "role": "joint_submitter", "role_label": "联合提交" },
+        { "country": "togo", "role": "joint_submitter", "role_label": "联合提交" },
+        { "country": "tanzania", "role": "joint_submitter", "role_label": "联合提交" }
+      ]
+    }
+  ],
+  "accepted_actions": [
+    { "country": "azerbaijan", "unit": "7A29", "type": "procedural", "label": "提出延至下一届常会", "result": "延期动议获协商一致接受" },
+    { "country": "ukraine", "unit": "7A27", "type": "procedural", "label": "提出延至7月27日", "result": "延期动议获接受" },
+    { "country": "senegal", "unit": "7A52", "type": "procedural", "label": "提出调整审议时点", "result": "项目次日回到批次处理" },
+    { "country": "switzerland", "unit": "7B9", "type": "compromise", "label": "拆分任务结果与完整报告", "result": "第49届获得任务结果、第50届审议完整报告" },
+    { "country": "lebanon", "unit": "7B9", "type": "guardrail", "label": "保留事前HIA义务", "result": "第118bis与172段要求写回决定" },
+    { "country": "switzerland", "unit": "7B47", "type": "edit", "label": "删除国内咨询程序条款", "result": "第7段删除国内咨询期后半句" },
+    { "country": "poland", "unit": "7B47", "type": "guardrail", "label": "恢复替代设计与迭代式HIA", "result": "第10段恢复相关要求" },
+    { "country": "lebanon", "unit": "7B47", "type": "guardrail", "label": "共同恢复HIA要求", "result": "第10段形成保护护栏" },
+    { "country": "grenada", "unit": "7B47", "type": "compromise", "label": "提出两阶段报告", "result": "2027年2月进展报告、12月完整报告" },
+    { "country": "switzerland", "unit": "7B49", "type": "edit", "label": "恢复已实施项目评估", "result": "任务范围同时覆盖已实施及规划项目" },
+    { "country": "switzerland", "unit": "7B49", "type": "edit", "label": "补入规划工具影响", "result": "任务须审视规划工具对伦敦世界遗产的影响" },
+    { "country": "czechia", "unit": "7B49", "type": "edit", "label": "加入其他环境保护形式", "result": "任务不限于正式缓冲区" },
+    { "country": "kenya", "unit": "7B93", "type": "guardrail", "label": "按列入标准限定生态属性措辞", "result": "第10(e)删除“生态连通性”，保留地貌属性与视觉完整性" },
+    { "country": "kazakhstan", "unit": "7B80", "type": "procedural", "label": "提出延期动议", "result": "14票赞成，将实质辩论延至第49届" },
+    { "country": "peru", "unit": "7B85", "type": "procedural", "label": "提出休止辩论", "result": "项目延至第49届等待新材料评估" }
+  ],
+  "votes": [
+    {
+      "id": "7B80-deferral",
+      "unit": "7B80",
+      "label": "是否将Baikal实质辩论延至第49届",
+      "result": "14赞成—5反对—1弃权—1缺席",
+      "positions": {
+        "armenia": "yes",
+        "azerbaijan": "absent",
+        "bangladesh": "yes",
+        "czechia": "no",
+        "grenada": "yes",
+        "jamaica": "yes",
+        "kazakhstan": "yes",
+        "kenya": "yes",
+        "kuwait": "abstain",
+        "lebanon": "yes",
+        "mongolia": "yes",
+        "peru": "yes",
+        "poland": "no",
+        "republic_of_korea": "no",
+        "senegal": "yes",
+        "switzerland": "no",
+        "togo": "yes",
+        "turkiye": "yes",
+        "ukraine": "no",
+        "tanzania": "yes",
+        "viet_nam": "yes"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "title": "发言量高度集中在“决定如何执行”",
+      "body": "最密集讨论不是对保护问题是否存在的抽象争论，而是HIA何时完成、任务采用何种性质、报告交哪一届、是否先等待新材料。Westminster、Hampi和Ohrid形成三个最明显高密度单元。"
+    },
+    {
+      "title": "提出端与讨论端由不同成员占据",
+      "body": "孟加拉国、牙买加、土耳其、越南等通过正式修正设定议题；瑞士、捷克、黎巴嫩、波兰和格林纳达则更多通过段落编辑、程序护栏与折衷改变最终处理。两类影响不能合成一个排名。"
+    },
+    {
+      "title": "非洲组共同文本稳定，但并非所有个案同向",
+      "body": "Hampi和Victoria Falls形成可核对的非洲共同文本网络，坦桑尼亚还参与Chiloé与Sundarbans跨区域文本；在Baikal表决和Ohrid时限上，多数非洲成员倾向先给予任务或实施期，但这只是本阶段可观察行为。"
+    },
+    {
+      "title": "欧洲与北美组更像“技术校准网络”",
+      "body": "该组共同署名密度不高，却在冲突证据、规划工具、HIA、任务性质和复审时限上反复相互呼应或形成分歧。Victoria Falls中波兰、瑞士与非洲共同文本方围绕生态连通性形成清晰分歧，最终仍以现场折衷收束。"
+    },
+    {
+      "title": "Baikal提供了唯一完整可量化立场分布",
+      "body": "14—5—1的延期表决显示清楚阵营，但表决对象是“是否延期”，不能直接等同于对遗产保护风险或列危本身的最终立场。"
+    }
+  ],
+  "sources": [
+    { "label": "UNESCO第48届委员会会议页面", "type": "会议与委员国名单", "url": "https://whc.unesco.org/en/sessions/48COM/" },
+    { "label": "UNESCO第48届会议文件与修正案登记", "type": "工作文件与正式共同文本", "url": "https://whc.unesco.org/en/sessions/48COM/documents/" },
+    { "label": "ConserVision议程7逐项中文纪要", "type": "发言时间线与逐段处理", "url": "../../../../" },
+    { "label": "UNESCO官方会议视频", "type": "发言方与程序复核", "url": "https://www.youtube.com/@UNESCO" }
+  ]
+}
