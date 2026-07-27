@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#f4f6f8" />
     <title>48COM 议程7委员国技术统计 · ConserVision Research</title>
     <link rel="stylesheet" href="../stage-1/styles.css" />
-    <link rel="stylesheet" href="styles.css?v=1.0.3" />
-    <script src="app.js?v=1.0.3" type="module"></script>
+    <link rel="stylesheet" href="styles.css?v=1.1.0" />
+    <script src="app.js?v=1.1.0" type="module"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
@@ -40,7 +40,7 @@
         <h1 id="page-title">第二阶段A：保护状况（议程7）</h1>
         <div class="hero-deck">
           <p class="hero-lead">把讨论发言、缔约国答辩、文本行动与表决分开，才能看清参与方式。</p>
-          <p>统计窗口覆盖7月22日至27日的7A、7B审议。页面记录委员国参与覆盖、205个可核对发言回合、正式共同文本与现场编辑，并将Baikal表决作为独立立场样本。</p>
+          <p>统计窗口覆盖7月22日至27日的7A、7B审议。页面记录委员国参与覆盖、205个可核对发言回合、正式共同文本与现场编辑，并新增委员国—议程缔约国的议程协助与立场互动专题。</p>
         </div>
       </section>
 
@@ -56,10 +56,10 @@
 
       <section class="section-shell metrics" aria-label="阶段统计摘要">
         <article><strong id="metric-members">21</strong><span>委员国</span></article>
-        <article><strong id="metric-actions">136</strong><span>国家—审议单元行动</span></article>
+        <article><strong id="metric-actions">138</strong><span>国家—审议单元行动</span></article>
         <article><strong id="metric-speeches">205</strong><span>全部可核对发言回合</span></article>
         <article><strong id="metric-responses">12</strong><span>答辩／通过后回应</span></article>
-        <article><strong id="metric-packages">9</strong><span>正式／现场确认文本包</span></article>
+        <article><strong id="metric-packages">10</strong><span>正式／现场确认文本包</span></article>
         <article><strong id="metric-votes">1</strong><span>完整委员国表决</span></article>
       </section>
 
@@ -234,9 +234,42 @@
         </div>
       </section>
 
+      <section class="section-shell analysis-section" aria-labelledby="agenda-party-title">
+        <header class="section-heading">
+          <p class="section-no">07 / AGENDA-LINKED INTERACTION</p>
+          <div>
+            <h2 id="agenda-party-title">议程协助与立场互动</h2>
+            <p>把出现正式修正文本的遗产项目，连接到相关缔约国与提交委员国。先看可核对的文本网络，再判断具体措辞中的作用方向。</p>
+          </div>
+        </header>
+        <div class="relationship-principle">
+          <strong>本图记录的是议程行动，不是国家关系评分。</strong>
+          <p>共同署名只证明进入同一文本网络；“局部同向”还需修正方向、缔约国回应和处理结果相互印证。技术保留、保护性加码与程序异议均不自动等于反对相关缔约国。</p>
+        </div>
+        <div class="agenda-network-highlights" id="agenda-network-highlights" aria-label="议程缔约国文本网络特征"></div>
+        <div class="table-scroll" tabindex="0" aria-label="议程项目相关缔约国与委员国正式文本网络，可横向滚动">
+          <table class="data-table agenda-party-table" id="agenda-party-table"></table>
+        </div>
+        <p class="chart-footnote">文本清单截至2026年7月27日。网络宽度分别显示进入该项目正式文本的委员国数和覆盖区域组数；不合成为“动员能力排名”。空白不表示不存在合作或沟通。</p>
+
+        <div class="interaction-case">
+          <header>
+            <span>CAUTIOUS DIRECTION CODING · 7B.93</span>
+            <h3 id="interaction-case-title"></h3>
+            <p id="interaction-case-subtitle"></p>
+          </header>
+          <div class="interaction-case-grid" id="interaction-case-grid"></div>
+          <div class="interaction-result-grid">
+            <article id="state-party-response"></article>
+            <article id="interaction-outcome"></article>
+          </div>
+          <p class="opposition-rule" id="opposition-rule"></p>
+        </div>
+      </section>
+
       <section class="section-shell analysis-section" aria-labelledby="vote-title">
         <header class="section-heading">
-          <p class="section-no">07 / EXPLICIT ALIGNMENT</p>
+          <p class="section-no">08 / EXPLICIT ALIGNMENT</p>
           <div>
             <h2 id="vote-title">Baikal延期表决：唯一完整立场分布</h2>
             <p>表决对象是“是否把实质辩论延至第49届”，不是对列危本身的最终表决。投票与口头发言分开统计。</p>
@@ -253,7 +286,7 @@
       <section class="findings-wrap">
         <div class="section-shell analysis-section" aria-labelledby="findings-title">
           <header class="section-heading inverse">
-            <p class="section-no">08 / STAGE FINDINGS</p>
+            <p class="section-no">09 / STAGE FINDINGS</p>
             <div><h2 id="findings-title">议程7阶段读数</h2><p>以下结论只描述本阶段可观察制度行为，不推断幕后协调或长期政治联盟。</p></div>
           </header>
           <div class="findings-list" id="findings-list"></div>
@@ -275,6 +308,8 @@
           <div>
             <h3>提出端与讨论端</h3>
             <p>提出端只记录主提／联合提交及获得处理的程序动议；讨论端只记录能够连接到具体文字或程序结果的编辑、护栏与折衷。</p>
+            <h3>议程缔约国互动</h3>
+            <p>正式共同文本先记为中性议程连接；技术保留、保护性加码、程序异议和明确反对分开编码。只有具体措辞、缔约国回应与结果同向时，才标记“局部同向”。</p>
             <h3>版本限制</h3>
             <p>本版依据官方直播、修正案登记与逐项纪要交叉核对。7B.93已完成发言与现场结果编码；7A.27、7B.70和7B.93个别最终措辞仍待UNESCO清洁版决定发布后复核。</p>
           </div>
@@ -289,7 +324,7 @@
 
     <footer class="site-footer section-shell">
       <p>ConserVision Research · World Heritage Committee Observatory</p>
-      <p>48COM / Phase 02A / v1.0.3</p>
+      <p>48COM / Phase 02A / v1.1.0</p>
     </footer>
 
     <aside class="viz-tooltip" id="viz-tooltip" role="tooltip" aria-hidden="true" hidden>

@@ -1,6 +1,6 @@
 import { whc48LogoBase64 } from "../stage-1/assets/whc48-logo.generated.js";
 
-const DATA_URL = "data/phase-2a.json?v=1.0.3";
+const DATA_URL = "data/phase-2a.json?v=1.1.0";
 const regionColors = {
   africa: "#b84854",
   arab: "#6652a4",
@@ -378,6 +378,37 @@ function detailForElement(element) {
         (item) =>
           `${unitById(item.unit).short_label} · ${item.label}（${item.outcome}）`
       )
+    };
+  }
+
+  if (kind === "agenda-link") {
+    const country = countryById(element.dataset.country);
+    const unit = unitById(element.dataset.unit);
+    const row = data.agenda_party_network.rows.find(
+      (item) => item.unit === element.dataset.unit
+    );
+    if (!country || !unit || !row) return null;
+    const roles = data.amendment_packages
+      .filter((item) => item.unit === unit.id)
+      .flatMap((item) =>
+        item.actors
+          .filter(
+            (actor) =>
+              actor.country === country.id && proposalRoles.has(actor.role)
+          )
+          .map((actor) => `${item.label}：${actor.role_label}`)
+      );
+    return {
+      title: `${country.name_zh} → ${row.state_parties
+        .map((party) => party.name_zh)
+        .join("／")}`,
+      body: `在${unit.short_label}正式文本网络中可核对；议程层读数为“${row.orientation_label}”。`,
+      items: [
+        ...roles,
+        `项目：${unit.label}`,
+        `证据：${row.evidence_status}`,
+        `边界：${row.orientation_note}`
+      ]
     };
   }
 
@@ -822,6 +853,126 @@ function renderCoactionMatrix() {
   $("#coaction-matrix").innerHTML = head + body;
 }
 
+function agendaNetworkMetrics(row) {
+  const packageItems = data.amendment_packages.filter(
+    (item) => item.unit === row.unit
+  );
+  const actorIds = new Set(
+    packageItems.flatMap((item) =>
+      item.actors
+        .filter((actor) => proposalRoles.has(actor.role))
+        .map((actor) => actor.country)
+    )
+  );
+  const actors = data.countries
+    .filter((country) => actorIds.has(country.id))
+    .sort((a, b) => collator.compare(a.code, b.code));
+  const regions = new Set(actors.map((country) => country.region));
+  return {
+    packageItems,
+    actors,
+    actorCount: actors.length,
+    regionCount: regions.size
+  };
+}
+
+function renderAgendaPartyNetwork() {
+  const network = data.agenda_party_network;
+  const highlightHTML = network.highlights
+    .map((highlight) => {
+      const row = network.rows.find((item) => item.unit === highlight.unit);
+      const unit = unitById(highlight.unit);
+      const metrics = agendaNetworkMetrics(row);
+      return `<article>
+        <span>${escapeHTML(highlight.label)}</span>
+        <strong>${metrics.actorCount}<small>委员国</small> · ${metrics.regionCount}<small>区域组</small></strong>
+        <h3>${escapeHTML(unit.matrix_label || unit.label)}</h3>
+        <p>${escapeHTML(highlight.note)}</p>
+      </article>`;
+    })
+    .join("");
+  $("#agenda-network-highlights").innerHTML = highlightHTML;
+
+  const head = `<thead><tr>
+    <th scope="col">议程项目／相关缔约国</th>
+    <th scope="col">正式文本网络</th>
+    <th scope="col">网络宽度</th>
+    <th scope="col">作用方向</th>
+    <th scope="col">证据边界</th>
+  </tr></thead>`;
+  const body = `<tbody>${network.rows
+    .map((row) => {
+      const unit = unitById(row.unit);
+      const metrics = agendaNetworkMetrics(row);
+      const parties = row.state_parties
+        .map((party) => party.name_zh)
+        .join("／");
+      const actorButtons = metrics.actors
+        .map(
+          (country) =>
+            `<button type="button" class="agenda-member-chip ${
+              !isMatch(country) ? "is-muted" : ""
+            }" data-detail-kind="agenda-link" data-country="${
+              country.id
+            }" data-unit="${row.unit}" aria-label="${escapeHTML(
+              country.name_zh
+            )}进入${escapeHTML(unit.label)}正式文本网络"><b>${
+              country.code
+            }</b><span>${escapeHTML(country.name_zh)}</span></button>`
+        )
+        .join("");
+      return `<tr>
+        <th scope="row" class="agenda-party-cell">
+          <strong>${escapeHTML(unit.matrix_label || unit.label)}</strong>
+          <span>${escapeHTML(unit.short_label)} · ${escapeHTML(parties)}</span>
+        </th>
+        <td><div class="agenda-member-list">${actorButtons}</div></td>
+        <td class="agenda-network-count"><strong>${metrics.actorCount}</strong><span>委员国</span><strong>${metrics.regionCount}</strong><span>区域组</span><small>${metrics.packageItems.length}份文本</small></td>
+        <td><span class="relation-tag relation-${escapeHTML(
+          row.orientation
+        )}">${escapeHTML(row.orientation_label)}</span></td>
+        <td class="agenda-evidence"><strong>${escapeHTML(
+          row.evidence_status
+        )}</strong><span>${escapeHTML(row.orientation_note)}</span></td>
+      </tr>`;
+    })
+    .join("")}</tbody>`;
+  $("#agenda-party-table").innerHTML = head + body;
+
+  const caseStudy = network.case_study;
+  const caseGroups = caseStudy.groups
+    .map((group) => {
+      const actors = group.actors
+        .map((id) => countryById(id))
+        .filter(Boolean);
+      return `<article class="interaction-card interaction-${escapeHTML(
+        group.type
+      )}">
+        <span>${escapeHTML(group.label)}</span>
+        <div class="interaction-actors">${actors
+          .map(
+            (country) =>
+              `<b class="${!isMatch(country) ? "is-muted" : ""}">${
+                country.code
+              }</b>`
+          )
+          .join("")}</div>
+        <p>${escapeHTML(group.body)}</p>
+      </article>`;
+    })
+    .join("");
+  $("#interaction-case-title").textContent = caseStudy.title;
+  $("#interaction-case-subtitle").textContent = caseStudy.subtitle;
+  $("#interaction-case-grid").innerHTML = caseGroups;
+  $("#state-party-response").innerHTML = `<span>缔约国答辩</span><p>${escapeHTML(
+    caseStudy.state_party_response
+  )}</p>`;
+  $("#interaction-outcome").innerHTML = `<span>处理结果</span><p>${escapeHTML(
+    caseStudy.outcome
+  )}</p>`;
+  $("#opposition-rule").textContent = caseStudy.opposition_rule;
+}
+
 function renderVote() {
   const vote = data.votes[0];
   const order = ["yes", "no", "abstain", "absent"];
@@ -895,6 +1046,7 @@ function renderAll() {
   renderUnitMatrix();
   renderTopicMatrix();
   renderCoactionMatrix();
+  renderAgendaPartyNetwork();
   renderVote();
   updateFilterSummary();
   bindDetailTargets();
