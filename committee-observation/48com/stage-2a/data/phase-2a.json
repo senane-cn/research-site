@@ -4,17 +4,17 @@
     "stage": "stage-2a",
     "stage_label": "保护状况（议程7）",
     "scope": "议程7A、7B的保护状况审议；统计窗口为2026年7月22日至27日",
-    "version": "1.1.0",
-    "status": "阶段核定",
-    "updated_at": "2026-07-27T18:30:00+09:00",
+    "version": "1.5.0",
+    "status": "阶段核定／完整性审计原型",
+    "updated_at": "2026-07-28T17:20:00+09:00",
     "committee_members": 21,
     "state_of_conservation_reports": 147,
     "coded_units": 18,
     "effective_units": 16,
-    "country_unit_actions": 138,
-    "verified_discussion_turns": 193,
-    "member_response_turns": 12,
-    "verified_floor_turns": 205,
+    "country_unit_actions": 136,
+    "verified_discussion_turns": 210,
+    "member_response_turns": 14,
+    "verified_floor_turns": 224,
     "official_amendment_packages": 10,
     "recorded_floor_amendment_packages": 0,
     "decisions_amended_or_reframed": 8,
@@ -26,7 +26,7 @@
       "表决立场单列，不把一次投票自动换算为一次发言。",
       "共同文本关系只使用正式登记的主提、共同提出或现场确认的联合提交；一般支持和相似立场不进入关系矩阵。",
       "委员国—议程缔约国专题只记录可核对议程行动，不生成友好度或国家关系评分。正式共同文本先作为中性连接记录，只有在文本方向、缔约国现场回应和处理结果能够相互印证时，才标记局部同向。",
-      "7B.93于7月27日完成现场审议；赞比亚以遗产所在缔约国身份作1次连续答辩，不进入21个委员国发言总量。7A.27、7B.70与7B.93的个别最终措辞仍待UNESCO清洁版决定发布后复核。"
+      "7A.27按7月27日最终实质审议重新核对可明确识别的发言席；无法确认代表团身份的简短支持不计。瑞士与格林纳达的决定后抽离声明列为通过后回应。7B.93中赞比亚以非委员国缔约国身份所作答辩不进入21个委员国发言总量。"
     ]
   },
   "regions": [
@@ -42,7 +42,7 @@
     { "id": "bangladesh", "code": "BGD", "name_zh": "孟加拉国", "name_en": "Bangladesh", "region": "asia_pacific", "profile": "程序坚持与伦敦文本主提", "summary": "在Vienna程序争论中要求严格执行议事规则；主提Westminster修正并多次协调任务、HIA和报告期限；Sundarbans发言按缔约国角色另列。" },
     { "id": "czechia", "code": "CZE", "name_zh": "捷克", "name_en": "Czechia", "region": "europe_north_america", "profile": "证据、程序与文本校准者", "summary": "从报告可比性、遥感证据到伦敦规划工具和复审周期持续介入；在Victoria Falls讨论中请IUCN澄清生态连通性与突出普遍价值陈述的依据。" },
     { "id": "grenada", "code": "GRD", "name_zh": "格林纳达", "name_en": "Grenada", "region": "latin_caribbean", "profile": "时限折衷与现场共同支持", "summary": "在Westminster形成两阶段报告折衷，并在Hampi、Chiloé、Ohrid及Pinacate中支持更可实施的文本与任务安排。" },
-    { "id": "jamaica", "code": "JAM", "name_zh": "牙买加", "name_en": "Jamaica", "region": "latin_caribbean", "profile": "高频文本协调与加勒比保护视角", "summary": "主提Tower修正、参与Westminster和Chiloé协商，并在Paramaribo列危后补充加勒比支持，是本阶段提出端与讨论端同时活跃的成员。" },
+    { "id": "jamaica", "code": "JAM", "name_zh": "牙买加", "name_en": "Jamaica", "region": "latin_caribbean", "profile": "高频文本协调与加勒比保护视角", "summary": "主提Tower修正、参与Westminster和Chiloé协商，并在Paramaribo列危后补充加勒比支持，是本阶段提出议题与介入讨论同时活跃的成员。" },
     { "id": "kazakhstan", "code": "KAZ", "name_zh": "哈萨克斯坦", "name_en": "Kazakhstan", "region": "asia_pacific", "profile": "任务优先与延期程序推动", "summary": "以Baikal延期动议形成最清晰程序结果；在Hampi与Ohrid强调先取得任务或实施证据，再作更强保护决定。" },
     { "id": "kenya", "code": "KEN", "name_zh": "肯尼亚", "name_en": "Kenya", "region": "africa", "profile": "共同文本主导与列入标准边界", "summary": "联合提交Sundarbans与Victoria Falls文本，并在Victoria Falls以4次发言推动按列入标准限定管理要求，最终保留地貌属性、删除生态连通性措辞。" },
     { "id": "kuwait", "code": "KWT", "name_zh": "科威特", "name_en": "Kuwait", "region": "arab", "profile": "低频但具正式共同文本", "summary": "口头发言集中在Vienna程序、Hampi与Tyre；通过Hampi正式共同提出形成清晰文本参与，Baikal表决选择弃权。" },
@@ -115,22 +115,27 @@
       "matrix_label": "Vienna",
       "date": "2026-07-22—27",
       "category": "程序与文本",
-      "outcome": "先延至7月27日；清洁版决定待发布复核",
+      "outcome": "经大幅修正后移出濒危名录；瑞士与格林纳达声明不参与该决定，逐词文本待清洁版复核",
       "topics": ["procedure_voting", "reporting_timing", "evidence_credibility", "development_planning"],
       "members": {
-        "ukraine": { "discussion": 3 },
-        "tanzania": { "discussion": 1 },
+        "ukraine": { "discussion": 6 },
+        "tanzania": { "discussion": 2 },
         "peru": { "discussion": 1 },
-        "bangladesh": { "discussion": 2 },
+        "bangladesh": { "discussion": 5 },
         "czechia": { "discussion": 2 },
         "viet_nam": { "discussion": 1 },
         "kuwait": { "discussion": 1 },
-        "kenya": { "discussion": 1 },
-        "poland": { "discussion": 1 },
-        "switzerland": { "discussion": 1 },
-        "armenia": { "discussion": 1 },
+        "kenya": { "discussion": 2 },
+        "poland": { "discussion": 2 },
+        "switzerland": { "discussion": 2, "response": 1 },
+        "armenia": { "discussion": 3 },
         "azerbaijan": { "discussion": 1 },
-        "togo": { "discussion": 1 }
+        "togo": { "discussion": 1 },
+        "jamaica": { "discussion": 1 },
+        "lebanon": { "discussion": 2 },
+        "turkiye": { "discussion": 1 },
+        "senegal": { "discussion": 1 },
+        "grenada": { "response": 1 }
       }
     },
     {
@@ -426,7 +431,7 @@
       "unit": "7A27",
       "label": "Vienna修正案",
       "source_type": "official_registry",
-      "outcome": "已提交；最终清洁版决定待复核",
+      "outcome": "修正文本整体获通过并移出濒危名录；逐词文本待清洁版复核",
       "actors": [
         { "country": "ukraine", "role": "lead", "role_label": "主提" }
       ]
@@ -690,6 +695,917 @@
       "opposition_rule": "只有代表团明确表示反对某一提案或决定方向，且排除纯技术、保护性或程序性理由后，才使用“明确反对”；本案例没有把任何委员国编码为反对赞比亚或津巴布韦。"
     }
   },
+  "integrity_audit": {
+    "method_note": "不计算综合得分。每个判断分别标注直接事实、有依据的分析或尚不能证明，并保留保护强化的反例。",
+    "vienna": {
+      "title": "Historic Centre of Vienna",
+      "unit": "7A27",
+      "status": "现场结果已确认；清洁版决定待逐词复核",
+      "thesis": "官方工作文件明确写明期望的保护状况尚未实现，七类退出条件仍未全部完成；委员会随后通过大幅修正文本并将遗产移出濒危名录。",
+      "decision_chain": [
+        {
+          "stage": "01",
+          "label": "专业基线",
+          "title": "DSOCR尚未实现",
+          "body": "世界遗产中心与咨询机构确认已有进展，但七类退出条件仍存在缺口，原拟决定继续保留濒危名录。",
+          "tone": "baseline",
+          "evidence": "direct",
+          "evidence_label": "直接事实",
+          "source_note": "WHC/26/48.COM/7A.Add.3.Rev及其决定草案"
+        },
+        {
+          "stage": "02",
+          "label": "文本替代",
+          "title": "以进展与承诺替代完成验证",
+          "body": "乌克兰修正覆盖决定草案20段中的18段，将判断重点转向进展、国家承诺和新的实施安排。",
+          "tone": "operation",
+          "evidence": "direct",
+          "evidence_label": "直接事实",
+          "source_note": "48COM修正案登记与现场审议"
+        },
+        {
+          "stage": "03",
+          "label": "门槛变化",
+          "title": "“完成并验证”变为“足以认可进展”",
+          "body": "这不是对事实是否存在的简单分歧，而是决定所使用的退出判定门槛发生了替换。",
+          "tone": "analysis",
+          "evidence": "inference",
+          "evidence_label": "有依据的分析",
+          "source_note": "对工作文件、修正文本方向和现场理由的对照"
+        },
+        {
+          "stage": "04",
+          "label": "保护结果",
+          "title": "移出濒危名录",
+          "body": "委员会按整份修正文本形成决定；瑞士和格林纳达声明不参与该决定。",
+          "tone": "outcome",
+          "evidence": "direct",
+          "evidence_label": "直接事实",
+          "source_note": "7月27日官方直播现场结果；清洁版待复核"
+        }
+      ],
+      "exit_conditions": [
+        {
+          "id": "ouv",
+          "condition": "更清楚地界定并制图突出普遍价值属性",
+          "observed": "属性识别与制图工作仍需继续完善。",
+          "status": "incomplete",
+          "status_label": "未完成",
+          "source_note": "官方工作文件对DSOCR执行状态的评估"
+        },
+        {
+          "id": "monitoring",
+          "condition": "建立监测与评估方案，并按五年周期报告",
+          "observed": "完整监测、评价与周期报告机制尚未落实。",
+          "status": "incomplete",
+          "status_label": "未完成",
+          "source_note": "官方工作文件对监测框架的评估"
+        },
+        {
+          "id": "height",
+          "condition": "以规划政策阻止影响视觉完整性的高层建筑",
+          "observed": "STEP 2035／高层建筑概念的正式采纳仍未确认，现有规划规则也未覆盖所有相关区域。",
+          "status": "incomplete",
+          "status_label": "未完成",
+          "source_note": "官方工作文件关于规划工具和适用范围的说明"
+        },
+        {
+          "id": "gardens",
+          "condition": "为私人花园与绿色空间建立法定保护",
+          "observed": "所需法定保护尚未完整建立。",
+          "status": "incomplete",
+          "status_label": "未完成",
+          "source_note": "官方工作文件所列未完成措施"
+        },
+        {
+          "id": "belvedere",
+          "condition": "避免破坏Belvedere／Schwarzenberg的巴洛克格局与视觉完整性",
+          "observed": "相关开发风险仍未通过已验证方案消除。",
+          "status": "incomplete",
+          "status_label": "未完成",
+          "source_note": "官方工作文件对视觉完整性风险的评估"
+        },
+        {
+          "id": "roof",
+          "condition": "完成历史屋顶档案",
+          "observed": "完整屋顶档案尚未完成。",
+          "status": "incomplete",
+          "status_label": "未完成",
+          "source_note": "官方工作文件所列未完成措施"
+        },
+        {
+          "id": "heumarkt",
+          "condition": "以影响评估证明Heumarkt方案与突出普遍价值相容",
+          "observed": "2023年HIA仍识别中度至重大、重大负面视觉影响；相容性未被证明。",
+          "status": "incomplete",
+          "status_label": "未完成",
+          "source_note": "官方工作文件引用的Heumarkt HIA结论"
+        }
+      ],
+      "boundary": {
+        "direct": "可以确认：专业机构没有认定DSOCR已实现；原决定草案主张保留列危；委员会最终选择移出。",
+        "inference": "有依据地判断：本案通过改变判定门槛与程序处理方式，结构性绕开了专业建议，而非用同等强度的新证据反驳它。",
+        "not_established": "现有公开证据不能证明：具体委员国或主席存在交换条件、受指示投票或其他幕后政治交易。"
+      },
+      "timeline": [
+        {
+          "order": 1,
+          "lane": "evidence",
+          "lane_label": "专业证据",
+          "time": "会前文件",
+          "title": "七类退出条件仍有缺口",
+          "body": "中心与咨询机构建议继续保留在濒危名录，并继续实施纠正措施。",
+          "evidence": "direct"
+        },
+        {
+          "order": 2,
+          "lane": "members",
+          "lane_label": "委员国行动",
+          "time": "修正登记",
+          "title": "修正覆盖18／20段",
+          "body": "新文本不只调整个别措辞，而是重写事实评价、要求与退出结论。",
+          "evidence": "direct"
+        },
+        {
+          "order": 3,
+          "lane": "evidence",
+          "lane_label": "专业证据",
+          "time": "现场说明",
+          "title": "新增材料无法及时核验",
+          "body": "世界遗产中心主任说明，新增文件提交较晚，未能完成专业评估。",
+          "evidence": "direct"
+        },
+        {
+          "order": 4,
+          "lane": "members",
+          "lane_label": "委员国行动",
+          "time": "现场讨论",
+          "title": "严重问题被承认，仍支持退出",
+          "body": "部分发言同时列出规划、HIA和执行缺口，却以已取得进展或应予认可为由支持移出。",
+          "evidence": "direct"
+        },
+        {
+          "order": 5,
+          "lane": "chair",
+          "lane_label": "主席裁量",
+          "time": "程序推进",
+          "title": "时间压力进入处理理由",
+          "body": "主席多次提及时间与当日议程压力，并倾向把修正文本作为整体处理。",
+          "evidence": "direct"
+        },
+        {
+          "order": 6,
+          "lane": "chair",
+          "lane_label": "主席裁量",
+          "time": "共识判断",
+          "title": "以“无强烈反对”形成收束",
+          "body": "主席寻求更多支持发言后，以没有强烈反对为依据推进整份文本通过。",
+          "evidence": "direct"
+        },
+        {
+          "order": 7,
+          "lane": "members",
+          "lane_label": "委员国行动",
+          "time": "结果",
+          "title": "整份修正案获通过",
+          "body": "未进行逐段核验式审议或记名表决；瑞士与格林纳达声明不参与决定。",
+          "evidence": "direct"
+        },
+        {
+          "order": 8,
+          "lane": "evidence",
+          "lane_label": "专业证据",
+          "time": "通过后",
+          "title": "秘书处记录制度性异议",
+          "body": "世界遗产中心主任指出，这是首次在秘书处和咨询机构反对下移出濒危名录，并称决定非常困难、近乎无法执行。",
+          "evidence": "direct"
+        }
+      ],
+      "role_mechanism": [
+        {
+          "value": "1",
+          "label": "文本架构者",
+          "note": "乌克兰主提覆盖18／20段的新文本，并持续要求整案通过。",
+          "tone": "architect"
+        },
+        {
+          "value": "≥8",
+          "label": "明确推动移出",
+          "note": "至少8国在发言中明确支持修正文本或移出濒危名录；它们使用的理由并不完全相同。",
+          "tone": "support"
+        },
+        {
+          "value": "≥7",
+          "label": "点名支持整案通过",
+          "note": "至少7国被现场明确点名支持整份修正文本一次通过，形成程序收束所需的可见多数。",
+          "tone": "procedure"
+        },
+        {
+          "value": "2",
+          "label": "决定后正式抽离",
+          "note": "瑞士与格林纳达在决定形成后声明不参与该决定，留下明确少数记录。",
+          "tone": "dissociate"
+        }
+      ],
+      "role_divides": {
+        "brief_title": "有实质分歧，为何仍能整案通过？",
+        "brief_takeaway": "支持退出的一侧同时占据文本设定、委员会裁量和整案处理；反对与保留意见留下记录，但没有形成足以阻断决定的程序行动。",
+        "insight": "实质分歧存在，但没有形成足以阻断整案通过的程序力量",
+        "note": "下图连接的是同一判断问题上的相反意见，不表示委员国之间存在长期对立或国家关系冲突。",
+        "axes": [
+          {
+            "id": "threshold",
+            "number": "01",
+            "question": "退出判断应以什么为核心？",
+            "brief_relation": "条件完成与核验  ↔  进展足以认可",
+            "left": {
+              "label": "强调条件缺口与标准连续性",
+              "claim": "DSOCR、规划工具、影响评估与现场核验仍未完成。",
+              "actors": ["switzerland", "czechia", "lebanon"]
+            },
+            "relation": "未完成仍应约束退出  ↔  已有进展足以获得认可",
+            "right": {
+              "label": "以进展、改革与承诺支持退出",
+              "claim": "现有改革、项目缩减和合作投入足以改变列危结论。",
+              "actors": ["ukraine", "tanzania", "jamaica", "armenia", "azerbaijan", "poland"]
+            }
+          },
+          {
+            "id": "verification",
+            "number": "02",
+            "question": "未完成核验应具有多大阻断力？",
+            "brief_relation": "先完成核验  ↔  委员会直接判断",
+            "left": {
+              "label": "保留核验与既有决定的约束",
+              "claim": "新增材料来不及验证，既有任务与专业判断不能被直接跳过。",
+              "actors": ["switzerland", "czechia", "lebanon", "senegal", "turkiye"]
+            },
+            "relation": "先完成核验  ↔  委员会可用现有信息直接判断",
+            "right": {
+              "label": "强调委员会裁量与现有信息",
+              "claim": "反应性监测任务并非法定前提，委员会有权决定证据是否足够。",
+              "actors": ["kenya", "bangladesh"]
+            }
+          },
+          {
+            "id": "procedure",
+            "number": "03",
+            "question": "18／20段重写应怎样处理？",
+            "brief_relation": "逐段核对  ↔  整案通过",
+            "left": {
+              "label": "偏好逐段核对或保留异议",
+              "claim": "证据矛盾仍未回答；整案通过不应被解释为对每段实质同意。",
+              "actors": ["czechia", "switzerland"]
+            },
+            "relation": "逐段核对  ↔  整份修正文本一次通过",
+            "right": {
+              "label": "明确支持整案收束",
+              "claim": "以时间、效率或主席裁量为由，支持不再逐段处理。",
+              "actors": ["ukraine", "bangladesh", "poland", "tanzania", "kenya", "armenia", "peru"]
+            }
+          }
+        ],
+        "crossovers": [
+          {
+            "country": "poland",
+            "label": "最清晰的交叉角色",
+            "from": "明确列出多项严重保护缺口",
+            "to": "仍支持退出，并以时间压力推动整案通过"
+          },
+          {
+            "country": "czechia",
+            "label": "质询未转化为阻断",
+            "from": "揭示证据矛盾并偏好逐段审议",
+            "to": "在多数倾向整案通过时明确不反对"
+          }
+        ],
+        "decision_flow": [
+          {
+            "value": "≥8",
+            "label": "明确支持退出或修正方向",
+            "tone": "support"
+          },
+          {
+            "value": "≥7",
+            "label": "点名支持整案通过",
+            "tone": "procedure"
+          },
+          {
+            "value": "主席",
+            "label": "以“无强烈反对”确认共识",
+            "tone": "chair"
+          },
+          {
+            "value": "结果",
+            "label": "维也纳移出濒危名录",
+            "tone": "result"
+          }
+        ],
+        "after_decision": {
+          "label": "决定形成后的少数记录",
+          "actors": ["switzerland", "grenada"],
+          "note": "两国正式声明不参与该决定；该动作留下异议记录，但发生在决定形成之后。"
+        }
+      },
+      "member_roles": [
+        {
+          "country": "ukraine",
+          "role_title": "文本架构者＋程序推动者",
+          "tags": ["18／20段重写", "进展足以退出", "整案通过"],
+          "substantive": "主提修正文本，断言奥地利的法律、规划和项目调整已经达到甚至超过退出条件，并把项目公共利益纳入退出理由。",
+          "procedure": "多次要求奥地利回应；在决定阶段要求将整份修正文本一次通过，并以节省时间支持主席收束。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "同时控制了“讨论什么文本”和“如何处理文本”两端，是门槛替换能够进入最终决定的首要议程设置者。",
+          "effect_evidence": "inference",
+          "tension": "其核心断言与秘书处、ICOMOS关于DSOCR和核验未完成的判断直接冲突。",
+          "timecodes": ["06:45", "08:00", "08:15"]
+        },
+        {
+          "country": "tanzania",
+          "role_title": "进展认可者＋整案支持者",
+          "tags": ["生活遗产", "私人产权复杂性", "整案通过"],
+          "substantive": "强调城市作为生活遗产的管理复杂性、奥地利投入以及建筑高度和规划控制的改进，明确支持乌克兰修正案。",
+          "procedure": "在主席征询时明确支持整份文本一次通过。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "把判断重心从退出条件完成度转向缔约国投入、治理难度和可见进展，并为整案收束提供点名支持。",
+          "effect_evidence": "inference",
+          "tension": "",
+          "timecodes": ["07:11", "08:17"]
+        },
+        {
+          "country": "kenya",
+          "role_title": "规范门槛重新解释者",
+          "tags": ["RMM非法律前提", "现有信息足够", "整案通过"],
+          "substantive": "指出《操作指南》没有把反应性监测任务写成退出濒危名录的法律前提，并认为现有技术信息足以作出决定。",
+          "procedure": "在主席征询时明确支持整份文本一次通过。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "把委员会此前两次要求的核验任务从“决定前应完成的验证步骤”重述为可由委员会放弃的工具，直接改变了未完成程序的权重。",
+          "effect_evidence": "inference",
+          "tension": "法律上不属于强制前提，不等于此前委员会决定中的核验功能已经被替代。",
+          "timecodes": ["07:13", "08:18"]
+        },
+        {
+          "country": "poland",
+          "role_title": "承认缺口后仍支持退出",
+          "tags": ["严重关切", "进展认可", "节省时间"],
+          "substantive": "逐项列出公共空间策略、监测方案和多项纠正措施仍未落实，同时以已取得部分进展为由支持移出。",
+          "procedure": "以时间已晚、代表疲劳为由建议整份决定一次通过。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "形成最清楚的“问题承认—行动选择”张力：专业事实未被否认，但最终权重仍让位于进展认可，并进一步加速程序。",
+          "effect_evidence": "inference",
+          "tension": "对严重未决问题的陈述与支持退出的结论并置。",
+          "timecodes": ["07:20", "08:08"]
+        },
+        {
+          "country": "jamaica",
+          "role_title": "进展与项目相容性支持者",
+          "tags": ["法律与规划改革", "项目缩减", "支持修正"],
+          "substantive": "将法律、规划、管理改革与项目高度缩减视为持续保护承诺，并判断第三版Heumarkt方案与突出普遍价值相容。",
+          "procedure": "未观察到独立程序动议。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "为“项目已发生实质变化，因此可以退出”的论证增加跨区域支持。",
+          "effect_evidence": "inference",
+          "tension": "项目相容性判断与2023年HIA及咨询机构结论不同。",
+          "timecodes": ["07:22"]
+        },
+        {
+          "country": "armenia",
+          "role_title": "视觉影响再判断者＋整案支持者",
+          "tags": ["高度缩减", "视觉影响较小", "整案通过"],
+          "substantive": "接受奥地利关于高度缩减和无新增高层建筑的说明，认为当前视觉影响不足以阻止退出；随后追问STEP 2035状态。",
+          "procedure": "在主席征询时表示支持主席决定并支持整份文本通过。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "把尚需确认的规划工具与对效果的积极判断并置，但最终选择为整案程序提供支持。",
+          "effect_evidence": "inference",
+          "tension": "在STEP 2035仍需澄清时，已先行支持退出。",
+          "timecodes": ["07:23", "07:53", "08:18"]
+        },
+        {
+          "country": "azerbaijan",
+          "role_title": "“进展应获奖励”逻辑提出者",
+          "tags": ["列危是纠正工具", "善意改革", "延迟的代价"],
+          "substantive": "强调濒危名录应在缔约国善意改革、威胁得到处理后认可进展，并询问继续延迟退出可能造成的负面后果。",
+          "procedure": "未观察到独立程序动议。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "最清晰地表达了门槛替换背后的政策逻辑：决定不仅核验条件，也应奖励合作与改革。",
+          "effect_evidence": "inference",
+          "tension": "“充分进展”被用作认可依据，但并未回答全部退出条件是否完成。",
+          "timecodes": ["07:25"]
+        },
+        {
+          "country": "bangladesh",
+          "role_title": "风险分母转换者＋程序加速者",
+          "tags": ["2／800＝0.25%", "委员会主权", "规则25", "整案通过"],
+          "substantive": "把景观与视觉完整性问题换算为受影响单体占登记建筑的比例，并以0.25%说明严重度；同时强调委员会自主选择材料与判断的权力。",
+          "procedure": "引用规则25澄清修正案处理顺序，随后明确支持整份文本一次通过。",
+          "posture": "明确推动移出",
+          "posture_code": "support",
+          "effect": "提供了最有传播力的数量化弱化框架，并把委员会主权与整案处理连接起来；它改变的是风险的分母，而不是反驳景观属性证据。",
+          "effect_evidence": "inference",
+          "tension": "遗产城市景观的完整性不能等同于受影响单体占全部建筑的比例。",
+          "timecodes": ["07:04", "07:28", "07:55", "08:06", "08:17"]
+        },
+        {
+          "country": "czechia",
+          "role_title": "证据矛盾揭示者＋有限程序阻力",
+          "tags": ["STEP 2035矛盾", "任务替代", "法院裁决", "偏好逐段"],
+          "substantive": "表示原则上准备支持退出，但要求解释STEP 2035、现场核验替代方案和法院裁决与新文本之间的矛盾。",
+          "procedure": "因问题未获回答而偏好逐段审议，但在会议室倾向整案通过时明确表示不反对。",
+          "posture": "有条件支持／保留",
+          "posture_code": "qualified",
+          "effect": "把关键证据缺口写入公开记录，却没有把质询转化为分段动议或阻断性程序行动，因此未改变最终处理方式。",
+          "effect_evidence": "inference",
+          "tension": "问题的严重性与不维持程序异议之间存在张力。",
+          "timecodes": ["07:16", "08:02"]
+        },
+        {
+          "country": "lebanon",
+          "role_title": "标准连续性与城市景观反驳者",
+          "tags": ["DSOCR基准", "既有决定", "历史城市景观"],
+          "substantive": "回溯委员会自列入以来对高度、体量和反应性监测任务的连续要求，强调DSOCR是共同基准；随后反驳用建筑数量衡量城市景观价值。",
+          "procedure": "在一般辩论结束后补充专业说明，但未提出分段动议或明确最终立场。",
+          "posture": "技术保留，最终立场未明示",
+          "posture_code": "qualified",
+          "effect": "直接反驳了数量分母转换，并维持公约既有决定与历史城市景观方法的连续性，但没有形成可改变结果的程序动作。",
+          "effect_evidence": "inference",
+          "tension": "",
+          "timecodes": ["07:30", "08:00"]
+        },
+        {
+          "country": "turkiye",
+          "role_title": "进展认可与后续护栏的桥接者",
+          "tags": ["认可进展", "仍需RMM", "第172段"],
+          "substantive": "认可法律、规划和项目调整，同时要求在适当阶段落实反应性监测任务，并继续依第172段提交重大项目。",
+          "procedure": "未观察到独立程序动议或明确最终表态。",
+          "posture": "有条件／保留",
+          "posture_code": "qualified",
+          "effect": "将“认可进展”与“保留后续监督”并置，提供折衷性论述，但没有解决退出应在核验前还是核验后的时间顺序。",
+          "effect_evidence": "inference",
+          "tension": "",
+          "timecodes": ["07:32"]
+        },
+        {
+          "country": "senegal",
+          "role_title": "进展认可与任务缺失的调和者",
+          "tags": ["承认任务未做", "询问OUV", "不形成阻断"],
+          "substantive": "承认反应性监测任务本应依委员会决定进行，同时要求咨询机构说明在任务缺失但已有进展的情况下如何判断突出普遍价值。",
+          "procedure": "未提出阻断性动议；现场后续把其态度描述为具有高度灵活性。",
+          "posture": "有条件／保留",
+          "posture_code": "qualified",
+          "effect": "把任务缺失重新组织为仍可在进展框架下讨论的问题，弱化了它作为决定前核验步骤的阻断效果。",
+          "effect_evidence": "inference",
+          "tension": "",
+          "timecodes": ["07:35"]
+        },
+        {
+          "country": "switzerland",
+          "role_title": "明确反对者＋决定后抽离者",
+          "tags": ["退出为时过早", "HIA负面影响", "EIA待完成", "正式抽离"],
+          "substantive": "明确反对乌克兰修正和退出，主张采用原拟文本；理由包括项目负面影响、国内EIA未完成及反应性监测任务未进行。",
+          "procedure": "指出新信息来不及核验；虽未阻止整案处理，但声明整案通过不代表同意文本，并在决定后正式抽离。",
+          "posture": "反对移出并正式抽离",
+          "posture_code": "oppose",
+          "effect": "形成唯一清晰、完整的实质反对链，并在共识决定后留下正式少数记录；但未通过分段动议或表决要求阻止共识形成。",
+          "effect_evidence": "inference",
+          "tension": "",
+          "timecodes": ["07:18", "08:10", "08:21"]
+        },
+        {
+          "country": "peru",
+          "role_title": "整案程序支持者",
+          "tags": ["整案通过", "支持主席裁量"],
+          "substantive": "在可核对的最终审议记录中未观察到独立的维也纳保护门槛论证。",
+          "procedure": "明确支持整份修正文本一次通过，并支持主席对处理方式的裁量。",
+          "posture": "仅确认程序推动",
+          "posture_code": "procedural",
+          "effect": "增加了主席用于判断“整案处理已有多数支持”的可见程序基础，但不能据此推断其对每一段实质内容的独立判断。",
+          "effect_evidence": "direct",
+          "tension": "",
+          "timecodes": ["08:17"]
+        },
+        {
+          "country": "grenada",
+          "role_title": "决定后正式抽离者",
+          "tags": ["决定后声明", "跟随瑞士"],
+          "substantive": "在可核对的最终实质辩论中未观察到独立论证。",
+          "procedure": "决定形成后跟随瑞士，声明不参与该决定。",
+          "posture": "决定后退出共识",
+          "posture_code": "dissociate",
+          "effect": "扩大了正式少数记录，但发生在决定已经形成之后，因此不改变通过结果。",
+          "effect_evidence": "direct",
+          "tension": "",
+          "timecodes": ["08:22"]
+        }
+      ],
+      "chair_audit": {
+        "title": "主席作用：程序放大器，而非动机标签",
+        "finding": "可观察到的主席裁量压缩了逐段核对空间，并降低了形成明确异议或表决记录的机会；这会放大多数支持方文本的制度效果。",
+        "finding_evidence": "inference",
+        "actions": [
+          "多次以时间和议程压力推动收束",
+          "倾向整份修正文本一次处理",
+          "邀请更多支持方表达立场",
+          "以“无强烈反对”判断共识",
+          "未形成逐段审议或记名表决记录"
+        ],
+        "caution": "程序规则允许主席判断共识；现场也没有持续提出并维持的正式分段表决动议。因此这里编码为“程序压缩”，不是直接认定违反议事规则。"
+      }
+    },
+    "decision_change_audit": {
+      "title": "实质修订发生在哪一环",
+      "takeaway": "议程7的实质改变分别落在事实认定、技术标准、纠正任务与审议程序；同一案件可以跨越多个环节，不能压成单一“支持／反对”或综合分数。",
+      "scope_note": "矩阵纳入9个正式修正文本所涉项目，并另列2个使实质审议后移的程序处置。分类按主要制度落点计数；格内颜色表示变化方向。",
+      "stance_method": "角色只使用正式主提／共同提出、现场明确支持、得到采纳的校准行动、明确反对／保留／弃权或决定后抽离。未发言、未点名或只存在一般性共识时不补推立场。",
+      "role_categories": [
+        { "id": "lead", "label": "主导／提出", "short_label": "主" },
+        { "id": "support", "label": "支持修订", "short_label": "支" },
+        { "id": "calibrate", "label": "技术／保护校准", "short_label": "校" },
+        { "id": "counter", "label": "反对／保留", "short_label": "反／保" }
+      ],
+      "mechanisms": [
+        {
+          "id": "facts",
+          "number": "01",
+          "label": "事实判断重构",
+          "short_label": "事实判断",
+          "question": "是否删除、替换或弱化对遗产属性、威胁程度及因果关系的判断？",
+          "consequence": "可能降低对事实问题的关切程度，并缩小后续行动的依据。",
+          "primary_count": 1
+        },
+        {
+          "id": "standard",
+          "number": "02",
+          "label": "技术标准突破",
+          "short_label": "技术标准",
+          "question": "既定条件尚未满足，却是否得出了原有规则通常不允许的结果？",
+          "consequence": "可能形成例外，削弱规则门槛的连续性与可预期性。",
+          "primary_count": 2
+        },
+        {
+          "id": "actions",
+          "number": "03",
+          "label": "纠正任务改变",
+          "short_label": "纠正任务",
+          "question": "任务、主体、期限、评估方法或核验要求是否被删除、模糊、延后或强化？",
+          "consequence": "决定问题能否转化为足够明确、可复核的改善措施。",
+          "primary_count": 6
+        },
+        {
+          "id": "procedure",
+          "number": "04",
+          "label": "程序性悬置",
+          "short_label": "审议程序",
+          "question": "是否通过延期、休止辩论或整体处理，减少了及时的实质判断？",
+          "consequence": "可能延误干预；但等待新证据也可能具有正当技术理由。",
+          "primary_count": 2
+        }
+      ],
+      "cases": [
+        {
+          "unit": "7A27",
+          "site": "维也纳历史中心",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "standard",
+          "stances": [
+            { "country": "ukraine", "role": "lead", "label": "主提并重写18／20段" },
+            { "country": "tanzania", "role": "support", "label": "明确支持退出及整案处理" },
+            { "country": "kenya", "role": "support", "label": "认为现有信息足以决定" },
+            { "country": "poland", "role": "support", "label": "认可进展并支持收束" },
+            { "country": "jamaica", "role": "support", "label": "支持修正文本" },
+            { "country": "armenia", "role": "support", "label": "支持整案通过" },
+            { "country": "azerbaijan", "role": "support", "label": "以改革进展支持退出" },
+            { "country": "bangladesh", "role": "support", "label": "以委员会裁量支持整案" },
+            { "country": "peru", "role": "support", "label": "程序上支持整案处理" },
+            { "country": "czechia", "role": "counter", "label": "保留；强调规划与任务缺口" },
+            { "country": "lebanon", "role": "counter", "label": "保留；强调DSOCR与既有决定" },
+            { "country": "turkiye", "role": "counter", "label": "有条件保留；仍要求监测任务" },
+            { "country": "senegal", "role": "counter", "label": "承认任务未完成但未形成阻断" },
+            { "country": "switzerland", "role": "counter", "label": "明确反对退出" },
+            { "country": "grenada", "role": "counter", "label": "决定后声明不参与该决定" }
+          ],
+          "effects": {
+            "standard": {
+              "label": "退出门槛突破",
+              "tone": "critical",
+              "summary": "七项DSOCR退出条件尚未完成，最终决定仍将遗产移出《濒危名录》。"
+            },
+            "actions": {
+              "label": "核验要求被替换",
+              "tone": "weakening",
+              "summary": "完成整改与专业核验的重要性被进展、改革和承诺的叙事部分替代。"
+            },
+            "procedure": {
+              "label": "整案共识收束",
+              "tone": "weakening",
+              "summary": "主席以整份文本和“无强烈反对”收束，逐段核对与形成明确异议记录的空间缩小。"
+            }
+          },
+          "baseline": "官方工作文件确认DSOCR尚未实现，原拟决定维持列危。",
+          "change": "乌克兰修正案重写18／20段；支持方以进展、改革与委员会裁量支持退出。",
+          "outcome": "移出《濒危名录》，成为本阶段最清晰的技术门槛突破案例。",
+          "actors": "乌克兰主提；瑞士、捷克、黎巴嫩强调条件缺口；至少8国明确推动退出；主席完成程序收束。",
+          "evidence": "直接事实＋有依据的制度分析",
+          "caveat": "清洁版决定发布前，现场结果与逐词文本仍分开标注。"
+        },
+        {
+          "unit": "7B62",
+          "site": "奥赫里德地区自然与文化遗产",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "standard",
+          "stances": [
+            { "country": "turkiye", "role": "lead", "label": "主提删除本届列危并延后复审" },
+            { "country": "switzerland", "role": "calibrate", "label": "提交第二文本恢复时限与持续审查护栏" }
+          ],
+          "effects": {
+            "standard": {
+              "label": "列危路径弱化",
+              "tone": "weakening",
+              "summary": "土耳其修正删除本届列危路径，以实施窗口替代立即升级保护响应。"
+            },
+            "actions": {
+              "label": "实施期＋持续审查",
+              "tone": "mixed",
+              "summary": "复审后移，同时加入后续任务；瑞士又补入时限、措辞与持续审查校准。"
+            }
+          },
+          "baseline": "原草案保留较近的列危与复审压力。",
+          "change": "土耳其主提删除本届列危并给予实施期；瑞士提交第二份文本恢复部分保护护栏。",
+          "outcome": "未在本届列危，审查继续，但保护响应的时间门槛被放松。",
+          "actors": "土耳其主提减压文本；瑞士主提保护性校准；多国围绕实施可行性和复审期限发言。",
+          "evidence": "直接事实",
+          "caveat": "本案同时存在弱化和护栏，不宜单向解释为完全取消监督。"
+        },
+        {
+          "unit": "7B93",
+          "site": "莫西奥图尼亚／维多利亚瀑布",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "facts",
+          "stances": [
+            { "country": "kenya", "role": "lead", "label": "联合提交并推动按列入标准限定术语" },
+            { "country": "senegal", "role": "lead", "label": "正式联合提交" },
+            { "country": "togo", "role": "lead", "label": "正式联合提交" },
+            { "country": "tanzania", "role": "lead", "label": "联合提交并支持删除生态连通性" },
+            { "country": "poland", "role": "counter", "label": "技术保留；主张保留生态连通性" },
+            { "country": "switzerland", "role": "counter", "label": "技术保留；强调鸟类与森林属性" },
+            { "country": "czechia", "role": "calibrate", "label": "请求IUCN澄清科学与列入依据" }
+          ],
+          "effects": {
+            "facts": {
+              "label": "生态关切收窄",
+              "tone": "weakening",
+              "summary": "最终第10(e)删除“生态连通性”，保留地貌属性与视觉完整性。"
+            },
+            "actions": {
+              "label": "管理范围随之收缩",
+              "tone": "mixed",
+              "summary": "事实表述改变可能缩小跨境生态管理要求，但也可解释为按列入标准校准术语边界。"
+            }
+          },
+          "baseline": "草案要求维护生态连通性、地貌属性和视觉完整性。",
+          "change": "围绕列入标准、鸟类与森林属性和科学依据逐段争论，最终删除一项生态表述。",
+          "outcome": "决定对生态事实的正式关切范围缩小，但并未删除全部相关属性。",
+          "actors": "肯尼亚、坦桑尼亚与赞比亚在删除术语上局部同向；波兰、瑞士提出技术保留；捷克请求IUCN澄清。",
+          "evidence": "直接事实",
+          "caveat": "技术边界校准与关切弱化两种解释并存，不据此推断国家关系或政治动机。"
+        },
+        {
+          "unit": "7B9",
+          "site": "亨比古迹群",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "actions",
+          "stances": [
+            { "country": "viet_nam", "role": "lead", "label": "正式主提" },
+            { "country": "armenia", "role": "support", "label": "正式共同提出" },
+            { "country": "jamaica", "role": "support", "label": "正式共同提出" },
+            { "country": "kazakhstan", "role": "support", "label": "正式共同提出" },
+            { "country": "kuwait", "role": "support", "label": "正式共同提出" },
+            { "country": "senegal", "role": "support", "label": "正式共同提出" },
+            { "country": "togo", "role": "support", "label": "正式共同提出" },
+            { "country": "tanzania", "role": "support", "label": "正式共同提出" },
+            { "country": "lebanon", "role": "calibrate", "label": "恢复事前HIA护栏" },
+            { "country": "switzerland", "role": "calibrate", "label": "形成两层报告折衷" }
+          ],
+          "effects": {
+            "actions": {
+              "label": "护栏混合重组",
+              "tone": "mixed",
+              "summary": "部分批评措辞和周期被调整，同时恢复事前HIA，并将任务结果与完整报告拆成两层。"
+            }
+          },
+          "baseline": "原草案要求事前HIA、任务跟进与后续监测报告。",
+          "change": "越南主提、七国共同提出；黎巴嫩恢复HIA要求，瑞士形成两层报告折衷。",
+          "outcome": "实施可行性提高，关键评估护栏保留，不能单向归为弱化。",
+          "actors": "越南主提；亚美尼亚、牙买加、哈萨克斯坦、科威特、塞内加尔、多哥、坦桑尼亚共同提出；黎巴嫩与瑞士现场校准。",
+          "evidence": "直接事实",
+          "caveat": "共同署名只证明进入同一文本包，不表示所有段落立场完全一致。"
+        },
+        {
+          "unit": "7B47",
+          "site": "威斯敏斯特宫",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "actions",
+          "stances": [
+            { "country": "bangladesh", "role": "lead", "label": "正式主提" },
+            { "country": "poland", "role": "calibrate", "label": "恢复替代设计与迭代式HIA" },
+            { "country": "lebanon", "role": "calibrate", "label": "共同恢复HIA要求" },
+            { "country": "grenada", "role": "calibrate", "label": "形成两阶段报告折衷" },
+            { "country": "switzerland", "role": "calibrate", "label": "校准国内程序条款" }
+          ],
+          "effects": {
+            "actions": {
+              "label": "纠正要求强化",
+              "tone": "protective",
+              "summary": "恢复替代设计与迭代式HIA，形成咨询任务和两阶段报告。"
+            }
+          },
+          "baseline": "重大开发规划需要替代方案、影响评估、任务监督与及时报告。",
+          "change": "孟加拉国主提后，经波兰、黎巴嫩、格林纳达和瑞士多轮现场编辑形成保护护栏。",
+          "outcome": "最终决定强化了可核验的规划与报告要求。",
+          "actors": "孟加拉国主提；波兰、黎巴嫩恢复HIA；格林纳达提出两阶段报告；瑞士校准程序文本。",
+          "evidence": "直接事实",
+          "caveat": "这是修正案强化专业要求的反例，说明“修正”本身不等于规则偏离。"
+        },
+        {
+          "unit": "7B49",
+          "site": "伦敦塔",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "actions",
+          "stances": [
+            { "country": "jamaica", "role": "lead", "label": "正式主提" },
+            { "country": "switzerland", "role": "calibrate", "label": "恢复既有项目与规划工具评估" },
+            { "country": "czechia", "role": "calibrate", "label": "扩大环境保护形式范围" }
+          ],
+          "effects": {
+            "actions": {
+              "label": "任务范围扩大",
+              "tone": "protective",
+              "summary": "恢复已实施项目评估，并将规划工具及其他环境保护形式纳入任务范围。"
+            }
+          },
+          "baseline": "规划工具以及既有、拟建项目均可能影响遗产环境，需要任务审查。",
+          "change": "牙买加主提；瑞士恢复既有项目和规划工具评估，捷克扩大环境保护范围。",
+          "outcome": "反应性监测任务与规划护栏得到保留并扩展。",
+          "actors": "牙买加主提；瑞士和捷克完成保护性现场校准。",
+          "evidence": "直接事实",
+          "caveat": "本案改变的是纠正任务覆盖面，不是对英国整体履约表现作价值判断。"
+        },
+        {
+          "unit": "7B51",
+          "site": "奇洛埃教堂群",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "actions",
+          "stances": [
+            { "country": "peru", "role": "lead", "label": "正式主提" },
+            { "country": "poland", "role": "support", "label": "正式共同提出" },
+            { "country": "tanzania", "role": "support", "label": "正式共同提出" }
+          ],
+          "effects": {
+            "actions": {
+              "label": "评估范围校准",
+              "tone": "technical",
+              "summary": "围绕影响评估、保护范围与社区实施条件调整可执行表述。"
+            }
+          },
+          "baseline": "草案要求通过影响评估和保护安排回应开发与社区问题。",
+          "change": "秘鲁主提，波兰与坦桑尼亚共同提出，对评估范围和保护边界作文本调整。",
+          "outcome": "修正文本获采纳，现有证据不足以判定为单向弱化或强化。",
+          "actors": "秘鲁主提；波兰、坦桑尼亚共同提出。",
+          "evidence": "正式文本登记＋现场结果",
+          "caveat": "仍需在清洁版决定中逐段核对任务强度，当前编码为技术校准。"
+        },
+        {
+          "unit": "7B70",
+          "site": "The Sundarbans（孙德尔本斯）",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "actions",
+          "stances": [
+            { "country": "azerbaijan", "role": "lead", "label": "正式联合提交" },
+            { "country": "kenya", "role": "lead", "label": "正式联合提交" },
+            { "country": "peru", "role": "lead", "label": "正式联合提交" },
+            { "country": "tanzania", "role": "lead", "label": "正式联合提交" }
+          ],
+          "effects": {
+            "actions": {
+              "label": "义务与期限重排",
+              "tone": "mixed",
+              "summary": "承认缔约国行动并调整报告路径，同时保留SEA、影响评估与信息提交要求。"
+            }
+          },
+          "baseline": "能源开发与累积影响需要SEA、持续评估和明确报告。",
+          "change": "四国联合提交文本，经逐词协调重新安排能源、评估和报告要求。",
+          "outcome": "协助性措辞与保护护栏并存；最终期限仍待清洁版复核。",
+          "actors": "阿塞拜疆、肯尼亚、秘鲁、坦桑尼亚联合提交；孟加拉国以缔约国身份答辩。",
+          "evidence": "正式文本＋现场处理",
+          "caveat": "文本方向不能仅依据共同提出国数量判断。"
+        },
+        {
+          "unit": "7B86",
+          "site": "El Pinacate and Gran Desierto de Altar",
+          "kind": "text",
+          "kind_label": "文本修订",
+          "primary": "actions",
+          "stances": [
+            { "country": "jamaica", "role": "lead", "label": "正式联合提交" },
+            { "country": "czechia", "role": "lead", "label": "正式联合提交" },
+            { "country": "grenada", "role": "support", "label": "现场加入文本" }
+          ],
+          "effects": {
+            "actions": {
+              "label": "跨境任务路径明确",
+              "tone": "technical",
+              "summary": "第12段调整跨境任务推进与边境墙生态连通性评估路径。"
+            }
+          },
+          "baseline": "跨境生态影响需要任务机制和可实施的进入、评估安排。",
+          "change": "牙买加与捷克联合提交，格林纳达现场加入，对跨境任务路径作技术调整。",
+          "outcome": "第12段经修正通过，任务路径更加明确。",
+          "actors": "牙买加、捷克联合提交；格林纳达现场加入。",
+          "evidence": "正式文本＋现场确认",
+          "caveat": "该案主要是技术与任务安排，不编码为对相关缔约国的支持或反对。"
+        },
+        {
+          "unit": "7B80",
+          "site": "贝加尔湖",
+          "kind": "procedure",
+          "kind_label": "程序处置",
+          "primary": "procedure",
+          "stances": [
+            { "country": "kazakhstan", "role": "lead", "label": "提出延期动议" },
+            { "country": "armenia", "role": "support", "label": "赞成延期" },
+            { "country": "bangladesh", "role": "support", "label": "赞成延期" },
+            { "country": "grenada", "role": "support", "label": "赞成延期" },
+            { "country": "jamaica", "role": "support", "label": "赞成延期" },
+            { "country": "kenya", "role": "support", "label": "赞成延期" },
+            { "country": "lebanon", "role": "support", "label": "赞成延期" },
+            { "country": "mongolia", "role": "support", "label": "赞成延期" },
+            { "country": "peru", "role": "support", "label": "赞成延期" },
+            { "country": "senegal", "role": "support", "label": "赞成延期" },
+            { "country": "togo", "role": "support", "label": "赞成延期" },
+            { "country": "turkiye", "role": "support", "label": "赞成延期" },
+            { "country": "tanzania", "role": "support", "label": "赞成延期" },
+            { "country": "viet_nam", "role": "support", "label": "赞成延期" },
+            { "country": "czechia", "role": "counter", "label": "反对延期" },
+            { "country": "poland", "role": "counter", "label": "反对延期" },
+            { "country": "republic_of_korea", "role": "counter", "label": "反对延期" },
+            { "country": "switzerland", "role": "counter", "label": "反对延期" },
+            { "country": "ukraine", "role": "counter", "label": "反对延期" },
+            { "country": "kuwait", "role": "counter", "label": "弃权" }
+          ],
+          "effects": {
+            "procedure": {
+              "label": "实质审议后移",
+              "tone": "critical",
+              "summary": "14—5—1通过延期动议，将风险与列危实质辩论延至第49届。"
+            }
+          },
+          "baseline": "本届原拟进入实质风险与列危讨论。",
+          "change": "哈萨克斯坦提出延期动议，委员会通过完整表决决定后移审议。",
+          "outcome": "本届不再形成实质保护判断，风险处置至少延后一届。",
+          "actors": "哈萨克斯坦提出动议；14国赞成、5国反对、1国弃权、1国缺席。",
+          "evidence": "直接事实",
+          "caveat": "延期票只能解释为对审议时点的选择，不能自动等同于反对列危。"
+        },
+        {
+          "unit": "7B85",
+          "site": "瓦尔德斯半岛",
+          "kind": "procedure",
+          "kind_label": "程序处置",
+          "primary": "procedure",
+          "stances": [
+            { "country": "peru", "role": "lead", "label": "提出休止辩论并等待新材料" }
+          ],
+          "effects": {
+            "procedure": {
+              "label": "待新材料再审",
+              "tone": "technical",
+              "summary": "休止辩论并延至第49届，等待新技术材料得到评估。"
+            }
+          },
+          "baseline": "项目已进入本届审议，但出现需要进一步评估的新材料。",
+          "change": "秘鲁提出休止辩论，委员会接受将项目后移。",
+          "outcome": "本届不形成最终实质判断，以等待证据为程序理由。",
+          "actors": "秘鲁提出休止辩论动议。",
+          "evidence": "直接事实",
+          "caveat": "与贝加尔湖不同，本案现有记录提供了明确的新材料理由，不宜直接编码为放任风险。"
+        }
+      ]
+    }
+  },
   "accepted_actions": [
     { "country": "azerbaijan", "unit": "7A29", "type": "procedural", "label": "提出延至下一届常会", "result": "延期动议获协商一致接受" },
     { "country": "ukraine", "unit": "7A27", "type": "procedural", "label": "提出延至7月27日", "result": "延期动议获接受" },
@@ -744,7 +1660,7 @@
       "body": "最密集讨论不是对保护问题是否存在的抽象争论，而是HIA何时完成、任务采用何种性质、报告交哪一届、是否先等待新材料。Westminster、Hampi和Ohrid形成三个最明显高密度单元。"
     },
     {
-      "title": "提出端与讨论端由不同成员占据",
+      "title": "提出议题与介入讨论由不同成员占据",
       "body": "孟加拉国、牙买加、土耳其、越南等通过正式修正设定议题；瑞士、捷克、黎巴嫩、波兰和格林纳达则更多通过段落编辑、程序护栏与折衷改变最终处理。两类影响不能合成一个排名。"
     },
     {
@@ -767,6 +1683,11 @@
   "sources": [
     { "label": "UNESCO第48届委员会会议页面", "type": "会议与委员国名单", "url": "https://whc.unesco.org/en/sessions/48COM/" },
     { "label": "UNESCO第48届会议文件与修正案登记", "type": "工作文件与正式共同文本", "url": "https://whc.unesco.org/en/sessions/48COM/documents/" },
+    { "label": "WHC/26/48.COM/7A.Add.3.Rev", "type": "维也纳保护状况、DSOCR与原拟决定", "url": "https://whc.unesco.org/document/226821" },
+    { "label": "7A.27乌克兰修正文本", "type": "维也纳修正案原始登记文本", "url": "https://whc.unesco.org/document/226811" },
+    { "label": "7A.27乌克兰修正文本REV", "type": "维也纳修正案更新稿", "url": "https://whc.unesco.org/document/226908" },
+    { "label": "《实施〈世界遗产公约〉操作指南》2025", "type": "濒危名录与退出机制规范基线", "url": "https://whc.unesco.org/document/222376" },
+    { "label": "世界遗产委员会议事规则", "type": "主席、动议、修正与表决程序基线", "url": "https://whc.unesco.org/document/137812" },
     { "label": "ConserVision议程7逐项中文纪要", "type": "发言时间线与逐段处理", "url": "../../../../" },
     { "label": "UNESCO官方会议视频", "type": "发言方与程序复核", "url": "https://www.youtube.com/@UNESCO" }
   ]

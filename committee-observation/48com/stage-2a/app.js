@@ -1,6 +1,6 @@
 import { whc48LogoBase64 } from "../stage-1/assets/whc48-logo.generated.js";
 
-const DATA_URL = "data/phase-2a.json?v=1.1.0";
+const DATA_URL = "data/phase-2a.json?v=1.5.0";
 const regionColors = {
   africa: "#b84854",
   arab: "#6652a4",
@@ -149,6 +149,506 @@ function topTopics(country, limit = 4) {
     .slice(0, limit);
 }
 
+function evidenceClass(level) {
+  if (level === "direct") return "evidence-direct";
+  if (level === "inference") return "evidence-inference";
+  return "evidence-boundary";
+}
+
+function amendmentAudit() {
+  return data.integrity_audit?.decision_change_audit;
+}
+
+function amendmentRoleStats() {
+  const audit = amendmentAudit();
+  const stats = new Map(
+    data.countries.map((country) => [
+      country.id,
+      {
+        country,
+        lead: 0,
+        support: 0,
+        calibrate: 0,
+        counter: 0,
+        cases: new Set()
+      }
+    ])
+  );
+
+  for (const item of audit?.cases ?? []) {
+    for (const stance of item.stances ?? []) {
+      const entry = stats.get(stance.country);
+      if (!entry || !(stance.role in entry)) continue;
+      entry[stance.role] += 1;
+      entry.cases.add(item.unit);
+    }
+  }
+
+  return [...stats.values()]
+    .map((entry) => ({
+      ...entry,
+      caseCount: entry.cases.size,
+      roleCount:
+        entry.lead + entry.support + entry.calibrate + entry.counter
+    }))
+    .filter((entry) => entry.roleCount > 0)
+    .sort(
+      (a, b) =>
+        b.caseCount - a.caseCount ||
+        b.lead - a.lead ||
+        b.calibrate - a.calibrate ||
+        collator.compare(a.country.name_zh, b.country.name_zh)
+    );
+}
+
+function caseRoleMarkup(item) {
+  const audit = amendmentAudit();
+  const groups = audit.role_categories
+    .map((category) => {
+      const stances = (item.stances ?? []).filter(
+        (stance) => stance.role === category.id
+      );
+      if (!stances.length) return "";
+      return `
+        <div class="case-role-group role-${escapeHTML(category.id)}">
+          <b>${escapeHTML(category.short_label)}</b>
+          <span>${stances
+            .map((stance) => {
+              const country = countryById(stance.country);
+              return `<button
+                type="button"
+                title="${escapeHTML(`${country.name_zh}：${stance.label}`)}"
+                data-detail-kind="case-stance"
+                data-country="${escapeHTML(country.id)}"
+                data-case="${escapeHTML(item.unit)}"
+                data-role="${escapeHTML(category.id)}"
+                aria-label="${escapeHTML(`${country.name_zh}，${stance.label}`)}"
+              >${escapeHTML(country.code)}</button>`;
+            })
+            .join("")}</span>
+        </div>`;
+    })
+    .join("");
+  return `<div class="case-role-strip">${groups}</div>`;
+}
+
+function renderIntegrityAudit() {
+  const audit = data.integrity_audit?.vienna;
+  if (!audit) return;
+
+  $("#integrity-thesis").innerHTML = `
+    <div>
+      <span class="case-status">${escapeHTML(audit.status)}</span>
+      <p>${escapeHTML(audit.thesis)}</p>
+    </div>
+    <a href="https://whc.unesco.org/document/226821" target="_blank" rel="noopener">
+      核对官方工作文件
+    </a>`;
+
+  $("#decision-chain").innerHTML = audit.decision_chain
+    .map(
+      (item) => `
+        <article class="decision-step decision-${escapeHTML(item.tone)}">
+          <div class="decision-step-meta">
+            <span>${escapeHTML(item.stage)} / ${escapeHTML(item.label)}</span>
+            <b class="${evidenceClass(item.evidence)}">${escapeHTML(item.evidence_label)}</b>
+          </div>
+          <h3>${escapeHTML(item.title)}</h3>
+          <p>${escapeHTML(item.body)}</p>
+          <small>${escapeHTML(item.source_note)}</small>
+        </article>`
+    )
+    .join("");
+
+  $("#exit-audit").innerHTML = audit.exit_conditions
+    .map(
+      (item, index) => `
+        <article class="exit-condition">
+          <span class="exit-index">${String(index + 1).padStart(2, "0")}</span>
+          <div>
+            <h4>${escapeHTML(item.condition)}</h4>
+            <p>${escapeHTML(item.observed)}</p>
+            <small>${escapeHTML(item.source_note)}</small>
+          </div>
+          <strong class="status-${escapeHTML(item.status)}">${escapeHTML(item.status_label)}</strong>
+        </article>`
+    )
+    .join("");
+
+  $("#evidence-boundary-card").innerHTML = `
+    <article>
+      <span class="evidence-direct">直接事实</span>
+      <p>${escapeHTML(audit.boundary.direct)}</p>
+    </article>
+    <article>
+      <span class="evidence-inference">有依据的分析</span>
+      <p>${escapeHTML(audit.boundary.inference)}</p>
+    </article>
+    <article>
+      <span class="evidence-boundary">尚不能证明</span>
+      <p>${escapeHTML(audit.boundary.not_established)}</p>
+    </article>`;
+}
+
+function renderProcessTrace() {
+  const audit = data.integrity_audit?.vienna;
+  if (!audit) return;
+  const lanes = [
+    { id: "evidence", label: "专业证据" },
+    { id: "members", label: "委员国行动" },
+    { id: "chair", label: "主席裁量" }
+  ];
+
+  $("#process-timeline").innerHTML = lanes
+    .map((lane) => {
+      const events = audit.timeline
+        .filter((item) => item.lane === lane.id)
+        .sort((a, b) => a.order - b.order);
+      return `<section class="timeline-lane lane-${lane.id}">
+        <h3>${escapeHTML(lane.label)}</h3>
+        <div>${events
+          .map(
+            (item) => `<article>
+              <span>${String(item.order).padStart(2, "0")} · ${escapeHTML(item.time)}</span>
+              <h4>${escapeHTML(item.title)}</h4>
+              <p>${escapeHTML(item.body)}</p>
+            </article>`
+          )
+          .join("")}</div>
+      </section>`;
+    })
+    .join("");
+
+  const chair = audit.chair_audit;
+  $("#chair-audit").innerHTML = `
+    <span>CHAIR DISCRETION AUDIT</span>
+    <h3>${escapeHTML(chair.title)}</h3>
+    <p class="chair-finding">${escapeHTML(chair.finding)}</p>
+    <b class="${evidenceClass(chair.finding_evidence)}">有依据的分析</b>
+    <ul>${chair.actions.map((item) => `<li>${escapeHTML(item)}</li>`).join("")}</ul>
+    <p class="chair-caution">${escapeHTML(chair.caution)}</p>`;
+}
+
+function renderViennaMemberRoles() {
+  const audit = data.integrity_audit?.vienna;
+  const roles = audit?.member_roles ?? [];
+  const mechanisms = audit?.role_mechanism ?? [];
+  const divides = audit?.role_divides;
+
+  const actorChips = (ids, side) =>
+    ids
+      .map((id) => {
+        const country = countryById(id);
+        return `<span class="divide-actor divide-actor-${escapeHTML(side)}">
+          <b>${escapeHTML(country.code)}</b>
+          <span>${escapeHTML(country.name_zh)}</span>
+        </span>`;
+      })
+      .join("");
+
+  $("#role-mechanism-summary").innerHTML = mechanisms
+    .map(
+      (item) => `
+        <article class="role-mechanism role-mechanism-${escapeHTML(item.tone)}">
+          <strong>${escapeHTML(item.value)}</strong>
+          <h4>${escapeHTML(item.label)}</h4>
+          <p>${escapeHTML(item.note)}</p>
+        </article>`
+    )
+    .join("");
+
+  $("#role-divide-map").innerHTML = divides
+    ? `
+      <header class="divide-map-insight">
+        <span>核心发现</span>
+        <h4>${escapeHTML(divides.insight)}</h4>
+        <p>${escapeHTML(divides.note)}</p>
+      </header>
+      <div class="divide-axis-list">
+        ${divides.axes
+          .map(
+            (axis) => `
+              <section class="divide-axis divide-axis-${escapeHTML(axis.id)}" aria-labelledby="divide-${escapeHTML(axis.id)}">
+                <header>
+                  <span>${escapeHTML(axis.number)}</span>
+                  <h4 id="divide-${escapeHTML(axis.id)}">${escapeHTML(axis.question)}</h4>
+                </header>
+                <article class="divide-pole divide-pole-constraint">
+                  <strong>${escapeHTML(axis.left.label)}</strong>
+                  <p>${escapeHTML(axis.left.claim)}</p>
+                  <div class="divide-actors">${actorChips(axis.left.actors, "constraint")}</div>
+                </article>
+                <div class="divide-relation" aria-label="${escapeHTML(axis.relation)}">
+                  <i></i>
+                  <span>${escapeHTML(axis.relation)}</span>
+                  <i></i>
+                </div>
+                <article class="divide-pole divide-pole-advance">
+                  <strong>${escapeHTML(axis.right.label)}</strong>
+                  <p>${escapeHTML(axis.right.claim)}</p>
+                  <div class="divide-actors">${actorChips(axis.right.actors, "advance")}</div>
+                </article>
+              </section>`
+          )
+          .join("")}
+      </div>
+      <section class="role-crossovers" aria-labelledby="role-crossovers-title">
+        <header>
+          <span>CROSSOVER</span>
+          <h4 id="role-crossovers-title">意见与程序选择并不总在同一侧</h4>
+        </header>
+        <div>
+          ${divides.crossovers
+            .map((item) => {
+              const country = countryById(item.country);
+              return `<article>
+                <div><b>${escapeHTML(country.code)}</b><span>${escapeHTML(country.name_zh)}</span></div>
+                <strong>${escapeHTML(item.label)}</strong>
+                <p><span>${escapeHTML(item.from)}</span><i>→</i><span>${escapeHTML(item.to)}</span></p>
+              </article>`;
+            })
+            .join("")}
+        </div>
+      </section>
+      <section class="role-decision-path" aria-labelledby="role-decision-path-title">
+        <header>
+          <span>DECISION PATH</span>
+          <h4 id="role-decision-path-title">为什么有实质分歧，决定仍能快速形成</h4>
+        </header>
+        <div class="role-decision-flow">
+          ${divides.decision_flow
+            .map(
+              (item) => `<article class="decision-node decision-node-${escapeHTML(item.tone)}">
+                <strong>${escapeHTML(item.value)}</strong>
+                <span>${escapeHTML(item.label)}</span>
+              </article>`
+            )
+            .join("")}
+        </div>
+        <aside class="after-decision-note">
+          <div>${actorChips(divides.after_decision.actors, "dissociate")}</div>
+          <p><strong>${escapeHTML(divides.after_decision.label)}</strong>${escapeHTML(divides.after_decision.note)}</p>
+        </aside>
+      </section>`
+    : "";
+
+  const roleRow = (item) => {
+    const country = countryById(item.country);
+    const tension = item.tension
+      ? `<p class="role-tension"><b>判断张力</b>${escapeHTML(item.tension)}</p>`
+      : "";
+    return `<tr class="role-row role-row-${escapeHTML(item.posture_code)}">
+      <th scope="row">
+        <strong>${escapeHTML(country.name_zh)}</strong>
+        <span>${escapeHTML(country.code)}</span>
+      </th>
+      <td>
+        <b class="role-title">${escapeHTML(item.role_title)}</b>
+        <small>${item.timecodes.map(escapeHTML).join(" · ")}</small>
+      </td>
+      <td>
+        <div class="role-tags">${item.tags
+          .map((tag) => `<span>${escapeHTML(tag)}</span>`)
+          .join("")}</div>
+        <p>${escapeHTML(item.substantive)}</p>
+        ${tension}
+      </td>
+      <td><p>${escapeHTML(item.procedure)}</p></td>
+      <td><span class="role-posture posture-${escapeHTML(item.posture_code)}">${escapeHTML(item.posture)}</span></td>
+      <td>
+        <p>${escapeHTML(item.effect)}</p>
+        <small class="${evidenceClass(item.effect_evidence)}">${
+          item.effect_evidence === "direct" ? "直接事实" : "有依据的分析"
+        }</small>
+      </td>
+    </tr>`;
+  };
+  $("#vienna-role-body").innerHTML = roles.map(roleRow).join("");
+
+  $("#vienna-role-cards").innerHTML = roles
+    .map((item) => {
+      const country = countryById(item.country);
+      return `<article class="vienna-role-card role-row-${escapeHTML(item.posture_code)}">
+        <header>
+          <div><strong>${escapeHTML(country.name_zh)}</strong><span>${escapeHTML(country.code)}</span></div>
+          <span class="role-posture posture-${escapeHTML(item.posture_code)}">${escapeHTML(item.posture)}</span>
+        </header>
+        <h4>${escapeHTML(item.role_title)}</h4>
+        <div class="role-tags">${item.tags.map((tag) => `<span>${escapeHTML(tag)}</span>`).join("")}</div>
+        <dl>
+          <div><dt>实质作用</dt><dd>${escapeHTML(item.substantive)}</dd></div>
+          <div><dt>程序作用</dt><dd>${escapeHTML(item.procedure)}</dd></div>
+          <div><dt>可观察结果</dt><dd>${escapeHTML(item.effect)}</dd></div>
+        </dl>
+        ${
+          item.tension
+            ? `<p class="role-tension"><b>判断张力</b>${escapeHTML(item.tension)}</p>`
+            : ""
+        }
+        <footer><span>${item.timecodes.map(escapeHTML).join(" · ")}</span><b class="${evidenceClass(
+          item.effect_evidence
+        )}">${item.effect_evidence === "direct" ? "直接事实" : "有依据的分析"}</b></footer>
+      </article>`;
+    })
+    .join("");
+}
+
+function renderAgendaIntegrity() {
+  const audit = amendmentAudit();
+  if (!audit) return;
+
+  $("#decision-audit-summary").innerHTML = audit.mechanisms
+    .map(
+      (item) => `
+        <article class="decision-summary-card">
+          <span>${escapeHTML(item.number)}</span>
+          <strong>${escapeHTML(item.label)}</strong>
+          <b>${item.primary_count}<small>项主要落点</small></b>
+          <p>${escapeHTML(item.consequence)}</p>
+        </article>`
+    )
+    .join("");
+
+  const header = `
+    <div class="decision-audit-header" aria-hidden="true">
+      <span>审议项目</span>
+      ${audit.mechanisms
+        .map(
+          (item) => `
+            <div>
+              <b>${escapeHTML(item.short_label)}</b>
+              <small>${escapeHTML(item.question)}</small>
+            </div>`
+        )
+        .join("")}
+    </div>`;
+
+  const rows = audit.cases
+    .map((item, index) => {
+      const cells = audit.mechanisms
+        .map((mechanism) => {
+          const effect = item.effects[mechanism.id];
+          if (!effect) {
+            return `<span class="decision-audit-cell is-empty" aria-hidden="true">—</span>`;
+          }
+          return `
+            <button
+              type="button"
+              class="decision-audit-cell tone-${escapeHTML(effect.tone)}"
+              data-detail-kind="decision-change"
+              data-case="${escapeHTML(item.unit)}"
+              data-mechanism="${escapeHTML(mechanism.id)}"
+              data-mechanism-label="${escapeHTML(mechanism.short_label)}"
+              aria-label="${escapeHTML(item.site)}，${escapeHTML(mechanism.label)}：${escapeHTML(effect.label)}"
+            >
+              <small>${escapeHTML(mechanism.short_label)}</small>
+              <strong>${escapeHTML(effect.label)}</strong>
+            </button>`;
+        })
+        .join("");
+
+      const groupBreak =
+        index > 0 && audit.cases[index - 1].kind !== item.kind
+          ? " is-group-break"
+          : "";
+      return `
+        <article class="decision-audit-row${groupBreak}">
+          <header>
+            <span>${escapeHTML(item.unit.replace(/^7([AB])/, "7$1."))}</span>
+            <div>
+              <h3>${escapeHTML(item.site)}</h3>
+              <small>${escapeHTML(item.kind_label)}</small>
+              ${caseRoleMarkup(item)}
+            </div>
+          </header>
+          ${cells}
+        </article>`;
+    })
+    .join("");
+
+  $("#decision-change-audit").innerHTML = header + rows;
+}
+
+function renderAmendmentRoleStats() {
+  const audit = amendmentAudit();
+  const stats = amendmentRoleStats();
+  const maxCount = Math.max(
+    1,
+    ...stats.flatMap((item) =>
+      audit.role_categories.map((category) => item[category.id])
+    )
+  );
+
+  $("#amendment-role-summary").innerHTML = audit.role_categories
+    .map((category) => {
+      const total = sum(stats.map((item) => item[category.id]));
+      const leaders = stats
+        .filter((item) => item[category.id] > 0)
+        .sort(
+          (a, b) =>
+            b[category.id] - a[category.id] ||
+            collator.compare(a.country.code, b.country.code)
+        )
+        .slice(0, 4)
+        .map((item) => item.country.code)
+        .join(" · ");
+      return `
+        <article class="role-summary-card role-${escapeHTML(category.id)}">
+          <span>${escapeHTML(category.short_label)}</span>
+          <strong>${total}</strong>
+          <p>${escapeHTML(category.label)}</p>
+          <small>${escapeHTML(leaders || "暂无")}</small>
+        </article>`;
+    })
+    .join("");
+
+  $("#amendment-role-bars").innerHTML = stats
+    .map(
+      (item) => `
+        <article class="amendment-role-row">
+          <header>
+            <b>${escapeHTML(item.country.code)}</b>
+            <span>${escapeHTML(item.country.name_zh)}</span>
+            <small>覆盖${item.caseCount}案</small>
+          </header>
+          <div class="amendment-role-measures">
+            ${audit.role_categories
+              .map(
+                (category) => `
+                  <button
+                    type="button"
+                    class="role-measure role-${escapeHTML(category.id)}"
+                    data-detail-kind="amendment-role"
+                    data-country="${escapeHTML(item.country.id)}"
+                    data-role="${escapeHTML(category.id)}"
+                    aria-label="${escapeHTML(
+                      `${item.country.name_zh}在实质修订中${category.label}${item[category.id]}案`
+                    )}"
+                  >
+                    <span>${escapeHTML(category.short_label)}</span>
+                    <i><em style="width:${(
+                      (item[category.id] / maxCount) *
+                      100
+                    ).toFixed(1)}%"></em></i>
+                    <b>${item[category.id]}</b>
+                  </button>`
+              )
+              .join("")}
+          </div>
+        </article>`
+    )
+    .join("");
+
+  $("#role-stat-legend").innerHTML = audit.role_categories
+    .map(
+      (category) =>
+        `<span class="role-${escapeHTML(category.id)}"><i></i>${escapeHTML(
+          category.label
+        )}</span>`
+    )
+    .join("");
+}
+
 function commonPackages(countryA, countryB) {
   return data.amendment_packages.filter((item) => {
     const proposers = new Set(
@@ -245,6 +745,85 @@ function populateControls() {
 
 function detailForElement(element) {
   const kind = element.dataset.detailKind;
+  if (kind === "case-stance") {
+    const audit = amendmentAudit();
+    const country = countryById(element.dataset.country);
+    const item = audit?.cases.find(
+      (entry) => entry.unit === element.dataset.case
+    );
+    const category = audit?.role_categories.find(
+      (entry) => entry.id === element.dataset.role
+    );
+    const stance = (item?.stances ?? []).find(
+      (entry) =>
+        entry.country === country?.id && entry.role === category?.id
+    );
+    if (!country || !item || !category || !stance) return null;
+    return {
+      title: `${country.name_zh} · ${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site}`,
+      body: `${category.label}：${stance.label}`,
+      items: [
+        `专业／规范基线：${item.baseline}`,
+        `实质改变：${item.change}`,
+        `最终结果：${item.outcome}`,
+        `证据边界：${item.caveat}`
+      ]
+    };
+  }
+
+  if (kind === "amendment-role") {
+    const audit = amendmentAudit();
+    const country = countryById(element.dataset.country);
+    const category = audit?.role_categories.find(
+      (entry) => entry.id === element.dataset.role
+    );
+    if (!country || !category) return null;
+    const matches = (audit.cases ?? []).flatMap((item) => {
+      const stance = (item.stances ?? []).find(
+        (entry) =>
+          entry.country === country.id && entry.role === category.id
+      );
+      return stance ? [{ item, stance }] : [];
+    });
+    return {
+      title: `${country.name_zh} · ${category.label} ${matches.length}案`,
+      body:
+        matches.length > 0
+          ? "按案件中的公开发言、文本提交或表决位置分别编码；同一委员国在不同案件中可以承担不同角色。"
+          : "本阶段没有符合该角色证据边界的案件。",
+      items: matches.length
+        ? matches.map(
+            ({ item, stance }) =>
+              `${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site}：${stance.label}`
+          )
+        : ["0案"]
+    };
+  }
+
+  if (kind === "decision-change") {
+    const audit = data.integrity_audit?.decision_change_audit;
+    const item = audit?.cases.find(
+      (entry) => entry.unit === element.dataset.case
+    );
+    const mechanism = audit?.mechanisms.find(
+      (entry) => entry.id === element.dataset.mechanism
+    );
+    const effect = item?.effects[element.dataset.mechanism];
+    if (!item || !mechanism || !effect) return null;
+    return {
+      title: `${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site} · ${mechanism.label}`,
+      body: effect.summary,
+      items: [
+        `原有基线：${item.baseline}`,
+        `实质改变：${item.change}`,
+        `最终结果：${item.outcome}`,
+        `可观察角色：${item.actors}`,
+        `证据：${item.evidence}`,
+        `边界：${item.caveat}`
+      ]
+    };
+  }
+
   if (kind === "country" || kind === "scatter") {
     const country = countryById(element.dataset.country);
     if (!country) return null;
@@ -477,6 +1056,8 @@ function hideTooltip(target, force = false) {
 
 function bindDetailTargets() {
   document.querySelectorAll("[data-detail-kind]").forEach((target) => {
+    if (target.dataset.detailBound === "true") return;
+    target.dataset.detailBound = "true";
     target.addEventListener("mouseenter", () => showTooltip(target));
     target.addEventListener("mouseleave", () => hideTooltip(target));
     target.addEventListener("focus", () => showTooltip(target));
@@ -1024,6 +1605,570 @@ function renderSources() {
     .join("");
 }
 
+function shareCardConfig(key) {
+  const audit = amendmentAudit();
+  const roleStats = amendmentRoleStats();
+  const countryMetrics = data.countries.map((country) => ({
+    country,
+    ...metricsFor(country)
+  }));
+  const topTurns = [...countryMetrics].sort(
+    (a, b) => b.totalTurns - a.totalTurns
+  );
+  const topCoverage = [...countryMetrics].sort(
+    (a, b) => b.coverage - a.coverage || b.totalTurns - a.totalTurns
+  );
+  const topInitiative = [...countryMetrics].sort(
+    (a, b) => b.initiative - a.initiative || b.totalTurns - a.totalTurns
+  );
+  const topDeliberative = [...countryMetrics].sort(
+    (a, b) => b.deliberative - a.deliberative || b.totalTurns - a.totalTurns
+  );
+  const unitTurns = data.units
+    .map((unit) => ({
+      unit,
+      turns: sum(
+        Object.values(unit.members).map(
+          (member) => (member.discussion ?? 0) + (member.response ?? 0)
+        )
+      )
+    }))
+    .sort((a, b) => b.turns - a.turns);
+  const topicRank = data.topics
+    .map((topic) => ({
+      topic,
+      associations: sum(
+        data.countries.map(
+          (country) =>
+            topicMetrics(country).find((item) => item.id === topic.id)?.count ??
+            0
+        )
+      )
+    }))
+    .sort((a, b) => b.associations - a.associations);
+  const section = document.querySelector(`[data-share-key="${key}"]`);
+  const fallback = {
+    kicker: section?.querySelector(".section-no")?.textContent ?? "48COM",
+    title: section?.querySelector("h2")?.textContent ?? "议程7技术统计",
+    deck:
+      section?.querySelector(".section-heading div > p")?.textContent ??
+      "第48届世界遗产委员会保护状况审议技术统计。",
+    metrics: [
+      { value: "21", label: "委员国" },
+      { value: "224", label: "可核对发言回合" },
+      { value: "16", label: "有效审议单元" }
+    ],
+    points: [],
+    note: "只记录可核对制度行为，不推断幕后协调、长期政治联盟或国家关系。"
+  };
+
+  const configs = {
+    "decision-audit": {
+      kicker: "专题一 / DECISION CHANGE AUDIT",
+      title: "实质修订发生在哪一环",
+      deck: audit.takeaway,
+      metrics: [
+        { value: "9", label: "正式文本修订项目" },
+        { value: "2", label: "程序性后移项目" },
+        { value: "4", label: "制度改变环节" }
+      ],
+      points: [
+        {
+          title: "维也纳 · 技术门槛",
+          body: "退出条件未完成，最终仍移出《濒危名录》。"
+        },
+        {
+          title: "维多利亚瀑布 · 事实判断",
+          body: "删除“生态连通性”，正式关切范围缩小。"
+        },
+        {
+          title: "威斯敏斯特 · 保护强化",
+          body: "恢复替代方案、迭代式HIA与分阶段报告。"
+        },
+        {
+          title: "贝加尔湖 · 程序悬置",
+          body: "14—5—1通过延期，实质辩论后移一届。"
+        }
+      ],
+      note: audit.stance_method
+    },
+    "amendment-roles": {
+      kicker: "专题一 / MEMBER ROLE BOXSCORE",
+      title: "谁主导修订，谁支持、校准或保留",
+      deck:
+        "角色按案件分别计数，不把共同署名、表决和现场编辑合成为单一影响力分。",
+      metrics: audit.role_categories.slice(0, 3).map((category) => ({
+        value: String(sum(roleStats.map((item) => item[category.id]))),
+        label: category.label
+      })),
+      points: roleStats.slice(0, 4).map((item) => ({
+        title: `${item.country.code} · 覆盖${item.caseCount}案`,
+        body: `主导${item.lead}｜支持${item.support}｜校准${item.calibrate}｜反对／保留${item.counter}`
+      })),
+      note:
+        "Baikal只统计延期动议立场；共同提出计入支持，技术或保护性反向修改计入校准。"
+    },
+    "vienna-audit": {
+      kicker: "深度案例 / VIENNA 7A.27",
+      title: "退出条件未完成，退出决定仍获通过",
+      deck: data.integrity_audit.vienna.thesis,
+      metrics: [
+        { value: "7", label: "DSOCR退出条件未完成" },
+        { value: "18/20", label: "决定段落被重写" },
+        { value: "退出", label: "最终列危状态" }
+      ],
+      points: data.integrity_audit.vienna.decision_chain.map((item) => ({
+        title: item.label,
+        body: item.title
+      })),
+      note:
+        "清洁版决定发布前，现场结果与逐词文本分开标注；动机不从结果反推。"
+    },
+    "vienna-process": {
+      kicker: "深度案例 / PROCESS TRACE",
+      title: "专业证据、委员国行动与主席裁量如何交汇",
+      deck: data.integrity_audit.vienna.chair_audit.finding,
+      metrics: [
+        { value: "≥8", label: "明确推动退出" },
+        { value: "≥7", label: "支持整案处理" },
+        { value: "2", label: "决定后正式抽离" }
+      ],
+      points: data.integrity_audit.vienna.role_mechanism.map((item) => ({
+        title: item.label,
+        body: item.note
+      })),
+      note: data.integrity_audit.vienna.chair_audit.caution
+    },
+    participation: {
+      kicker: "专题二 / COVERAGE × VOLUME",
+      title: "覆盖面与发言量共同描述参与度",
+      deck:
+        "覆盖面说明进入多少审议单元，发言量说明在这些单元中取得多少次发言席；两者不能互相替代。",
+      metrics: [
+        { value: "21", label: "委员国" },
+        { value: "16", label: "有效审议单元" },
+        { value: "224", label: "全部可核对发言回合" }
+      ],
+      points: topCoverage.slice(0, 4).map((item) => ({
+        title: `${item.country.code} · 覆盖${item.coverage}单元`,
+        body: `${item.totalTurns}个发言回合；最高集中于${item.topUnitIds
+          .map((id) => unitById(id)?.short_label)
+          .filter(Boolean)
+          .join("／") || "无"}`
+      })),
+      note:
+        "连续占用发言席计一回合；主持、秘书处、报告员和咨询机构制度身份已剔除。"
+    },
+    "member-boxscore": {
+      kicker: "专题二 / MEMBER BOXSCORE",
+      title: "21国议程7技术统计",
+      deck:
+        "覆盖、发言、答辩、文本与两类影响分别显示，不生成黑箱综合排名。",
+      metrics: [
+        { value: "136", label: "国家—审议单元行动" },
+        { value: "10", label: "正式／确认文本包" },
+        { value: "14", label: "答辩／通过后回应" }
+      ],
+      points: topTurns.slice(0, 4).map((item) => ({
+        title: `${item.country.code} · ${item.totalTurns}回合`,
+        body: `覆盖${item.coverage}单元｜提出${item.initiative}｜介入讨论${item.deliberative}`
+      })),
+      note:
+        "发言回合不是发言时长或质量分；同一代表团再次取得发言席重新计数。"
+    },
+    influence: {
+      kicker: "专题二 / TWO-SIDED INFLUENCE",
+      title: "影响分为提出议题与介入讨论",
+      deck:
+        "提出端记录正式文本和程序动议；讨论端只记录能够连接到文字或处理结果的编辑、护栏与折衷。",
+      metrics: [
+        {
+          value: String(sum(countryMetrics.map((item) => item.initiative))),
+          label: "提出议题记录"
+        },
+        {
+          value: String(sum(countryMetrics.map((item) => item.coSponsor))),
+          label: "共同提出记录"
+        },
+        {
+          value: String(sum(countryMetrics.map((item) => item.deliberative))),
+          label: "介入讨论记录"
+        }
+      ],
+      points: [
+        ...topInitiative.slice(0, 2).map((item) => ({
+          title: `${item.country.code} · 提出${item.initiative}`,
+          body: `${item.country.name_zh}在文本主提／联合提交或程序动议端较活跃。`
+        })),
+        ...topDeliberative.slice(0, 2).map((item) => ({
+          title: `${item.country.code} · 介入${item.deliberative}`,
+          body: `${item.country.name_zh}留下较多可追溯文字、护栏或折衷结果。`
+        }))
+      ],
+      note: "数字是可追溯记录数，不是质量分或政治影响评分。"
+    },
+    "agenda-footprint": {
+      kicker: "专题二 / AGENDA 7 FOOTPRINT",
+      title: "发言集中在哪些保护状况项目",
+      deck:
+        "发言、答辩与文本／程序行动分开记录，以识别委员国究竟在哪些项目留下足迹。",
+      metrics: [
+        { value: "18", label: "编码审议单元" },
+        { value: "16", label: "覆盖面有效单元" },
+        { value: "224", label: "可核对发言回合" }
+      ],
+      points: unitTurns.slice(0, 4).map((item) => ({
+        title: `${item.unit.short_label} · ${item.turns}回合`,
+        body: item.unit.matrix_label
+      })),
+      note:
+        "仅通过后回应的7A.30—32和7B.54保留在明细中，但不进入覆盖面分母。"
+    },
+    "issue-attention": {
+      kicker: "专题二 / ISSUE ATTENTION",
+      title: "委员国对哪类问题更敏感",
+      deck:
+        "议题关联度统计某国进入多少个涉及该主题的审议单元，不把每句话强制归入单一主题。",
+      metrics: topicRank.slice(0, 3).map((item) => ({
+        value: String(item.associations),
+        label: item.topic.label
+      })),
+      points: topicRank.slice(0, 4).map((item) => ({
+        title: item.topic.label,
+        body: `形成${item.associations}个“委员国—主题审议单元”关联。`
+      })),
+      note: "主题编码用于本阶段内部比较，不直接跨届归一化。"
+    },
+    "co-text": {
+      kicker: "专题二 / CO-TEXT NETWORK",
+      title: "共同文本，而非关系评分",
+      deck:
+        "共同文本只记录正式主提、共同提出或明确联合提交，不把相似发言和一般性支持混入。",
+      metrics: [
+        { value: "10", label: "正式／确认文本包" },
+        { value: "9", label: "涉及遗产项目" },
+        { value: "8", label: "Hampi文本参与国" }
+      ],
+      points: [
+        {
+          title: "Hampi · 跨区域触达",
+          body: "1国主提、7国共同提出，覆盖全部5个区域组。"
+        },
+        {
+          title: "Victoria Falls · 区域集中",
+          body: "4名正式提交者全部来自非洲组。"
+        },
+        {
+          title: "Sundarbans · 跨组桥接",
+          body: "4国联合提交，连接3个区域组。"
+        },
+        {
+          title: "证据边界",
+          body: "共同署名不证明长期合作、友好关系或所有段落立场一致。"
+        }
+      ],
+      note: "空白表示当前范围内没有可核对共同文本，不表示没有沟通或合作。"
+    },
+    "agenda-interaction": {
+      kicker: "专题二 / AGENDA-LINKED INTERACTION",
+      title: "议程协助与立场互动",
+      deck: data.agenda_party_network.method_note,
+      metrics: [
+        {
+          value: String(data.agenda_party_network.rows.length),
+          label: "正式文本所涉项目"
+        },
+        { value: "5", label: "区域组均有参与" },
+        { value: "0", label: "国家关系综合评分" }
+      ],
+      points: data.agenda_party_network.highlights.map((item) => ({
+        title: `${item.unit} · ${item.label}`,
+        body: item.note
+      })),
+      note: data.agenda_party_network.empty_note
+    },
+    "baikal-vote": {
+      kicker: "专题二 / EXPLICIT ALIGNMENT",
+      title: "Baikal延期表决：唯一完整立场分布",
+      deck:
+        "这次表决明确记录是否把实质辩论延至第49届，但不能替代委员国对列危本身的最终立场。",
+      metrics: [
+        { value: "14", label: "赞成延期" },
+        { value: "5", label: "反对延期" },
+        { value: "1", label: "弃权" }
+      ],
+      points: [
+        {
+          title: "程序结果",
+          body: "实质风险与列危讨论延至第49届。"
+        },
+        {
+          title: "明确少数",
+          body: "捷克、波兰、大韩民国、瑞士和乌克兰反对延期。"
+        },
+        {
+          title: "解释边界",
+          body: "赞成延期不能自动解释为反对列危。"
+        }
+      ],
+      note: data.votes[0].result
+    },
+    "stage-findings": {
+      kicker: "议程7 / STAGE FINDINGS",
+      title: "保护状况审议的阶段读数",
+      deck:
+        "以下发现只描述本阶段公开可观察的制度行为，不推断幕后协调或长期政治联盟。",
+      metrics: [
+        { value: "21", label: "委员国" },
+        { value: "18", label: "编码审议单元" },
+        { value: "224", label: "可核对发言回合" }
+      ],
+      points: data.findings.slice(0, 4).map((item) => ({
+        title: item.title,
+        body: item.body
+      })),
+      note: "ConserVision Research · 48COM Committee Observatory"
+    }
+  };
+  return { ...fallback, ...(configs[key] ?? {}) };
+}
+
+function roundedRect(ctx, x, y, width, height, radius) {
+  ctx.beginPath();
+  if (typeof ctx.roundRect === "function") {
+    ctx.roundRect(x, y, width, height, radius);
+  } else {
+    const r = Math.min(radius, width / 2, height / 2);
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + width - r, y);
+    ctx.quadraticCurveTo(x + width, y, x + width, y + r);
+    ctx.lineTo(x + width, y + height - r);
+    ctx.quadraticCurveTo(
+      x + width,
+      y + height,
+      x + width - r,
+      y + height
+    );
+    ctx.lineTo(x + r, y + height);
+    ctx.quadraticCurveTo(x, y + height, x, y + height - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+  ctx.fill();
+}
+
+function wrapCanvasText(
+  ctx,
+  text,
+  x,
+  y,
+  maxWidth,
+  lineHeight,
+  maxLines = 3
+) {
+  const chars = [...String(text)];
+  const lines = [];
+  let line = "";
+  let cursor = 0;
+  for (; cursor < chars.length; cursor += 1) {
+    const char = chars[cursor];
+    const test = line + char;
+    if (ctx.measureText(test).width > maxWidth && line) {
+      lines.push(line);
+      line = char;
+      if (lines.length === maxLines - 1) {
+        cursor += 1;
+        break;
+      }
+    } else {
+      line = test;
+    }
+  }
+  if (cursor < chars.length) {
+    let last = line;
+    for (const char of chars.slice(cursor)) {
+      if (ctx.measureText(`${last}${char}…`).width > maxWidth) {
+        break;
+      }
+      last += char;
+    }
+    line = `${last}…`;
+  }
+  if (line) lines.push(line);
+  lines.slice(0, maxLines).forEach((item, index) => {
+    ctx.fillText(item, x, y + index * lineHeight);
+  });
+  return y + Math.min(lines.length, maxLines) * lineHeight;
+}
+
+function drawShareCard(config) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 1600;
+  canvas.height = 900;
+  const ctx = canvas.getContext("2d");
+  const sans =
+    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", sans-serif';
+  const mono = '"SFMono-Regular", Consolas, monospace';
+
+  ctx.fillStyle = "#f2f5f8";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#ffffff";
+  roundedRect(ctx, 42, 38, 1516, 824, 26);
+  ctx.fillStyle = "#17365f";
+  ctx.fillRect(42, 38, 1516, 10);
+
+  ctx.fillStyle = "#17365f";
+  ctx.font = `800 27px ${sans}`;
+  ctx.fillText("委员国技术统计分析", 82, 94);
+  ctx.fillStyle = "#687890";
+  ctx.font = `700 16px ${mono}`;
+  ctx.fillText("48COM COMMITTEE OBSERVATORY", 82, 121);
+  ctx.textAlign = "right";
+  ctx.fillStyle = "#17365f";
+  ctx.font = `800 23px ${sans}`;
+  ctx.fillText("NHC | THU × CONSERVISION", 1518, 99);
+  ctx.textAlign = "left";
+
+  ctx.strokeStyle = "#d4dde7";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(82, 148);
+  ctx.lineTo(1518, 148);
+  ctx.stroke();
+
+  ctx.fillStyle = "#2d629e";
+  ctx.font = `700 18px ${mono}`;
+  ctx.fillText(config.kicker.toUpperCase(), 82, 191);
+
+  ctx.fillStyle = "#16243a";
+  ctx.font = `800 54px ${sans}`;
+  let cursorY = wrapCanvasText(ctx, config.title, 82, 252, 1370, 66, 2);
+  ctx.fillStyle = "#5e6f87";
+  ctx.font = `500 24px ${sans}`;
+  cursorY = wrapCanvasText(ctx, config.deck, 82, cursorY + 13, 1390, 36, 2);
+
+  const metricY = Math.max(390, cursorY + 24);
+  const metricGap = 20;
+  const metricWidth = (1436 - metricGap * 2) / 3;
+  config.metrics.slice(0, 3).forEach((item, index) => {
+    const x = 82 + index * (metricWidth + metricGap);
+    ctx.fillStyle = "#eef3f8";
+    roundedRect(ctx, x, metricY, metricWidth, 125, 14);
+    ctx.fillStyle = "#17365f";
+    ctx.font = `800 45px ${sans}`;
+    ctx.fillText(String(item.value), x + 24, metricY + 54);
+    ctx.fillStyle = "#65758b";
+    ctx.font = `650 19px ${sans}`;
+    ctx.fillText(item.label, x + 24, metricY + 91);
+  });
+
+  const pointY = metricY + 151;
+  const pointGap = 18;
+  const pointWidth = (1436 - pointGap) / 2;
+  const pointHeight = 122;
+  config.points.slice(0, 4).forEach((item, index) => {
+    const column = index % 2;
+    const row = Math.floor(index / 2);
+    const x = 82 + column * (pointWidth + pointGap);
+    const y = pointY + row * (pointHeight + 14);
+    ctx.fillStyle = index === 0 ? "#f8ecee" : "#f7f9fb";
+    roundedRect(ctx, x, y, pointWidth, pointHeight, 12);
+    ctx.fillStyle = index === 0 ? "#8a3540" : "#2d629e";
+    ctx.fillRect(x, y, 7, pointHeight);
+    ctx.fillStyle = "#17263c";
+    ctx.font = `750 23px ${sans}`;
+    wrapCanvasText(ctx, item.title, x + 24, y + 38, pointWidth - 48, 28, 1);
+    ctx.fillStyle = "#627188";
+    ctx.font = `500 18px ${sans}`;
+    wrapCanvasText(
+      ctx,
+      item.body,
+      x + 24,
+      y + 72,
+      pointWidth - 48,
+      25,
+      2
+    );
+  });
+
+  ctx.fillStyle = "#6a7788";
+  ctx.font = `500 16px ${sans}`;
+  wrapCanvasText(ctx, config.note, 82, 835, 1320, 22, 1);
+  ctx.textAlign = "right";
+  ctx.fillStyle = "#2d629e";
+  ctx.font = `700 15px ${mono}`;
+  ctx.fillText("RESEARCH.CONSERVISION.COM · 2026.07.28", 1518, 835);
+  ctx.textAlign = "left";
+  return canvas;
+}
+
+function showShareToast(message) {
+  const toast = $("#share-toast");
+  toast.textContent = message;
+  toast.hidden = false;
+  clearTimeout(showShareToast.timer);
+  showShareToast.timer = setTimeout(() => {
+    toast.hidden = true;
+  }, 3200);
+}
+
+async function generateShareImage(key, button) {
+  const previous = button.innerHTML;
+  button.disabled = true;
+  button.textContent = "生成中…";
+  try {
+    const config = shareCardConfig(key);
+    const canvas = drawShareCard(config);
+    const blob = await new Promise((resolve, reject) =>
+      canvas.toBlob(
+        (result) =>
+          result ? resolve(result) : reject(new Error("无法生成PNG图像")),
+        "image/png",
+        1
+      )
+    );
+    button.dataset.lastExportBytes = String(blob.size);
+    button.dataset.lastExportWidth = String(canvas.width);
+    button.dataset.lastExportHeight = String(canvas.height);
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `48COM-${key}-share.png`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1500);
+    showShareToast(`已生成“${config.title}”分享图`);
+  } catch (error) {
+    console.error(error);
+    showShareToast("分享图生成失败，请稍后重试");
+  } finally {
+    button.disabled = false;
+    button.innerHTML = previous;
+  }
+}
+
+function installShareButtons() {
+  document.querySelectorAll("[data-share-key]").forEach((section) => {
+    const heading = section.querySelector(".section-heading");
+    if (!heading || heading.querySelector(".share-image-button")) return;
+    heading.classList.add("has-share-button");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "share-image-button";
+    button.innerHTML = '<span aria-hidden="true">↗</span> 生成分享图';
+    button.setAttribute(
+      "aria-label",
+      `生成“${heading.querySelector("h2")?.textContent ?? "本专题"}”PNG分享图`
+    );
+    button.addEventListener("click", () =>
+      generateShareImage(section.dataset.shareKey, button)
+    );
+    heading.append(button);
+  });
+}
+
 function updateFilterSummary() {
   if (state.country !== "all") {
     $("#filter-summary").textContent = `聚焦 ${countryById(state.country).name_zh}`;
@@ -1105,12 +2250,18 @@ async function init() {
   $("#conference-logo").src = `data:image/svg+xml;base64,${whc48LogoBase64}`;
   readStateFromURL();
   populateControls();
+  renderIntegrityAudit();
+  renderProcessTrace();
+  renderViennaMemberRoles();
+  renderAgendaIntegrity();
+  renderAmendmentRoleStats();
   renderMetrics();
   renderRegionLegend();
   renderFindings();
   renderSources();
   renderAll();
   bindControls();
+  installShareButtons();
 }
 
 init().catch((error) => {
