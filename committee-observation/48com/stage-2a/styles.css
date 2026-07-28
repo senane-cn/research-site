@@ -2057,13 +2057,27 @@
   font-weight: 700;
 }
 
-.decision-audit-row h3 {
-  margin: 0;
+.case-overview-trigger {
+  appearance: none;
+  display: grid;
+  width: fit-content;
+  max-width: 100%;
+  justify-items: start;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: help;
+}
+
+.case-overview-trigger strong {
   font-size: 12px;
   line-height: 1.35;
 }
 
-.decision-audit-row > header small {
+.case-overview-trigger span {
   display: inline-block;
   margin-top: 4px;
   padding: 2px 5px;
@@ -2071,6 +2085,21 @@
   color: var(--muted);
   font-size: 7px;
   font-weight: 700;
+}
+
+.case-overview-trigger:hover strong,
+.case-overview-trigger:focus-visible strong,
+.case-overview-trigger[aria-pressed="true"] strong {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.case-overview-trigger:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
 }
 
 .decision-audit-cell {
@@ -2507,6 +2536,50 @@ button.decision-audit-cell[aria-pressed="true"] {
   display: none;
 }
 
+.share-capture-frame {
+  position: absolute;
+  z-index: -1000;
+  left: 0;
+  box-sizing: border-box;
+  width: 1328px;
+  padding: 24px;
+  background: #f4f6f8;
+  pointer-events: none;
+}
+
+.share-capture-frame.findings-wrap {
+  background: #17365f;
+}
+
+.share-capture-clone {
+  box-sizing: border-box;
+  width: 1280px;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.share-capture-clone .share-image-button {
+  display: none !important;
+}
+
+.share-capture-clone .scatter {
+  background-image:
+    linear-gradient(to right, rgba(192, 199, 208, .65) 1px, transparent 1px),
+    linear-gradient(to top, rgba(192, 199, 208, .65) 1px, transparent 1px);
+}
+
+.share-capture-clone .scatter-point span {
+  background: rgba(250, 249, 245, .88);
+}
+
+.share-capture-clone .table-scroll,
+.share-capture-clone .scatter-scroll,
+.share-capture-clone .decision-audit-wrap,
+.share-capture-clone .timeline-lane > div {
+  overflow: visible !important;
+  max-height: none !important;
+}
+
 .baseline-divider {
   display: grid;
   grid-template-columns: minmax(230px, .5fr) minmax(0, 1.5fr);
@@ -2778,7 +2851,7 @@ button.decision-audit-cell[aria-pressed="true"] {
     font-size: 9px;
   }
 
-  .decision-audit-row > header small {
+  .case-overview-trigger span {
     font-size: 8px;
   }
 
@@ -2855,7 +2928,7 @@ button.decision-audit-cell[aria-pressed="true"] {
     border-bottom: 1px solid var(--rule);
   }
 
-  .decision-audit-row h3 {
+  .case-overview-trigger strong {
     font-size: 12px;
   }
 

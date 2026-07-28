@@ -1,4 +1,5 @@
 import { whc48LogoBase64 } from "../stage-1/assets/whc48-logo.generated.js";
+import html2canvas from "./assets/html2canvas-1.4.1.esm.js";
 
 const DATA_URL = "data/phase-2a.json?v=1.5.0";
 const regionColors = {
@@ -556,8 +557,18 @@ function renderAgendaIntegrity() {
           <header>
             <span>${escapeHTML(item.unit.replace(/^7([AB])/, "7$1."))}</span>
             <div>
-              <h3>${escapeHTML(item.site)}</h3>
-              <small>${escapeHTML(item.kind_label)}</small>
+              <button
+                type="button"
+                class="case-overview-trigger"
+                data-detail-kind="case-overview"
+                data-case="${escapeHTML(item.unit)}"
+                aria-label="${escapeHTML(
+                  `${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site}，查看完整审议项目摘要`
+                )}"
+              >
+                <strong>${escapeHTML(item.site)}</strong>
+                <span>${escapeHTML(item.kind_label)} · 项目摘要</span>
+              </button>
               ${caseRoleMarkup(item)}
             </div>
           </header>
@@ -745,6 +756,25 @@ function populateControls() {
 
 function detailForElement(element) {
   const kind = element.dataset.detailKind;
+  if (kind === "case-overview") {
+    const audit = amendmentAudit();
+    const item = audit?.cases.find(
+      (entry) => entry.unit === element.dataset.case
+    );
+    if (!item) return null;
+    return {
+      title: `${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site} · 审议项目`,
+      body: `最终结果：${item.outcome}`,
+      items: [
+        `原有基线：${item.baseline}`,
+        `实质改变：${item.change}`,
+        `可观察角色：${item.actors}`,
+        `证据：${item.evidence}`,
+        `边界：${item.caveat}`
+      ]
+    };
+  }
+
   if (kind === "case-stance") {
     const audit = amendmentAudit();
     const country = countryById(element.dataset.country);
@@ -762,12 +792,7 @@ function detailForElement(element) {
     return {
       title: `${country.name_zh} · ${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site}`,
       body: `${category.label}：${stance.label}`,
-      items: [
-        `专业／规范基线：${item.baseline}`,
-        `实质改变：${item.change}`,
-        `最终结果：${item.outcome}`,
-        `证据边界：${item.caveat}`
-      ]
+      items: []
     };
   }
 
@@ -813,14 +838,7 @@ function detailForElement(element) {
     return {
       title: `${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site} · ${mechanism.label}`,
       body: effect.summary,
-      items: [
-        `原有基线：${item.baseline}`,
-        `实质改变：${item.change}`,
-        `最终结果：${item.outcome}`,
-        `可观察角色：${item.actors}`,
-        `证据：${item.evidence}`,
-        `边界：${item.caveat}`
-      ]
+      items: []
     };
   }
 
@@ -1037,9 +1055,11 @@ function showTooltip(target) {
   const tooltip = $("#viz-tooltip");
   $("#viz-tooltip-title").textContent = detail.title;
   $("#viz-tooltip-body").textContent = detail.body;
-  $("#viz-tooltip-list").innerHTML = detail.items
+  const detailList = $("#viz-tooltip-list");
+  detailList.innerHTML = detail.items
     .map((item) => `<li>${escapeHTML(item)}</li>`)
     .join("");
+  detailList.hidden = detail.items.length === 0;
   tooltip.hidden = false;
   tooltip.setAttribute("aria-hidden", "false");
   requestAnimationFrame(() => positionTooltip(target));
@@ -1605,7 +1625,7 @@ function renderSources() {
     .join("");
 }
 
-function shareCardConfig(key) {
+function legacyShareCardConfig(key) {
   const audit = amendmentAudit();
   const roleStats = amendmentRoleStats();
   const countryMetrics = data.countries.map((country) => ({
@@ -2002,7 +2022,7 @@ function wrapCanvasText(
   return y + Math.min(lines.length, maxLines) * lineHeight;
 }
 
-function drawShareCard(config) {
+function drawLegacyShareCard(config) {
   const canvas = document.createElement("canvas");
   canvas.width = 1600;
   canvas.height = 900;
@@ -2113,13 +2133,97 @@ function showShareToast(message) {
   }, 3200);
 }
 
+async function captureShareSection(section) {
+  if (typeof html2canvas !== "function") {
+    throw new Error("专题截图组件尚未载入");
+  }
+
+  if (document.fonts?.ready) await document.fonts.ready;
+
+  const frame = document.createElement("div");
+  frame.className = "share-capture-frame";
+  if (section.closest(".findings-wrap")) frame.classList.add("findings-wrap");
+  frame.style.top = `${document.documentElement.scrollHeight + 48}px`;
+
+  const clone = section.cloneNode(true);
+  clone.classList.add("share-capture-clone");
+  clone.removeAttribute("id");
+  clone.querySelectorAll("[id]").forEach((element) => {
+    element.removeAttribute("id");
+  });
+  clone.querySelectorAll(".share-image-button").forEach((element) => {
+    element.remove();
+  });
+  clone.querySelectorAll('[aria-pressed="true"]').forEach((element) => {
+    element.setAttribute("aria-pressed", "false");
+  });
+  clone.querySelectorAll("details").forEach((element) => {
+    element.open = true;
+  });
+
+  frame.append(clone);
+  document.body.append(frame);
+
+  try {
+    await new Promise((resolve) =>
+      requestAnimationFrame(() => requestAnimationFrame(resolve))
+    );
+
+    const scrollContainers = clone.querySelectorAll(
+      ".table-scroll, .scatter-scroll, .decision-audit-wrap, .timeline-lane > div"
+    );
+    const widestContent = Math.max(
+      0,
+      ...[...scrollContainers].map((element) => element.scrollWidth)
+    );
+    const captureWidth = Math.max(1280, widestContent + 72);
+    frame.style.width = `${captureWidth + 48}px`;
+    clone.style.width = `${captureWidth}px`;
+    clone.style.maxWidth = "none";
+    clone.style.margin = "0";
+    scrollContainers.forEach((element) => {
+      element.style.overflow = "visible";
+      element.style.maxHeight = "none";
+    });
+
+    await new Promise((resolve) => requestAnimationFrame(resolve));
+
+    const width = Math.ceil(frame.scrollWidth);
+    const height = Math.ceil(frame.scrollHeight);
+    const scale = Math.min(
+      1.5,
+      Math.sqrt(28_000_000 / Math.max(1, width * height))
+    );
+
+    return await html2canvas(frame, {
+      backgroundColor: section.closest(".findings-wrap")
+        ? "#17365f"
+        : "#f4f6f8",
+      scale,
+      useCORS: true,
+      logging: false,
+      imageTimeout: 8000,
+      width,
+      height,
+      windowWidth: width,
+      windowHeight: Math.max(900, height),
+      scrollX: 0,
+      scrollY: 0
+    });
+  } finally {
+    frame.remove();
+  }
+}
+
 async function generateShareImage(key, button) {
   const previous = button.innerHTML;
   button.disabled = true;
   button.textContent = "生成中…";
   try {
-    const config = shareCardConfig(key);
-    const canvas = drawShareCard(config);
+    const section = document.querySelector(`[data-share-key="${key}"]`);
+    if (!section) throw new Error("未找到当前专题");
+    const title = section.querySelector("h2")?.textContent ?? "本专题";
+    const canvas = await captureShareSection(section);
     const blob = await new Promise((resolve, reject) =>
       canvas.toBlob(
         (result) =>
@@ -2134,12 +2238,12 @@ async function generateShareImage(key, button) {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = `48COM-${key}-share.png`;
+    link.download = `48COM-${key}-section.png`;
     document.body.append(link);
     link.click();
     link.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1500);
-    showShareToast(`已生成“${config.title}”分享图`);
+    showShareToast(`已截取“${title}”专题分析`);
   } catch (error) {
     console.error(error);
     showShareToast("分享图生成失败，请稍后重试");
@@ -2157,6 +2261,7 @@ function installShareButtons() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "share-image-button";
+    button.dataset.html2canvasIgnore = "true";
     button.innerHTML = '<span aria-hidden="true">↗</span> 生成分享图';
     button.setAttribute(
       "aria-label",
