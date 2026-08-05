@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "title": "48COM 第二阶段B：提名与列入（议程8）",
+    "phase": "02B",
+    "status": "阶段核定",
+    "date": "2026-07-29",
+    "member_count": 21,
+    "effective_units": 11,
+    "country_unit_actions": 164,
+    "speech_turns_lower_bound": 186,
+    "formal_text_packages": 10,
+    "substantive_outcome_changes": 9,
+    "scope_note": "四维参与统计只纳入出现委员国讨论、正式文本或程序行动的11个审议单元。无委员国介入的快速通过项目仅进入结果全景，不进入覆盖面分母。",
+    "counting_note": "发言量是可从直播纪要识别的连续发言回合下限；共同署名不是发言。简短加入共同提案若无独立论证，只计文本行动。"
+  },
+  "regions": [
+    {"id": "africa", "label": "非洲", "short": "AFR"},
+    {"id": "arab", "label": "阿拉伯国家", "short": "ARB"},
+    {"id": "asia_pacific", "label": "亚洲和太平洋", "short": "ASP"},
+    {"id": "europe_north_america", "label": "欧洲和北美", "short": "ENA"},
+    {"id": "latin_caribbean", "label": "拉丁美洲和加勒比", "short": "LAC"}
+  ],
+  "topics": [
+    {"id": "value", "label": "价值与列入标准", "short": "价值"},
+    {"id": "integrity", "label": "真实性／完整性／边界", "short": "完整性"},
+    {"id": "management", "label": "保护、管理与权利主体", "short": "管理"},
+    {"id": "procedure", "label": "发还、延期与程序门槛", "short": "程序"},
+    {"id": "balance", "label": "代表性、地域与名录平衡", "short": "代表性"}
+  ],
+  "countries": [
+    {"code":"ARM","name_zh":"亚美尼亚","region":"europe_north_america","coverage":7,"speech_turns":6,"lead":0,"support":7,"calibrate":0,"counter":0,"focus_unit":"8B.12 / 8B.33","topics":[4,2,2,3,4]},
+    {"code":"AZE","name_zh":"阿塞拜疆","region":"europe_north_america","coverage":7,"speech_turns":6,"lead":1,"support":6,"calibrate":0,"counter":0,"focus_unit":"8B.20","topics":[6,3,2,2,4]},
+    {"code":"BGD","name_zh":"孟加拉国","region":"asia_pacific","coverage":6,"speech_turns":9,"lead":1,"support":5,"calibrate":0,"counter":0,"focus_unit":"8B.7","topics":[5,3,3,4,3]},
+    {"code":"CZE","name_zh":"捷克","region":"europe_north_america","coverage":6,"speech_turns":11,"lead":0,"support":0,"calibrate":3,"counter":4,"focus_unit":"8B.3 / 8B.7","topics":[5,6,4,6,1]},
+    {"code":"GRD","name_zh":"格林纳达","region":"latin_caribbean","coverage":8,"speech_turns":7,"lead":0,"support":8,"calibrate":0,"counter":0,"focus_unit":"8B.30","topics":[5,3,4,4,5]},
+    {"code":"JAM","name_zh":"牙买加","region":"latin_caribbean","coverage":8,"speech_turns":8,"lead":0,"support":8,"calibrate":1,"counter":0,"focus_unit":"8B.7 / 8B.36","topics":[5,4,4,3,4]},
+    {"code":"KAZ","name_zh":"哈萨克斯坦","region":"asia_pacific","coverage":9,"speech_turns":12,"lead":3,"support":5,"calibrate":0,"counter":0,"focus_unit":"8B.12 / 8B.24 / 8B.33","topics":[8,5,4,4,6]},
+    {"code":"KEN","name_zh":"肯尼亚","region":"africa","coverage":7,"speech_turns":7,"lead":0,"support":7,"calibrate":0,"counter":0,"focus_unit":"8B.34","topics":[5,3,4,3,5]},
+    {"code":"KWT","name_zh":"科威特","region":"arab","coverage":11,"speech_turns":12,"lead":1,"support":10,"calibrate":0,"counter":0,"focus_unit":"8B.52","topics":[7,4,5,5,6]},
+    {"code":"LBN","name_zh":"黎巴嫩","region":"arab","coverage":7,"speech_turns":10,"lead":1,"support":5,"calibrate":1,"counter":0,"focus_unit":"8B.34","topics":[7,4,4,5,5]},
+    {"code":"MNG","name_zh":"蒙古","region":"asia_pacific","coverage":9,"speech_turns":8,"lead":0,"support":9,"calibrate":0,"counter":0,"focus_unit":"8B.30 / 8B.36","topics":[5,4,5,4,4]},
+    {"code":"PER","name_zh":"秘鲁","region":"latin_caribbean","coverage":8,"speech_turns":11,"lead":1,"support":7,"calibrate":0,"counter":0,"focus_unit":"8B.30","topics":[7,4,4,7,5]},
+    {"code":"POL","name_zh":"波兰","region":"europe_north_america","coverage":9,"speech_turns":10,"lead":0,"support":7,"calibrate":1,"counter":0,"focus_unit":"8B.20 / 8B.30","topics":[6,5,4,6,4]},
+    {"code":"KOR","name_zh":"大韩民国","region":"asia_pacific","coverage":7,"speech_turns":6,"lead":0,"support":7,"calibrate":0,"counter":0,"focus_unit":"8B.30","topics":[4,3,4,4,4]},
+    {"code":"SEN","name_zh":"塞内加尔","region":"africa","coverage":10,"speech_turns":10,"lead":1,"support":9,"calibrate":0,"counter":0,"focus_unit":"8B.14","topics":[7,4,5,4,8]},
+    {"code":"CHE","name_zh":"瑞士","region":"europe_north_america","coverage":6,"speech_turns":12,"lead":0,"support":0,"calibrate":6,"counter":5,"focus_unit":"8B.7 / 8B.30","topics":[5,6,4,6,1]},
+    {"code":"TGO","name_zh":"多哥","region":"africa","coverage":7,"speech_turns":6,"lead":0,"support":7,"calibrate":0,"counter":0,"focus_unit":"8B.14 / 8B.34","topics":[5,3,4,3,6]},
+    {"code":"TUR","name_zh":"土耳其","region":"europe_north_america","coverage":9,"speech_turns":10,"lead":0,"support":8,"calibrate":0,"counter":0,"focus_unit":"8B.3 / 8B.20","topics":[7,4,3,5,5]},
+    {"code":"UKR","name_zh":"乌克兰","region":"europe_north_america","coverage":7,"speech_turns":8,"lead":0,"support":7,"calibrate":0,"counter":0,"focus_unit":"8B.30","topics":[6,3,3,5,4]},
+    {"code":"TZA","name_zh":"坦桑尼亚联合共和国","region":"africa","coverage":9,"speech_turns":11,"lead":1,"support":8,"calibrate":1,"counter":0,"focus_unit":"8B.36","topics":[7,5,6,6,6]},
+    {"code":"VNM","name_zh":"越南","region":"asia_pacific","coverage":7,"speech_turns":6,"lead":0,"support":7,"calibrate":1,"counter":0,"focus_unit":"8B.30","topics":[4,3,4,5,4]}
+  ],
+  "units": [
+    {
+      "id":"8B.3","name_zh":"塞巴斯蒂亚","name_en":"Sebastia","party":"巴勒斯坦国","type":"紧急提名","speech_turns":12,
+      "involved":["CZE","LBN","KWT","TUR","SEN","PER","GRD"],"lead":[],"support":["LBN","KWT","TUR","SEN","PER","GRD"],"calibrate":[],"counter":["CZE"],
+      "focus":["紧急程序","评估完整性","程序异议"],"result":"列入并同时列危；捷克不参与决定"
+    },
+    {
+      "id":"8B.52","name_zh":"阿梅勒山城堡","name_en":"Mount Amel Castles","party":"黎巴嫩","type":"紧急提名","speech_turns":2,
+      "involved":["KWT","ARM","KAZ","POL","TUR"],"lead":["KWT"],"support":["ARM","KAZ","POL","TUR"],"calibrate":[],"counter":[],
+      "focus":["紧急程序","武装冲突","监测基线"],"result":"列入并同时列危；完整文本由委员国提出"
+    },
+    {
+      "id":"8B.7","name_zh":"瓦迪沃拉亚","name_en":"Wadi Wurayah","party":"阿拉伯联合酋长国","type":"自然提名","speech_turns":32,
+      "involved":["ARM","AZE","BGD","CZE","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","CHE","TGO","TUR","UKR","TZA","VNM"],"lead":["BGD"],"support":["ARM","AZE","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","TGO","TUR","UKR","TZA","VNM"],"calibrate":["CHE","CZE","JAM"],"counter":["CHE","CZE"],
+      "focus":["标准(ix)","完整性","水文设施","列入前后"],"result":"IUCN延期建议改为按标准(ix)列入"
+    },
+    {
+      "id":"8B.20","name_zh":"曼格斯套岩石清真寺","name_en":"Rock Mosques of Mangystau","party":"哈萨克斯坦","type":"文化提名","speech_turns":22,
+      "involved":["ARM","AZE","BGD","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","CHE","TGO","TUR","TZA","VNM"],"lead":["AZE"],"support":["ARM","BGD","GRD","JAM","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","TGO","TUR","TZA","VNM"],"calibrate":["CHE"],"counter":["CHE"],
+      "focus":["系列范围","标准(ii)/(vi)","活态传统","真实性"],"result":"4个组成部分／标准(iii)扩大为5个组成部分／标准(ii)(iii)(vi)"
+    },
+    {
+      "id":"8B.24","name_zh":"塔什干现代主义建筑","name_en":"Tashkent Modernist Architecture","party":"乌兹别克斯坦","type":"文化提名","speech_turns":14,
+      "involved":["AZE","JAM","KAZ","KEN","KWT","MNG","PER","POL","KOR","SEN","TUR","TZA","VNM"],"lead":["KAZ"],"support":["AZE","JAM","KEN","KWT","MNG","PER","POL","KOR","SEN","TUR","TZA","VNM"],"calibrate":[],"counter":[],
+      "focus":["系列完整性","现代遗产","组成部分"],"result":"列入范围由9个扩大为10个组成部分"
+    },
+    {
+      "id":"8B.14","name_zh":"圣多美和普林西比罗萨斯","name_en":"The Roças of São Tomé and Príncipe","party":"圣多美和普林西比","type":"文化提名","speech_turns":12,
+      "involved":["BGD","GRD","KAZ","KEN","KWT","MNG","POL","SEN","TGO","TUR","UKR","TZA"],"lead":["SEN"],"support":["BGD","GRD","KAZ","KEN","KWT","MNG","POL","TGO","TUR","UKR","TZA"],"calibrate":[],"counter":[],
+      "focus":["标准(iv)","困难遗产","代表性","管理后移"],"result":"ICOMOS发还建议改为列入"
+    },
+    {
+      "id":"8B.12","name_zh":"奥林匹斯山较大区域","name_en":"The Wider Area of Mount Olympus","party":"希腊","type":"混合提名","speech_turns":20,
+      "involved":["ARM","BGD","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","UKR","TZA","VNM"],"lead":["KAZ"],"support":["ARM","BGD","GRD","JAM","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","UKR","TZA","VNM"],"calibrate":[],"counter":[],
+      "focus":["标准(vi)/(x)","混合遗产","比较分析","管理后移"],"result":"两家咨询机构发还建议改为按标准(vi)(x)列入"
+    },
+    {
+      "id":"8B.30","name_zh":"里贝拉萨克拉水景","name_en":"Ribeira Sacra Waterscape","party":"西班牙","type":"文化景观提名","speech_turns":30,
+      "involved":["ARM","AZE","BGD","CZE","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","CHE","TGO","TUR","UKR","TZA","VNM"],"lead":["PER"],"support":["ARM","AZE","BGD","GRD","JAM","KAZ","KEN","KWT","MNG","KOR","SEN","TGO","UKR","TZA","VNM"],"calibrate":["CZE","CHE","LBN","POL","VNM"],"counter":["CZE","CHE"],
+      "focus":["标准(v)","比较分析","发还与延期","表决／共识"],"result":"ICOMOS不列入建议改为发还；瑞士、捷克与结果分离"
+    },
+    {
+      "id":"8B.33","name_zh":"格丁尼亚现代主义市中心","name_en":"Gdynia Modernist City Centre","party":"波兰","type":"文化提名","speech_turns":16,
+      "involved":["ARM","AZE","BGD","CZE","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","CHE","TGO","TUR","UKR","TZA","VNM"],"lead":["KAZ"],"support":["ARM","AZE","BGD","GRD","JAM","KEN","KWT","LBN","MNG","PER","KOR","SEN","TGO","TUR","UKR","TZA","VNM"],"calibrate":["CHE"],"counter":[],
+      "focus":["属性与边界","完整性","程序说明","列入后控制"],"result":"再次发还建议改为列入；加入程序性说明"
+    },
+    {
+      "id":"8B.34","name_zh":"亚马孙剧院","name_en":"Amazonia Theaters","party":"巴西","type":"系列文化提名","speech_turns":14,
+      "involved":["ARM","AZE","CZE","GRD","JAM","KAZ","KWT","LBN","MNG","PER","POL","KOR","SEN","CHE","TGO","UKR","TZA","VNM"],"lead":["LBN"],"support":["ARM","AZE","GRD","JAM","KAZ","KWT","MNG","PER","POL","KOR","SEN","TGO","UKR","TZA","VNM"],"calibrate":["CHE"],"counter":["CHE"],
+      "focus":["系列联系","标准(ii)/(iv)","文化交流","真实性"],"result":"一座剧院／标准(iv)改为两座剧院／标准(ii)(iv)"
+    },
+    {
+      "id":"8B.36","name_zh":"肯尼亚山边界修改","name_en":"Mount Kenya boundary modification","party":"肯尼亚","type":"小幅边界修改","speech_turns":12,
+      "involved":["AZE","CZE","JAM","KWT","MNG","SEN","CHE","TGO","TUR","UKR","TZA"],"lead":["TZA"],"support":["AZE","JAM","KWT","MNG","SEN","TGO","TUR","UKR"],"calibrate":["CZE","CHE","TZA"],"counter":["CZE","CHE"],
+      "focus":["小幅／重大修改","程序一致性","权利主体","生态连通"],"result":"IUCN不批准建议改为按小幅修改批准，并加入权利主体护栏"
+    }
+  ],
+  "outcome_changes": [
+    {
+      "id":"8B.7","name":"瓦迪沃拉亚","party":"阿联酋","from":"延期","to":"列入 · (ix)","mechanism":"技术门槛提前确认","severity":"high",
+      "change":"比较分析、完整性与水文设施影响尚未全部完成，但委员会确认标准(ix)，把其余任务转为列入后研究、监测与报告。",
+      "lead":["BGD"],"support":["ARM","AZE","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","TGO","TUR","UKR","TZA","VNM"],"calibrate":["CHE","CZE","JAM"],"counter":["CHE","CZE"],
+      "tags":["价值门槛","完整性","管理后移"]
+    },
+    {
+      "id":"8B.20","name":"曼格斯套岩石清真寺","party":"哈萨克斯坦","from":"4个组成部分 · (iii)","to":"5个组成部分 · (ii)(iii)(vi)","mechanism":"系列范围与标准扩张","severity":"high",
+      "change":"Beket-Ata重新纳入，活态朝圣和文化交流被赋予更高权重；标准(ii)、(vi)同时加入。",
+      "lead":["AZE"],"support":["ARM","BGD","GRD","JAM","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","TGO","TUR","TZA","VNM"],"calibrate":["CHE"],"counter":["CHE"],
+      "tags":["价值重构","系列完整性","标准扩张"]
+    },
+    {
+      "id":"8B.24","name":"塔什干现代主义建筑","party":"乌兹别克斯坦","from":"列入9个组成部分","to":"列入10个组成部分","mechanism":"组成部分恢复","severity":"medium",
+      "change":"Big Solar Furnace恢复为组成部分；委员会认为科研工程设施补足现代主义系列的类型表达。",
+      "lead":["KAZ"],"support":["AZE","JAM","KEN","KWT","MNG","PER","POL","KOR","SEN","TUR","TZA","VNM"],"calibrate":[],"counter":[],
+      "tags":["范围扩大","现代遗产","管理后移"]
+    },
+    {
+      "id":"8B.14","name":"圣多美和普林西比罗萨斯","party":"圣多美和普林西比","from":"发还","to":"列入 · (iv)","mechanism":"保护任务后移","severity":"high",
+      "change":"缓冲区、法规、管理结构和保护计划未全部完成，但被转化为列入后的建议与第50届报告要求。",
+      "lead":["SEN"],"support":["BGD","GRD","KAZ","KEN","KWT","MNG","POL","TGO","TUR","UKR","TZA"],"calibrate":[],"counter":[],
+      "tags":["结果扭转","代表性","管理后移"]
+    },
+    {
+      "id":"8B.12","name":"奥林匹斯山较大区域","party":"希腊","from":"两机构均建议发还","to":"列入 · (vi)(x)","mechanism":"标准收窄后直接列入","severity":"high",
+      "change":"委员会删除未获支持的(viii)、(ix)，以全球神话关联和特有性密度确认(vi)、(x)，同时把边界、缓冲区和管理任务后移。",
+      "lead":["KAZ"],"support":["ARM","BGD","GRD","JAM","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","UKR","TZA","VNM"],"calibrate":[],"counter":[],
+      "tags":["价值门槛","标准收窄","管理后移"]
+    },
+    {
+      "id":"8B.30","name":"里贝拉萨克拉水景","party":"西班牙","from":"不列入","to":"发还","mechanism":"保留程序出口","severity":"high",
+      "change":"突出普遍价值和比较分析仍需实质重构，但委员会以发还保留下一届继续审议的路径，并增加咨询任务。",
+      "lead":["PER"],"support":["ARM","AZE","BGD","GRD","JAM","KAZ","KEN","KWT","MNG","KOR","SEN","TGO","UKR","TZA","VNM"],"calibrate":["CZE","CHE","LBN","POL","VNM"],"counter":["CZE","CHE"],
+      "tags":["程序出口","发还／延期","共识调控"]
+    },
+    {
+      "id":"8B.33","name":"格丁尼亚现代主义市中心","party":"波兰","from":"再次发还","to":"列入 · (iv)","mechanism":"边界必要性重判","severity":"high",
+      "change":"3组建筑未按上一届要求纳入核心区；委员会认定现有范围已能表达价值，并用程序说明及列入后管理工具控制风险。",
+      "lead":["KAZ"],"support":["ARM","AZE","BGD","GRD","JAM","KEN","KWT","LBN","MNG","PER","KOR","SEN","TGO","TUR","UKR","TZA","VNM"],"calibrate":["CHE"],"counter":[],
+      "tags":["完整性","边界重判","程序护栏"]
+    },
+    {
+      "id":"8B.34","name":"亚马孙剧院","party":"巴西","from":"一座剧院 · (iv)","to":"两座剧院 · (ii)(iv)","mechanism":"系列联系与价值重释","severity":"high",
+      "change":"委员会把共同橡胶经济、人员材料流动和地方化解释为双向文化交流，恢复贝伦组成部分并加入标准(ii)。",
+      "lead":["LBN"],"support":["ARM","AZE","GRD","JAM","KAZ","KWT","MNG","PER","POL","KOR","SEN","TGO","UKR","TZA","VNM"],"calibrate":["CHE"],"counter":["CHE"],
+      "tags":["价值重释","系列联系","标准扩张"]
+    },
+    {
+      "id":"8B.36","name":"肯尼亚山边界修改","party":"肯尼亚","from":"不按小幅修改批准","to":"按小幅修改批准","mechanism":"程序类别重判","severity":"medium",
+      "change":"15,000余公顷、约8%的扩展仍按小幅修改处理；瑞士提出并获接受的权利主体参与条款成为保护性折衷。",
+      "lead":["TZA"],"support":["AZE","JAM","KWT","MNG","SEN","TGO","TUR","UKR"],"calibrate":["CZE","CHE","TZA"],"counter":["CZE","CHE"],
+      "tags":["程序类别","先例一致性","权利主体"]
+    }
+  ],
+  "mechanism_summary": [
+    {"id":"value","label":"价值认知重构","count":6,"note":"系列联系、标准适用或属性必要性被重新解释。"},
+    {"id":"integrity","label":"真实性／完整性重判","count":5,"note":"边界、组成部分或未解决风险被判定为不再阻断本届结果。"},
+    {"id":"management","label":"管理任务后移","count":5,"note":"列入前应完成的工作转为列入后建议、报告或监测。"},
+    {"id":"procedure","label":"程序出口／类别调整","count":3,"note":"不列入改发还，或重大／小幅修改的程序类别被改写。"}
+  ],
+  "reasoning_framework": [
+    {"class":"A","label":"规则／证据高度对齐","definition":"明确援引《公约》《操作指南》、正式工作文件或咨询机构证据，且概念与材料一致。"},
+    {"class":"B","label":"有依据、但可争议","definition":"证据可识别，争点属于价值权衡、阈值判断或合理的另一种解释。"},
+    {"class":"C","label":"概念错配／依据不足","definition":"数字、类比或动机判断没有测量目标、规则或现场证据支撑。"},
+    {"class":"D","label":"记录冲突／明确纠正","definition":"与正式记录直接冲突，或在现场被权威来源明确纠正。首轮样本暂未把任何委员国论断归入D。"}
+  ],
+  "reasoning_claims": [
+    {
+      "agenda":"7","unit":"7A.27","case":"维也纳历史中心","country":"CHE","class":"A",
+      "claim":"移出濒危名录应以既定退出条件和威胁状态为判断基线；进展本身不能替代条件完成。",
+      "basis":"《操作指南》第190—191段及本届工作文件的7项DSOCR核对。",
+      "supporters":["CZE","LBN"],"correction_by":"","persistence":0,"text_uptake":0,
+      "note":"与工作文件事实链一致，但未进入最终退出结果。"
+    },
+    {
+      "agenda":"7","unit":"7A.27","case":"维也纳历史中心","country":"KEN","class":"B",
+      "claim":"第191段没有把一次新的反应性监测任务规定为移出濒危名录的形式前提。",
+      "basis":"对条文的狭义程序解释成立；但移出仍须满足‘不再受威胁’的实体条件。",
+      "supporters":[],"correction_by":"","persistence":0,"text_uptake":1,
+      "note":"规则引述准确，但不足以单独证明退出条件已经完成。"
+    },
+    {
+      "agenda":"7","unit":"7A.27","case":"维也纳历史中心","country":"BGD","class":"C",
+      "claim":"把屏幕上理解为受影响的2个对象除以约800座登记古迹，得到0.25%，据此衡量影响严重程度。",
+      "basis":"算术无误，但ICOMOS明确说明视廊、城市形态和管制区影响不能换算为单体建筑比例。",
+      "supporters":[],"correction_by":"ICOMOS","persistence":1,"text_uptake":0,
+      "note":"问题是测量构念与分母不匹配，不是2÷800的算术错误。"
+    },
+    {
+      "agenda":"7","unit":"7B.47","case":"威斯敏斯特宫","country":"POL","class":"A",
+      "claim":"HIA用于比较替代设计，是开发项目保护OUV的基本程序，不应从决定中删除。",
+      "basis":"与《操作指南》影响评估框架和工作文件的风险控制逻辑一致。",
+      "supporters":["LBN"],"correction_by":"","persistence":0,"text_uptake":1,
+      "note":"相关替代设计与HIA要求恢复到最终文本。"
+    },
+    {
+      "agenda":"8","unit":"8B.7","case":"瓦迪沃拉亚","country":"CHE","class":"A",
+      "claim":"水文设施、比较分析和完整性缺口直接关系OUV是否成立，原则上应在列入前解决。",
+      "basis":"《操作指南》第78、87—95段与IUCN评估结论。",
+      "supporters":["CZE"],"correction_by":"","persistence":0,"text_uptake":0,
+      "note":"规则与证据链清楚；委员会作了不同的阈值判断。"
+    },
+    {
+      "agenda":"8","unit":"8B.7","case":"瓦迪沃拉亚","country":"BGD","class":"B",
+      "claim":"删除标准(x)后，与阿曼形成跨国系列不再是确认标准(ix)的必要前提。",
+      "basis":"区分不同标准的证据要求，逻辑成立；但不消除标准(ix)本身的完整性缺口。",
+      "supporters":["TUR"],"correction_by":"","persistence":0,"text_uptake":1,
+      "note":"属于收窄争点后的可争议阈值判断。"
+    },
+    {
+      "agenda":"8","unit":"8B.20","case":"曼格斯套岩石清真寺","country":"CHE","class":"A",
+      "claim":"新增标准(ii)必须由明确物质属性承载，否则管理者无法识别和监测其价值。",
+      "basis":"列入标准、属性识别与后续管理之间的可追溯要求。",
+      "supporters":[],"correction_by":"","persistence":0,"text_uptake":0,
+      "note":"技术问题未被否定，但委员会仍加入标准(ii)。"
+    },
+    {
+      "agenda":"8","unit":"8B.30","case":"里贝拉萨克拉水景","country":"CHE","class":"A",
+      "claim":"若需重构价值概念、比较分析或主要范围，工作量超出发还的有限补充，应使用延期。",
+      "basis":"《操作指南》第159—160段对发还与延期的区分。",
+      "supporters":["CZE","LBN","POL"],"correction_by":"","persistence":0,"text_uptake":0,
+      "note":"最终仍采用发还，并以咨询任务维持程序出口。"
+    },
+    {
+      "agenda":"8","unit":"8B.30","case":"里贝拉萨克拉水景","country":"VNM","class":"A",
+      "claim":"‘发还该遗产按标准(v)列入’不是规范程序文字，应改为‘发还提名以完成补充工作’。",
+      "basis":"发还处理的是提名文件，不是预先承诺列入结果。",
+      "supporters":[],"correction_by":"秘书处确认","persistence":0,"text_uptake":1,
+      "note":"现场技术纠正被秘书处采纳。"
+    },
+    {
+      "agenda":"8","unit":"8B.33","case":"格丁尼亚现代主义市中心","country":"CHE","class":"B",
+      "claim":"委员会改变上一届边界要求时，应在决定中说明已审查全部可用信息并作出知情重评估。",
+      "basis":"程序透明和决定连续性的保护性说明，不等于证明边界技术问题已经消失。",
+      "supporters":[],"correction_by":"","persistence":0,"text_uptake":1,
+      "note":"文字被哈萨克斯坦接受并进入最终决定。"
+    },
+    {
+      "agenda":"8","unit":"8B.34","case":"亚马孙剧院","country":"LBN","class":"B",
+      "claim":"欧洲形式在亚马孙被地方材料、艺术家和表演文化重组，可构成标准(ii)的人类价值交流，而非单向复制。",
+      "basis":"有可识别的人员、材料和文化实践证据；是否达到‘突出’门槛属于价值判断。",
+      "supporters":["AZE","KEN","TUR"],"correction_by":"","persistence":0,"text_uptake":1,
+      "note":"该解释成为恢复两座剧院和标准(ii)的核心理由。"
+    },
+    {
+      "agenda":"8","unit":"8B.36","case":"肯尼亚山边界修改","country":"CHE","class":"A",
+      "claim":"15,000余公顷、约8%的扩展及2013年先例，要求更完整评估，不能因土地来自缓冲区就自动视为小幅修改。",
+      "basis":"IUCN评估、程序一致性与社区意见材料。",
+      "supporters":["CZE"],"correction_by":"","persistence":0,"text_uptake":0,
+      "note":"程序结论未获采纳，但权利主体参与护栏进入文本。"
+    },
+    {
+      "agenda":"8","unit":"8B.36","case":"肯尼亚山边界修改","country":"TZA","class":"B",
+      "claim":"小幅修改的关键是是否影响OUV，而非面积百分比本身；Borana已在缓冲区且增强生态连通。",
+      "basis":"《操作指南》第163段的实质判断与现场管理信息。",
+      "supporters":["JAM","KWT","MNG"],"correction_by":"","persistence":0,"text_uptake":1,
+      "note":"委员会接受小幅修改，同时增加参与护栏。"
+    },
+    {
+      "agenda":"8","unit":"8B.3","case":"塞巴斯蒂亚","country":"CZE","class":"B",
+      "claim":"紧急材料仍不足以形成全面事实和技术评估，因此发还比直接列入更稳妥。",
+      "basis":"对评估完整性的可核对关注；紧急程序本身允许在特殊威胁下缩短评估。",
+      "supporters":[],"correction_by":"","persistence":0,"text_uptake":0,
+      "note":"属于紧急保护与评估充分性之间的合理分歧。"
+    },
+    {
+      "agenda":"8","unit":"8B.3","case":"塞巴斯蒂亚","country":"TUR","class":"C",
+      "claim":"对在正面咨询建议下提出发还表示‘动机不清楚’。",
+      "basis":"现场没有证据支持对另一代表团动机的判断；其技术问题仍应按内容回应。",
+      "supporters":[],"correction_by":"","persistence":0,"text_uptake":0,
+      "note":"只编码这句动机归因，不把土耳其支持紧急保护的其他发言一并归入C。"
+    }
+  ],
+  "deliberation_time_audit": {
+    "status": "首轮可定时样本",
+    "sample_count": 7,
+    "sample_minutes": 697,
+    "burden_minutes": 192,
+    "burden_share": 27.5,
+    "burden_range": "24%—31%",
+    "clock_rule": "从技术基线介绍或主席开启实质审议起，至决定落槌止；扣除午间休会、非正式起草组离场时间，以及决定通过后的观察员和议程相关缔约国发言。",
+    "coding_note": "按可辨识讨论段编码，分钟取整。类别切换点存在约1—3分钟边界误差；‘澄清／纠偏’只有在既有规则、记录、概念或已回答事实被重新说明时才进入，不能从意见分歧反推代表不专业。",
+    "sample_design": {
+      "current_purpose": "高负荷改写案件的机制发现",
+      "current_rule": "选择跨越四类议程、具有连续视频边界、讨论负荷较高且最终决定发生实质改变的完整议题或案件。",
+      "changed_cases": 6,
+      "unchanged_controls": 0,
+      "limitations": [
+        "入选条件包含‘决定发生实质改变’，与要解释的结果相关，不能用于估计全会平均讨论质量。",
+        "议程7在全程时间中占42.5%，在现有样本中仅占16.5%；议程9—12则由5.7%放大为15.4%。",
+        "没有未改写、直接通过或低往返议题作为对照，无法判断观察到的纠偏负担是否为高争议案件特有。"
+      ],
+      "representative_redesign": {
+        "status": "首轮编码完成，待第二编码者复核",
+        "purpose": "估计议程5—12总体时间用途构成",
+        "sampling_unit_minutes": 5,
+        "context_buffer_minutes": 2,
+        "sample_minutes": 600,
+        "seed": "48COM-AGENDA5-12-V3",
+        "allocation": [
+          {"family":"5-6 战略与能力建设","minutes":140,"windows":28},
+          {"family":"7 保护状况","minutes":250,"windows":50},
+          {"family":"8 提名与列入","minutes":170,"windows":34},
+          {"family":"9-12 执行机制","minutes":40,"windows":8}
+        ],
+        "method": "在四类议程的全部2,972分钟内，先锁定分层配额与随机起点，再按约25分钟间隔系统抽取5分钟计分窗；每窗前后各读取2分钟语境但不计入分钟分母。抽样时不查看是否改写、纠偏或低产出。",
+        "weighting": "四类议程按全程分钟比例配置120个时间窗；合并总体比例时按各议程族真实时间权重还原。",
+        "quality_control": "至少12个时间窗由第二编码者盲法复核并报告Cohen’s κ；若κ低于0.70，先修订编码规则并重编码，再生成最终总体比例。"
+      }
+    },
+    "categories": [
+      {"id":"evidence","level":"L4","label":"证据基线","short":"证据","minutes":94,"color":"#214f78","definition":"世界遗产中心、咨询机构或议程相关缔约国提供直接进入判断的事实、规则与评估基线。"},
+      {"id":"substantive","level":"L3","label":"决策性实质讨论","short":"实质","minutes":230,"color":"#2b7861","definition":"围绕OUV、保护状态、标准门槛、证据权重或制度后果进行可推进结论的判断。"},
+      {"id":"procedure","level":"L2","label":"必要程序与文本","short":"程序","minutes":181,"color":"#5c6f8d","definition":"逐段审议、修正案范围、法律路径、可执行文字和形成共识所必需的程序处理。"},
+      {"id":"correction","level":"L1","label":"澄清与纠偏负担","short":"纠偏","minutes":124,"color":"#c18a34","definition":"因规则、既有决定、术语、事实基线或讨论对象未对齐而发生的再次解释和校正。"},
+      {"id":"low_yield","level":"L0","label":"重复／失焦循环","short":"低产出","minutes":68,"color":"#a84f5a","definition":"在已经获得回应后重复同一前提，或转入缺乏证据的动机判断、范围外争论，未形成新的判断或文字出口。"}
+    ],
+    "cases": [
+      {
+        "agenda":"5B","name":"咨询机构报告","phase":"战略与制度","minutes":74,"uncertainty":4,
+        "segments":{"evidence":10,"substantive":35,"procedure":15,"correction":10,"low_yield":4},
+        "note":"区域专家参与、咨询机构资源与专业独立性构成主要实质讨论；对既有资助和参与机制的再次说明形成较小澄清负担。",
+        "anchors":["LBN","CHE","CZE","WHC","AB"]
+      },
+      {
+        "agenda":"6C","name":"内罗毕成果文件后续","phase":"执行机制","minutes":135,"uncertainty":8,
+        "segments":{"evidence":12,"substantive":55,"procedure":40,"correction":18,"low_yield":10},
+        "note":"真实性方法如何从区域经验进入全球体系是有效争点；第4—5段的授权范围、既有采纳状态和时限被反复澄清，最终通过起草组形成出口。",
+        "anchors":["KEN","LBN","CZE","CHE","VNM","WHC"]
+      },
+      {
+        "agenda":"7A.27","name":"维也纳历史中心","phase":"保护状况","minutes":100,"uncertainty":6,
+        "segments":{"evidence":18,"substantive":34,"procedure":20,"correction":20,"low_yield":8},
+        "note":"退出条件、威胁是否消除和影响评估基线属于关键判断；反应性监测是否是形式前提、0.25%构念和整案／逐段通过引发较长纠偏与程序讨论。",
+        "anchors":["CHE","CZE","LBN","BGD","WHC","ICOMOS","CHAIR"]
+      },
+      {
+        "agenda":"8B.7","name":"瓦迪沃拉亚","phase":"列入","minutes":79,"uncertainty":5,
+        "segments":{"evidence":12,"substantive":30,"procedure":18,"correction":13,"low_yield":6},
+        "note":"标准(ix)、完整性和水文设施是实质核心；标准(ix)/(x)、跨国系列、边界修改与临场修正范围需要多轮拆分说明。",
+        "anchors":["BGD","CHE","CZE","JAM","IUCN","CHAIR"]
+      },
+      {
+        "agenda":"8B.30","name":"里贝拉萨克拉水景","phase":"列入","minutes":124,"uncertainty":8,
+        "segments":{"evidence":20,"substantive":42,"procedure":34,"correction":18,"low_yield":10},
+        "note":"OUV、比较分析与标准(v)形成高密度技术争论；‘独特’与‘突出范例’、发还与延期的边界被反复校正，午间暂停后才形成补报出口。",
+        "anchors":["CHE","CZE","LBN","POL","VNM","PER","ICOMOS","WHC"]
+      },
+      {
+        "agenda":"10","name":"《操作指南》第五章及附件7","phase":"执行机制","minutes":93,"uncertainty":7,
+        "segments":{"evidence":15,"substantive":18,"procedure":25,"correction":22,"low_yield":13},
+        "note":"两年反思和384份答复的既有磋商过程在会场才被重新说明；超出本项授权的开放式工作组建议又需法律顾问解释组成、权限、期限和资源。",
+        "anchors":["BGD","SEN","CZE","CHE","LBN","POL","WHC","LEGAL"]
+      },
+      {
+        "agenda":"15","name":"第49届会议临时议程","phase":"执行机制","minutes":92,"uncertainty":7,
+        "segments":{"evidence":7,"substantive":16,"procedure":29,"correction":23,"low_yield":17},
+        "note":"议程10刚讨论过的《操作指南》检视在新议程下再次展开；正式议程、工作文件、预期产出和规则20会期咨询小组之间的关系需多轮澄清后形成折衷。",
+        "anchors":["VNM","BGD","SEN","KEN","TZA","CHE","CZE","LBN","POL","WHC","CHAIR"]
+      }
+    ],
+    "role_threads": [
+      {
+        "id":"substantive","label":"推动关键判断","note":"直接把讨论拉到技术标准、证据门槛或制度后果。",
+        "actors":[
+          {"code":"AB","label":"咨询机构","count":7,"detail":"提供OUV、完整性、评估与程序边界的专业基线。"},
+          {"code":"CHE","label":"瑞士","count":5,"detail":"在维也纳、瓦迪沃拉亚、里贝拉萨克拉等案持续追问规则和证据连续性。"},
+          {"code":"CZE","label":"捷克","count":4,"detail":"多次把讨论拉回评估充分性、先例一致性和可执行范围。"},
+          {"code":"LBN","label":"黎巴嫩","count":4,"detail":"利用跨届制度记忆区分已处理事项、真实缺口与可接受折衷。"},
+          {"code":"POL","label":"波兰","count":3,"detail":"在影响评估、延期／发还与规则检视范围上提出可核对问题。"}
+        ]
+      },
+      {
+        "id":"trigger","label":"触发澄清负担","note":"提出的问题或前提需要全会重新解释既有规则、记录或讨论对象；不等于该方全部发言无效。",
+        "actors":[
+          {"code":"BGD","label":"孟加拉国","count":3,"detail":"涉及维也纳0.25%测量构念、议程10既有磋商过程及议程15制度路径。"},
+          {"code":"VNM","label":"越南","count":2,"detail":"一项是议程15笼统议程入口需被界定；另一项同时产生了里贝拉萨克拉程序文字的有效校正。"},
+          {"code":"SEN","label":"塞内加尔","count":2,"detail":"议程10、15两次推动更广泛规则检视，需重新界定授权、期限和成果。"},
+          {"code":"KEN","label":"肯尼亚","count":2,"detail":"在区域方法全球化和规则检视中推动更强授权，也促使程序边界被展开说明。"},
+          {"code":"TZA","label":"坦桑尼亚","count":1,"detail":"支持规则检视入口，讨论随后转向如何识别具体条款和工作方法。"}
+        ]
+      },
+      {
+        "id":"correct","label":"承担澄清与纠偏","note":"回答规则、术语、证据或程序疑问，把讨论重新锚定到可决策范围。",
+        "actors":[
+          {"code":"WHC","label":"中心／法律顾问","count":7,"detail":"说明既有授权、磋商记录、正式议程要求、规则20及程序文字。"},
+          {"code":"AB","label":"咨询机构","count":5,"detail":"区分标准、属性、完整性、影响评估与发还／延期边界。"},
+          {"code":"CHAIR","label":"主席／报告员","count":4,"detail":"核对争点、重述程序选择并将修正案转化为可审议文本。"},
+          {"code":"CHE","label":"瑞士","count":4,"detail":"以规则、工作文件和先例校准讨论范围。"},
+          {"code":"CZE","label":"捷克","count":3,"detail":"指出重复授权、评估缺口和过宽议程的制度成本。"}
+        ]
+      },
+      {
+        "id":"close","label":"形成程序出口","note":"通过文字折衷、起草组、咨询小组或主席收束，使议题离开循环。",
+        "actors":[
+          {"code":"CHAIR","label":"主席／报告员","count":7,"detail":"决定暂停、逐段处理、确认共识或把折衷送交通过。"},
+          {"code":"WHC","label":"中心／法律顾问","count":5,"detail":"提供可执行法律路径和文本结构。"},
+          {"code":"LBN","label":"黎巴嫩","count":4,"detail":"多次将原则冲突转为范围、时限和措辞上的可接受折衷。"},
+          {"code":"VNM","label":"越南","count":3,"detail":"在6C和里贝拉萨克拉提出程序文字或折衷方向；议程15接受规则20出口。"},
+          {"code":"CHE","label":"瑞士","count":2,"detail":"接受保护性说明或会期咨询小组作为受控出口。"}
+        ]
+      }
+    ],
+    "pressure_signals": [
+      {"type":"暂停／改日续议","count":4,"cases":["6C","7B.9 亨比","7B.80 贝加尔湖","8B.30 里贝拉萨克拉"],"note":"讨论无法在原时段形成可执行文本，转入起草、午间磋商或下一日。"},
+      {"type":"先落槌／整案收束","count":2,"cases":["5D SIDS战略","7A.27 维也纳"],"note":"5D为决定通过后再完成余下发言；7A.27为主席在明确提及时间与议程压力后将大幅修正文本整案收束，随后出现决定后抽离声明。两案的具体程序不同，仅共享“时间压力改变程序出口”这一可观察特征。"},
+      {"type":"超过口译时段","count":1,"cases":["15 第49届临时议程"],"note":"讨论延续至原定口译服务结束时间之后，说明程序争论已占用额外会议资源。"}
+    ]
+  },
+  "sources": [
+    {"label":"《保护世界文化和自然遗产公约》","url":"https://whc.unesco.org/en/conventiontext"},
+    {"label":"《操作指南》2025版","url":"https://whc.unesco.org/document/222376"},
+    {"label":"48COM文件页","url":"https://whc.unesco.org/en/sessions/48COM/documents/"},
+    {"label":"48COM议程8B主工作文件","url":"https://whc.unesco.org/document/226095"},
+    {"label":"48COM ICOMOS评估","url":"https://whc.unesco.org/document/226090"},
+    {"label":"48COM IUCN评估","url":"https://whc.unesco.org/document/226092"},
+    {"label":"48COM正式修正案与REV文件","url":"https://whc.unesco.org/en/sessions/48COM/documents/"}
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "status": "议程5—12全量普查·混合证据层级",
+  "scope": "48COM议程5—12；委员国连续占用发言席计一回合。主席、报告员、秘书处、咨询机构以及决定通过后的观察员和议程相关缔约国声明不计。",
+  "unit_note": "议程5—7使用逐项纪要核定值；议程8为直播纪要可识别下限；议程9—12依据官方视频字幕中的主席点名、连续发言和决定边界重建。后两类只作下限，不以自动字幕评价发言质量。",
+  "source_url": "https://whc.unesco.org/en/sessions/48COM/records/",
+  "video_sessions": 19,
+  "grand_total": 625,
+  "agenda_items": 14,
+  "committee_members": 21,
+  "evidence_counts": {
+    "逐项纪要核定": 7,
+    "全议程逐项核定": 1,
+    "直播纪要下限": 1,
+    "官方字幕重建下限": 3,
+    "官方字幕核对": 1,
+    "官方字幕＋早期纪要": 1
+  },
+  "families": [
+    {
+      "family": "5-6 战略与能力建设",
+      "member_turns": 162,
+      "member_turn_share": 25.9,
+      "items": 7,
+      "active_members": 21
+    },
+    {
+      "family": "7 保护状况",
+      "member_turns": 210,
+      "member_turn_share": 33.6,
+      "items": 1,
+      "active_members": 21
+    },
+    {
+      "family": "8 提名与列入",
+      "member_turns": 186,
+      "member_turn_share": 29.8,
+      "items": 1,
+      "active_members": 21
+    },
+    {
+      "family": "9-12 执行机制",
+      "member_turns": 67,
+      "member_turn_share": 10.7,
+      "items": 5,
+      "active_members": 18
+    }
+  ],
+  "items": [
+    {
+      "agenda": "5A",
+      "label": "世界遗产中心活动报告",
+      "family": "5-6 战略与能力建设",
+      "member_turns": 37,
+      "active_members": 21,
+      "country_turns": {
+        "ARM": 1,
+        "AZE": 1,
+        "BGD": 1,
+        "CZE": 3,
+        "GRD": 3,
+        "JAM": 2,
+        "KAZ": 2,
+        "KEN": 4,
+        "KWT": 1,
+        "LBN": 3,
+        "MNG": 1,
+        "PER": 2,
+        "POL": 1,
+        "KOR": 1,
+        "SEN": 2,
+        "CHE": 2,
+        "TGO": 1,
+        "TUR": 1,
+        "UKR": 1,
+        "TZA": 2,
+        "VNM": 2
+      },
+      "minutes": 206,
+      "evidence": "逐项纪要核定",
+      "focus": "治理、资源与制度连续性",
+      "note": ""
+    },
+    {
+      "agenda": "5B",
+      "label": "咨询机构报告",
+      "family": "5-6 战略与能力建设",
+      "member_turns": 25,
+      "active_members": 15,
+      "country_turns": {
+        "ARM": 2,
+        "AZE": 2,
+        "CZE": 3,
+        "JAM": 1,
+        "LBN": 2,
+        "MNG": 2,
+        "POL": 1,
+        "KOR": 1,
+        "SEN": 1,
+        "CHE": 1,
+        "TGO": 2,
+        "TUR": 2,
+        "UKR": 2,
+        "TZA": 1,
+        "VNM": 2
+      },
+      "minutes": 74,
+      "evidence": "逐项纪要核定",
+      "focus": "咨询机制与区域参与",
+      "note": ""
+    },
+    {
+      "agenda": "5C",
+      "label": "第六项战略目标",
+      "family": "5-6 战略与能力建设",
+      "member_turns": 20,
+      "active_members": 13,
+      "country_turns": {
+        "ARM": 1,
+        "AZE": 1,
+        "CZE": 2,
+        "KEN": 4,
+        "LBN": 2,
+        "POL": 1,
+        "KOR": 1,
+        "SEN": 1,
+        "CHE": 2,
+        "TGO": 1,
+        "TUR": 1,
+        "UKR": 2,
+        "TZA": 1
+      },
+      "minutes": 91,
+      "evidence": "逐项纪要核定",
+      "focus": "合作与制度目标",
+      "note": ""
+    },
+    {
+      "agenda": "5D",
+      "label": "全球战略实施进展",
+      "family": "5-6 战略与能力建设",
+      "member_turns": 21,
+      "active_members": 15,
+      "country_turns": {
+        "ARM": 1,
+        "AZE": 1,
+        "CZE": 1,
+        "GRD": 2,
+        "JAM": 1,
+        "KEN": 1,
+        "PER": 1,
+        "POL": 2,
+        "KOR": 2,
+        "SEN": 2,
+        "CHE": 1,
+        "TGO": 1,
+        "UKR": 2,
+        "TZA": 2,
+        "VNM": 1
+      },
+      "minutes": 80,
+      "evidence": "逐项纪要核定",
+      "focus": "代表性、真实性与方法",
+      "note": ""
+    },
+    {
+      "agenda": "6A",
+      "label": "能力建设战略",
+      "family": "5-6 战略与能力建设",
+      "member_turns": 0,
+      "active_members": 0,
+      "country_turns": {},
+      "minutes": 18,
+      "evidence": "逐项纪要核定",
+      "focus": "无委员国介入",
+      "note": "报告后无可识别委员国发言回合。"
+    },
+    {
+      "agenda": "6B",
+      "label": "二类中心实施报告",
+      "family": "5-6 战略与能力建设",
+      "member_turns": 4,
+      "active_members": 3,
+      "country_turns": {
+        "CZE": 1,
+        "SEN": 2,
+        "TZA": 1
+      },
+      "minutes": 58,
+      "evidence": "逐项纪要核定",
+      "focus": "机构网络与区域能力",
+      "note": ""
+    },
+    {
+      "agenda": "6C",
+      "label": "内罗毕成果文件后续",
+      "family": "5-6 战略与能力建设",
+      "member_turns": 55,
+      "active_members": 19,
+      "country_turns": {
+        "ARM": 2,
+        "AZE": 2,
+        "CZE": 6,
+        "GRD": 2,
+        "JAM": 2,
+        "KAZ": 1,
+        "KEN": 7,
+        "KWT": 1,
+        "LBN": 8,
+        "PER": 1,
+        "POL": 5,
+        "KOR": 1,
+        "SEN": 2,
+        "CHE": 4,
+        "TGO": 1,
+        "TUR": 4,
+        "UKR": 3,
+        "TZA": 1,
+        "VNM": 2
+      },
+      "minutes": 159,
+      "evidence": "逐项纪要核定",
+      "focus": "非洲优先、合作与规范发展",
+      "note": ""
+    },
+    {
+      "agenda": "7",
+      "label": "保护状况",
+      "family": "7 保护状况",
+      "member_turns": 210,
+      "active_members": 21,
+      "country_turns": {},
+      "minutes": 1262,
+      "evidence": "全议程逐项核定",
+      "focus": "保护判断、任务修订与程序出口",
+      "note": "210回合为18个审议单元合计；逐国权重保留在议程7专题页，本表仅用于议程份额。"
+    },
+    {
+      "agenda": "8",
+      "label": "提名与列入",
+      "family": "8 提名与列入",
+      "member_turns": 186,
+      "active_members": 21,
+      "country_turns": {
+        "ARM": 6,
+        "AZE": 6,
+        "BGD": 9,
+        "CZE": 11,
+        "GRD": 7,
+        "JAM": 8,
+        "KAZ": 12,
+        "KEN": 7,
+        "KWT": 12,
+        "LBN": 10,
+        "MNG": 8,
+        "PER": 11,
+        "POL": 10,
+        "KOR": 6,
+        "SEN": 10,
+        "CHE": 12,
+        "TGO": 6,
+        "TUR": 10,
+        "UKR": 8,
+        "TZA": 11,
+        "VNM": 6
+      },
+      "minutes": 854,
+      "evidence": "直播纪要下限",
+      "focus": "价值、真实性、完整性与列入等级",
+      "note": "186回合是11个出现委员国行动的有效审议单元下限；快速通过项目仍计入全议程覆盖。"
+    },
+    {
+      "agenda": "9A",
+      "label": "第四轮定期报告",
+      "family": "9-12 执行机制",
+      "member_turns": 3,
+      "active_members": 3,
+      "country_turns": {
+        "TZA": 1,
+        "JAM": 1,
+        "SEN": 1
+      },
+      "minutes": 18,
+      "evidence": "官方字幕重建下限",
+      "focus": "报告周期、区域行动计划与能力建设",
+      "note": ""
+    },
+    {
+      "agenda": "9B",
+      "label": "区域框架行动计划",
+      "family": "9-12 执行机制",
+      "member_turns": 7,
+      "active_members": 7,
+      "country_turns": {
+        "MNG": 1,
+        "KAZ": 1,
+        "VNM": 1,
+        "KOR": 1,
+        "JAM": 1,
+        "PER": 1,
+        "GRD": 1
+      },
+      "minutes": 35,
+      "evidence": "官方字幕重建下限",
+      "focus": "亚太与拉美加勒比区域实施",
+      "note": ""
+    },
+    {
+      "agenda": "10",
+      "label": "《操作指南》第五章及附件7",
+      "family": "9-12 执行机制",
+      "member_turns": 53,
+      "active_members": 16,
+      "country_turns": {
+        "BGD": 7,
+        "CZE": 7,
+        "POL": 5,
+        "CHE": 5,
+        "LBN": 4,
+        "SEN": 4,
+        "JAM": 3,
+        "MNG": 3,
+        "KEN": 2,
+        "GRD": 2,
+        "VNM": 2,
+        "ARM": 2,
+        "PER": 2,
+        "TZA": 2,
+        "KOR": 2,
+        "UKR": 1
+      },
+      "minutes": 93,
+      "evidence": "官方字幕重建下限",
+      "focus": "定期报告规则与开放式工作组授权",
+      "note": "主席点名与连续占用发言席保守计数；无声举牌不折算发言。"
+    },
+    {
+      "agenda": "11",
+      "label": "国际援助",
+      "family": "9-12 执行机制",
+      "member_turns": 0,
+      "active_members": 0,
+      "country_turns": {},
+      "minutes": 9,
+      "evidence": "官方字幕核对",
+      "focus": "四项援助申请",
+      "note": "报告后无委员国评论，四项申请直接进入通过程序。"
+    },
+    {
+      "agenda": "12",
+      "label": "世界遗产基金与预算",
+      "family": "9-12 执行机制",
+      "member_turns": 4,
+      "active_members": 4,
+      "country_turns": {
+        "CZE": 1,
+        "KAZ": 1,
+        "TUR": 1,
+        "UKR": 1
+      },
+      "minutes": 15,
+      "evidence": "官方字幕＋早期纪要",
+      "focus": "预算工作组设立与报告",
+      "note": "只计全会；闭会期间预算工作组内部发言没有公开逐字时间线。"
+    }
+  ],
+  "overall_analysis": {
+    "headline": {
+      "agenda_7_8_turns": 396,
+      "agenda_7_8_share": 63.4,
+      "agenda_10_family_share": 79.1,
+      "zero_floor_items": [
+        "6A",
+        "11"
+      ],
+      "iterative_items": [
+        "6C",
+        "7",
+        "8",
+        "10"
+      ]
+    },
+    "reach_density": [
+      {
+        "agenda": "5A",
+        "label": "世界遗产中心活动报告",
+        "family": "5-6 战略与能力建设",
+        "member_turns": 37,
+        "active_members": 21,
+        "turns_per_active": 1.76,
+        "reentry_turns": 16,
+        "evidence": "逐项纪要核定"
+      },
+      {
+        "agenda": "5B",
+        "label": "咨询机构报告",
+        "family": "5-6 战略与能力建设",
+        "member_turns": 25,
+        "active_members": 15,
+        "turns_per_active": 1.67,
+        "reentry_turns": 10,
+        "evidence": "逐项纪要核定"
+      },
+      {
+        "agenda": "5C",
+        "label": "第六项战略目标",
+        "family": "5-6 战略与能力建设",
+        "member_turns": 20,
+        "active_members": 13,
+        "turns_per_active": 1.54,
+        "reentry_turns": 7,
+        "evidence": "逐项纪要核定"
+      },
+      {
+        "agenda": "5D",
+        "label": "全球战略实施进展",
+        "family": "5-6 战略与能力建设",
+        "member_turns": 21,
+        "active_members": 15,
+        "turns_per_active": 1.4,
+        "reentry_turns": 6,
+        "evidence": "逐项纪要核定"
+      },
+      {
+        "agenda": "6A",
+        "label": "能力建设战略",
+        "family": "5-6 战略与能力建设",
+        "member_turns": 0,
+        "active_members": 0,
+        "turns_per_active": null,
+        "reentry_turns": 0,
+        "evidence": "逐项纪要核定"
+      },
+      {
+        "agenda": "6B",
+        "label": "二类中心实施报告",
+        "family": "5-6 战略与能力建设",
+        "member_turns": 4,
+        "active_members": 3,
+        "turns_per_active": 1.33,
+        "reentry_turns": 1,
+        "evidence": "逐项纪要核定"
+      },
+      {
+        "agenda": "6C",
+        "label": "内罗毕成果文件后续",
+        "family": "5-6 战略与能力建设",
+        "member_turns": 55,
+        "active_members": 19,
+        "turns_per_active": 2.89,
+        "reentry_turns": 36,
+        "evidence": "逐项纪要核定"
+      },
+      {
+        "agenda": "7",
+        "label": "保护状况",
+        "family": "7 保护状况",
+        "member_turns": 210,
+        "active_members": 21,
+        "turns_per_active": 10.0,
+        "reentry_turns": 189,
+        "evidence": "全议程逐项核定"
+      },
+      {
+        "agenda": "8",
+        "label": "提名与列入",
+        "family": "8 提名与列入",
+        "member_turns": 186,
+        "active_members": 21,
+        "turns_per_active": 8.86,
+        "reentry_turns": 165,
+        "evidence": "直播纪要下限"
+      },
+      {
+        "agenda": "9A",
+        "label": "第四轮定期报告",
+        "family": "9-12 执行机制",
+        "member_turns": 3,
+        "active_members": 3,
+        "turns_per_active": 1.0,
+        "reentry_turns": 0,
+        "evidence": "官方字幕重建下限"
+      },
+      {
+        "agenda": "9B",
+        "label": "区域框架行动计划",
+        "family": "9-12 执行机制",
+        "member_turns": 7,
+        "active_members": 7,
+        "turns_per_active": 1.0,
+        "reentry_turns": 0,
+        "evidence": "官方字幕重建下限"
+      },
+      {
+        "agenda": "10",
+        "label": "《操作指南》第五章及附件7",
+        "family": "9-12 执行机制",
+        "member_turns": 53,
+        "active_members": 16,
+        "turns_per_active": 3.31,
+        "reentry_turns": 37,
+        "evidence": "官方字幕重建下限"
+      },
+      {
+        "agenda": "11",
+        "label": "国际援助",
+        "family": "9-12 执行机制",
+        "member_turns": 0,
+        "active_members": 0,
+        "turns_per_active": null,
+        "reentry_turns": 0,
+        "evidence": "官方字幕核对"
+      },
+      {
+        "agenda": "12",
+        "label": "世界遗产基金与预算",
+        "family": "9-12 执行机制",
+        "member_turns": 4,
+        "active_members": 4,
+        "turns_per_active": 1.0,
+        "reentry_turns": 0,
+        "evidence": "官方字幕＋早期纪要"
+      }
+    ],
+    "concentration": [
+      {
+        "family": "5-6 战略与能力建设",
+        "family_turns": 162,
+        "items": [
+          {
+            "agenda": "6C",
+            "label": "内罗毕成果文件后续",
+            "member_turns": 55,
+            "share": 34.0
+          },
+          {
+            "agenda": "5A",
+            "label": "世界遗产中心活动报告",
+            "member_turns": 37,
+            "share": 22.8
+          },
+          {
+            "agenda": "5B",
+            "label": "咨询机构报告",
+            "member_turns": 25,
+            "share": 15.4
+          },
+          {
+            "agenda": "5D",
+            "label": "全球战略实施进展",
+            "member_turns": 21,
+            "share": 13.0
+          },
+          {
+            "agenda": "5C",
+            "label": "第六项战略目标",
+            "member_turns": 20,
+            "share": 12.3
+          },
+          {
+            "agenda": "6B",
+            "label": "二类中心实施报告",
+            "member_turns": 4,
+            "share": 2.5
+          },
+          {
+            "agenda": "6A",
+            "label": "能力建设战略",
+            "member_turns": 0,
+            "share": 0.0
+          }
+        ]
+      },
+      {
+        "family": "9-12 执行机制",
+        "family_turns": 67,
+        "items": [
+          {
+            "agenda": "10",
+            "label": "《操作指南》第五章及附件7",
+            "member_turns": 53,
+            "share": 79.1
+          },
+          {
+            "agenda": "9B",
+            "label": "区域框架行动计划",
+            "member_turns": 7,
+            "share": 10.4
+          },
+          {
+            "agenda": "12",
+            "label": "世界遗产基金与预算",
+            "member_turns": 4,
+            "share": 6.0
+          },
+          {
+            "agenda": "9A",
+            "label": "第四轮定期报告",
+            "member_turns": 3,
+            "share": 4.5
+          },
+          {
+            "agenda": "11",
+            "label": "国际援助",
+            "member_turns": 0,
+            "share": 0.0
+          }
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "id": "direct",
+        "label": "报告后直接进入决定",
+        "agendas": [
+          "6A",
+          "11"
+        ],
+        "definition": "报告或申请介绍后，没有可识别的委员国发言回合。这里只说明全会发言席状态，不等于事项不重要。"
+      },
+      {
+        "id": "single",
+        "label": "小范围、近单轮介入",
+        "agendas": [
+          "6B",
+          "9A",
+          "9B",
+          "12"
+        ],
+        "definition": "参与方不超过7国，平均每个参与国约1次发言，主要表现为有限补充、立场确认或程序启动。"
+      },
+      {
+        "id": "broad",
+        "label": "广覆盖、有限复取",
+        "agendas": [
+          "5A",
+          "5B",
+          "5C",
+          "5D"
+        ],
+        "definition": "13—21国进入讨论，但平均每国少于2个回合，呈现广泛表达而非高频往返。"
+      },
+      {
+        "id": "iterative",
+        "label": "反复协商与改写",
+        "agendas": [
+          "6C",
+          "7",
+          "8",
+          "10"
+        ],
+        "definition": "16—21国参与，且平均每个参与国至少约2.9个回合，显示同一议程中多次重新取得发言席。"
+      }
+    ],
+    "findings": [
+      {
+        "value": "63.4%",
+        "title": "全会发言重心集中于议程7—8",
+        "text": "保护状况与提名列入合计396回合。高占比说明委员会资源主要投入个案判断与结果形成，不自动说明讨论质量更高。"
+      },
+      {
+        "value": "79.1%",
+        "title": "执行机制讨论由议程10主导",
+        "text": "议程10占9—12组53个回合中的79.1%，表明规则修订和工作组授权是后期执行机制议程的主要讨论节点。"
+      },
+      {
+        "value": "2种",
+        "title": "低发言量至少有两种制度状态",
+        "text": "6A、11没有委员国介入；9A、9B、12则是少数国家各发言一次。前者接近直接通过，后者仍保留有限的立场或程序输入。"
+      }
+    ]
+  },
+  "coverage_audit": {
+    "verified_turns": 372,
+    "lower_bound_turns": 253,
+    "verified_scope": "议程5—7：逐项纪要与现场记录核定。",
+    "lower_bound_scope": "议程8及9—12：直播纪要与官方字幕重建，只计能确认身份的连续发言席。",
+    "recoverable": [
+      "议程8中字幕未识别或发言者身份不确定的发言，可继续通过视频与席位核对补录。",
+      "议程9—12中无声举牌或自动字幕丢失国名的片段，可在能核定身份时补入。"
+    ],
+    "deliberate_exclusions": [
+      "主席、报告员、秘书处与咨询机构的制度角色发言。",
+      "决定通过后的观察员、议程相关缔约国与委员国国家答辩；议程7另有14回合被单列为国家回应。",
+      "闭会期间预算工作组没有公开逐字时间线，不从全会视频推算。",
+      "只加入共同文本而未独立发言的行动，作为文本作用统计，不算发言回合。"
+    ]
+  },
+  "boundary_time_audit": {
+    "status": "19场官方视频的议程边界计时",
+    "agenda_units": 14,
+    "total_minutes": 2972,
+    "uncertainty_minutes": 75,
+    "deep_coded_minutes": 605,
+    "deep_coded_share": 20.4,
+    "families": [
+      {
+        "family": "5-6 战略与能力建设",
+        "minutes": 686,
+        "share": 23.1
+      },
+      {
+        "family": "7 保护状况",
+        "minutes": 1262,
+        "share": 42.5
+      },
+      {
+        "family": "8 提名与列入",
+        "minutes": 854,
+        "share": 28.7
+      },
+      {
+        "family": "9-12 执行机制",
+        "minutes": 170,
+        "share": 5.7
+      }
+    ],
+    "method": "以主席宣布开启、恢复、转入或结束议程为边界；跨日议程累加，扣除明确休会与闭会起草组时间。",
+    "caution": "边界计时回答‘议程占用了多少全会时间’；现有605分钟是六个高负荷、实质改写案例的机制样本，只回答这些案件中‘时间具体用于什么’，不将其比例外推为全程比例。"
+  }
+}
