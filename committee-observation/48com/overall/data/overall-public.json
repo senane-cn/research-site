@@ -1,0 +1,1380 @@
+{
+  "schema_version": "0.7.0",
+  "status": "48COM全程总览公众公示页数据",
+  "updated_at": "2026-08-10",
+  "language": "zh-CN",
+  "title": "48COM 世界遗产大会议程数据分析",
+  "scope": "在现有阶段结构化数据和方法说明基础上，已完成议程7、8二十个上会修订决定的第一轮可执行性全样本审计；其中4案逐段重建、16案建立正式文本与现场通过证据链。官方决定汇编尚未发布，发布后仍需交叉核对。",
+  "prohibitions": [
+    "不推断政治交易、幕后动机或长期国家关系",
+    "不生成国家综合排名或专业水平评分",
+    "专业判断只在具体论断和案件层面编码",
+    "把研究进度与决定内容分开标记：‘官方决定汇编尚未发布’不等于‘研究待完成’，决定是否明确只按已经确认通过的文本判定"
+  ],
+  "evidence_classes": {
+    "direct_fact": "直接事实",
+    "supported_analysis": "有依据的分析",
+    "not_established": "现有证据尚不能证明"
+  },
+  "element_statuses": {
+    "explicit_current": "决定明确",
+    "partial_current": "决定部分明确",
+    "not_verified": "研究待完成",
+    "not_stated_confirmed": "决定未明确",
+    "not_applicable": "不适用"
+  },
+  "official_compilation_statuses": {
+    "not_published": "官方决定汇编尚未发布",
+    "published_not_checked": "官方决定汇编已发布、尚未核对",
+    "verified": "官方决定已经逐项核对"
+  },
+  "onsite_text_statuses": {
+    "pending": "现场通过文本待重建",
+    "partial": "现场通过文本部分重建",
+    "verified": "现场通过文本已完整重建并确认通过（待官方汇编交叉核对）"
+  },
+  "closure_depth": [
+    {
+      "id": "task_formed",
+      "label": "任务形成",
+      "question": "决定是否把问题转成明确行动、责任主体和时间节点？",
+      "boundary": "只能说明任务可执行，不等于已经发生效果。"
+    },
+    {
+      "id": "feedback_defined",
+      "label": "反馈回流",
+      "question": "决定是否规定用什么证据、由谁在何时核验并公开回到委员会？",
+      "boundary": "提交报告不自动等于完成任务；仍需识别核验标准。"
+    },
+    {
+      "id": "redecision_defined",
+      "label": "再决策出口",
+      "question": "核验结果是否对应复审、采纳、调整、升级保护响应或其他后续处置？",
+      "boundary": "这是闭环最强的一层；没有完整重建的现场通过文本、官方决定或后续届次材料时，通常只能核对设计，不能证明实际闭合。"
+    }
+  ],
+  "closure_models": [
+    {
+      "id": "strategy_policy",
+      "label": "战略与政策",
+      "short_label": "战略",
+      "applies_to": "全球战略、能力建设、区域成果和公约政策方向",
+      "action_test": "是否把目标转成计划、指南、指标、综合建议或其他可交付成果",
+      "actor_test": "中心、咨询机构、区域伙伴、专家组与缔约国分工是否可辨",
+      "time_test": "是否设置形成成果、阶段报告或委员会复审节点",
+      "verification_test": "是否以指标、交付物、实施报告或独立评估检验进展",
+      "feedback_endpoint": "委员会审议成果并采纳、整合、修订或续期",
+      "prototype_cases": [
+        "6C 内罗毕成果文件后续"
+      ]
+    },
+    {
+      "id": "rule_mechanism",
+      "label": "规则与执行机制",
+      "short_label": "机制",
+      "applies_to": "《操作指南》修订、工作组授权、程序与机构安排",
+      "action_test": "是否明确要起草、咨询、试行或修订的规则对象",
+      "actor_test": "工作组组成、授权范围、秘书处／法律顾问支持与资源是否明确",
+      "time_test": "是否规定咨询、交付和提交委员会的期限",
+      "verification_test": "是否核对合法性、可行性、资源影响和利益相关方意见",
+      "feedback_endpoint": "委员会再次审议并采纳、退回或修改制度文本",
+      "prototype_cases": [
+        "10 《操作指南》第五章及附件7"
+      ]
+    },
+    {
+      "id": "resource_finance",
+      "label": "资源与财务安排",
+      "short_label": "资源",
+      "applies_to": "基金、专门账户、预算、筹资和资源配置",
+      "action_test": "资金来源、载体、受益对象和用途规则是否明确",
+      "actor_test": "管理、筹资、拨付、使用和监督责任是否区分",
+      "time_test": "是否有筹资、拨付、财务报告或预算复审周期",
+      "verification_test": "是否要求财务报告、绩效信息、审计或可追踪支出",
+      "feedback_endpoint": "根据资金与成效信息续筹、调整用途、纠偏或终止",
+      "prototype_cases": [
+        "5D SIDS专门子账户"
+      ]
+    },
+    {
+      "id": "site_conservation",
+      "label": "具体遗产保护",
+      "short_label": "保护",
+      "applies_to": "保护状况、纠正措施、列危／移出列危和开发影响",
+      "action_test": "是否从OUV风险、DSOCR或保护问题导出具体保护任务",
+      "actor_test": "缔约国、遗产管理方、任务团和咨询机构责任是否明确",
+      "time_test": "是否有任务、HIA／SEA、进展报告和再次审议期限",
+      "verification_test": "是否由报告、任务团、影响评估或咨询机构意见核验",
+      "feedback_endpoint": "继续监测、调整任务、列危／维持列危、移出或强化保护响应",
+      "prototype_cases": [
+        "7A.27 维也纳",
+        "7B.47 威斯敏斯特",
+        "7B.70 孙德尔本斯"
+      ]
+    },
+    {
+      "id": "nomination_followup",
+      "label": "提名、列入与列入后任务",
+      "short_label": "列入",
+      "applies_to": "列入、发还、延期、边界修改及列入后补充任务",
+      "action_test": "价值、完整性、边界、保护和管理缺口是否转成前置或后续任务",
+      "actor_test": "缔约国、管理机构与咨询机构复核角色是否明确",
+      "time_test": "是否规定补交、重报、列入后报告或保护状况审议节点",
+      "verification_test": "是否以修订提名、地图、法规、管理计划、任务或咨询机构复核检验",
+      "feedback_endpoint": "重新提名／发还复核、延期后重审、列入后监测或转入保护状况程序",
+      "prototype_cases": [
+        "8B.14 罗萨斯列入后任务"
+      ]
+    }
+  ],
+  "time_baseline": {
+    "agenda_minutes": 2972,
+    "uncertainty_minutes": 75,
+    "agenda_units": 14,
+    "member_turns_lower_bound": 625,
+    "verified_turns": 372,
+    "lower_bound_turns": 253,
+    "families": [
+      {
+        "id": "strategy",
+        "label": "5—6 战略与能力建设",
+        "minutes": 686,
+        "share": 23.1
+      },
+      {
+        "id": "soc",
+        "label": "7 保护状况",
+        "minutes": 1262,
+        "share": 42.5
+      },
+      {
+        "id": "nomination",
+        "label": "8 提名与列入",
+        "minutes": 854,
+        "share": 28.7
+      },
+      {
+        "id": "implementation",
+        "label": "9—12 执行机制",
+        "minutes": 170,
+        "share": 5.7
+      }
+    ],
+    "samples": [
+      {
+        "id": "boundary",
+        "label": "全议程边界计时",
+        "minutes": 2972,
+        "role": "回答议程占用多少全会时间",
+        "readiness": "public_candidate",
+        "boundary": "约略边界计时，不回答每分钟的质量。"
+      },
+      {
+        "id": "balanced",
+        "label": "分层5分钟窗",
+        "minutes": 600,
+        "role": "首轮估计总体时间用途",
+        "readiness": "hold",
+        "boundary": "仅抽取字幕密集的合格窗，且尚无第二编码者复核；10%只作首轮敏感值。"
+      },
+      {
+        "id": "long",
+        "label": "60分钟以上长议题",
+        "minutes": 1353,
+        "role": "解释高负荷议题的机制",
+        "readiness": "case_only",
+        "boundary": "按时长盲选但不是概率样本，不外推全会平均。"
+      },
+      {
+        "id": "legacy",
+        "label": "原结果富集样本",
+        "minutes": 605,
+        "role": "选样敏感性记录",
+        "readiness": "internal_only",
+        "boundary": "入选条件包含决定改变，不能估计全会总体。"
+      }
+    ]
+  },
+  "decision_executability": [
+    {
+      "case_id": "d-5d-sids",
+      "closure_type": "resource_finance",
+      "agenda": "5D",
+      "case_zh": "SIDS专门子账户与财务报告",
+      "importance_reason": "新增筹资载体并引入后续财务报告，直接检验制度决定能否落到责任和核验。",
+      "source_review": {
+        "official_status": "not_published",
+        "onsite_text_status": "verified",
+        "current_basis": "原工作文件、正式修正案、现场屏幕逐段文本与主席通过确认",
+        "adoption_record": "019-Kinnt2A · 02:35:05—02:35:21",
+        "evidence_file": "../onsite-text-reconstruction/cases/5D.md"
+      },
+      "draft": {
+        "status": "explicit_current",
+        "summary": "原草案第1—7段没有专门子账户、捐助安排或第50届财务报告任务。"
+      },
+      "member_revision": {
+        "status": "explicit_current",
+        "summary": "新增第8—10段：建立SIDS专门子账户、邀请财务与实物贡献，并在第50届报告进展和财务信息。"
+      },
+      "final": {
+        "status": "explicit_current",
+        "summary": "新增第8—10段按现场屏幕文本通过；原第1—7段仅有编辑性大小写调整。"
+      },
+      "elements": {
+        "action": {
+          "status": "explicit_current",
+          "text": "建立SIDS专门子账户，并募集财务和实物贡献",
+          "evidence_class": "direct_fact"
+        },
+        "actor": {
+          "status": "partial_current",
+          "text": "世界遗产中心负责建户和报告，捐助对象范围明确；管理、拨付与监督分工没有进一步展开",
+          "evidence_class": "supported_analysis"
+        },
+        "deadline": {
+          "status": "explicit_current",
+          "text": "向第50届委员会报告",
+          "evidence_class": "direct_fact"
+        },
+        "verification": {
+          "status": "partial_current",
+          "text": "要求报告进展和财务信息，但没有规定审计、绩效或支出追踪标准",
+          "evidence_class": "supported_analysis"
+        },
+        "consequence": {
+          "status": "partial_current",
+          "text": "第50届形成再次审议出口，但没有规定筹资不足或执行不充分时的具体处置",
+          "evidence_class": "supported_analysis"
+        }
+      },
+      "comparison_readiness": "onsite_complete",
+      "source_needs": [
+        "官方决定汇编发布后逐段交叉核对"
+      ]
+    },
+    {
+      "case_id": "d-6c-nairobi",
+      "closure_type": "strategy_policy",
+      "agenda": "6C",
+      "case_zh": "内罗毕成果文件后续",
+      "importance_reason": "把区域成果转为全球实践、综合建议和后续报告，是制度任务是否形成执行闭环的典型。",
+      "source_review": {
+        "official_status": "not_published",
+        "onsite_text_status": "verified",
+        "current_basis": "原工作文件、五组正式修正案、上午与下午现场屏幕文本、主席通过确认",
+        "adoption_record": "CkX14WyVzdU · 01:42:55—01:43:10；UPtpBiPBidA · 00:24:32—00:24:42",
+        "evidence_file": "../onsite-text-reconstruction/cases/6C.md"
+      },
+      "draft": {
+        "status": "explicit_current",
+        "summary": "原草案第1—8段提出继续落实内罗毕成果并在既有框架下推进后续工作。"
+      },
+      "member_revision": {
+        "status": "explicit_current",
+        "summary": "修正涉及真实性纳入国内框架、全球实践、区域专家对话、综合建议、指标方法、资源与报告等方向。"
+      },
+      "final": {
+        "status": "explicit_current",
+        "summary": "现场通过第1—13段；指标／方法修正被撤回，保留综合建议、区域对话、实践应用、资源和第49届报告等任务。"
+      },
+      "elements": {
+        "action": {
+          "status": "explicit_current",
+          "text": "审视成果建议、开展类似区域对话、形成综合建议、推动实践应用并报告进展",
+          "evidence_class": "direct_fact"
+        },
+        "actor": {
+          "status": "explicit_current",
+          "text": "世界遗产中心、咨询机构、相关伙伴及非洲区域参与方的主要任务均在不同段落中指明",
+          "evidence_class": "direct_fact"
+        },
+        "deadline": {
+          "status": "explicit_current",
+          "text": "向第49届委员会报告，并连接2027年缔约国大会进程",
+          "evidence_class": "direct_fact"
+        },
+        "verification": {
+          "status": "partial_current",
+          "text": "综合建议、区域对话成果和进展报告可供核对；专门指标与方法没有进入最终文本",
+          "evidence_class": "supported_analysis"
+        },
+        "consequence": {
+          "status": "partial_current",
+          "text": "第49届和2027年大会可再次审议并考虑未来《操作指南》修订，但没有规定未完成时的补救措施",
+          "evidence_class": "supported_analysis"
+        }
+      },
+      "comparison_readiness": "onsite_complete",
+      "source_needs": [
+        "官方决定汇编发布后逐段交叉核对"
+      ]
+    },
+    {
+      "case_id": "d-7a27-vienna",
+      "closure_type": "site_conservation",
+      "agenda": "7A.27",
+      "case_zh": "维也纳历史中心移出濒危名录",
+      "importance_reason": "七类退出条件仍有缺口而结果发生改变，后续任务是否仍可执行是闭环审计的关键。",
+      "source_review": {
+        "official_status": "not_published",
+        "onsite_text_status": "verified",
+        "current_basis": "工作文件、修正案REV文本、现场完整滚屏与主席通过确认",
+        "adoption_record": "rowRMVMlvb0 · 02:32:20—02:32:32",
+        "evidence_file": "../onsite-text-reconstruction/cases/7A27.md"
+      },
+      "draft": {
+        "status": "explicit_current",
+        "summary": "工作文件确认DSOCR尚未实现，原拟决定继续列危并推进纠正措施。"
+      },
+      "member_revision": {
+        "status": "explicit_current",
+        "summary": "乌克兰修正覆盖18／20段，以进展、改革和新安排替代原判断重点。"
+      },
+      "final": {
+        "status": "explicit_current",
+        "summary": "现场确认原第1—2段与REV第3—20段整体通过，决定移出濒危名录并保留剩余管理、监测、项目文件和2028年报告任务。"
+      },
+      "elements": {
+        "action": {
+          "status": "explicit_current",
+          "text": "继续完成综合管理计划、监测评估、特定项目文件提交和剩余保护任务",
+          "evidence_class": "direct_fact"
+        },
+        "actor": {
+          "status": "explicit_current",
+          "text": "奥地利缔约国负责继续实施、提交项目文件和保护状况报告；世界遗产中心接收文件与通知",
+          "evidence_class": "direct_fact"
+        },
+        "deadline": {
+          "status": "explicit_current",
+          "text": "2028年2月1日前提交保护状况报告，供第50届审议",
+          "evidence_class": "direct_fact"
+        },
+        "verification": {
+          "status": "partial_current",
+          "text": "包含管理计划五年有效性监测、项目文件审查和保护状况报告，但没有给出所有剩余任务的统一验收阈值",
+          "evidence_class": "supported_analysis"
+        },
+        "consequence": {
+          "status": "partial_current",
+          "text": "第50届保留再次审议出口，并援引《操作指南》第172段；未完成时是否重新列危没有预先写明",
+          "evidence_class": "supported_analysis"
+        }
+      },
+      "comparison_readiness": "onsite_complete",
+      "source_needs": [
+        "官方决定汇编发布后逐段交叉核对"
+      ]
+    },
+    {
+      "case_id": "d-7b47-westminster",
+      "closure_type": "site_conservation",
+      "agenda": "7B.47",
+      "case_zh": "威斯敏斯特宫HIA与两阶段报告",
+      "importance_reason": "同一修正过程中恢复替代设计、迭代式HIA并形成两阶段报告，是保护性校准的正向样本。",
+      "source_review": {
+        "official_status": "not_published",
+        "onsite_text_status": "verified",
+        "current_basis": "原工作文件、正式修正案、现场逐段编辑屏幕与主席通过确认",
+        "adoption_record": "U_1Kynk-prY · 01:31:15—01:31:34",
+        "evidence_file": "../onsite-text-reconstruction/cases/7B47.md"
+      },
+      "draft": {
+        "status": "explicit_current",
+        "summary": "原基线要求替代方案、影响评估、任务监督与及时报告。"
+      },
+      "member_revision": {
+        "status": "explicit_current",
+        "summary": "孟加拉国主提后，波兰、黎巴嫩、格林纳达、瑞士多轮编辑恢复并细化要求。"
+      },
+      "final": {
+        "status": "explicit_current",
+        "summary": "第1—6、8段保留原文，第7、9—12段按现场协调文本通过，明确替代设计、迭代式HIA、任务和两阶段报告。"
+      },
+      "elements": {
+        "action": {
+          "status": "explicit_current",
+          "text": "比较替代设计、开展迭代式HIA、接受任务并分两阶段报告",
+          "evidence_class": "direct_fact"
+        },
+        "actor": {
+          "status": "explicit_current",
+          "text": "英国缔约国负责提交规划工具、设计与HIA材料；中心、咨询机构及咨询任务承担专业核验",
+          "evidence_class": "direct_fact"
+        },
+        "deadline": {
+          "status": "explicit_current",
+          "text": "2027年2月1日前进展报告；2027年12月1日前保护状况报告，供第50届审议",
+          "evidence_class": "direct_fact"
+        },
+        "verification": {
+          "status": "partial_current",
+          "text": "迭代式HIA、事前材料提交、咨询任务和两阶段报告构成核验链，但没有统一量化验收标准",
+          "evidence_class": "supported_analysis"
+        },
+        "consequence": {
+          "status": "partial_current",
+          "text": "第50届再次审议，且要求在不可逆决定前保留专业介入；未满足要求后的具体升级处置未预设",
+          "evidence_class": "supported_analysis"
+        }
+      },
+      "comparison_readiness": "onsite_complete",
+      "source_needs": [
+        "官方决定汇编发布后逐段交叉核对"
+      ]
+    },
+    {
+      "case_id": "d-7b70-sundarbans",
+      "closure_type": "site_conservation",
+      "agenda": "7B.70",
+      "case_zh": "孙德尔本斯SEA、能源与报告路径",
+      "importance_reason": "协助性措辞与保护护栏并存，适合检验行动、期限和核验是否在折衷中被保留。",
+      "source_review": {
+        "official_status": "not_published",
+        "onsite_text_status": "verified",
+        "current_basis": "原工作文件、联合修正案、现场逐段协调屏幕、报告员复述与主席通过确认",
+        "adoption_record": "LtgpZsY3O2M · 03:00:28—03:01:30",
+        "evidence_file": "../onsite-text-reconstruction/cases/7B70.md"
+      },
+      "draft": {
+        "status": "explicit_current",
+        "summary": "原基线要求SEA、持续影响评估和明确报告。"
+      },
+      "member_revision": {
+        "status": "explicit_current",
+        "summary": "阿塞拜疆、肯尼亚、秘鲁、坦桑尼亚联合提交，经逐词协调重排能源、评估和报告要求。"
+      },
+      "final": {
+        "status": "explicit_current",
+        "summary": "现场通过第1—11段；保留SEA、能源项目影响评估、应急计划和跨境合作等任务，最终期限为2029年进展报告与2032年保护状况报告。"
+      },
+      "elements": {
+        "action": {
+          "status": "explicit_current",
+          "text": "推进SEMP和SEA，评估太阳能项目影响，完善应急计划、跨境合作与综合资源管理计划",
+          "evidence_class": "direct_fact"
+        },
+        "actor": {
+          "status": "explicit_current",
+          "text": "孟加拉国缔约国承担主要提交与实施责任，跨境合作任务涉及相关缔约方",
+          "evidence_class": "direct_fact"
+        },
+        "deadline": {
+          "status": "explicit_current",
+          "text": "2029年2月1日前提交进展报告；2032年2月1日前提交保护状况报告，供第54届审议",
+          "evidence_class": "direct_fact"
+        },
+        "verification": {
+          "status": "partial_current",
+          "text": "SEA、项目影响评估和两阶段报告形成核验载体，并以2041年SEMP中增长情景为参照；具体绩效阈值仍有限",
+          "evidence_class": "supported_analysis"
+        },
+        "consequence": {
+          "status": "partial_current",
+          "text": "第54届保留再次审议出口，但2032年前未达阶段目标时的即时处置没有写明",
+          "evidence_class": "supported_analysis"
+        }
+      },
+      "comparison_readiness": "onsite_complete",
+      "source_needs": [
+        "官方决定汇编发布后逐段交叉核对"
+      ]
+    },
+    {
+      "case_id": "d-8b14-rocas",
+      "closure_type": "nomination_followup",
+      "agenda": "8B.14",
+      "case_zh": "圣多美和普林西比罗萨斯列入后任务",
+      "importance_reason": "缓冲区、法规、管理结构和保护计划从列入前移到列入后，执行闭环决定风险是否真正被控制。",
+      "source_review": {
+        "official_status": "not_published",
+        "onsite_text_status": "verified",
+        "current_basis": "原工作文件、修正案REV、现场完整滚屏与主席通过确认",
+        "adoption_record": "LtgpZsY3O2M · 01:34:48—01:34:56",
+        "evidence_file": "../onsite-text-reconstruction/cases/8B14.md"
+      },
+      "draft": {
+        "status": "explicit_current",
+        "summary": "专业建议为发还，要求先完成若干保护与管理条件。"
+      },
+      "member_revision": {
+        "status": "explicit_current",
+        "summary": "修正案改为按标准(iv)列入，并把原列入前条件转成第4段a—l项列入后任务。"
+      },
+      "final": {
+        "status": "explicit_current",
+        "summary": "现场通过第1—5段：列入、采纳暂定OUV声明、要求考虑a—l项后续任务，并在2027年提交报告供第50届审议。"
+      },
+      "elements": {
+        "action": {
+          "status": "explicit_current",
+          "text": "按a—l项推进边界、法规、管理结构、保护计划、风险管理、参与和资源等任务",
+          "evidence_class": "direct_fact"
+        },
+        "actor": {
+          "status": "explicit_current",
+          "text": "决定明确由圣多美和普林西比缔约国考虑并报告这些任务",
+          "evidence_class": "direct_fact"
+        },
+        "deadline": {
+          "status": "explicit_current",
+          "text": "2027年12月1日前提交报告，供第50届审议",
+          "evidence_class": "direct_fact"
+        },
+        "verification": {
+          "status": "partial_current",
+          "text": "报告可逐项核对a—l任务进展，但决定没有保留原草案中咨询机构持续协助的专门段落，也未规定统一验收标准",
+          "evidence_class": "supported_analysis"
+        },
+        "consequence": {
+          "status": "partial_current",
+          "text": "第50届保留再次审议出口，但未完成列入后任务时的具体处置没有写明",
+          "evidence_class": "supported_analysis"
+        }
+      },
+      "comparison_readiness": "onsite_complete",
+      "source_needs": [
+        "官方决定汇编发布后逐段交叉核对"
+      ]
+    },
+    {
+      "case_id": "d-10-og-review",
+      "closure_type": "rule_mechanism",
+      "agenda": "10",
+      "case_zh": "《操作指南》第五章与附件7修订",
+      "importance_reason": "规则／机制类样本显示，会议讨论过的制度路径不等于已经成为决定任务；必须区分已通过的规则文本与撤回的工作组方案。",
+      "source_review": {
+        "official_status": "not_published",
+        "onsite_text_status": "verified",
+        "current_basis": "原工作文件、孟加拉国修正案、现场屏幕的保留／删除状态与主席通过确认",
+        "adoption_record": "1RvEmz8SBIs · 01:50:50—01:51:05",
+        "evidence_file": "../onsite-text-reconstruction/cases/10.md"
+      },
+      "draft": {
+        "status": "explicit_current",
+        "summary": "原草案共3段，第3段采纳修订后的《操作指南》第五章及附件7。"
+      },
+      "member_revision": {
+        "status": "explicit_current",
+        "summary": "孟加拉国提出新增开放式工作组、主席团安排、秘书处支持、资源和试点等路径；协调后的折衷第4段仅建议第49届再审议成立工作组的可能性。"
+      },
+      "final": {
+        "status": "explicit_current",
+        "summary": "主提及共同提案方撤回新增第4段，现场屏幕将其删除；最终只通过原第1—3段，没有开放式工作组、试点或后续期限。"
+      },
+      "elements": {
+        "action": {
+          "status": "explicit_current",
+          "text": "委员会采纳修订后的《操作指南》第五章及附件7",
+          "evidence_class": "direct_fact"
+        },
+        "actor": {
+          "status": "explicit_current",
+          "text": "该项行动由委员会在本届会议中直接完成；没有另设后续执行主体",
+          "evidence_class": "direct_fact"
+        },
+        "deadline": {
+          "status": "not_applicable",
+          "text": "最终决定没有形成后续工作组或试点任务，因此不存在对应交付期限",
+          "evidence_class": "direct_fact"
+        },
+        "verification": {
+          "status": "not_applicable",
+          "text": "本样本的决定行动是当场采纳规则文本，不包含另行核验工作组成果的安排",
+          "evidence_class": "direct_fact"
+        },
+        "consequence": {
+          "status": "not_applicable",
+          "text": "被撤回的工作组路径不构成决定中的后续反馈出口",
+          "evidence_class": "direct_fact"
+        }
+      },
+      "comparison_readiness": "onsite_complete",
+      "source_needs": [
+        "官方决定汇编发布后逐段交叉核对"
+      ]
+    }
+  ],
+  "correction_chains": [
+    {
+      "chain_id": "c-vienna-025",
+      "agenda": "7A.27",
+      "case_zh": "维也纳：以“0.25%”概括遗产影响",
+      "initial_actor": "孟加拉国",
+      "initial_claim": "以2个对象除以约800座登记古迹得出0.25%，据此衡量影响严重程度。",
+      "clarifier": "ICOMOS",
+      "clarification": "视廊、城市形态和不同管制区的影响不能换算为单体建筑占比。",
+      "response_mode": "continued",
+      "response_label": "继续坚持",
+      "response_detail": "纠正后仍使用该比例主张影响很小。",
+      "text_effect": "no",
+      "text_result_label": "原论断未采用",
+      "text_effect_detail": "最终文本没有以“2／约800＝0.25%”的数量占比判断遗产影响大小。",
+      "outcome_relation": "not_established",
+      "outcome_detail": "现有证据不能证明这一条论断单独决定移出结果。",
+      "public_conclusion": "ICOMOS明确指出该比例不能衡量视廊与城市形态影响；发言方继续坚持，但这一论断未进入最终文本。",
+      "completeness": "complete_current",
+      "evidence_class": "direct_fact",
+      "source_needs": [
+        "官方决定汇编发布后交叉核对；现场版本见onsite-text-reconstruction/cases/7A27.md"
+      ]
+    },
+    {
+      "chain_id": "c-ribeira-return",
+      "agenda": "8B.30",
+      "case_zh": "里贝拉萨克拉发还措辞",
+      "initial_actor": "现场折衷文本",
+      "initial_claim": "出现‘发还该遗产按标准(v)列入’的非规范程序表述。",
+      "clarifier": "越南＋秘书处",
+      "clarification": "发还处理的是提名文件和补充工作，不能预先承诺下一次列入结果。",
+      "response_mode": "adjusted",
+      "response_label": "文本调整",
+      "response_detail": "秘书处确认并修改程序文字。",
+      "text_effect": "yes",
+      "text_result_label": "纠正后表述进入文本",
+      "text_effect_detail": "非规范的“发还该遗产按标准(v)列入”被改为针对提名文件和补充工作的规范发还表述，并进入现场通过文本。",
+      "outcome_relation": "supported",
+      "outcome_detail": "影响的是决定文字的程序准确性，不等于决定发还结果由该纠正单独造成。",
+      "public_conclusion": "非规范的发还表述经越南指出、秘书处确认后被修改，纠正进入现场通过文本。",
+      "completeness": "complete_current",
+      "evidence_class": "direct_fact",
+      "source_needs": [
+        "8B.30现场文本版本",
+        "48 COM 8B.30最终决定"
+      ]
+    },
+    {
+      "chain_id": "c-westminster-hia",
+      "agenda": "7B.47",
+      "case_zh": "威斯敏斯特HIA恢复",
+      "initial_actor": "委员国修正文本",
+      "initial_claim": "修正过程中替代设计与迭代式HIA要求被削弱或移除。",
+      "clarifier": "波兰＋黎巴嫩",
+      "clarification": "HIA用于比较替代设计，是保护OUV的基本程序，应恢复到决定中。",
+      "response_mode": "adjusted",
+      "response_label": "作出折衷",
+      "response_detail": "孟加拉国先坚持改用requests，但在主席询问后恢复替代设计与HIA核心要求；主席概括其作出轻微让步，波兰接受折衷，黎巴嫩随后补入事前告知条件。",
+      "text_effect": "yes",
+      "text_result_label": "纠正／优化后要求进入文本",
+      "text_effect_detail": "最终决定恢复替代设计与迭代式HIA，并形成两阶段报告。",
+      "outcome_relation": "supported",
+      "outcome_detail": "可以确认影响了文本；不能仅据此判断整体决定质量。",
+      "public_conclusion": "替代设计与迭代式HIA的必要性被重新说明后，核心保护要求恢复并进入最终决定。",
+      "completeness": "complete_current",
+      "evidence_class": "direct_fact",
+      "source_needs": [
+        "官方决定汇编发布后交叉核对；现场版本见onsite-text-reconstruction/cases/7B47.md"
+      ]
+    },
+    {
+      "chain_id": "c-victoria-connectivity",
+      "agenda": "7B.93",
+      "case_zh": "维多利亚瀑布生态连通性措辞",
+      "initial_actor": "联合修正文本",
+      "initial_claim": "决定草案要求维护‘生态连通性’并与地貌属性、视觉完整性并列。",
+      "clarifier": "波兰＋瑞士等技术发言",
+      "clarification": "该术语与列入标准、属性和科学依据之间的关系需要校准。",
+      "response_mode": "adjusted",
+      "response_label": "折衷删除",
+      "response_detail": "现场请求与逐段处理最终删除该术语，保留地貌属性与视觉完整性。",
+      "text_effect": "yes",
+      "text_result_label": "争议术语删除后通过",
+      "text_effect_detail": "第10(e)按不含‘生态连通性’的折衷文本通过。",
+      "outcome_relation": "supported",
+      "outcome_detail": "可以确认影响段落文字；共同提案方逐一调整过程仍需视频复核。",
+      "public_conclusion": "“生态连通性”与列入标准及属性之间的依据受到质疑，现场折衷最终删除该术语。",
+      "completeness": "partial",
+      "evidence_class": "direct_fact",
+      "source_needs": [
+        "7B.93原修正案、REV与REV.2",
+        "逐段视频",
+        "48 COM 7B.93最终决定"
+      ]
+    }
+  ],
+  "continuity_samples": [
+    {
+      "sample_id": "k-vienna-dsocr",
+      "sample_type": "task_continuity",
+      "cases_zh": "维也纳历史中心",
+      "earlier_baseline": "第44届大会（2021）正式采纳DSOCR及配套纠正措施；第45、46、47届大会连续检查落实进度，并均决定继续保留列危状态。",
+      "current_handling": "工作文件确认仍有缺口；委员会仍决定移出濒危名录。",
+      "public_reason_status": "partial_current",
+      "public_reason": "最终现场文本公开确认移出条件已经满足、结构性规划框架已经发生根本且持久改变，并以管理系统为持续保护基础；但没有逐项解释原七类DSOCR缺口如何全部转化或消解。",
+      "preliminary_assessment": "结果通过门槛重构发生改变，但剩余管理计划、五年监测、项目文件和2028年报告仍被明确延续；现有证据可以确认任务连续性，不能证明这些任务已经完成。",
+      "evidence_class": "supported_analysis",
+      "source_needs": [
+        "第44—47届决定与七类DSOCR措施的逐项历史对齐",
+        "官方决定汇编发布后与现场版本交叉核对"
+      ]
+    },
+    {
+      "sample_id": "k-ohrid-review",
+      "sample_type": "task_continuity",
+      "cases_zh": "奥赫里德地区自然与文化遗产",
+      "earlier_baseline": "原草案保留较近的列危与复审压力。",
+      "current_handling": "本届删除立即列危路径并给予实施期；瑞士校准恢复时限和持续审查护栏。",
+      "public_reason_status": "partial_current",
+      "public_reason": "实施可行性和复审期限在公开讨论中出现；已确认通过的文本保留了2031年报告和第53届复审，但未公开形成对整个延长周期的完整理由说明。",
+      "preliminary_assessment": "未完成任务并非简单取消，而是转为延后复审和持续监督的混合处置。",
+      "evidence_class": "supported_analysis",
+      "source_needs": [
+        "上一届相关决定",
+        "7B.62两份修正文本",
+        "48 COM 7B.62最终决定"
+      ]
+    },
+    {
+      "sample_id": "k-gdynia-boundary",
+      "sample_type": "task_continuity",
+      "cases_zh": "格丁尼亚现代主义市中心",
+      "earlier_baseline": "上一届要求把三组建筑纳入核心区。",
+      "current_handling": "要求未完成，但委员会认定现有范围足以表达价值并予列入。",
+      "public_reason_status": "partial_current",
+      "public_reason": "公开理由包括现有范围可表达价值和列入后管理工具；逐段理由待最终决定。",
+      "preliminary_assessment": "上一届任务没有机械延续，委员会以新的充分性判断替代原边界要求。",
+      "evidence_class": "supported_analysis",
+      "source_needs": [
+        "47 COM相关决定",
+        "48COM评估、修正案和最终决定"
+      ]
+    },
+    {
+      "sample_id": "k-mount-kenya-precedent",
+      "sample_type": "standard_consistency",
+      "cases_zh": "肯尼亚山边界修改与2013年先例",
+      "earlier_baseline": "既有先例和本届专业意见认为15,000余公顷、约8%的扩展需要更完整评估。",
+      "current_handling": "委员会按小幅修改批准，并以是否影响OUV而非面积比例作为主要公开理由。",
+      "public_reason_status": "partial_current",
+      "public_reason": "OUV影响、既有缓冲区和生态连通性被公开援引；与2013年决定的逐项差异尚未核对。",
+      "preliminary_assessment": "存在标准解释差异，但现有公开讨论留下了可识别理由，不能仅凭结果差异认定不一致。",
+      "evidence_class": "supported_analysis",
+      "source_needs": [
+        "2013年相关决定与地图",
+        "48COM评估、修正案和最终决定"
+      ]
+    },
+    {
+      "sample_id": "k-post-inscription-triad",
+      "sample_type": "standard_consistency",
+      "cases_zh": "瓦迪沃拉亚／罗萨斯／奥林匹斯山",
+      "earlier_baseline": "三案均存在列入前尚未完成的价值、完整性、边界或管理任务，专业建议均非直接列入。",
+      "current_handling": "三案均被列入，并把部分任务转为列入后研究、管理、监测或报告。",
+      "public_reason_status": "partial_current",
+      "public_reason": "现场分别援引标准(ix)、代表性、标准(vi)/(x)等价值判断；列入后任务强度需最终文本比较。",
+      "preliminary_assessment": "结果方向相近，但不能据此证明三案使用了同一门槛；应比较任务具体性、期限和核验方式。",
+      "evidence_class": "supported_analysis",
+      "source_needs": [
+        "三案评估文件",
+        "三案修正案",
+        "三案最终决定"
+      ]
+    }
+  ],
+  "editorial_observation_crosswalk": [
+    {
+      "observation_id": "eo-time-pressure-exit",
+      "source_stage": "stage-2b",
+      "source_location": "deliberation_time_audit.pressure_signals",
+      "source_observation": "5D和7A.27的具体程序不同，但都出现时间压力改变程序出口的可观察特征。",
+      "primary_line": "time",
+      "secondary_line": "execution",
+      "public_use": "case_candidate",
+      "public_rewrite": "时间压力不只增加会议时长，也可能改变决定通过、补充发言或逐段核对的出口。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "两案完整视频时间码、主席原话和最终程序记录"
+    },
+    {
+      "observation_id": "eo-long-topic-not-average",
+      "source_stage": "stage-2b",
+      "source_location": "time-sample-comparison.comparison.findings",
+      "source_observation": "取消结果富集筛选后，纠偏＋低产出比例下降；高负荷议题不能代表全会平均。",
+      "primary_line": "time",
+      "secondary_line": "method",
+      "public_use": "method_boundary",
+      "public_rewrite": "长议题样本用于解释议事机制，不用于估计全会每一分钟。",
+      "evidence_class": "direct_fact",
+      "evidence_needed": "维持三套样本分母和入选规则的并列说明"
+    },
+    {
+      "observation_id": "eo-low-volume-two-states",
+      "source_stage": "stage-2b",
+      "source_location": "agenda-5-12-census.overall_analysis.findings",
+      "source_observation": "低发言量至少包含报告后直接通过和少数国家保留有限输入两种制度状态。",
+      "primary_line": "time",
+      "secondary_line": "structure",
+      "public_use": "publish_candidate",
+      "public_rewrite": "低发言量不是单一含义：有的事项直接通过，有的仍留下少量立场或程序输入。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "逐议程保留0回合与低回合的程序注释"
+    },
+    {
+      "observation_id": "eo-agenda10-concentration",
+      "source_stage": "stage-2b",
+      "source_location": "agenda-5-12-census.overall_analysis",
+      "source_observation": "议程10占9—12组委员国发言回合的79.1%，并出现较高复取发言。",
+      "primary_line": "time",
+      "secondary_line": "execution",
+      "public_use": "publish_candidate",
+      "public_rewrite": "执行机制类讨论并非平均分布：议程10围绕规则修订和工作组方案形成主要协商节点，但工作组路径在通过前撤回，不能记作最终决定任务。",
+      "evidence_class": "direct_fact",
+      "evidence_needed": "持续标注9—12为官方字幕重建下限"
+    },
+    {
+      "observation_id": "eo-execution-detail-focus",
+      "source_stage": "stage-2a",
+      "source_location": "findings[0]",
+      "source_observation": "议程7最密集讨论集中在HIA时间、任务性质、报告届次和是否等待新材料。",
+      "primary_line": "execution",
+      "secondary_line": "time",
+      "public_use": "publish_candidate",
+      "public_rewrite": "高密度讨论经常围绕决定怎样执行，而不只是保护问题是否存在。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "Westminster、Hampi、Ohrid逐段讨论与最终决定"
+    },
+    {
+      "observation_id": "eo-setting-calibration-roles",
+      "source_stage": "stage-2a",
+      "source_location": "findings[1]",
+      "source_observation": "提出正式修正设定议题与通过段落编辑、程序护栏和折衷改变处理，常由不同成员完成。",
+      "primary_line": "judgment",
+      "secondary_line": "structure",
+      "public_use": "publish_candidate",
+      "public_rewrite": "决定形成至少包含议题设定与技术校准两类不同文本作用，不能合并成单一影响力指标。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "修正案版本链与逐段文本角色编码"
+    },
+    {
+      "observation_id": "eo-change-multiple-stages",
+      "source_stage": "stage-2a",
+      "source_location": "integrity_audit.decision_change_audit.takeaway",
+      "source_observation": "实质改变可能分别落在事实认定、技术标准、修正任务与审议程序。",
+      "primary_line": "judgment",
+      "secondary_line": "execution",
+      "public_use": "publish_candidate",
+      "public_rewrite": "同一案件的决定改变可能发生在事实、标准、任务和程序多个环节，不能压成支持／反对二分。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "统一改变单元，并逐段对齐原案、修正案和现场通过文本；官方汇编发布后交叉核对"
+    },
+    {
+      "observation_id": "eo-chair-procedural-amplifier",
+      "source_stage": "stage-2a",
+      "source_location": "integrity_audit.vienna.chair_audit",
+      "source_observation": "维也纳案中可观察到主席裁量压缩逐段核对空间，并以无强烈反对收束共识。",
+      "primary_line": "judgment",
+      "secondary_line": "time",
+      "public_use": "case_candidate",
+      "public_rewrite": "主席的共识判断和整案／逐段处理方式会改变异议、校准与表决被公开记录的机会。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "完整视频、规则依据及是否存在持续正式分段表决动议"
+    },
+    {
+      "observation_id": "eo-baikal-vote-object",
+      "source_stage": "stage-2a",
+      "source_location": "findings[5]",
+      "source_observation": "贝加尔湖14—5—1表决对象是是否延期，不能直接等同于对保护风险或列危的最终立场。",
+      "primary_line": "judgment",
+      "secondary_line": "structure",
+      "public_use": "publish_candidate",
+      "public_rewrite": "表决可以量化立场分布，但必须同时说明表决命题，不能把程序票改写成更广泛的国家立场。",
+      "evidence_class": "direct_fact",
+      "evidence_needed": "表决记录、主席宣读的准确动议和最终决定"
+    },
+    {
+      "observation_id": "eo-5c-use-not-training",
+      "source_stage": "stage-1",
+      "source_location": "agendas.5C.finding",
+      "source_observation": "统计重点由培训人数转向专家实际使用。",
+      "primary_line": "execution",
+      "secondary_line": "judgment",
+      "public_use": "case_candidate",
+      "public_rewrite": "执行指标可以从投入数量转向实际使用，显示委员国修正可能改变效果检验的层级。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "5C原案、修正案、最终决定与后续报告指标"
+    },
+    {
+      "observation_id": "eo-5d-financial-return",
+      "source_stage": "stage-1",
+      "source_location": "agendas.5D.finding",
+      "source_observation": "SIDS专门子账户建立，并把财务信息纳入第50届进展报告。",
+      "primary_line": "execution",
+      "secondary_line": "structure",
+      "public_use": "publish_after_formal_decision",
+      "public_rewrite": "资源安排只有在资金载体、管理责任与后续财务信息重新回到委员会时，才具备最低反馈链。",
+      "evidence_class": "direct_fact",
+      "evidence_needed": "现场通过文本已重建；官方汇编发布后交叉核对"
+    },
+    {
+      "observation_id": "eo-6c-compromise-output",
+      "source_stage": "stage-1",
+      "source_location": "agendas.6C.finding",
+      "source_observation": "四类立场进入起草组折衷，保留实践和区域对话，但不立即启动正式指标或《操作指南》修订。",
+      "primary_line": "execution",
+      "secondary_line": "judgment",
+      "public_use": "case_candidate",
+      "public_rewrite": "折衷不仅改变措辞，也会改变后续产物：从立即制定指标或改规则，转为继续实践并形成综合建议。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "现场通过文本与撤回／保留路径已核；官方汇编发布后交叉核对"
+    },
+    {
+      "observation_id": "eo-post-inscription-shift",
+      "source_stage": "stage-2b",
+      "source_location": "mechanism_summary.post-inscription",
+      "source_observation": "部分列入前应完成的工作被转为列入后建议、报告或监测。",
+      "primary_line": "execution",
+      "secondary_line": "judgment",
+      "public_use": "publish_after_formal_decision",
+      "public_rewrite": "结果改变后，应继续追踪原前置条件是否被完整转译为列入后任务、期限、核验和处置。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "相关评估、修正案、现场通过文本重建和后续届次保护状况材料"
+    },
+    {
+      "observation_id": "eo-volume-text-role-separation",
+      "source_stage": "stage-1",
+      "source_location": "stage_findings.volume-impact",
+      "source_observation": "覆盖、发言量和文本生产需要分开阅读。",
+      "primary_line": "structure",
+      "secondary_line": "judgment",
+      "public_use": "publish_candidate",
+      "public_rewrite": "覆盖面、发言回合与文本作用分别揭示进入议题、重复发言和改变文字，不能合成一个国家分数。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "常显三种单位定义及混合证据层级"
+    },
+    {
+      "observation_id": "eo-co-text-production",
+      "source_stage": "stage-1",
+      "source_location": "stage_findings.africa-production",
+      "source_observation": "非洲四国在多个制度议题持续共同生产文本。",
+      "primary_line": "structure",
+      "secondary_line": "judgment",
+      "public_use": "context_candidate",
+      "public_rewrite": "跨议题共同文本可显示持续的公开程序协作，但不单独证明联盟来源、动机或长期关系。",
+      "evidence_class": "direct_fact",
+      "evidence_needed": "逐份修正案署名、议题范围与实际独立发言分开呈现"
+    },
+    {
+      "observation_id": "eo-calibration-network",
+      "source_stage": "stage-2a",
+      "source_location": "findings[3]",
+      "source_observation": "部分成员共同署名密度不高，却在证据、工具、HIA、任务性质和复审时限上反复校准。",
+      "primary_line": "structure",
+      "secondary_line": "judgment",
+      "public_use": "context_candidate",
+      "public_rewrite": "共同文本之外还存在可观察的技术校准角色；两者应并列呈现，避免只看署名网络。",
+      "evidence_class": "supported_analysis",
+      "evidence_needed": "案件级发言与文本吸收链，不外推为区域固定风格"
+    },
+    {
+      "observation_id": "eo-network-shapes",
+      "source_stage": "stage-2a",
+      "source_location": "findings[4]",
+      "source_observation": "跨区域、区域集中与多区域共同文本呈现不同的议题触达形态。",
+      "primary_line": "structure",
+      "secondary_line": "judgment",
+      "public_use": "context_candidate",
+      "public_rewrite": "共同文本网络可以显示一个议题怎样跨越区域组，但不能据此推断友好关系或协调来源。",
+      "evidence_class": "direct_fact",
+      "evidence_needed": "按案件展示署名网络，并保留‘只观察程序协作’的边界"
+    }
+  ],
+  "structural_context": [
+    {
+      "value": "21／21",
+      "label": "委员国进入议程5—12普查",
+      "detail": "表示所有委员国至少在一个纳入议程取得发言席；不表示各议程参与相同。",
+      "evidence_class": "direct_fact"
+    },
+    {
+      "value": "625",
+      "label": "委员国发言回合下限",
+      "detail": "372逐项核定＋253字幕重建保守下限；只描述公开全会发言席。",
+      "evidence_class": "direct_fact"
+    },
+    {
+      "value": "63.4%",
+      "label": "议程7—8占全部回合",
+      "detail": "396／625回合集中在保护状况和提名列入，显示案件审议是主要公开互动场域。",
+      "evidence_class": "supported_analysis"
+    },
+    {
+      "value": "4项",
+      "label": "反复介入型议程",
+      "detail": "6C、7、8、10出现较高复取发言；这是协商结构，不等于效率或质量。",
+      "evidence_class": "direct_fact"
+    },
+    {
+      "value": "2项",
+      "label": "无委员国公开介入",
+      "detail": "6A、11在报告后直接进入决定；不能由此推断事项不重要或会前没有协调。",
+      "evidence_class": "direct_fact"
+    },
+    {
+      "value": "4类",
+      "label": "文本角色分开观察",
+      "detail": "主提、共同提出／支持、技术校准、反对／保留不合并为单一影响力分数。",
+      "evidence_class": "supported_analysis"
+    }
+  ],
+  "publication_readiness": [
+    {
+      "metric": "14个议程／子议程的约2,972分钟边界计时",
+      "status": "publish_now",
+      "role": "时间主线",
+      "condition": "持续显示约±75分钟边界误差，不解释为讨论质量。"
+    },
+    {
+      "metric": "四类议程的时间占比",
+      "status": "publish_now",
+      "role": "时间主线",
+      "condition": "直接标数并说明议程8、9—12包含混合证据层级。"
+    },
+    {
+      "metric": "625个委员国发言回合下限",
+      "status": "publish_as_context",
+      "role": "结构背景",
+      "condition": "同时显示372已核定＋253保守下限；不作为效率或质量指标。"
+    },
+    {
+      "metric": "600分钟样本的10%纠偏＋低产出",
+      "status": "hold",
+      "role": "时间主线",
+      "condition": "修正字幕密集窗偏差、完成第二编码者复核后再决定发布；当前不称严格置信区间。"
+    },
+    {
+      "metric": "25项讨论与决定结果单元",
+      "status": "hold",
+      "role": "专业判断主线",
+      "condition": "议程7、8的20项上会修订决定已建立同层证据链；但25项跨议程表述仍混合议题、案件和程序结果，不宜当作同质的‘被改变决定数’发布。"
+    },
+    {
+      "metric": "纠正吸收链个案",
+      "status": "publish_after_verification",
+      "role": "专业判断主线",
+      "condition": "只发布链条完整、时间码和最终文本都能复核的个案，不做国家汇总。"
+    },
+    {
+      "metric": "五类决定的分类型闭环骨架",
+      "status": "publish_as_context",
+      "role": "执行闭环主线",
+      "condition": "可以公开方法框架；明确它是理想核对目标，不是对实际执行成效的证明。"
+    },
+    {
+      "metric": "议程7、8二十案决定五要素可执行性",
+      "status": "publish_now",
+      "role": "执行闭环主线",
+      "condition": "20案证据链已建立：4案逐段现场重建，16案以正式文本、最终整合画面和通过记录交叉确认。可公开案件级结果和要素分布；必须常显‘官方决定汇编尚未发布’，不合成总分，汇编发布后逐段交叉核对。"
+    },
+    {
+      "metric": "连续性／一致性初步样本",
+      "status": "case_only",
+      "role": "执行闭环主线",
+      "condition": "作为深度案例，不外推委员会整体一致性。"
+    },
+    {
+      "metric": "委员国覆盖、发言量、文本角色和共同文本",
+      "status": "publish_as_context",
+      "role": "制度结构观察",
+      "condition": "默认公开呈现并与三条主线交叉解释；常显证据口径，不生成国家总分或关系推断。"
+    },
+    {
+      "metric": "国家综合排名／专业水平评分",
+      "status": "prohibited",
+      "role": "不发布",
+      "condition": "不生成。"
+    }
+  ],
+  "recommended_deep_cases": [
+    {
+      "case": "维也纳历史中心",
+      "why": "专业基线、门槛变化、程序收束与执行连续性四条链同时可见。"
+    },
+    {
+      "case": "威斯敏斯特宫",
+      "why": "修正过程恢复并细化替代设计、迭代式HIA、事前专业介入和两阶段报告，适合展示保护护栏怎样进入决定。"
+    },
+    {
+      "case": "里贝拉萨克拉水景",
+      "why": "价值判断、发还／延期边界、规范措辞纠正和程序出口均有记录。"
+    },
+    {
+      "case": "内罗毕成果文件后续",
+      "why": "可解释时间压力、起草组折衷和制度任务如何从倡议转为综合建议。"
+    },
+    {
+      "case": "SIDS专门子账户",
+      "why": "账户、捐助与第50届财务报告均已在现场通过文本中确认，适合说明资源决定从行动到反馈仍缺哪一层。"
+    },
+    {
+      "case": "孙德尔本斯",
+      "why": "长期实施目标、两阶段报告与现场多轮期限协调并存，适合说明‘有期限’与‘有中间纠偏机制’并不相同。"
+    },
+    {
+      "case": "议程10《操作指南》修订",
+      "why": "开放式工作组方案经过讨论和折衷后仍在通过前撤回，能清楚说明讨论路径不能被误记为决定任务。"
+    },
+    {
+      "case": "列入后任务三案组",
+      "why": "瓦迪沃拉亚、罗萨斯和奥林匹斯山可比较列入前任务如何转为列入后义务。"
+    }
+  ],
+  "longitudinal_tracking": {
+    "group_count": 4,
+    "indicator_count": 10,
+    "baseline_count": 9,
+    "method_review_count": 1,
+    "comparison_sessions": [
+      "46COM",
+      "47COM",
+      "48COM"
+    ],
+    "status_labels": {
+      "baseline": "48COM基线完成",
+      "cross_session": "46—48COM可对照",
+      "method_review": "方法已固定·复核中"
+    },
+    "groups": [
+      {
+        "id": "actors",
+        "label": "委员国参与",
+        "count": 5,
+        "indicators": [
+          {
+            "code": "I01",
+            "label": "议程覆盖面",
+            "purpose": "衡量每个委员国参与议程的广度。",
+            "unit": "委员国×议程／子议程",
+            "method": "至少取得1个可识别发言回合的议程数÷本届纳入普查的14个议程单元。",
+            "source": "议程记录、会议视频与委员国发言回合表。",
+            "status": "baseline",
+            "target": "member-overall-section"
+          },
+          {
+            "code": "I02",
+            "label": "委员国发言回合",
+            "purpose": "描述委员国取得正式发言席的参与量及其届次分布。",
+            "unit": "一次连续发言",
+            "method": "同一代表一次连续占用发言席计1回合；排除观察员及决定通过后的回应，并标明保守下限。",
+            "source": "46—47COM官方Summary Records；48COM议程记录、视频与字幕重建。",
+            "status": "cross_session",
+            "target": "member-overall-section"
+          },
+          {
+            "code": "I03",
+            "label": "议程反复介入密度",
+            "purpose": "区分广泛但一次性参与与同一议程中的反复往返。",
+            "unit": "议程／子议程",
+            "method": "该议程委员国发言回合数÷至少发言1次的委员国数；无委员国发言的议程不参与除法。",
+            "source": "议程5—12完整发言回合普查。",
+            "status": "baseline",
+            "target": "overall-analysis-section"
+          },
+          {
+            "code": "I04",
+            "label": "议程参与集中度",
+            "purpose": "观察每个委员国是否把发言集中在少数议程。",
+            "unit": "委员国",
+            "method": "逐项计算各议程回合占该国全部回合的份额，并以最高单项份额作为集中度摘要。",
+            "source": "议程5—12完整发言回合普查。",
+            "status": "baseline",
+            "target": "member-concentration-section"
+          },
+          {
+            "code": "I05",
+            "label": "文本角色与共同参与",
+            "purpose": "把口头参与与改变、共同提出或校准文本的参与区分开。",
+            "unit": "修正文本单元／案件角色事件",
+            "method": "主提、共同提出、明确同案支持、技术校准和保留／反对分别计数，同一文本REV版本合并；正式文本层覆盖议程5—12，现场明确同案支持仅统计议程5—8，议程9—12不以0补齐。",
+            "source": "正式修正案、现场文本、议程记录与案件角色编码。",
+            "status": "baseline",
+            "target": "cotext-overall-section"
+          }
+        ]
+      },
+      {
+        "id": "time",
+        "label": "时间使用",
+        "count": 3,
+        "indicators": [
+          {
+            "code": "I06",
+            "label": "议程时间分配",
+            "purpose": "衡量公开审议时间主要投向哪些议程类型。",
+            "unit": "分钟及其占比",
+            "method": "从实质审议开启计至决定落槌，扣除休会和会外起草；汇总总时长及四类议程份额，并公布边界误差。",
+            "source": "官方会议视频、直播时钟与结构化议程纪要。",
+            "status": "baseline",
+            "target": "time-audit-section"
+          },
+          {
+            "code": "I07",
+            "label": "长议题时间负担",
+            "purpose": "识别占用大量公开审议资源的高负荷议题。",
+            "unit": "达到60分钟的独立议题／案件段",
+            "method": "在不查看决定结果的前提下，以连续讨论达到60分钟为阈值，统计数量、总分钟及占全部可计时议程的份额。",
+            "source": "14个议程边界计时及13个长议题分段记录。",
+            "status": "baseline",
+            "target": "time-audit-section"
+          },
+          {
+            "code": "I08",
+            "label": "讨论用途构成",
+            "purpose": "区分证据、实质判断、必要程序、澄清纠偏和重复失焦占用的时间。",
+            "unit": "5分钟分层抽样窗",
+            "method": "按四类议程分层抽取120个5分钟窗，每窗按五类互斥用途编码并计算份额；长议题与六案样本只作敏感性对照。",
+            "source": "会议视频、时间分段表与五类用途编码本。",
+            "status": "method_review",
+            "target": "time-audit-section"
+          }
+        ]
+      },
+      {
+        "id": "decisions",
+        "label": "决定形成",
+        "count": 1,
+        "indicators": [
+          {
+            "code": "I09",
+            "label": "上会讨论案件的修订结果",
+            "purpose": "检验进入委员国讨论的案件最终在哪一层改变决定草案与结果。",
+            "unit": "议程7、8上会讨论个案",
+            "method": "以26个讨论个案为分母，按重大结果改变、其他实质改变、技术校准、完整新文本、原文通过和程序出口互斥编码。",
+            "source": "议程记录、决定草案、修正案、会议视频和现场通过文本。",
+            "status": "baseline",
+            "target": "judgment-sample-section"
+          }
+        ]
+      },
+      {
+        "id": "actions",
+        "label": "行动可执行性",
+        "count": 1,
+        "indicators": [
+          {
+            "code": "I10",
+            "label": "决定可执行要素清晰度",
+            "purpose": "检验通过文本是否为后续执行、核验和再次决策留下足够明确的任务链。",
+            "unit": "一项通过的修订决定",
+            "method": "按决定类型预期，将行动、责任主体、期限、核验、反馈／处置五个子维度分别编码为明确、部分明确、未明确或不适用；只报各维度分布，不合成总分。",
+            "source": "议程7、8二十案的修正文本、现场通过画面、视频确认与决定证据链。",
+            "status": "baseline",
+            "target": "execution"
+          }
+        ]
+      }
+    ],
+    "boundary": "本轮保留10项可操作指标：9项已形成48COM全样本或基线，I08已固定抽样与编码方法、仍待第二编码者复核。讨论角色、纠正吸收、标准一致性和任务连续性继续作为机制观察；在形成全量分母或固定选样规则前，不计入指标总数。"
+  },
+  "research_observations": [
+    {
+      "id": "discussion_roles",
+      "label": "讨论／校准角色",
+      "reason_not_indicator": "当前为七个目的性分层案例，能够解释机制，但没有全量分母或跨届固定选样框。",
+      "upgrade_condition": "固定进入规则或完成同类议程全样本后，再统计角色分布。"
+    },
+    {
+      "id": "correction_uptake",
+      "label": "纠正与文本吸收",
+      "reason_not_indicator": "当前只展示四条证据链完整的典型案例，尚不能确认本届全部纠正事项。",
+      "upgrade_condition": "完成逐议程纠正事项全量普查后，才计算采用、优化采用、删除或未纠正采用的占比。"
+    },
+    {
+      "id": "standards_and_continuity",
+      "label": "标准一致性与任务连续性",
+      "reason_not_indicator": "当前为少量案件对照，适合识别需追查的问题，不足以估计总体发生率。",
+      "upgrade_condition": "建立相似案件匹配规则和跨届任务清单后，再转为指标。"
+    }
+  ],
+  "hero_summary": "本页基于48COM公开会议记录、工作文件、修正案及会议视频，对议程5—12的14个议程／子议程、约2,972分钟审议时长和625个可纳入统计的委员国发言回合进行结构化整理，并在部分专题中引入46—47COM官方会议纪要（Summary Records）的同口径记录作为对照。四组分析依次以委员国、会议时间、决定形成过程和决定所设行动为观察对象，考察谁参与议程、时间如何分配、专业与规则判断如何进入决定，以及行动是否具备责任主体、期限、核验与后续处置。目的是建立可复核、可持续跨届跟踪的公开观察框架，不形成国家综合排名，也不推断政治动机。",
+  "deliberation_sample": {
+    "scope_label": "议程7和8中出现委员国讨论、正式文本或程序行动的全样本",
+    "effective_units": 27,
+    "case_units": 26,
+    "agenda_7": {
+      "effective_units": 16,
+      "case_units": 15,
+      "overall_discussion_units": 1,
+      "post_adoption_response_units_excluded": 2,
+      "formal_amendment_packages": 10,
+      "cases_with_formal_amendment_text": 9,
+      "substantive_changes": 8,
+      "text_calibrations_without_result_reframe": 1,
+      "original_text_adopted": 2,
+      "deferred_or_suspended": 3,
+      "opening_withdrawn_to_batch": 1
+    },
+    "agenda_8": {
+      "effective_units": 11,
+      "case_units": 11,
+      "formal_text_packages": 10,
+      "substantive_outcome_changes": 9,
+      "emergency_full_text_decisions": 2
+    },
+    "outcome_groups": [
+      {
+        "id": "major_outcome_change",
+        "label": "重大结果方向改变",
+        "count": 8,
+        "note": "列危状态、列入／发还／推迟等结果档次发生改变；议程7为2案，议程8为6案。"
+      },
+      {
+        "id": "other_substantive_change",
+        "label": "其他实质内容改变",
+        "count": 9,
+        "note": "保护任务、遗产组成、价值标准或决定要求发生实质改变；议程7为6案，议程8为3案。"
+      },
+      {
+        "id": "text_calibration",
+        "label": "技术性文字校准",
+        "count": 1,
+        "note": "修订措辞或任务路径，但未改变决定的主要结果方向。"
+      },
+      {
+        "id": "emergency_full_text",
+        "label": "紧急提名形成并通过完整文本",
+        "count": 2,
+        "note": "没有可直接比较的咨询机构结果变更基线，故不并入9项结果改变。"
+      },
+      {
+        "id": "original_adopted",
+        "label": "讨论后原文通过",
+        "count": 2,
+        "note": "讨论发生，但最终未改写决定草案。"
+      },
+      {
+        "id": "deferred",
+        "label": "延期／休止，未形成最终实质决定",
+        "count": 3,
+        "note": "程序结果可审计；五要素决定审计不适用。"
+      },
+      {
+        "id": "withdrawn_to_batch",
+        "label": "开启请求撤回，回到整体通过",
+        "count": 1,
+        "note": "保留为议事机制记录，不计入个别修订文本样本。"
+      }
+    ],
+    "executability_target": {
+      "case_count": 20,
+      "definition": "在全会讨论中形成并通过修订文本，或由委员国起草并通过完整决定文本的议程7、8案件",
+      "agenda_7_cases": 9,
+      "agenda_8_cases": 11,
+      "onsite_texts_reconstructed": 20,
+      "onsite_texts_to_reconstruct": 0,
+      "full_paragraph_reconstructions": 4,
+      "formal_text_plus_final_screen": 16,
+      "excluded_from_five_element_audit": "2项原文通过、3项延期／休止和1项开启请求撤回另列程序结果，不与修订决定的可执行性合并。"
+    }
+  },
+  "public_metadata": {
+    "page_version": "1.2.0",
+    "source_schema_version": "0.7.0",
+    "source_path": "analysis/48com-overall-optimization-2026-08-08/data/prototype-data.json",
+    "reviewed_overlay_path": "committee-observation/48com/overall/data/overall-public.json",
+    "languages": [
+      "zh-CN"
+    ],
+    "future_language_contract": "后续英文页面继续读取本文件，在同一对象内增加英文内容字段，不复制数值或判断逻辑。",
+    "official_compilation_note": "议程7、8的20案已依据正式文本、现场整合画面和通过记录形成第一轮结论；48COM官方决定汇编发布后逐段交叉核对。"
+  }
+}
