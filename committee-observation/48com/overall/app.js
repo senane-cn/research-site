@@ -92,7 +92,16 @@ function renderHero(data) {
           </li>`).join("")}</ol>
       </article>`).join("")}
     </div>
-    <small>${escapeHTML(tracking.boundary)}</small>`;
+    <small>${escapeHTML(tracking.boundary)}</small>
+    ${(tracking.potential_indicators || []).length ? `<section class="potential-indicators">
+      <header><span>POTENTIAL INDICATOR</span><h3>待多届数据检验的候选指标</h3></header>
+      ${(tracking.potential_indicators || []).map((item) => `<article>
+        <div><b>${escapeHTML(item.code)}</b><strong>${escapeHTML(item.label)}</strong><em>${escapeHTML(item.status)}</em></div>
+        <p><span>目标</span>${escapeHTML(item.purpose)}</p>
+        <p><span>候选方法</span>${escapeHTML(item.method)}</p>
+        <small>${escapeHTML(item.boundary)}</small>
+      </article>`).join("")}
+    </section>` : ""}`;
 }
 
 function renderIndicatorLabels(data) {
@@ -125,7 +134,7 @@ function renderIndicatorLabels(data) {
     ["#census-section .section-heading > div", "结构观察 · 不计入核心指标"],
     ["#time-role-section .section-heading > div", "机制观察 · 七案分层样本"],
     ["#judgment-sample-section .chain-section-heading", "机制观察 · 四条典型纠正链"],
-    ["#judgment-sample-section .standard-consistency-heading", "案件观察 · 初步比较"],
+    ["#judgment-sample-section .standard-consistency-heading", "案件观察 · 两类比较"],
     ["#execution .other-agenda-heading", "探索案例 · 尚不作类型概括"],
     ["#execution .continuity-subheading", "案件观察 · 三项跨届任务"]
   ];
@@ -325,9 +334,26 @@ function renderExecution(data) {
     </article>`).join("");
 
   const taskSamples = data.continuity_samples.filter((item) => item.sample_type === "task_continuity");
-  const standardSamples = data.continuity_samples.filter((item) => item.sample_type === "standard_consistency");
   $("#continuity-grid").innerHTML = renderContinuityCards(taskSamples, "task");
-  $("#standard-consistency-grid").innerHTML = renderContinuityCards(standardSamples, "standard");
+  const consistency = data.standard_consistency_samples;
+  $("#standard-consistency-grid").innerHTML = consistency.groups.map((group, groupIndex) => `
+    <section class="consistency-comparison-group">
+      <header><span>0${groupIndex + 1}</span><div><h4>${escapeHTML(group.title)}</h4><p>${escapeHTML(group.description)}</p></div></header>
+      <div class="consistency-case-grid">${group.cases.map((item) => `
+        <article class="consistency-case-card ${escapeHTML(item.status)}">
+          <header><div><span>${escapeHTML(item.case_label)}</span><h5>${escapeHTML(item.title)}</h5></div><b>${escapeHTML(item.status_label)}</b></header>
+          <p class="comparison-basis"><strong>可比基础</strong>${escapeHTML(item.comparison_basis)}</p>
+          <div class="standard-pair">
+            <section><b>${escapeHTML(item.left_label)}</b><p>${escapeHTML(item.left_standard)}</p></section>
+            <i aria-hidden="true">→</i>
+            <section><b>${escapeHTML(item.right_label)}</b><p>${escapeHTML(item.right_standard)}</p></section>
+          </div>
+          <div class="consistency-reading">
+            <p><strong>公开理由</strong>${escapeHTML(item.public_reason)}</p>
+            <p><strong>当前判断</strong>${escapeHTML(item.assessment)}</p>
+          </div>
+        </article>`).join("")}</div>
+    </section>`).join("");
 }
 
 function renderCases(data) {

@@ -13,7 +13,7 @@ publicNav.innerHTML = `
   <a href="#participation"><b>A</b><span>委员国参与总体状况</span></a>
   <a href="#time-efficiency"><b>B1</b><span>议事效率</span></a>
   <a href="#judgment-formation"><b>B2</b><span>专业判断与决定形成</span></a>
-  <a href="#execution"><b>B3</b><span>决定的可执行性</span></a>`;
+  <a href="#execution-intro"><b>B3</b><span>决定的可执行性</span></a>`;
 hero.after(publicNav);
 
 function createSectionIntro(id, number, title, description) {
@@ -45,6 +45,13 @@ const judgmentIntro = createSectionIntro(
   "本专题以决定形成过程为观察对象，统计议程7、8讨论后怎样改变决定草案与结果，并用典型论断链和相似案件样本观察专业或规则判断是否被纠正、吸收或留下公开理由。"
 );
 
+const executionIntro = createSectionIntro(
+  "execution-intro",
+  "B3",
+  "决定的可执行性",
+  "本专题以决定所设行动为观察对象，先区分决定类型与后果风险，再核对行动、责任主体、期限、核验和反馈／处置是否足以支持后续执行与再次决策。"
+);
+
 const participationHistory = document.createElement("section");
 participationHistory.className = "section-shell analysis-section participation-history";
 participationHistory.id = "participation-history-section";
@@ -71,6 +78,7 @@ const ordered = [
   $("#historical-section"),
   judgmentIntro,
   $("#judgment-sample-section"),
+  executionIntro,
   $("#execution"),
   $("#indicator-framework-section")
 ].filter(Boolean);
@@ -93,7 +101,8 @@ const labels = [
   ["#time-audit-title", "四类议程的时间构成与讨论用途"],
   ["#overall-analysis-title", "各议程的讨论热度"],
   ["#historical-title", "近三届四类议程回合分布看重心移动"],
-  ["#time-role-title", "谁开启讨论，谁把讨论拉回可决策轨道"]
+  ["#time-role-title", "谁开启讨论，谁把讨论拉回可决策轨道"],
+  ["#execution-title", "决定任务怎样形成执行闭环"]
 ];
 labels.forEach(([selector, text]) => {
   const node = $(selector);
@@ -110,7 +119,7 @@ const sectionLabels = [
   ["#historical-section .section-no", "CROSS-SESSION AGENDA SHARE"],
   ["#time-role-section .section-no", "DISCUSSION ROLES / 7-CASE SAMPLE"],
   ["#judgment-sample-section .section-no", "DECISION FORMATION"],
-  ["#execution .section-no", "B3 / DECISION EXECUTABILITY"]
+  ["#execution .section-no", "DECISION EXECUTABILITY"]
 ];
 sectionLabels.forEach(([selector, text]) => {
   const node = $(selector);
