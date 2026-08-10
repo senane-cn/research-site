@@ -402,10 +402,11 @@
 .balanced-design article em { color: var(--muted); font-size: 7px; font-style: normal; text-align: right; }
 .comparison-caution { margin: 12px 2px 0; color: var(--muted); font-size: 8px; line-height: 1.6; }
 .comparison-caution b { color: var(--navy); }
-.deep-audit-label { display: grid; grid-template-columns: 160px 1fr auto; align-items: center; gap: 14px; margin: 23px 18px 14px; padding: 12px 15px; border: 1px solid var(--rule); border-left: 5px solid var(--blue-mid); border-radius: 8px; background: #f7f9fb; }
-.deep-audit-label span { color: var(--blue-mid); font: 800 8px var(--mono); }
-.deep-audit-label strong { color: var(--navy); font-size: 11px; }
-.deep-audit-label small { max-width: 370px; color: var(--muted); font-size: 8px; line-height: 1.45; text-align: right; }
+.deep-audit-label { display: grid; grid-template-columns: minmax(0, .9fr) minmax(320px, 1.1fr); align-items: end; gap: 30px; margin: 28px 18px 14px; padding: 20px 2px 15px; border-top: 5px solid var(--navy); }
+.deep-audit-label > div { display: grid; gap: 6px; }
+.deep-audit-label span { color: var(--blue-mid); font: 800 9px var(--mono); letter-spacing: .04em; }
+.deep-audit-label strong { color: var(--navy); font-size: 18px; line-height: 1.3; }
+.deep-audit-label small { color: var(--muted); font-size: 10px; line-height: 1.65; }
 
 .time-coding-intro {
   display: grid;
@@ -472,9 +473,51 @@
 .time-sample-comparison + .deep-audit-label { margin-top: 28px; }
 
 .overall-page .time-case-details { margin-bottom: 0; }
-.overall-page .thread-scale-note { display: grid; grid-column: 1 / -1; grid-template-columns: 32px 1fr 32px; align-items: center; margin: 0; padding: 7px 11px; border: 1px solid var(--rule); border-radius: 8px; background: #f4f7fa; color: var(--muted); font: 700 8px var(--mono); }
-.overall-page .thread-scale-note b { color: var(--ink); text-align: center; }
-.overall-page .thread-scale-note span:last-child { text-align: right; }
+.overall-page .thread-scale-note { display: none !important; }
+
+.overall-page .comparison-heading span,
+.overall-page .comparison-findings header span { font-size: 9px; }
+.overall-page .comparison-heading p,
+.overall-page .sample-scope-note,
+.overall-page .comparison-transition { font-size: 10px; }
+.overall-page .method-copy p,
+.overall-page .method-use,
+.overall-page .details-method-note { font-size: 10px; line-height: 1.6; }
+.overall-page .sample-method-card h4 { font-size: 14px; }
+.overall-page .boundary-time-list,
+.overall-page .time-category-card,
+.overall-page .thread-role-card { font-size: 11px; }
+
+/* Keep dense analytical labels legible without enlarging the chart geometry. */
+.overall-page .member-participation-panel > header span,
+.overall-page .cotext-pairs > header span,
+.overall-page .cotext-stage-summary > header span,
+.overall-page .cotext-matrix-panel > header span,
+.overall-page .boundary-time-overview > header span,
+.overall-page .sample-selection-audit header span { font-size: 9px; }
+.overall-page .member-participation-legend.region-legend span,
+.overall-page .member-participation-panel > p,
+.overall-page .concentration-legend span,
+.overall-page .cotext-region-legend span,
+.overall-page .cotext-view-switch button,
+.overall-page .cotext-matrix-panel > p,
+.overall-page .cotext-stage-summary article > span,
+.overall-page .boundary-time-overview > p,
+.overall-page .boundary-time-metrics span,
+.overall-page .boundary-time-metrics small { font-size: 10px; }
+.overall-page .member-overall-table thead th,
+.overall-page .member-concentration-table thead th,
+.overall-page .member-overall-table tbody th,
+.overall-page .member-overall-table tbody td,
+.overall-page .member-concentration-table tbody th,
+.overall-page .member-concentration-table tbody td { font-size: 10px; }
+.overall-page .member-overall-table tbody th small,
+.overall-page .member-overall-table td > small,
+.overall-page .member-concentration-table tbody td:last-child small { font-size: 9px; }
+.overall-page .cotext-matrix thead th,
+.overall-page .cotext-matrix tbody th b,
+.overall-page .cotext-matrix td { font-size: 10px; }
+.overall-page .analysis-section small { font-size: 10px; }
 
 .overall-page .historical-role-compare { grid-template-columns: repeat(3, 1fr); }
 .overall-page .historical-role-column > header small a { color: var(--blue-mid); text-decoration: underline; text-underline-offset: 2px; }
@@ -582,8 +625,7 @@
   .balanced-design article { grid-template-columns: 1fr 70px; }
   .balanced-design article i,.balanced-design article em { grid-column: 1 / -1; }
   .balanced-design article em { text-align: left; }
-  .deep-audit-label { grid-template-columns: 1fr; }
-  .deep-audit-label small { max-width: none; text-align: left; }
+  .deep-audit-label { grid-template-columns: 1fr; gap: 9px; margin-inline: 12px; }
   .cotext-pairs > div { grid-template-columns: 1fr; }
   .cotext-pairs article:nth-last-child(2) { border-bottom: 1px solid #edf1f5; }
 }

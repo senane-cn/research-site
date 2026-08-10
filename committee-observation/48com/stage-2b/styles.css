@@ -650,14 +650,16 @@ body { padding-bottom: 26px; }
 .overall-scatter-panel > header h3,
 .overall-concentration-panel > header h3 { margin: 5px 0 0; color: var(--navy); font-size: 14px; }
 .overall-scatter-panel > header small { color: var(--muted); font-size: 8px; white-space: nowrap; }
-.overall-scatter-shell { overflow-x: auto; padding: 4px 8px 0; }
-.overall-scatter { display: block; width: 100%; min-width: 700px; height: auto; }
+.overall-scatter-shell { overflow: hidden; padding: 4px 8px 0; }
+.overall-scatter { display: block; width: 100%; min-width: 0; height: auto; }
 .scatter-grid { stroke: #dfe5ec; stroke-width: 1; }
 .scatter-axis { stroke: var(--ink); stroke-width: 1.4; }
 .scatter-tick { fill: #6e7c8f; font: 700 9px var(--mono); }
 .scatter-axis-title { fill: var(--muted); font-size: 10px; font-weight: 700; }
 .overall-point { cursor: help; outline: none; }
 .overall-point circle { fill: var(--point-color); fill-opacity: .88; stroke: white; stroke-width: 3; filter: drop-shadow(0 1px 1px rgba(24,54,95,.2)); }
+.overall-point .scatter-position-guide { stroke: #7c8a9b; stroke-width: 1; stroke-dasharray: 2 2; }
+.overall-point .scatter-true-position { fill: #23384f; fill-opacity: .8; stroke: white; stroke-width: 1; filter: none; }
 .overall-point text { fill: var(--ink); paint-order: stroke; stroke: white; stroke-width: 4px; stroke-linejoin: round; font: 800 10px var(--mono); }
 .overall-point:hover circle,
 .overall-point:focus circle { fill-opacity: 1; stroke: var(--ink); }
@@ -798,9 +800,12 @@ body { padding-bottom: 26px; }
 
 .historical-finding { padding: 18px; background: #eef3f7; }
 .historical-finding > span { color: var(--blue-mid); font-family: var(--mono); font-size: 8px; font-weight: 760; letter-spacing: .06em; }
-.historical-finding > strong { display: block; margin-top: 20px; color: var(--navy); font-family: var(--mono); font-size: 35px; line-height: 1; }
-.historical-finding h3 { margin: 10px 0 8px; color: var(--navy); font-size: 16px; line-height: 1.35; }
-.historical-finding p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+.historical-finding-list { display: grid; margin-top: 10px; }
+.historical-finding-list article { padding: 15px 0; border-top: 1px solid #ccd8e4; }
+.historical-finding-list article:first-child { border-top: 0; }
+.historical-finding-list article > strong { display: block; color: var(--navy); font-family: var(--mono); font-size: 22px; line-height: 1.1; }
+.historical-finding h3 { margin: 8px 0 7px; color: var(--navy); font-size: 14px; line-height: 1.35; }
+.historical-finding p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.65; }
 .historical-finding p strong { color: var(--ink); }
 
 .historical-role-compare {
