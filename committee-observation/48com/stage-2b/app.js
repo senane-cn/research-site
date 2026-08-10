@@ -25,6 +25,7 @@ let censusData;
 let stage1Data;
 let stage2aData;
 let timeSampleData;
+let topic01Data;
 const pageMode = document.body.dataset.page || "phase";
 
 const historicalAgendaColors = ["#18365f", "#2d629e", "#267a5e", "#a77526"];
@@ -187,21 +188,61 @@ function overallConcentrationGroups() {
 }
 
 function strictCotextPackages() {
+  return (topic01Data?.formal_text_units || []).map((item) => ({
+    stage: item.family,
+    id: item.id,
+    agenda: item.agenda,
+    label: `${item.agenda} ${item.label}`,
+    actors: [...new Set(item.actors || [])],
+    sourceUrl: item.source_url,
+    sourceType: item.source_type,
+    nonCountrySubmitter: item.non_country_submitter || ""
+  }));
+}
+
+function sameCaseSupportEvents() {
+  const events = [];
   const stage1IdCode = countryCodeMap(stage1Data);
   const stage2aIdCode = countryCodeMap(stage2aData);
-  const stage1Packages = stage1Data.amendment_packages.filter((item) => item.agenda !== "2").map((item) => ({
-    stage: "5—6",
-    id: item.id,
-    label: `${item.agenda} ${item.short_label || item.title}`,
-    actors: item.actors.filter((actor) => ["lead", "co_sponsor"].includes(actor.role)).map((actor) => stage1IdCode.get(actor.country)).filter(Boolean)
-  }));
-  const stage2aPackages = stage2aData.amendment_packages.map((item) => ({
-    stage: "7",
-    id: item.id,
-    label: `${item.unit} ${item.label}`,
-    actors: item.actors.filter((actor) => ["lead", "co_sponsor", "joint_submitter", "floor_join"].includes(actor.role)).map((actor) => stage2aIdCode.get(actor.country)).filter(Boolean)
-  }));
-  return [...stage1Packages, ...stage2aPackages];
+  stage1Data.amendment_packages.filter((item) => item.agenda !== "2").forEach((item) => {
+    const actors = item.actors
+      .filter((actor) => ["lead", "co_sponsor", "support"].includes(actor.role))
+      .map((actor) => stage1IdCode.get(actor.country)).filter(Boolean);
+    if (actors.length > 1) events.push({ stage: "5—6", label: `${item.agenda} ${item.short_label || item.title}`, actors: [...new Set(actors)] });
+  });
+  (stage2aData.integrity_audit?.decision_change_audit?.cases || []).filter((item) => item.kind === "text").forEach((item) => {
+    const actors = item.stances
+      .filter((stance) => ["lead", "support"].includes(stance.role))
+      .map((stance) => stage2aIdCode.get(stance.country)).filter(Boolean);
+    if (actors.length > 1) events.push({ stage: "7", label: `${item.unit.replace(/^7([AB])/, "7$1.")} ${item.site}`, actors: [...new Set(actors)] });
+  });
+  data.units.forEach((unit) => {
+    const actors = [...new Set([...(unit.lead || []), ...(unit.support || [])])];
+    if (actors.length > 1) events.push({ stage: "8", label: `${unit.id} ${unit.name_zh}`, actors });
+  });
+  return events;
+}
+
+function cotextPairRows(events) {
+  const pairMap = new Map();
+  events.forEach((item) => {
+    const actors = [...new Set(item.actors || [])].sort();
+    actors.forEach((left, index) => actors.slice(index + 1).forEach((right) => {
+      const key = `${left}·${right}`;
+      if (!pairMap.has(key)) pairMap.set(key, { left, right, count: 0, packages: [] });
+      pairMap.get(key).count += 1;
+      pairMap.get(key).packages.push(item.label);
+    }));
+  });
+  return [...pairMap.values()].sort((a, b) => b.count - a.count || `${a.left}${a.right}`.localeCompare(`${b.left}${b.right}`));
+}
+
+function committeeMandate(session, code) {
+  const record = topic01Data?.committee_mandates?.[session];
+  return {
+    term: record?.members?.[code] || "—",
+    sourceUrl: record?.source_url || ""
+  };
 }
 
 function renderRoleOverview() {
@@ -668,32 +709,48 @@ function renderCoverageAudit() {
     </div>`;
 }
 
+function decisionSources(item) {
+  return strictCotextPackages().filter((text) => text.agenda === item.id || text.id === item.id);
+}
+
 function renderCensus() {
   if (!censusData?.items?.length) return;
   const groups = decisionChangeGroups();
-  const changedCount = groups.reduce((sum, group) => sum + group.cases.length, 0);
+  const scopes = new Map((topic01Data?.decision_change_scopes || []).map((item) => [item.family, item]));
+  const changedCount = [...scopes.values()].reduce((sum, item) => sum + (item.changed || 0), 0);
+  const newTextCount = [...scopes.values()].reduce((sum, item) => sum + (item.new_text || 0), 0);
   const proceduralDeferrals = stage2aData.integrity_audit?.decision_change_audit?.cases.filter((item) => item.kind === "procedure").length || 0;
   $("#census-metrics").innerHTML = [
-    [changedCount, "项决定文本／结果改变"],
-    [groups.length, "类议程都留下改写"],
+    [changedCount, "项相对原基线的改变"],
+    [newTextCount, "项紧急提名形成完整新文本"],
     [proceduralDeferrals, "项实质审议后移，另列"],
-    ["372 + 253", "已核定回合＋保守下限"]
+    [groups.length, "类议程均出现可核对改变"]
   ].map(([value, label]) => `<article><strong>${escapeHTML(value)}</strong><span>${escapeHTML(label)}</span></article>`).join("");
 
-  const maxChanges = Math.max(...groups.map((group) => group.cases.length));
-  $("#decision-change-grid").innerHTML = groups.map((group, index) => `
-    <article style="--change-color:${group.color}">
-      <header><span>0${index + 1}</span><h3>${escapeHTML(group.family)}</h3><strong>${group.cases.length}<small>项</small></strong></header>
-      <div class="decision-count-track"><i style="width:${group.cases.length / maxChanges * 100}%"></i></div>
-      <div class="decision-case-tokens">${group.cases.map((item) => `<button type="button" data-tooltip="${escapeHTML(`${item.id} ${item.label}。原基线：${item.baseline} 实质改变：${item.change} 结果：${item.outcome}`)}">${escapeHTML(item.id)}</button>`).join("")}</div>
-    </article>`).join("");
+  $("#decision-change-grid").innerHTML = groups.map((group, index) => {
+    const scope = scopes.get(group.family) || { scope_total: group.cases.length, changed: group.cases.length, unit: "项", display: `${group.cases.length}` };
+    const changedWidth = scope.scope_total ? (scope.changed || 0) / scope.scope_total * 100 : 0;
+    const newTextWidth = scope.scope_total ? (scope.new_text || 0) / scope.scope_total * 100 : 0;
+    return `
+      <article style="--change-color:${group.color}">
+        <header><span>0${index + 1}</span><h3>${escapeHTML(group.family)}</h3><strong>${escapeHTML(scope.display)}</strong></header>
+        <div class="decision-count-track" role="img" aria-label="${escapeHTML(scope.note)}"><i class="changed" style="width:${changedWidth}%"></i>${newTextWidth ? `<i class="new-text" style="width:${newTextWidth}%"></i>` : ""}</div>
+        <p class="decision-scope-label"><b>${escapeHTML(scope.unit)}</b><span>${escapeHTML(scope.note)}</span></p>
+        <div class="decision-case-tokens">${group.cases.map((item) => `<button type="button" data-tooltip="${escapeHTML(`${item.id} ${item.label}。原基线：${item.baseline} 实质改变：${item.change} 结果：${item.outcome}`)}">${escapeHTML(item.id)}</button>`).join("")}</div>
+      </article>`;
+  }).join("");
 
   $("#decision-change-list").innerHTML = groups.map((group) => `
-    <section style="--change-color:${group.color}"><header><h3>${escapeHTML(group.family)}</h3><span>${group.cases.length}项</span></header>${group.cases.map((item) => `
-      <article tabindex="0" data-tooltip="${escapeHTML(`原基线：${item.baseline} 实质改变：${item.change} 结果：${item.outcome}`)}"><b>${escapeHTML(item.id)}</b><div><strong>${escapeHTML(item.label)}</strong><small>${escapeHTML(item.type)}</small></div><span>查看证据</span></article>`).join("")}</section>`).join("");
+    <section style="--change-color:${group.color}"><header><h3>${escapeHTML(group.family)}</h3><span>${escapeHTML(scopes.get(group.family)?.display || `${group.cases.length}项`)}</span></header>${group.cases.map((item) => {
+      const sources = decisionSources(item);
+      const detail = `原基线：${item.baseline} 实质改变：${item.change} 结果：${item.outcome}`;
+      return `
+        <article><b>${escapeHTML(item.id)}</b><div><strong>${escapeHTML(item.label)}</strong><small>${escapeHTML(item.type)}</small></div><div class="decision-evidence-actions"><button type="button" data-tooltip="${escapeHTML(detail)}">变化说明</button>${sources.length ? `<a href="${escapeHTML(sources[0].sourceUrl)}" target="_blank" rel="noreferrer">修正文本${sources.length > 1 ? `（${sources.length}）` : ""} ↗</a>` : ""}</div></article>`;
+    }).join("")}</section>`).join("");
   renderCoverageAudit();
 
-  $("#census-table-body").innerHTML = censusData.items.map((item) => {
+  const censusTableBody = $("#census-table-body");
+  if (censusTableBody) censusTableBody.innerHTML = censusData.items.map((item) => {
     const countries = Object.keys(item.country_turns || {});
     const detail = [
       `${item.agenda} ${item.label}：${item.member_turns}个委员国发言回合，${item.active_members}国参与。`,
@@ -713,7 +770,7 @@ function renderCensus() {
       </tr>
     `;
   }).join("");
-  $("#census-note").textContent = `“被改变”只表示最终决定相对工作文件或专业建议发生可核对的实质变化，不预设强化或弱化。议程7的贝加尔湖与瓦尔德斯半岛因实质审议后移而另列，不并入${changedCount}项文本／结果改变。`;
+  $("#census-note").textContent = `“改变”指最终决定相对工作文件或专业建议发生可核对的实质变化。分母按审议单元确定：议程5—6、9—12以议程／子议程计，议程7、8以上会讨论个案计。议程8的2个紧急提名为完整新文本，不伪造原结果基线。`;
   bindTooltips($("#census-section"));
 }
 
@@ -729,7 +786,8 @@ function renderOverallAnalysis() {
   ];
   const modeForAgenda = (agenda) => modeDefs.find((mode) => mode.agendas.includes(agenda)) || modeDefs[0];
   const headline = overall.headline;
-  $("#overall-kpis").innerHTML = [
+  const overallKpis = $("#overall-kpis");
+  if (overallKpis) overallKpis.innerHTML = [
     [`${headline.agenda_7_8_share}%`, "议程7—8占全部回合", `${headline.agenda_7_8_turns}／${censusData.grand_total}回合`],
     [`${headline.agenda_10_family_share}%`, "议程10占执行机制组", "53／67回合"],
     [headline.zero_floor_items.length, "项无委员国介入", headline.zero_floor_items.join(" · ")],
@@ -755,19 +813,28 @@ function renderOverallAnalysis() {
     "7": [-17, -8, "end"], "8": [-17, 15, "end"], "9A": [12, 22, "start"],
     "9B": [10, 18, "start"], "10": [12, -12, "start"], "12": [12, -9, "start"]
   };
+  const visualOffsets = {
+    "5B": [0, -8], "5D": [0, 8], "6B": [-7, -6], "9A": [7, 8]
+  };
   const pointMarkup = plotted.map((row) => {
     const [dx, dy, anchor] = labelOffsets[row.agenda] || [10, -10, "start"];
+    const [pointDx, pointDy] = visualOffsets[row.agenda] || [0, 0];
+    const trueX = x(row.active_members);
+    const trueY = y(row.turns_per_active);
+    const pointX = trueX + pointDx;
+    const pointY = trueY + pointDy;
     const tooltip = `${row.agenda} ${row.label}：${row.active_members}国参与，${row.member_turns}个回合；平均每个参与国${row.turns_per_active}回合，超过首轮介入的复取发言为${row.reentry_turns}回合。${row.evidence}。`;
     return `
       <g class="overall-point mode-${modeForAgenda(row.agenda).id}" tabindex="0" data-tooltip="${escapeHTML(tooltip)}" style="--point-color:${discussionModeColors[modeForAgenda(row.agenda).id]}">
-        <circle cx="${x(row.active_members)}" cy="${y(row.turns_per_active)}" r="${radius(row.member_turns)}"></circle>
-        <text x="${x(row.active_members) + dx}" y="${y(row.turns_per_active) + dy}" text-anchor="${anchor}">${escapeHTML(row.agenda)}</text>
+        ${pointDx || pointDy ? `<line class="scatter-position-guide" x1="${trueX}" y1="${trueY}" x2="${pointX}" y2="${pointY}"></line><circle class="scatter-true-position" cx="${trueX}" cy="${trueY}" r="2.5"></circle>` : ""}
+        <circle cx="${pointX}" cy="${pointY}" r="${radius(row.member_turns)}"></circle>
+        <text x="${pointX + dx}" y="${pointY + dy}" text-anchor="${anchor}">${escapeHTML(row.agenda)}</text>
       </g>
     `;
   }).join("");
   $("#overall-scatter-shell").innerHTML = `
-    <svg class="overall-scatter" viewBox="0 0 ${width} ${height}" role="img" aria-label="议程覆盖面与反复介入散点图">
-      <desc id="overall-scatter-svg-desc">横轴为参与委员国数量，纵轴为每个参与国平均发言回合。议程7和8覆盖21国且反复介入最密集；议程10和6C形成第二层协商节点。</desc>
+    <svg class="overall-scatter" viewBox="0 0 ${width} ${height}" role="img" aria-label="各议程参与范围与讨论强度散点图">
+      <desc id="overall-scatter-svg-desc">横轴为参与委员国数量，纵轴为每个参与国平均发言回合，圆点大小为议程总回合数。议程7和8覆盖21国且反复往返最密集；议程10和6C形成第二层讨论节点。</desc>
       ${yTicks.map((tick) => `<line class="scatter-grid" x1="${plot.left}" x2="${plot.right}" y1="${y(tick)}" y2="${y(tick)}"></line><text class="scatter-tick y" x="${plot.left - 12}" y="${y(tick) + 4}" text-anchor="end">${tick}</text>`).join("")}
       ${xTicks.map((tick) => `<line class="scatter-grid" x1="${x(tick)}" x2="${x(tick)}" y1="${plot.top}" y2="${plot.bottom}"></line><text class="scatter-tick" x="${x(tick)}" y="${plot.bottom + 23}" text-anchor="middle">${tick}</text>`).join("")}
       <line class="scatter-axis" x1="${plot.left}" x2="${plot.right}" y1="${plot.bottom}" y2="${plot.bottom}"></line>
@@ -783,6 +850,15 @@ function renderOverallAnalysis() {
   `;
 
   const concentrationGroups = overallConcentrationGroups();
+  const agendaKeywords = {
+    "6C": "内罗毕后续", "5A": "中心活动报告", "5B": "咨询机构报告", "5D": "全球战略",
+    "5C": "第六战略目标", "6B": "二类中心报告", "6A": "能力建设战略",
+    "7A.27": "维也纳历史中心", "7B.47": "威斯敏斯特宫", "7B.62": "奥赫里德遗产",
+    "7B.9": "汉皮古迹群", "7B.51": "奇洛埃教堂", "其他11项": "其余保护个案",
+    "8B.7": "瓦迪沃拉亚", "8B.30": "里贝拉萨克拉", "8B.20": "曼格斯套岩刻寺",
+    "8B.12": "奥林匹斯山扩展", "8B.33": "格丁尼亚城区", "其他6项": "其余列入个案",
+    "10": "操作指南第五章", "9B": "区域行动计划", "12": "基金与预算", "9A": "定期报告", "11": "国际援助"
+  };
   $("#overall-concentration").innerHTML = concentrationGroups.map((group, groupIndex) => `
     <article class="concentration-group" style="--group-color:${historicalAgendaColors[groupIndex]}">
       <header><h4>${escapeHTML(group.family)}</h4><span>${group.family_turns}回合</span></header>
@@ -790,7 +866,7 @@ function renderOverallAnalysis() {
         ${group.items.filter((row) => row.share > 0).map((row, index) => `<i style="width:${row.share}%;opacity:${Math.max(.42, 1 - index * .11)}" data-tooltip="${escapeHTML(`${row.agenda} ${row.label}：${row.member_turns}回合，占该议程族${row.share}%。`)}" tabindex="0"><b>${row.share >= 9 ? row.agenda : ""}</b></i>`).join("")}
       </div>
       <div class="concentration-list">
-        ${group.items.map((row, index) => `<span class="${index === 0 ? "leader" : ""}"><b>${escapeHTML(row.agenda)}</b><em>${row.share}%</em><small>${row.member_turns}回合</small></span>`).join("")}
+        ${group.items.map((row, index) => `<span class="${index === 0 ? "leader" : ""}" data-tooltip="${escapeHTML(`${row.agenda} ${row.label}：${row.member_turns}回合，占该议程族${row.share}%。`)}" tabindex="0"><b>${escapeHTML(row.agenda)}</b><i class="concentration-keyword">${escapeHTML(agendaKeywords[row.agenda] || row.label)}</i><em>${row.share}%</em><small>${row.member_turns}回合</small></span>`).join("")}
       </div>
       <p>${escapeHTML([
         "6C是本组最大单项，其余回合仍分布在5A—5D。",
@@ -985,9 +1061,9 @@ function renderMemberConcentration() {
   if (!members.length) return;
   const items = censusData.items;
   const levels = [
-    ["0", "0"], ["1", "1"], ["2", "2"], ["3—4", "3"], ["5—7", "5"], ["8+", "8"]
+    ["0", "0"], ["1—2", "1"], ["3—5", "3"], ["6—10", "6"], ["11—15", "11"], ["16+", "16"]
   ];
-  const levelFor = (value) => value === 0 ? 0 : value === 1 ? 1 : value === 2 ? 2 : value <= 4 ? 3 : value <= 7 ? 4 : 5;
+  const levelFor = (value) => value === 0 ? 0 : value <= 2 ? 1 : value <= 5 ? 2 : value <= 10 ? 3 : value <= 15 ? 4 : 5;
   $("#member-concentration-legend").innerHTML = levels.map(([label, value], index) => `<span><i class="heat-${index}">${value}</i>${label}回合</span>`).join("");
   const sorted = [...members].sort((a, b) => a.topShare - b.topShare || b.coverage - a.coverage || b.totalTurns - a.totalTurns);
   $("#member-concentration-shell").innerHTML = `
@@ -1009,26 +1085,22 @@ function renderOverallCotext() {
   const packages = strictCotextPackages();
   if (!packages.length) return;
   const jointPackages = packages.filter((item) => item.actors.length > 1);
-  const pairMap = new Map();
-  jointPackages.forEach((item) => {
-    const actors = [...new Set(item.actors)].sort();
-    actors.forEach((left, index) => actors.slice(index + 1).forEach((right) => {
-      const key = `${left}·${right}`;
-      if (!pairMap.has(key)) pairMap.set(key, { left, right, count: 0, packages: [] });
-      pairMap.get(key).count += 1;
-      pairMap.get(key).packages.push(item.label);
-    }));
-  });
-  const pairs = [...pairMap.values()].sort((a, b) => b.count - a.count || `${a.left}${a.right}`.localeCompare(`${b.left}${b.right}`));
-  const maxPair = Math.max(...pairs.map((pair) => pair.count), 1);
-  const connectedCountries = new Set(jointPackages.flatMap((item) => item.actors)).size;
-  const agenda8SupportActions = data.units.reduce((sum, unit) => sum + unit.support.length, 0);
+  const supportEvents = sameCaseSupportEvents();
+  const formalCountries = new Set(packages.flatMap((item) => item.actors)).size;
   $("#cotext-kpis").innerHTML = [
-    [packages.length, "5—7正式文本包", "含单一主提文本"],
-    [jointPackages.length, "多国共同文本包", `${connectedCountries}国进入关系网`],
-    [pairs.length, "可识别国家对", "同包共同提交计一次"],
-    [agenda8SupportActions, "议程8同案明确支持", "较弱证据层，单列"]
+    [packages.length, "正式提案／修正文本单元", "议程5—12全部登记"],
+    [jointPackages.length, "多国共同文本单元", "同一正式文本共同提出"],
+    [`${formalCountries}／21`, "委员国留下正式文本角色", "主提或共同提出"],
+    [supportEvents.length, "同案支持事件", "议程5—8已结构化"]
   ].map(([value, label, detail]) => `<article><strong>${value}</strong><span>${label}</span><small>${detail}</small></article>`).join("");
+  const swissFormal = packages.filter((item) => item.actors.includes("CHE"));
+  const swissJoint = swissFormal.filter((item) => item.actors.length > 1);
+  const swissSupport = supportEvents.filter((item) => item.actors.includes("CHE"));
+  const swissRoles = deriveOverallMembers().find((member) => member.code === "CHE")?.roles;
+  if ($("#cotext-observation") && swissFormal.length && !swissJoint.length && !swissSupport.length) {
+    $("#cotext-observation").innerHTML = `
+      <p><b>补充观察：</b>瑞士在议程5—12留下${swissFormal.length}个单独修正文本，并记录${swissRoles?.calibrate || 0}次技术／保护校准；在已结构化数据中未出现共同提出或同案支持。议程9—12的现场支持方身份尚不完整。</p>`;
+  }
   const regionOrder = ["africa", "arab", "asia_pacific", "europe_north_america", "latin_caribbean"];
   const regionLabels = {
     africa: "非洲", arab: "阿拉伯国家", asia_pacific: "亚洲和太平洋",
@@ -1039,38 +1111,59 @@ function renderOverallCotext() {
     return regionDelta || left.code.localeCompare(right.code);
   });
   const regionStart = (index) => index > 0 && orderedCountries[index - 1].region !== orderedCountries[index].region;
-  const pairFor = (left, right) => pairMap.get([left, right].sort().join("·"));
-  $("#cotext-matrix-panel").innerHTML = `
-    <header><div><span>REGION-ORDERED MATRIX</span><h3>同一正式文本包中出现的国家对</h3></div><small>格内＝共同文本包数量</small></header>
-    <div class="cotext-region-legend">${regionOrder.map((region) => `<span style="--region-color:${regionColors[region]}"><i></i>${regionLabels[region]}</span>`).join("")}</div>
-    <div class="matrix-scroll cotext-matrix-scroll"><table class="cotext-matrix">
-      <thead><tr><th>委员国</th>${orderedCountries.map((country, index) => `<th class="${regionStart(index) ? "region-start" : ""}" style="--region-color:${regionColors[country.region]}" tabindex="0" data-tooltip="${escapeHTML(`${country.name_zh}（${country.code}） · ${regionLabels[country.region]}`)}"><span>${country.code}</span></th>`).join("")}</tr></thead>
-      <tbody>${orderedCountries.map((rowCountry, rowIndex) => `<tr class="${regionStart(rowIndex) ? "region-start" : ""}">
-        <th style="--region-color:${regionColors[rowCountry.region]}" tabindex="0" data-tooltip="${escapeHTML(`${rowCountry.name_zh}（${rowCountry.code}） · ${regionLabels[rowCountry.region]}`)}"><i>${countryFlags[rowCountry.code] || ""}</i><b>${rowCountry.code}</b></th>
-        ${orderedCountries.map((columnCountry, columnIndex) => {
-          if (rowCountry.code === columnCountry.code) return `<td class="diagonal ${regionStart(columnIndex) ? "region-start" : ""}">—</td>`;
-          const pair = pairFor(rowCountry.code, columnCountry.code);
-          const count = pair?.count || 0;
-          const detail = count
-            ? `${rowCountry.name_zh}（${rowCountry.code}）与${columnCountry.name_zh}（${columnCountry.code}）共同出现于${count}个正式文本包：${pair.packages.join("；")}`
-            : `${rowCountry.name_zh}（${rowCountry.code}）与${columnCountry.name_zh}（${columnCountry.code}）：本阶段没有可核对的共同文本包。`;
-          return `<td class="heat heat-${count} ${regionStart(columnIndex) ? "region-start" : ""}" style="--heat:${count / maxPair}" tabindex="0" data-tooltip="${escapeHTML(detail)}">${count || ""}</td>`;
-        }).join("")}
-      </tr>`).join("")}</tbody>
-    </table></div>
-    <p>横纵轴均按联合国教科文组织区域组排序；区域分隔线用于识别区内聚集与跨区域连接。</p>`;
-  $("#cotext-pairs").innerHTML = `
-    <header><span>REPEATED FORMAL PAIRS</span><h3>重复出现的共同文本组合</h3></header>
-    <div>${pairs.slice(0, 12).map((pair) => `<article tabindex="0" data-tooltip="${escapeHTML(`${pair.left}与${pair.right}共同出现于${pair.count}个正式文本包：${pair.packages.join("；")}`)}"><b><span aria-hidden="true">${countryFlags[pair.left] || ""}</span>${pair.left}<i>×</i><span aria-hidden="true">${countryFlags[pair.right] || ""}</span>${pair.right}</b><span><u style="width:${pair.count / maxPair * 100}%"></u></span><strong>${pair.count}组</strong></article>`).join("")}</div>`;
-  const stageSummary = ["5—6", "7"].map((stage) => {
-    const stagePackages = packages.filter((item) => item.stage === stage);
-    return { stage, packages: stagePackages.length, joint: stagePackages.filter((item) => item.actors.length > 1).length, countries: new Set(stagePackages.flatMap((item) => item.actors)).size };
-  });
-  $("#cotext-stage-summary").innerHTML = `
-    <header><span>EVIDENCE LAYERS</span><h3>按阶段与证据强度分层</h3></header>
-    ${stageSummary.map((row) => `<article><b>议程${row.stage}</b><strong>${row.joint}<small>／${row.packages}组为多国共同文本</small></strong><span>${row.countries}国留下正式文本角色</span></article>`).join("")}
-    <article class="soft-layer"><b>议程8</b><strong>${agenda8SupportActions}<small>个同案明确支持动作</small></strong><span>只说明对当次文本方向的可观察支持，不并入共同署名网。</span></article>`;
-  bindTooltips($("#cotext-overall-section"));
+  const coverageByStage = new Map((topic01Data?.evidence_coverage || []).map((item) => [item.family, item]));
+
+  const renderView = (view) => {
+    const isFormal = view === "formal";
+    const events = isFormal ? packages : supportEvents;
+    const pairs = cotextPairRows(events);
+    const pairMap = new Map(pairs.map((pair) => [`${pair.left}·${pair.right}`, pair]));
+    const maxPair = Math.max(...pairs.map((pair) => pair.count), 1);
+    const pairFor = (left, right) => pairMap.get([left, right].sort().join("·"));
+    const viewTitle = isFormal ? "正式共同提出" : "现场明确同案支持";
+    const unitLabel = isFormal ? "正式文本单元" : "同案支持事件";
+    $("#cotext-matrix-panel").innerHTML = `
+      <header><div><span>REGION-ORDERED MATRIX</span><h3>${viewTitle}：委员国关系矩阵</h3></div><div class="cotext-view-switch" role="group" aria-label="切换共同文本证据层"><button type="button" data-cotext-view="formal" aria-pressed="${isFormal}">正式共同提出</button><button type="button" data-cotext-view="support" aria-pressed="${!isFormal}">明确同案支持</button></div></header>
+      <div class="cotext-region-legend">${regionOrder.map((region) => `<span style="--region-color:${regionColors[region]}"><i></i>${regionLabels[region]}</span>`).join("")}</div>
+      <div class="matrix-scroll cotext-matrix-scroll"><table class="cotext-matrix">
+        <thead><tr><th>委员国</th>${orderedCountries.map((country, index) => `<th class="${regionStart(index) ? "region-start" : ""}" style="--region-color:${regionColors[country.region]}" tabindex="0" data-tooltip="${escapeHTML(`${country.name_zh}（${country.code}） · ${regionLabels[country.region]}`)}"><span>${country.code}</span></th>`).join("")}</tr></thead>
+        <tbody>${orderedCountries.map((rowCountry, rowIndex) => `<tr class="${regionStart(rowIndex) ? "region-start" : ""}">
+          <th style="--region-color:${regionColors[rowCountry.region]}" tabindex="0" data-tooltip="${escapeHTML(`${rowCountry.name_zh}（${rowCountry.code}） · ${regionLabels[rowCountry.region]}`)}"><i>${countryFlags[rowCountry.code] || ""}</i><b>${rowCountry.code}</b></th>
+          ${orderedCountries.map((columnCountry, columnIndex) => {
+            if (rowCountry.code === columnCountry.code) return `<td class="diagonal ${regionStart(columnIndex) ? "region-start" : ""}">—</td>`;
+            const pair = pairFor(rowCountry.code, columnCountry.code);
+            const count = pair?.count || 0;
+            const heatLevel = count ? Math.max(1, Math.ceil(count / maxPair * 7)) : 0;
+            const detail = count
+              ? `${rowCountry.name_zh}（${rowCountry.code}）与${columnCountry.name_zh}（${columnCountry.code}）共同出现于${count}个${unitLabel}：${pair.packages.join("；")}`
+              : `${rowCountry.name_zh}（${rowCountry.code}）与${columnCountry.name_zh}（${columnCountry.code}）：${isFormal ? "议程5—12正式登记中未共同提出同一文本" : "议程5—8已结构化记录中未见同案支持关系"}。`;
+            return `<td class="heat heat-${heatLevel} ${regionStart(columnIndex) ? "region-start" : ""}" tabindex="0" data-tooltip="${escapeHTML(detail)}">${count || ""}</td>`;
+          }).join("")}
+        </tr>`).join("")}</tbody>
+      </table></div>
+      <p>${isFormal ? "正式共同提出覆盖议程5—12全部已登记文本；REV修订版并入同一文本沿革单元。" : "同案支持根据现场明确支持表态编码；议程9—12支持方身份未完整结构化，本视图不将空白解释为0。"}</p>`;
+    $("#cotext-pairs").innerHTML = `
+      <header><span>${isFormal ? "REPEATED FORMAL PAIRS" : "REPEATED SUPPORT PAIRS"}</span><h3>重复出现的${isFormal ? "正式共同提出" : "同案支持"}组合</h3></header>
+      <div>${pairs.slice(0, 12).map((pair) => `<article tabindex="0" data-tooltip="${escapeHTML(`${pair.left}与${pair.right}共同出现于${pair.count}个${unitLabel}：${pair.packages.join("；")}`)}"><b><span aria-hidden="true">${countryFlags[pair.left] || ""}</span>${pair.left}<i>×</i><span aria-hidden="true">${countryFlags[pair.right] || ""}</span>${pair.right}</b><span><u style="width:${pair.count / maxPair * 100}%"></u></span><strong>${pair.count}</strong></article>`).join("")}</div>`;
+    const stages = ["5—6", "7", "8", "9—12"];
+    $("#cotext-stage-summary").innerHTML = `
+      <header><span>EVIDENCE COVERAGE</span><h3>议程范围与证据完整度</h3></header>
+      ${stages.map((stage) => {
+        const stageEvents = events.filter((item) => item.stage === stage);
+        const coverage = coverageByStage.get(stage) || {};
+        const status = isFormal ? coverage.formal_status : coverage.support_status;
+        const mainValue = isFormal ? stageEvents.filter((item) => item.actors.length > 1).length : stageEvents.length;
+        const denominator = isFormal ? stageEvents.length : null;
+        const incomplete = status === "身份不完整";
+        const valueMarkup = incomplete && !isFormal
+          ? `—<small>支持方身份未完整，不以0计</small>`
+          : `${mainValue}${denominator != null ? `<small>／${denominator}个文本单元为多国共同提出</small>` : `<small>个同案支持事件</small>`}`;
+        return `<article class="${incomplete ? "incomplete-layer" : ""}"><b>议程${stage} · ${escapeHTML(status || "待核")}</b><strong>${valueMarkup}</strong><span>${escapeHTML(coverage.note || "")}</span></article>`;
+      }).join("")}`;
+    $$("[data-cotext-view]", $("#cotext-matrix-panel")).forEach((button) => button.addEventListener("click", () => renderView(button.dataset.cotextView)));
+    bindTooltips($("#cotext-overall-section"));
+  };
+  renderView("formal");
 }
 
 function renderBoundaryTimeAudit() {
@@ -1184,8 +1277,9 @@ function renderDeliberationTimeAudit() {
     `;
   }).join("");
 
-  const boundaryCaution = pageMode === "overall" ? ` ${censusData.boundary_time_audit.caution}` : "";
-  $("#time-audit-note").textContent = `${audit.clock_rule} ${audit.coding_note}${boundaryCaution}`;
+  $("#time-audit-note").textContent = pageMode === "overall"
+    ? `时间以会议视频中的连续审议段计；每段按主要用途归入一类。2,972分钟为约略边界时长，整体不确定范围约±75分钟。`
+    : `${audit.clock_rule} ${audit.coding_note}`;
   bindTooltips($("#time-audit-section"));
 }
 
@@ -1197,7 +1291,7 @@ function renderTimeSampleComparison() {
   host.innerHTML = `
     <header class="comparison-heading">
       <div><span>TWO SAMPLES / TWO QUESTIONS</span><h3>总体情况与焦点议题的突出印象分开看</h3></div>
-      <p>两组使用同一套五类编码和同一条100%尺度：先看全会总体时间结构，再看长议题为何更容易留下强烈印象。</p>
+      <p>两组使用同一套五类编码和同一条100%尺度：分层均衡样本描述全会总体时间结构，长议题样本解释焦点议题为何更容易留下强烈印象。</p>
     </header>
     <div class="sample-method-list" role="img" aria-label="分层均衡时间样本与60分钟以上长议题样本的五类时间用途比较">
       ${methods.map((method, methodIndex) => `
@@ -1209,8 +1303,8 @@ function renderTimeSampleComparison() {
           <p class="sample-scope-note"><b>${method === timeSampleData.balanced ? "呈现总体情况" : "呈现焦点案例的突出印象"}</b>${method === timeSampleData.balanced ? `分层抽取120个5分钟窗，纠偏＋低产出中心估计为${method.burden_share}%，近似95%区间${burdenRange}。` : `纳入${method.case_count}个60分钟以上议题，纠偏＋低产出为${method.burden_share}%；它描述高负荷议题，不外推为全会平均值。`}</p>
         </article>`).join("")}
     </div>
-    <details class="compact-details comparison-details long-sample-details"><summary><span>展开${timeSampleData.long_topic.case_count}个60分钟以上长议题</span><small>${timeSampleData.long_topic.threshold_minutes}分钟阈值 · ${timeSampleData.long_topic.coverage_share}%全程</small></summary><div class="long-case-list">${timeSampleData.long_topic.cases.map((caseItem) => `<article tabindex="0" data-tooltip="${escapeHTML(`${caseItem.agenda} ${caseItem.name}：${timeSampleData.categories.map((category) => `${category.short}${caseItem.segments[category.id]}分钟`).join("，")}。`)}"><b>${escapeHTML(caseItem.agenda)}</b><span>${escapeHTML(caseItem.name)}</span><strong>${caseItem.minutes}<small>分钟</small></strong><em class="${caseItem.source === "原605" ? "legacy" : "added"}">${escapeHTML(caseItem.source)}</em></article>`).join("")}</div><p class="details-method-note">${escapeHTML(timeSampleData.long_topic.threshold_note)}</p></details>
-    <p class="comparison-transition"><b>从“有多少”进入“怎样发生”：</b>纠偏＋低产出从总体样本的${timeSampleData.balanced.burden_share}%上升到长议题的${timeSampleData.long_topic.burden_share}%，在下方实质改写案例中进一步达到${timeSampleData.legacy.burden_share}%；总体占比有限，但在焦点议题中明显集中。</p>`;
+    <details class="compact-details comparison-details long-sample-details"><summary><span>展开${timeSampleData.long_topic.case_count}个60分钟以上长议题</span><small>${timeSampleData.long_topic.threshold_minutes}分钟阈值 · ${timeSampleData.long_topic.coverage_share}%全程</small></summary><div class="long-case-list">${timeSampleData.long_topic.cases.map((caseItem) => `<article tabindex="0" data-tooltip="${escapeHTML(`${caseItem.agenda} ${caseItem.name}：${timeSampleData.categories.map((category) => `${category.short}${caseItem.segments[category.id]}分钟`).join("，")}。`)}"><b>${escapeHTML(caseItem.agenda)}</b><span>${escapeHTML(caseItem.name)}</span><strong>${caseItem.minutes}<small>分钟</small></strong></article>`).join("")}</div><p class="details-method-note">${escapeHTML(timeSampleData.long_topic.threshold_note)}</p></details>
+    <p class="sample-scope-note comparison-conclusion"><b>样本选择影响估计</b><span>纠偏＋低产出在总体样本中为${timeSampleData.balanced.burden_share}%，在60分钟以上长议题中为${timeSampleData.long_topic.burden_share}%，在六个实质改写案例中为${timeSampleData.legacy.burden_share}%。因此，总体比例与焦点案例的突出印象需要分开解释。</span></p>`;
   bindTooltips(host);
 }
 
@@ -1218,7 +1312,7 @@ function renderDeliberationRoles() {
   const audit = data.deliberation_time_audit;
   if (!audit) return;
   const sharedMax = Math.max(...audit.role_threads.flatMap((role) => role.actors.map((actor) => actor.count)), 1);
-  $("#thread-role-grid").innerHTML = `<p class="thread-scale-note"><span>0</span><b>四图共用横向尺度</b><span>${sharedMax}段</span></p>` + audit.role_threads.map((role) => {
+  $("#thread-role-grid").innerHTML = audit.role_threads.map((role) => {
     return `
       <article class="thread-role-card role-${role.id}">
         <header><span>${escapeHTML(role.id.toUpperCase())}</span><h3>${escapeHTML(role.label)}</h3><p>${escapeHTML(role.note)}</p></header>
@@ -1281,10 +1375,19 @@ function renderHistoricalBaseline() {
   `).join("");
 
   $("#historical-finding").innerHTML = `
-    <span>STRONGEST COMPARABLE CHANGE</span>
-    <strong>7 → 8 → 7+8</strong>
-    <h3>本届没有单一议程垄断讨论，保护状况与列入形成双核心</h3>
-    <p>46COM议程7占<strong>${newDelhi.agenda_families[1].member_turn_share}%</strong>；47COM议程8占<strong>${paris.agenda_families[2].member_turn_share}%</strong>；48COM则由议程7的<strong>${busan.agenda_families[1].member_turn_share}%</strong>与议程8的<strong>${busan.agenda_families[2].member_turn_share}%</strong>共同构成主体。议程5—6连续两届上升至<strong>${busan.agenda_families[0].member_turn_share}%</strong>。</p>
+    <span>CROSS-SESSION FINDINGS</span>
+    <div class="historical-finding-list">
+      <article>
+        <strong>7 → 8 → 7+8</strong>
+        <h3>个案议程由单一重心转为双核心</h3>
+        <p>46COM议程7占<strong>${newDelhi.agenda_families[1].member_turn_share}%</strong>；47COM议程8占<strong>${paris.agenda_families[2].member_turn_share}%</strong>；48COM议程7与8分别占<strong>${busan.agenda_families[1].member_turn_share}%</strong>和<strong>${busan.agenda_families[2].member_turn_share}%</strong>。</p>
+      </article>
+      <article>
+        <strong>${newDelhi.agenda_families[0].member_turn_share}%—${busan.agenda_families[0].member_turn_share}%</strong>
+        <h3>战略与能力建设连续两届上升</h3>
+        <p>议程5—6的委员国发言回合份额从46COM的<strong>${newDelhi.agenda_families[0].member_turn_share}%</strong>升至47COM的<strong>${paris.agenda_families[0].member_turn_share}%</strong>，本届进一步达到<strong>${busan.agenda_families[0].member_turn_share}%</strong>。</p>
+      </article>
+    </div>
   `;
 
   const busanRoles = deriveOverallMembers().map((member) => ({
@@ -1293,26 +1396,28 @@ function renderHistoricalBaseline() {
     turns: member.totalTurns,
     words: null
   }));
+  const topLimit = pageMode === "overall" ? 7 : 6;
   const topRows = sessions.map((session) => ({
     session,
     rows: [...(session.session === "48COM" ? busanRoles : session.country_roles || [])]
-      .sort((a, b) => b.turns - a.turns || a.code.localeCompare(b.code)).slice(0, 6)
+      .sort((a, b) => b.turns - a.turns || a.code.localeCompare(b.code)).slice(0, topLimit)
+      .map((row) => ({ ...row, ...committeeMandate(session.session, row.code) }))
   }));
   const roleMax = Math.max(...topRows.flatMap((group) => group.rows.map((row) => row.turns)), 1);
   $("#historical-role-compare").innerHTML = topRows.map(({ session, rows }) => `
     <section class="historical-role-column">
-      <header><div><span>PARTICIPATION VOLUME</span><h3>${escapeHTML(session.session)} 发言回合前六位</h3></div><small>非质量排名</small></header>
+      <header><div><span>PARTICIPATION VOLUME</span><h3>${escapeHTML(session.session)} 发言回合${pageMode === "overall" ? "前1／3（7国）" : "前六位"}</h3></div>${pageMode === "overall" ? `<small><a href="${escapeHTML(topic01Data?.committee_mandates?.[session.session]?.source_url || "#")}" target="_blank" rel="noreferrer">委员国与任期 ↗</a></small>` : `<small>议程5—12</small>`}</header>
       <div>
         ${rows.map((row, index) => `
-          <article class="historical-role-row" tabindex="0" aria-label="${escapeHTML(`${row.name_zh} ${row.code}，${row.turns}回合`)}" data-tooltip="${escapeHTML(`${row.name_zh}（${row.code}）：议程5—12共${row.turns}个可识别委员国发言回合${row.words != null ? `，${row.words.toLocaleString("zh-CN")}词` : ""}。这里只表示参与量，不评价发言质量。`)}">
-            <em>${index + 1}</em><b><span aria-hidden="true">${countryFlags[row.code] || "🏳️"}</span>${escapeHTML(row.code)}</b><span><i><u style="width:${row.turns / roleMax * 100}%"></u></i></span><small>${row.turns}</small>
+          <article class="historical-role-row" tabindex="0" aria-label="${escapeHTML(`${row.name_zh} ${row.code}，委员任期${row.term}，${row.turns}回合`)}" data-tooltip="${escapeHTML(`${row.name_zh}（${row.code}）：本届委员任期${row.term}；议程5—12共${row.turns}个可识别委员国发言回合${row.words != null ? `，${row.words.toLocaleString("zh-CN")}词` : ""}。`)}">
+            <em>${index + 1}</em><b><span aria-hidden="true">${countryFlags[row.code] || "🏳️"}</span><i>${escapeHTML(row.code)}</i><small>${escapeHTML(row.term)}</small></b><span><i><u style="width:${row.turns / roleMax * 100}%"></u></i></span><small>${row.turns}</small>
           </article>
         `).join("")}
       </div>
     </section>
   `).join("");
 
-  $("#historical-method-note").textContent = `${historicalData.unit_note} 本图只发布可复核的议程分布与发言量；半自动功能标签继续人工校核，不用于国家排名。`;
+  $("#historical-method-note").textContent = `46—47COM使用官方逐字记录，48COM使用当前可复核的连续发言席下限。三届均限定议程5—12，以一名代表一次连续发言计1回合。`;
   bindTooltips($("#historical-section"));
 }
 
@@ -1530,13 +1635,14 @@ async function init() {
   $("#conference-logo").src = `data:image/svg+xml;base64,${whc48LogoBase64}`;
   const dataRoot = pageMode === "overall" ? "../stage-2b/data/" : "data/";
   try {
-    const [phaseResponse, historicalResponse, censusResponse, stage1Response, stage2aResponse, timeSampleResponse] = await Promise.all([
+    const [phaseResponse, historicalResponse, censusResponse, stage1Response, stage2aResponse, timeSampleResponse, topic01Response] = await Promise.all([
       fetch(`${dataRoot}phase-2b.json`, { cache: "no-store" }),
       fetch(`${dataRoot}historical-comparison.json`, { cache: "no-store" }),
       fetch(`${dataRoot}agenda-5-12-census.json`, { cache: "no-store" }),
       pageMode === "overall" ? fetch("../stage-1/data/phase-1.json", { cache: "no-store" }) : Promise.resolve(null),
       pageMode === "overall" ? fetch("../stage-2a/data/phase-2a.json", { cache: "no-store" }) : Promise.resolve(null),
-      pageMode === "overall" ? fetch(`${dataRoot}time-sample-comparison.json`, { cache: "no-store" }) : Promise.resolve(null)
+      pageMode === "overall" ? fetch(`${dataRoot}time-sample-comparison.json`, { cache: "no-store" }) : Promise.resolve(null),
+      pageMode === "overall" ? fetch("data/topic-01-supplement.json", { cache: "no-store" }) : Promise.resolve(null)
     ]);
     if (!phaseResponse.ok) throw new Error(`Phase data request failed: ${phaseResponse.status}`);
     if (!historicalResponse.ok) throw new Error(`Historical data request failed: ${historicalResponse.status}`);
@@ -1544,8 +1650,9 @@ async function init() {
     if (stage1Response && !stage1Response.ok) throw new Error(`Stage 1 data request failed: ${stage1Response.status}`);
     if (stage2aResponse && !stage2aResponse.ok) throw new Error(`Stage 2A data request failed: ${stage2aResponse.status}`);
     if (timeSampleResponse && !timeSampleResponse.ok) throw new Error(`Time sample data request failed: ${timeSampleResponse.status}`);
+    if (topic01Response && !topic01Response.ok) throw new Error(`Topic 01 data request failed: ${topic01Response.status}`);
     [data, historicalData, censusData] = await Promise.all([phaseResponse.json(), historicalResponse.json(), censusResponse.json()]);
-    if (pageMode === "overall") [stage1Data, stage2aData, timeSampleData] = await Promise.all([stage1Response.json(), stage2aResponse.json(), timeSampleResponse.json()]);
+    if (pageMode === "overall") [stage1Data, stage2aData, timeSampleData, topic01Data] = await Promise.all([stage1Response.json(), stage2aResponse.json(), timeSampleResponse.json(), topic01Response.json()]);
     if (pageMode === "overall") {
       renderOverallPage();
     } else {

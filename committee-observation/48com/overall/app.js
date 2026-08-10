@@ -71,8 +71,13 @@ function renderHero(data) {
   $("#hero-metrics").innerHTML = metrics.map(([value, label, note]) => `
     <article><strong>${escapeHTML(value)}</strong><span>${escapeHTML(label)}</span><small>${escapeHTML(note)}</small></article>`).join("");
 
+  $("#indicator-summary").innerHTML = `
+    <article><strong>${tracking.indicator_count}</strong><span>项可操作评估指标</span></article>
+    <article><strong>${tracking.group_count}</strong><span>类观察对象</span></article>
+    <div><b>用于长期跟踪评估委员国参会状态与大会议事成效</b><small>委员国参与5项，时间使用3项，决定形成1项，行动可执行性1项；${tracking.baseline_count}项已建立48COM基线，${tracking.method_review_count}项继续复核方法。</small></div>`;
+
   $("#tracking-framework").innerHTML = `
-    <header><strong>${tracking.group_count}类 · ${tracking.indicator_count}项</strong><span>可操作指标：目标、观察单位和计算／编码规则均已确定</span><small>${tracking.baseline_count}项已建基线 · ${tracking.method_review_count}项方法复核中</small></header>
+    <header><strong>${tracking.indicator_count}项评估指标</strong><span>${tracking.group_count}类观察对象；逐项列明目标、方法、单位与数据来源</span><small>${tracking.baseline_count}项已建基线 · ${tracking.method_review_count}项方法复核中</small></header>
     <div class="tracking-groups">${tracking.groups.map((group) => `
       <article>
         <h2>${escapeHTML(group.label)}<small>${group.count}项</small></h2>
@@ -295,7 +300,8 @@ function renderExecution(data) {
       const cell = item.elements[key];
       return `<td class="audit-cell ${statusClasses[cell.status]}" data-label="${elementLabels[key]}"><strong>${statusLabels[cell.status]}</strong><span>${escapeHTML(cell.text)}</span></td>`;
     }).join("");
-    return `<tr>
+    const versionSummary = `原草案：${item.draft.summary}；委员国修订：${item.member_revision.summary}；现场通过：${item.final.summary}`;
+    return `<tr tabindex="0" title="${escapeHTML(versionSummary)}">
       <th scope="row" class="case-cell">
         <span>${escapeHTML(item.agenda)} · ${escapeHTML(model.short_label)}</span>
         <strong>${escapeHTML(item.case_zh)}</strong>
@@ -305,23 +311,10 @@ function renderExecution(data) {
     </tr>`;
   }).join("");
 
-  const renderDossiers = (items) => items.map((item) => `
-    <details class="case-dossier">
-      <summary><span><b>${escapeHTML(item.agenda)}</b>${escapeHTML(item.case_zh)}</span><small>草案—修订—通过文本</small></summary>
-      <div class="version-chain">
-        <article><span>01 原草案</span><strong>${escapeHTML(statusLabels[item.draft.status])}</strong><p>${escapeHTML(item.draft.summary)}</p></article>
-        <article><span>02 委员国修订</span><strong>${escapeHTML(statusLabels[item.member_revision.status])}</strong><p>${escapeHTML(item.member_revision.summary)}</p></article>
-        <article><span>03 现场通过</span><strong>${escapeHTML(statusLabels[item.final.status])}</strong><p>${escapeHTML(item.final.summary)}</p></article>
-      </div>
-      <div class="source-line"><p><b>通过记录</b>${escapeHTML(item.source_review.adoption_record)}</p><p><b>当前依据</b>${escapeHTML(item.source_review.current_basis)}</p><p><b>待办</b>${escapeHTML(item.source_needs.join("；"))}</p></div>
-    </details>`).join("");
-
   const agenda78Cases = data.decision_executability.filter((item) => /^(7|8)/.test(item.agenda));
   const otherAgendaCases = data.decision_executability.filter((item) => !/^(7|8)/.test(item.agenda));
   $("#execution-body-78").innerHTML = renderExecutionRows(agenda78Cases);
-  $("#case-dossiers-78").innerHTML = renderDossiers(agenda78Cases);
   $("#execution-body-other").innerHTML = renderExecutionRows(otherAgendaCases);
-  $("#case-dossiers-other").innerHTML = renderDossiers(otherAgendaCases);
 
   const renderContinuityCards = (items, type) => items.map((item) => `
     <article class="continuity-card">

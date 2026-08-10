@@ -10,10 +10,10 @@ publicNav.className = "public-section-nav section-shell";
 publicNav.setAttribute("aria-label", "全程总览四个部分");
 publicNav.innerHTML = `
   <span class="section-nav-label"><b>专题导航</b><small>CONTENTS</small></span>
-  <a href="#participation"><b>01</b><span>委员国参与</span></a>
-  <a href="#time-efficiency"><b>02</b><span>时间与议事效率</span></a>
-  <a href="#judgment-formation"><b>03</b><span>专业判断与决定形成</span></a>
-  <a href="#execution"><b>04</b><span>决定的可执行性</span></a>`;
+  <a href="#participation"><b>A</b><span>委员国参与总体状况</span></a>
+  <a href="#time-efficiency"><b>B1</b><span>议事效率</span></a>
+  <a href="#judgment-formation"><b>B2</b><span>专业判断与决定形成</span></a>
+  <a href="#execution"><b>B3</b><span>决定的可执行性</span></a>`;
 hero.after(publicNav);
 
 function createSectionIntro(id, number, title, description) {
@@ -26,21 +26,21 @@ function createSectionIntro(id, number, title, description) {
 
 const participationIntro = createSectionIntro(
   "participation",
-  "01",
+  "A",
   "委员国参与总体状况",
   "本专题呈现21个委员国在议程5—12中的议程覆盖、发言回合、参与集中度、文本角色与共同文本，并比较近三届委员国参与量的变化。"
 );
 
 const timeIntro = createSectionIntro(
   "time-efficiency",
-  "02",
+  "B1",
   "时间与议事效率",
   "本专题以会议时间为观察对象，呈现四类议程的时间构成、各议程的参与范围与讨论强度、近三届议程重心变化，并用总体样本、长议题样本和机制案例分析五类讨论内容。"
 );
 
 const judgmentIntro = createSectionIntro(
   "judgment-formation",
-  "03",
+  "B2",
   "专业判断与决定形成",
   "本专题以决定形成过程为观察对象，统计议程7、8讨论后怎样改变决定草案与结果，并用典型论断链和相似案件样本观察专业或规则判断是否被纠正、吸收或留下公开理由。"
 );
@@ -71,7 +71,8 @@ const ordered = [
   $("#historical-section"),
   judgmentIntro,
   $("#judgment-sample-section"),
-  $("#execution")
+  $("#execution"),
+  $("#indicator-framework-section")
 ].filter(Boolean);
 
 ordered.forEach((element) => main.append(element));
@@ -109,7 +110,7 @@ const sectionLabels = [
   ["#historical-section .section-no", "CROSS-SESSION AGENDA SHARE"],
   ["#time-role-section .section-no", "DISCUSSION ROLES / 7-CASE SAMPLE"],
   ["#judgment-sample-section .section-no", "DECISION FORMATION"],
-  ["#execution .section-no", "04 / DECISION EXECUTABILITY"]
+  ["#execution .section-no", "B3 / DECISION EXECUTABILITY"]
 ];
 sectionLabels.forEach(([selector, text]) => {
   const node = $(selector);
