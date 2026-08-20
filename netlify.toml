@@ -2,6 +2,12 @@
   publish = "."
 
 [[redirects]]
+  from = "/shared/*"
+  to = "/shared-offline.html"
+  status = 404
+  force = true
+
+[[redirects]]
   from = "/evaluation/2026/*"
   to = "/evaluation/2026/index.html"
   status = 200
