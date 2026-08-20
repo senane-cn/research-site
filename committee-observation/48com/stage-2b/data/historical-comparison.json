@@ -1,0 +1,784 @@
+{
+  "status": "逐字记录半自动编码·人工复核中",
+  "scope": "46COM、47COM与48COM的议程5-12。前两届来自官方Summary Records；本届来自逐项纪要、官方会议记录和视频字幕重建。决定通过后的观察员与议程相关缔约国声明不计。",
+  "unit_note": "三届统一使用委员国发言回合比较议程份额。46—47COM为官方逐字记录；48COM为当前可复核的连续发言席下限，绝对回合数不用于跨届质量排名。",
+  "coding_note": "类别由规则词、证据词和互动结构初筛；发布前人工复核全部澄清／纠偏候选和最长低产出候选。类别描述发言功能，不评价政治动机或代表能力。",
+  "categories": [
+    {
+      "id": "evidence",
+      "label": "证据／规则论证"
+    },
+    {
+      "id": "substantive",
+      "label": "实质判断与协商"
+    },
+    {
+      "id": "procedure",
+      "label": "必要程序"
+    },
+    {
+      "id": "correction",
+      "label": "澄清／纠偏"
+    },
+    {
+      "id": "low_yield",
+      "label": "礼仪／重复支持"
+    }
+  ],
+  "sessions": [
+    {
+      "session": "46COM",
+      "location": "新德里",
+      "year": 2024,
+      "dates": "2024-07-21—31",
+      "pages": 540,
+      "document": "WHC/24/46.COM/INF.17",
+      "source_url": "https://whc.unesco.org/document/221291",
+      "metric_basis": "逐字记录文本量",
+      "dialogue_turns": 1851,
+      "member_turns": 721,
+      "institutional_responses": 1130,
+      "institutional_response_ratio": 1.6,
+      "dialogue_words": 173275,
+      "clarification_threads": 5,
+      "burden_share": 4.6,
+      "decision_share": 90.7,
+      "categories": [
+        {
+          "id": "evidence",
+          "label": "证据／规则论证",
+          "words": 100004,
+          "turns": 449,
+          "share": 57.7
+        },
+        {
+          "id": "substantive",
+          "label": "实质判断与协商",
+          "words": 57201,
+          "turns": 1196,
+          "share": 33.0
+        },
+        {
+          "id": "procedure",
+          "label": "必要程序",
+          "words": 8070,
+          "turns": 106,
+          "share": 4.7
+        },
+        {
+          "id": "correction",
+          "label": "澄清／纠偏",
+          "words": 2481,
+          "turns": 10,
+          "share": 1.4
+        },
+        {
+          "id": "low_yield",
+          "label": "礼仪／重复支持",
+          "words": 5519,
+          "turns": 90,
+          "share": 3.2
+        }
+      ],
+      "agenda_families": [
+        {
+          "family": "5-6 战略与能力建设",
+          "dialogue_turns": 212,
+          "member_turns": 84,
+          "member_turn_share": 11.7,
+          "words": 25185,
+          "burden_share": 3.4,
+          "decision_share": 93.9
+        },
+        {
+          "family": "7 保护状况",
+          "dialogue_turns": 919,
+          "member_turns": 348,
+          "member_turn_share": 48.3,
+          "words": 75803,
+          "burden_share": 4.1,
+          "decision_share": 88.8
+        },
+        {
+          "family": "8 提名与列入",
+          "dialogue_turns": 447,
+          "member_turns": 172,
+          "member_turn_share": 23.9,
+          "words": 46686,
+          "burden_share": 2.4,
+          "decision_share": 94.6
+        },
+        {
+          "family": "9-12 执行机制",
+          "dialogue_turns": 273,
+          "member_turns": 117,
+          "member_turn_share": 16.2,
+          "words": 25601,
+          "burden_share": 11.3,
+          "decision_share": 86.3
+        }
+      ],
+      "country_roles": [
+        {
+          "code": "IND",
+          "name_zh": "印度",
+          "turns": 59,
+          "words": 12245,
+          "evidence_turns": 21,
+          "substantive_turns": 33,
+          "procedure_turns": 0,
+          "clarification_turns": 2,
+          "low_yield_turns": 3,
+          "decision_share": 92.5
+        },
+        {
+          "code": "SEN",
+          "name_zh": "塞内加尔",
+          "turns": 30,
+          "words": 3995,
+          "evidence_turns": 7,
+          "substantive_turns": 16,
+          "procedure_turns": 1,
+          "clarification_turns": 1,
+          "low_yield_turns": 5,
+          "decision_share": 84.3
+        },
+        {
+          "code": "LBN",
+          "name_zh": "黎巴嫩",
+          "turns": 86,
+          "words": 10523,
+          "evidence_turns": 33,
+          "substantive_turns": 45,
+          "procedure_turns": 3,
+          "clarification_turns": 1,
+          "low_yield_turns": 4,
+          "decision_share": 94.8
+        },
+        {
+          "code": "TUR",
+          "name_zh": "土耳其",
+          "turns": 18,
+          "words": 2422,
+          "evidence_turns": 9,
+          "substantive_turns": 5,
+          "procedure_turns": 1,
+          "clarification_turns": 1,
+          "low_yield_turns": 2,
+          "decision_share": 86.3
+        },
+        {
+          "code": "VCT",
+          "name_zh": "圣文森特和格林纳丁斯",
+          "turns": 45,
+          "words": 5002,
+          "evidence_turns": 17,
+          "substantive_turns": 23,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 4,
+          "decision_share": 92.7
+        },
+        {
+          "code": "ARG",
+          "name_zh": "阿根廷",
+          "turns": 44,
+          "words": 6148,
+          "evidence_turns": 12,
+          "substantive_turns": 27,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 4,
+          "decision_share": 94.9
+        },
+        {
+          "code": "ZMB",
+          "name_zh": "赞比亚",
+          "turns": 41,
+          "words": 6596,
+          "evidence_turns": 14,
+          "substantive_turns": 23,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 4,
+          "decision_share": 90.5
+        },
+        {
+          "code": "JPN",
+          "name_zh": "日本",
+          "turns": 40,
+          "words": 4102,
+          "evidence_turns": 12,
+          "substantive_turns": 22,
+          "procedure_turns": 2,
+          "clarification_turns": 0,
+          "low_yield_turns": 4,
+          "decision_share": 95.5
+        },
+        {
+          "code": "RWA",
+          "name_zh": "卢旺达",
+          "turns": 33,
+          "words": 4563,
+          "evidence_turns": 14,
+          "substantive_turns": 15,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 4,
+          "decision_share": 98.0
+        },
+        {
+          "code": "ITA",
+          "name_zh": "意大利",
+          "turns": 21,
+          "words": 3496,
+          "evidence_turns": 10,
+          "substantive_turns": 6,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 4,
+          "decision_share": 96.3
+        },
+        {
+          "code": "KEN",
+          "name_zh": "肯尼亚",
+          "turns": 48,
+          "words": 4164,
+          "evidence_turns": 9,
+          "substantive_turns": 35,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 97.5
+        },
+        {
+          "code": "VNM",
+          "name_zh": "越南",
+          "turns": 41,
+          "words": 4032,
+          "evidence_turns": 18,
+          "substantive_turns": 18,
+          "procedure_turns": 2,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 95.3
+        },
+        {
+          "code": "KOR",
+          "name_zh": "大韩民国",
+          "turns": 27,
+          "words": 3913,
+          "evidence_turns": 14,
+          "substantive_turns": 10,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 93.1
+        },
+        {
+          "code": "BGR",
+          "name_zh": "保加利亚",
+          "turns": 19,
+          "words": 2440,
+          "evidence_turns": 7,
+          "substantive_turns": 8,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 96.6
+        },
+        {
+          "code": "GRC",
+          "name_zh": "希腊",
+          "turns": 18,
+          "words": 2527,
+          "evidence_turns": 5,
+          "substantive_turns": 9,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 84.3
+        },
+        {
+          "code": "UKR",
+          "name_zh": "乌克兰",
+          "turns": 20,
+          "words": 2562,
+          "evidence_turns": 8,
+          "substantive_turns": 10,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 2,
+          "decision_share": 98.5
+        },
+        {
+          "code": "BEL",
+          "name_zh": "比利时",
+          "turns": 50,
+          "words": 8649,
+          "evidence_turns": 25,
+          "substantive_turns": 21,
+          "procedure_turns": 3,
+          "clarification_turns": 0,
+          "low_yield_turns": 1,
+          "decision_share": 96.2
+        },
+        {
+          "code": "JAM",
+          "name_zh": "牙买加",
+          "turns": 13,
+          "words": 2179,
+          "evidence_turns": 7,
+          "substantive_turns": 4,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 1,
+          "decision_share": 98.6
+        },
+        {
+          "code": "QAT",
+          "name_zh": "卡塔尔",
+          "turns": 33,
+          "words": 4111,
+          "evidence_turns": 18,
+          "substantive_turns": 15,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 0,
+          "decision_share": 100.0
+        },
+        {
+          "code": "KAZ",
+          "name_zh": "哈萨克斯坦",
+          "turns": 18,
+          "words": 3241,
+          "evidence_turns": 10,
+          "substantive_turns": 7,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 0,
+          "decision_share": 97.8
+        },
+        {
+          "code": "MEX",
+          "name_zh": "墨西哥",
+          "turns": 17,
+          "words": 3110,
+          "evidence_turns": 14,
+          "substantive_turns": 3,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 0,
+          "decision_share": 100.0
+        }
+      ]
+    },
+    {
+      "session": "47COM",
+      "location": "巴黎",
+      "year": 2025,
+      "dates": "2025-07-06—16",
+      "pages": 567,
+      "document": "WHC/25/47.COM/INF.17",
+      "source_url": "https://whc.unesco.org/document/225697",
+      "metric_basis": "逐字记录文本量",
+      "dialogue_turns": 1937,
+      "member_turns": 794,
+      "institutional_responses": 1143,
+      "institutional_response_ratio": 1.4,
+      "dialogue_words": 178947,
+      "clarification_threads": 1,
+      "burden_share": 2.7,
+      "decision_share": 94.5,
+      "categories": [
+        {
+          "id": "evidence",
+          "label": "证据／规则论证",
+          "words": 122769,
+          "turns": 530,
+          "share": 68.6
+        },
+        {
+          "id": "substantive",
+          "label": "实质判断与协商",
+          "words": 46364,
+          "turns": 1215,
+          "share": 25.9
+        },
+        {
+          "id": "procedure",
+          "label": "必要程序",
+          "words": 4949,
+          "turns": 89,
+          "share": 2.8
+        },
+        {
+          "id": "correction",
+          "label": "澄清／纠偏",
+          "words": 2416,
+          "turns": 5,
+          "share": 1.4
+        },
+        {
+          "id": "low_yield",
+          "label": "礼仪／重复支持",
+          "words": 2449,
+          "turns": 98,
+          "share": 1.4
+        }
+      ],
+      "agenda_families": [
+        {
+          "family": "5-6 战略与能力建设",
+          "dialogue_turns": 408,
+          "member_turns": 175,
+          "member_turn_share": 22.0,
+          "words": 46996,
+          "burden_share": 4.1,
+          "decision_share": 94.7
+        },
+        {
+          "family": "7 保护状况",
+          "dialogue_turns": 608,
+          "member_turns": 232,
+          "member_turn_share": 29.2,
+          "words": 47088,
+          "burden_share": 2.5,
+          "decision_share": 93.8
+        },
+        {
+          "family": "8 提名与列入",
+          "dialogue_turns": 747,
+          "member_turns": 318,
+          "member_turn_share": 40.1,
+          "words": 64489,
+          "burden_share": 2.4,
+          "decision_share": 94.0
+        },
+        {
+          "family": "9-12 执行机制",
+          "dialogue_turns": 174,
+          "member_turns": 69,
+          "member_turn_share": 8.7,
+          "words": 20374,
+          "burden_share": 1.1,
+          "decision_share": 97.4
+        }
+      ],
+      "country_roles": [
+        {
+          "code": "ZMB",
+          "name_zh": "赞比亚",
+          "turns": 53,
+          "words": 8035,
+          "evidence_turns": 27,
+          "substantive_turns": 22,
+          "procedure_turns": 0,
+          "clarification_turns": 1,
+          "low_yield_turns": 3,
+          "decision_share": 97.1
+        },
+        {
+          "code": "IND",
+          "name_zh": "印度",
+          "turns": 88,
+          "words": 12763,
+          "evidence_turns": 34,
+          "substantive_turns": 45,
+          "procedure_turns": 2,
+          "clarification_turns": 0,
+          "low_yield_turns": 7,
+          "decision_share": 96.8
+        },
+        {
+          "code": "UKR",
+          "name_zh": "乌克兰",
+          "turns": 36,
+          "words": 5251,
+          "evidence_turns": 16,
+          "substantive_turns": 14,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 6,
+          "decision_share": 95.4
+        },
+        {
+          "code": "KEN",
+          "name_zh": "肯尼亚",
+          "turns": 40,
+          "words": 5570,
+          "evidence_turns": 17,
+          "substantive_turns": 18,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 5,
+          "decision_share": 98.2
+        },
+        {
+          "code": "ITA",
+          "name_zh": "意大利",
+          "turns": 26,
+          "words": 4265,
+          "evidence_turns": 15,
+          "substantive_turns": 5,
+          "procedure_turns": 1,
+          "clarification_turns": 0,
+          "low_yield_turns": 5,
+          "decision_share": 95.9
+        },
+        {
+          "code": "TUR",
+          "name_zh": "土耳其",
+          "turns": 40,
+          "words": 6478,
+          "evidence_turns": 21,
+          "substantive_turns": 15,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 4,
+          "decision_share": 99.0
+        },
+        {
+          "code": "BEL",
+          "name_zh": "比利时",
+          "turns": 53,
+          "words": 8097,
+          "evidence_turns": 22,
+          "substantive_turns": 28,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 99.2
+        },
+        {
+          "code": "VCT",
+          "name_zh": "圣文森特和格林纳丁斯",
+          "turns": 35,
+          "words": 5635,
+          "evidence_turns": 18,
+          "substantive_turns": 14,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 98.7
+        },
+        {
+          "code": "JAM",
+          "name_zh": "牙买加",
+          "turns": 32,
+          "words": 5221,
+          "evidence_turns": 18,
+          "substantive_turns": 11,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 98.9
+        },
+        {
+          "code": "QAT",
+          "name_zh": "卡塔尔",
+          "turns": 32,
+          "words": 3996,
+          "evidence_turns": 15,
+          "substantive_turns": 12,
+          "procedure_turns": 2,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 97.9
+        },
+        {
+          "code": "GRC",
+          "name_zh": "希腊",
+          "turns": 28,
+          "words": 5322,
+          "evidence_turns": 16,
+          "substantive_turns": 9,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 96.4
+        },
+        {
+          "code": "RWA",
+          "name_zh": "卢旺达",
+          "turns": 21,
+          "words": 4191,
+          "evidence_turns": 12,
+          "substantive_turns": 6,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 98.3
+        },
+        {
+          "code": "BGR",
+          "name_zh": "保加利亚",
+          "turns": 19,
+          "words": 3539,
+          "evidence_turns": 12,
+          "substantive_turns": 4,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 3,
+          "decision_share": 98.5
+        },
+        {
+          "code": "LBN",
+          "name_zh": "黎巴嫩",
+          "turns": 90,
+          "words": 9710,
+          "evidence_turns": 42,
+          "substantive_turns": 40,
+          "procedure_turns": 6,
+          "clarification_turns": 0,
+          "low_yield_turns": 2,
+          "decision_share": 98.5
+        },
+        {
+          "code": "JPN",
+          "name_zh": "日本",
+          "turns": 37,
+          "words": 5178,
+          "evidence_turns": 19,
+          "substantive_turns": 16,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 2,
+          "decision_share": 99.3
+        },
+        {
+          "code": "KAZ",
+          "name_zh": "哈萨克斯坦",
+          "turns": 33,
+          "words": 5833,
+          "evidence_turns": 17,
+          "substantive_turns": 14,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 2,
+          "decision_share": 99.6
+        },
+        {
+          "code": "KOR",
+          "name_zh": "大韩民国",
+          "turns": 32,
+          "words": 5190,
+          "evidence_turns": 21,
+          "substantive_turns": 9,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 2,
+          "decision_share": 97.2
+        },
+        {
+          "code": "ARG",
+          "name_zh": "阿根廷",
+          "turns": 21,
+          "words": 2173,
+          "evidence_turns": 9,
+          "substantive_turns": 10,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 2,
+          "decision_share": 97.9
+        },
+        {
+          "code": "VNM",
+          "name_zh": "越南",
+          "turns": 29,
+          "words": 3906,
+          "evidence_turns": 16,
+          "substantive_turns": 12,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 1,
+          "decision_share": 99.5
+        },
+        {
+          "code": "MEX",
+          "name_zh": "墨西哥",
+          "turns": 26,
+          "words": 3402,
+          "evidence_turns": 16,
+          "substantive_turns": 9,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 1,
+          "decision_share": 99.4
+        },
+        {
+          "code": "SEN",
+          "name_zh": "塞内加尔",
+          "turns": 23,
+          "words": 4306,
+          "evidence_turns": 14,
+          "substantive_turns": 8,
+          "procedure_turns": 0,
+          "clarification_turns": 0,
+          "low_yield_turns": 1,
+          "decision_share": 99.8
+        }
+      ]
+    },
+    {
+      "session": "48COM",
+      "location": "釜山",
+      "year": 2026,
+      "dates": "2026-07-19—29",
+      "source_url": "https://whc.unesco.org/en/sessions/48COM/records/",
+      "source_label": "19场官方会议视频",
+      "metric_basis": "连续发言席下限",
+      "member_turns": 625,
+      "dialogue_words": null,
+      "institutional_response_ratio": null,
+      "agenda_families": [
+        {
+          "family": "5-6 战略与能力建设",
+          "member_turns": 162,
+          "member_turn_share": 25.9,
+          "items": 7,
+          "active_members": 21,
+          "dialogue_turns": null,
+          "words": null,
+          "burden_share": null,
+          "decision_share": null
+        },
+        {
+          "family": "7 保护状况",
+          "member_turns": 210,
+          "member_turn_share": 33.6,
+          "items": 1,
+          "active_members": 21,
+          "dialogue_turns": null,
+          "words": null,
+          "burden_share": null,
+          "decision_share": null
+        },
+        {
+          "family": "8 提名与列入",
+          "member_turns": 186,
+          "member_turn_share": 29.8,
+          "items": 1,
+          "active_members": 21,
+          "dialogue_turns": null,
+          "words": null,
+          "burden_share": null,
+          "decision_share": null
+        },
+        {
+          "family": "9-12 执行机制",
+          "member_turns": 67,
+          "member_turn_share": 10.7,
+          "items": 5,
+          "active_members": 18,
+          "dialogue_turns": null,
+          "words": null,
+          "burden_share": null,
+          "decision_share": null
+        }
+      ],
+      "country_roles": [],
+      "source_note": "议程5—7逐项纪要核定；议程8直播纪要下限；议程9—12官方字幕重建下限。"
+    }
+  ]
+}

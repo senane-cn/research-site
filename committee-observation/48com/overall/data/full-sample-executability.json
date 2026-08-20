@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-08-10",
+  "scope": "议程7、8会上逐案讨论并形成决定草案条款修订，或由委员国形成完整决定文本的20个案件",
+  "official_compilation": "not_published",
+  "evidence_chain_complete": 20,
+  "counts": {
+    "action": { "explicit": 20, "partial": 0, "missing": 0 },
+    "actor": { "explicit": 20, "partial": 0, "missing": 0 },
+    "deadline": { "explicit": 16, "partial": 1, "missing": 3 },
+    "verification": { "explicit": 11, "partial": 8, "missing": 1 },
+    "feedback": { "explicit": 1, "partial": 15, "missing": 4 }
+  },
+  "findings": [
+    { "value": "9／9", "label": "议程7修订案保留委员会复审", "note": "差异主要在复审周期、核验精度和是否预设处置。" },
+    { "value": "6／11", "label": "议程8明确回到委员会", "note": "另1案只到咨询机构复核，3案没有固定回报节点，1案为边界批准。" },
+    { "value": "1／20", "label": "同时写出较清晰处置可能", "note": "多数决定有再次审议，却没有预设未完成时的自动结果。" }
+  ],
+  "status_labels": {
+    "explicit": "明确",
+    "partial": "部分",
+    "missing": "未明确"
+  },
+  "elements": [
+    { "id": "action", "code": "I10-A", "label": "行动" },
+    { "id": "actor", "code": "I10-B", "label": "责任主体" },
+    { "id": "deadline", "code": "I10-C", "label": "期限" },
+    { "id": "verification", "code": "I10-D", "label": "核验" },
+    { "id": "feedback", "code": "I10-E", "label": "反馈／处置" }
+  ],
+  "cases": [
+    { "id": "7A.27", "agenda": "7", "name": "维也纳历史中心", "type": "移出列危后监测", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "partial", "feedback": "partial", "deadline_note": "2028报告／第50届", "risk_note": "移出列危不等于任务完成", "evidence": "逐段现场全文" },
+    { "id": "7B.9", "agenda": "7", "name": "亨比古迹群", "type": "保护状况", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "第49届知悉＋第50届审议", "risk_note": "知悉任务结果不等于再决定", "evidence": "修正案＋现场通过" },
+    { "id": "7B.47", "agenda": "7", "name": "威斯敏斯特宫及相关遗产", "type": "规划影响", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "partial", "feedback": "partial", "deadline_note": "两阶段报告／第50届", "risk_note": "任务书删除后验收精度降低", "evidence": "逐段现场全文" },
+    { "id": "7B.49", "agenda": "7", "name": "伦敦塔", "type": "规划影响", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2027任务与报告", "risk_note": "结果仍依赖后续专业判断", "evidence": "修正案＋现场通过" },
+    { "id": "7B.51", "agenda": "7", "name": "奇洛埃教堂", "type": "影响评估", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "partial", "feedback": "partial", "deadline_note": "2027报告／第50届", "risk_note": "不可逆项目需项目级预防", "evidence": "修正案＋现场通过" },
+    { "id": "7B.62", "agenda": "7", "name": "奥赫里德地区", "type": "列危判断后移", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2031报告／第53届", "risk_note": "闭环存在，但复审周期较长", "evidence": "修正案＋现场通过" },
+    { "id": "7B.70", "agenda": "7", "name": "孙德尔本斯", "type": "SEA与能源项目", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "partial", "feedback": "partial", "deadline_note": "2029＋2032两阶段", "risk_note": "中期信息不足可能延迟纠偏", "evidence": "逐段现场全文" },
+    { "id": "7B.86", "agenda": "7", "name": "埃尔皮纳卡特", "type": "跨境连通性", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "explicit", "deadline_note": "2026行动计划＋2027复审", "risk_note": "保留可能列危的公开处置", "evidence": "修正案＋现场通过" },
+    { "id": "7B.93", "agenda": "7", "name": "维多利亚瀑布", "type": "跨境管理", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2027两阶段／第50届", "risk_note": "任务边界受列入标准争论影响", "evidence": "修正案＋现场通过" },
+    { "id": "8B.3", "agenda": "8", "name": "塞巴斯蒂亚", "type": "紧急列入并列危", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2027报告／第49届", "risk_note": "冲突条件约束任务执行", "evidence": "完整文本＋现场通过" },
+    { "id": "8B.52", "agenda": "8", "name": "阿梅勒山城堡", "type": "紧急列入并列危", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2027或条件允许后尽快", "risk_note": "条件期限降低时间确定性", "evidence": "完整文本＋现场通过" },
+    { "id": "8B.7", "agenda": "8", "name": "瓦迪沃拉亚", "type": "列入后研究", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2030报告／第53届", "risk_note": "列入前技术缺口转为列入后任务", "evidence": "修正案＋现场通过" },
+    { "id": "8B.20", "agenda": "8", "name": "曼格斯套岩石清真寺", "type": "列入后管理", "expectation": "standard", "action": "explicit", "actor": "explicit", "deadline": "partial", "verification": "partial", "feedback": "missing", "deadline_note": "管理计划2027—2032，无固定回报", "risk_note": "法规、管理和监测任务缺少委员会出口", "evidence": "修正案＋现场通过" },
+    { "id": "8B.24", "agenda": "8", "name": "塔什干现代主义建筑", "type": "列入后系列管理", "expectation": "standard", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2027报告／ICOMOS复核", "risk_note": "有技术复核，委员会出口较弱", "evidence": "修正案＋现场通过" },
+    { "id": "8B.14", "agenda": "8", "name": "圣多美和普林西比罗萨斯", "type": "列入后保护", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "partial", "feedback": "partial", "deadline_note": "2027报告／第50届", "risk_note": "发还建议改列入后的任务后移", "evidence": "逐段现场全文" },
+    { "id": "8B.12", "agenda": "8", "name": "奥林匹斯山较大区域", "type": "列入后管理", "expectation": "strict", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2027报告／第50届", "risk_note": "两机构发还建议改列入", "evidence": "修正案＋现场通过" },
+    { "id": "8B.30", "agenda": "8", "name": "里贝拉萨克拉水景", "type": "发还", "expectation": "standard", "action": "explicit", "actor": "explicit", "deadline": "explicit", "verification": "explicit", "feedback": "partial", "deadline_note": "2028报告／第52届", "risk_note": "开放性发还应保持重报条件清楚", "evidence": "修正案＋现场通过" },
+    { "id": "8B.33", "agenda": "8", "name": "格丁尼亚现代主义市中心", "type": "列入后项目控制", "expectation": "standard", "action": "explicit", "actor": "explicit", "deadline": "missing", "verification": "partial", "feedback": "missing", "deadline_note": "无固定报告日期", "risk_note": "不可逆项目只在触发时被复核", "evidence": "修正案＋现场通过" },
+    { "id": "8B.34", "agenda": "8", "name": "亚马孙剧院", "type": "列入后治理", "expectation": "standard", "action": "explicit", "actor": "explicit", "deadline": "missing", "verification": "partial", "feedback": "missing", "deadline_note": "要求时间表，无固定报告日期", "risk_note": "治理、预算和监测后移但无回报节点", "evidence": "修正案＋现场通过" },
+    { "id": "8B.36", "agenda": "8", "name": "肯尼亚山边界修改", "type": "边界批准＋参与护栏", "expectation": "limited", "action": "explicit", "actor": "explicit", "deadline": "missing", "verification": "missing", "feedback": "missing", "deadline_note": "批准即时生效；护栏无期限", "risk_note": "批准本身无需完整闭环，护栏仍缺核验出口", "evidence": "修正案＋现场通过" }
+  ]
+}

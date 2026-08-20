@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#f4f6f8" />
     <title>48COM 议程7委员国技术统计 · ConserVision Research</title>
     <link rel="stylesheet" href="../stage-1/styles.css" />
-    <link rel="stylesheet" href="styles.css?v=1.1.0" />
-    <script src="app.js?v=1.1.0" type="module"></script>
+    <link rel="stylesheet" href="styles.css?v=1.5.7" />
+    <script src="app.js?v=1.5.7" type="module"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
@@ -35,12 +35,12 @@
       <section class="hero section-shell" aria-labelledby="page-title">
         <div class="hero-meta">
           <p class="eyebrow">48COM Committee Observatory · Phase 02A</p>
-          <p class="release-status"><span aria-hidden="true"></span>阶段核定 · 2026.07.27</p>
+          <p class="release-status"><span aria-hidden="true"></span>阶段核定 · 完整性审计原型 · 2026.07.27</p>
         </div>
         <h1 id="page-title">第二阶段A：保护状况（议程7）</h1>
         <div class="hero-deck">
           <p class="hero-lead">把讨论发言、缔约国答辩、文本行动与表决分开，才能看清参与方式。</p>
-          <p>统计窗口覆盖7月22日至27日的7A、7B审议。页面记录委员国参与覆盖、205个可核对发言回合、正式共同文本与现场编辑，并新增委员国—议程缔约国的议程协助与立场互动专题。</p>
+          <p>统计窗口覆盖7月22日至27日的7A、7B审议。页面先以维也纳和议程7横向案例核对专业基线、程序与保护结果，再记录委员国参与覆盖、224个可核对发言回合、正式共同文本及议程互动。</p>
         </div>
       </section>
 
@@ -56,16 +56,161 @@
 
       <section class="section-shell metrics" aria-label="阶段统计摘要">
         <article><strong id="metric-members">21</strong><span>委员国</span></article>
-        <article><strong id="metric-actions">138</strong><span>国家—审议单元行动</span></article>
-        <article><strong id="metric-speeches">205</strong><span>全部可核对发言回合</span></article>
-        <article><strong id="metric-responses">12</strong><span>答辩／通过后回应</span></article>
+        <article><strong id="metric-actions">136</strong><span>国家—审议单元行动</span></article>
+        <article><strong id="metric-speeches">224</strong><span>全部可核对发言回合</span></article>
+        <article><strong id="metric-responses">14</strong><span>答辩／通过后回应</span></article>
         <article><strong id="metric-packages">10</strong><span>正式／现场确认文本包</span></article>
         <article><strong id="metric-votes">1</strong><span>完整委员国表决</span></article>
       </section>
 
+      <section class="section-shell integrity-intro" aria-labelledby="integrity-title">
+        <div>
+          <p class="section-no">专题一 / DECISION AMENDMENT AUDIT</p>
+          <h2 id="integrity-title">先看决定如何被改变，以及谁推动或制衡</h2>
+        </div>
+        <div class="integrity-intro-copy">
+          <p>先把专业基线、修正文本、委员国立场、现场程序与最终结果放在同一条证据链上；随后以维也纳作为深度案例复盘。分析不推断幕后交易，也不把委员国或主席动机写成事实。</p>
+          <div class="evidence-key" aria-label="证据等级">
+            <span class="evidence-direct">直接事实</span>
+            <span class="evidence-inference">有依据的分析</span>
+            <span class="evidence-boundary">尚不能证明</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell analysis-section integrity-section" id="decision-change-audit-section" data-share-key="decision-audit" aria-labelledby="integrity-map-title">
+        <header class="section-heading">
+          <p class="section-no">01 / DECISION CHANGE AUDIT</p>
+          <div>
+            <h2 id="integrity-map-title">实质修订发生在哪一环</h2>
+            <p>沿“事实认定—技术标准—修正任务—审议程序”定位制度变化。每案同时标出可核对的主导、支持、校准和反对／保留角色。</p>
+          </div>
+        </header>
+        <div class="decision-audit-summary" id="decision-audit-summary" aria-label="四类制度改变的主要落点数量"></div>
+        <div class="decision-audit-legend" aria-label="格内颜色含义">
+          <span class="tone-critical">规则松动／关切减弱</span>
+          <span class="tone-mixed">混合结果</span>
+          <span class="tone-technical">技术校准</span>
+          <span class="tone-protective">保护强化</span>
+        </div>
+        <div class="case-role-legend" aria-label="委员国角色简称">
+          <span class="role-lead"><b>主</b>主导／提出</span>
+          <span class="role-support"><b>支</b>支持修订</span>
+          <span class="role-calibrate"><b>校</b>技术／保护校准</span>
+          <span class="role-counter"><b>反／保</b>反对、保留、弃权或抽离</span>
+        </div>
+        <div class="decision-audit-wrap" tabindex="0" aria-label="决定草案实质改变制度链矩阵，可横向滚动">
+          <div class="decision-audit-matrix" id="decision-change-audit"></div>
+        </div>
+        <p class="chart-footnote">9个正式修正文本项目与2个程序性后移项目分列。悬停或轻触项目名称查看完整摘要；技术节点与国家简称只显示当前所指信息。国家简称不外推为长期国家立场。</p>
+      </section>
+
+      <section class="section-shell analysis-section integrity-section" id="amendment-role-section" data-share-key="amendment-roles" aria-labelledby="amendment-role-title">
+        <header class="section-heading">
+          <p class="section-no">02 / MEMBER ROLE BOXSCORE</p>
+          <div>
+            <h2 id="amendment-role-title">委员国在实质修订中扮演什么角色</h2>
+            <p>按案件分别统计主导／提出、正式或明确支持、技术／保护性校准、以及反对／保留。一次表决或共同署名只在对应案件中计一次。</p>
+          </div>
+        </header>
+        <div class="amendment-role-summary" id="amendment-role-summary"></div>
+        <div class="role-stat-legend" id="role-stat-legend" aria-label="修订角色统计图例"></div>
+        <div class="amendment-role-bars" id="amendment-role-bars" aria-label="委员国在实质修订案件中的角色次数"></div>
+        <p class="chart-footnote">角色次数不是影响力得分。共同提出计入“支持”，得到采纳的技术或保护性反向修改计入“校准”；Baikal仅统计对延期动议的立场，不替代列危立场。</p>
+      </section>
+
+      <div class="section-shell case-study-divider">
+        <span>DEEP CASE / VIENNA 7A.27</span>
+        <strong>从退出条件、文本重写到程序收束，复盘技术门槛如何被改变</strong>
+      </div>
+
+      <section class="section-shell analysis-section integrity-section" data-share-key="vienna-audit" aria-labelledby="vienna-audit-title">
+        <header class="section-heading">
+          <p class="section-no">03 / VIENNA EXIT AUDIT</p>
+          <div>
+            <h2 id="vienna-audit-title">维也纳：退出条件未完成，退出决定仍获通过</h2>
+            <p>逐项核对官方工作文件列出的退出条件，再观察修正文本如何改变判定门槛。清洁版决定发布前，现场结果与逐词文本分开标注。</p>
+          </div>
+        </header>
+        <div class="integrity-thesis" id="integrity-thesis"></div>
+        <div class="decision-chain" id="decision-chain" aria-label="维也纳从专业基线到最终决定的证据链"></div>
+        <div class="exit-audit-wrap">
+          <div class="exit-audit-heading">
+            <div>
+              <span>7 CONDITIONS / DSOCR</span>
+              <h3>七项退出条件核对</h3>
+            </div>
+            <p>状态来自本届官方工作文件；“未完成”不等于毫无进展，而是尚未达到已设定的退出门槛。</p>
+          </div>
+          <div class="exit-audit" id="exit-audit"></div>
+        </div>
+        <div class="evidence-boundary-card" id="evidence-boundary-card"></div>
+      </section>
+
+      <section class="section-shell analysis-section integrity-section" data-share-key="vienna-process" aria-labelledby="process-title">
+        <header class="section-heading">
+          <p class="section-no">04 / PROCESS TRACE</p>
+          <div>
+            <h2 id="process-title">专业证据、委员国行动与主席裁量如何交汇</h2>
+            <p>三条轨道只记录可观察动作。主席的时间管理与共识判断单独编码；是否出于政治目的不在证据范围内。</p>
+          </div>
+        </header>
+        <div class="process-layout">
+          <div class="process-timeline" id="process-timeline" aria-label="维也纳审议过程三轨时间线"></div>
+          <aside class="chair-audit" id="chair-audit"></aside>
+        </div>
+        <div class="member-role-section" aria-labelledby="vienna-role-title">
+          <header class="member-role-heading">
+            <div>
+              <span>02B / MEMBER ROLE TRACE</span>
+              <h3 id="vienna-role-title">哪些委员国把门槛变化转化为决定</h3>
+              <a class="role-brief-link" href="vienna-brief.html?v=1.0.2">打开维也纳一屏摘要 <span aria-hidden="true">↗</span></a>
+            </div>
+            <p>按文本、判断依据、程序选择和最终姿态拆分作用。同一代表团可以同时承认保护缺口、支持退出并推动整案通过；这类张力不被压成单一“支持／反对”。</p>
+          </header>
+          <div class="role-mechanism-summary" id="role-mechanism-summary"></div>
+          <div class="role-divide-map" id="role-divide-map" aria-label="维也纳审议三条意见分歧轴与决定形成路径"></div>
+          <details class="vienna-role-evidence">
+            <summary>
+              <span>展开15国角色证据表</span>
+              <small>发言依据、程序动作、最终姿态与时间点</small>
+            </summary>
+            <div class="role-legend" aria-label="委员国作用类型">
+              <span class="posture-support">推动移出</span>
+              <span class="posture-qualified">有条件／保留</span>
+              <span class="posture-oppose">反对移出</span>
+              <span class="posture-procedural">仅确认程序作用</span>
+              <span class="posture-dissociate">决定后退出共识</span>
+            </div>
+            <div class="table-scroll vienna-role-desktop" tabindex="0" aria-label="维也纳审议委员国作用矩阵，可横向滚动">
+              <table class="data-table vienna-role-table">
+                <thead>
+                  <tr>
+                    <th scope="col">委员国</th>
+                    <th scope="col">核心作用</th>
+                    <th scope="col">判断依据／实质动作</th>
+                    <th scope="col">程序动作</th>
+                    <th scope="col">最终姿态</th>
+                    <th scope="col">对结果的可观察作用</th>
+                  </tr>
+                </thead>
+                <tbody id="vienna-role-body"></tbody>
+              </table>
+            </div>
+            <div class="vienna-role-cards" id="vienna-role-cards" aria-label="移动端维也纳委员国作用卡片"></div>
+            <p class="chart-footnote">本表只记录7月27日最终实质审议中可核对的发言与程序动作，不是记名表决结果。未发言、未被直播明确识别或只参与7月22日排程处理的委员国不作立场推断。</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-shell baseline-divider">
+        <span>专题二 / PARTICIPATION BASELINE</span>
+        <strong>委员国覆盖面、发言量、提出议题与介入讨论四维技术统计</strong>
+      </div>
+
       <section class="section-shell editorial-intro" aria-labelledby="reading-title">
         <div>
-          <p class="section-no">00 / READ FIRST</p>
+          <p class="section-no">READ FIRST / FOUR DIMENSIONS</p>
           <h2 id="reading-title">四个维度分别读</h2>
         </div>
         <div class="reading-grid">
@@ -90,9 +235,9 @@
         </form>
       </div>
 
-      <section class="section-shell analysis-section" aria-labelledby="scatter-title">
+      <section class="section-shell analysis-section" data-share-key="participation" aria-labelledby="scatter-title">
         <header class="section-heading">
-          <p class="section-no">01 / COVERAGE × VOLUME</p>
+          <p class="section-no">10 / COVERAGE × VOLUME</p>
           <div>
             <h2 id="scatter-title">覆盖面与发言量共同描述参与度</h2>
             <p>横轴为16个有效审议单元中的行动覆盖；纵轴为全部可核对发言回合，包含讨论发言及另列的答辩／通过后回应。</p>
@@ -108,9 +253,9 @@
         <p class="chart-footnote">一个连续发言席计一个回合；纪要合并短发言时采用可确认下限。主席、报告员、秘书处及咨询机构制度身份已剔除。悬停、聚焦或轻触国家代码可查看角色拆分。</p>
       </section>
 
-      <section class="section-shell analysis-section" aria-labelledby="boxscore-title">
+      <section class="section-shell analysis-section" data-share-key="member-boxscore" aria-labelledby="boxscore-title">
         <header class="section-heading">
-          <p class="section-no">02 / MEMBER BOXSCORE</p>
+          <p class="section-no">11 / MEMBER BOXSCORE</p>
           <div>
             <h2 id="boxscore-title">21国议程7技术统计</h2>
             <p>覆盖、讨论回合、答辩／回应、文本与两类影响同时显示，不生成黑箱综合排名。</p>
@@ -150,9 +295,9 @@
         <div class="member-cards" id="member-cards" aria-label="移动端委员国技术统计"></div>
       </section>
 
-      <section class="section-shell analysis-section" aria-labelledby="influence-title">
+      <section class="section-shell analysis-section" data-share-key="influence" aria-labelledby="influence-title">
         <header class="section-heading">
-          <p class="section-no">03 / TWO-SIDED INFLUENCE</p>
+          <p class="section-no">12 / TWO-SIDED INFLUENCE</p>
           <div>
             <h2 id="influence-title">影响力分为提出议题与介入讨论</h2>
             <p>提出议题统计正式主提／联合提交和得到处理的程序动议；介入讨论只保留可连接到决定文字或结果的编辑、护栏与折衷。共同提出另列。</p>
@@ -167,9 +312,9 @@
         <p class="chart-footnote">数字是可追溯记录数，不是质量分或政治影响评分。悬停、聚焦或轻触条形可查看具体文本和程序结果。</p>
       </section>
 
-      <section class="section-shell analysis-section" aria-labelledby="unit-title">
+      <section class="section-shell analysis-section" data-share-key="agenda-footprint" aria-labelledby="unit-title">
         <header class="section-heading">
-          <p class="section-no">04 / AGENDA 7 FOOTPRINT</p>
+          <p class="section-no">13 / AGENDA 7 FOOTPRINT</p>
           <div>
             <h2 id="unit-title">发言集中在哪些保护状况项目</h2>
             <p>格内大数字是全部发言回合；“回应”表示委员国以遗产所在缔约国或决定通过后身份发言；0回合但有“发＋文”表示存在文本／程序行动。</p>
@@ -188,9 +333,9 @@
         <p class="chart-footnote">悬停、聚焦或轻触色块可查看项目结果、角色与对应文本行动。7A.30—32和7B.54为仅出现通过后回应的单元，不进入覆盖面分母。</p>
       </section>
 
-      <section class="section-shell analysis-section" aria-labelledby="topic-title">
+      <section class="section-shell analysis-section" data-share-key="issue-attention" aria-labelledby="topic-title">
         <header class="section-heading">
-          <p class="section-no">05 / ISSUE ATTENTION</p>
+          <p class="section-no">14 / ISSUE ATTENTION</p>
           <div>
             <h2 id="topic-title">对哪类问题更敏感</h2>
             <p>大数字是该国介入且涉及该主题的审议单元数，小字是这些单元中的发言回合。它是“议题关联度”，不把每句话强行归入单一主题。</p>
@@ -210,9 +355,9 @@
         <p class="chart-footnote">悬停、聚焦或轻触色块可查看具体项目清单。主题编码用于本阶段内部比较，不直接跨届归一化。</p>
       </section>
 
-      <section class="section-shell analysis-section" aria-labelledby="coalition-title">
+      <section class="section-shell analysis-section" data-share-key="co-text" aria-labelledby="coalition-title">
         <header class="section-heading">
-          <p class="section-no">06 / CO-TEXT NETWORK</p>
+          <p class="section-no">15 / CO-TEXT NETWORK</p>
           <div>
             <h2 id="coalition-title">共同文本，而非“关系评分”</h2>
             <p>只计算同一文本包中的正式主提、共同提出或现场确认联合提交。一般支持、相似发言和单纯现场加入不进入关系矩阵。</p>
@@ -234,9 +379,9 @@
         </div>
       </section>
 
-      <section class="section-shell analysis-section" aria-labelledby="agenda-party-title">
+      <section class="section-shell analysis-section" data-share-key="agenda-interaction" aria-labelledby="agenda-party-title">
         <header class="section-heading">
-          <p class="section-no">07 / AGENDA-LINKED INTERACTION</p>
+          <p class="section-no">16 / AGENDA-LINKED INTERACTION</p>
           <div>
             <h2 id="agenda-party-title">议程协助与立场互动</h2>
             <p>把出现正式修正文本的遗产项目，连接到相关缔约国与提交委员国。先看可核对的文本网络，再判断具体措辞中的作用方向。</p>
@@ -267,9 +412,9 @@
         </div>
       </section>
 
-      <section class="section-shell analysis-section" aria-labelledby="vote-title">
+      <section class="section-shell analysis-section" data-share-key="baikal-vote" aria-labelledby="vote-title">
         <header class="section-heading">
-          <p class="section-no">08 / EXPLICIT ALIGNMENT</p>
+          <p class="section-no">17 / EXPLICIT ALIGNMENT</p>
           <div>
             <h2 id="vote-title">Baikal延期表决：唯一完整立场分布</h2>
             <p>表决对象是“是否把实质辩论延至第49届”，不是对列危本身的最终表决。投票与口头发言分开统计。</p>
@@ -284,9 +429,9 @@
       </section>
 
       <section class="findings-wrap">
-        <div class="section-shell analysis-section" aria-labelledby="findings-title">
+        <div class="section-shell analysis-section" data-share-key="stage-findings" aria-labelledby="findings-title">
           <header class="section-heading inverse">
-            <p class="section-no">09 / STAGE FINDINGS</p>
+            <p class="section-no">18 / STAGE FINDINGS</p>
             <div><h2 id="findings-title">议程7阶段读数</h2><p>以下结论只描述本阶段可观察制度行为，不推断幕后协调或长期政治联盟。</p></div>
           </header>
           <div class="findings-list" id="findings-list"></div>
@@ -301,13 +446,15 @@
         <div class="method-grid">
           <div>
             <h3>发言回合</h3>
-            <p>代表团连续占用发言席计一个回合；再次取得发言席重新计数。纪要合并多个短发言时采用可确认下限，因此205不是官方逐字记录的最终轮次。</p>
+            <p>代表团连续占用发言席计一个回合；再次取得发言席重新计数。纪要合并多个短发言时采用可确认下限，因此224不是官方逐字记录的最终轮次。</p>
             <h3>讨论与答辩</h3>
-            <p>委员国作为遗产所在缔约国的国家答辩，以及决定通过后的回应，另列12回合，不自动增加讨论端影响。</p>
+            <p>委员国作为遗产所在缔约国的国家答辩，以及决定通过后的回应，另列14回合，不自动增加讨论端影响。</p>
           </div>
           <div>
-            <h3>提出端与讨论端</h3>
-            <p>提出端只记录主提／联合提交及获得处理的程序动议；讨论端只记录能够连接到具体文字或程序结果的编辑、护栏与折衷。</p>
+            <h3>提出议题与介入讨论</h3>
+            <p>提出议题只记录主提／联合提交及获得处理的程序动议；介入讨论只记录能够连接到具体文字或程序结果的编辑、护栏与折衷。</p>
+            <h3>公约完整性审计</h3>
+            <p>案件审计分别核对专业建议偏离、验证缺口、程序压缩、保护结果变化和既有决定延续性。主席行动只按可观察程序行为编码，不推断动机。</p>
             <h3>议程缔约国互动</h3>
             <p>正式共同文本先记为中性议程连接；技术保留、保护性加码、程序异议和明确反对分开编码。只有具体措辞、缔约国回应与结果同向时，才标记“局部同向”。</p>
             <h3>版本限制</h3>
@@ -324,7 +471,7 @@
 
     <footer class="site-footer section-shell">
       <p>ConserVision Research · World Heritage Committee Observatory</p>
-      <p>48COM / Phase 02A / v1.1.0</p>
+      <p>48COM / Phase 02A / v1.5.7</p>
     </footer>
 
     <aside class="viz-tooltip" id="viz-tooltip" role="tooltip" aria-hidden="true" hidden>
@@ -332,6 +479,8 @@
       <p id="viz-tooltip-body"></p>
       <ul id="viz-tooltip-list"></ul>
     </aside>
+
+    <p class="share-toast" id="share-toast" role="status" aria-live="polite" hidden></p>
 
     <noscript>
       <div class="noscript">交互统计需要JavaScript。你仍可直接下载<a href="data/phase-2a.json">JSON数据</a>和查看<a href="METHOD.md">编码手册</a>。</div>

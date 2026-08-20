@@ -1,0 +1,1783 @@
+{
+  "version": "1.1.0",
+  "generated": "2026-08-06",
+  "scope_minutes": 2972,
+  "categories": [
+    {
+      "id": "evidence",
+      "level": "L4",
+      "label": "证据基线",
+      "short": "证据",
+      "color": "#214f78"
+    },
+    {
+      "id": "substantive",
+      "level": "L3",
+      "label": "决策性实质讨论",
+      "short": "实质",
+      "color": "#2b7861"
+    },
+    {
+      "id": "procedure",
+      "level": "L2",
+      "label": "必要程序与文本",
+      "short": "程序",
+      "color": "#5c6f8d"
+    },
+    {
+      "id": "correction",
+      "level": "L1",
+      "label": "澄清与纠偏负担",
+      "short": "纠偏",
+      "color": "#c18a34"
+    },
+    {
+      "id": "low_yield",
+      "level": "L0",
+      "label": "重复／失焦循环",
+      "short": "低产出",
+      "color": "#a84f5a"
+    }
+  ],
+  "legacy": {
+    "label": "原结果富集样本",
+    "case_count": 6,
+    "sample_minutes": 605,
+    "coverage_share": 20.4,
+    "selection_rule": "连续边界清楚、讨论负荷高、且最终决定发生实质改变。",
+    "use": "机制发现与敏感性对照，不估计全会平均比例。",
+    "categories": [
+      {
+        "id": "evidence",
+        "level": "L4",
+        "label": "证据基线",
+        "short": "证据",
+        "color": "#214f78",
+        "minutes": 87,
+        "share": 14.4
+      },
+      {
+        "id": "substantive",
+        "level": "L3",
+        "label": "决策性实质讨论",
+        "short": "实质",
+        "color": "#2b7861",
+        "minutes": 214,
+        "share": 35.4
+      },
+      {
+        "id": "procedure",
+        "level": "L2",
+        "label": "必要程序与文本",
+        "short": "程序",
+        "color": "#5c6f8d",
+        "minutes": 152,
+        "share": 25.1
+      },
+      {
+        "id": "correction",
+        "level": "L1",
+        "label": "澄清与纠偏负担",
+        "short": "纠偏",
+        "color": "#c18a34",
+        "minutes": 101,
+        "share": 16.7
+      },
+      {
+        "id": "low_yield",
+        "level": "L0",
+        "label": "重复／失焦循环",
+        "short": "低产出",
+        "color": "#a84f5a",
+        "minutes": 51,
+        "share": 8.4
+      }
+    ],
+    "burden_minutes": 152,
+    "burden_share": 25.1
+  },
+  "long_topic": {
+    "label": "60分钟以上长议题样本",
+    "status": "首轮单编码，待复核",
+    "threshold_minutes": 60,
+    "case_count": 13,
+    "sample_minutes": 1353,
+    "coverage_share": 45.5,
+    "selection_rule": "先按讨论时长和可解析边界选样，不查看决定结果；纳入决定形成前连续讨论达到60分钟的独立议题／案件段。",
+    "threshold_note": "方法上属于按结果信息盲选（outcome-blind selection）：盲的是选样阶段的结果信息，不是议题本身；这不是固定的统计样本类型名称。60分钟采用一个整小时的公开操作阈值。边界复核显示60—69分钟区间没有新增单元，因此样本仍为13案、1,353分钟。",
+    "use": "描述高负荷议题的讨论机制；因不是概率样本，不用于估计全会平均比例。",
+    "categories": [
+      {
+        "id": "evidence",
+        "level": "L4",
+        "label": "证据基线",
+        "short": "证据",
+        "color": "#214f78",
+        "minutes": 249,
+        "share": 18.4
+      },
+      {
+        "id": "substantive",
+        "level": "L3",
+        "label": "决策性实质讨论",
+        "short": "实质",
+        "color": "#2b7861",
+        "minutes": 485,
+        "share": 35.8
+      },
+      {
+        "id": "procedure",
+        "level": "L2",
+        "label": "必要程序与文本",
+        "short": "程序",
+        "color": "#5c6f8d",
+        "minutes": 359,
+        "share": 26.5
+      },
+      {
+        "id": "correction",
+        "level": "L1",
+        "label": "澄清与纠偏负担",
+        "short": "纠偏",
+        "color": "#c18a34",
+        "minutes": 188,
+        "share": 13.9
+      },
+      {
+        "id": "low_yield",
+        "level": "L0",
+        "label": "重复／失焦循环",
+        "short": "低产出",
+        "color": "#a84f5a",
+        "minutes": 72,
+        "share": 5.3
+      }
+    ],
+    "burden_minutes": 260,
+    "burden_share": 19.2,
+    "cases": [
+      {
+        "agenda": "5A",
+        "name": "世界遗产中心活动报告",
+        "minutes": 206,
+        "source": "补充",
+        "segments": {
+          "evidence": 55,
+          "substantive": 82,
+          "procedure": 45,
+          "correction": 18,
+          "low_yield": 6
+        }
+      },
+      {
+        "agenda": "5B",
+        "name": "咨询机构报告",
+        "minutes": 74,
+        "source": "原605",
+        "segments": {
+          "evidence": 10,
+          "substantive": 35,
+          "procedure": 15,
+          "correction": 10,
+          "low_yield": 4
+        }
+      },
+      {
+        "agenda": "5C",
+        "name": "第六项战略目标",
+        "minutes": 91,
+        "source": "补充",
+        "segments": {
+          "evidence": 12,
+          "substantive": 55,
+          "procedure": 18,
+          "correction": 5,
+          "low_yield": 1
+        }
+      },
+      {
+        "agenda": "5D",
+        "name": "全球战略实施进展",
+        "minutes": 80,
+        "source": "补充",
+        "segments": {
+          "evidence": 15,
+          "substantive": 54,
+          "procedure": 9,
+          "correction": 2,
+          "low_yield": 0
+        }
+      },
+      {
+        "agenda": "6C",
+        "name": "内罗毕成果文件后续",
+        "minutes": 135,
+        "source": "原605",
+        "segments": {
+          "evidence": 12,
+          "substantive": 55,
+          "procedure": 40,
+          "correction": 18,
+          "low_yield": 10
+        }
+      },
+      {
+        "agenda": "7A.27",
+        "name": "维也纳历史中心",
+        "minutes": 100,
+        "source": "原605",
+        "segments": {
+          "evidence": 18,
+          "substantive": 34,
+          "procedure": 20,
+          "correction": 20,
+          "low_yield": 8
+        }
+      },
+      {
+        "agenda": "7B.62",
+        "name": "奥赫里德地区自然与文化遗产",
+        "minutes": 120,
+        "source": "补充",
+        "segments": {
+          "evidence": 25,
+          "substantive": 35,
+          "procedure": 38,
+          "correction": 17,
+          "low_yield": 5
+        }
+      },
+      {
+        "agenda": "7B.9",
+        "name": "亨比古迹群",
+        "minutes": 81,
+        "source": "补充",
+        "segments": {
+          "evidence": 16,
+          "substantive": 18,
+          "procedure": 31,
+          "correction": 13,
+          "low_yield": 3
+        }
+      },
+      {
+        "agenda": "7B.47",
+        "name": "威斯敏斯特宫及相关遗产",
+        "minutes": 91,
+        "source": "补充",
+        "segments": {
+          "evidence": 15,
+          "substantive": 14,
+          "procedure": 36,
+          "correction": 22,
+          "low_yield": 4
+        }
+      },
+      {
+        "agenda": "7B.70",
+        "name": "孙德尔本斯国家公园",
+        "minutes": 79,
+        "source": "补充",
+        "segments": {
+          "evidence": 24,
+          "substantive": 13,
+          "procedure": 30,
+          "correction": 10,
+          "low_yield": 2
+        }
+      },
+      {
+        "agenda": "8B.7",
+        "name": "瓦迪沃拉亚",
+        "minutes": 79,
+        "source": "原605",
+        "segments": {
+          "evidence": 12,
+          "substantive": 30,
+          "procedure": 18,
+          "correction": 13,
+          "low_yield": 6
+        }
+      },
+      {
+        "agenda": "8B.30",
+        "name": "里贝拉萨克拉水景",
+        "minutes": 124,
+        "source": "原605",
+        "segments": {
+          "evidence": 20,
+          "substantive": 42,
+          "procedure": 34,
+          "correction": 18,
+          "low_yield": 10
+        }
+      },
+      {
+        "agenda": "10",
+        "name": "《操作指南》第五章及附件7",
+        "minutes": 93,
+        "source": "原605",
+        "segments": {
+          "evidence": 15,
+          "substantive": 18,
+          "procedure": 25,
+          "correction": 22,
+          "low_yield": 13
+        }
+      }
+    ]
+  },
+  "balanced": {
+    "label": "分层均衡时间样本",
+    "status": "首轮单编码完成，待第二编码者复核",
+    "seed": "48COM-AGENDA5-12-V3",
+    "window_minutes": 5,
+    "window_count": 120,
+    "sample_minutes": 600,
+    "coverage_share": 20.2,
+    "selection_rule": "按四类议程的全程分钟比例分层，以固定种子、系统间隔抽取合格5分钟窗；抽取时不查看决定结果和用途类别。",
+    "use": "估计全会时间用途比例；不能支持2—3个百分点差异或精细国家排名。",
+    "allocation": [
+      {
+        "family": "5-6 战略与能力建设",
+        "candidate_windows": 93,
+        "windows": 28,
+        "minutes": 140
+      },
+      {
+        "family": "7 保护状况",
+        "candidate_windows": 213,
+        "windows": 50,
+        "minutes": 250
+      },
+      {
+        "family": "8 提名与列入",
+        "candidate_windows": 184,
+        "windows": 34,
+        "minutes": 170
+      },
+      {
+        "family": "9-12 执行机制",
+        "candidate_windows": 33,
+        "windows": 8,
+        "minutes": 40
+      }
+    ],
+    "categories": [
+      {
+        "id": "evidence",
+        "level": "L4",
+        "label": "证据基线",
+        "short": "证据",
+        "color": "#214f78",
+        "minutes": 130,
+        "share": 21.7
+      },
+      {
+        "id": "substantive",
+        "level": "L3",
+        "label": "决策性实质讨论",
+        "short": "实质",
+        "color": "#2b7861",
+        "minutes": 275,
+        "share": 45.8
+      },
+      {
+        "id": "procedure",
+        "level": "L2",
+        "label": "必要程序与文本",
+        "short": "程序",
+        "color": "#5c6f8d",
+        "minutes": 135,
+        "share": 22.5
+      },
+      {
+        "id": "correction",
+        "level": "L1",
+        "label": "澄清与纠偏负担",
+        "short": "纠偏",
+        "color": "#c18a34",
+        "minutes": 45,
+        "share": 7.5
+      },
+      {
+        "id": "low_yield",
+        "level": "L0",
+        "label": "重复／失焦循环",
+        "short": "低产出",
+        "color": "#a84f5a",
+        "minutes": 15,
+        "share": 2.5
+      }
+    ],
+    "family_first_coder_counts": {
+      "5-6 战略与能力建设": {
+        "evidence": 6,
+        "substantive": 14,
+        "procedure": 5,
+        "correction": 2,
+        "low_yield": 1
+      },
+      "7 保护状况": {
+        "evidence": 11,
+        "substantive": 19,
+        "procedure": 12,
+        "correction": 6,
+        "low_yield": 2
+      },
+      "8 提名与列入": {
+        "evidence": 7,
+        "substantive": 18,
+        "procedure": 8,
+        "correction": 1,
+        "low_yield": 0
+      },
+      "9-12 执行机制": {
+        "evidence": 2,
+        "substantive": 4,
+        "procedure": 2,
+        "correction": 0,
+        "low_yield": 0
+      }
+    },
+    "burden_minutes": 60,
+    "burden_share": 10.0,
+    "burden_ci95": [
+      5,
+      15
+    ],
+    "worst_case_margin_pp": 8,
+    "quality_control": "至少12个时间窗由第二编码者盲法复核；Cohen’s κ达到0.70后才作为最终总体估计。",
+    "windows": [
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 0,
+        "end_seconds": 300,
+        "start": "00:00:00",
+        "end": "00:05:00",
+        "word_count": 273,
+        "text_sha256": "b77e733c9fdf51b0029b7b12531c1160a39f803bf2ce02c9f13b6ca1135e892e",
+        "sample_index": 1
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 900,
+        "end_seconds": 1200,
+        "start": "00:15:00",
+        "end": "00:20:00",
+        "word_count": 250,
+        "text_sha256": "ac194428b3b3a03006460c445575c5908bbadbca1f053c04c76b8b08d0bcccab",
+        "sample_index": 2
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 1800,
+        "end_seconds": 2100,
+        "start": "00:30:00",
+        "end": "00:35:00",
+        "word_count": 440,
+        "text_sha256": "815b385aba52f28e54d13332b511470e7f23b23765d3ec19e8e1cf4fec4822be",
+        "sample_index": 3
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 3300,
+        "end_seconds": 3600,
+        "start": "00:55:00",
+        "end": "01:00:00",
+        "word_count": 554,
+        "text_sha256": "ebbb23d7e76def149b383de2258b678232ea18eb451a1e53965e2fe767961f05",
+        "sample_index": 4
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 4200,
+        "end_seconds": 4500,
+        "start": "01:10:00",
+        "end": "01:15:00",
+        "word_count": 561,
+        "text_sha256": "aaa7ef9a9aa0b34e4783df826ce135de25522a94a5186e85f103e0353e11e710",
+        "sample_index": 5
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 5700,
+        "end_seconds": 6000,
+        "start": "01:35:00",
+        "end": "01:40:00",
+        "word_count": 369,
+        "text_sha256": "1920c439f0a21f955daa09efc88e6d64e06982e4711169cd4491d782c822658b",
+        "sample_index": 6
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 7500,
+        "end_seconds": 7800,
+        "start": "02:05:00",
+        "end": "02:10:00",
+        "word_count": 503,
+        "text_sha256": "1ac71702e9ccfc9915ac0ef9d596c7f064f0fde7f730d9fe1b513a77c43a617e",
+        "sample_index": 7
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 8700,
+        "end_seconds": 9000,
+        "start": "02:25:00",
+        "end": "02:30:00",
+        "word_count": 420,
+        "text_sha256": "0c8eae024ed119e083ce659f5e0b80d5add8093fe2ac07b229ba59817569e9b9",
+        "sample_index": 8
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "W-w0vSqjAd4",
+        "start_seconds": 9600,
+        "end_seconds": 9900,
+        "start": "02:40:00",
+        "end": "02:45:00",
+        "word_count": 519,
+        "text_sha256": "2fd9c32a629ba3901054e3b5e2def09555c5b5d2b23b5943d61a948f45d49596",
+        "sample_index": 9
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "019-Kinnt2A",
+        "start_seconds": 0,
+        "end_seconds": 300,
+        "start": "00:00:00",
+        "end": "00:05:00",
+        "word_count": 350,
+        "text_sha256": "c4d1adde80ab53f508287208be75d5ad3a115f16fca0d6aa5f67f2e0a972931f",
+        "sample_index": 10
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "019-Kinnt2A",
+        "start_seconds": 900,
+        "end_seconds": 1200,
+        "start": "00:15:00",
+        "end": "00:20:00",
+        "word_count": 337,
+        "text_sha256": "4b16c4d8a652c147ec5fb041977d868f312c5ec1df607f1f43984ae38df06265",
+        "sample_index": 11
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 900,
+        "end_seconds": 1200,
+        "start": "00:15:00",
+        "end": "00:20:00",
+        "word_count": 58,
+        "text_sha256": "5b2c05de4ba0933c31453fea9563fa0e91964821da82c24e2109a12204fb2931",
+        "sample_index": 12
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 2100,
+        "end_seconds": 2400,
+        "start": "00:35:00",
+        "end": "00:40:00",
+        "word_count": 354,
+        "text_sha256": "1839c950e52758125c6de58c71ecb304a8b1326ee2d21c84729c9c94fe0389f8",
+        "sample_index": 13
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 3000,
+        "end_seconds": 3300,
+        "start": "00:50:00",
+        "end": "00:55:00",
+        "word_count": 320,
+        "text_sha256": "dad55516b5a765a017423851b85f4ead0999fae706c751fad607339cdbbc1ae4",
+        "sample_index": 14
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 3900,
+        "end_seconds": 4200,
+        "start": "01:05:00",
+        "end": "01:10:00",
+        "word_count": 576,
+        "text_sha256": "56a8374d6e5f08908a77d78fd3e23755314642eaa91ba13d473270a1edab314b",
+        "sample_index": 15
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 4800,
+        "end_seconds": 5100,
+        "start": "01:20:00",
+        "end": "01:25:00",
+        "word_count": 448,
+        "text_sha256": "6216b2e3134f0a1f488f81f761ac5f9b1551dcc1aee1977c1040a7d30b53aa5e",
+        "sample_index": 16
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 6000,
+        "end_seconds": 6300,
+        "start": "01:40:00",
+        "end": "01:45:00",
+        "word_count": 348,
+        "text_sha256": "91e0f7cdb6c8b280557f7ec7bb57bdebf343bbd601a837201f9d42fec25ab1ff",
+        "sample_index": 17
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 6900,
+        "end_seconds": 7200,
+        "start": "01:55:00",
+        "end": "02:00:00",
+        "word_count": 544,
+        "text_sha256": "e4adc1d37660b35c7206c0153668983894b3dce613b8a0e86fd5608a0fa3b7e8",
+        "sample_index": 18
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 7800,
+        "end_seconds": 8100,
+        "start": "02:10:00",
+        "end": "02:15:00",
+        "word_count": 418,
+        "text_sha256": "888719cc6fefdde5e4068dc61ebd7236838ac90f46ba108ef1a8b807b7627426",
+        "sample_index": 19
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 9600,
+        "end_seconds": 9900,
+        "start": "02:40:00",
+        "end": "02:45:00",
+        "word_count": 691,
+        "text_sha256": "08800db30c2a41e27f1c73d28dd34075aada8f16c94321570ef6e572952afcf5",
+        "sample_index": 20
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "C1htrumJgm8",
+        "start_seconds": 10500,
+        "end_seconds": 10800,
+        "start": "02:55:00",
+        "end": "03:00:00",
+        "word_count": 384,
+        "text_sha256": "7f47ee19bc67fbafbb0f19829f84f19dc3de7ea8f986959e9b6a6cb6081702fd",
+        "sample_index": 21
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 600,
+        "end_seconds": 900,
+        "start": "00:10:00",
+        "end": "00:15:00",
+        "word_count": 420,
+        "text_sha256": "0a876c9f6e87ddb0092cbe2bce4773f094e9db1a20ed7e44204948a356493288",
+        "sample_index": 22
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 1800,
+        "end_seconds": 2100,
+        "start": "00:30:00",
+        "end": "00:35:00",
+        "word_count": 523,
+        "text_sha256": "8833d3896bc23354d5538cc427981ac9749ae95f54c78b213da4bc1e23801b5c",
+        "sample_index": 23
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 2700,
+        "end_seconds": 3000,
+        "start": "00:45:00",
+        "end": "00:50:00",
+        "word_count": 504,
+        "text_sha256": "d531759a59aeb9755eb39a37bbe382d3fbbd722105142cef1aeb434804ec9a8c",
+        "sample_index": 24
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 3600,
+        "end_seconds": 3900,
+        "start": "01:00:00",
+        "end": "01:05:00",
+        "word_count": 459,
+        "text_sha256": "1aa6bbb640658d043d5b2b717f2f6977cc8a30791ac1498d0d7610dc91f32bc8",
+        "sample_index": 25
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 4800,
+        "end_seconds": 5100,
+        "start": "01:20:00",
+        "end": "01:25:00",
+        "word_count": 588,
+        "text_sha256": "91fdf10181d154f12bb6f94b76007856bf235ca6df59e0e72ced1040d178e406",
+        "sample_index": 26
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 5700,
+        "end_seconds": 6000,
+        "start": "01:35:00",
+        "end": "01:40:00",
+        "word_count": 640,
+        "text_sha256": "36e2e0819e53a48f2a80aa02baf73650d0c50bbed64d38cae503a24dff5c65c8",
+        "sample_index": 27
+      },
+      {
+        "family": "5-6 战略与能力建设",
+        "video_id": "UPtpBiPBidA",
+        "start_seconds": 0,
+        "end_seconds": 300,
+        "start": "00:00:00",
+        "end": "00:05:00",
+        "word_count": 407,
+        "text_sha256": "91eff58181cf4b2f601b138e3b5fbe9c0afb61993e150ed3fd76752c10fe279f",
+        "sample_index": 28
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 7500,
+        "end_seconds": 7800,
+        "start": "02:05:00",
+        "end": "02:10:00",
+        "word_count": 608,
+        "text_sha256": "439885d172ea45797c9bda8b9d54ba20fe41fd562f07b7ea3e5a525341228309",
+        "sample_index": 1
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 8700,
+        "end_seconds": 9000,
+        "start": "02:25:00",
+        "end": "02:30:00",
+        "word_count": 249,
+        "text_sha256": "4fa9598685ab6631492c6c3a64084f0c8c275b21fb8c6fc8ece7b51345965118",
+        "sample_index": 2
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "CkX14WyVzdU",
+        "start_seconds": 10200,
+        "end_seconds": 10500,
+        "start": "02:50:00",
+        "end": "02:55:00",
+        "word_count": 321,
+        "text_sha256": "02cc24e45c283c82f043f13915f20fa86381bdda37b5684abd0b227c85e6245f",
+        "sample_index": 3
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "UPtpBiPBidA",
+        "start_seconds": 2400,
+        "end_seconds": 2700,
+        "start": "00:40:00",
+        "end": "00:45:00",
+        "word_count": 659,
+        "text_sha256": "79753b3aeaf2070c9e9774525f980f13f0e4ca43305177ab7ed439a46ffdffcf",
+        "sample_index": 4
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "UPtpBiPBidA",
+        "start_seconds": 3600,
+        "end_seconds": 3900,
+        "start": "01:00:00",
+        "end": "01:05:00",
+        "word_count": 407,
+        "text_sha256": "0a96c4d058dd678828d070e99a071a6f805ba5350b9320c4834a6cb30f52004d",
+        "sample_index": 5
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "UPtpBiPBidA",
+        "start_seconds": 4800,
+        "end_seconds": 5100,
+        "start": "01:20:00",
+        "end": "01:25:00",
+        "word_count": 531,
+        "text_sha256": "a1325e8fc316586ea2555ab20d786e4d1ad78f40cad956a6763a41fddba4709c",
+        "sample_index": 6
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "UPtpBiPBidA",
+        "start_seconds": 6000,
+        "end_seconds": 6300,
+        "start": "01:40:00",
+        "end": "01:45:00",
+        "word_count": 421,
+        "text_sha256": "65028bb56f6f971437fa6cbc3257728bf6d4cc5ff5a62f7b3f5ef9e322aa08b4",
+        "sample_index": 7
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "UPtpBiPBidA",
+        "start_seconds": 7500,
+        "end_seconds": 7800,
+        "start": "02:05:00",
+        "end": "02:10:00",
+        "word_count": 579,
+        "text_sha256": "b18b2b24a15abd8b70982024eefde185e3f8d9754186cf2c863b98f344c1c1d5",
+        "sample_index": 8
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "UPtpBiPBidA",
+        "start_seconds": 8700,
+        "end_seconds": 9000,
+        "start": "02:25:00",
+        "end": "02:30:00",
+        "word_count": 270,
+        "text_sha256": "c3f03f08445ddd4459fc3e5440721d135b5115efe8c47d2c40dd67635c994073",
+        "sample_index": 9
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 0,
+        "end_seconds": 300,
+        "start": "00:00:00",
+        "end": "00:05:00",
+        "word_count": 365,
+        "text_sha256": "8d6dc170f44fef50ce8308137cd0a1d6ed63e01f48764ab75a520af9575a2a90",
+        "sample_index": 10
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 1200,
+        "end_seconds": 1500,
+        "start": "00:20:00",
+        "end": "00:25:00",
+        "word_count": 311,
+        "text_sha256": "aae0b460b8af4ecde0bb99c4a70e549d3ab7510aaba905d9ee66e39a204a4ba9",
+        "sample_index": 11
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 2700,
+        "end_seconds": 3000,
+        "start": "00:45:00",
+        "end": "00:50:00",
+        "word_count": 321,
+        "text_sha256": "c4e57d922881931e276effa430fd945fff6b219f4e39d29e07a4c171b94757f1",
+        "sample_index": 12
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 3900,
+        "end_seconds": 4200,
+        "start": "01:05:00",
+        "end": "01:10:00",
+        "word_count": 337,
+        "text_sha256": "4e651ad0ec499fd8f037097c8f215a374b3ca21ccd1ac7821ca8fcc71337b2f3",
+        "sample_index": 13
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 5100,
+        "end_seconds": 5400,
+        "start": "01:25:00",
+        "end": "01:30:00",
+        "word_count": 537,
+        "text_sha256": "1eb09a43c360fdfdf9f5cf69bd64233ebaad835f50c6a84ee70caface58c2b01",
+        "sample_index": 14
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 6600,
+        "end_seconds": 6900,
+        "start": "01:50:00",
+        "end": "01:55:00",
+        "word_count": 420,
+        "text_sha256": "3266c4c76003ca65c5fb6573744e449c0a36a6dc8f0381dbd1d5ed057bce0c6c",
+        "sample_index": 15
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 7800,
+        "end_seconds": 8100,
+        "start": "02:10:00",
+        "end": "02:15:00",
+        "word_count": 552,
+        "text_sha256": "5d4bbfe16662422b66954036bc9289a9ff3a34f5a57542c8b42b71d47c0735fa",
+        "sample_index": 16
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "O6fMP8vJaRA",
+        "start_seconds": 9000,
+        "end_seconds": 9300,
+        "start": "02:30:00",
+        "end": "02:35:00",
+        "word_count": 526,
+        "text_sha256": "f8eed7abaf85b466f0fac7b1a5a53c816ec3debbfb4d04d8679e10d6b19283f1",
+        "sample_index": 17
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 300,
+        "end_seconds": 600,
+        "start": "00:05:00",
+        "end": "00:10:00",
+        "word_count": 440,
+        "text_sha256": "2947e1ce01d40ec7422e2ecff80d5d7322687f61deef03c1d247a576525156b9",
+        "sample_index": 18
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 1800,
+        "end_seconds": 2100,
+        "start": "00:30:00",
+        "end": "00:35:00",
+        "word_count": 371,
+        "text_sha256": "72cff23c1cb7ce6cc00bdfe6659d10b482d1f6e9f45f0506a0e711da96cc301b",
+        "sample_index": 19
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 3000,
+        "end_seconds": 3300,
+        "start": "00:50:00",
+        "end": "00:55:00",
+        "word_count": 582,
+        "text_sha256": "7ac45255ca8776ae7df8a59791de667d54a6e03f9bfc16421582b23d33545e35",
+        "sample_index": 20
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 4200,
+        "end_seconds": 4500,
+        "start": "01:10:00",
+        "end": "01:15:00",
+        "word_count": 416,
+        "text_sha256": "2984a5ad746b860126f1169782f22e5165ca69fff496571f7554e6e2d943691c",
+        "sample_index": 21
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 5400,
+        "end_seconds": 5700,
+        "start": "01:30:00",
+        "end": "01:35:00",
+        "word_count": 455,
+        "text_sha256": "71f1bc2f65c69466ec3b34a741f0c8300592ea50ae8ca46f3735415396f4ce9b",
+        "sample_index": 22
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 6900,
+        "end_seconds": 7200,
+        "start": "01:55:00",
+        "end": "02:00:00",
+        "word_count": 222,
+        "text_sha256": "0084b569467ccb8be28bf5b7978f8f148bf1fefdbc8e78bb18900a07231588c3",
+        "sample_index": 23
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 8100,
+        "end_seconds": 8400,
+        "start": "02:15:00",
+        "end": "02:20:00",
+        "word_count": 383,
+        "text_sha256": "712ae2d937887b8835aae4fc0547dc5e217c0fb4a6a976713ff8456167a10a45",
+        "sample_index": 24
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "U_1Kynk-prY",
+        "start_seconds": 9300,
+        "end_seconds": 9600,
+        "start": "02:35:00",
+        "end": "02:40:00",
+        "word_count": 161,
+        "text_sha256": "2190ed3d4c08066d399f44859b39bf8aa18625bb69d9d962433c99300434eb6d",
+        "sample_index": 25
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 0,
+        "end_seconds": 300,
+        "start": "00:00:00",
+        "end": "00:05:00",
+        "word_count": 390,
+        "text_sha256": "b506d6738db1ccf77fa8e264aed102ab9b960ebc4d7f7267c606981c69bdd558",
+        "sample_index": 26
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 1500,
+        "end_seconds": 1800,
+        "start": "00:25:00",
+        "end": "00:30:00",
+        "word_count": 276,
+        "text_sha256": "505c8689fb20300e3f74c7e0979230813ca233c041ae48e48b6730615529949c",
+        "sample_index": 27
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 2700,
+        "end_seconds": 3000,
+        "start": "00:45:00",
+        "end": "00:50:00",
+        "word_count": 641,
+        "text_sha256": "ccdb3e0f7f926d89d5ab50b0d6f8d87c49a992183d07c3072c75bf8a7a4226d0",
+        "sample_index": 28
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 3900,
+        "end_seconds": 4200,
+        "start": "01:05:00",
+        "end": "01:10:00",
+        "word_count": 640,
+        "text_sha256": "4a90b05f1f9601004dd7dad69af0334cac38630a3723630e01544673c7aae8c5",
+        "sample_index": 29
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 5100,
+        "end_seconds": 5400,
+        "start": "01:25:00",
+        "end": "01:30:00",
+        "word_count": 503,
+        "text_sha256": "f5dfe006b8fa8e08e805b450dd9e87dadc7f6eb08f6f37772065b6444920431c",
+        "sample_index": 30
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 6600,
+        "end_seconds": 6900,
+        "start": "01:50:00",
+        "end": "01:55:00",
+        "word_count": 562,
+        "text_sha256": "aa8f37655a44d8ec825aa44bbab091a2fabe186de8c8d94b31133daa8f0bc4d0",
+        "sample_index": 31
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 7800,
+        "end_seconds": 8100,
+        "start": "02:10:00",
+        "end": "02:15:00",
+        "word_count": 554,
+        "text_sha256": "8548545a58c124bafc93fc19c51f71b2a4458525989ca44997af4e8bc6ae3671",
+        "sample_index": 32
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "l_Q1Cawtqh4",
+        "start_seconds": 9000,
+        "end_seconds": 9300,
+        "start": "02:30:00",
+        "end": "02:35:00",
+        "word_count": 270,
+        "text_sha256": "5ac83bd33c2c3299c317981d4dc06234521075769b35ba217e91582abbb3df27",
+        "sample_index": 33
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "W-BcJSNVVXg",
+        "start_seconds": 8400,
+        "end_seconds": 8700,
+        "start": "02:20:00",
+        "end": "02:25:00",
+        "word_count": 715,
+        "text_sha256": "1f351335751a202d1b5d779a95a97a3f2fb024a284494ed28d4c4c4a00982cfd",
+        "sample_index": 34
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "W-BcJSNVVXg",
+        "start_seconds": 9900,
+        "end_seconds": 10200,
+        "start": "02:45:00",
+        "end": "02:50:00",
+        "word_count": 253,
+        "text_sha256": "9e3804a810d612605d1b969ff2528c879bc2326b60d372e563b478d122edf485",
+        "sample_index": 35
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "LtgpZsY3O2M",
+        "start_seconds": 6600,
+        "end_seconds": 6900,
+        "start": "01:50:00",
+        "end": "01:55:00",
+        "word_count": 675,
+        "text_sha256": "977aae71f0f9821d4d428cae2242e15f3e6621ca5df28536726688282d3ee0e2",
+        "sample_index": 36
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "LtgpZsY3O2M",
+        "start_seconds": 7800,
+        "end_seconds": 8100,
+        "start": "02:10:00",
+        "end": "02:15:00",
+        "word_count": 278,
+        "text_sha256": "7a8cfcd1957962a649bf518d75de3279663cda60a875efd3c6d083231adf0285",
+        "sample_index": 37
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "LtgpZsY3O2M",
+        "start_seconds": 9300,
+        "end_seconds": 9600,
+        "start": "02:35:00",
+        "end": "02:40:00",
+        "word_count": 559,
+        "text_sha256": "95a2ebc09659cfbda1b7b64fbf11313ef7ddd83f53b2c8786e41f000f6a76172",
+        "sample_index": 38
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "LtgpZsY3O2M",
+        "start_seconds": 10500,
+        "end_seconds": 10800,
+        "start": "02:55:00",
+        "end": "03:00:00",
+        "word_count": 571,
+        "text_sha256": "d7c50979e7356e8ee73753f4a467409d524ba766ddcd5ebb5e0feaca2a8e1520",
+        "sample_index": 39
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "5zknenZYt-E",
+        "start_seconds": 10200,
+        "end_seconds": 10500,
+        "start": "02:50:00",
+        "end": "02:55:00",
+        "word_count": 532,
+        "text_sha256": "f62e11600ffb24bc4157ea587fe051369b39164840b4aa540ea52183f184a7d8",
+        "sample_index": 40
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 3300,
+        "end_seconds": 3600,
+        "start": "00:55:00",
+        "end": "01:00:00",
+        "word_count": 480,
+        "text_sha256": "7dbb970e5cf2d31ee8729d067dc7c9a3fe86cc8355f68de391ac6a99fd0fd7fb",
+        "sample_index": 41
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 4800,
+        "end_seconds": 5100,
+        "start": "01:20:00",
+        "end": "01:25:00",
+        "word_count": 642,
+        "text_sha256": "0c88e21127ca40bee30045a24c32cb08ee9ebfef8696e5c5efc5550be55381fd",
+        "sample_index": 42
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 6000,
+        "end_seconds": 6300,
+        "start": "01:40:00",
+        "end": "01:45:00",
+        "word_count": 662,
+        "text_sha256": "350a96d5753e2e8f7784783ef2071e1a0c9494e2853ef9b7df722116a90590d1",
+        "sample_index": 43
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 7200,
+        "end_seconds": 7500,
+        "start": "02:00:00",
+        "end": "02:05:00",
+        "word_count": 698,
+        "text_sha256": "283ac8dc2e6c7bf3d4abb4705d451e5b3ee0dbdd5545ff00ab1b6a20f2bf81be",
+        "sample_index": 44
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 8400,
+        "end_seconds": 8700,
+        "start": "02:20:00",
+        "end": "02:25:00",
+        "word_count": 369,
+        "text_sha256": "e41af342d204f07ef34161efd1574ad3f3d5d5478e76e9128c3140b8501d821f",
+        "sample_index": 45
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 300,
+        "end_seconds": 600,
+        "start": "00:05:00",
+        "end": "00:10:00",
+        "word_count": 555,
+        "text_sha256": "904f5bee4b78e9f819588b4486c2127a65f6223564958f6f0968a39ddbd7d781",
+        "sample_index": 46
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 1500,
+        "end_seconds": 1800,
+        "start": "00:25:00",
+        "end": "00:30:00",
+        "word_count": 251,
+        "text_sha256": "12d483f03895e3e7d7dcf77d8562398bdf416ab48d413e98d4b9efb937fa7047",
+        "sample_index": 47
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 2700,
+        "end_seconds": 3000,
+        "start": "00:45:00",
+        "end": "00:50:00",
+        "word_count": 729,
+        "text_sha256": "cc534a42db6a37f0c29a0d22a9ce85ec0b5655946d29744be796728f068346ad",
+        "sample_index": 48
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 3900,
+        "end_seconds": 4200,
+        "start": "01:05:00",
+        "end": "01:10:00",
+        "word_count": 534,
+        "text_sha256": "8e5c40e797aa78e933b84a0db532c5f2549c69697ef02f499cf07061823acf9b",
+        "sample_index": 49
+      },
+      {
+        "family": "7 保护状况",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 5400,
+        "end_seconds": 5700,
+        "start": "01:30:00",
+        "end": "01:35:00",
+        "word_count": 430,
+        "text_sha256": "d8914ca743d6df8d27b38473ae13df753af5713d56164691d45eedb4caf36d0a",
+        "sample_index": 50
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "W-BcJSNVVXg",
+        "start_seconds": 600,
+        "end_seconds": 900,
+        "start": "00:10:00",
+        "end": "00:15:00",
+        "word_count": 563,
+        "text_sha256": "7bf636a52e44c1434a13948e7cdb5629737bf8f6f5341213eb01d9090afdfd9e",
+        "sample_index": 1
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "W-BcJSNVVXg",
+        "start_seconds": 2100,
+        "end_seconds": 2400,
+        "start": "00:35:00",
+        "end": "00:40:00",
+        "word_count": 334,
+        "text_sha256": "2aed5839939966497d42bd661c0bb962c962f91a790c1a808b67978731d7879b",
+        "sample_index": 2
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "W-BcJSNVVXg",
+        "start_seconds": 4200,
+        "end_seconds": 4500,
+        "start": "01:10:00",
+        "end": "01:15:00",
+        "word_count": 591,
+        "text_sha256": "eae92b517db22958c92df86c21c92a70c59724511750b2f016136b454272e3cd",
+        "sample_index": 3
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "W-BcJSNVVXg",
+        "start_seconds": 6000,
+        "end_seconds": 6300,
+        "start": "01:40:00",
+        "end": "01:45:00",
+        "word_count": 446,
+        "text_sha256": "4b5a509e4bb1737795f56b77fb52b87745cb59d1df254b90a74b9b13c835377c",
+        "sample_index": 4
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "W-BcJSNVVXg",
+        "start_seconds": 7500,
+        "end_seconds": 7800,
+        "start": "02:05:00",
+        "end": "02:10:00",
+        "word_count": 426,
+        "text_sha256": "f5182f1f590f381f8506297d63b081cbcb2c011b74b1ac30db3675c70feddd3f",
+        "sample_index": 5
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "BZMMhHmRuII",
+        "start_seconds": 1500,
+        "end_seconds": 1800,
+        "start": "00:25:00",
+        "end": "00:30:00",
+        "word_count": 553,
+        "text_sha256": "de1a7762c776db0dd1c794a1cad703c0fe73cfa0bc66d661b6677b18b1ba582c",
+        "sample_index": 6
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "BZMMhHmRuII",
+        "start_seconds": 3000,
+        "end_seconds": 3300,
+        "start": "00:50:00",
+        "end": "00:55:00",
+        "word_count": 510,
+        "text_sha256": "646c8c1e5cc7c89206724a69336642c093645701ef36d91629212617b5c9de43",
+        "sample_index": 7
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "BZMMhHmRuII",
+        "start_seconds": 4500,
+        "end_seconds": 4800,
+        "start": "01:15:00",
+        "end": "01:20:00",
+        "word_count": 573,
+        "text_sha256": "1ad163d76bd0c6f4f54fbb54b40bc378988927f0e3e14a5333f3d71b551b04a3",
+        "sample_index": 8
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "BZMMhHmRuII",
+        "start_seconds": 6300,
+        "end_seconds": 6600,
+        "start": "01:45:00",
+        "end": "01:50:00",
+        "word_count": 439,
+        "text_sha256": "d3c558709c0f4e92f368b145300d07ad06dab93cd4a962e8e0a6eaf09b06a397",
+        "sample_index": 9
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "BZMMhHmRuII",
+        "start_seconds": 8100,
+        "end_seconds": 8400,
+        "start": "02:15:00",
+        "end": "02:20:00",
+        "word_count": 151,
+        "text_sha256": "d8b69a42c92f39c49beb37353679187f91288a62b69035984b1ab5d8144a6dc1",
+        "sample_index": 10
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "yssz_gcxAis",
+        "start_seconds": 0,
+        "end_seconds": 300,
+        "start": "00:00:00",
+        "end": "00:05:00",
+        "word_count": 273,
+        "text_sha256": "aeffc911a4d4a512150bf06f44f78feacfb11a56fbbab4df0662a557dba2d969",
+        "sample_index": 11
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "yssz_gcxAis",
+        "start_seconds": 2700,
+        "end_seconds": 3000,
+        "start": "00:45:00",
+        "end": "00:50:00",
+        "word_count": 449,
+        "text_sha256": "86183f23fc8f4fe55bc912c6fe1dd6a8de10db8f5734cf6644740c51852aa702",
+        "sample_index": 12
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "yssz_gcxAis",
+        "start_seconds": 4200,
+        "end_seconds": 4500,
+        "start": "01:10:00",
+        "end": "01:15:00",
+        "word_count": 514,
+        "text_sha256": "aceb5141529fd7a2755adcda9dc44485b2829f133917ca5bae3d1dbb9f654db6",
+        "sample_index": 13
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "yssz_gcxAis",
+        "start_seconds": 6000,
+        "end_seconds": 6300,
+        "start": "01:40:00",
+        "end": "01:45:00",
+        "word_count": 412,
+        "text_sha256": "be434580a9b03e3e1c2e75b4bc2c0fd0914ce24153f5a35fba4006d43736199e",
+        "sample_index": 14
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "yssz_gcxAis",
+        "start_seconds": 7800,
+        "end_seconds": 8100,
+        "start": "02:10:00",
+        "end": "02:15:00",
+        "word_count": 80,
+        "text_sha256": "83adf5b56868e63c0e598722d8f2554e9fbca16b97fa9a18c7afd37408a19fde",
+        "sample_index": 15
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "yssz_gcxAis",
+        "start_seconds": 9600,
+        "end_seconds": 9900,
+        "start": "02:40:00",
+        "end": "02:45:00",
+        "word_count": 548,
+        "text_sha256": "fb3d0d82c1cb2645b5df0a29393acba31a478c456eed95bc33d4216a29f62c50",
+        "sample_index": 16
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "LtgpZsY3O2M",
+        "start_seconds": 1200,
+        "end_seconds": 1500,
+        "start": "00:20:00",
+        "end": "00:25:00",
+        "word_count": 580,
+        "text_sha256": "4037574c23859a032f714c3633ff1237181222587bed44fbdb65020a4f07aec0",
+        "sample_index": 17
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "LtgpZsY3O2M",
+        "start_seconds": 3000,
+        "end_seconds": 3300,
+        "start": "00:50:00",
+        "end": "00:55:00",
+        "word_count": 603,
+        "text_sha256": "e4ca1c0edb533c40a478da35ff9f0c4e3593ba626578a16c1a78a7c391ff69ba",
+        "sample_index": 18
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "LtgpZsY3O2M",
+        "start_seconds": 4800,
+        "end_seconds": 5100,
+        "start": "01:20:00",
+        "end": "01:25:00",
+        "word_count": 183,
+        "text_sha256": "077702696d34f6ac611a6a1a6f7a178a9476810ca3783e2337ce4fd90e71714c",
+        "sample_index": 19
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "hhrOUvTDTNw",
+        "start_seconds": 600,
+        "end_seconds": 900,
+        "start": "00:10:00",
+        "end": "00:15:00",
+        "word_count": 682,
+        "text_sha256": "59f12737cce4af4bad71174ec8c77af60a00336902755baabda873b4413df635",
+        "sample_index": 20
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "hhrOUvTDTNw",
+        "start_seconds": 2400,
+        "end_seconds": 2700,
+        "start": "00:40:00",
+        "end": "00:45:00",
+        "word_count": 379,
+        "text_sha256": "7c6f4ed6457f3fe910f303d4b7e7cdbbf8c34bd2332995de8c677e74e5feeb84",
+        "sample_index": 21
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "hhrOUvTDTNw",
+        "start_seconds": 3900,
+        "end_seconds": 4200,
+        "start": "01:05:00",
+        "end": "01:10:00",
+        "word_count": 653,
+        "text_sha256": "09d27ba6a0498fa076877810ac7832ae09e4890e46374023dc04211f28910db8",
+        "sample_index": 22
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "hhrOUvTDTNw",
+        "start_seconds": 5700,
+        "end_seconds": 6000,
+        "start": "01:35:00",
+        "end": "01:40:00",
+        "word_count": 167,
+        "text_sha256": "f8968e50284a4a69fdc1e75a54cb72a119403e088aa2a9dcbaf27f1c2b447426",
+        "sample_index": 23
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "hhrOUvTDTNw",
+        "start_seconds": 7200,
+        "end_seconds": 7500,
+        "start": "02:00:00",
+        "end": "02:05:00",
+        "word_count": 101,
+        "text_sha256": "5482e3e07968d53975dc50e755993631a48cb22ffa82fe928dcf97cebaeb86ef",
+        "sample_index": 24
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "hhrOUvTDTNw",
+        "start_seconds": 8700,
+        "end_seconds": 9000,
+        "start": "02:25:00",
+        "end": "02:30:00",
+        "word_count": 467,
+        "text_sha256": "08457e6635b4fc1a8af5e933672bc428114460cce50234b7ab68f612a9062e1c",
+        "sample_index": 25
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "5zknenZYt-E",
+        "start_seconds": 1800,
+        "end_seconds": 2100,
+        "start": "00:30:00",
+        "end": "00:35:00",
+        "word_count": 66,
+        "text_sha256": "315c254b01e86e854530c437e30c89c655ef3b9a245e9d9d29a0728c8da05d0c",
+        "sample_index": 26
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "5zknenZYt-E",
+        "start_seconds": 3300,
+        "end_seconds": 3600,
+        "start": "00:55:00",
+        "end": "01:00:00",
+        "word_count": 330,
+        "text_sha256": "0ea138887ca649ed4c53b63e9f79940913941f923ed2915a5a3d21819547b008",
+        "sample_index": 27
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "5zknenZYt-E",
+        "start_seconds": 5100,
+        "end_seconds": 5400,
+        "start": "01:25:00",
+        "end": "01:30:00",
+        "word_count": 382,
+        "text_sha256": "cb6a6ce31f862f1aefff6b0a1f7ad8fc763f97e4df40d0236c012fa624671559",
+        "sample_index": 28
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "5zknenZYt-E",
+        "start_seconds": 6600,
+        "end_seconds": 6900,
+        "start": "01:50:00",
+        "end": "01:55:00",
+        "word_count": 510,
+        "text_sha256": "46cfcd9d6867d83cadfaf8b6a02929648fb9e9f899bc8941ee356460c5843b21",
+        "sample_index": 29
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "5zknenZYt-E",
+        "start_seconds": 8100,
+        "end_seconds": 8400,
+        "start": "02:15:00",
+        "end": "02:20:00",
+        "word_count": 628,
+        "text_sha256": "4c81413dd3f519f9ddc94cd0b4ee95012a265a0f2985136df98d1f4c138932f6",
+        "sample_index": 30
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 600,
+        "end_seconds": 900,
+        "start": "00:10:00",
+        "end": "00:15:00",
+        "word_count": 222,
+        "text_sha256": "a5fc634941e61d880aaebb74f30b6c9aeea855226ce47393c33b7469c912c2ed",
+        "sample_index": 31
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 2100,
+        "end_seconds": 2400,
+        "start": "00:35:00",
+        "end": "00:40:00",
+        "word_count": 376,
+        "text_sha256": "8a9efd890e977847e30e0718fbb8dcae8b0580a5e576084ca0f76f95d14adac9",
+        "sample_index": 32
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 10500,
+        "end_seconds": 10800,
+        "start": "02:55:00",
+        "end": "03:00:00",
+        "word_count": 378,
+        "text_sha256": "1af14283a2f8b1bcf92f144a43be1e9c16ce913dc21953d5feef1635fd60e052",
+        "sample_index": 33
+      },
+      {
+        "family": "8 提名与列入",
+        "video_id": "rowRMVMlvb0",
+        "start_seconds": 12000,
+        "end_seconds": 12300,
+        "start": "03:20:00",
+        "end": "03:25:00",
+        "word_count": 575,
+        "text_sha256": "398b6cd62310f5dbd03ef4d94931a05b37695b4b2460bfb2254b1c0ad82884f9",
+        "sample_index": 34
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 7800,
+        "end_seconds": 8100,
+        "start": "02:10:00",
+        "end": "02:15:00",
+        "word_count": 312,
+        "text_sha256": "5d4effa92eea146ed8c463abb2f4ba106595ed8e4937d5b625bb823edb7c5020",
+        "sample_index": 1
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 9000,
+        "end_seconds": 9300,
+        "start": "02:30:00",
+        "end": "02:35:00",
+        "word_count": 538,
+        "text_sha256": "0094c7d207b4e442eceacd62399efb5f7a2e265d50f237ab900d73d94ad3210d",
+        "sample_index": 2
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "6TShnVP2ZkY",
+        "start_seconds": 10200,
+        "end_seconds": 10500,
+        "start": "02:50:00",
+        "end": "02:55:00",
+        "word_count": 75,
+        "text_sha256": "8b943c47e126f511ed7e7adf69cbe532a939776c07c1846fe9771b7894e1554a",
+        "sample_index": 3
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "1RvEmz8SBIs",
+        "start_seconds": 900,
+        "end_seconds": 1200,
+        "start": "00:15:00",
+        "end": "00:20:00",
+        "word_count": 290,
+        "text_sha256": "f7a39a3d1ccfcba2e5c2a69f7a8f7c8b8b3ca9c9755e517d7de31ed0225feeb8",
+        "sample_index": 4
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "1RvEmz8SBIs",
+        "start_seconds": 2400,
+        "end_seconds": 2700,
+        "start": "00:40:00",
+        "end": "00:45:00",
+        "word_count": 533,
+        "text_sha256": "c941a2e2dd43b8d408e44f3527a03f541ca2d59d450ef82fd9e061483567073c",
+        "sample_index": 5
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "1RvEmz8SBIs",
+        "start_seconds": 3600,
+        "end_seconds": 3900,
+        "start": "01:00:00",
+        "end": "01:05:00",
+        "word_count": 660,
+        "text_sha256": "1a6522b7d2d1500b8dcfccc8ba48b6b01d4a428922c306607319436a1e6bedb4",
+        "sample_index": 6
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "1RvEmz8SBIs",
+        "start_seconds": 4800,
+        "end_seconds": 5100,
+        "start": "01:20:00",
+        "end": "01:25:00",
+        "word_count": 674,
+        "text_sha256": "ea4877bf30725a4a0abf28184f647b5afdc36ac8d0516d3b9d655342eb84d9b2",
+        "sample_index": 7
+      },
+      {
+        "family": "9-12 执行机制",
+        "video_id": "1RvEmz8SBIs",
+        "start_seconds": 6000,
+        "end_seconds": 6300,
+        "start": "01:40:00",
+        "end": "01:45:00",
+        "word_count": 514,
+        "text_sha256": "c177d835e30d9b4c834f00d36ab9a55618fcdaeb4400d01354f29b73161413cf",
+        "sample_index": 8
+      }
+    ]
+  },
+  "comparison": {
+    "headline": "旧样本放大了纠偏负担，但高负荷议题中的实质—程序结构仍然稳定",
+    "findings": [
+      "原605分钟的纠偏＋低产出为25.1%；取消‘结果已改变’这一筛选条件，改按60分钟以上长议题扩样后降至19.2%。",
+      "分层均衡样本的首轮估计为10.0%，抽样误差约为5%—15%；说明高负荷议题不能代表全会平均时间结构。",
+      "三种口径的决策性实质讨论均为最大单项；旧样本与长议题样本的实质、程序比例接近，机制判断并未随扩样消失。"
+    ],
+    "recommendation": "最终报告不二选一：均衡样本用于总体比例，60分钟以上长议题用于解释机制，原605分钟仅作为选样敏感性记录。"
+  }
+}

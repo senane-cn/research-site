@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-08-09",
+  "scope": "48COM议程5—12委员国参与专题补充统计",
+  "formal_registry_source": "https://whc.unesco.org/en/sessions/48COM/documents/",
+  "formal_registry_note": "正式文本单元依据UNESCO 48COM修正决定登记及已核定的现场联合提交记录。同一文本的REV版本合并为一个文本沿革单元，不重复计数。",
+  "committee_mandates": {
+    "46COM": {
+      "source_url": "https://whc.unesco.org/en/sessions/46COM/",
+      "members": {
+        "ARG":"2021-2025","BEL":"2021-2025","BGR":"2021-2025","GRC":"2021-2025","IND":"2021-2025","ITA":"2021-2025","JAM":"2023-2027","JPN":"2021-2025","KAZ":"2023-2027","KEN":"2023-2027","LBN":"2023-2027","MEX":"2021-2025","QAT":"2021-2025","KOR":"2023-2027","RWA":"2021-2025","VCT":"2021-2025","SEN":"2023-2027","TUR":"2023-2027","UKR":"2023-2027","VNM":"2023-2027","ZMB":"2021-2025"
+      }
+    },
+    "47COM": {
+      "source_url": "https://whc.unesco.org/en/sessions/47COM/",
+      "members": {
+        "ARG":"2021-2025","BEL":"2021-2025","BGR":"2021-2025","GRC":"2021-2025","IND":"2021-2025","ITA":"2021-2025","JAM":"2023-2027","JPN":"2021-2025","KAZ":"2023-2027","KEN":"2023-2027","LBN":"2023-2027","MEX":"2021-2025","QAT":"2021-2025","KOR":"2023-2027","RWA":"2021-2025","VCT":"2021-2025","SEN":"2023-2027","TUR":"2023-2027","UKR":"2023-2027","VNM":"2023-2027","ZMB":"2021-2025"
+      }
+    },
+    "48COM": {
+      "source_url": "https://whc.unesco.org/en/sessions/48COM/",
+      "members": {
+        "ARM":"2025-2029","AZE":"2025-2029","BGD":"2025-2029","CZE":"2025-2029","GRD":"2025-2029","JAM":"2023-2027","KAZ":"2023-2027","KEN":"2023-2027","KWT":"2025-2029","LBN":"2023-2027","MNG":"2025-2029","PER":"2025-2029","POL":"2025-2029","KOR":"2023-2027","SEN":"2023-2027","CHE":"2025-2029","TGO":"2025-2029","TUR":"2023-2027","UKR":"2023-2027","TZA":"2025-2029","VNM":"2023-2027"
+      }
+    }
+  },
+  "decision_change_scopes": [
+    {
+      "family": "5—6 战略与制度",
+      "scope_total": 7,
+      "changed": 6,
+      "unit": "议程／子议程",
+      "display": "6／7",
+      "note": "7个议程／子议程中6个出现实质文本改变；共涉及8个已编码修正文本包。"
+    },
+    {
+      "family": "7 保护状况",
+      "scope_total": 15,
+      "changed": 9,
+      "unit": "讨论个案",
+      "display": "9／15",
+      "note": "15个讨论个案中9个形成文本修订：8个改变结果，1个属于文本校准。延期、原文通过与开启请求撤回另列。"
+    },
+    {
+      "family": "8 提名与列入",
+      "scope_total": 11,
+      "changed": 9,
+      "new_text": 2,
+      "unit": "讨论个案",
+      "display": "9 + 2",
+      "note": "11个讨论个案中9个改变咨询机构建议所对应的结果；另2个紧急提名形成完整新文本，没有可直接比较的原结果基线。"
+    },
+    {
+      "family": "9—12 执行机制",
+      "scope_total": 5,
+      "changed": 1,
+      "working_group_revision": 1,
+      "unit": "议程／子议程",
+      "display": "1／5",
+      "note": "5个议程／子议程中，议程10出现委员国修正及决定路径改变；议程12的预算工作组修订作为非国家文本角色另列。"
+    }
+  ],
+  "evidence_coverage": [
+    {
+      "family": "5—6",
+      "formal_status": "完整登记",
+      "support_status": "已结构化",
+      "note": "正式主提／共同提出及现场明确支持可分层查看。"
+    },
+    {
+      "family": "7",
+      "formal_status": "完整登记",
+      "support_status": "已结构化",
+      "note": "正式共同提出／联合提交与案件中明确支持分层计数。"
+    },
+    {
+      "family": "8",
+      "formal_status": "完整登记",
+      "support_status": "已结构化",
+      "note": "正式修正登记与现场明确支持分开；REV版本合并为一个文本沿革单元。"
+    },
+    {
+      "family": "9—12",
+      "formal_status": "完整登记",
+      "support_status": "身份不完整",
+      "note": "官方登记显示议程10由孟加拉国提交，议程12由预算工作组提交；议程10现场共同支持方身份未完整结构化，不以0计。"
+    }
+  ],
+  "formal_text_units": [
+    {"id":"5A","family":"5—6","agenda":"5A","label":"世界遗产中心活动报告","actors":["KEN","SEN","TGO","TZA"],"source_url":"https://whc.unesco.org/document/226796"},
+    {"id":"5B","family":"5—6","agenda":"5B","label":"咨询机构报告","actors":["KEN","SEN","TGO","TZA"],"source_url":"https://whc.unesco.org/document/226781"},
+    {"id":"5C","family":"5—6","agenda":"5C","label":"第六项战略目标","actors":["AZE","KEN","SEN","TGO","TZA"],"source_url":"https://whc.unesco.org/document/226774"},
+    {"id":"5D","family":"5—6","agenda":"5D","label":"SIDS专门子账户","actors":["ARM","CZE","GRD","JAM"],"source_url":"https://whc.unesco.org/document/226766"},
+    {"id":"6B","family":"5—6","agenda":"6B","label":"二类中心实施报告","actors":["KEN","SEN","TGO","TZA"],"source_url":"https://whc.unesco.org/document/226775"},
+    {"id":"6C-VNM","family":"5—6","agenda":"6C","label":"越南对肯尼亚修正案的再修正","actors":["VNM"],"source_url":"https://whc.unesco.org/document/226823"},
+    {"id":"6C-TUR","family":"5—6","agenda":"6C","label":"内罗毕成果文件后续·土耳其文本","actors":["TUR"],"source_url":"https://whc.unesco.org/document/226792"},
+    {"id":"6C-AFR","family":"5—6","agenda":"6C","label":"内罗毕成果文件后续·四国文本","actors":["KEN","SEN","TGO","TZA"],"source_url":"https://whc.unesco.org/document/226817"},
+    {"id":"6C-CZE","family":"5—6","agenda":"6C","label":"内罗毕成果文件后续·捷克文本","actors":["CZE"],"source_url":"https://whc.unesco.org/document/226777"},
+
+    {"id":"7-GENERAL-UKR","family":"7","agenda":"7","label":"保护状况总体决定·乌克兰文本","actors":["UKR"],"source_url":"https://whc.unesco.org/document/226895"},
+    {"id":"7-GENERAL-CZE","family":"7","agenda":"7","label":"保护状况总体决定·捷克文本","actors":["CZE"],"source_url":"https://whc.unesco.org/document/226847"},
+    {"id":"7A.27","family":"7","agenda":"7A.27","label":"维也纳历史中心","actors":["UKR"],"source_url":"https://whc.unesco.org/document/226908"},
+    {"id":"7B.9","family":"7","agenda":"7B.9","label":"亨比古迹群","actors":["ARM","JAM","KAZ","KWT","SEN","TGO","TZA","VNM"],"source_url":"https://whc.unesco.org/document/226747"},
+    {"id":"7B.47","family":"7","agenda":"7B.47","label":"威斯敏斯特宫","actors":["BGD"],"source_url":"https://whc.unesco.org/document/226846"},
+    {"id":"7B.49","family":"7","agenda":"7B.49","label":"伦敦塔","actors":["JAM"],"source_url":"https://whc.unesco.org/document/226815"},
+    {"id":"7B.51","family":"7","agenda":"7B.51","label":"奇洛埃教堂群","actors":["PER","POL","TZA"],"source_url":"https://whc.unesco.org/document/226828"},
+    {"id":"7B.62-TUR","family":"7","agenda":"7B.62","label":"奥赫里德·土耳其文本","actors":["TUR"],"source_url":"https://whc.unesco.org/document/226820"},
+    {"id":"7B.62-CHE","family":"7","agenda":"7B.62","label":"奥赫里德·瑞士文本","actors":["CHE"],"source_url":"https://whc.unesco.org/document/226900"},
+    {"id":"7B.70","family":"7","agenda":"7B.70","label":"孙德尔本斯","actors":["AZE","KEN","PER","TZA"],"source_url":"https://whc.unesco.org/document/226824"},
+    {"id":"7B.86","family":"7","agenda":"7B.86","label":"El Pinacate","actors":["CZE","JAM"],"source_url":"https://whc.unesco.org/document/226874"},
+    {"id":"7B.93","family":"7","agenda":"7B.93","label":"莫西奥图尼亚／维多利亚瀑布","actors":["KEN","SEN","TGO","TZA"],"source_url":"https://whc.unesco.org/document/226872"},
+
+    {"id":"8-GENERAL-TUR","family":"8","agenda":"8","label":"提名程序·土耳其文本","actors":["TUR"],"source_url":"https://whc.unesco.org/document/226848"},
+    {"id":"8-GENERAL-AFR","family":"8","agenda":"8","label":"提名程序·四国文本","actors":["KEN","SEN","TGO","TZA"],"source_url":"https://whc.unesco.org/document/226916"},
+    {"id":"8-GENERAL-POL","family":"8","agenda":"8","label":"提名程序·记忆遗产指导原则","actors":["KOR","POL"],"source_url":"https://whc.unesco.org/document/226887"},
+    {"id":"8B.7","family":"8","agenda":"8B.7","label":"瓦迪沃拉亚","actors":["ARM","BGD","JAM","KAZ","KWT","PER","UKR","TZA"],"source_url":"https://whc.unesco.org/document/226877"},
+    {"id":"8B.52","family":"8","agenda":"8B.52","label":"阿梅勒山城堡","actors":["ARM","KAZ","KWT","POL","TUR"],"source_url":"https://whc.unesco.org/document/226869"},
+    {"id":"8B.36","family":"8","agenda":"8B.36","label":"肯尼亚山边界修改","actors":["AZE","JAM","KWT","MNG","SEN","TGO","TUR","UKR","TZA"],"source_url":"https://whc.unesco.org/document/226886"},
+    {"id":"8B.34","family":"8","agenda":"8B.34","label":"亚马孙剧院","actors":["ARM","AZE","CZE","GRD","JAM","KAZ","KWT","LBN","MNG","PER","POL","KOR","SEN","TGO","UKR","TZA","VNM"],"source_url":"https://whc.unesco.org/document/226893"},
+    {"id":"8B.33","family":"8","agenda":"8B.33","label":"格丁尼亚现代主义市中心","actors":["ARM","AZE","BGD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","KOR","SEN","TGO","TUR","UKR","TZA","VNM"],"source_url":"https://whc.unesco.org/document/226771"},
+    {"id":"8B.30","family":"8","agenda":"8B.30","label":"里贝拉萨克拉水景","actors":["KAZ","PER","UKR","TZA"],"source_url":"https://whc.unesco.org/document/226896"},
+    {"id":"8B.24","family":"8","agenda":"8B.24","label":"塔什干现代主义建筑","actors":["AZE","JAM","KAZ","KEN","KWT","MNG","PER","POL","KOR","SEN","TUR","TZA","VNM"],"source_url":"https://whc.unesco.org/document/226772"},
+    {"id":"8B.20","family":"8","agenda":"8B.20","label":"曼格斯套岩石清真寺","actors":["ARM","AZE","CZE","JAM","KEN","KWT","MNG","PER","POL","KOR","SEN","TUR","TZA","VNM"],"source_url":"https://whc.unesco.org/document/226770"},
+    {"id":"8B.14","family":"8","agenda":"8B.14","label":"圣多美和普林西比罗萨斯","actors":["BGD","GRD","KAZ","KEN","KWT","MNG","POL","SEN","TGO","TUR","UKR","TZA"],"source_url":"https://whc.unesco.org/document/226894"},
+    {"id":"8B.12","family":"8","agenda":"8B.12","label":"奥林匹斯山较大区域","actors":["ARM","BGD","GRD","JAM","KAZ","KEN","KWT","LBN","MNG","PER","POL","KOR","SEN","UKR","TZA","VNM"],"source_url":"https://whc.unesco.org/document/226888"},
+
+    {"id":"10","family":"9—12","agenda":"10","label":"《操作指南》第五章及附件7","actors":["BGD"],"source_url":"https://whc.unesco.org/document/226889"},
+    {"id":"12-BWG","family":"9—12","agenda":"12","label":"世界遗产基金与预算修订","actors":[],"non_country_submitter":"预算工作组","source_url":"https://whc.unesco.org/document/226915"}
+  ]
+}
